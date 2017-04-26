@@ -9,11 +9,12 @@
             </div>
         </form>
         <ul>
-            <li style="float:right" class="topLink"><a href="register">Register</a></li>
-            <li style="float:right" class="topLink"><a href="login">Login</a></li>
+            <li style="float:right" class="topLink"><a href="/">LOGOUT</a></li>
+            <li style="float:right" class="topLink"><a href="signIn">MY PROFILE</a></li>
         </ul>
         </div>
         
+        <!--SECOND SECTION OF HEADER-->
         <div class="bottomHeader">
             <!--Image as home page link-->
             <ul>
@@ -32,7 +33,18 @@
             </ul>
         </div>
         
+        <!--THIRD SECTION OF HEADER-->
         <div class="tripleHeader">
             <h2 class="pageTitle">@yield('pageTitle')</h2>
         </div>
+        
+        <!--FORTH SECTION OF HEADER-->
+        <div class="quadLink">
+            <ul>
+                <li class="eduMod" style="width:33%"><a href="#">EDUCATIONAL MODULES</a></li>
+                <li class="eduMod" style="width:33%"><a href="#">SEE RESULTS</a></li>
+                <li class="eduMod" style="width:33%"><a href="#">ACCOUNT DETAILS</a></li>
+            </ul>
+        </div>
+        
 </header>

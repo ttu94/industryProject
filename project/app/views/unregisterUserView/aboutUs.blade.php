@@ -15,8 +15,10 @@
     <div class="row">
         <!--LEFT SIDE OF SCREEN-->
         <div class="col-md-6">
+   
             <div>
-                <img class="aboutUsImageOne"alt="About Spinal Cord Injury" src="https://metrouk2.files.wordpress.com/2017/02/the_legend_of_zelda_-_breath_of_the_wild_screenshot___7__.jpg?quality=80&strip=all&strip=all" width="700" height="430px" />
+                <br>
+                <img class="aboutUsImageOne"alt="About Spinal Cord Injury" src="https://metrouk2.files.wordpress.com/2017/02/the_legend_of_zelda_-_breath_of_the_wild_screenshot___7__.jpg?quality=80&strip=all&strip=all" />
                 <!--Next Block *******-->
                 <div class="blocks">
                         <h3>About The Clincal Trials</h3>
@@ -40,21 +42,12 @@
         </div>
         <!--RIGHT SIDE OF SCREEn-->
         <div class="col-md-6">
+            
             <div>
                 <!--div height set same as image to the side-->
                 <div class="blocks">
                         <h3>About Spinal Cord Rehabilitation</h3>
                         <p class="basicFontStyle" style="text-align: justify">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
-                            varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
-                            condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
-                            nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
-                            accumsan. Aliquam in felis sit amet augue.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
-                            varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
-                            condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
-                            nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
-                            accumsan. Aliquam in felis sit amet augue.
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                             varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
                             condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
@@ -94,7 +87,7 @@
                             nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
                             accumsan. Aliquam in felis sit amet augue.
                             <br><br>
-                            <a href="#"><button class="moduleButton">Access Educational Modules Abtract</button></a>
+                            <a href="#"><button class="moduleButton">Access Educational Modules Abstract</button></a>
                             <br>
                             <a href="#"><button class="moduleButtonTwo">Access Full Educational Modules</button></a>
                         </p>
@@ -106,7 +99,7 @@
             
             <div class="col-md-12">
                 <div class="yellowBar">
-                    <h3 style="text-align:center"><br>Meet the Doctors who are part of the clinical trial.</h3>
+                    <h3 class="meetDoctor" style="text-align:center"><br>Meet the Doctors who are part of the clinical trial.</h3>
                 </div>
                 <br>
                 <br>
@@ -117,7 +110,7 @@
                 <div class="col-md-4">
                     <div class="panel panel-default doctorPanel">
                         <img class="doctorImage" alt="Dr. Thuan Tu" src="images/userImage.jpg" />    
-                        <h3 style="text-align: center">&nbsp&nbsp Dr. Thuan Tu</h3>
+                        <h3 style="text-align: center">Dr. Thuan Tu</h3>
                         <div class="panel-body" style="text-align: justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                             varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
@@ -130,7 +123,7 @@
                 <div class="col-md-4">
                     <div class="panel panel-default doctorPanel">
                         <img class="doctorImage" alt="Dr. Thuan Tu" src="images/userImage.jpg" />
-                        <h3 style="text-align: center">&nbsp&nbsp Dr. James St John</h3>
+                        <h3 style="text-align: center">Dr. James St John</h3>
                         <div class="panel-body" style="text-align: justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                             varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
@@ -143,7 +136,7 @@
                 <div class="col-md-4">
                     <div class="panel panel-default doctorPanel">
                         <img class="doctorImage" alt="Dr. Thuan Tu" src="images/userImage.jpg" />
-                        <h3 style="text-align: center">&nbsp&nbsp Dr. Emma Watson</h3>
+                        <h3 style="text-align: center">Dr. Emma Watson</h3>
                         <div class="panel-body" style="text-align: justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                             varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt

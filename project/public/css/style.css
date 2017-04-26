@@ -3,18 +3,22 @@ body {
    margin:0;
    padding:0;
    height:100%;
-   max-width: 100%;
-   /*overflow-x: hidden;*/
+   width:100%;
+   overflow-x: hidden;
 }
+
 #container {
    min-height:100%;
+   width: 100%;
    position:relative;
    margin:0;
    padding:0;
 }
 
 .container-fluid {
-    /*max-width: 100%;*/
+    max-width: 90%;
+    min-width: 500px;
+    min-height: 500px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 20px;
@@ -24,31 +28,41 @@ body {
 #header {
    width: 100%;
 }
+
 #body {
    padding-bottom:125px;   /* Height of the footer */
-   /*width: 100%;*/
+   width:100%;
+
 }
 
 .raleway {
-    font-family: Raleway;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
     color: #595145;
 }
 
 .basicFontStyle {
-    font-family: Raleway;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
     color: #595145;
     font-size: large;
 }
 
-h2,h3{ 
-    font-family: Raleway;
-    font-weight: bold;
+h1, h3 {
+    font-weight: 200;
+}
+
+h2{ 
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    font-weight: 200;
     color:#595145;
 }
 
 .h3White {
-    font-family: Raleway;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
     color:white;
+}
+
+h1, h3 {
+    font-weight: 200;
 }
 
 /*Top Header**************************************************************************/
@@ -65,7 +79,7 @@ ul {
 }
 
 .topLink a {
-    font-family: Raleway;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
     display: block;
     color: #595145;
     text-align: center;
@@ -84,12 +98,12 @@ ul {
 }
 
 .bottomLink a {
-    font-family: Raleway;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
     display: block;
     color: #595145;
     text-align: center;
-    padding: 50px 80px 50px;
-    font-size: 23px;
+    padding: 50px 50px 50px;
+    font-size: 150%;
 }
 
 #rehab {
@@ -101,18 +115,18 @@ a:hover {
 }
 
 #headerTitle {
-   font-family: Raleway;
+   font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
    font-size: 30px;
    color: #595145;
-   position: absolute;
-   left: 140px;
-   bottom: 15px;
+   float:left;
+
 }
 
 .logo {
-    position: absolute;
-    left: 15px;
-    height: 120px;
+    /*left: 20px;*/
+    max-width: 100%;
+    max-height: 100%;
+    float:left;
 }
 
 /*Footer*********************************************************************/
@@ -129,33 +143,34 @@ a:hover {
 .griffithLogo {
     position: relative;
     padding-left: 80px;
-    /*height: 80%;*/
     top: 12%;
 }
 
 .socialMedia {
-    display: table;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Raleway;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
     color: #595145;
 }
 
 .followUs {
     font-size: 25px;
+        width: 50%;
+    margin: 0 auto;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
 }
 
 #blackBar{
-    display: block;
-    width:120px;
     height:3px;
+    width: 15%;
+    margin: 0 auto;
     background-color:#595145;
 }
 
 .copyright {
     position: absolute;
-    font-family: Raleway; 
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana; 
     /*display: block;*/
     color: #595145;
     font-size: 12px;
@@ -167,7 +182,7 @@ a:hover {
 
 .tripleHeader {
     position: relative;
-    background-color: #FFE599;
+    background-color: #F2D388;
     padding: 5px;
     text-align: center;
 }
@@ -175,9 +190,53 @@ a:hover {
 .pageTitle {
     display:block;
     text-align:center;
-    font-family: Raleway;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
     color: #595145;
 }
+
+/*FORTH HEADER*******************************************************************/
+
+.forthHeader {
+    position: relative;
+    background-color: #A7D2CB;
+    text-align: center;
+}
+
+.quadLink {
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    display: block;
+    float: center;
+    color: #595145;
+    text-align: center;
+    padding: 10px 30px 10px;
+    font-size: 130%;
+}
+.quadLink {
+    width: 100%;
+    margin-left: auto ;
+    margin-right: auto ;
+    background-color: #A7D2CB;
+}
+.quadLink ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    zoom:1;
+    /*border:1px solid red;*/
+    overflow: hidden;
+}
+.quadLink li{
+    /*font-family: 'Raleway' , sans-serif, Helvetica, Verdana;*/
+    width: 33%;
+    display:inline-block;
+    /*padding: 10px 30px;*/
+    /*font-size: 130%;*/
+}
+
+.quadLink a{
+    color: #595145;
+}
+
 
 /*HOME PAGE CSS********************************************************************/
 
@@ -185,14 +244,14 @@ a:hover {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
       width: 100%;
+      height: 100%;
       margin: auto;
-      height: 550px;
 }
 
 .panelOne {
     background-color: #A7D2CB;
     color: white;
-    font-family: raleway;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
 }
 
 .panelOneButton {
@@ -203,7 +262,7 @@ a:hover {
 .panelTwo {
     background-color: #88ABA5;
     color: white;
-    font-family: raleway;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
 }
 
 .panelTwoButton {
@@ -215,7 +274,7 @@ a:hover {
 .panelThree {
     background-color: #576E6A;
     color: white;
-    font-family: raleway;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
 }
 
 .panelThreeButton {
@@ -226,7 +285,7 @@ a:hover {
 
 /*LOGIN PAGE CSS****************************************************************/
 
-/*Input fields login*/
+Input fields login
 .login{
     width: 30%;
     padding: 12px 20px;
@@ -252,24 +311,41 @@ button:hover {
 }
 
 #noLogin {
+  /*position: absolute;*/
+  /*left: 30%;*/
+  text-align: center;
   width: 50%;
   margin: 0 auto;
 }
 
-.verticalLine {
-    position: absolute;
-    left: 40%;
-    display: block;
-    width:2px;
-    height:53%;
-    background-color:#999999;
+.login {
+    width: 60%;
+    padding: 10px;
+    
 }
+
+.loginBlock{
+
+  /*    width: 50%;*/
+  /*margin: 0 auto;*/
+  padding-left: 40%;
+}
+
+/*.verticalLine {*/
+    /*position: absolute;*/
+    /*left: 33.5%;*/
+/*    display: block;*/
+/*    width:2px;*/
+/*    height:53%;*/
+/*    background-color:#999999;*/
+/*}*/
 
 /*ABOUT US PAGE****************************************************************/
 
 .aboutUsImageOne {
     position: relative;
-    /*margin-left: 5%;*/
+    width: 100%;
+    /*height: 70%;*/
 }
 
 .doctorImage {
@@ -284,18 +360,22 @@ button:hover {
     border-color: white;
 }
 
+.meetDoctor {
+    font-family: Raleway, sans-serif;
+    color: #595145;
+}
+
 .blocks {
     position: relative;
-    /*height: 430px;*/
     /*set same height as images*/
-    min-height: 430px;
-    width: 700px;
+    height: 50%;
+    width: 100%;
 }
 
 .yellowBar {
     position: relative;
-    right:5%;
-    width:108.7%;
+    right:8%;
+    width:121%;
     height:80px;
     display: block;
     background-color:#F2D388;
@@ -308,13 +388,13 @@ button:hover {
 
 .moduleButton {
     text-align: center;
-    width:50%;
+    width: 80%;
     display:block;
     margin:0 auto;
 }
 
 .moduleButtonTwo {
-    width: 50%;
+    width: 80%;
     display:block;
     margin:0 auto;
     bottom: 10px;
@@ -323,15 +403,15 @@ button:hover {
 
 /*CONTACT US PAGE CSS*************************************************************/
 
-input {
+#contactName, #contactEmail, #contactSubject{
     width: 300px;
-        /*padding: 12px 20px;*/
     margin: 3px 0;
     box-sizing: border-box;
     border-style: solid;
     border-color: #666666;  
     color:#595145;
 }
+
 
 #comment {
     border-style: solid;
@@ -341,39 +421,45 @@ input {
     height: 200px;
     margin: 3px 0;
 }
+/*User Profile css****************************************************************/
 
-/*Profile Page css****************************************************************/
 
-#menuBar {
-    margin:0px; 
-    table-layout:fixed;
-    background-color: #A7D2CB;
+/*User Profile Module Scroll css****************************************************************/
+
+#scroll {
+width:90%;
+height:1000;
+margin:100px auto;
+background:#A3CBE0;
+border:2px solid #000;
+overflow:auto;
+white-space:nowrap;
+/*box-shadow:0 0 10px #000;*/
+}
+#scroll img {
+margin:20px 10px 0 10px;
+}
+
+
+/*FAQ QUESTION CSS***************************************************************************/
+
+.faq_question {
+    margin: 0px;
+    padding: 20px 50px 20px;
     width: 100%;
-    list-style-type: none;
-}
-
-.menuLink a{
-    display: block;
-    text-align: center;
-    padding: 5px 50px;
-    float: left;
-    width:33%;
-}
-
-.bottomLink2 a {
-    font-family: Raleway;
-    display: block;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
     color: #595145;
-    text-align: center;
+    background-color:#A7D2CB;
+    font-size: large;
+}
+ 
+.faq_answer_container {
+    height: 0px;
+    overflow: hidden;
     padding: 0px;
-    width:20%;
-    font-size: 23px;
+    padding-left: 50px;
+    color: #595145;
 }
-
-.bottomHeader2 {
-    text-align: justify;
-    margin: 0 auto;
-    background-color: #A7D2CB;
-    /*padding: 50px 50px;*/
-}
-

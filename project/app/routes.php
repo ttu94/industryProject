@@ -48,6 +48,13 @@ Route::get('contactUs', function()
  
 });
 
+//Route to faq page
+Route::get('faq', function()
+{
+    return View::make('unregisterUserView/faq');
+ 
+});
+
 // REGISTERD USERS ROUTES***************************************************
 // *****************************************************************************
 

@@ -15,7 +15,7 @@
     <div class="row">
         <!--LEFT SIDE OF SCREEN-->
         <div class="col-md-6">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.4015585955476!2d153.06056591092639!3d-27.55004541144087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16a2c299555e1370!2sGriffith+Institute+for+Drug+Discovery+(GRIDD)!5e0!3m2!1sen!2sau!4v1493115715649" width="850" height="600" frameborder="0" style="border-color:black" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.4015585955476!2d153.06056591092639!3d-27.55004541144087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16a2c299555e1370!2sGriffith+Institute+for+Drug+Discovery+(GRIDD)!5e0!3m2!1sen!2sau!4v1493115715649" width="750" height="600" frameborder="0" style="border-color:black" allowfullscreen></iframe>
         </div>
         <!--RIGHT SIDE OF SCREEn-->
 
@@ -31,13 +31,13 @@
                             info@amarelo.com <br>
                             <form action="/action_page.php">
                                
-                                <input type="text" id="name" name="name" placeholder="Name" width="200px" required>
+                                <input type="text" id="contactName" name="name" placeholder="Name" width="200px" required>
                                 <br>
     
-                                <input type="text" id="email" name="email" placeholder="Email" required>
+                                <input type="text" id="contactEmail" name="email" placeholder="Email" required>
                                 <br>
     
-                                <input type="text" id="subject" name="subject" placeholder="Subject">
+                                <input type="text" id="contactSubject" name="subject" placeholder="Subject">
                                 <br>
     
                                 <textarea id="comment" name="comment" placeholder="How can we help you?" height="1000px"></textarea>
