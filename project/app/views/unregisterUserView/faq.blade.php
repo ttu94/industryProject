@@ -21,7 +21,7 @@
                <div class="faq">
                   <div class="faq_question">I have forgotten my password, what do I do?</div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>If you forget your password, you can recover it from the "Login" page, via "Forgot Passowrd". Alternatively, you can click the link below (link here)</div>
+                          <div class="faq_answer"><br>If you forget your password, you can recover it from the "Login" page, via "Forgot Password". Alternatively, you can click the link below (link here)</div>
                        </div>        
                 </div>
                 <br>
@@ -52,7 +52,7 @@
                           <div class="faq_answer"><br>Time. Give it time.</div>
                        </div>        
                 </div>
-                <h3 style="color:#595145">Quizes</h3>
+                <h3 style="color:#595145">Quizzes</h3>
                <div class="faq">
                   <div class="faq_question">How many attempts do I have to complete a quiz?</div>
                        <div class="faq_answer_container">

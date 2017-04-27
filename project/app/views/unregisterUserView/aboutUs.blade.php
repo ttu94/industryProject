@@ -98,6 +98,7 @@
         <div class="meetStaffPanel">
             
             <div class="col-md-12">
+                
                 <div class="yellowBar">
                     <h3 class="meetDoctor" style="text-align:center"><br>Meet the Doctors who are part of the clinical trial.</h3>
                 </div>

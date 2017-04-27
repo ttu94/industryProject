@@ -449,7 +449,7 @@ margin:20px 10px 0 10px;
 }
 
 
-/*FAQ QUESTION CSS***************************************************************************/
+/* QUESTION CSS***************************************************************************/
 
 .faq_question {
     margin: 0px;
@@ -458,7 +458,7 @@ margin:20px 10px 0 10px;
     display: inline-block;
     cursor: pointer;
     font-weight: 200;
-    font-family: Raleway, sans-serif;
+    /*font-family: Raleway, sans-serif;*/
     color: #595145;
     background-color:#A7D2CB;
     font-size: large;
@@ -470,4 +470,9 @@ margin:20px 10px 0 10px;
     padding: 0px;
     padding-left: 50px;
     color: #595145;
+}
+
+.faq_answer {
+    color: #595145;
+    font-family: Raleway, sans-serif;
 }
