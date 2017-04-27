@@ -10,6 +10,9 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png">
+    <!--<link href='https://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet"> 
     
 </head>
 <body>

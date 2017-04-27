@@ -16,7 +16,7 @@
         <!--Linking to user register page-->
         <div class="col-md-12">
             <br>
-            <h3>General</h3>
+            <h3 style="color:#595145">General</h3>
             <div class="faq_container">
                <div class="faq">
                   <div class="faq_question">I have forgotten my password, what do I do?</div>
@@ -31,7 +31,7 @@
                           <div class="faq_answer"><br>The full modules and quizzes are open for registered users only. Abstracts of each module are available to the public.</div>
                        </div>        
                 </div>
-               <h3>Modules</h3> 
+               <h3 style="color:#595145">Modules</h3> 
                <div class="faq">
                   <div class="faq_question">Can I download the modules?</div>
                        <div class="faq_answer_container">
@@ -52,7 +52,7 @@
                           <div class="faq_answer"><br>Time. Give it time.</div>
                        </div>        
                 </div>
-                <h3>Quizes</h3>
+                <h3 style="color:#595145">Quizes</h3>
                <div class="faq">
                   <div class="faq_question">How many attempts do I have to complete a quiz?</div>
                        <div class="faq_answer_container">

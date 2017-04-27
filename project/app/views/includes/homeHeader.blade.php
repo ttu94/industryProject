@@ -21,7 +21,7 @@
              <a href="/project/public">
                     <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="images/clemjones_Logo.png" height="130px" width="100px"/>                
              </a>
-              <h1 id="headerTitle">Spinal Cord Injury <br><span id="rehab">Rehabilitation</span></h1>
+              <h1 id="headerTitle">Spinal Cord Injury<br><span id="rehab">Rehabilitation</span></h1>
               <li style="float:right" class="bottomLink"><a href="contactUs">CONTACT</a></li>
               <li style="float:right" class="bottomLink"><a>ABSTRACT MODULES</a></li>
               <li style="float:right" class="bottomLink"><a href="faq">FAQ</a></li>

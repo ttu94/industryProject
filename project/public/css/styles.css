@@ -5,6 +5,7 @@ body {
    height:100%;
    width:100%;
    overflow-x: hidden;
+   /*font-family: Raleway, sans-serif;*/
 }
 
 #container {
@@ -49,17 +50,19 @@ body {
 h1 {
     color:#595145;
     font-weight: 500;
+    font-family: Raleway, sans-serif;
 }
 
 h2{ 
     font-weight: 400;
     color:#595145;
     font-size: 25px;
+    font-family: Raleway, sans-serif;
 }
 
 h3 {
    font-weight: 300;
-   color:#595145;
+   font-family: Raleway, sans-serif;
 }
 
 .h3White {
@@ -118,6 +121,7 @@ a:hover {
 }
 
 #headerTitle {
+   font-family: Raleway, sans-serif;
    font-size: 30px;
    color: #595145;
    float:left;
@@ -453,8 +457,8 @@ margin:20px 10px 0 10px;
     width: 100%;
     display: inline-block;
     cursor: pointer;
-    font-weight: bold;
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    font-weight: 200;
+    font-family: Raleway, sans-serif;
     color: #595145;
     background-color:#A7D2CB;
     font-size: large;
