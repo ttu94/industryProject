@@ -12,10 +12,8 @@
 @section('content')
 <div class="container-fluid">
     <br>
-    <div class="row">
         <!--LEFT SIDE OF SCREEN-->
         <div class="col-md-6">
-   
             <div>
                 <br>
                 <img class="aboutUsImageOne"alt="About Spinal Cord Injury" src="https://metrouk2.files.wordpress.com/2017/02/the_legend_of_zelda_-_breath_of_the_wild_screenshot___7__.jpg?quality=80&strip=all&strip=all" />
@@ -95,7 +93,7 @@
             </div>
         </div>
         <!--Panels which contain the medical staff-->
-        <div class="meetStaffPanel">
+        <!--<div class="meetStaffPanel">-->
             
             <div class="col-md-12">
                 
@@ -149,9 +147,7 @@
                 </div>
             </div>
           
-        </div>
-
-    </div>
+        <!--</div>-->
 
 </div>
 

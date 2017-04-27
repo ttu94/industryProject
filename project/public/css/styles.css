@@ -201,7 +201,7 @@ a:hover {
     color: #595145;
 }
 
-/*FORTH HEADER*******************************************************************/
+/*FOURTH HEADER*******************************************************************/
 
 .forthHeader {
     position: relative;
@@ -388,10 +388,6 @@ button:hover {
     display: block;
     background-color:#F2D388;
 
-}
-
-.meetStaffPanel {
-    position: relative;
 }
 
 .moduleButton {
