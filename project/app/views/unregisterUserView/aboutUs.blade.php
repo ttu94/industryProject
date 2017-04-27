@@ -21,7 +21,7 @@
                 <img class="aboutUsImageOne"alt="About Spinal Cord Injury" src="https://metrouk2.files.wordpress.com/2017/02/the_legend_of_zelda_-_breath_of_the_wild_screenshot___7__.jpg?quality=80&strip=all&strip=all" />
                 <!--Next Block *******-->
                 <div class="blocks">
-                        <h3>About The Clincal Trials</h3>
+                        <h3 style="color: #595145">About The Clincal Trials</h3>
                         <p class="basicFontStyle" style="text-align: justify">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                         varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
@@ -37,7 +37,7 @@
                 </div>
                 <!--NEXT BLOCK******-->
                 
-                <img class="aboutUsImageOne"alt="About Spinal Cord Injury" src="http://i2.kym-cdn.com/photos/images/original/001/136/185/604.jpg" width="700" height="430px" />
+                <img class="aboutUsImageOne"alt="About Spinal Cord Injury" src="http://i2.kym-cdn.com/photos/images/original/001/136/185/604.jpg"/>
             </div>
         </div>
         <!--RIGHT SIDE OF SCREEn-->
@@ -46,7 +46,7 @@
             <div>
                 <!--div height set same as image to the side-->
                 <div class="blocks">
-                        <h3>About Spinal Cord Rehabilitation</h3>
+                        <h3 style="color: #595145">About Spinal Cord Rehabilitation</h3>
                         <p class="basicFontStyle" style="text-align: justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                             varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
@@ -61,10 +61,10 @@
                         </p>
                 </div>
                 <!--NEXT BLOCK DOWN-->
-                <img class="aboutUsImageOne"alt="" src="http://res.cloudinary.com/lmn/image/upload/e_sharpen:100/f_auto,fl_lossy,q_auto/v1/gameskinnyc/l/e/g/legend-zelda-breath-wild-featured-4e212.jpg" width="700" height="430px" />
+                <img class="aboutUsImageOne"alt="" src="http://res.cloudinary.com/lmn/image/upload/e_sharpen:100/f_auto,fl_lossy,q_auto/v1/gameskinnyc/l/e/g/legend-zelda-breath-wild-featured-4e212.jpg"/>
                 <!--NEXT BLOCK DOWN-->
                 <div class="blocks">
-                        <h3>About The Educational Modules</h3>
+                        <h3 style="color: #595145">About The Educational Modules</h3>
                         <p class="basicFontStyle" style="text-align: justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                             varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt

@@ -3,22 +3,18 @@ body {
    margin:0;
    padding:0;
    height:100%;
-   width:100%;
-   overflow-x: hidden;
+   width: 100%;
+   /*overflow-x: hidden;*/
 }
-
 #container {
    min-height:100%;
-   width: 100%;
    position:relative;
    margin:0;
    padding:0;
 }
 
 .container-fluid {
-    max-width: 90%;
-    min-width: 500px;
-    min-height: 500px;
+    /*max-width: 100%;*/
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 20px;
@@ -28,41 +24,31 @@ body {
 #header {
    width: 100%;
 }
-
 #body {
    padding-bottom:125px;   /* Height of the footer */
-   width:100%;
-
+   /*width: 100%;*/
 }
 
 .raleway {
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    font-family: Raleway;
     color: #595145;
 }
 
 .basicFontStyle {
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    font-family: Raleway;
     color: #595145;
     font-size: large;
 }
 
-h1, h3 {
-    font-weight: 200;
-}
-
-h2{ 
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
-    font-weight: 200;
+h2,h3{ 
+    font-family: Raleway;
+    font-weight: bold;
     color:#595145;
 }
 
 .h3White {
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    font-family: Raleway;
     color:white;
-}
-
-h1, h3 {
-    font-weight: 200;
 }
 
 /*Top Header**************************************************************************/
@@ -76,10 +62,11 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    text-align:center;
 }
 
 .topLink a {
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    font-family: Raleway;
     display: block;
     color: #595145;
     text-align: center;
@@ -98,12 +85,12 @@ ul {
 }
 
 .bottomLink a {
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    font-family: Raleway;
     display: block;
     color: #595145;
     text-align: center;
-    padding: 50px 50px 50px;
-    font-size: 150%;
+    padding: 50px 80px 50px;
+    font-size: 23px;
 }
 
 #rehab {
@@ -115,18 +102,18 @@ a:hover {
 }
 
 #headerTitle {
-   font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+   font-family: Raleway;
    font-size: 30px;
    color: #595145;
-   float:left;
-
+   position: absolute;
+   left: 140px;
+   bottom: 15px;
 }
 
 .logo {
-    /*left: 20px;*/
-    max-width: 100%;
-    max-height: 100%;
-    float:left;
+    position: absolute;
+    left: 15px;
+    height: 120px;
 }
 
 /*Footer*********************************************************************/
@@ -143,34 +130,33 @@ a:hover {
 .griffithLogo {
     position: relative;
     padding-left: 80px;
+    /*height: 80%;*/
     top: 12%;
 }
 
 .socialMedia {
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Raleway;
     color: #595145;
 }
 
 .followUs {
     font-size: 25px;
-        width: 50%;
-    margin: 0 auto;
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
 }
 
 #blackBar{
+    display: block;
+    width:120px;
     height:3px;
-    width: 15%;
-    margin: 0 auto;
     background-color:#595145;
 }
 
 .copyright {
     position: absolute;
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana; 
+    font-family: Raleway; 
     /*display: block;*/
     color: #595145;
     font-size: 12px;
@@ -182,7 +168,7 @@ a:hover {
 
 .tripleHeader {
     position: relative;
-    background-color: #F2D388;
+    background-color: #FFE599;
     padding: 5px;
     text-align: center;
 }
@@ -190,35 +176,35 @@ a:hover {
 .pageTitle {
     display:block;
     text-align:center;
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    font-family: Raleway;
     color: #595145;
 }
 
 /*FORTH HEADER*******************************************************************/
 
-.forthHeader {
-    position: relative;
-    background-color: #A7D2CB;
-    text-align: center;
-}
+/*.forthHeader {*/
+/*    position: relative;*/
+/*    background-color: #A7D2CB;*/
+/*    text-align: center;*/
+/*}*/
 
-.quadLink {
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
-    display: block;
-    float: center;
-    color: #595145;
-    text-align: center;
-    padding: 10px 30px 10px;
-    font-size: 130%;
-}
+/*.quadLink {*/
+/*    font-family: Raleway;*/
+/*    display: block;*/
+    /*float: center;*/
+/*    color: #595145;*/
+/*    text-align: center;*/
+/*    padding: 10px 30px 10px;*/
+/*    font-size: 23px;*/
+/*}*/
 .quadLink {
     width: 100%;
-    margin-left: auto ;
-    margin-right: auto ;
+    /*margin-left: auto ;*/
+    /*margin-right: auto ;*/
     background-color: #A7D2CB;
 }
 .quadLink ul {
-    list-style-type: none;
+    list-style-type: none; /*to remove bullets*/
     text-align: center;
     padding: 0px;
     zoom:1;
@@ -226,13 +212,12 @@ a:hover {
     overflow: hidden;
 }
 .quadLink li{
-    /*font-family: 'Raleway' , sans-serif, Helvetica, Verdana;*/
+    font-family: Raleway;
     width: 33%;
     display:inline-block;
-    /*padding: 10px 30px;*/
-    /*font-size: 130%;*/
+    padding: 10px 30px;
+    font-size: 23px;
 }
-
 .quadLink a{
     color: #595145;
 }
@@ -244,14 +229,14 @@ a:hover {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
       width: 100%;
-      height: 100%;
       margin: auto;
+      height: 550px;
 }
 
 .panelOne {
     background-color: #A7D2CB;
     color: white;
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    font-family: raleway;
 }
 
 .panelOneButton {
@@ -262,7 +247,7 @@ a:hover {
 .panelTwo {
     background-color: #88ABA5;
     color: white;
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    font-family: raleway;
 }
 
 .panelTwoButton {
@@ -274,7 +259,7 @@ a:hover {
 .panelThree {
     background-color: #576E6A;
     color: white;
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    font-family: raleway;
 }
 
 .panelThreeButton {
@@ -285,7 +270,7 @@ a:hover {
 
 /*LOGIN PAGE CSS****************************************************************/
 
-Input fields login
+/*Input fields login*/
 .login{
     width: 30%;
     padding: 12px 20px;
@@ -311,41 +296,24 @@ button:hover {
 }
 
 #noLogin {
-  /*position: absolute;*/
-  /*left: 30%;*/
-  text-align: center;
   width: 50%;
   margin: 0 auto;
 }
 
-.login {
-    width: 60%;
-    padding: 10px;
-    
+.verticalLine {
+    position: absolute;
+    left: 40%;
+    display: block;
+    width:2px;
+    height:53%;
+    background-color:#999999;
 }
-
-.loginBlock{
-
-  /*    width: 50%;*/
-  /*margin: 0 auto;*/
-  padding-left: 40%;
-}
-
-/*.verticalLine {*/
-    /*position: absolute;*/
-    /*left: 33.5%;*/
-/*    display: block;*/
-/*    width:2px;*/
-/*    height:53%;*/
-/*    background-color:#999999;*/
-/*}*/
 
 /*ABOUT US PAGE****************************************************************/
 
 .aboutUsImageOne {
     position: relative;
-    width: 100%;
-    /*height: 70%;*/
+    /*margin-left: 5%;*/
 }
 
 .doctorImage {
@@ -360,22 +328,18 @@ button:hover {
     border-color: white;
 }
 
-.meetDoctor {
-    font-family: Raleway, sans-serif;
-    color: #595145;
-}
-
 .blocks {
     position: relative;
+    /*height: 430px;*/
     /*set same height as images*/
-    height: 50%;
-    width: 100%;
+    min-height: 430px;
+    width: 700px;
 }
 
 .yellowBar {
     position: relative;
-    right:8%;
-    width:121%;
+    right:5%;
+    width:108.7%;
     height:80px;
     display: block;
     background-color:#F2D388;
@@ -388,13 +352,13 @@ button:hover {
 
 .moduleButton {
     text-align: center;
-    width: 80%;
+    width:50%;
     display:block;
     margin:0 auto;
 }
 
 .moduleButtonTwo {
-    width: 80%;
+    width: 50%;
     display:block;
     margin:0 auto;
     bottom: 10px;
@@ -421,10 +385,7 @@ button:hover {
     height: 200px;
     margin: 3px 0;
 }
-/*User Profile css****************************************************************/
-
-
-/*User Profile Module Scroll css****************************************************************/
+/*Module Scroll css****************************************************************/
 
 #scroll {
 width:90%;
@@ -434,7 +395,7 @@ background:#A3CBE0;
 border:2px solid #000;
 overflow:auto;
 white-space:nowrap;
-/*box-shadow:0 0 10px #000;*/
+box-shadow:0 0 10px #000;
 }
 #scroll img {
 margin:20px 10px 0 10px;
@@ -445,21 +406,19 @@ margin:20px 10px 0 10px;
 
 .faq_question {
     margin: 0px;
-    padding: 20px 50px 20px;
-    width: 100%;
+    padding: 0px 0px 5px 0px;
     display: inline-block;
     cursor: pointer;
     font-weight: bold;
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
-    color: #595145;
-    background-color:#A7D2CB;
-    font-size: large;
 }
  
 .faq_answer_container {
     height: 0px;
     overflow: hidden;
     padding: 0px;
-    padding-left: 50px;
-    color: #595145;
+}
+
+/*Register*************************************/
+.content_container {
+    width: 20px;
 }

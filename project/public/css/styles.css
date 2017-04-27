@@ -1,0 +1,469 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+   width:100%;
+   overflow-x: hidden;
+}
+
+#container {
+   min-height:100%;
+   width: 100%;
+   position:relative;
+   margin:0;
+   padding:0;
+}
+
+.container-fluid {
+    max-width: 90%;
+    min-width: 500px;
+    min-height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+
+#header {
+   width: 100%;
+}
+
+#body {
+   padding-bottom:125px;   /* Height of the footer */
+   width:100%;
+
+}
+
+.raleway {
+    font-family: Raleway, sans-serif;
+    color: #595145;
+}
+
+.basicFontStyle {
+    font-family: Raleway, sans-serif;
+    color: #595145;
+    font-size: large;
+}
+
+h1 {
+    color:#595145;
+    font-weight: 500;
+}
+
+h2{ 
+    font-weight: 400;
+    color:#595145;
+    font-size: 25px;
+}
+
+h3 {
+   font-weight: 300;
+   color:#595145;
+}
+
+.h3White {
+    font-family: Raleway, sans-serif;
+    color:white;
+}
+
+/*TopHeader**************************************************************************/
+
+.topHeader {
+	background-color: #F2D388;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topLink a {
+    display: block;
+    color: #595145;
+    text-align: center;
+    padding: 14px 25px;
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+
+/*bottom header**************************************************************************/
+
+.bottomHeader {
+    position: relative;
+    background-color: #A7D2CB;
+    /*padding: 50px 50px;*/
+}
+
+.bottomLink a {
+    display: block;
+    color: #595145;
+    text-align: center;
+    padding: 50px 50px 50px;
+    font-size: 150%;
+    font-weight: 300;
+}
+
+#rehab {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+a:hover {
+    color: white;
+}
+
+#headerTitle {
+   font-size: 30px;
+   color: #595145;
+   float:left;
+   font-weight: 400;
+
+}
+
+.logo {
+    /*left: 20px;*/
+    max-width: 100%;
+    max-height: 100%;
+    float:left;
+}
+
+/*Footer*********************************************************************/
+
+#footer {
+  background-color: #F2D388;
+  text-align: center;
+  height: 125px;
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+
+.griffithLogo {
+    position: relative;
+    padding-left: 80px;
+    top: 12%;
+}
+
+.socialMedia {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    font-family: Raleway, sans-serif;
+    color: #595145;
+}
+
+.followUs {
+    font-size: 25px;
+        width: 50%;
+    margin: 0 auto;
+    font-family: Raleway, sans-serif;
+}
+
+#blackBar{
+    height:3px;
+    width: 15%;
+    margin: 0 auto;
+    background-color:#595145;
+}
+
+.copyright {
+    position: absolute;
+    font-family: Raleway, sans-serif;
+    /*display: block;*/
+    color: #595145;
+    font-size: 12px;
+    bottom: 15px;
+    left: 80%;
+}
+
+/*TRIPLE HEADER*****************************************************/
+
+.tripleHeader {
+    position: relative;
+    background-color: #F2D388;
+    padding: 5px;
+    text-align: center;
+}
+
+.pageTitle {
+    display:block;
+    text-align:center;
+    font-family: Raleway, sans-serif;
+    color: #595145;
+}
+
+/*FORTH HEADER*******************************************************************/
+
+.forthHeader {
+    position: relative;
+    background-color: #A7D2CB;
+    text-align: center;
+}
+
+.quadLink {
+    font-family: Raleway, sans-serif;
+    display: block;
+    float: center;
+    color: #595145;
+    text-align: center;
+    padding: 10px 30px 10px;
+    font-size: 130%;
+}
+.quadLink {
+    width: 100%;
+    margin-left: auto ;
+    margin-right: auto ;
+    background-color: #A7D2CB;
+}
+.quadLink ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    zoom:1;
+    /*border:1px solid red;*/
+    overflow: hidden;
+}
+.quadLink li{
+    /*font-family: 'Raleway' , sans-serif, Helvetica, Verdana;*/
+    width: 33%;
+    display:inline-block;
+    /*padding: 10px 30px;*/
+    /*font-size: 130%;*/
+}
+
+.quadLink a{
+    color: #595145;
+}
+
+
+/*HOME PAGE CSS********************************************************************/
+
+/*Carousel css*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+}
+
+.panelOne {
+    background-color: #A7D2CB;
+    color: white;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+}
+
+.panelOneButton {
+    background-color: white;
+    color: #A7D2CB;
+}
+
+.panelTwo {
+    background-color: #88ABA5;
+    color: white;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+}
+
+.panelTwoButton {
+    color: #88ABA5;
+    background-color: white;
+    
+}
+
+.panelThree {
+    background-color: #576E6A;
+    color: white;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+}
+
+.panelThreeButton {
+    color: #576E6A;
+    background-color: white;
+}
+
+
+/*LOGIN PAGE CSS****************************************************************/
+
+Input fields login
+.login{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+button {
+    position:relative;
+    background-color: #A7D2CB;
+    font-weight: bold;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#noLogin {
+  /*position: absolute;*/
+  /*left: 30%;*/
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.login {
+    width: 60%;
+    padding: 10px;
+    
+}
+
+.loginBlock{
+
+  /*    width: 50%;*/
+  /*margin: 0 auto;*/
+  padding-left: 40%;
+}
+
+/*.verticalLine {*/
+    /*position: absolute;*/
+    /*left: 33.5%;*/
+/*    display: block;*/
+/*    width:2px;*/
+/*    height:53%;*/
+/*    background-color:#999999;*/
+/*}*/
+
+/*ABOUT US PAGE****************************************************************/
+
+.aboutUsImageOne {
+    position: relative;
+    width: 100%;
+    /*height: 70%;*/
+}
+
+.doctorImage {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.doctorPanel {
+    border-color: white;
+    color: #595145;
+}
+
+.meetDoctor {
+    font-family: Raleway, sans-serif;
+    color: #595145;
+}
+
+.blocks {
+    position: relative;
+    /*set same height as images*/
+    height: 50%;
+    width: 100%;
+}
+
+.yellowBar {
+    position: relative;
+    right:8%;
+    width:121%;
+    height:80px;
+    display: block;
+    background-color:#F2D388;
+
+}
+
+.meetStaffPanel {
+    position: relative;
+}
+
+.moduleButton {
+    text-align: center;
+    width: 80%;
+    display:block;
+    margin:0 auto;
+}
+
+.moduleButtonTwo {
+    width: 80%;
+    display:block;
+    margin:0 auto;
+    bottom: 10px;
+    background-color: #88ABA5;
+}
+
+/*CONTACT US PAGE CSS*************************************************************/
+
+#contactName, #contactEmail, #contactSubject{
+    width: 300px;
+    margin: 3px 0;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #666666;  
+    color:#595145;
+}
+
+
+#comment {
+    border-style: solid;
+    border-color: #666666;  
+    color:#595145;
+    width: 300px;
+    height: 200px;
+    margin: 3px 0;
+}
+/*User Profile css****************************************************************/
+
+
+/*User Profile Module Scroll css****************************************************************/
+
+#scroll {
+width:90%;
+height:1000;
+margin:100px auto;
+background:#A3CBE0;
+border:2px solid #000;
+overflow:auto;
+white-space:nowrap;
+/*box-shadow:0 0 10px #000;*/
+}
+#scroll img {
+margin:20px 10px 0 10px;
+}
+
+
+/*FAQ QUESTION CSS***************************************************************************/
+
+.faq_question {
+    margin: 0px;
+    padding: 20px 50px 20px;
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    color: #595145;
+    background-color:#A7D2CB;
+    font-size: large;
+}
+ 
+.faq_answer_container {
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 50px;
+    color: #595145;
+}
