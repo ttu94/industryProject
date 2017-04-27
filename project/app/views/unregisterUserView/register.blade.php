@@ -10,33 +10,37 @@
 @endsection
 
 @section('content')
-<div class="content_container">
-    <div class="content_container">
-        <hr>
-    </div>
-    <h2>Personal Details</h2>
-    <hr>
-    <input type="text" name="firstname" placeholder="First name *">
-    <input type="text" name="lastname" placeholder="Last name *"><br>
-    <input type="number" name="age" placeholder="Age *">
+<div class="container-fluid">
+    
+    <div class="col-md-12">
+            <h2>Personal Details</h2>
+            <input class="register" type="text" name="firstname" placeholder="First name *" required>
+            <input class="register" type="text" name="lastname" placeholder="Last name *" required>
+            <br>
 
-    <input type="radio" name="gender" value="male" checked> Male
-    <input type="radio" name="gender" value="female" checked> Female
-    <input type="radio" name="gender" value="other" checked> Other<br>
-    
-    <input type="email" name="email" placeholder="Email *"><br>
-    <input type="password" name="password" placeholder="Password *">
-    <input type="password" name="password2" placeholder="Confirm Password*">
-    
-    <h2>Other Details</h2>
-    <hr>
-    <p>I am: <font color="red">*</font></p>
-    <input type="radio" name="usertype" value="patient" checked>a patient with a spinal cord injury (SCI)
-    <input type="radio" name="usertype" value="carer" checked>a family member/carer of a spinal cord injury (SCI) patient
-    <input type="radio" name="usertype" value="student" checked>a student
-    <input type="radio" name="usertype" value="other" checked>other<br>
-    
-    
+            <p class="gender"> Gender<font color="red">*</font></p>
+            <input class="age" type="number" name="age" placeholder="Age *" required>
+        
+            <input type="radio" name="gender" value="male" checked> Male
+            <input type="radio" name="gender" value="female" checked> Female
+            <input type="radio" name="gender" value="other" checked> Other<br>
+            
+            <input class="email" type="email" name="email" placeholder="Email *" required><br>
+            <input class="register" type="password" name="password" placeholder="Password *" required>
+            <input class="register" type="password" name="password2" placeholder="Confirm Password*" required>
+            
+            <h2>Other Details</h2>
+            
+            <p>I am: <font color="red">*</font></p>
+            <input type="radio" name="usertype" value="patient" checked> a patient with a spinal cord injury (SCI)
+            <br>
+            <input type="radio" name="usertype" value="carer" checked> a family member/carer of a spinal cord injury (SCI) patient
+            <br>
+            <input type="radio" name="usertype" value="student" checked> a student
+            <br>
+            <input type="radio" name="usertype" value="other" checked> other
+            <br>
+    </div>
 </div>
 
 @endsection
