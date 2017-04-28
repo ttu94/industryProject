@@ -55,6 +55,13 @@ Route::get('faq', function()
  
 });
 
+//Route To abstract module.
+Route::get('abstractModule', function()
+{
+    return View::make('unregisterUserView/abstractModule');
+ 
+});
+
 // REGISTERD USERS ROUTES***************************************************
 // *****************************************************************************
 
@@ -62,6 +69,14 @@ Route::get('faq', function()
 Route::get('signIn', function()
 {
     return View::make('registeredUserView/userProfilePage');
+ 
+});
+
+//Route To education module.
+// NOTE: USER NEEDS TO BE SIGNED IN ***********
+Route::get('educationModule', function()
+{
+    return View::make('registeredUserView/educationModule');
  
 });
 

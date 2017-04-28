@@ -41,7 +41,7 @@
         <!--FORTH SECTION OF HEADER-->
         <div class="quadLink">
             <ul>
-                <li class="eduMod" style="width:33%"><a href="#">EDUCATIONAL MODULES</a></li>
+                <li class="eduMod" style="width:33%"><a href="educationModule">EDUCATIONAL MODULES</a></li>
                 <li class="eduMod" style="width:33%"><a href="#">SEE RESULTS</a></li>
                 <li class="eduMod" style="width:33%"><a href="#">ACCOUNT DETAILS</a></li>
             </ul>

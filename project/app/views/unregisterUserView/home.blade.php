@@ -73,7 +73,7 @@
                     nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
                     accumsan. Aliquam in felis sit amet augue. <br>
                     
-                    <a href="Register"><button class="panelTwoButton">Read More</button></a>
+                    <a href="abstractModule"><button class="panelTwoButton">Read More</button></a>
                 </div>
             </div>
         </div>

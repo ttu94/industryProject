@@ -17,13 +17,17 @@
             <input class="register" type="text" name="firstname" placeholder="First name *" required>
             <input class="register" type="text" name="lastname" placeholder="Last name *" required>
             <br>
-
-            <p class="gender"> Gender<font color="red">*</font></p>
+            
             <input class="age" type="number" name="age" placeholder="Age *" required>
-        
-            <input type="radio" name="gender" value="male" checked> Male
-            <input type="radio" name="gender" value="female" checked> Female
-            <input type="radio" name="gender" value="other" checked> Other<br>
+            <!--gender selection box-->
+            <div class="genderSelection">
+                <p class="gender">Gender<font color="red">*</font></p>
+                <input type="radio" name="gender" value="male" checked> Male
+                <input type="radio" name="gender" value="female" checked> Female
+                <input type="radio" name="gender" value="other" checked> Other
+            </div>
+            <input class="age" type="number" name="age" placeholder="Age *" required>
+
             
             <input class="email" type="email" name="email" placeholder="Email *" required><br>
             <input class="register" type="password" name="password" placeholder="Password *" required>

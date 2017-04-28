@@ -1,12 +1,12 @@
 @extends('layouts.unregisteredMaster')
 
 @section('title')
-	FAQ
+	Abstract Education Module
 @endsection
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
-   <h2>Frequently Asked Questions</h2>
+   <h2>Abstract Education Modules</h2>
 @endsection
 
 @section('content')
@@ -14,7 +14,7 @@
     <div class="row">
        
         <div class="col-md-12">
-            <h3 style="color:#595145">General</h3>
+             <br>
             <div class="faq_container">
                <div class="faq">
                   <div class="faq_question">I have forgotten my password, what do I do?</div>
@@ -29,7 +29,7 @@
                           <div class="faq_answer"><br>The full modules and quizzes are open for registered users only. Abstracts of each module are available to the public.</div>
                        </div>        
                 </div>
-               <h3 style="color:#595145">Modules</h3> 
+             <br>
                <div class="faq">
                   <div class="faq_question">Can I download the modules?</div>
                        <div class="faq_answer_container">
@@ -50,7 +50,7 @@
                           <div class="faq_answer"><br>Time. Give it time.</div>
                        </div>        
                 </div>
-                <h3 style="color:#595145">Quizzes</h3>
+               <br> 
                <div class="faq">
                   <div class="faq_question">How many attempts do I have to complete a quiz?</div>
                        <div class="faq_answer_container">

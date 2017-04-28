@@ -15,7 +15,10 @@
     <div class="row">
         <!--LEFT SIDE OF SCREEN-->
         <div class="col-md-6">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.4015585955476!2d153.06056591092639!3d-27.55004541144087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16a2c299555e1370!2sGriffith+Institute+for+Drug+Discovery+(GRIDD)!5e0!3m2!1sen!2sau!4v1493115715649" width="750" height="600" frameborder="0" style="border-color:black" allowfullscreen></iframe>
+          <div class="block">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.4015585955476!2d153.06056591092639!3d-27.55004541144087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16a2c299555e1370!2sGriffith+Institute+for+Drug+Discovery+(GRIDD)!5e0!3m2!1sen!2sau!4v1493115715649" width="750" height="600" frameborder="0" style="border-color:black" allowfullscreen></iframe>
+        
+          </div>
         </div>
         <!--RIGHT SIDE OF SCREEn-->
 
