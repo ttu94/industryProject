@@ -350,6 +350,38 @@ button:hover {
 /*    background-color:#999999;*/
 /*}*/
 
+/*REGISTER PAGE CSS****************************************************************/
+
+.register {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+.age {
+    width: 8%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+.email {
+    width: 60.3%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+.gender {
+    text-indent: 8.5%;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
 /*ABOUT US PAGE****************************************************************/
 
 .aboutUsImageOne {
