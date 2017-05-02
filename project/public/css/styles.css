@@ -257,7 +257,7 @@ a:hover {
 .panelOne {
     background-color: #A7D2CB;
     color: white;
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    font-family: Raleway, sans-serif;
 }
 
 .panelOneButton {
@@ -268,7 +268,7 @@ a:hover {
 .panelTwo {
     background-color: #88ABA5;
     color: white;
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    font-family: Raleway, sans-serif;
 }
 
 .panelTwoButton {
@@ -280,7 +280,7 @@ a:hover {
 .panelThree {
     background-color: #576E6A;
     color: white;
-    font-family: 'Raleway' , sans-serif, Helvetica, Verdana;
+    font-family: Raleway , sans-serif;
 }
 
 .panelThreeButton {
@@ -358,10 +358,11 @@ button:hover {
 
 .age {
     width: 8%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
+    padding: 12px 20px 12px;
+    margin: 0px 50px 0px 0px;
+    /*display: inline-block;*/
     border: 1px solid #ccc;
+    float: left;
 }
 
 .email {
@@ -373,9 +374,14 @@ button:hover {
 }
 
 .gender {
-    text-indent: 8.5%;
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 2px;
+    
+    /*float: left;*/
+}
+
+.genderSelection {
+    
 }
 
 /*ABOUT US PAGE****************************************************************/
@@ -476,7 +482,7 @@ margin:20px 10px 0 10px;
 }
 
 
-/* QUESTION CSS***************************************************************************/
+/* FAQ QUESTION CSS***************************************************************************/
 
 .faq_question {
     margin: 0px;
@@ -502,4 +508,105 @@ margin:20px 10px 0 10px;
 .faq_answer {
     color: #595145;
     font-family: Raleway, sans-serif;
+}
+
+/*ABSTRACT EDUCATIONAL MODULE PAGE CSS*****************************************/
+
+.abstract_question {
+    margin: 0px;
+    padding: 10px 50px 20px;
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 200;
+    /*font-family: Raleway, sans-serif;*/
+    color: #595145;
+    background-color:#A7D2CB;
+    font-size: large;
+}
+ 
+.abstract_answer_container {
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 50px;
+    color: #595145;
+}
+
+.abstract_answer {
+    color: #595145;
+    font-family: Raleway, sans-serif;
+}
+
+
+/*ABSTRACT EDUCATIONAL MODULE PAGE CSS*****************************************/
+
+.moduleTitle {
+    font-size: 20px;
+    text-align: center;
+}
+
+.panelsOne {
+    background-color: #A7D2CB;
+    color: white;
+    font-family: Raleway, sans-serif;
+    padding-bottom: 9px;
+} 
+
+.moduleOneButton {
+    text-align: center;
+    width: 40%;
+    display:block;
+    margin:0 auto;
+    background-color: white;
+    color: #A7D2CB;
+}
+
+.panelsTwo {
+    background-color: #88ABA5;
+    color: white;
+    font-family: Raleway, sans-serif;
+    position: relative;
+}
+
+.moduleTwoButton {
+    text-align: center;
+    width: 40%;
+    display:block;
+    margin:0 auto;
+    background-color: white;
+    color: #88ABA5;
+}
+
+.panelsThree {
+    background-color: #576E6A;
+    color: white;
+    font-family: Raleway , sans-serif;
+}
+
+.moduleThreeButton {
+    text-align: center;
+    width: 40%;
+    display:block;
+    margin:0 auto;
+    background-color: white;
+    color: #576E6A;
+}
+
+.panelsFour {
+    background-color: #A7D2CB;
+    color: white;
+    font-family: Raleway, sans-serif;
+    position: relative;
+    width: 65%;
+    left: 220px;
+}
+
+.panelsFive {
+    background-color: #A7D2CB;
+    color: white;
+    font-family: Raleway, sans-serif;
+    position: relative;
+    width: 65%;
+    right: 5px;
 }

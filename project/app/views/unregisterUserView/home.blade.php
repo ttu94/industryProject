@@ -45,8 +45,10 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  
+
+
 <div>
+  
     <br>
     <div class="row">
         <div class="col-md-4">
@@ -87,7 +89,7 @@
                     nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
                     accumsan. Aliquam in felis sit amet augue.<br>
                     
-                    <a href="Register"><button class="panelThreeButton">Read More</button></a>
+                    <a href="register"><button class="panelThreeButton">Read More</button></a>
                 </div>
             </div>
         </div>

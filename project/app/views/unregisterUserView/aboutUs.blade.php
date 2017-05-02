@@ -93,7 +93,6 @@
             </div>
         </div>
         <!--Panels which contain the medical staff-->
-        <!--<div class="meetStaffPanel">-->
             
             <div class="col-md-12">
                 
@@ -147,7 +146,7 @@
                 </div>
             </div>
           
-        <!--</div>-->
+        
 
 </div>
 

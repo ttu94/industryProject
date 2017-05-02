@@ -13,20 +13,22 @@
 <div class="container-fluid">
     
     <div class="col-md-12">
+        <!--<div>-->
             <h2>Personal Details</h2>
             <input class="register" type="text" name="firstname" placeholder="First name *" required>
             <input class="register" type="text" name="lastname" placeholder="Last name *" required>
             <br>
-            
-            <input class="age" type="number" name="age" placeholder="Age *" required>
-            <!--gender selection box-->
-            <div class="genderSelection">
-                <p class="gender">Gender<font color="red">*</font></p>
-                <input type="radio" name="gender" value="male" checked> Male
-                <input type="radio" name="gender" value="female" checked> Female
-                <input type="radio" name="gender" value="other" checked> Other
+            <div class="ageGender">
+                <input class="age" type="number" name="age" placeholder="Age *" required>
+                <!--gender selection box-->
+                <div class="genderSelection basicFontStyle">
+                    <p class="gender">Gender<font color="red">*</font></p>
+                    <input type="radio" name="gender" value="male" checked> Male
+                    <input type="radio" name="gender" value="female" checked> Female
+                    <input type="radio" name="gender" value="other" checked> Other
+                </div>
             </div>
-            <input class="age" type="number" name="age" placeholder="Age *" required>
+            
 
             
             <input class="email" type="email" name="email" placeholder="Email *" required><br>

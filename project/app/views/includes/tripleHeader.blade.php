@@ -22,10 +22,7 @@
              </a>
               <h1 id="headerTitle">Spinal Cord Injury <br><span id="rehab">Rehabilitation</span></h1>
               <li style="float:right" class="bottomLink"><a href="contactUs">CONTACT</a></li>
-              <li style="float:right" class="bottomLink">
-                <a>
-                    ABSTRACT MODULES
-                </a>
+              <li style="float:right" class="bottomLink"><a href="abstractModule">ABSTRACT MODULES</a>
               </li>
               <li style="float:right" class="bottomLink"><a href="faq">FAQ</a></li>
               <li style="float:right" class="bottomLink"><a href="aboutUs">ABOUT</a></li>

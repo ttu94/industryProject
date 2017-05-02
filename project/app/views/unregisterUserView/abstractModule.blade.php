@@ -1,12 +1,12 @@
 @extends('layouts.unregisteredMaster')
 
 @section('title')
-	Abstract Education Module
+	Abstract Educational Module
 @endsection
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
-   <h2>Abstract Education Modules</h2>
+   <h2>Abstract Educational Modules</h2>
 @endsection
 
 @section('content')
@@ -14,10 +14,10 @@
     <div class="row">
        
         <div class="col-md-12">
-             <br>
+            <br>
             <div class="faq_container">
                <div class="faq">
-                  <div class="faq_question">I have forgotten my password, what do I do?</div>
+                  <div class="faq_question"><h3><strong>Module 1: </strong>Demographics & Economics of Spinal Cord Injury</h3></div>
                        <div class="faq_answer_container">
                           <div class="faq_answer"><br>If you forget your password, you can recover it from the "Login" page, via "Forgot Password". Alternatively, you can click the link below (link here)</div>
                        </div>        
@@ -29,7 +29,7 @@
                           <div class="faq_answer"><br>The full modules and quizzes are open for registered users only. Abstracts of each module are available to the public.</div>
                        </div>        
                 </div>
-             <br>
+               <br>
                <div class="faq">
                   <div class="faq_question">Can I download the modules?</div>
                        <div class="faq_answer_container">
@@ -50,7 +50,7 @@
                           <div class="faq_answer"><br>Time. Give it time.</div>
                        </div>        
                 </div>
-               <br> 
+                <br>
                <div class="faq">
                   <div class="faq_question">How many attempts do I have to complete a quiz?</div>
                        <div class="faq_answer_container">
