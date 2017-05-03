@@ -10,42 +10,85 @@
 @endsection
 
 @section('content')
-<div class="container-fluid">
-    
+<div class="container-fluid basicFontStyle">
     <div class="col-md-12">
         <!--<div>-->
             <h2>Personal Details</h2>
-            <input class="register" type="text" name="firstname" placeholder="First name *" required>
-            <input class="register" type="text" name="lastname" placeholder="Last name *" required>
-            <br>
-            <div class="ageGender">
+            <hr>
+            <div style="column-count:2">
+                <input class="register" type="text" name="firstname" placeholder="First name *" required>
+                <input class="register" type="text" name="lastname" placeholder="Last name *" required>
+            </div>
+            <!--<br>-->
+            <div class="ageGender">  <!--class not used yet-->
                 <input class="age" type="number" name="age" placeholder="Age *" required>
                 <!--gender selection box-->
-                <div class="genderSelection basicFontStyle">
+                <div class="linearRadio">
                     <p class="gender">Gender<font color="red">*</font></p>
-                    <input type="radio" name="gender" value="male" checked> Male
-                    <input type="radio" name="gender" value="female" checked> Female
-                    <input type="radio" name="gender" value="other" checked> Other
+                    <input style="margin-left:0px" type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
                 </div>
             </div>
             
 
             
-            <input class="email" type="email" name="email" placeholder="Email *" required><br>
-            <input class="register" type="password" name="password" placeholder="Password *" required>
-            <input class="register" type="password" name="password2" placeholder="Confirm Password*" required>
+            <input class="email" type="email" name="email" placeholder="Email *" required>
+            
+            <div style="column-count:2">
+                <input class="register" type="password" name="password" placeholder="Password *" required>
+                <input class="register" type="password" name="password2" placeholder="Confirm Password*" required>
+            </div>
             
             <h2>Other Details</h2>
-            
+            <hr>
             <p>I am: <font color="red">*</font></p>
-            <input type="radio" name="usertype" value="patient" checked> a patient with a spinal cord injury (SCI)
-            <br>
-            <input type="radio" name="usertype" value="carer" checked> a family member/carer of a spinal cord injury (SCI) patient
-            <br>
-            <input type="radio" name="usertype" value="student" checked> a student
-            <br>
-            <input type="radio" name="usertype" value="other" checked> other
-            <br>
+            <div class="oUsertype">
+                <input type="radio" name="usertype" value="patient"checked> a patient with a spinal cord injury (SCI)
+                <br>
+                <input type="radio" name="usertype" value="carer"> a family member/carer of a spinal cord injury (SCI) patient
+                <br>
+                <input type="radio" name="usertype" value="student"> a student
+                <br>
+                <input type="radio" name="usertype" value="other"> other
+                <input class="other" style="margin-left:60px;max-width:475px;width:100%;" type="text" name="other" placeholder="Please state other">
+            </div>
+            <div class="otherDetailBox box">
+                <p>Please answer the following questions if you are a <u>patient:</u></p>
+                <hr>
+                <p>When did your injury occur?</p>
+                <!--<input type="text" id="datepicker">-->
+                <input type="date" name="injuryDate" style="text-align:center">
+                <div class="linearRadio">
+                    <p><br>Are you taking any treatment for it?</p>
+                    <input style="margin-left:0px" type="radio" name="treatment" value="yes"> Yes
+                    <input type="radio" name="treatment" value="no"> No
+                </div>
+                <input class="treated" type="text" name="yesTreat" placeholder="What is the treatment?">
+                
+                <div class="linearRadio">
+                    <p><br>Will you be interested in participating in the clinical trial?</p>
+                    <input style="margin-left:0px" type="radio" name="treatment" value="yes"> Yes
+                    <input type="radio" name="treatment" value="no"> No
+                </div>
+                
+                <div class="linearRadio">
+                    <p><br>Will you be interested in participating in the physiotherapy trial?</p>
+                    <input style="margin-left:0px" type="radio" name="treatment" value="yes"> Yes
+                    <input type="radio" name="treatment" value="no"> No
+                </div>
+            </div>
+            
+            <div class="otherDetailBox boxtwo">
+                <p>Please answer the following questions if you are <u>not a patient:</u></p>
+                <hr>
+                <div class="linearRadio">
+                    <p>Do you know anyone who is suffering from spinal cord injury (SCI)?</p>
+                    <input style="margin-left:0px" type="radio" name="onbehalf" value="yes"> Yes
+                    <input type="radio" name="onbehalf" value="no"> No
+                </div>
+            </div>
+            <div style="margin-top:20px;text-align:center"><button type="submit" value="">Create Account</button></div>
     </div>
 </div>
 

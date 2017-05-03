@@ -64,6 +64,12 @@ h3 {
    font-family: Raleway, sans-serif;
 }
 
+hr {
+ height:1px;
+ border:none;
+ color:#333;
+ background-color:#333;
+}
 .h3White {
     font-family: Raleway, sans-serif;
     color:white;
@@ -347,9 +353,9 @@ button:hover {
 /*}*/
 
 /*REGISTER PAGE CSS****************************************************************/
-
 .register {
-    width: 30%;
+    width: 100%;
+    float: left;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -357,8 +363,9 @@ button:hover {
 }
 
 .age {
+    min-width: 100px;
     width: 8%;
-    padding: 12px 20px 12px;
+    padding: 12px 20px;
     margin: 0px 50px 0px 0px;
     /*display: inline-block;*/
     border: 1px solid #ccc;
@@ -374,14 +381,44 @@ button:hover {
 }
 
 .gender {
-    margin-top: 10px;
-    margin-bottom: 2px;
+    margin: 10px 0px 2px 0px;
+    /*margin-top: 10px;*/
+    /*margin-bottom: 2px;*/
     
     /*float: left;*/
 }
 
-.genderSelection {
-    
+.linearRadio input { 
+    margin: 0px 0px 0px 20px;
+}
+
+.oUsertype input {
+    margin: 0px 0px 10px 0px;
+}
+
+.box {
+    padding: 20px;
+    /*display: none;*/
+    margin-top: 20px;
+}
+
+.boxtwo {
+    padding: 20px;
+    display: none;
+    margin-top: 20px;
+}
+
+.treated {
+    width: 100%;
+    padding: 5px;
+    margin-top: 3px;
+    display: none;
+}
+
+.otherDetailBox {
+    background: linear-gradient(#ffffff, #e6e6e6);
+    width:100%;
+    max-width: 600px;
 }
 
 /*ABOUT US PAGE****************************************************************/

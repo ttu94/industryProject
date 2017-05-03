@@ -36,8 +36,31 @@
     			}
     
     	});
-    
+    	
+    	// this hides and shows the patient's extra detail div box & boxtwo, using the name='usertype'
+    	$('input[name="usertype"]').click(function(){
+         var inputValue = $(this).attr("value");
+         if(inputValue == "patient"){
+          $('.boxtwo').hide();
+          $('.box').show();
+         } else {
+          $('.boxtwo').show();
+          $('.box').hide();
+         }
+    	});
+    	
+    	//this will hide and show the treatment text box using the name='treatment'
+    	$('input[name="treatment"]').click(function() {
+    	    var inputValue = $(this).attr("value");
+    	    if(inputValue == "yes"){
+    	     $('.treated').show();
+    	    } else {
+    	     $('.treated').hide();
+    	    }
+    	});
+     
     });
+    
 </script>
 </head>
 <body>
