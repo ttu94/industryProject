@@ -20,12 +20,19 @@ class CreateUsersTable extends Migration {
 			//user attributes
 			$table->string('firstName');
 			$table->string('lastName');
-			$table->integer('age');
+			$table->integer('age')->unsigned();
 			$table->string('gender');
 			$table->string('country');
 			$table->string('email')->unique();
 			$table->string('password')->index();
 			
+			//user information
+			$table->string('usertype');
+			$table->string('injuryDate');
+			$table->boolean('treatment');
+			$table->string('yesTreat');
+			$table->boolean('clinicalTrial');
+			$table->boolean('physioTrial');
 			//timestamp each account when it is created
  			$table->timestamps();
 		});

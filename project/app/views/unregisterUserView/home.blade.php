@@ -32,7 +32,7 @@
           <p>test</p>
         </div>
       </div>
-  
+    
     </div>
 
     <!-- Left and right controls -->
