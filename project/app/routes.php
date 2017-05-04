@@ -80,3 +80,12 @@ Route::get('educationalModules', function()
  
 });
 
+//Route To module page.
+// NOTE: USER NEEDS TO BE SIGNED IN ***********
+// Link needs to be taken out of database
+Route::get('modulePage', function()
+{
+    return View::make('registeredUserView/modulePage');
+ 
+});
+

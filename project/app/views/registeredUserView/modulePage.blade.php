@@ -1,13 +1,14 @@
 @extends('layouts.masterLogin')
 
 @section('title')
-    Educational Modules
+    {{--Module names needs to be taken out of database--}}
+    Module 1
 @endsection
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h2>Educational Modules</h2>
+   <h2>Module 1</h2>
 @endsection
 
 @section('content')
@@ -30,7 +31,7 @@
                     <p class="moduleTitle">
                         Demographics & Economics of Spinal Cord Injury (SCI)
                     </p><br>
-                    <a href="modulePage"><button class="moduleOneButton">Read More</button></a>
+                    <a href="aboutUs"><button class="moduleOneButton">Read More</button></a>
                 </div>
                 <br>
             </div>

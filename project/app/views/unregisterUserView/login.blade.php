@@ -42,8 +42,10 @@
                 <a href=""><button>Sign In</button></a>
                 <br>
                 <a href="#">Forget Password?</a>
+                <br><br>
+                <a href="#">Admin Login</a>
                 <!--DUMMY LOG IN BUTTON-->
-                <a href="signIn"><button>dummy</button></a>
+                <!--<a href="signIn"><button>dummy</button></a>-->
             </div>
         </div>
 

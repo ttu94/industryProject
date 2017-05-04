@@ -31,22 +31,22 @@
                             info@amarelo.com <br>
                             <form action="/action_page.php">
                                
-                                <input type="text" id="contactName" name="name" placeholder="Name" width="200px" required>
+                                <input type="text" id="contactName" name="contactName" placeholder="Name" width="200px" required>
                                 <br>
     
-                                <input type="text" id="contactEmail" name="email" placeholder="Email" required>
+                                <input type="text" id="contactEmail" name="contactEmail" placeholder="Email" required>
                                 <br>
     
-                                <input type="text" id="contactSubject" name="subject" placeholder="Subject">
+                                <input type="text" id="contactSubject" name="contactSubject" placeholder="Subject">
                                 <br>
     
                                 <textarea id="comment" name="comment" placeholder="How can we help you?" height="1000px"></textarea>
                                 <br>
-                                <button type="submit, button" form="contactUsForm" value="Submit" data-toggle="modal" data-target="#myModal">Submit</button>
+                                <button type="submit, button" style="float:right"form="contactUsForm" value="Submit" data-toggle="modal" data-target="#myModal">Send</button>
                               
                             </form>
                             
-                              <!-- Modal -->
+                              <!-- Modal for contactUs -->
                               <div class="modal fade" id="myModal" role="dialog">
                                 <div class="modal-dialog modal-sm">
                                   <div class="modal-content">
@@ -56,7 +56,7 @@
                                     </div>
                                     <div class="modal-body">
                                       <p>Thank You for your enquiry.<br>
-                                          We'll be sure to emaul you soon!<br>
+                                          We'll be sure to email you soon!<br>
                                           Have a nice day!
                                       </p>
                                     </div>
@@ -69,9 +69,70 @@
                         </div>
                 </div>
         </div>
-        
-
     </div>
+    
+    <!--FEEDBACK SECTION-->
+    <div class="feedback basicFontStyle">
+      <br>
+      <h2>Feedback</h2>
+      <hr>    
+      <br>
+      <p>How are we doing? Leave feedback on your experience, (all feedback will be read, but we may not always respond).</p>
+      <br>
+      <div>
+          <form action="/action_page.php">
+             
+              <input type="text" id="feedbackName" name="feedbackName" placeholder="Name" width="200px" required>
+              <br>
+    
+              <input type="text" id="feedbackEmail" name="feedbackEmail" placeholder="Email" required>
+              <br>
+    
+              <input type="text" id="feedbackSubject" name="feedbackSubject" placeholder="Subject">
+              <br>
+              
+              <textarea id="feedback" name="feedback" placeholder="What is your feedback?" height="1000px"></textarea>  
+              <button type="submit, button" form="contactUsForm" value="Submit" data-toggle="modal" data-target="#feedbackModal" style="float:right">Send</button>
+              <div class="stars">
+                  <form action="">
+                    <input class="star star-5" id="star-5" type="radio" name="star"/>
+                    <label class="star star-5" for="star-5"></label>
+                    <input class="star star-4" id="star-4" type="radio" name="star"/>
+                    <label class="star star-4" for="star-4"></label>
+                    <input class="star star-3" id="star-3" type="radio" name="star"/>
+                    <label class="star star-3" for="star-3"></label>
+                    <input class="star star-2" id="star-2" type="radio" name="star"/>
+                    <label class="star star-2" for="star-2"></label>
+                    <input class="star star-1" id="star-1" type="radio" name="star"/>
+                    <label class="star star-1" for="star-1"></label>
+                  </form>
+              </div>
+              <p style= "text-align: center">Leave a rating!</p>
+              <br>
+          </form>  
+          
+          <!--MODAL FOR FEEDBACK-->
+            <div class="modal fade" id="feedbackModal" role="dialog">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Thank You!</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Thank you for leaving your feedback! <br>
+                       It will be put into our consideration. <br>
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+                  </div>
+                </div>
+              </div>
+          </div>    
+    </div>
+
+</div>
 </div>
 
 @endsection

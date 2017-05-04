@@ -20,16 +20,27 @@
                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 1: </strong>Demographics & Economics of Spinal Cord Injury</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer" style="text-align: justify">
+                          <div class="faq_answer" style="text-align: justify;">
                               <br>
                               According to WHO data, the global incidence rate of spinal cord injuries is 40-80 cases per million population annually. 
                               Which means there are 280,000-560,000 new cases of spinal cord injury recorded every year worldwide. 
-                              Males are at least twice as likely to be the victims of spinal cord injury as compared to females. 
+                              <br><br>
+                              Males are at least twice as likely to be the victims of spinal cord injury as compared to females.
+                              <br><br>
                               The victims of spinal cord injury have a 2 to 5 times the normal mortality rate which is maximum during the first year following the injury. 
                               Age distribution shows males between the ages of 20 to 29 years and ages above 70 years to be at the highest risk. 
+                              <br><br>
                               Females are observed to be most vulnerable to spinal cord injury between the ages of 15 and 30 years and at ages above 60 years. 
-                              The World Health Organization reports that more than 90% of the recorded cases are traumatic in origin. 
+                              <br><br>
+                              The World Health Organization reports that more than 90% of the recorded cases are traumatic in origin.
+                              <br>
+                              <br>
+                              <div>
+                                  <a href="modulePage"><button>See Full Modules</button></a>
+                              </div>
+                            
                           </div>
+                          
                        </div>        
                 </div>
                 <br>
