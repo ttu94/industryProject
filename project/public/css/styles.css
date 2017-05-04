@@ -264,6 +264,7 @@ a:hover {
     background-color: #A7D2CB;
     color: white;
     font-family: Raleway, sans-serif;
+    min-height: 250px;
 }
 
 .panelOneButton {
@@ -275,6 +276,7 @@ a:hover {
     background-color: #88ABA5;
     color: white;
     font-family: Raleway, sans-serif;
+    min-height: 250px;
 }
 
 .panelTwoButton {
@@ -287,6 +289,7 @@ a:hover {
     background-color: #576E6A;
     color: white;
     font-family: Raleway , sans-serif;
+    min-height: 250px;
 }
 
 .panelThreeButton {
@@ -421,6 +424,29 @@ button:hover {
     max-width: 600px;
 }
 
+.country {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    width: 30%;
+    /*color: #595145;*/
+    overflow: hidden;
+}
+
+.country select {
+    
+    width: 160%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.country select:focus {
+    outline: none;
+}
+
+
 /*ABOUT US PAGE****************************************************************/
 
 .aboutUsImageOne {
@@ -438,7 +464,7 @@ button:hover {
 }
 
 .doctorPanel {
-    border-color: white;
+    border: 0;
     color: #595145;
 }
 
@@ -539,6 +565,7 @@ margin:20px 10px 0 10px;
     overflow: hidden;
     padding: 0px;
     padding-left: 50px;
+    padding-right: 50px;
     color: #595145;
 }
 
@@ -576,7 +603,7 @@ margin:20px 10px 0 10px;
 }
 
 
-/*ABSTRACT EDUCATIONAL MODULE PAGE CSS*****************************************/
+/*EDUCATIONAL MODULE PAGE CSS*****************************************/
 
 .moduleTitle {
     font-size: 20px;
@@ -586,64 +613,74 @@ margin:20px 10px 0 10px;
 .panelsOne {
     background-color: #A7D2CB;
     color: white;
-    font-family: Raleway, sans-serif;
-    padding-bottom: 9px;
+    font-family: Raleway;
+    min-height: 240px;
+    padding-left: 20px;
+    padding-right: 20px;
 } 
 
 .moduleOneButton {
-    text-align: center;
     width: 40%;
     display:block;
-    margin:0 auto;
     background-color: white;
     color: #A7D2CB;
+    bottom: 15px;
+    position: absolute;
+    left: 30%;
 }
 
 .panelsTwo {
     background-color: #88ABA5;
     color: white;
-    font-family: Raleway, sans-serif;
-    position: relative;
+    font-family: Raleway;
+    min-height: 240px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .moduleTwoButton {
-    text-align: center;
     width: 40%;
     display:block;
-    margin:0 auto;
     background-color: white;
     color: #88ABA5;
+    bottom: 15px;
+    position: absolute;
+    left: 30%;
 }
 
-.panelsThree {
-    background-color: #576E6A;
-    color: white;
-    font-family: Raleway , sans-serif;
-}
+/*.panelsThree {*/
+/*    background-color: #576E6A;*/
+/*    color: white;*/
+/*    font-family: Raleway;*/
+/*    min-height: 240px;*/
+/*    padding-left: 15px;*/
+/*    padding-right: 15px;*/
+/*}*/
 
-.moduleThreeButton {
-    text-align: center;
-    width: 40%;
-    display:block;
-    margin:0 auto;
-    background-color: white;
-    color: #576E6A;
-}
+/*.moduleThreeButton {*/
+/*    text-align: center;*/
+/*    width: 40%;*/
+/*    display:block;*/
+/*    margin:0 auto;*/
+/*    background-color: white;*/
+/*    color: #576E6A;*/
+/*}*/
 
 .panelsFour {
-    background-color: #A7D2CB;
+    background-color: #88ABA5;
     color: white;
-    font-family: Raleway, sans-serif;
-    position: relative;
-    width: 65%;
-    left: 220px;
+    font-family: Raleway;
+    margin-left: 5px;
+    min-height: 240px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .panelsFive {
     background-color: #A7D2CB;
     color: white;
-    font-family: Raleway, sans-serif;
-    position: relative;
-    width: 65%;
-    right: 5px;
+    font-family: Raleway;
+    min-height: 240px;
+    padding-left: 20px;
+    padding-right: 20px;
 }

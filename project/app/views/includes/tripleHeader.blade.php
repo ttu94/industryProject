@@ -9,8 +9,8 @@
             </div>
         </form>
         <ul>
-            <li style="float:right" class="topLink"><a href="register">Register</a></li>
-            <li style="float:right" class="topLink"><a href="login">Login</a></li>
+            <li style="float:right" class="topLink"><a href="register">REGISTER</a></li>
+            <li style="float:right" class="topLink"><a href="login">LOGIN</a></li>
         </ul>
         </div>
         

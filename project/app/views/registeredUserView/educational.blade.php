@@ -121,7 +121,7 @@
                 <div class="panels-body">
                     <p class="moduleTitle">
                         Different injuries and their effects on the cord and body
-                    </p><br><br>
+                    </p><br>
                     <a href="register"><button class="moduleOneButton" text-align: center >Read More</button></a>
                 </div>
                 
@@ -159,7 +159,7 @@
     <br><br>
     
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="panels panels-default panelsFour">
                 <br>
                 <h3 style="text-align: center">Module 10</h3>
@@ -173,7 +173,7 @@
             </div>
         </div>
    
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="panels panels-default panelsFive">
                 <br>
                 <h3 style="text-align: center">Module 11</h3>

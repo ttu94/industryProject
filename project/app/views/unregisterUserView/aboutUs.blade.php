@@ -87,7 +87,7 @@
                             <br><br>
                             <a href="abstractModule"><button class="moduleButton">Access Educational Modules Abstract</button></a>
                             <br>
-                            <a href="educationModule"><button class="moduleButtonTwo">Access Full Educational Modules</button></a>
+                            <a href="educationalModules"><button class="moduleButtonTwo">Access Full Educational Modules</button></a>
                         </p>
                 </div>
             </div>

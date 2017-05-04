@@ -74,9 +74,9 @@ Route::get('signIn', function()
 
 //Route To education module.
 // NOTE: USER NEEDS TO BE SIGNED IN ***********
-Route::get('educationModule', function()
+Route::get('educationalModules', function()
 {
-    return View::make('registeredUserView/educationModule');
+    return View::make('registeredUserView/educational');
  
 });
 

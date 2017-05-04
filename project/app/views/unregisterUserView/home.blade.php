@@ -67,7 +67,7 @@
         </div>
         <div class="col-md-4">
             <div class="panel panel-default panelTwo">
-                <h3>&nbsp&nbspEducational Abtract Modules</h3>
+                <h3>&nbsp&nbspEducational Abstract Modules</h3>
                 <div class="panel-body">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                     varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
