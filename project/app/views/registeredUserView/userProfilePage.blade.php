@@ -14,22 +14,52 @@
 @section('content')
 <div class="container-fluid basicFontStyle">
     <div class="col-md-12">
-        <div class="summaryBox">
-            <div style="border-width:5px; border-style:solid; vertical-align:middle">
-                <h2 class="middleAlign" style="padding-top:30px">Summary of tests done</h2>
-                <br>
-                <p class="middleAlign">Last test completed:</p>
+        <table class="testborder" style="width:100%; margin: 50px 10px 0px 0px;">
+            <tr>
+                <td rowspan="2">
+                    <div class="summaryBox" style="display:table">
+                        <div class="" style="display: table-cell;vertical-align:middle">
+                            <h2 class="middleAlign" style="padding-top:30px">Summary of tests done</h2>
+                            <br>
+                            <p class="middleAlign">Last test completed:</p>
+                            <!--The last test link should be here-->
+                            <br>
+                            <p class="middleAlign">Modules completed</p>
+                            <!--Should have the number of modules completed here-->
+                            
+                        </div>
+                    </div>
+                </td>
+                <td><img style="margin:auto;display:block; width: 500px; height: 500px"></td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">text under here</td>
+            </tr>
+        </table>
+        <!--<div class="summaryBox">-->
+        <!--    <div class="testborder" style="vertical-align:middle">-->
+        <!--        <h2 class="middleAlign" style="padding-top:30px">Summary of tests done</h2>-->
+        <!--        <br>-->
+        <!--        <p class="middleAlign">Last test completed:</p>-->
                 <!--The last test link should be here-->
-                <br>
-                <p class="middleAlign">Modules completed</p>
+        <!--        <br>-->
+        <!--        <p class="middleAlign">Modules completed</p>-->
                 <!--Should have the number of modules completed here-->
                 
-            </div>
-        </div>
-        <div style="margin:50px;float:left">
-            <img style="width:100%;height:200px;">
-            text under here
-        </div>
+        <!--    </div>-->
+        <!--</div>-->
+        <!--<div class="testborder" style="width:100%: height:200px">-->
+        <!--    <table>-->
+        <!--        <tr>-->
+        <!--            <td><img style="width: 500px; height: 500px"></td>-->
+        <!--        </tr>-->
+        <!--        <tr>-->
+        <!--            <td style="text-align: center">-->
+        <!--                text under here-->
+        <!--            </td>-->
+        <!--        </tr>-->
+        <!--    </table>-->
+        <!--</div>-->
         <div id="scroll">
             <img src="images/griffith_logo.png">
             <img src="images/griffith_logo.png">

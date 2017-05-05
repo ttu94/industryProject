@@ -18,7 +18,7 @@
     <div class="carousel-inner">
 
       <div class="item active">
-        <img src="http://i.imgur.com/K2FgPBx.jpg" alt="Spinal Cord">
+        <img src="http://i.imgur.com/K2FgPBx.jpg" alt="Spinal Cord" style="height: 750px">
         <div class="carousel-caption">
           <h3>Spinal Cord</h3>
           <p>Testing</p>
@@ -26,7 +26,7 @@
       </div>
 
       <div class="item">
-        <img src="https://images6.alphacoders.com/805/thumb-1920-805656.jpg" alt="Dr John St James">
+        <img src="https://images6.alphacoders.com/805/thumb-1920-805656.jpg" alt="Dr John St James" style="height: 750px">
         <div class="carousel-caption">
           <h3>Dr James St John</h3>
           <p>test</p>

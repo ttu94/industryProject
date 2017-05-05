@@ -5,7 +5,7 @@
         <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Search">
-                <a href="aboutUs"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                <a href="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
             </div>
         </form>
         <ul>

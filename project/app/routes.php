@@ -18,6 +18,14 @@ Route::get('/', function()
 
 Route::resource('admin', 'AdminController');
 
+// SEARCH BAR
+Route::get('search', function()
+{
+    //return View::make('registeredUserView/userProfilePage');
+    return View::make('unregisterUserView/search');
+});
+
+
 // UNREGISTERED USERS ROUTES***************************************************
 // *****************************************************************************
 
@@ -87,12 +95,11 @@ Route::get('educationalModules', function()
  
 });
 
-//Route To module page.
+//Route To module page One
 // NOTE: USER NEEDS TO BE SIGNED IN ***********
-// Link needs to be taken out of database
-Route::get('modulePage', function()
+Route::get('modulePageOne', function()
 {
-    return View::make('registeredUserView/modulePage');
+    return View::make('registeredUserView/modulePageOne');
  
 });
 

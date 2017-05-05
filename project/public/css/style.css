@@ -1,3 +1,9 @@
+/*html {*/
+    /*zoom: 1; */
+/*    -moz-transform: scale(1);*/
+/*    -webkit-transform: scale(1);*/
+/*    transform: scale(1);*/
+/*}*/
 html,
 body {
    margin:0;
@@ -61,7 +67,7 @@ h2{
 
 h3 {
    font-weight: 300;
-   font-family: Raleway, sans-serif;
+   font-family: Raleway;
 }
 
 hr {
@@ -251,11 +257,15 @@ a:hover {
 
 /*HOME PAGE CSS********************************************************************/
 
+/*#myCarousel {*/
+/*    max-height: 500px;*/
+/*}*/
+
 /*Carousel css*/
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
       width: 100%;
-      height: 100%;
+      /*height: 100%;*/
       margin: auto;
 }
 
@@ -610,6 +620,10 @@ label.star:before {
     text-align:center;
 }
 
+.testborder, td{
+    border: 1px solid black;
+}
+
 /*User Profile Module Scroll css****************************************************************/
 
 #scroll {
@@ -628,10 +642,10 @@ margin:20px 10px 0 10px;
 }
 
 .summaryBox {
-    margin: 50px 10px 0px 0px;
+    /*margin: 50px 10px 0px 0px;*/
     background: linear-gradient(#e6e6e6, #ffffff);
-    width:100%;
-    max-width: 600px;
+    width: 30%;
+    min-width: 400px;
     height:600px;
     float:left;
 }
@@ -777,3 +791,30 @@ margin:20px 10px 0 10px;
     padding-left: 20px;
     padding-right: 20px;
 }
+
+
+/*EDUCATIONAL MODULE PAGES (1-11) CSS*****************************************/
+
+
+.module_info {
+    color: #595145;
+    font-size: 18px;
+    font-family: Raleway;
+    /*min-height: 250px;*/
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#myCarousels {
+    max-height: 500px;
+}
+
+/*.carousels-inner {*/
+/*    margin-left: 20%;*/
+/*    margin-right: 20%;*/
+/*    padding-top: 30px;*/
+/*    padding-bottom: 30px;*/
+/*}*/
+
