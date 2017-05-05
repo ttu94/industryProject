@@ -23,5 +23,6 @@
    		<div id="body">@yield('content')</div>
    		<div id="footer">@include('includes.footer')</div>
 	</div>
+
 </body>
 </html>

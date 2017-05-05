@@ -13,20 +13,20 @@
 
 @section('content')
 <div class="container-fluid"> 
+
     <br>
-    <div id="myCarousels" class="carousel slide" data-ride="carousel" data-interval="5000">
-        <!-- Indicators -->
+    <div id="myCarousels" class="carousel slide" data-ride="carousel" data-interval="false" style="height: 500px;overflow: auto; background-color: #D9D9D9">
+         <!--Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
         </ol>
     
-        <!-- Wrapper for slides -->
+         <!--Wrapper for slides -->
         <div class="carousel-inner">
       
           <div class="item active module_info" style="text-align: justify">                
-            <h2>Spinal Cord</h2>
             <p>According to WHO data, the global incidence rate of spinal cord injuries is 40-80 cases per million population annually. 
             Which means there are 280,000-560,000 new cases of spinal cord injury recorded every year worldwide. 
             <br><br>
@@ -60,18 +60,19 @@
          
         </div>
 
-        <!-- Left and right controls -->
+         <!--Left and right controls -->
         <a class="left carousel-control" href="#myCarousels" role="button" data-slide="prev">
          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
          <span class="sr-only">Previous</span>
         </a>
+   
         <a class="right carousel-control" href="#myCarousels" role="button" data-slide="next">
          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
          <span class="sr-only">Next</span>
         </a>
     
     </div>
-      
+
 </div>
 
            
