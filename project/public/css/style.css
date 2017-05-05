@@ -390,6 +390,12 @@ button:hover {
     /*float: left;*/
 }
 
+.otherextrabox {
+    margin: 0px 60px 0px 0px;
+    max-width:475px;
+    width:100%;
+}
+
 .linearRadio input { 
     margin: 0px 0px 0px 20px;
 }
@@ -408,6 +414,15 @@ button:hover {
     padding: 20px;
     display: none;
     margin-top: 20px;
+}
+
+.boxthird {
+    /*padding: 20px;*/
+    display: none;
+    /*margin-top: 20px;*/
+    
+    max-width:475px;
+    width:100%;
 }
 
 .treated {
@@ -553,10 +568,11 @@ button:hover {
 
 div.stars {
     /*width: 50%;*/
-  /*margin: 0 auto;*/
+    /*margin: 0 auto;*/
     width: 270px;
     display: inline-block;
 }
+
 input.star { display: none; }
 
 label.star {
@@ -565,6 +581,7 @@ label.star {
     font-size: 36px;
     color: #444;
     transition: all .2s;
+    
 }
 
 input.star:checked ~ label.star:before {
@@ -589,6 +606,9 @@ label.star:before {
 
 /*User Profile css****************************************************************/
 
+.middleAlign {
+    text-align:center;
+}
 
 /*User Profile Module Scroll css****************************************************************/
 
@@ -602,10 +622,19 @@ overflow:auto;
 white-space:nowrap;
 /*box-shadow:0 0 10px #000;*/
 }
+
 #scroll img {
 margin:20px 10px 0 10px;
 }
 
+.summaryBox {
+    margin: 50px 10px 0px 0px;
+    background: linear-gradient(#e6e6e6, #ffffff);
+    width:100%;
+    max-width: 600px;
+    height:600px;
+    float:left;
+}
 
 /* FAQ QUESTION CSS***************************************************************************/
 

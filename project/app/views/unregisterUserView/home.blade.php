@@ -54,7 +54,7 @@
         <div class="col-md-4">
             <div class="panel panel-default panelOne">
                 <h3>&nbsp&nbspClincal Trials</h3>
-                <div class="panel-body">
+                <div class="panel-body" style="font-size:large">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                     varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
                     condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
@@ -68,7 +68,7 @@
         <div class="col-md-4">
             <div class="panel panel-default panelTwo">
                 <h3>&nbsp&nbspEducational Abstract Modules</h3>
-                <div class="panel-body">
+                <div class="panel-body" style="font-size:large">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                     varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
                     condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
@@ -82,7 +82,7 @@
         <div class="col-md-4">
             <div class="panel panel-default panelThree">
                 <h3>&nbsp&nbspRegister Now</h3>
-                <div class="panel-body">
+                <div class="panel-body" style="font-size:large">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                     varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
                     condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis

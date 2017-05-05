@@ -23,12 +23,11 @@
                 <div class="blocks">
                         <h3>Our Location</h3>
                         <div class="basicFontStyle" style="text-align: justify">
-                            Building N75, Brisbane <br>
-                            Innovation Park, <br>
-                            Nathan Campus, Griffith University <br>
+                            Building N75, Brisbane Innovation Park, <br>
+                            Nathan Campus, Griffith University <br><br>
                             Tel: +61 123 456 789 <br>
-                            Fax: +61 123 456 789 <br>
-                            info@amarelo.com <br>
+                            Fax: +61 123 456 789 <br><br>
+                            info@amarelo.com <br><br>
                             <form action="/action_page.php">
                                
                                 <input type="text" id="contactName" name="contactName" placeholder="Name" width="200px" required>
@@ -93,6 +92,7 @@
               
               <textarea id="feedback" name="feedback" placeholder="What is your feedback?" height="1000px"></textarea>  
               <button type="submit, button" form="contactUsForm" value="Submit" data-toggle="modal" data-target="#feedbackModal" style="float:right">Send</button>
+              <br><br><br><br>
               <div class="stars">
                   <form action="">
                     <input class="star star-5" id="star-5" type="radio" name="star"/>

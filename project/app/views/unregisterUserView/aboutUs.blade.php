@@ -109,7 +109,7 @@
                     <div class="panel panel-default doctorPanel">
                         <img class="doctorImage" alt="Dr. Thuan Tu" src="images/userImage.jpg" />    
                         <h3 style="text-align: center">Dr. Thuan Tu</h3>
-                        <div class="panel-body" style="text-align: justify">
+                        <div class="panel-body basicFontStyle" style="text-align: justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                             varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
                             condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
@@ -122,7 +122,7 @@
                     <div class="panel panel-default doctorPanel">
                         <img class="doctorImage" alt="Dr. Thuan Tu" src="images/userImage.jpg" />
                         <h3 style="text-align: center">Dr. James St John</h3>
-                        <div class="panel-body" style="text-align: justify">
+                        <div class="panel-body basicFontStyle" style="text-align: justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                             varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
                             condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
@@ -135,7 +135,7 @@
                     <div class="panel panel-default doctorPanel">
                         <img class="doctorImage" alt="Dr. Thuan Tu" src="images/userImage.jpg" />
                         <h3 style="text-align: center">Dr. Emma Watson</h3>
-                        <div class="panel-body" style="text-align: justify">
+                        <div class="panel-body basicFontStyle" style="text-align: justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                             varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
                             condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis

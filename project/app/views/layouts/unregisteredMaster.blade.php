@@ -41,9 +41,15 @@
     	$('input[name="usertype"]').click(function(){
          var inputValue = $(this).attr("value");
          if(inputValue == "patient"){
+          $('.boxthird').hide();
           $('.boxtwo').hide();
           $('.box').show();
+         } else if(inputValue == "other") {
+          $('.boxthird').show();
+          $('.boxtwo').show();
+          $('.box').hide();
          } else {
+          $('.boxthird').hide();
           $('.boxtwo').show();
           $('.box').hide();
          }

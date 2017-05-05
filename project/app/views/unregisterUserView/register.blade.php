@@ -305,8 +305,8 @@
                 <br>
                 <input type="radio" name="usertype" value="student"> a student
                 <br>
-                <input type="radio" name="usertype"> other
-                <input class="other" style="margin-left:60px;max-width:475px;width:100%;" type="text" name="other" placeholder="Please state other">  
+                <input type="radio" name="usertype" value="other"> other
+                <input class="boxthird" style="margin: 0px 0px 0px 60px;" type="text" name="other" placeholder="Please state other">  
             </div>
             
             <!--DROPS DOWN IF USER SELECTS PATIENT RADIO-->

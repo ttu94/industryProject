@@ -62,6 +62,13 @@ Route::get('abstractModule', function()
  
 });
 
+//Route To admin login
+Route::get('adminLogin', function()
+{
+    return View::make('unregisterUserView/adminLogin');
+ 
+});
+
 // REGISTERD USERS ROUTES***************************************************
 // *****************************************************************************
 

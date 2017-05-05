@@ -35,6 +35,7 @@ class CreateUsersTable extends Migration {
 			$table->boolean('physioTrial');
 			//timestamp each account when it is created
  			$table->timestamps();
+ 			$table->string('remember_token')->nullable;
 		});
 
 	}
