@@ -13,18 +13,19 @@
 <div class="container-fluid basicFontStyle">
     <div class="col-md-12">
         <!--<div>-->
+        {{ Form::open(array('url' => secure_url('user'))) }}
             <h2>Personal Details</h2>
             <hr>
             <div style="column-count:2">
-                <input class="register" type="text" name="firstName" placeholder="First name *" required>
-                <input class="register" type="text" name="lastName" placeholder="Last name *" required>
+                <input class="register" type="text" name="firstName" id="firstName" placeholder="First name *" required>
+                <input class="register" type="text" name="lastName" id="lastName" placeholder="Last name *" required>
             </div>
             <!--<br>-->
             <div class="ageGender">  <!--class not used yet-->
-                <input class="age" type="number" name="age" placeholder="Age *" required>
+                <input class="age" type="number" name="age" id="age" placeholder="Age *" required>
                 
                 <!--gender selection box-->
-                <div class="linearRadio">
+                <div class="linearRadio" name="gender" id="gender">
                     <p class="gender">Gender<font color="red">*</font></p>
                     <input style="margin-left:0px" type="radio" name="gender" value="male"> Male
                     <input type="radio" name="gender" value="female"> Female
@@ -32,12 +33,12 @@
                 </div>
             </div>
 
-            <input class="email" type="email" name="email" placeholder="Email *" required>
+            <input class="email" type="email" name="email" id="email" placeholder="Email *" required>
             <br>
 
-            <div class="country">
-                <select name="country">
-                <option value="None selected">Please select below</option>
+            <div class="country" name="country" id="country">
+                <select name="country" id="country">
+                <option value="None selected">Please select your current country of residence</option>
                 <option value="AFG">Afghanistan</option>
             	<option value="ALA">Åland Islands</option>
             	<option value="ALB">Albania</option>
@@ -290,9 +291,10 @@
 </select>                
             </div>
             
-            <div style="column-count:2">
+            <!--<div style="column-count:2">-->
+            <div>
                 <input class="register" type="password" name="password" placeholder="Password *" required>
-                <input class="register" type="password" name="password2" placeholder="Confirm Password*" required>
+                <!--<input class="register" type="password" name="password2" placeholder="Confirm Password*" required>-->
             </div>
             
             <h2>Other Details</h2>
@@ -313,26 +315,28 @@
             <div class="otherDetailBox box">
                 <p>Please answer the following questions if you are a <u>patient:</u></p>
                 <hr>
-                <p>When did your injury occur?</p>
+                <p>When did your injury occur?<font color="red">*</font></p>
                 <!--<input type="text" id="datepicker">-->
-                <input type="date" name="injuryDate" style="text-align:center">
-                <div class="linearRadio" name="treatment">
-                    <p><br>Are you taking any treatment for it?</p>
+                <input type="date" name="injuryDate" id="injuryDate" style="text-align:center">
+                
+                <div class="linearRadio">
+                    <p><br>Are you taking any treatment for it?<font color="red">*</font></p>
                     <input style="margin-left:0px" type="radio" name="treatment" value="yes"> Yes
-                    <input type="radio" name="treatment" value="no"> No
+                    <input type="radio" name="treatment" value="no" checked> No
                 </div>
-                <input class="treated" type="text" name="yesTreat" placeholder="What is the treatment?">
                 
-                <div class="linearRadio" name="clinicalTrial">
-                    <p><br>Will you be interested in participating in the clinical trial?</p>
+                <input class="treated" type="text" name="yesTreat" id="yesTreat" placeholder="What is the treatment?">
+                
+                <div class="linearRadio">
+                    <p><br>Will you be interested in participating in the clinical trial?<font color="red">*</font></p>
                     <input style="margin-left:0px" type="radio" name="clinicalTrial" value="yes"> Yes
-                    <input type="radio" name="clinicalTrial" value="no"> No
+                    <input type="radio" name="clinicalTrial" value="no" checked> No
                 </div>
                 
-                <div class="linearRadio" name="physioTrial">
-                    <p><br>Will you be interested in participating in the physiotherapy trial?</p>
+                <div class="linearRadio" >
+                    <p><br>Will you be interested in participating in the physiotherapy trial?<font color="red">*</font></p>
                     <input style="margin-left:0px" type="radio" name="physioTrial" value="yes"> Yes
-                    <input type="radio" name="physioTrial" value="no"> No
+                    <input type="radio" name="physioTrial" value="no" checked> No
                 </div>
             </div>
             
@@ -340,13 +344,14 @@
             <div class="otherDetailBox boxtwo">
                 <p>Please answer the following question if you are <u>not a patient:</u></p>
                 <hr>
-                <div class="linearRadio" name="onBehalf">
-                    <p>Do you know anyone who is suffering from spinal cord injury (SCI)?</p>
-                    <input style="margin-left:0px" type="radio" name="onBehalf" value="yes"> Yes
-                    <input type="radio" name="onBehalf" value="no"> No
+                <div class="linearRadio">
+                    <p>Do you know anyone who is suffering from spinal cord injury (SCI)?<font color="red">*</font></p>
+                    <input style="margin-left:0px" name="onBehalf" type="radio" value="yes"> Yes
+                    <input type="radio" name="onBehalf" value="no" checked> No
                 </div>
             </div>
-            <div style="margin-top:20px;text-align:center"><button type="submit" value="">Create Account</button></div>
+            <div style="margin-top:20px;text-align:center"><button type="submit">Create Account</button></div>
+        {{ Form::close() }}
     </div>
 </div>
 

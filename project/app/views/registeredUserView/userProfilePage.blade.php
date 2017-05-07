@@ -26,7 +26,6 @@
                             <br>
                             <p class="middleAlign">Modules completed</p>
                             <!--Should have the number of modules completed here-->
-                            
                         </div>
                     </div>
                 </td>
@@ -60,13 +59,13 @@
         <!--        </tr>-->
         <!--    </table>-->
         <!--</div>-->
-        <div id="scroll">
-            <img src="images/griffith_logo.png">
-            <img src="images/griffith_logo.png">
-            <img src="images/griffith_logo.png">
-            <img src="images/griffith_logo.png">
-            <img src="images/griffith_logo.png">
         
+        <div class="coverflow">
+            <div class="cover"><img src="images/griffith_logo.png"></div>
+            <div class="cover"><img src="images/griffith_logo.png"></div>
+            <div class="cover"><img src="images/griffith_logo.png"></div>
+            <div class="cover"><img src="images/griffith_logo.png"></div>
+            <div class="cover"><img src="images/griffith_logo.png"></div>
         </div>
     </div>
 </div>

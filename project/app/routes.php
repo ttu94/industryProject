@@ -16,7 +16,11 @@ Route::get('/', function()
 	return View::make('unregisterUserView/home');
 });
 
+// ROUTES TO LOGIN/LOGOUT FOR ADMIN
 Route::resource('admin', 'AdminController');
+
+// ROUTES TO LOGIN/LOGOUT FOR USERS
+Route::resource('user', 'UserController');
 
 // SEARCH BAR
 Route::get('search', function()

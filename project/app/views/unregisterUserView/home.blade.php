@@ -7,7 +7,7 @@
 @section('content')
 <div class="container-fluid">
   <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" >
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>

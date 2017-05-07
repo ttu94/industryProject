@@ -13,65 +13,137 @@
 
 @section('content')
 <div class="container-fluid"> 
-
     <br>
-    <div id="myCarousels" class="carousel slide" data-ride="carousel" data-interval="false" style="height: 500px;overflow: auto; background-color: #D9D9D9">
+    <button class="btn greenbluelight">Begin Quiz >></button>
+    <br><br>
+    <ul class="carousel my-carousel">
+      <input type="radio" id="1" name="activator" checked="checked" class="carousel__activator"/>
+      <input type="radio" id="2" name="activator" class="carousel__activator"/>
+      <input type="radio" id="3" name="activator" class="carousel__activator"/>
+      <input type="radio" id="4" name="activator" class="carousel__activator"/>
+      <input type="radio" id="5" name="activator" class="carousel__activator"/>
+      <div class="carousel__controls">
+        <label for="2" class="carousel__control carousel__control--backward"></label>
+        <label for="5" class="carousel__control carousel__control--forward"></label>
+      </div>
+      <div class="carousel__controls">
+        <label for="3" class="carousel__control carousel__control--backward"></label>
+        <label for="1" class="carousel__control carousel__control--forward"></label>
+      </div>
+      <div class="carousel__controls">
+        <label for="4" class="carousel__control carousel__control--backward"></label>
+        <label for="2" class="carousel__control carousel__control--forward"></label>
+      </div>
+      <div class="carousel__controls">
+        <label for="5" class="carousel__control carousel__control--backward"></label>
+        <label for="3" class="carousel__control carousel__control--forward"></label>
+      </div>
+      <div class="carousel__controls">
+        <label for="1" class="carousel__control carousel__control--backward"></label>
+        <label for="4" class="carousel__control carousel__control--forward"></label>
+      </div>
+      <li class="carousel__slide">
+        <p>According to WHO data, the global incidence rate of spinal cord injuries is 40-80 cases per million population annually.
+        <br>
+        Which means there are 280,000-560,000 new cases of spinal cord injury recorded every year worldwide. 
+        <br><br>
+        Males are at least twice as likely to be the victims of spinal cord injury as compared to females.
+        <br><br>
+        The victims of spinal cord injury have a 2 to 5 times the normal mortality rate which is maximum during the first year following the injury. 
+        <br>
+        Age distribution shows males between the ages of 20 to 29 years and ages above 70 years to be at the highest risk. 
+        <br><br>
+        Females are observed to be most vulnerable to spinal cord injury between the ages of 15 and 30 years and at ages above 60 years. 
+        <br><br>
+        The World Health Organization reports that more than 90% of the recorded cases are traumatic in origin.
+        <br>
+        </p>
+      </li>
+      <li class="carousel__slide">
+        <p>The National Spinal Cord Injury Statistical Centre USA reports etiological<br>
+        and clinical injury distributions in its 2016 Fact Sheet.<br><br> 
+        According to the fact sheet, 38% cases are due to vehicular accidents, 30.5% result from falls,<br> 
+        13.5% are victims of violence, 9% are as a result of sports injuries,<br> 
+        5% result due to medical reasons including iatrogenic causes and 4% are attributed<br> 
+        to reasons other than listed here.<br>
+        </p>
+      </li>
+      <li class="carousel__slide">
+        <h1>3</h1>
+      </li>
+      <li class="carousel__slide">
+        <h1>4</h1>
+      </li>
+      <li class="carousel__slide">
+        <h1>5</h1>
+      </li>
+      <div class="carousel__indicators">
+        <label for="1" class="carousel__indicator"></label>
+        <label for="2" class="carousel__indicator"></label>
+        <label for="3" class="carousel__indicator"></label>
+        <label for="4" class="carousel__indicator"></label>
+        <label for="5" class="carousel__indicator"></label>
+      </div>
+    
+    </ul>
+
+    <!--<br>-->
+    <!--<div id="myCarousels" class="carousel slide" data-ride="carousel" data-interval="false">-->
          <!--Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
+    <!--    <ol class="carousel-indicators">-->
+    <!--      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+    <!--      <li data-target="#myCarousel" data-slide-to="1"></li>-->
           <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
-        </ol>
+    <!--    </ol>-->
     
          <!--Wrapper for slides -->
-        <div class="carousel-inner">
+    <!--    <div class="carousel-inner moduleCarouselText">-->
       
-          <div class="item active module_info" style="text-align: justify">                
-            <p>According to WHO data, the global incidence rate of spinal cord injuries is 40-80 cases per million population annually. 
-            Which means there are 280,000-560,000 new cases of spinal cord injury recorded every year worldwide. 
-            <br><br>
-            Males are at least twice as likely to be the victims of spinal cord injury as compared to females.
-            <br><br>
-            The victims of spinal cord injury have a 2 to 5 times the normal mortality rate which is maximum during the first year following the injury. 
-            Age distribution shows males between the ages of 20 to 29 years and ages above 70 years to be at the highest risk. 
-            <br><br>
-            Females are observed to be most vulnerable to spinal cord injury between the ages of 15 and 30 years and at ages above 60 years. 
-            <br><br>
-            The World Health Organization reports that more than 90% of the recorded cases are traumatic in origin.
-            <br>
-            </p>
-            <div class="carousel-caption"></div>
-          </div>
+    <!--      <div class="item active module_info">                -->
+    <!--        <p>According to WHO data, the global incidence rate of spinal cord injuries is 40-80 cases per million population annually. -->
+    <!--        Which means there are 280,000-560,000 new cases of spinal cord injury recorded every year worldwide. -->
+    <!--        <br><br>-->
+    <!--        Males are at least twice as likely to be the victims of spinal cord injury as compared to females.-->
+    <!--        <br><br>-->
+    <!--        The victims of spinal cord injury have a 2 to 5 times the normal mortality rate which is maximum during the first year following the injury. -->
+    <!--        Age distribution shows males between the ages of 20 to 29 years and ages above 70 years to be at the highest risk. -->
+    <!--        <br><br>-->
+    <!--        Females are observed to be most vulnerable to spinal cord injury between the ages of 15 and 30 years and at ages above 60 years. -->
+    <!--        <br><br>-->
+    <!--        The World Health Organization reports that more than 90% of the recorded cases are traumatic in origin.-->
+    <!--        <br>-->
+    <!--        </p>-->
+    <!--        <div class="carousel-caption"></div>-->
+    <!--      </div>-->
              
-          <div class="item module_info" style="text-align: justify">
-            <h2>shit</h2>
-            <p>Males are at least twice as likely to be the victims of spinal cord injury as compared to females.
-            <br><br>
-            The victims of spinal cord injury have a 2 to 5 times the normal mortality rate which is maximum during the first year following the injury. 
-            Age distribution shows males between the ages of 20 to 29 years and ages above 70 years to be at the highest risk. 
-            <br><br>
-            Females are observed to be most vulnerable to spinal cord injury between the ages of 15 and 30 years and at ages above 60 years. 
-            <br><br>
-            The World Health Organization reports that more than 90% of the recorded cases are traumatic in origin.
-            <br>
-            </p>
-            <div class="carousel-caption"></div>
-          </div>
+    <!--      <div class="item module_info">-->
+    <!--        <p>Males are at least twice as likely to be the victims of spinal cord injury as compared to females.-->
+    <!--        <br><br>-->
+    <!--        The victims of spinal cord injury have a 2 to 5 times the normal mortality rate which is maximum during the first year following the injury. -->
+    <!--        Age distribution shows males between the ages of 20 to 29 years and ages above 70 years to be at the highest risk. -->
+    <!--        <br><br>-->
+    <!--        Females are observed to be most vulnerable to spinal cord injury between the ages of 15 and 30 years and at ages above 60 years. -->
+    <!--        <br><br>-->
+    <!--        The World Health Organization reports that more than 90% of the recorded cases are traumatic in origin.-->
+    <!--        <br>-->
+    <!--        </p>-->
+    <!--        <div class="carousel-caption"></div>-->
+    <!--      </div>-->
          
-        </div>
+    <!--    </div>-->
 
          <!--Left and right controls -->
-        <a class="left carousel-control" href="#myCarousels" role="button" data-slide="prev">
-         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-         <span class="sr-only">Previous</span>
-        </a>
+    <!--    <a class="left carousel-control" href="#myCarousels" role="button" data-slide="prev">-->
+    <!--      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+    <!--      <span class="sr-only">Previous</span>-->
+    <!--    </a>-->
    
-        <a class="right carousel-control" href="#myCarousels" role="button" data-slide="next">
-         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-         <span class="sr-only">Next</span>
-        </a>
+    <!--    <a class="right carousel-control" href="#myCarousels" role="button" data-slide="next">-->
+    <!--     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+    <!--     <span class="sr-only">Next</span>-->
+    <!--    </a>-->
     
-    </div>
+    <!--</div>-->
 
 </div>
 

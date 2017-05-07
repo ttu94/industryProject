@@ -18,7 +18,7 @@
         <div class="col-md-8">
             <br><br>
             <div class ="loginBlock">
-                <h1 class="raleway">Registered User</h1>
+                <h1 class="raleway">Admin</h1>
                 <br>
                 <input class="login" type="text" placeholder="Email" name="email" required width="50px">
                 <br>

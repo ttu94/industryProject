@@ -29,13 +29,15 @@ class CreateUsersTable extends Migration {
 			//user information
 			$table->string('usertype');
 			$table->string('injuryDate');
-			$table->boolean('treatment');
+			$table->boolean('treatment')->nullable();
 			$table->string('yesTreat');
-			$table->boolean('clinicalTrial');
-			$table->boolean('physioTrial');
+			$table->boolean('clinicalTrial')->nullable();
+			$table->boolean('physioTrial')->nullable();
+			$table->boolean('onBehalf')->nullable();
+			
 			//timestamp each account when it is created
  			$table->timestamps();
- 			$table->string('remember_token')->nullable;
+ 			
 		});
 
 	}
