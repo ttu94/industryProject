@@ -18,14 +18,15 @@
             <hr>
             <div style="column-count:2">
                 <input class="register" type="text" name="firstName" id="firstName" placeholder="First name *" required>
+                {{ $errors->first('firstName') }}
                 <input class="register" type="text" name="lastName" id="lastName" placeholder="Last name *" required>
             </div>
             <!--<br>-->
             <div class="ageGender">  <!--class not used yet-->
-                <input class="age" type="number" name="age" id="age" placeholder="Age *" required>
+                <input class="age" type="number" min="0" name="age" id="age" placeholder="Age *" required>
                 
                 <!--gender selection box-->
-                <div class="linearRadio" name="gender" id="gender">
+                <div class="linearRadio" name="gender" id="gender" required>
                     <p class="gender">Gender<font color="red">*</font></p>
                     <input style="margin-left:0px" type="radio" name="gender" value="male"> Male
                     <input type="radio" name="gender" value="female"> Female
@@ -33,10 +34,10 @@
                 </div>
             </div>
 
-            <input class="email" type="email" name="email" id="email" placeholder="Email *" required>
+            <input class="email" type="email" name="email" id="email" placeholder="Email *" required >
             <br>
 
-            <div class="country" name="country" id="country">
+            <div class="country" name="country" id="country" required>
                 <select name="country" id="country">
                 <option value="None selected">Please select your current country of residence</option>
                 <option value="AFG">Afghanistan</option>
@@ -294,7 +295,7 @@
             <!--<div style="column-count:2">-->
             <div>
                 <input class="register" type="password" name="password" placeholder="Password *" required>
-                <!--<input class="register" type="password" name="password2" placeholder="Confirm Password*" required>-->
+                <!--<input class="register" type="password" name="password_confirmation" placeholder="Confirm Password*" required>-->
             </div>
             
             <h2>Other Details</h2>

@@ -8,7 +8,7 @@ use Illuminate\Auth\Reminders\RemindableInterface;
 class User extends Eloquent implements UserInterface, RemindableInterface {
 
 	use UserTrait, RemindableTrait;
-
+	
 	/**
 	 * The database table used by the model.
 	 *
@@ -24,10 +24,16 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	protected $hidden = array('password', 'remember_token');
 	
 	//
-	// public function admin()
- //   {
- //   	//define that the relationship between admin and a account 1:many
- //   	return $this->hasMany('Admin','id');
- //   }
+	
+	// public static $rules = array (
+	// 	'firstName' => 'required',
+	// 	// 'lastName' => 'required',
+	// 	// 'age' => 'required|digits_between:1,100',
+	// 	// 'gender' => 'required',
+	// 	// 'country' => 'required',
+	// 	// 'email' => 'required|email|unique:users',
+	// 	// 'password' => 'required|min:5'
+	// 	);
+
 
 }

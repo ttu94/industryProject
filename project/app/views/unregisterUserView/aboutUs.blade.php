@@ -92,13 +92,17 @@
                 </div>
             </div>
         </div>
+</div>
+
+      <div class="yellowBar">
+                    <h3 class="meetDoctor" style="text-align:center"><br>Meet the Doctors who are part of the clinical trial.</h3>
+                </div>
+<div class="container-fluid">
         <!--Panels which contain the medical staff-->
             
             <div class="col-md-12">
                 
-                <div class="yellowBar">
-                    <h3 class="meetDoctor" style="text-align:center"><br>Meet the Doctors who are part of the clinical trial.</h3>
-                </div>
+          
                 <br>
                 <br>
             </div>

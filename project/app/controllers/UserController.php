@@ -31,30 +31,38 @@ class UserController extends \BaseController {
 	 */
 	public function store()
 	{
+		
 		$input = Input::all();
+		
 		//Encrypts password
 		$password = $input['password'];
 		$encrypted = Hash::make($password);
 		
-		$user = new User;
-		$user->firstName = $input['firstName'];
-		$user->lastName = $input['lastName'];
-		$user->age = $input['age'];
-		$user->gender = $input['gender'];
-		$user->country = $input['country'];
-		$user->email = $input['email'];
-		$user->password = $encrypted;
-		$user->usertype = $input['usertype'];
+		// $v = Validator::make($input, User::$rules);
+		// if ($v->passes()){
+			$user = new User;
+			$user->firstName = $input['firstName'];
+			$user->lastName = $input['lastName'];
+			$user->age = $input['age'];
+			$user->gender = $input['gender'];
+			$user->country = $input['country'];
+			$user->email = $input['email'];
+			$user->password = $encrypted;
+			$user->usertype = $input['usertype'];
+			
+			$user->injuryDate = $input['injuryDate'];
+			$user->treatment = $input['treatment'];
+			$user->yesTreat = $input['yesTreat'];
+			$user->clinicalTrial = $input['clinicalTrial'];
+			$user->physioTrial = $input['physioTrial'];
+			$user->onBehalf = $input['onBehalf'];
 		
-		$user->injuryDate = $input['injuryDate'];
-		$user->treatment = $input['treatment'];
-		$user->yesTreat = $input['yesTreat'];
-		$user->clinicalTrial = $input['clinicalTrial'];
-		$user->physioTrial = $input['physioTrial'];
-		$user->onBehalf = $input['onBehalf'];
-	
-		$user->save();
-		return View::make('registeredUserView.userProfilePage');
+			$user->save();
+			// return Redirect::route('registeredUserView.userProfilePage');
+			return View::make('registeredUserView.userProfilePage');
+		// } else {
+		// 	return Redirect::action('unregisterUserView.register')->withErrors($v);
+		// }
 	}
 
 
