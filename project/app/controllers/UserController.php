@@ -37,9 +37,20 @@ class UserController extends \BaseController {
 		$password = $input['password'];
 		$encrypted = Hash::make($password);
 		
-		// $v = Validator::make($input, User::$rules);
+		$rules = array(
+			'firstName' => 'required|min:2',
+			'lastName' => 'required',
+			'age' => 'required|digits_between:1,100',
+			'gender' => 'required',
+			'country' => 'required',
+			'email' => 'required|email|unique:users',
+			'password' => 'required|min:5',
+			// 'password_confirmation' => 'required|min:5|same:password'
+			);
+		
+		$v = Validator::make($input, $rules);
 		// // dd($v);
-		// if ($v->passes()){
+		if ($v->passes()){
 			$user = new User;
 			$user->firstName = $input['firstName'];
 			$user->lastName = $input['lastName'];
@@ -58,14 +69,15 @@ class UserController extends \BaseController {
 			$user->onBehalf = $input['onBehalf'];
 		
 			$user->save();
-			return View::make('registeredUserView.userProfilePage');
+			
+			//Kyai i dont know how to route to userProfilePage with ID. It also might be convenient to log them in when they register
+			return View::make('unregisterUserView.login');
 			// return Redirect::action('UserController@show', array($user->id));
-		 //} else {
+		 } else {
 		 
-			// Show Validation Errors
-		 	// return Redirect::back()->withErrors($v)->withUser();
-		 	// return Redirect::action('UserController@create')->withErrors($v);
-		 //}
+			// Show Validation Errors. CURRENTLY WORKS
+		 	return Redirect::to('register')->withInput()->withErrors($v);
+		 }
 	}
 
 

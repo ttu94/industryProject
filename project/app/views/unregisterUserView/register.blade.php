@@ -17,18 +17,18 @@
             <h2>Personal Details</h2>
             <hr>
             <div style="column-count:2">
-                <input class="register" type="text" name="firstName" id="firstName" placeholder="First name *" required>
+                <input class="register" type="text" name="firstName" id="firstName" placeholder="First name *">
                 <p style="color:red">{{$errors->first('firstName')}}</p>
-                <input class="register" type="text" name="lastName" id="lastName" placeholder="Last name *" required>
+                <input class="register" type="text" name="lastName" id="lastName" placeholder="Last name *">
                 <p style="color:red">{{$errors->first('lastName')}}</p>
             </div>
             <!--<br>-->
             <div class="ageGender">  <!--class not used yet-->
-                <input class="age" type="number" min="0" name="age" id="age" placeholder="Age *" required>
+                <input class="age" type="number" min="0" name="age" id="age" placeholder="Age *">
                 <p style="color:red">{{$errors->first('age')}}</p>
                 
                 <!--gender selection box-->
-                <div class="linearRadio" name="gender" id="gender" required>
+                <div class="linearRadio" name="gender" id="gender">
                     <p class="gender">Gender<font color="red">*</font></p>
                     <input style="margin-left:0px" type="radio" name="gender" value="male"> Male
                     <input type="radio" name="gender" value="female"> Female
@@ -37,10 +37,10 @@
                 </div>
             </div>
 
-            <input class="email" type="email" name="email" id="email" placeholder="Email *" required >
+            <input class="email" type="email" name="email" id="email" placeholder="Email *">
             <p style="color:red">{{$errors->first('email')}}</p>
 
-            <div class="country" name="country" id="country" required>
+            <div class="country" name="country" id="country">
                 <select name="country" id="country">
                 <option value="None selected">Please select your current country of residence</option>
                 <option value="AFG">Afghanistan</option>
@@ -298,7 +298,7 @@
             
             <!--<div style="column-count:2">-->
             <div>
-                <input class="register" type="password" name="password" placeholder="Password *" required>
+                <input class="register" type="password" name="password" placeholder="Password *">
                 <p style="color:red">{{$errors->first('password')}}</p>
                 <!--<input class="register" type="password" name="password_confirmation" placeholder="Confirm Password*" required>-->
                 <!--<p style="color:red">{{$errors->first('password_confirmation')}}</p>-->
