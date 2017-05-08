@@ -69,21 +69,6 @@
                             condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
                             nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
                             accumsan. Aliquam in felis sit amet augue.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
-                            varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
-                            condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
-                            nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
-                            accumsan. Aliquam in felis sit amet augue.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
-                            varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
-                            condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
-                            nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
-                            accumsan. Aliquam in felis sit amet augue.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
-                            varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
-                            condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
-                            nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
-                            accumsan. Aliquam in felis sit amet augue.
                             <br><br>
                             <a href="abstractModule"><button class="moduleButton">Access Educational Modules Abstract</button></a>
                             <br>
@@ -111,7 +96,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="panel panel-default doctorPanel">
-                        <img class="doctorImage" alt="Dr. Thuan Tu" src="images/userImage.jpg" />    
+                        <img class="doctorImage" alt="Dr. Thuan Tu" src="images/titan.png" />    
                         <h3 style="text-align: center">Dr. Thuan Tu</h3>
                         <div class="panel-body basicFontStyle" style="text-align: justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
@@ -137,7 +122,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="panel panel-default doctorPanel">
-                        <img class="doctorImage" alt="Dr. Thuan Tu" src="images/userImage.jpg" />
+                        <img class="doctorImage" alt="Dr. Thuan Tu" src="images/emma.png" />
                         <h3 style="text-align: center">Dr. Emma Watson</h3>
                         <div class="panel-body basicFontStyle" style="text-align: justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra

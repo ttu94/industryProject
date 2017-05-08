@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<div class="container-fluid">
+<!--<div class="container-fluid">-->
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
     <!-- Indicators -->
@@ -47,8 +47,8 @@
   </div>
 
 
-<div>
-  
+<!--<div>-->
+  <div class="container-fluid">
     <br>
     <div class="row">
         <div class="col-md-4">

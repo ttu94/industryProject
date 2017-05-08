@@ -12,7 +12,7 @@
             @if (Auth::check())
                 <ul>
                     <li style="float:right" class="topLink"><a href="user/logout" >LOGOUT</a></li>
-                    <li style="float:right" class="topLink"><a href="signIn">MY PROFILE</a></li>
+                    <li style="float:right" class="topLink"><a href={{route("user.show", array("id" => Auth::user()->id))}}>MY PROFILE</a></li>
                 </ul>
             @else
                 <ul>
@@ -26,7 +26,7 @@
         <div class="bottomHeader">
             <!--Image as home page link-->
             <ul>
-             <a href="/project/public">
+             <a href={{route('home')}}>
                     <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="images/clemjones_Logo.png" height="130px" width="100px"/>                
              </a>
               <h1 id="headerTitle">Spinal Cord Injury<br><span id="rehab">Rehabilitation</span></h1>

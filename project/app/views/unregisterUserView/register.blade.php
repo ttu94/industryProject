@@ -43,7 +43,7 @@
 
             <input class="email" type="email" name="email" id="email" placeholder="Email *">
             
-            <div class="country" name="country" id="country">
+            <div class="country" name="country" id="country" style="background-color:white">
                 <select name="country" id="country">
                 <option value="None selected">Please select your current country of residence</option>
                 <option value="AFG">Afghanistan</option>
@@ -301,7 +301,7 @@
             <div style="column-count:2">
             <!--<div>-->
                 <input class="register" type="password" name="password" placeholder="Password *">
-                <input class="register" type="password" name="password_confirmation" placeholder="Confirm Password*" required>
+                <input class="register" type="password" name="password_confirmation" placeholder="Confirm Password*">
             </div>
             
             <h2>Other Details</h2>

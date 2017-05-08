@@ -8,24 +8,26 @@
                 <a href="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
             </div>
         </form>
-            @if (Auth::check())
-                <ul>
+            <ul>
+                @if(Auth::check())
                     <li style="float:right" class="topLink"><a href="user/logout" >LOGOUT</a></li>
-                    <li style="float:right" class="topLink"><a href="signIn">MY PROFILE</a></li>
-                </ul>
-            @else
-                <ul>
-                    <li style="float:right" class="topLink"><a href="register">REGISTER</a></li>
-                    <li style="float:right" class="topLink"><a href="login">LOGIN</a></li>
-                </ul>
-            @endif
+                    <!--FAKE USER PAGE BUTTOn-->
+                    <li style="float:right" class="topLink"><a href={{route("user.show", array("id" => Auth::user()->id))}}>MY PROFILE</a></li>
+                @else
+                    <!--FAKE Logout BUTTOn-->
+                    <li style="float:right" class="topLink"><a href="#" >LOGOUT</a></li>
+                    <!--FAKE USER PAGE BUTTOn-->
+                    <li style="float:right" class="topLink"><a href="#">MY PROFILE</a></li>
+                @endif
+            </ul>
+
         </div>
         
         <!--SECOND SECTION OF HEADER-->
         <div class="bottomHeader">
             <!--Image as home page link-->
             <ul>
-             <a href="home">
+             <a href={{route("home")}}>
                     <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="images/clemjones_Logo.png" height="130px" width="100px"/>                
              </a>
               <h1 id="headerTitle">Spinal Cord Injury <br><span id="rehab">Rehabilitation</span></h1>
@@ -45,9 +47,9 @@
         <!--FORTH SECTION OF HEADER-->
         <div class="quadLink">
             <ul>
-                <li class="eduMod" style="width:33%"><a href="educationalModules">EDUCATIONAL MODULES</a></li>
+                <li class="eduMod" style="width:33%"><a href={{route("education.modules")}}>EDUCATIONAL MODULES</a></li>
                 <li class="eduMod" style="width:33%"><a href="#">SEE RESULTS</a></li>
-                <li class="eduMod" style="width:33%"><a href="#">ACCOUNT DETAILS</a></li>
+                <li class="eduMod" style="width:33%"><a href="accountDetails">ACCOUNT DETAILS</a></li>
             </ul>
         </div>
         

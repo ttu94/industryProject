@@ -70,9 +70,10 @@ class UserController extends \BaseController {
 		
 			$user->save();
 			
-			//Kyai i dont know how to route to userProfilePage with ID for register or login. It also might be convenient to log them in when they register
-			return View::make('unregisterUserView.login');
-			// return Redirect::action('UserController@show', array($user->id));
+			//Kyai (khai*) oops <3<3,3 i dont know how to route to userProfilePage with ID for register or login. It also might be convenient to log them in when they register
+			Auth::login($user);
+			// return View::make('unregisterUserView.login', $user->id);
+			return Redirect::action('UserController@show', array($user->id));
 		 } else {
 		 	
 			// Show Validation Errors. CURRENTLY doesnt show inputs
@@ -90,8 +91,8 @@ class UserController extends \BaseController {
 	public function show($id)
 	{
 		//show the users profile
-		// $user = User::find($id);
-		// return View::make('registeredUserView.userProfilePage')->with($user);
+		$user = User::find($id);
+		return View::make('registeredUserView.userProfilePage')->withUser($user);
 	}
 
 
@@ -148,7 +149,7 @@ class UserController extends \BaseController {
 			// authenticate
 			if (Auth::attempt($userdata)){
 				// return Redirect::to(URL::previous());
-				return Redirect::to('userProfilePage');
+				return Redirect::action('UserController@show', array(Auth::user()->id));
 			} else {
 				return Redirect::to(URL::previous()) -> withInput();
 			}
@@ -164,6 +165,18 @@ class UserController extends \BaseController {
 	public function logout() {
 		Auth::logout();
 		return Redirect::action('UserController@index');
+	}
+	
+	public function EducationModules()
+	{
+		if(Auth::check())
+		{
+			return View::make('registeredUserView.educational')->withUser(Auth::user()->id);//educational.blade.php ready to check?
+		}else{
+			//go back they arent logged in
+			return Redirect::to('login');
+			
+		}
 	}
 
 

@@ -11,6 +11,7 @@ body {
    height:100%;
    width:100%;
    overflow-x: hidden;
+   background-color: #F5F5F5;
    
    /*font-family: Raleway, sans-serif;*/
 }
@@ -265,7 +266,7 @@ a:hover {
 /*Carousel css*/
 
 #myCarousel {
-    width: 100%;
+    width: 95%;
     height: 100%;
 }
 .carousel-inner > .item > img,
@@ -494,7 +495,8 @@ button:hover {
     width: 200px;
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    border-radius: 50%;
 }
 
 .doctorPanel {
@@ -1127,6 +1129,15 @@ to { opacity: 1; }
 .carousel__slide:nth-of-type(5) {
   background-size: cover;
   background-position: center;
+}
+
+/*ACCOUNT DETAILS PAGE CSS***********************************************************/
+
+.personalDetail h3,
+.personalDetail a {
+    display: inline;
+    vertical-align: top;
+    line-height: 28px;
 }
 
 

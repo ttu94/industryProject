@@ -2,14 +2,20 @@
 
 @section('title')
     {{-- USER NAME WILL NEED TO BE TAKEN OUT OF DB --}}
-    
-	Welcome
+	Welcome 
+{{--	@if(Auth::check()) {{$user->firstName}}! 
+	@endif--}}
+	
 @endsection
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h2>Welcome, </h2>
+    @if(Auth::check())
+   <h2>Welcome,
+   {{-- {{$user->firstName}}! --}}
+   </h2>
+   @endif
 @endsection
 
 @section('content')

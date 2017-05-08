@@ -32,13 +32,13 @@
             {{ Form::open(array('url' => secure_url('user/login'))) }}
                 <div class ="loginBlock">
                     <h1 class="raleway">Registered User</h1>
+                    <br>
                     @if($errors->any())
                         <div class="alert alert-error">
                             <a href="#" class="close" data-dimiss="alert"></a>
                             {{ implode('',$errors->all('<p class="error" style="color:red">:message</p>')) }}
                         </div>
                     @endif
-                    <br>
                     <input class="login" type="text" placeholder="Email" name="email" width="50px">
                     <br>
                     <input class="login" type="password" placeholder="Password" name="password">

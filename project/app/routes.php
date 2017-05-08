@@ -28,6 +28,12 @@ Route::post('user/login', array('as' => 'user.login', 'uses' => 'UserController@
 Route::get('user/logout', array('as' => 'user.logout', 'uses' => 'UserController@logout'));
 Route::resource('user', 'UserController');
 
+//Route back to website home page
+Route::get('home', array('as' => 'home', 'uses' => 'HomeController@index'));
+
+//Route protection for educational module
+Route::get('education_modules', array('as' => 'education.modules', 'uses' => 'UserController@EducationModules'));
+
 // SEARCH BAR
 Route::get('search', function()
 {
@@ -110,6 +116,14 @@ Route::get('educationalModules', function()
 Route::get('modulePageOne', function()
 {
     return View::make('registeredUserView/modulePageOne');
+ 
+});
+
+//Route To account details
+// NOTE: USER NEEDS TO BE SIGNED IN ***********
+Route::get('accountDetails', function()
+{
+    return View::make('registeredUserView/accountDetails');
  
 });
 
