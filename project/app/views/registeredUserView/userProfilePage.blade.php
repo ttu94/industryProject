@@ -2,13 +2,14 @@
 
 @section('title')
     {{-- USER NAME WILL NEED TO BE TAKEN OUT OF DB --}}
-	Welcome John Smith!
+    
+	Welcome
 @endsection
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h2>Welcome, John Smith</h2>
+   <h2>Welcome, </h2>
 @endsection
 
 @section('content')

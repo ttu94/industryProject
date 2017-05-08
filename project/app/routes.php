@@ -10,16 +10,22 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
 Route::get('/', function()
 {
 	return View::make('unregisterUserView/home');
 });
 
-// ROUTES TO LOGIN/LOGOUT FOR ADMIN
+Route::get('home', function()
+{
+	return View::make('unregisterUserView/home');
+});
+
+// ROUTES CONTROLLER FOR ADMIN
 Route::resource('admin', 'AdminController');
 
-// ROUTES TO LOGIN/LOGOUT FOR USERS
+// ROUTES TO CONTrOLLER FOR USERS
+Route::post('user/login', array('as' => 'user.login', 'uses' => 'UserController@login'));
+Route::get('user/logout', array('as' => 'user.logout', 'uses' => 'UserController@logout'));
 Route::resource('user', 'UserController');
 
 // SEARCH BAR

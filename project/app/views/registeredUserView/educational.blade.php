@@ -30,7 +30,7 @@
                     <p class="moduleTitle">
                         Demographics & Economics of Spinal Cord Injury (SCI)
                     </p><br>
-                    <a href="modulePageOne"><button class="btns greenbluelight">Read More</button></a>
+                    <a href="modulePageOne"><button class="btns greenbluemedium">Read More</button></a>
                 </div>
                 <br>
             </div>
@@ -58,7 +58,7 @@
                     <p class="moduleTitle">
                         Structures
                     </p><br><br>
-                    <a href="register"><button class="btns greenbluelight" text-align: center >Read More</button></a>
+                    <a href="register"><button class="btns greenbluemedium" text-align: center >Read More</button></a>
                 </div>
                 
             </div>
@@ -90,7 +90,7 @@
                     <p class="moduleTitle">
                         SCI mechanisms
                     </p><br>
-                    <a href="aboutUs"><button class="btns greenbluelight">Read More</button></a>
+                    <a href="aboutUs"><button class="btns greenbluemedium">Read More</button></a>
                 </div>
                 <br>
             </div>
@@ -122,7 +122,7 @@
                     <p class="moduleTitle">
                         Different injuries and their effects on the cord and body
                     </p><br>
-                    <a href="register"><button class="btns greenbluelight" text-align: center >Read More</button></a>
+                    <a href="register"><button class="btns greenbluemedium" text-align: center >Read More</button></a>
                 </div>
                 
             </div>
@@ -149,7 +149,7 @@
                     <p class="moduleTitle">
                         Peripheral nerve regeneration
                     </p><br>
-                    <a href="aboutUs"><button class="btns greenbluelight">Read More</button></a>
+                    <a href="aboutUs"><button class="btns greenbluemedium">Read More</button></a>
                 </div>
                 <br>
             </div>
@@ -181,7 +181,7 @@
                     <p class="moduleTitle">
                         Repair therapeutic strategies 
                     </p><br><br>
-                    <a href="register"><button class="btns greenbluelight" text-align: center >Read More</button></a>
+                    <a href="register"><button class="btns greenbluemedium" text-align: center >Read More</button></a>
                 </div>
                 <br>
             </div>

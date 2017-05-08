@@ -9,7 +9,7 @@ class UserController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
+		return View::make('unregisterUserView.home');
 	}
 
 
@@ -31,7 +31,6 @@ class UserController extends \BaseController {
 	 */
 	public function store()
 	{
-		
 		$input = Input::all();
 		
 		//Encrypts password
@@ -39,6 +38,7 @@ class UserController extends \BaseController {
 		$encrypted = Hash::make($password);
 		
 		// $v = Validator::make($input, User::$rules);
+		// // dd($v);
 		// if ($v->passes()){
 			$user = new User;
 			$user->firstName = $input['firstName'];
@@ -58,11 +58,14 @@ class UserController extends \BaseController {
 			$user->onBehalf = $input['onBehalf'];
 		
 			$user->save();
-			// return Redirect::route('registeredUserView.userProfilePage');
 			return View::make('registeredUserView.userProfilePage');
-		// } else {
-		// 	return Redirect::action('unregisterUserView.register')->withErrors($v);
-		// }
+			// return Redirect::action('UserController@show', array($user->id));
+		 //} else {
+		 
+			// Show Validation Errors
+		 	// return Redirect::back()->withErrors($v)->withUser();
+		 	// return Redirect::action('UserController@create')->withErrors($v);
+		 //}
 	}
 
 
@@ -74,7 +77,9 @@ class UserController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		//show the users profile
+		// $user = User::find($id);
+		// return View::make('registeredUserView.userProfilePage')->with($user);
 	}
 
 
@@ -111,6 +116,28 @@ class UserController extends \BaseController {
 	public function destroy($id)
 	{
 		//
+	}
+	
+	//USER LOGIN
+	public function login() {
+		$userdata = array(
+			'email' => Input::get('email'),
+			'password' => Input::get('password')
+		);
+		
+		// authenticate
+		if (Auth::attempt($userdata)){
+			return Redirect::to(URL::previous());
+			// return Redirect::route('registeredUserView.userProfilePage');
+		} else {
+			return Redirect::to(URL::previous()) -> withInput();
+		}
+	}
+	
+	//USER LOGOUT
+	public function logout() {
+		Auth::logout();
+		return Redirect::action('UserController@index');
 	}
 
 

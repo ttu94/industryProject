@@ -29,6 +29,7 @@
         <!--user login then routed to user's dashboard-->
         <div class="col-md-8">
             <br><br>
+            {{ Form::open(array('url' => secure_url('user/login'))) }}
             <div class ="loginBlock">
                 <h1 class="raleway">Registered User</h1>
                 <br>
@@ -47,6 +48,7 @@
                 <!--DUMMY LOG IN BUTTON-->
                 <a href="signIn"><button>dummy</button></a>
             </div>
+            {{ Form::close() }}
         </div>
 
     </div>

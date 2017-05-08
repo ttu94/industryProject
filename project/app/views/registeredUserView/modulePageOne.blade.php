@@ -13,6 +13,7 @@
 
 @section('content')
 <div class="container-fluid"> 
+    <!--background-image: url("https://dssofgcsc.files.wordpress.com/2010/07/spine.jpg")-->
     <br>
     <button class="btn greenbluelight">Begin Quiz >></button>
     <br><br>
