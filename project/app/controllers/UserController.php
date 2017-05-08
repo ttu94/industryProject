@@ -45,11 +45,11 @@ class UserController extends \BaseController {
 			'country' => 'required',
 			'email' => 'required|email|unique:users',
 			'password' => 'required|min:5',
-			// 'password_confirmation' => 'required|min:5|same:password'
+			'password_confirmation' => 'required|min:5|same:password'
 			);
 		
 		$v = Validator::make($input, $rules);
-		// // dd($v);
+		
 		if ($v->passes()){
 			$user = new User;
 			$user->firstName = $input['firstName'];
@@ -70,13 +70,13 @@ class UserController extends \BaseController {
 		
 			$user->save();
 			
-			//Kyai i dont know how to route to userProfilePage with ID. It also might be convenient to log them in when they register
+			//Kyai i dont know how to route to userProfilePage with ID for register or login. It also might be convenient to log them in when they register
 			return View::make('unregisterUserView.login');
 			// return Redirect::action('UserController@show', array($user->id));
 		 } else {
-		 
-			// Show Validation Errors. CURRENTLY WORKS
-		 	return Redirect::to('register')->withInput()->withErrors($v);
+		 	
+			// Show Validation Errors. CURRENTLY doesnt show inputs
+		 	return Redirect::back()->withInput()->withErrors($v);
 		 }
 	}
 
@@ -137,13 +137,27 @@ class UserController extends \BaseController {
 			'password' => Input::get('password')
 		);
 		
-		// authenticate
-		if (Auth::attempt($userdata)){
-			return Redirect::to(URL::previous());
-			// return Redirect::route('registeredUserView.userProfilePage');
-		} else {
-			return Redirect::to(URL::previous()) -> withInput();
-		}
+		$rules = array(
+			'email' => 'required',
+			'password' => 'required'
+		);
+		
+		$v = Validator::make($userdata, $rules);
+		
+		if ($v->passes()){
+			// authenticate
+			if (Auth::attempt($userdata)){
+				// return Redirect::to(URL::previous());
+				return Redirect::to('userProfilePage');
+			} else {
+				return Redirect::to(URL::previous()) -> withInput();
+			}
+		 } else {
+			// Show Validation Errors. CURRENTLY doesnt show inputs
+		 	return Redirect::back()->withErrors($v);
+		 }
+		
+
 	}
 	
 	//USER LOGOUT

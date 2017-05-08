@@ -91,7 +91,7 @@ Route::get('adminLogin', function()
 // *****************************************************************************
 
 //Route To User PAGe NOTE: INCOMPLETE ITS A DUMMY RN
-Route::get('signIn', function()
+Route::get('userProfilePage', function()
 {
     return View::make('registeredUserView/userProfilePage');
  

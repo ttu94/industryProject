@@ -14,18 +14,23 @@
     <div class="col-md-12">
         <!--<div>-->
         {{ Form::open(array('url' => secure_url('user'))) }}
+            <!--Validation errors-->
+            @if($errors->any())
+            <div class="alert alert-error">
+                <a href="#" class="close" data-dimiss="alert"></a>
+                {{ implode('',$errors->all('<p class="error" style="color:red">:message</p>')) }}
+            </div>
+            @endif
             <h2>Personal Details</h2>
             <hr>
             <div style="column-count:2">
                 <input class="register" type="text" name="firstName" id="firstName" placeholder="First name *">
-                <p style="color:red">{{$errors->first('firstName')}}</p>
                 <input class="register" type="text" name="lastName" id="lastName" placeholder="Last name *">
-                <p style="color:red">{{$errors->first('lastName')}}</p>
             </div>
             <!--<br>-->
             <div class="ageGender">  <!--class not used yet-->
                 <input class="age" type="number" min="0" name="age" id="age" placeholder="Age *">
-                <p style="color:red">{{$errors->first('age')}}</p>
+                
                 
                 <!--gender selection box-->
                 <div class="linearRadio" name="gender" id="gender">
@@ -33,13 +38,11 @@
                     <input style="margin-left:0px" type="radio" name="gender" value="male"> Male
                     <input type="radio" name="gender" value="female"> Female
                     <input type="radio" name="gender" value="other"> Other
-                    <p style="color:red">{{$errors->first('gender')}}</p>
                 </div>
             </div>
 
             <input class="email" type="email" name="email" id="email" placeholder="Email *">
-            <p style="color:red">{{$errors->first('email')}}</p>
-
+            
             <div class="country" name="country" id="country">
                 <select name="country" id="country">
                 <option value="None selected">Please select your current country of residence</option>
@@ -294,14 +297,11 @@
             	<option value="ZWE">Zimbabwe</option>
 </select>
             </div>
-            <p style="color:red">{{$errors->first('country')}}</p>
             
-            <!--<div style="column-count:2">-->
-            <div>
+            <div style="column-count:2">
+            <!--<div>-->
                 <input class="register" type="password" name="password" placeholder="Password *">
-                <p style="color:red">{{$errors->first('password')}}</p>
-                <!--<input class="register" type="password" name="password_confirmation" placeholder="Confirm Password*" required>-->
-                <!--<p style="color:red">{{$errors->first('password_confirmation')}}</p>-->
+                <input class="register" type="password" name="password_confirmation" placeholder="Confirm Password*" required>
             </div>
             
             <h2>Other Details</h2>

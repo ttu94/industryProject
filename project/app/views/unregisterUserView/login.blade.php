@@ -30,25 +30,31 @@
         <div class="col-md-8">
             <br><br>
             {{ Form::open(array('url' => secure_url('user/login'))) }}
-            <div class ="loginBlock">
-                <h1 class="raleway">Registered User</h1>
-                <br>
-                <input class="login" type="text" placeholder="Email" name="email" required width="50px">
-                <br>
-                <input class="login" type="password" placeholder="Password" name="password" required>
-                <br>
-                <input class="raleway" type="checkbox" checked="checked"> Remember me
-                
-                
-                <a href=""><button>Sign In</button></a>
-                <br>
-                <a href="#">Forget Password?</a>
-                <br><br>
-                <a href="adminLogin">Admin Login</a>
-                <!--DUMMY LOG IN BUTTON-->
-                <a href="signIn"><button>dummy</button></a>
-            </div>
+                <div class ="loginBlock">
+                    <h1 class="raleway">Registered User</h1>
+                    @if($errors->any())
+                        <div class="alert alert-error">
+                            <a href="#" class="close" data-dimiss="alert"></a>
+                            {{ implode('',$errors->all('<p class="error" style="color:red">:message</p>')) }}
+                        </div>
+                    @endif
+                    <br>
+                    <input class="login" type="text" placeholder="Email" name="email" width="50px">
+                    <br>
+                    <input class="login" type="password" placeholder="Password" name="password">
+                    <br>
+                    <input class="raleway" type="checkbox" checked="checked"> Remember me
+                    
+                    
+                    <button>Sign In</button>
+                    <br>
+                    <a href="#">Forget Password?</a>
+                    <br><br>
+                    <a href="adminLogin">Admin Login</a>
+                    <!--DUMMY LOG IN BUTTON-->
+                </div>
             {{ Form::close() }}
+            <a href="userProfilePage"><button>dummy</button></a>
         </div>
 
     </div>

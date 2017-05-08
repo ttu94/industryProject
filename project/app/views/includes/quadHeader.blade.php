@@ -8,9 +8,17 @@
                 <a href="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
             </div>
         </form>
-        <ul><li style="float:right" class="topLink"><a href="user/logout" >LOGOUT</a></li>
-            <li style="float:right" class="topLink"><a href="signIn">MY PROFILE</a></li>
-        </ul>
+            @if (Auth::check())
+                <ul>
+                    <li style="float:right" class="topLink"><a href="user/logout" >LOGOUT</a></li>
+                    <li style="float:right" class="topLink"><a href="signIn">MY PROFILE</a></li>
+                </ul>
+            @else
+                <ul>
+                    <li style="float:right" class="topLink"><a href="register">REGISTER</a></li>
+                    <li style="float:right" class="topLink"><a href="login">LOGIN</a></li>
+                </ul>
+            @endif
         </div>
         
         <!--SECOND SECTION OF HEADER-->
