@@ -20,19 +20,22 @@ Route::get('home', function()
 	return View::make('unregisterUserView/home');
 });
 
-// ROUTES CONTROLLER FOR ADMIN
+// ROUTES CONTROLLER FOR ADMIN**************************************************
 Route::resource('admin', 'AdminController');
 
-// ROUTES TO CONTrOLLER FOR USERS
+// ROUTES TO CONTrOLLER FOR USERS************************************************
 Route::post('user/login', array('as' => 'user.login', 'uses' => 'UserController@login'));
 Route::get('user/logout', array('as' => 'user.logout', 'uses' => 'UserController@logout'));
 Route::resource('user', 'UserController');
 
+//Route protection for educational module
+Route::get('education_modules', array('as' => 'education.modules', 'uses' => 'UserController@EducationModules'));
+
 //Route back to website home page
 Route::get('home', array('as' => 'home', 'uses' => 'HomeController@index'));
 
-//Route protection for educational module
-Route::get('education_modules', array('as' => 'education.modules', 'uses' => 'UserController@EducationModules'));
+//ROUTE CONTROLLER FOR PAGES
+Route::resource('page', 'PageController');
 
 // SEARCH BAR
 Route::get('search', function()

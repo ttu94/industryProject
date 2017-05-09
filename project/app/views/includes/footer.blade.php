@@ -1,6 +1,6 @@
 <footer>
     <div id="footer">
-        <img style="float:left" class="griffithLogo" alt="Griffith University" src="images/griffith_logo.png" height="100px" />
+        <img style="float:left" class="griffithLogo" alt="Griffith University" src="{{ URL::to('/') }}/images/griffith_logo.png" height="100px" />
         <div class="socialMedia">
             <br>
             <h1 class="followUs">Follow Us</h1> 

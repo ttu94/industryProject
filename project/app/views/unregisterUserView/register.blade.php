@@ -32,10 +32,10 @@
                <input class="age" {{ Form::number('age', '',array('placeholder' =>'Age'))}}
                 <!--gender selection box-->
                 <div class="linearRadio basicFontStyle">
-                    <p class="gender">&nbsp;&nbsp;&nbsp;Gender<font color="red">*</font></p>
-                    {{ Form::radio('gender', 'male')}}Male
-                    {{ Form::radio('gender', 'female')}}Female
-                    {{ Form::radio('gender', 'other')}}Other
+                    <p class="gender">Gender<font color="red">*</font></p>
+                    {{ Form::radio('gender', 'male')}} Male
+                    {{ Form::radio('gender', 'female')}} Female
+                    {{ Form::radio('gender', 'other')}} Other
                 </div>
             </div>
             

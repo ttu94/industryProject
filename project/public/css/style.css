@@ -405,6 +405,7 @@ button:hover {
 
 .gender {
     margin: 10px 0px 2px 0px;
+    padding-left: 175px;
     /*margin-top: 10px;*/
     /*margin-bottom: 2px;*/
     
@@ -462,7 +463,7 @@ button:hover {
 .country {
     padding: 12px 20px;
     border: 1px solid #ccc;
-    width: 35%;
+    width: 40%;
     /*color: #595145;*/
     overflow: hidden;
 }
