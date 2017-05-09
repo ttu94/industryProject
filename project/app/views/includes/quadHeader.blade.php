@@ -10,7 +10,7 @@
         </form>
             <ul>
                 @if(Auth::check())
-                    <li style="float:right" class="topLink"><a href="user/logout" >LOGOUT</a></li>
+                    <li style="float:right" class="topLink"><a href={{route("user.logout")}} >LOGOUT</a></li>
                     <!--FAKE USER PAGE BUTTOn-->
                     <li style="float:right" class="topLink"><a href={{route("user.show", array("id" => Auth::user()->id))}}>MY PROFILE</a></li>
                 @else
@@ -35,7 +35,7 @@
               <li style="float:right" class="bottomLink"><a href="abstractModule">ABSTRACT MODULES</a>
               </li>
               <li style="float:right" class="bottomLink"><a href="faq">FAQ</a></li>
-              <li style="float:right" class="bottomLink"><a href="aboutUs">ABOUT</a></li>
+              <li style="float:right" class="bottomLink"><a href={{{route("about.us")}}}>ABOUT</a></li>
             </ul>
         </div>
         
@@ -48,7 +48,7 @@
         <div class="quadLink">
             <ul>
                 <li class="eduMod" style="width:33%"><a href={{route("education.modules")}}>EDUCATIONAL MODULES</a></li>
-                <li class="eduMod" style="width:33%"><a href="#">SEE RESULTS</a></li>
+                <li class="eduMod" style="width:33%"><a href={{route("my.results")}}>SEE RESULTS</a></li>
                 <li class="eduMod" style="width:33%"><a href="accountDetails">ACCOUNT DETAILS</a></li>
             </ul>
         </div>

@@ -36,6 +36,8 @@ Route::get('home', array('as' => 'home', 'uses' => 'HomeController@index'));
 
 //ROUTE CONTROLLER FOR PAGES
 Route::resource('page', 'PageController');
+Route::get('aboutUs', array('as' => 'about.us', 'uses' => 'PageController@AboutUs'));
+Route::get('results/{id}', array('as' => 'my.results', 'uses' => 'PageController@Results'));
 
 // SEARCH BAR
 Route::get('search', function()

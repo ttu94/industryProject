@@ -81,6 +81,18 @@ class PageController extends \BaseController {
 	{
 		//
 	}
+	
+	public function AboutUs()
+	{
+		return View::make("unregisterUserView.aboutUs");
+	}
+	
+	public function Results()
+	{
+		$user = Auth::user();
+		$results = Results::where('user_id', '==', $user->id)->get();
+		// return View::make()->withResults($results);
+	}
 
 
 }

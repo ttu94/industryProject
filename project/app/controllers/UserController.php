@@ -93,6 +93,7 @@ class UserController extends \BaseController {
 	public function show($id)
 	{
 		//show the users profile
+		// if(Auth::user() == $id)
 		$user = User::find($id);
 		return View::make('registeredUserView.userProfilePage')->withUser($user);
 	}
@@ -151,6 +152,9 @@ class UserController extends \BaseController {
 			// authenticate
 			if (Auth::attempt($userdata)){
 				// return Redirect::to(URL::previous());
+				// if(Auth::user()->admin){
+				// 	//route to admin page
+				// }
 				return Redirect::action('UserController@show', array(Auth::user()->id));
 			} else {
 				return Redirect::to(URL::previous()) -> withInput();
@@ -178,7 +182,7 @@ class UserController extends \BaseController {
 		{
 			return View::make('registeredUserView.educational')->withUser(Auth::user()->id);//educational.blade.php
 		}else{
-			//go back they arent logged in
+			//redirected to login page
 			return Redirect::to('login');
 			
 		}

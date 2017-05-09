@@ -67,13 +67,13 @@
         <!--    </table>-->
         <!--</div>-->
         
-        <div class="coverflow">
-            <div class="cover"><img src="images/griffith_logo.png"></div>
-            <div class="cover"><img src="images/griffith_logo.png"></div>
-            <div class="cover"><img src="images/griffith_logo.png"></div>
-            <div class="cover"><img src="images/griffith_logo.png"></div>
-            <div class="cover"><img src="images/griffith_logo.png"></div>
-        </div>
+        <!--<div class="coverflow">-->
+        <!--    <div class="cover"><img src="images/griffith_logo.png"></div>-->
+        <!--    <div class="cover"><img src="images/griffith_logo.png"></div>-->
+        <!--    <div class="cover"><img src="images/griffith_logo.png"></div>-->
+        <!--    <div class="cover"><img src="images/griffith_logo.png"></div>-->
+        <!--    <div class="cover"><img src="images/griffith_logo.png"></div>-->
+        <!--</div>-->
     </div>
 </div>
 @endsection
