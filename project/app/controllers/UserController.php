@@ -25,7 +25,7 @@ class UserController extends \BaseController {
 
 
 	/**
-	 * Store a newly created resource in storage.
+	 * Store a newly user resource in storage.
 	 *
 	 * @return Response
 	 */
@@ -78,6 +78,8 @@ class UserController extends \BaseController {
 		 	
 			// Show Validation Errors. CURRENTLY doesnt show inputs
 		 	return Redirect::back()->withInput()->withErrors($v);
+		 	
+		 	
 		 }
 	}
 
@@ -164,14 +166,17 @@ class UserController extends \BaseController {
 	//USER LOGOUT
 	public function logout() {
 		Auth::logout();
+		// return View::make('unregisterUserView.home');
 		return Redirect::action('UserController@index');
+		
 	}
 	
+	//Route protection for educational modules
 	public function EducationModules()
 	{
 		if(Auth::check())
 		{
-			return View::make('registeredUserView.educational')->withUser(Auth::user()->id);//educational.blade.php ready to check?
+			return View::make('registeredUserView.educational')->withUser(Auth::user()->id);//educational.blade.php
 		}else{
 			//go back they arent logged in
 			return Redirect::to('login');

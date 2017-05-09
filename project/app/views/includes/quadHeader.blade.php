@@ -15,9 +15,9 @@
                     <li style="float:right" class="topLink"><a href={{route("user.show", array("id" => Auth::user()->id))}}>MY PROFILE</a></li>
                 @else
                     <!--FAKE Logout BUTTOn-->
-                    <li style="float:right" class="topLink"><a href="#" >LOGOUT</a></li>
+                    <li style="float:right" class="topLink"><a href="home" >LOGOUT</a></li>
                     <!--FAKE USER PAGE BUTTOn-->
-                    <li style="float:right" class="topLink"><a href="#">MY PROFILE</a></li>
+                    <li style="float:right" class="topLink"><a href="userProfilePage">MY PROFILE</a></li>
                 @endif
             </ul>
 

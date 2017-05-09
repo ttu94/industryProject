@@ -24,24 +24,22 @@
             <h2>Personal Details</h2>
             <hr>
             <div style="column-count:2">
-                <input class="register" type="text" name="firstName" id="firstName" placeholder="First name *">
-                <input class="register" type="text" name="lastName" id="lastName" placeholder="Last name *">
+                <input class="register" {{ Form::text('firstName', '',array('placeholder' =>'First Name'))}}
+                <input class="register" {{ Form::text('lastName', '',array('placeholder' =>'Last Name'))}}
             </div>
             <!--<br>-->
             <div class="ageGender">  <!--class not used yet-->
-                <input class="age" type="number" min="0" name="age" id="age" placeholder="Age *">
-                
-                
+               <input class="age" {{ Form::number('age', '',array('placeholder' =>'Age'))}}
                 <!--gender selection box-->
-                <div class="linearRadio" name="gender" id="gender">
-                    <p class="gender">Gender<font color="red">*</font></p>
-                    <input style="margin-left:0px" type="radio" name="gender" value="male"> Male
-                    <input type="radio" name="gender" value="female"> Female
-                    <input type="radio" name="gender" value="other"> Other
+                <div class="linearRadio basicFontStyle">
+                    <p class="gender">&nbsp;&nbsp;&nbsp;Gender<font color="red">*</font></p>
+                    {{ Form::radio('gender', 'male')}}Male
+                    {{ Form::radio('gender', 'female')}}Female
+                    {{ Form::radio('gender', 'other')}}Other
                 </div>
             </div>
-
-            <input class="email" type="email" name="email" id="email" placeholder="Email *">
+            
+            <input class="email" {{ Form::email('email', '',array('placeholder' =>"Email"))}}
             
             <div class="country" name="country" id="country" style="background-color:white">
                 <select name="country" id="country">
@@ -308,14 +306,20 @@
             <hr>
             <p>I am: <font color="red">*</font></p>
             <div class="oUsertype">
-                <input type="radio" name="usertype" value="patient" checked> a patient with a spinal cord injury (SCI)
+                 {{ Form::radio('usertype', 'patient', true)}} a patient with a spinal cord injury (SCI)
+                <!--<br>-->
+                <!--{{ Form::radio('usertype', 'carer')}} a family member/carer of a spinal cord injury (SCI) patient-->
+                <!--<br>-->
+                <!--{{ Form::radio('usertype', 'student')}} a student-->
+                <!--<br>-->
+                <!--{{ Form::radio('usertype', 'other')}} other-->
                 <br>
                 <input type="radio" name="usertype" value="carer"> a family member/carer of a spinal cord injury (SCI) patient
                 <br>
                 <input type="radio" name="usertype" value="student"> a student
                 <br>
                 <input type="radio" name="usertype" value="other"> other
-                <input class="boxthird" style="margin: 0px 0px 0px 60px;" type="text" name="other" placeholder="Please state other">  
+                <input class="boxthird" style="margin: 0px 0px 0px 60px;" {{ Form::text('other', '',array('placeholder' =>"Please state other"))}}
             </div>
             
             <!--DROPS DOWN IF USER SELECTS PATIENT RADIO-->
@@ -324,26 +328,25 @@
                 <hr>
                 <p>When did your injury occur?<font color="red">*</font></p>
                 <!--<input type="text" id="datepicker">-->
-                <input type="date" name="injuryDate" id="injuryDate" style="text-align:center">
-                
+                <input type="date" name="injuryDate" id="injuryDate" style="text-align:center"> 
                 <div class="linearRadio">
                     <p><br>Are you taking any treatment for it?<font color="red">*</font></p>
-                    <input style="margin-left:0px" type="radio" name="treatment" value="yes"> Yes
-                    <input type="radio" name="treatment" value="no" checked> No
+                    <input style="margin-left:0px"{{ Form::radio('treatment', 'yes')}} Yes
+                    {{ Form::radio('treatment', 'no', true)}} No
                 </div>
-                
-                <input class="treated" type="text" name="yesTreat" id="yesTreat" placeholder="What is the treatment?">
+            
+                <input class="treated" {{ Form::text('yesTreat', '',array('placeholder' =>"What is the treatment?"))}}
                 
                 <div class="linearRadio">
                     <p><br>Will you be interested in participating in the clinical trial?<font color="red">*</font></p>
-                    <input style="margin-left:0px" type="radio" name="clinicalTrial" value="yes"> Yes
-                    <input type="radio" name="clinicalTrial" value="no" checked> No
+                    <input style="margin-left:0px"{{ Form::radio('clinicalTrial', 'yes')}} Yes
+                    {{ Form::radio('clinicalTrial', 'no', true)}} No
                 </div>
                 
                 <div class="linearRadio" >
                     <p><br>Will you be interested in participating in the physiotherapy trial?<font color="red">*</font></p>
-                    <input style="margin-left:0px" type="radio" name="physioTrial" value="yes"> Yes
-                    <input type="radio" name="physioTrial" value="no" checked> No
+                    <input style="margin-left:0px"{{ Form::radio('physioTrial', 'yes')}} Yes
+                    {{ Form::radio('physioTrial', 'no', true)}} No
                 </div>
             </div>
             
@@ -353,8 +356,8 @@
                 <hr>
                 <div class="linearRadio">
                     <p>Do you know anyone who is suffering from spinal cord injury (SCI)?<font color="red">*</font></p>
-                    <input style="margin-left:0px" name="onBehalf" type="radio" value="yes"> Yes
-                    <input type="radio" name="onBehalf" value="no" checked> No
+                    <input style="margin-left:0px"{{ Form::radio('onBehalf', 'yes')}} Yes
+                    {{ Form::radio('onBehalf', 'no', true)}} No
                 </div>
             </div>
             <div style="margin-top:20px;text-align:center"><button type="submit">Create Account</button></div>
