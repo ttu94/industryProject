@@ -48,9 +48,9 @@
                     
                     <button>Sign In</button>
                     <br>
-                    <a href="#">Forget Password?</a>
+                    <a href="#" style="color:#67AB9F">Forget Password?</a>
                     <br><br>
-                    <a href="adminLogin">Admin Login</a>
+                    <a href="adminLogin" style="color:#67AB9F">Admin Login</a>
                 </div>
             {{ Form::close() }}
             <!--<a href="userProfilePage"><button>dummy</button></a>-->

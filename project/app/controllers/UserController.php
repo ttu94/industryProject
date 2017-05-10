@@ -93,10 +93,15 @@ class UserController extends \BaseController {
 	public function show($id)
 	{
 		//show the users profile
-		// if(Auth::user() == $id)
-		$user = User::find($id);
-		return View::make('registeredUserView.userProfilePage')->withUser($user);
+		// if(Auth::user()->id == $id){
+			$user = User::find($id);
+			return View::make('registeredUserView.userProfilePage')->withUser($user);
+		// } else {
+		// 	Auth::logout();
+		// 	return Redirect::action('UserController@index');
+		// }
 	}
+	
 
 
 	/**
@@ -107,7 +112,7 @@ class UserController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		//
+		
 	}
 
 
@@ -175,4 +180,8 @@ class UserController extends \BaseController {
 		
 	}
 	
+	public function AccountDetails($id){
+		$user = User::find($id);
+		return View::make('registeredUserView.accountDetails')->withUser($user);
+	}
 }

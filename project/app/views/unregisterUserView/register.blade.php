@@ -33,9 +33,9 @@
                 <!--gender selection box-->
                 <div class="linearRadio basicFontStyle">
                     <p class="gender">Gender<font color="red">*</font></p>
-                    {{ Form::radio('gender', 'male')}} Male
-                    {{ Form::radio('gender', 'female')}} Female
-                    {{ Form::radio('gender', 'other')}} Other
+                    {{ Form::radio('gender', 'Male')}} Male
+                    {{ Form::radio('gender', 'Female')}} Female
+                    {{ Form::radio('gender', 'Other')}} Other
                 </div>
             </div>
             
@@ -306,7 +306,7 @@
             <hr>
             <p>I am: <font color="red">*</font></p>
             <div class="oUsertype">
-                 {{ Form::radio('usertype', 'patient', true)}} a patient with a spinal cord injury (SCI)
+                 {{ Form::radio('usertype', 'atient', true)}} a patient with a spinal cord injury (SCI)
                 <br>
                 {{ Form::radio('usertype', 'carer')}} a family member/carer of a spinal cord injury (SCI) patient
                 <br>

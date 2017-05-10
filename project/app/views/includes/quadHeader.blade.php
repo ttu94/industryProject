@@ -12,7 +12,7 @@
                 @if(Auth::check())
                     <li style="float:right" class="topLink"><a href={{route("user.logout")}} >LOGOUT</a></li>
                     <!--FAKE USER PAGE BUTTOn-->
-                    <li style="float:right" class="topLink"><a href={{route("user.show", array("id" => Auth::user()->id))}}>MY PROFILE</a></li>
+                    <li style="float:right" class="topLink"><a href={{ route("user.show", array("id" => Auth::user()->id)) }}>MY PROFILE</a></li>
                 @else
                     <!--FAKE Logout BUTTOn-->
                     <li style="float:right" class="topLink"><a href="home" >LOGOUT</a></li>
@@ -31,10 +31,9 @@
                     <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/clemjones_Logo.png" height="130px" width="100px"/>                
              </a>
               <h1 id="headerTitle">Spinal Cord Injury <br><span id="rehab">Rehabilitation</span></h1>
-              <li style="float:right" class="bottomLink"><a href="contactUs">CONTACT</a></li>
-              <li style="float:right" class="bottomLink"><a href="abstractModule">ABSTRACT MODULES</a>
-              </li>
-              <li style="float:right" class="bottomLink"><a href="faq">FAQ</a></li>
+              <li style="float:right" class="bottomLink"><a href={{{route("contact.us")}}}>CONTACT</a></li>
+              <li style="float:right" class="bottomLink"><a href={{ route("abstract.module")}}>ABSTRACT MODULES</a></li>
+              <li style="float:right" class="bottomLink"><a href={{{route("faq")}}}>FAQ</a></li>
               <li style="float:right" class="bottomLink"><a href={{{route("about.us")}}}>ABOUT</a></li>
             </ul>
         </div>
@@ -49,7 +48,7 @@
             <ul>
                 <li class="eduMod" style="width:33%"><a href={{route("education.modules")}}>EDUCATIONAL MODULES</a></li>
                 <li class="eduMod" style="width:33%"><a href={{route("my.results")}}>SEE RESULTS</a></li>
-                <li class="eduMod" style="width:33%"><a href={{route("account.details")}}>ACCOUNT DETAILS</a></li>
+                <li class="eduMod" style="width:33%"><a href={{ route("account_details", array("id" => Auth::user()->id)) }}>ACCOUNT DETAILS</a></li>
             </ul>
         </div>
         

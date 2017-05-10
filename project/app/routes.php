@@ -41,6 +41,12 @@ Route::get('user/logout', array('as' => 'user.logout', 'uses' => 'UserController
 Route::resource('user', 'UserController');
 
 
+Route::get('{id}/account_details', array('as' => 'account_details', 'uses' => 'UserController@AccountDetails'));
+
+//Route for getting results for a specific user
+Route::get('results/{id}', array('as' => 'my.results', 'uses' => 'UserController@Results'));
+
+
 //ROUTE CONTROLLER FOR PAGES***************************************************************************************
 Route::resource('page', 'PageController');
 
@@ -54,10 +60,7 @@ Route::get('contactUs', array('as' => 'contact.us', 'uses' => 'PageController@Co
 Route::get('faq', array('as' => 'faq', 'uses' => 'PageController@Faq'));
 
 //view make abstractmodule for quad header
-Route::get('abstractModule', array('as' => 'abstract.Module', 'uses' => 'PageController@AbstractModule'));
-
-//Route for getting results for a specific user
-Route::get('results/{id}', array('as' => 'my.results', 'uses' => 'PageController@Results'));
+Route::get('abstractModule', array('as' => 'abstract.module', 'uses' => 'PageController@AbstractModule'));
 
 //Route protection for educational module
 Route::get('education_modules', array('as' => 'education.modules', 'uses' => 'PageController@EducationModules'));

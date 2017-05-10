@@ -14,6 +14,7 @@
     <div class="row">
        
         <div class="col-md-12">
+            <br>
             <h3 style="color:#595145">General</h3>
             <div class="faq_container">
                <div class="faq">
@@ -29,6 +30,7 @@
                           <div class="faq_answer"><br>The full modules and quizzes are open for registered users only. Abstracts of each module are available to the public.</div>
                        </div>        
                 </div>
+                <br>
                <h3 style="color:#595145">Modules</h3> 
                <div class="faq">
                   <div class="faq_question">Can I download the modules?</div>
@@ -50,6 +52,7 @@
                           <div class="faq_answer"><br>Time. Give it time.</div>
                        </div>        
                 </div>
+                <br>
                 <h3 style="color:#595145">Quizzes</h3>
                <div class="faq">
                   <div class="faq_question">How many attempts do I have to complete a quiz?</div>

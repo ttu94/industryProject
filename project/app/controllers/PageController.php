@@ -116,15 +116,15 @@ class PageController extends \BaseController {
 	}
 	
 	//Route protection for account details
-	public function AccountDetails()
+	public function AccountDetails($id)
 	{
 		if(Auth::check())
 		{
+			$user = User::find($id);
 			return View::make('registeredUserView.accountDetails')->withUser(Auth::user()->id);
 		}else{
 			//redirected to login page
 			return Redirect::to('login');
-			
 		}
 	}
 
