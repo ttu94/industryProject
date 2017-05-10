@@ -20,31 +20,54 @@ Route::get('home', function()
 	return View::make('unregisterUserView/home');
 });
 
-// ROUTES CONTROLLER FOR ADMIN**************************************************
-Route::resource('admin', 'AdminController');
-
-// ROUTES TO CONTrOLLER FOR USERS************************************************
-Route::post('user/login', array('as' => 'user.login', 'uses' => 'UserController@login'));
-Route::get('user/logout', array('as' => 'user.logout', 'uses' => 'UserController@logout'));
-Route::resource('user', 'UserController');
-
-//Route protection for educational module
-Route::get('education_modules', array('as' => 'education.modules', 'uses' => 'UserController@EducationModules'));
-
-//Route back to website home page
-Route::get('home', array('as' => 'home', 'uses' => 'HomeController@index'));
-
-//ROUTE CONTROLLER FOR PAGES
-Route::resource('page', 'PageController');
-Route::get('aboutUs', array('as' => 'about.us', 'uses' => 'PageController@AboutUs'));
-Route::get('results/{id}', array('as' => 'my.results', 'uses' => 'PageController@Results'));
-
 // SEARCH BAR
 Route::get('search', function()
 {
     //return View::make('registeredUserView/userProfilePage');
     return View::make('unregisterUserView/search');
 });
+
+// *******************************************************************************
+
+//Route back to website home page
+Route::get('home', array('as' => 'home', 'uses' => 'HomeController@index'));
+
+// ROUTES CONTROLLER FOR ADMIN*************************************************************************************
+Route::resource('admin', 'AdminController');
+
+// ROUTES TO CONTrOLLER FOR USERS*********************************************************************************
+Route::post('user/login', array('as' => 'user.login', 'uses' => 'UserController@login'));
+Route::get('user/logout', array('as' => 'user.logout', 'uses' => 'UserController@logout'));
+Route::resource('user', 'UserController');
+
+
+//ROUTE CONTROLLER FOR PAGES***************************************************************************************
+Route::resource('page', 'PageController');
+
+//View make about us for quad header
+Route::get('aboutUs', array('as' => 'about.us', 'uses' => 'PageController@AboutUs'));
+
+//Vuew make contactus for quad header
+Route::get('contactUs', array('as' => 'contact.us', 'uses' => 'PageController@ContactUs'));
+
+//view make faq for quad header
+Route::get('faq', array('as' => 'faq', 'uses' => 'PageController@Faq'));
+
+//view make abstractmodule for quad header
+Route::get('abstractModule', array('as' => 'abstract.Module', 'uses' => 'PageController@AbstractModule'));
+
+//Route for getting results for a specific user
+Route::get('results/{id}', array('as' => 'my.results', 'uses' => 'PageController@Results'));
+
+//Route protection for educational module
+Route::get('education_modules', array('as' => 'education.modules', 'uses' => 'PageController@EducationModules'));
+
+//Route protection for account details
+Route::get('account_details', array('as' => 'account.details', 'uses' => 'PageController@AccountDetails'));
+
+//Route protection for module one page
+Route::get('module_one', array('as' => 'module.one', 'uses' => 'PageController@ModuleOnePage'));
+
 
 
 // UNREGISTERED USERS ROUTES***************************************************
@@ -102,33 +125,33 @@ Route::get('adminLogin', function()
 // *****************************************************************************
 
 //Route To User PAGe NOTE: INCOMPLETE ITS A DUMMY RN
-Route::get('userProfilePage', function()
-{
-    return View::make('registeredUserView/userProfilePage');
+// Route::get('userProfilePage', function()
+// {
+//     return View::make('registeredUserView/userProfilePage');
  
-});
+// });
 
 //Route To education module.
 // NOTE: USER NEEDS TO BE SIGNED IN ***********
-Route::get('educationalModules', function()
-{
-    return View::make('registeredUserView/educational');
+// Route::get('educationalModules', function()
+// {
+//     return View::make('registeredUserView/educational');
  
-});
+// });
 
-//Route To module page One
-// NOTE: USER NEEDS TO BE SIGNED IN ***********
-Route::get('modulePageOne', function()
-{
-    return View::make('registeredUserView/modulePageOne');
+// //Route To module page One
+// // NOTE: USER NEEDS TO BE SIGNED IN ***********
+// Route::get('modulePageOne', function()
+// {
+//     return View::make('registeredUserView/modulePageOne');
  
-});
+// });
 
-//Route To account details
-// NOTE: USER NEEDS TO BE SIGNED IN ***********
-Route::get('accountDetails', function()
-{
-    return View::make('registeredUserView/accountDetails');
+// //Route To account details
+// // NOTE: USER NEEDS TO BE SIGNED IN ***********
+// Route::get('accountDetails', function()
+// {
+//     return View::make('registeredUserView/accountDetails');
  
-});
+// });
 

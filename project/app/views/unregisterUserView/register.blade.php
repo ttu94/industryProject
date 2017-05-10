@@ -307,19 +307,19 @@
             <p>I am: <font color="red">*</font></p>
             <div class="oUsertype">
                  {{ Form::radio('usertype', 'patient', true)}} a patient with a spinal cord injury (SCI)
-                <!--<br>-->
-                <!--{{ Form::radio('usertype', 'carer')}} a family member/carer of a spinal cord injury (SCI) patient-->
-                <!--<br>-->
-                <!--{{ Form::radio('usertype', 'student')}} a student-->
-                <!--<br>-->
-                <!--{{ Form::radio('usertype', 'other')}} other-->
                 <br>
-                <input type="radio" name="usertype" value="carer"> a family member/carer of a spinal cord injury (SCI) patient
+                {{ Form::radio('usertype', 'carer')}} a family member/carer of a spinal cord injury (SCI) patient
                 <br>
-                <input type="radio" name="usertype" value="student"> a student
+                {{ Form::radio('usertype', 'student')}} a student
                 <br>
-                <input type="radio" name="usertype" value="other"> other
-                <input class="boxthird" style="margin: 0px 0px 0px 60px;" {{ Form::text('other', '',array('placeholder' =>"Please state other"))}}
+                {{ Form::radio('usertype', 'other')}} other
+                <!--<br>-->
+                <!--<input type="radio" name="usertype" value="carer"> a family member/carer of a spinal cord injury (SCI) patient-->
+                <!--<br>-->
+                <!--<input type="radio" name="usertype" value="student"> a student-->
+                <!--<br>-->
+                <!--<input type="radio" name="usertype" value="other"> other-->
+                <!--<input class="boxthird" style="margin: 0px 0px 0px 60px;" {{ Form::text('other', '',array('placeholder' =>"Please state other"))}}-->
             </div>
             
             <!--DROPS DOWN IF USER SELECTS PATIENT RADIO-->

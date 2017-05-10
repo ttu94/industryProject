@@ -49,7 +49,7 @@
             <ul>
                 <li class="eduMod" style="width:33%"><a href={{route("education.modules")}}>EDUCATIONAL MODULES</a></li>
                 <li class="eduMod" style="width:33%"><a href={{route("my.results")}}>SEE RESULTS</a></li>
-                <li class="eduMod" style="width:33%"><a href="accountDetails">ACCOUNT DETAILS</a></li>
+                <li class="eduMod" style="width:33%"><a href={{route("account.details")}}>ACCOUNT DETAILS</a></li>
             </ul>
         </div>
         

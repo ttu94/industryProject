@@ -87,6 +87,60 @@ class PageController extends \BaseController {
 		return View::make("unregisterUserView.aboutUs");
 	}
 	
+	public function Faq()
+	{
+		return View::make("unregisterUserView.faq");
+	}
+	
+	public function AbstractModule()
+	{
+		return View::make("unregisterUserView.abstractModule");
+	}
+	
+	public function ContactUs()
+	{
+		return View::make("unregisterUserView.contactUs");
+	}
+	
+	//Route protection for educational modules
+	public function EducationModules()
+	{
+		if(Auth::check())
+		{
+			return View::make('registeredUserView.educational')->withUser(Auth::user()->id);//educational.blade.php
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+			
+		}
+	}
+	
+	//Route protection for account details
+	public function AccountDetails()
+	{
+		if(Auth::check())
+		{
+			return View::make('registeredUserView.accountDetails')->withUser(Auth::user()->id);
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+			
+		}
+	}
+
+	//Route protection for module one
+	public function ModuleOnePage()
+	{
+		if(Auth::check())
+		{
+			return View::make('registeredUserView.modulePageOne')->withUser(Auth::user()->id);
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+			
+		}
+	}
+	
 	public function Results()
 	{
 		$user = Auth::user();

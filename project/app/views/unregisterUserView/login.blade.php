@@ -51,10 +51,9 @@
                     <a href="#">Forget Password?</a>
                     <br><br>
                     <a href="adminLogin">Admin Login</a>
-                    <!--DUMMY LOG IN BUTTON-->
                 </div>
             {{ Form::close() }}
-            <a href="userProfilePage"><button>dummy</button></a>
+            <!--<a href="userProfilePage"><button>dummy</button></a>-->
         </div>
 
     </div>

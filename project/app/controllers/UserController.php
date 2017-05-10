@@ -175,18 +175,4 @@ class UserController extends \BaseController {
 		
 	}
 	
-	//Route protection for educational modules
-	public function EducationModules()
-	{
-		if(Auth::check())
-		{
-			return View::make('registeredUserView.educational')->withUser(Auth::user()->id);//educational.blade.php
-		}else{
-			//redirected to login page
-			return Redirect::to('login');
-			
-		}
-	}
-
-
 }
