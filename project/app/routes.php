@@ -40,8 +40,11 @@ Route::post('user/login', array('as' => 'user.login', 'uses' => 'UserController@
 Route::get('user/logout', array('as' => 'user.logout', 'uses' => 'UserController@logout'));
 Route::resource('user', 'UserController');
 
-
+//route for users to view account details
 Route::get('{id}/account_details', array('as' => 'account_details', 'uses' => 'UserController@AccountDetails'));
+
+//route for users to edit and update account details
+Route::get('{id}/account_details/update_details', array('as' => 'update_details', 'uses' => 'UserController@UpdateDetails'));
 
 //Route for getting results for a specific user
 Route::get('results/{id}', array('as' => 'my.results', 'uses' => 'UserController@Results'));

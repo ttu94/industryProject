@@ -115,13 +115,13 @@ class UserController extends \BaseController {
 		
 	}
 
+	//route: update_details. used for users to edit account details
+	
+	public function UpdateDetails($id){
+		$user = User::find($id);
+		return View::make('registeredUserView.updateDetails')->withUser($user);
+	}
 
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
 	public function update($id)
 	{
 		//
@@ -180,8 +180,11 @@ class UserController extends \BaseController {
 		
 	}
 	
+	//route: account_details. used for users to view account details
 	public function AccountDetails($id){
 		$user = User::find($id);
 		return View::make('registeredUserView.accountDetails')->withUser($user);
 	}
+	
+
 }

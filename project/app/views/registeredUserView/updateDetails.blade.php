@@ -1,12 +1,12 @@
-@extends('layouts.unregisteredMaster')
+@extends('layouts.masterLogin')
 
 @section('title')
-	Register
+    Update Account Details
 @endsection
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
-    <h2>Register</h2>
+   <h2>Update Account Details</h2>
 @endsection
 
 @section('content')
@@ -365,4 +365,6 @@
     </div>
 </div>
 
+           
+    
 @endsection

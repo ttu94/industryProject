@@ -15,7 +15,7 @@
         <div class="personalDetail">
             <br>
             <h3>&nbsp;Personal Details</h3>
-            <a class="basicFontStyle" href="#" style="float:right;color:#67AB9F">Edit Details</a>
+            <a class="basicFontStyle" href={{ route("update_details", array("id" => Auth::user()->id)) }} style="float:right;color:#67AB9F">Edit Details</a>
             <br>
         </div>
         <hr>     
@@ -32,8 +32,6 @@
                 <br>
                 <p><strong>Email :</strong></p>
                 <br>
-                <a href="#" style="color:#67AB9F">Change Password</a>
-                <br>
             </div>
             <div class="col-md-11">
                 <p>{{$user->firstName}} {{$user->lastName}} </p>
@@ -45,8 +43,11 @@
                 <p>{{$user->country}}</p>
                 <br>
                 <p>{{$user->email}} </p>
-                <br><br><br><br>
+                <br>
+              
             </div>
+             <a href="#" style="color:#67AB9F">&nbsp;Change Password</a>
+             <br><br>
         </div>
         
         <!--Other detail header bar-->
@@ -60,29 +61,22 @@
         
         <div class="col-md-12">
             <div class="personalInfo basicFontStyle">
-                <p><strong>I am:</strong></p>
-                 <input type="radio" checked>&nbsp;&nbsp;a {{$user->usertype}}
-                <br><br>
-                <p><strong>Injurt date: </strong>{{$user->injuryDate}}</p>.
+                <p><strong>I am:</strong>  a {{$user->usertype}}</p>
                 <br>
-                <p><strong>Were you taking treatment?</strong></p>
-                <input type="radio" checked>&nbsp;&nbsp;{{$user->treatment}}
-                <br><br>
-                <p><strong>If so, what type of treatment?</strong></p>
-                <p>{{$user->yesTreat}}&nbsp;</p>
-
-                <p><strong>Were you interested in clinical trials?</strong></p>
-                <input type="radio" checked>&nbsp;&nbsp;{{$user->clinicalTrial}}
-                <br><br>
-                <p><strong>Were you interested in physiotherapy?</strong></p>
-                <input type="radio" checked>&nbsp;&nbsp;{{$user->physioTrial}}
-                <br><br>
-                <p><strong>Were you taking treatment?</strong></p>
-                <input type="radio" checked>&nbsp;&nbsp;{{$user->treatment}}
-                <br><br>
-                <p><strong>Did you know anyone suffering from a spinal cord injury?</strong></p>
-                <input type="radio" checked>&nbsp;&nbsp;{{$user->onBehalf}}
-                <br><br>
+                <p><strong>Injurt date: </strong>{{$user->injuryDate}}</p>
+                <br>
+                <p><strong>Were you taking treatment?</strong>  {{$user->treatment}}</p>
+                <br>
+                <p><strong>If so, what type of treatment?</strong>  {{$user->yesTreat}}</p>
+                <br>
+                <p><strong>Were you interested in clinical trials?</strong>  {{$user->clinicalTrial}}</p>
+                <br>
+                <p><strong>Were you interested in physiotherapy?</strong>  {{$user->physioTrial}}</p>
+                <br>
+                <p><strong>Were you taking treatment?</strong>  {{$user->treatment}}</p>
+                <br>
+                <p><strong>Did you know anyone suffering from a spinal cord injury?</strong>  {{$user->onBehalf}}</p>
+                <br>
             </div>
         </div>
 </div>
