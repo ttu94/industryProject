@@ -12,6 +12,16 @@
 @section('content')
 <div class="container-fluid"> 
     <br>
+        @if(Session::has('success'))
+            <div class="alert alert-success">
+                <h2 style="text-align:center">{{ Session::get('success') }}</h2>
+            </div>
+        @endif
+        @if(Session::has('update_success'))
+            <div class="alert alert-success">
+                <h2 style="text-align:center">{{ Session::get('update_success') }}</h2>
+            </div>
+        @endif
         <div class="personalDetail">
             <br>
             <h3>&nbsp;Personal Details</h3>
@@ -44,9 +54,32 @@
                 <br>
                 <p>{{$user->email}} </p>
                 <br>
-              
             </div>
-             <a href="#" style="color:#67AB9F">&nbsp;Change Password</a>
+            
+            <!--CHANGE PASSWORD-->
+            <div class="faq_container">
+               <div class="faq">
+                  <div class="faq_question" style="background-color:#F5F5F5;color:#67AB9F;padding-left:20px">Change Password</div>
+                       <div class="faq_answer_container" style="background-color:#F5F5F5">
+                          <div class="faq_answer"><br>
+                              {{ Form::model($user, array('method' => 'PUT', 'route' => array('update_password', Auth::user()->id)))}}
+                                  @if($errors->any())
+                                    <div class="alert alert-error">
+                                        <a href="#" class="close" data-dimiss="alert"></a>
+                                        {{ implode('',$errors->all('<p class="error" style="color:red">:message</p>')) }}
+                                    </div>
+                                  @endif
+                                  <div style="column-count:2">
+                                    <input class="register" type="password" name="password" placeholder="New Password*">
+                                    <input class="register" type="password" name="password_confirmation" placeholder="Confirm New Password*">
+                                  </div>
+                                  <div style="margin-top:20px;text-align:center"><button type="submit">Change password</button></div>
+                              {{ Form::close() }}
+                          </div>
+                       </div>        
+                </div>
+            </div>
+
              <br><br>
         </div>
         
@@ -78,6 +111,7 @@
                 <br>
             </div>
         </div>
+
 </div>
 
            

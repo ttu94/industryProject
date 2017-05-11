@@ -124,6 +124,7 @@
                           <div class="faq_answer"><br>There is a Contact tab in the header that will take you to the Contact Us page. You can fill in the form with your details and we will get back to you as soon as possible. The link below will also take you to the page. (link here) </div>
                        </div>        
                 </div>
+                
         </div>
     </div>
 </div>

@@ -13,6 +13,57 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <!--Scripts for drop down FAQ -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+     $(document).ready(function() {
+    
+    	$('.faq_question').click(function() {
+    
+    		if ($(this).parent().is('.open')){
+    			$(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
+    			$(this).closest('.faq').removeClass('open');
+    
+    			}else{
+    				var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+    				$(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
+    				$(this).closest('.faq').addClass('open');
+    			}
+    
+    	});
+    	
+    	// this hides and shows the patient's extra detail div box & boxtwo, using the name='usertype'
+    	$('input[name="usertype"]').click(function(){
+         var inputValue = $(this).attr("value");
+         if(inputValue == "patient"){
+          $('.boxthird').hide();
+          $('.boxtwo').hide();
+          $('.box').show();
+         } else if(inputValue == "other") {
+          $('.boxthird').show();
+          $('.boxtwo').show();
+          $('.box').hide();
+         } else {
+          $('.boxthird').hide();
+          $('.boxtwo').show();
+          $('.box').hide();
+         }
+    	});
+    	
+    	//this will hide and show the treatment text box using the name='treatment'
+    	$('input[name="treatment"]').click(function() {
+    	    var inputValue = $(this).attr("value");
+    	    if(inputValue == "yes"){
+    	     $('.treated').show();
+    	    } else {
+    	     $('.treated').hide();
+    	    }
+    	});
+     
+    });
+    
+</script>
+    
     <link rel="shortcut icon" href="{{ URL::to('/') }}/images/clemJones.jpg">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>

@@ -121,6 +121,7 @@ class UserController extends \BaseController {
 		return View::make('registeredUserView.updateDetails')->withUser($user);
 	}
 
+	//Route:user.update. Used when user click save changes when updating account
 	public function update($id)
 	{
 		$user = User::find($id);
@@ -129,7 +130,7 @@ class UserController extends \BaseController {
 		$rules = array(
 			'firstName' => 'required|min:2',
 			'lastName' => 'required',
-			'age' => 'numeric|required|digits_between:1,100',
+			'age' => 'numeric|required|min:2|max:100',
 			'gender' => 'required',
 			'country' => 'required',
 			'injuryDate' => 'before:today',
@@ -156,14 +157,43 @@ class UserController extends \BaseController {
 		
 			$user->save();
 
-			return Redirect::action('UserController@AccountDetails', array($user->id));
+			return Redirect::action('UserController@AccountDetails', array($user->id))->with('update_success', 'Update Account Was Successful!');
+		 } else {
+		 	
+			// Show Validation Errors
+		 	return Redirect::back()->withInput()->withErrors($v);
+		 }
+			
+	}
+	
+	//Route: update_password. Used when users click Change password
+	public function UpdatePassword($id){
+		
+		$user = User::find($id);
+		$input = Input::all();
+		
+		//Encrypts password
+		$password = $input['password'];
+		$encrypted = Hash::make($password);
+
+		$rules = array(
+			'password' => 'required|min:5',
+			'password_confirmation' => 'required|min:5|same:password'
+			);
+		
+		$v = Validator::make($input, $rules);
+		
+		if ($v->passes()){
+			$user->password = $encrypted;
+			$user->save();
+
+			return Redirect::action('UserController@AccountDetails', array($user->id))->with('success', 'Password Change Successful!');
 		 } else {
 		 	
 			// Show Validation Errors
 		 	return Redirect::back()->withInput()->withErrors($v);
 		 }
 	}
-
 
 	/**
 	 * Remove the specified resource from storage.

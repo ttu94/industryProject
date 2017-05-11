@@ -46,6 +46,10 @@ Route::get('{id}/account_details', array('as' => 'account_details', 'uses' => 'U
 //route for users to edit and update account details
 Route::get('{id}/account_details/update_details', array('as' => 'update_details', 'uses' => 'UserController@UpdateDetails'));
 
+//route for users to update password
+Route::put('{id}/account_details/update_password', array('as' => 'update_password', 'uses' => 'UserController@UpdatePassword'));
+// Route::put('{id}/account_details/update_password', 'UserController@update');
+
 //Route for getting results for a specific user
 Route::get('results/{id}', array('as' => 'my.results', 'uses' => 'UserController@Results'));
 
