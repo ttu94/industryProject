@@ -92,13 +92,13 @@ class UserController extends \BaseController {
 	public function show($id)
 	{
 		//show the users profile
-		// if(Auth::user()->id == $id){
+		if(Auth::user()->id == $id){
 			$user = User::find($id);
 			return View::make('registeredUserView.userProfilePage')->withUser($user);
-		// } else {
-		// 	Auth::logout();
-		// 	return Redirect::action('UserController@index');
-		// }
+		} else {
+			Auth::logout();
+			return Redirect::action('UserController@index');
+		}
 	}
 	
 
@@ -117,53 +117,62 @@ class UserController extends \BaseController {
 	//route: update_details. used for users to edit account details page
 	
 	public function UpdateDetails($id){
-		$user = User::find($id);
-		return View::make('registeredUserView.updateDetails')->withUser($user);
+		if(Auth::user()->id == $id){
+			$user = User::find($id);
+			return View::make('registeredUserView.updateDetails')->withUser($user);
+		} else {
+			Auth::logout();
+			return Redirect::action('UserController@index');
+		}
 	}
 
 	//Route:user.update. Used when user click save changes when updating account
 	public function update($id)
 	{
-		$user = User::find($id);
-		$input = Input::all();
-
-		$rules = array(
-			'firstName' => 'required|min:2',
-			'lastName' => 'required',
-			'age' => 'numeric|required|min:2|max:100',
-			'gender' => 'required',
-			'country' => 'required',
-			'injuryDate' => 'before:today',
-			'email'=>'required|email|unique:users,email,'.$id
-			);
-		
-		$v = Validator::make($input, $rules);
-		
-		if ($v->passes()){
-			$user->firstName = $input['firstName'];
-			$user->lastName = $input['lastName'];
-			$user->age = $input['age'];
-			$user->gender = $input['gender'];
-			$user->country = $input['country'];
-			$user->email = $input['email'];
-			$user->usertype = $input['usertype'];
+		if(Auth::user()->id == $id){
+			$user = User::find($id);
+			$input = Input::all();
+	
+			$rules = array(
+				'firstName' => 'required|min:2',
+				'lastName' => 'required',
+				'age' => 'numeric|required|min:2|max:100',
+				'gender' => 'required',
+				'country' => 'required',
+				'injuryDate' => 'before:today',
+				'email'=>'required|email|unique:users,email,'.$id
+				);
 			
-			$user->injuryDate = $input['injuryDate'];
-			$user->treatment = $input['treatment'];
-			$user->yesTreat = $input['yesTreat'];
-			$user->clinicalTrial = $input['clinicalTrial'];
-			$user->physioTrial = $input['physioTrial'];
-			$user->onBehalf = $input['onBehalf'];
-		
-			$user->save();
-
-			return Redirect::action('UserController@AccountDetails', array($user->id))->with('update_success', 'Update Account Was Successful!');
-		 } else {
-		 	
-			// Show Validation Errors
-		 	return Redirect::back()->withInput()->withErrors($v);
-		 }
+			$v = Validator::make($input, $rules);
 			
+			if ($v->passes()){
+				$user->firstName = $input['firstName'];
+				$user->lastName = $input['lastName'];
+				$user->age = $input['age'];
+				$user->gender = $input['gender'];
+				$user->country = $input['country'];
+				$user->email = $input['email'];
+				$user->usertype = $input['usertype'];
+				
+				$user->injuryDate = $input['injuryDate'];
+				$user->treatment = $input['treatment'];
+				$user->yesTreat = $input['yesTreat'];
+				$user->clinicalTrial = $input['clinicalTrial'];
+				$user->physioTrial = $input['physioTrial'];
+				$user->onBehalf = $input['onBehalf'];
+			
+				$user->save();
+	
+				return Redirect::action('UserController@AccountDetails', array($user->id))->with('update_success', 'Update Account Was Successful!');
+			 } else {
+			 	
+				// Show Validation Errors
+			 	return Redirect::back()->withInput()->withErrors($v);
+			 }
+		} else {
+			Auth::logout();
+			return Redirect::action('UserController@index');
+		}
 	}
 	
 	//Route: update_password. Used when users click Change password
@@ -194,7 +203,7 @@ class UserController extends \BaseController {
 		 	return Redirect::back()->withInput()->withErrors($v);
 		 }
 	}
-
+	
 	/**
 	 * Remove the specified resource from storage.
 	 *
@@ -223,10 +232,6 @@ class UserController extends \BaseController {
 		if ($v->passes()){
 			// authenticate
 			if (Auth::attempt($userdata)){
-				// return Redirect::to(URL::previous());
-				// if(Auth::user()->admin){
-				// 	//route to admin page
-				// }
 				return Redirect::action('UserController@show', array(Auth::user()->id));
 			} else {
 				return Redirect::to(URL::previous()) -> withInput();
@@ -240,16 +245,19 @@ class UserController extends \BaseController {
 	//USER LOGOUT
 	public function logout() {
 		Auth::logout();
-		// return View::make('unregisterUserView.home');
 		return Redirect::action('UserController@index');
 		
 	}
 	
 	//route: account_details. used for users to view account details
 	public function AccountDetails($id){
-		$user = User::find($id);
-		return View::make('registeredUserView.accountDetails')->withUser($user);
+		if(Auth::user()->id == $id){
+			$user = User::find($id);
+			return View::make('registeredUserView.accountDetails')->withUser($user);
+		} else {
+			Auth::logout();
+			return Redirect::action('UserController@index');
+		}
 	}
 	
-
 }

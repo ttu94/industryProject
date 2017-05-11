@@ -75,10 +75,11 @@ Route::get('education_modules', array('as' => 'education.modules', 'uses' => 'Pa
 //Route protection for account details
 Route::get('account_details', array('as' => 'account.details', 'uses' => 'PageController@AccountDetails'));
 
+//Route protection for account details
+Route::get('update_details', array('as' => 'update.details', 'uses' => 'PageController@updateDetails'));
+
 //Route protection for module one page
 Route::get('module_one', array('as' => 'module.one', 'uses' => 'PageController@ModuleOnePage'));
-
-
 
 // UNREGISTERED USERS ROUTES***************************************************
 // *****************************************************************************
@@ -130,38 +131,4 @@ Route::get('adminLogin', function()
     return View::make('unregisterUserView/adminLogin');
  
 });
-
-// REGISTERD USERS ROUTES***************************************************
-// *****************************************************************************
-
-//Route To User PAGe NOTE: INCOMPLETE ITS A DUMMY RN
-// Route::get('userProfilePage', function()
-// {
-//     return View::make('registeredUserView/userProfilePage');
- 
-// });
-
-//Route To education module.
-// NOTE: USER NEEDS TO BE SIGNED IN ***********
-// Route::get('educationalModules', function()
-// {
-//     return View::make('registeredUserView/educational');
- 
-// });
-
-// //Route To module page One
-// // NOTE: USER NEEDS TO BE SIGNED IN ***********
-// Route::get('modulePageOne', function()
-// {
-//     return View::make('registeredUserView/modulePageOne');
- 
-// });
-
-// //Route To account details
-// // NOTE: USER NEEDS TO BE SIGNED IN ***********
-// Route::get('accountDetails', function()
-// {
-//     return View::make('registeredUserView/accountDetails');
- 
-// });
 

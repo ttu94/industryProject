@@ -127,6 +127,19 @@ class PageController extends \BaseController {
 			return Redirect::to('login');
 		}
 	}
+	
+	//Route protection for update details
+	public function UpdateDetails($id)
+	{
+		if(Auth::check())
+		{
+			$user = User::find($id);
+			return View::make('registeredUserView.updateDetails')->withUser(Auth::user()->id);
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+		}
+	}
 
 	//Route protection for module one
 	public function ModuleOnePage()
