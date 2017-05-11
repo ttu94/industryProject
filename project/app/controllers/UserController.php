@@ -40,12 +40,13 @@ class UserController extends \BaseController {
 		$rules = array(
 			'firstName' => 'required|min:2',
 			'lastName' => 'required',
-			'age' => 'required|digits_between:1,100',
+			'age' => 'numeric|required|min:2|max:100',
 			'gender' => 'required',
 			'country' => 'required',
 			'email' => 'required|email|unique:users',
 			'password' => 'required|min:5',
-			'password_confirmation' => 'required|min:5|same:password'
+			'password_confirmation' => 'required|min:5|same:password',
+			'injuryDate' => 'before:today'
 			);
 		
 		$v = Validator::make($input, $rules);
@@ -128,9 +129,10 @@ class UserController extends \BaseController {
 		$rules = array(
 			'firstName' => 'required|min:2',
 			'lastName' => 'required',
-			'age' => 'required|digits_between:1,100',
+			'age' => 'numeric|required|digits_between:1,100',
 			'gender' => 'required',
 			'country' => 'required',
+			'injuryDate' => 'before:today',
 			'email'=>'required|email|unique:users,email,'.$id
 			);
 		

@@ -23,7 +23,6 @@
             <div class="personalDetail">
                 <br>
                 <h3>&nbsp;Personal Details</h3>
-                <a class="basicFontStyle" href={{ route("user.update", array("id" => Auth::user()->id)) }} style="float:right;color:#67AB9F"><button type="submit">Save Changes</button></a>
                 <br>
             </div>
             <hr> 
@@ -346,16 +345,18 @@
                     {{ Form::radio('physioTrial', 'no', true)}} No
                 </div>
                 
-                <!--DROPS DOWN IF USER IS NOT A PATIENT OF SCI-->
-                <div class="otherDetailBox boxtwo">
-                    <p>Please answer the following question if you are <u>not a patient:</u></p>
-                    <hr>
+                <!--<div class="otherDetailBox boxtwo">-->
                     <div class="linearRadio">
+                        <br>
                         <p>Do you know anyone who is suffering from spinal cord injury (SCI)?<font color="red">*</font></p>
                         {{ Form::radio('onBehalf', 'yes')}} Yes
                         {{ Form::radio('onBehalf', 'no', true)}} No
                     </div>
                 </div>
+            </div>
+            <div class="col-md-12">
+                <br>
+                <a class="basicFontStyle" href={{ route("user.update", array("id" => Auth::user()->id)) }} style="float:left;color:#67AB9F"><button type="submit">Save Changes</button></a>
             </div>
       {{ Form::close() }} 
     </div>
