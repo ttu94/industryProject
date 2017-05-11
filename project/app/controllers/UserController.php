@@ -76,10 +76,8 @@ class UserController extends \BaseController {
 			return Redirect::action('UserController@show', array($user->id));
 		 } else {
 		 	
-			// Show Validation Errors. CURRENTLY doesnt show inputs
+			// Show Validation Errors
 		 	return Redirect::back()->withInput()->withErrors($v);
-		 	
-		 	
 		 }
 	}
 
@@ -115,7 +113,7 @@ class UserController extends \BaseController {
 		
 	}
 
-	//route: update_details. used for users to edit account details
+	//route: update_details. used for users to edit account details page
 	
 	public function UpdateDetails($id){
 		$user = User::find($id);
@@ -124,7 +122,44 @@ class UserController extends \BaseController {
 
 	public function update($id)
 	{
-		//
+		$user = User::find($id);
+		$input = Input::all();
+
+		$rules = array(
+			'firstName' => 'required|min:2',
+			'lastName' => 'required',
+			'age' => 'required|digits_between:1,100',
+			'gender' => 'required',
+			'country' => 'required',
+			'email'=>'required|email|unique:users,email,'.$id
+			);
+		
+		$v = Validator::make($input, $rules);
+		
+		if ($v->passes()){
+			$user->firstName = $input['firstName'];
+			$user->lastName = $input['lastName'];
+			$user->age = $input['age'];
+			$user->gender = $input['gender'];
+			$user->country = $input['country'];
+			$user->email = $input['email'];
+			$user->usertype = $input['usertype'];
+			
+			$user->injuryDate = $input['injuryDate'];
+			$user->treatment = $input['treatment'];
+			$user->yesTreat = $input['yesTreat'];
+			$user->clinicalTrial = $input['clinicalTrial'];
+			$user->physioTrial = $input['physioTrial'];
+			$user->onBehalf = $input['onBehalf'];
+		
+			$user->save();
+
+			return Redirect::action('UserController@AccountDetails', array($user->id));
+		 } else {
+		 	
+			// Show Validation Errors
+		 	return Redirect::back()->withInput()->withErrors($v);
+		 }
 	}
 
 
@@ -165,11 +200,9 @@ class UserController extends \BaseController {
 				return Redirect::to(URL::previous()) -> withInput();
 			}
 		 } else {
-			// Show Validation Errors. CURRENTLY doesnt show inputs
+			// Show Validation Errors
 		 	return Redirect::back()->withErrors($v);
 		 }
-		
-
 	}
 	
 	//USER LOGOUT

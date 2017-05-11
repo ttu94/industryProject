@@ -54,7 +54,6 @@
         <div class="personalDetail">
             <br>
             <h3>&nbsp;Other Details</h3>
-            <a class="basicFontStyle" href="#" style="float:right;color:#67AB9F">Edit Details</a>
             <br>
         </div>
         <hr> 
