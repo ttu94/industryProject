@@ -8,8 +8,11 @@
 	<!--stylesheets-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!--<link href="css/style.css" rel="stylesheet">-->
-    {{ HTML::style('css/styles.css', array(), true) }}
+    {{ HTML::style('css/style.css', array(), true) }}
+    <!--{{ HTML::style('coverflow/css/style.css', array(), true) }}-->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="shortcut icon" href="{{ URL::to('/') }}/images/clemJones.jpg">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -17,9 +20,15 @@
     
     <!--CoverFlow js-->
     
-    <script src="{{ URL::asset('js/jquery.coverflow.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.js"></script>
+	<script src="{{ URL::asset('js/jquery.coverflow.js') }}"></script>
     <!--{{ HTML::script('js/jsquery.coverflow.js') }}-->
-
+	<script>
+		$(function() {
+			$('#modulant-coverflow').coverflow();
+		});
+	</script>
    
     
 </head>

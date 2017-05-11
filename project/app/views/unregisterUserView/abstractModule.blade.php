@@ -1,12 +1,12 @@
 @extends('layouts.unregisteredMaster')
 
 @section('title')
-	Abstract Educational Module
+	Educational Module Abstracts
 @endsection
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
-   <h2>Abstract Educational Modules</h2>
+   <h2>Educational Module Abstracts</h2>
 @endsection
 
 @section('content')
@@ -36,20 +36,19 @@
                               <br>
                               <br>
                               <div>
-                                  <a href="modulePage"><button>See Full Modules</button></a>
+                                  <a href={{route("education.modules")}}><button class="btns3 greenbluemedium2">See Full Modules</button></a>
                               </div>
-                            
+                              <br>
                           </div>
-                          
-                       </div>        
-                </div>
+                       </div> 
+               </div>
                 <br>
                 <!--ABSTRACT MODULE 2-->
                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 2: </strong>Spinal cord as a neutral tissue and injury to the nerves</h3></div>
                        <div class="faq_answer_container">
                           <div class="faq_answer"><br>The full modules and quizzes are open for registered users only. Abstracts of each module are available to the public.</div>
-                       </div>        
+                       </div> 
                 </div>
                <br>
                <!--ABSTRACT MODULE 3-->

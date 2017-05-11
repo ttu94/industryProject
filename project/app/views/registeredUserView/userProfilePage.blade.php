@@ -58,23 +58,18 @@
         
         <!--COVERFLOW GOES IN HERE -->
         <!-- this is a test coverflow -->
-        
-        <div id="preview">
-			<div id="preview-coverflow">
-				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-			</div>
-			<script>
-				$(function() {
-					$('#preview-coverflow').coverflow({	});
-				});
-			</script>
+        <div id="modulant">
+    			<div id="modulant-coverflow">
+    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
+    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
+    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
+    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
+    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
+    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
+    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
+    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
+    			</div>
+			
         </div>
     </div>
     

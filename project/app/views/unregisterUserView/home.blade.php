@@ -52,8 +52,8 @@
     <br>
     <div class="row">
         <div class="col-md-4">
-            <div class="panel panel-default panelOne">
-                <h3>&nbsp&nbspClincal Trials</h3>
+            <div class="panel panel-default panelOne" style="height: 500px">
+                <h3 style="text-align: center">Clincal Trials</h3>
                 <div class="panel-body" style="font-size:large">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                     varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
@@ -61,13 +61,13 @@
                     nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
                     accumsan. Aliquam in felis sit amet augue.<br>
                     
-                    <a href="aboutUs"><button class="panelOneButton">Read More</button></a>
+                    <a href="aboutUs"><button class="btns4 greenbluemedium">Read More</button></a>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="panel panel-default panelTwo">
-                <h3>&nbsp&nbspEducational Abstract Modules</h3>
+            <div class="panel panel-default panelTwo" style="height: 500px">
+                <h3 style="text-align:center; margin-left: 5px; margin-right: 5px">Educational Module Abstracts</h3>
                 <div class="panel-body" style="font-size:large">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                     varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
@@ -80,8 +80,8 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="panel panel-default panelThree">
-                <h3>&nbsp&nbspRegister Now</h3>
+            <div class="panel panel-default panelThree" style="height: 500px">
+                <h3 style="text-align:center">Register Now</h3>
                 <div class="panel-body" style="font-size:large">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                     varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt

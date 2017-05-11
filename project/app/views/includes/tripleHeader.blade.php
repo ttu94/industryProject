@@ -16,8 +16,8 @@
             </ul>
         @else
             <ul>
-                <li style="float:right" class="topLink"><a href="register">REGISTER</a></li>
                 <li style="float:right" class="topLink"><a href="login">LOGIN</a></li>
+                <li style="float:right" class="topLink"><a href="register">REGISTER</a></li>
             </ul>
         @endif
         </div>
@@ -30,7 +30,7 @@
              </a>
               <h1 id="headerTitle">Spinal Cord Injury <br><span id="rehab">Rehabilitation</span></h1>
               <li style="float:right" class="bottomLink"><a href="contactUs">CONTACT</a></li>
-              <li style="float:right" class="bottomLink"><a href="abstractModule">ABSTRACT MODULES</a>
+              <li style="float:right" class="bottomLink"><a href="abstractModule">MODULE ABSTRACTS</a>
               </li>
               <li style="float:right" class="bottomLink"><a href="faq">FAQ</a></li>
               <li style="float:right" class="bottomLink"><a href="aboutUs">ABOUT</a></li>
