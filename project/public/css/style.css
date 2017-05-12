@@ -736,7 +736,10 @@ label.star:before {
 
 /*User Profile coverflow****************************************************************/
 #modulant {
+    /*padding: 100px 0px 100px 0px;*/
+    /*margin-top: 1000px;*/
 	padding-bottom: 100px;
+	/*position:relative;*/
 }
 #modulant-coverflow .cover {
 	cursor:		pointer;

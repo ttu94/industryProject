@@ -356,9 +356,34 @@
             </div>
             <div class="col-md-12">
                 <br>
-                <a class="basicFontStyle" href={{ route("user.update", array("id" => Auth::user()->id)) }} style="float:left;color:#67AB9F"><button type="submit">Save Changes</button></a>
-            </div>
-      {{ Form::close() }} 
+                <a class="basicFontStyle" href={{ route("user.update", array("id" => Auth::user()->id)) }} style="margin: 0 auto"><button type="submit">Save Changes</button></a>
+                {{ Form::close() }} 
+                <button data-toggle="modal" data-target="#deleteModal" style="background-color:red;float:right">Delete Account</button> 
+            </div>    
+            
+                 {{ Form::open(array('method' => 'DELETE', 'route' => array('user.destroy', Auth::user()->id))) }}
+                    <!--MODAL FOR delete account -->
+                    <div class="modal fade" id="deleteModal" role="dialog">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="text-align: center">WARNING!</h4>
+                          </div>
+                          <div class="modal-body" style="text-align: center">
+                            <p>Are you sure you want to delete?<br>
+                                This action cannot be undone.
+                            </p>
+                          </div>
+                          <div class="modal-footer">
+                             <button data-dismiss="modal" style="float:left">Cancel</button>
+                            <button type="submit" style="background-color:red;float:right">Delete</button> 
+                            <!--<button style="background-color:red" href={{ route("user.destroy", array("id" => Auth::user()->id)) }} data-dismiss="modal">Ok</button>-->
+                          </div>
+                        </div>
+                      </div>
+                  </div> <!--MODAL ENDS -->
+             {{ Form::close() }}
     </div>
 </div>
             

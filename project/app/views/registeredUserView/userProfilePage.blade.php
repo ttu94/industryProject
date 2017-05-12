@@ -39,12 +39,12 @@
         </div>
     </div>
         
-    <div class="col-md-8" style="height:500px">
+    <div class="col-md-8" style="height:500px;position:relative">
         <!--not sure what this will be of yet-->
         <img alt="Dr. Thuan Tu" src="http://www.austinclemens.com/Playfair/playfair_docs/assets/p1ex.png" style="width:100%;height:300px;" /> 
         <br>
         <br>
-        <p class="basicFontStyle" style="margin-left:20px;margin-right:20px;text-align: justify">
+        <p class="basicFontStyle" style="margin-left:20px;margin-right:20px;text-align: justify;position:relative">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
             varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
             condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
@@ -52,10 +52,8 @@
             accumsan. Aliquam in felis sit amet augue.
         </p>
     </div>
-    
-    <div class="col-md-12">
-        <br>
-        
+    <div class="col-md-12" style="">
+        <br><br><br>
         <!--COVERFLOW GOES IN HERE -->
         <!-- this is a test coverflow -->
         <div id="modulant">
@@ -72,6 +70,5 @@
 			
         </div>
     </div>
-    
 </div>
 @endsection
