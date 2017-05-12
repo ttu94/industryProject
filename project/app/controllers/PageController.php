@@ -103,7 +103,7 @@ class PageController extends \BaseController {
 	}
 	
 	//Route protection for educational modules
-	public function EducationModules()
+	public function EducationModules($id)
 	{
 		if(Auth::check())
 		{
@@ -142,7 +142,7 @@ class PageController extends \BaseController {
 	}
 
 	//Route protection for module one
-	public function ModuleOnePage()
+	public function ModuleOnePage($id)
 	{
 		if(Auth::check())
 		{
@@ -154,12 +154,4 @@ class PageController extends \BaseController {
 		}
 	}
 	
-	public function Results()
-	{
-		$user = Auth::user();
-		$results = Results::where('user_id', '==', $user->id)->get();
-		// return View::make()->withResults($results);
-	}
-
-
 }

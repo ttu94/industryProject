@@ -30,7 +30,7 @@
                     <p class="moduleTitle">
                         Demographics & Economics of Spinal Cord Injury (SCI)
                     </p><br>
-                    <a href={{route("module.one")}}><button class="btns greenbluemedium">Read More</button></a>
+                    <a href={{ route("module_one", array("id" => Auth::user()->id)) }}><button class="btns greenbluemedium">Read More</button></a>
                 </div>
                 <br>
             </div>

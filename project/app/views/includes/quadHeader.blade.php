@@ -46,8 +46,8 @@
         <!--FORTH SECTION OF HEADER-->
         <div class="quadLink">
             <ul>
-                <li class="eduMod" style="width:33%"><a href={{route("education.modules")}}>EDUCATIONAL MODULES</a></li>
-                <li class="eduMod" style="width:33%"><a href={{route("my.results")}}>SEE RESULTS</a></li>
+                <li class="eduMod" style="width:33%"><a href={{ route("education_modules", array("id" => Auth::user()->id)) }}>EDUCATIONAL MODULES</a></li>
+                <li class="eduMod" style="width:33%"><a href={{ route("overall_results", array("id" => Auth::user()->id)) }}>SEE RESULTS</a></li>
                 <li class="eduMod" style="width:33%"><a href={{ route("account_details", array("id" => Auth::user()->id)) }}>ACCOUNT DETAILS</a></li>
             </ul>
         </div>

@@ -34,9 +34,10 @@
                     <h1 class="raleway">Registered User</h1>
                     <br>
                     @if($errors->any())
-                        <div class="alert alert-error">
+                        <div>
                             <a href="#" class="close" data-dimiss="alert"></a>
-                            {{ implode('',$errors->all('<p class="error" style="color:red">:message</p>')) }}
+                            <p class="basicFontStyle" style="color:red">The username or password is incorrect</p>
+                            <!--{{ implode('',$errors->all('<p class="error" style="color:red">:message</p>')) }}-->
                         </div>
                     @endif
                     <input class="login" type="text" placeholder="Email" name="email" width="50px">

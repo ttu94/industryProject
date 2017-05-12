@@ -249,7 +249,7 @@ class UserController extends \BaseController {
 	//USER LOGOUT
 	public function logout() {
 		Auth::logout();
-		return Redirect::action('UserController@index');
+		return Redirect::to('home');
 		
 	}
 	
@@ -258,6 +258,22 @@ class UserController extends \BaseController {
 		if(Auth::user()->id == $id){
 			$user = User::find($id);
 			return View::make('registeredUserView.accountDetails')->withUser($user);
+		} else {
+			Auth::logout();
+			return Redirect::action('UserController@index');
+		}
+	}
+	
+	public function OverallResults($id){
+		
+		// $user = Auth::user();
+		// $results = Results::where('user_id', '==', $user->id)->get();
+		// return View::make()->withResults($results);
+		
+		//NOTE: INCORECT ROUTES. NEEDS TO DRAW DATA FROM DB ^
+		if(Auth::user()->id == $id){
+			$user = User::find($id);
+			return View::make('registeredUserView.overallResult')->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::action('UserController@index');

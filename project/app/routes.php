@@ -48,10 +48,9 @@ Route::get('{id}/account_details/update_details', array('as' => 'update_details'
 
 //route for users to update password
 Route::put('{id}/account_details/update_password', array('as' => 'update_password', 'uses' => 'UserController@UpdatePassword'));
-// Route::put('{id}/account_details/update_password', 'UserController@update');
 
 //Route for getting results for a specific user
-Route::get('results/{id}', array('as' => 'my.results', 'uses' => 'UserController@Results'));
+Route::get('{id}/overall_results', array('as' => 'overall_results', 'uses' => 'UserController@OverallResults'));
 
 
 //ROUTE CONTROLLER FOR PAGES***************************************************************************************
@@ -70,7 +69,7 @@ Route::get('faq', array('as' => 'faq', 'uses' => 'PageController@Faq'));
 Route::get('abstractModule', array('as' => 'abstract.module', 'uses' => 'PageController@AbstractModule'));
 
 //Route protection for educational module
-Route::get('education_modules', array('as' => 'education.modules', 'uses' => 'PageController@EducationModules'));
+Route::get('{id}/education_modules', array('as' => 'education_modules', 'uses' => 'PageController@EducationModules'));
 
 //Route protection for account details
 Route::get('account_details', array('as' => 'account.details', 'uses' => 'PageController@AccountDetails'));
@@ -79,7 +78,7 @@ Route::get('account_details', array('as' => 'account.details', 'uses' => 'PageCo
 Route::get('update_details', array('as' => 'update.details', 'uses' => 'PageController@updateDetails'));
 
 //Route protection for module one page
-Route::get('module_one', array('as' => 'module.one', 'uses' => 'PageController@ModuleOnePage'));
+Route::get('{id}/module_one', array('as' => 'module_one', 'uses' => 'PageController@ModuleOnePage'));
 
 // UNREGISTERED USERS ROUTES***************************************************
 // *****************************************************************************
