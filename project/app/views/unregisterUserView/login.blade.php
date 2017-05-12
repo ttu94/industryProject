@@ -36,8 +36,8 @@
                     @if($errors->any())
                         <div>
                             <a href="#" class="close" data-dimiss="alert"></a>
-                            <p class="basicFontStyle" style="color:red">The username or password is incorrect</p>
-                            <!--{{ implode('',$errors->all('<p class="error" style="color:red">:message</p>')) }}-->
+                            {{ implode('',$errors->all('<p class="basicFontStyle error" style="color:red">:message</p>')) }}
+                            <br>
                         </div>
                     @endif
                     <input class="login" type="text" placeholder="Email" name="email" width="50px">

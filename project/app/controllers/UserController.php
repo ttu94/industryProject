@@ -43,7 +43,7 @@ class UserController extends \BaseController {
 			'age' => 'numeric|required|min:2|max:100',
 			'gender' => 'required',
 			'country' => 'required',
-			'email' => 'required|email|unique:users',
+			'email' => 'required|email|unique:users',  //unique email in the user table
 			'password' => 'required|min:5',
 			'password_confirmation' => 'required|min:5|same:password',
 			'injuryDate' => 'before:today'
@@ -221,14 +221,15 @@ class UserController extends \BaseController {
 	
 	//USER LOGIN
 	public function login() {
+		
 		$userdata = array(
 			'email' => Input::get('email'),
 			'password' => Input::get('password')
 		);
 		
 		$rules = array(
-			'email' => 'required',
-			'password' => 'required'
+			'email' => 'required|email',
+			'password' => 'required|Exists:users'
 		);
 		
 		$v = Validator::make($userdata, $rules);
@@ -242,7 +243,8 @@ class UserController extends \BaseController {
 			}
 		 } else {
 			// Show Validation Errors
-		 	return Redirect::back()->withErrors($v);
+		 	// return Redirect::back()->withErrors($v);
+		 	return Redirect::back()->withErrors(array('wrong' => 'The username or password is incorrect'));
 		 }
 	}
 	

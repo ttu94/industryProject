@@ -4113,3 +4113,26 @@
 [12-May-2017 04:55:44 UTC] PHP  16. Illuminate\View\View->getContents() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/View/View.php:109
 [12-May-2017 04:55:44 UTC] PHP  17. Illuminate\View\Engines\CompilerEngine->get() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/View/View.php:140
 [12-May-2017 04:55:44 UTC] PHP  18. Illuminate\View\Engines\PhpEngine->evaluatePath() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:57
+[12-May-2017 05:35:35 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/ubuntu/workspace/project/app/controllers/UserController.php on line 253
+[12-May-2017 05:35:35 UTC] PHP Stack trace:
+[12-May-2017 05:35:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/project/public/index.php:0
+[12-May-2017 05:35:35 UTC] PHP   2. Illuminate\Foundation\Application->run() /home/ubuntu/workspace/project/public/index.php:49
+[12-May-2017 05:35:35 UTC] PHP   3. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:641
+[12-May-2017 05:35:35 UTC] PHP   4. Illuminate\Cookie\Guard->handle() /home/ubuntu/workspace/project/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[12-May-2017 05:35:35 UTC] PHP   5. Illuminate\Cookie\Queue->handle() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php:51
+[12-May-2017 05:35:35 UTC] PHP   6. Illuminate\Session\Middleware->handle() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php:47
+[12-May-2017 05:35:35 UTC] PHP   7. Illuminate\Foundation\Application->handle() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Session/Middleware.php:72
+[12-May-2017 05:35:35 UTC] PHP   8. Illuminate\Foundation\Application->dispatch() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:745
+[12-May-2017 05:35:35 UTC] PHP   9. Illuminate\Routing\Router->dispatch() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:781
+[12-May-2017 05:35:35 UTC] PHP  10. Illuminate\Routing\Router->dispatchToRoute() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1001
+[12-May-2017 05:35:35 UTC] PHP  11. Illuminate\Routing\Route->run() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1033
+[12-May-2017 05:35:35 UTC] PHP  12. call_user_func_array:{/home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Routing/Route.php:109}() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Routing/Route.php:109
+[12-May-2017 05:35:35 UTC] PHP  13. Illuminate\Routing\Router->Illuminate\Routing\{closure}() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Routing/Route.php:109
+[12-May-2017 05:35:35 UTC] PHP  14. Illuminate\Routing\ControllerDispatcher->dispatch() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Routing/Router.php:967
+[12-May-2017 05:35:35 UTC] PHP  15. Illuminate\Routing\ControllerDispatcher->makeController() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:51
+[12-May-2017 05:35:35 UTC] PHP  16. Illuminate\Foundation\Application->make() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:78
+[12-May-2017 05:35:35 UTC] PHP  17. Illuminate\Container\Container->make() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:462
+[12-May-2017 05:35:35 UTC] PHP  18. Illuminate\Container\Container->build() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Container/Container.php:428
+[12-May-2017 05:35:35 UTC] PHP  19. ReflectionClass->__construct() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Container/Container.php:504
+[12-May-2017 05:35:35 UTC] PHP  20. spl_autoload_call() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Container/Container.php:504
+[12-May-2017 05:35:35 UTC] PHP  21. Illuminate\Support\ClassLoader::load() /home/ubuntu/workspace/project/vendor/laravel/framework/src/Illuminate/Container/Container.php:504
