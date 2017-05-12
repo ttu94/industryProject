@@ -222,6 +222,7 @@ class UserController extends \BaseController {
 	//USER LOGIN
 	public function login() {
 		
+		
 		$userdata = array(
 			'email' => Input::get('email'),
 			'password' => Input::get('password')
@@ -229,7 +230,7 @@ class UserController extends \BaseController {
 		
 		$rules = array(
 			'email' => 'required|email',
-			'password' => 'required|Exists:users'
+			'password' => 'required|min:5'
 		);
 		
 		$v = Validator::make($userdata, $rules);

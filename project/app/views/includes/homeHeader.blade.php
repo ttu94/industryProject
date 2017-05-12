@@ -26,14 +26,47 @@
         <div class="bottomHeader">
             <!--Image as home page link-->
             <ul>
-             <a href={{route('home')}}>
-                    <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="images/clemjones_Logo.png" height="130px" width="100px"/>                
-             </a>
-              <h1 id="headerTitle">Spinal Cord Injury<br><span id="rehab">Rehabilitation</span></h1>
-              <li style="float:right" class="bottomLink"><a href="contactUs">CONTACT</a></li>
-              <li style="float:right" class="bottomLink"><a href="abstractModule">MODULE ABSTRACTS</a></li>
-              <li style="float:right" class="bottomLink"><a href="faq">FAQ</a></li>
-              <li style="float:right" class="bottomLink"><a href="aboutUs">ABOUT</a></li>
+             <div class="col-md-3">
+                <a href={{route("home")}}>
+                    <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/clemjones_Logo.png" height="130px" width="100px"/>                
+                </a>
+                <br>
+                <h1 id="headerTitle">Spinal Cord Injury <br><span id="rehab">Rehabilitation</span></h1>
+             </div>
+             <div class="col-md-2">
+                <br><br>
+             </div>
+             <div class="col-md-2">
+                <br><br>
+             </div>
+             <div class="col-md-1">
+                <li class="bottomLink"><a href={{{ route("about.us")}}}>ABOUT</a></li>
+             </div>
+             <div class="col-md-1">
+                <li style:"float:right" class="bottomLink"><a href={{{ route("faq")}}}>FAQ</a></li>
+             </div>
+             <div class="col-md-2">
+                <li style:"float:right" class="bottomLink"><a href={{{ route("abstract.module") }}}>MODULE ABSTRACTS</a></li>
+             </div>
+             <div class="col-md-1">
+                <li style:"float:right" class="bottomLink"><a href={{{ route("contact.us")}}}>CONTACT</a></li>
+             </div>
             </ul>
         </div>
+        
+        <!--<div class="bottomHeader">-->
+            <!--Image as home page link-->
+        <!--    <ul>-->
+        <!--     <a href={{route('home')}}>-->
+        <!--         <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="images/clemjones_Logo.png" height="130px" width="100px"/>-->
+        <!--     </a>-->
+        <!--      <br>-->
+        <!--      <h1 id="headerTitle">Spinal Cord Injury<br><span id="rehab">Rehabilitation</span></h1>-->
+        <!--      <li style="float:right" class="bottomLink"><a href="contactUs">CONTACT</a></li>-->
+        <!--      <li style="float:right" class="bottomLink"><a href="abstractModule">MODULE ABSTRACTS</a></li>-->
+        <!--      <li style="float:right" class="bottomLink"><a href="faq">FAQ</a></li>-->
+        <!--      <li style="float:right" class="bottomLink"><a href="aboutUs">ABOUT</a></li>-->
+        <!--    </ul>-->
+        <!--</div>-->
+        
 </header>
