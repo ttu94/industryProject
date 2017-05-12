@@ -56,6 +56,8 @@
                             condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
                             nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
                             accumsan. Aliquam in felis sit amet augue.
+                            <br><br>
+                            <a target="_blank" href="https://cjcneurostemcell.org/"><button class="btns4 greybrown2">The Clem Jones Centre for Neurobiology and Stem Cell Research</button></a> <br>
                         </p>
                 </div>
                 <!--NEXT BLOCK DOWN-->
@@ -70,9 +72,9 @@
                             nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
                             accumsan. Aliquam in felis sit amet augue.
                             <br><br>
-                            <a href="abstractModule"><button class="moduleButton">Access Educational Module Abstracts</button></a>
+                            <a href="abstractModule"><button class="btns4 greenbluelight">Access Educational Module Abstracts</button></a>
                             <br>
-                            <a href="educationalModules"><button class="moduleButtonTwo">Access Full Educational Modules</button></a>
+                            <a href="educationalModules"><button class="btns4 greenbluedark2">Access Full Educational Modules</button></a>
                         </p>
                 </div>
             </div>
