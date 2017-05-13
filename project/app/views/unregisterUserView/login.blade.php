@@ -49,9 +49,9 @@
                     <!--    <input id="remember" name="remember" type="checkbox" class="field login-checkbox" />-->
                     <!--    <label class="choice" for="remember">Remember me</label>-->
                     <!--</span>-->
-                    
-                    <button>Sign In</button>
                     <br>
+                    <button>Sign In</button>
+                    <br><br>
                     <a href="#" style="color:#67AB9F">Forget Password?</a>
                     <br><br>
                     <a href="adminLogin" style="color:#67AB9F">Admin Login</a>

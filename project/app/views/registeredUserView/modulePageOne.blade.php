@@ -98,12 +98,14 @@
         
         <!--SLIDE 2-->
         <li class="carousels__slide">
+          <br>
           <p class="modh2">⤘ Statistics and clinical data</p>
           <p class="words2"><strong>The National Spinal Cord Injury Statistical Centre USA</strong> reports etiological and clinical injury distributions in its 2016 Fact Sheet.
           <br><br>
           <div class="col-md-6">
             <img class="diagram" alt="Figure: Etiological distrubution as per the data collected in 2016" src="{{ URL::to('/') }}/images/Mod1.1.png" height="300px"/>
-            <p class="diagramLabel"><i><strong>Figure:</strong> Etiological distrubution as per the data<br>collected in 2016</i></p>
+            <br>
+            <p class="diagramLabel"><u><strong>Figure:</strong> Etiological distrubution as per the data<br>collected in 2016</u></p>
           </div>
           <div class="col-md-6 words">
             According to the fact sheet, 38% cases are due to vehicular accidents, 30.5% result from falls, 
@@ -117,7 +119,7 @@
         <li class="carousels__slide words2">
           <img class="diagram2" alt="Figure: Extent of Spinal Cord Injury as per the data collected in 2016" 
             src="{{ URL::to('/') }}/images/Mod1.2.png" height="320px"/><br>
-            <p style="line-height:30px;text-align:center"><i><strong>Figure:</strong> Extent of Spinal Cord Injury as per the data collected in 2016</i></p>
+            <p style="line-height:30px;text-align:center"><u><strong>Figure:</strong> Extent of Spinal Cord Injury as per the data collected in 2016</u></p>
           <table class="b">
             <tr>
               <td class="b2 words2">•</td>
@@ -138,6 +140,7 @@
         
         <!--SLIDE 4-->
         <li class="carousels__slide">
+          <br>
           <p class="modh2">⤘ Economic consequences</p>
           <table class="b">
             <tr>
@@ -164,20 +167,23 @@
               <td class="b2 words2">For any Grade D injury, the expected cost is 350,000 and 42,000 
               USD for the first year and every following year respectively.</td>
             </tr>
+          </table>
+        </li>
+        
+        <!--SLIDE 5-->
+        <li class="carousels__slide">
+          <br>
+          <table>
             <tr>
               <td class="b2 words2">•</td>
               <td class="b2 words2">In addition to these costs, the patients suffer from loss of wages, loss of 
               productivity, dependence on others for their physical needs and a number of secondary conditions 
               requiring further medical assistance which adds to the economic burden mentioned here.</td>
             </tr>
-            <tr>
           </table>
-        </li>
-        
-        <!--SLIDE 5-->
-        <li class="carousels__slide">
-          <p><i><strong>Table:</strong> Estimated costs for treatment of Spinal Cord Injuries at different levels, 
-             as given by National Spinal Cord Injury Statistical Centre, US.</i></p>
+          <br><br>
+          <p><u><strong>Table:</strong> Estimated costs for treatment of Spinal Cord Injuries at different levels, 
+             as given by National Spinal Cord Injury Statistical Centre, US.</u></p>
           <table class="a">
             <tr>
               <th>Extent of Injury</th>
@@ -205,6 +211,10 @@
               <td style="border: none">42,000</td>
             </tr>
           </table>
+        </li>
+        
+        <!--SLIDE 6-->
+        <li class="carousels__slide">
           <br>
           <p>For Australia, based on data form the Spinal Injury Network, National Disability Services (2010) 
              and a 2009 Access Economics report, Spinal Life Australia (www.spinal.com.au) depicted the huge economic 
@@ -226,13 +236,21 @@
             </td>
             </tr>
           </table>
-        </li>
-        
-        <!--SLIDE 6-->
-        <li class="carousels__slide">
-          <p>The annual economic cost is shared approximately as follows (Access Economics, 2009): 
-          Government 55% (44% State Government and 11% Federal Government); individuals over 40% (viz. patients and their carers).  
-          It is expected that parts of these costs will be borne in the future by the NDIS.
+          <br>
+          <p>The annual economic cost is shared approximately as follows (Access Economics, 2009):</p>
+          <table class="b">
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">Government 55% (44% State Government and 11% Federal Government); individuals
+              over 40% (viz. patients and their carers).</td>
+            </tr>
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">It is expected that parts of these costs will be borne in the future by the NDIS.</td>
+            </tr>
+          </table>
+           
+          
           </p>
         </li>
         <div class="carousels__indicators">

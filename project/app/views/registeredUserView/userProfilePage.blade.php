@@ -21,7 +21,7 @@
 @section('content')
 <div class="container-fluid basicFontStyle">
     <br>
-    <div class="col-md-4" style="height:500px;background-color: #E6E6E6">
+    <div class="col-md-4" style="height:500px;background-color: #E6E6E6;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);">
         <br>
         <div class="summaryOfTests" style="margin-top: 100px;vertical-align: middle">
 
@@ -67,7 +67,6 @@
     				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
     				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
     			</div>
-			
         </div>
     </div>
 </div>
