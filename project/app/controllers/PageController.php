@@ -101,7 +101,7 @@ class PageController extends \BaseController {
 	{
 		return View::make("unregisterUserView.contactUs");
 	}
-	
+
 	//Route protection for educational modules
 	public function EducationModules($id)
 	{

@@ -310,6 +310,7 @@
                 {{ Form::radio('usertype', 'student')}} a student
                 <br>
                 {{ Form::radio('usertype', 'other')}} other
+                <input class="boxthird" style="margin-left:60px;max-width:475px;width:100%;" {{ Form::text('other', '',array('placeholder' =>'Please State Other'))}}
                </div>
             
             <!--DROPS DOWN IF USER SELECTS PATIENT RADIO-->

@@ -78,7 +78,7 @@ Route::get('account_details', array('as' => 'account.details', 'uses' => 'PageCo
 Route::get('update_details', array('as' => 'update.details', 'uses' => 'PageController@updateDetails'));
 
 //Route protection for module one page
-Route::get('{id}/module_one', array('as' => 'module_one', 'uses' => 'PageController@ModuleOnePage'));
+Route::get('{id}/educational_module/module_one', array('as' => 'module_one', 'uses' => 'PageController@ModuleOnePage'));
 
 // UNREGISTERED USERS ROUTES***************************************************
 // *****************************************************************************
@@ -86,7 +86,6 @@ Route::get('{id}/module_one', array('as' => 'module_one', 'uses' => 'PageControl
 //Route To Login In
 Route::get('login', function()
 {
-    //return View::make('registeredUserView/userProfilePage');
     return View::make('unregisterUserView/login');
 });
 

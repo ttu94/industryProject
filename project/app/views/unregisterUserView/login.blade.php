@@ -12,7 +12,7 @@
 @section('content')
 <div class="container-fluid">
     <br>
-    <div class="row">
+    <!--<div class="row">-->
         <!--Linking to user register page-->
         <div class="col-md-4">
             <br><br><br><br>
@@ -44,8 +44,11 @@
                     <br>
                     <input class="login" type="password" placeholder="Password" name="password">
                     <br>
-                    <input class="raleway" type="checkbox" checked="checked"> Remember me
-                    
+                    <!--<input class="raleway" id="remember" name="remember" type="checkbox"> Remember me-->
+                    <!--<span class="login-checkbox">-->
+                    <!--    <input id="remember" name="remember" type="checkbox" class="field login-checkbox" />-->
+                    <!--    <label class="choice" for="remember">Remember me</label>-->
+                    <!--</span>-->
                     
                     <button>Sign In</button>
                     <br>
@@ -54,10 +57,9 @@
                     <a href="adminLogin" style="color:#67AB9F">Admin Login</a>
                 </div>
             {{ Form::close() }}
-            <!--<a href="userProfilePage"><button>dummy</button></a>-->
         </div>
 
-    </div>
+    <!--</div>-->
 
 </div>
 

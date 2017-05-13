@@ -72,7 +72,7 @@
                             nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
                             accumsan. Aliquam in felis sit amet augue.
                             <br><br>
-                            <a href="abstractModule"><button class="btns4 greenbluelight">Access Educational Module Abstracts</button></a>
+                            <a href="abstractModule"><button class="btns4 greenbluelight2">Access Educational Module Abstracts</button></a>
                             <br>
                             <a href="educationalModules"><button class="btns4 greenbluedark2">Access Full Educational Modules</button></a>
                         </p>

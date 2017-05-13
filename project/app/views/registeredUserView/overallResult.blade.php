@@ -17,6 +17,6 @@
 @section('content')
 <div class="container-fluid basicFontStyle">
     <br>
-    
+    caila smells
 </div>
 @endsection

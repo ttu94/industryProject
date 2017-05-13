@@ -38,6 +38,7 @@ class CreateUsersTable extends Migration {
 			//timestamp each account when it is created
  			$table->timestamps();
  			$table->string('remember_token')->nullable();
+ 			// $table->boolea('admin')->default(false);
  			
 		});
 

@@ -218,11 +218,11 @@ class UserController extends \BaseController {
 		return Redirect::action('UserController@index');
 		
 	}
-	
+
 	//USER LOGIN
 	public function login() {
-		
-		
+
+
 		$userdata = array(
 			'email' => Input::get('email'),
 			'password' => Input::get('password')
@@ -236,21 +236,30 @@ class UserController extends \BaseController {
 		$v = Validator::make($userdata, $rules);
 		
 		if ($v->passes()){
-			// authenticate
-			if (Auth::attempt($userdata)){
+			
+			//Set the remember me cookie if the user checks the box
+			// $remember = Input::get('remember');
+			// if(!empty($remember))
+			// {
+			// 	return true;
+			// }
+				
+			// authenticates and sets remember me cookie
+			if (Auth::attempt($userdata, true))
+			{
 				return Redirect::action('UserController@show', array(Auth::user()->id));
 			} else {
 				return Redirect::to(URL::previous()) -> withInput();
 			}
 		 } else {
 			// Show Validation Errors
-		 	// return Redirect::back()->withErrors($v);
 		 	return Redirect::back()->withErrors(array('wrong' => 'The username or password is incorrect'));
 		 }
+		 
 	}
 	
 	//USER LOGOUT
-	public function logout() {
+	public function logout(){
 		Auth::logout();
 		return Redirect::to('home');
 		
