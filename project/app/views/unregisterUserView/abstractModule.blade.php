@@ -36,7 +36,7 @@
                               <br>
                               <br>
                               <div>
-                                  <a href={{route("education_modules")}}><button class="btns3 greenbluemedium2">See Full Modules</button></a>
+                                  <a href={{route("module_one")}}><button class="btns3 greenbluemedium2">See Full Modules</button></a>
                               </div>
                               <br>
                           </div>

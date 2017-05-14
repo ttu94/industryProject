@@ -68,17 +68,17 @@ Route::get('faq', array('as' => 'faq', 'uses' => 'PageController@Faq'));
 //view make abstractmodule for quad header
 Route::get('abstractModule', array('as' => 'abstract.module', 'uses' => 'PageController@AbstractModule'));
 
-//Route protection for educational module
-Route::get('{id}/education_modules', array('as' => 'education_modules', 'uses' => 'PageController@EducationModules'));
-
 //Route protection for account details
 Route::get('account_details', array('as' => 'account.details', 'uses' => 'PageController@AccountDetails'));
 
 //Route protection for account details
 Route::get('update_details', array('as' => 'update.details', 'uses' => 'PageController@updateDetails'));
 
+//Route protection for educational module
+Route::get('education_modules', array('as' => 'education_modules', 'uses' => 'PageController@EducationModules'));
+
 //Route protection for module one page
-Route::get('{id}/educational_module/module_one', array('as' => 'module_one', 'uses' => 'PageController@ModuleOnePage'));
+Route::get('educational_module/module_one', array('as' => 'module_one', 'uses' => 'PageController@ModuleOnePage'));
 
 // UNREGISTERED USERS ROUTES***************************************************
 // *****************************************************************************

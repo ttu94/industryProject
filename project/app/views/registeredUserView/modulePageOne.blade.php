@@ -215,7 +215,6 @@
         
         <!--SLIDE 6-->
         <li class="carousels__slide">
-          <br>
           <p>For Australia, based on data form the Spinal Injury Network, National Disability Services (2010) 
              and a 2009 Access Economics report, Spinal Life Australia (www.spinal.com.au) depicted the huge economic 
              burden of spinal injury:</p>
@@ -248,10 +247,14 @@
               <td class="b2 words2">•</td>
               <td class="b2 words2">It is expected that parts of these costs will be borne in the future by the NDIS.</td>
             </tr>
-          </table>
-           
-          
+            </table>
           </p>
+          <br>
+          <p style="font-size:22px;text-align:center"><i><strong>This is the end of Module 1: Demographics and Economics of Spinal Cord Injury (SCI).
+            <br> You may wish to read over the module content again, or you can begin the multiple-choice quiz by clicking the button above.
+            </strong></i>
+          </p>
+          
         </li>
         <div class="carousels__indicators">
           <label for="1" class="carousels__indicator"></label>

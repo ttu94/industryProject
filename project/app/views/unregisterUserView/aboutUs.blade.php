@@ -74,7 +74,7 @@
                             <br><br>
                             <a href="abstractModule"><button class="btns4 greenbluelight2">Access Educational Module Abstracts</button></a>
                             <br>
-                            <a href="educationalModules"><button class="btns4 greenbluedark2">Access Full Educational Modules</button></a>
+                            <a href={{{ route("education_modules")}}}><button class="btns4 greenbluedark2">Access Full Educational Modules</button></a>
                         </p>
                 </div>
             </div>

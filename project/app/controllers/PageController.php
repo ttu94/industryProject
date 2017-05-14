@@ -102,19 +102,6 @@ class PageController extends \BaseController {
 		return View::make("unregisterUserView.contactUs");
 	}
 
-	//Route protection for educational modules
-	public function EducationModules($id)
-	{
-		if(Auth::check())
-		{
-			return View::make('registeredUserView.educational')->withUser(Auth::user()->id);//educational.blade.php
-		}else{
-			//redirected to login page
-			return Redirect::to('login');
-			
-		}
-	}
-	
 	//Route protection for account details
 	public function AccountDetails($id)
 	{
@@ -140,9 +127,22 @@ class PageController extends \BaseController {
 			return Redirect::to('login');
 		}
 	}
-
+	
+	//Route protection for educational modules
+	public function EducationModules()
+	{
+		if(Auth::check())
+		{
+			return View::make('registeredUserView.educational')->withUser(Auth::user()->id);//educational.blade.php
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+			
+		}
+	}
+	
 	//Route protection for module one
-	public function ModuleOnePage($id)
+	public function ModuleOnePage()
 	{
 		if(Auth::check())
 		{
