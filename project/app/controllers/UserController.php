@@ -292,4 +292,16 @@ class UserController extends \BaseController {
 		}
 	}
 	
+	public function IndividualModule($id){
+		
+		//NOTE: INCORECT ROUTES. NEEDS TO DRAW DATA FROM DB ^
+		if(Auth::user()->id == $id){
+			$user = User::find($id);
+			return View::make('registeredUserView.individualModuleResult')->withUser($user);
+		} else {
+			Auth::logout();
+			return Redirect::action('UserController@index');
+		}
+	}
+	
 }

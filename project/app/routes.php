@@ -52,6 +52,9 @@ Route::put('{id}/account_details/update_password', array('as' => 'update_passwor
 //Route for getting results for a specific user
 Route::get('{id}/overall_results', array('as' => 'overall_results', 'uses' => 'UserController@OverallResults'));
 
+//Route for getting results for a specific user
+Route::get('{id}/overall_results/module', array('as' => 'individual_module', 'uses' => 'UserController@IndividualModule'));
+
 
 //ROUTE CONTROLLER FOR PAGES***************************************************************************************
 Route::resource('page', 'PageController');

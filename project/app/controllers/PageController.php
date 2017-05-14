@@ -146,7 +146,7 @@ class PageController extends \BaseController {
 	{
 		if(Auth::check())
 		{
-			return View::make('registeredUserView.modulePageOne')->withUser(Auth::user()->id);
+			return View::make('modulePagesView.modulePageOne')->withUser(Auth::user()->id);
 		}else{
 			//redirected to login page
 			return Redirect::to('login');
