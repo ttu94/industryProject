@@ -38,11 +38,12 @@
       </div>
     </div>
     <br>
+    <br>
     <table class="sortable-theme-bootstrap" data-sortable>
         <thead>
             <tr>
-                <th data-sortable-type="alpha">Name</th>
-                <th data-sortable-type="alpha">Position</th>
+                <th>Name</th>
+                <th>Position</th>
                 <th>Office</th>
                 <th>Age</th>
                 <th>Start date</th>

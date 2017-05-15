@@ -7,12 +7,11 @@
 	
 	   <!--stylesheets-->
 	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    {{ HTML::style('css/styles.css', array(), true) }}
+    {{ HTML::style('css/style.css', array(), true) }}
     
-   <!--    <script src="sortable.min.js"></script>-->
-   <!--<link rel="stylesheet" href="sortable-theme-bootstrap.css" />-->
-   {{ HTML::style('sortable-theme-bootstrap.css') }}
-   {{ HTML::script('sortable.min.js') }}
+   <!--sortable table css and js-->
+   {{ HTML::style('css/sortable-theme-bootstrap.css') }}
+   {{ HTML::script('js/sortable.min.js') }}
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

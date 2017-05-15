@@ -21,10 +21,10 @@ body {
    margin:0;
    padding:0;
    height:100%;
-   width:auto;
+   width:100%;
    /*overflow-x: hidden;*/
-   min-width: 1750px;
-   overflow-x: scroll;
+   min-width: 1700px;
+   overflow-x: auto;
    background-color: #F5F5F5;
 }
 
