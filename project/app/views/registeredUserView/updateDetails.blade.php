@@ -346,13 +346,15 @@
                 </div>
                 
                 <!--<div class="otherDetailBox boxtwo">-->
-                <div class="linearRadio">
-                    <br>
-                    <p>Do you know anyone who is suffering from spinal cord injury (SCI)?<font color="red">*</font></p>
-                    {{ Form::radio('onBehalf', 'yes')}} Yes
-                    {{ Form::radio('onBehalf', 'no', true)}} No
-                </div>
-        </div>
+                <!--<div class="otherDetailBox boxtwo">-->
+                    <div class="linearRadio">
+                        <br>
+                        <p>Do you know anyone who is suffering from spinal cord injury (SCI)?<font color="red">*</font></p>
+                        {{ Form::radio('onBehalf', 'yes')}} Yes
+                        {{ Form::radio('onBehalf', 'no', true)}} No
+                    </div>
+                <!--</div>-->
+            </div>
     </div>
     <div class="col-md-12">
         <br>

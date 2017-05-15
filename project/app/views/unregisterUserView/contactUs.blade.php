@@ -39,7 +39,7 @@
                                 <input type="text" id="contactSubject" name="contactSubject" placeholder="Subject">
                                 <br>
     
-                                <textarea id="comment" name="comment" placeholder="How can we help you?" height="1000px"></textarea>
+                                <textarea id="comment" name="contactComment" placeholder="How can we help you?"></textarea>
                                 <br>
                                 <button type="submit, button" style="float:right"form="contactUsForm" value="Submit" data-toggle="modal" data-target="#myModal">Send</button>
                               
@@ -79,8 +79,7 @@
       <p>How are we doing? Leave feedback on your experience, (all feedback will be read, but we may not always respond).</p>
       <br>
       <div>
-          <form action="/action_page.php">
-             
+          <form>
               <input type="text" id="feedbackName" name="feedbackName" placeholder="Name" width="200px" required>
               <br>
     
@@ -92,7 +91,6 @@
               
               <textarea id="feedback" name="feedback" placeholder="What is your feedback?" height="1000px"></textarea>  
               <button type="submit, button" form="contactUsForm" value="Submit" data-toggle="modal" data-target="#feedbackModal" style="float:right">Send</button>
-              <br><br><br><br>
               <div class="stars">
                   <form action="">
                     <input class="star star-5" id="star-5" type="radio" name="star"/>
@@ -106,10 +104,12 @@
                     <input class="star star-1" id="star-1" type="radio" name="star"/>
                     <label class="star star-1" for="star-1"></label>
                   </form>
+                  <h3 style="text-align: center">Leave a rating!</h3>
               </div>
-              <p style= "text-align: center">Leave a rating!</p>
+              <!--<p style= "text-align: center">Leave a rating!</p>-->
+              
               <br>
-          </form>  
+        </form>  
           
           <!--MODAL FOR FEEDBACK-->
             <div class="modal fade" id="feedbackModal" role="dialog">
@@ -129,7 +129,7 @@
                   </div>
                 </div>
               </div>
-          </div>    
+          </div>  <!-- Model  ends -->  
     </div>
 
 </div>

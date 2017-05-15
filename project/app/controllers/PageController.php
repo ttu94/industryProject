@@ -141,6 +141,19 @@ class PageController extends \BaseController {
 		}
 	}
 	
+	//Route protection for Quiz
+	public function ModuleQuiz()
+	{
+		if(Auth::check())
+		{
+			return View::make('modulePagesView.moduleQuiz')->withUser(Auth::user()->id);//educational.blade.php
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+			
+		}
+	}
+	
 	//Route protection for module one
 	public function ModuleOnePage()
 	{

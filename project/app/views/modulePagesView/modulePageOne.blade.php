@@ -19,7 +19,8 @@
       <button class="btn2 whitebrown">Print</button>
     </div>
     <div class="col-md-6">
-      <button class="btn whitebrown">Begin Quiz >></button>
+      <!--INCOMPLETE ROUTE, requires to take module ID-->
+      <a href={{ route("module_quiz", array("id" => Auth::user()->id)) }} ><button class="btn whitebrown">Begin Quiz >></button></a>
       <br><br>
     </div>
     <div class="col-md-12">

@@ -21,10 +21,10 @@ body {
    margin:0;
    padding:0;
    height:100%;
-   width:100%;
+   width:auto;
    /*overflow-x: hidden;*/
-   min-width: 1000px;
-   overflow-x: auto;
+   min-width: 1750px;
+   overflow-x: scroll;
    background-color: #F5F5F5;
 }
 
@@ -198,6 +198,7 @@ a:hover {
     border-top-style: solid;
     border-width: 2px;
     border-color: #8A7D6B;
+    /*box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 .footerFont{
@@ -731,8 +732,8 @@ button:hover {
 }
 
 #comment {
-    border-style: solid;
     box-sizing: border-box;
+    border-style: solid;
     border-color: #666666;  
     color:#595145;
     width: 100%;
@@ -766,10 +767,10 @@ button:hover {
 }
 
 div.stars {
-    /*width: 50%;*/
-    /*margin: 0 auto;*/
+    width: 50%;
+    margin: 0 auto;
     width: 270px;
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
 input.star { display: none; }
@@ -840,6 +841,7 @@ label.star:before {
     color: #595145;
     background-color:#A7D2CB;
     font-size: large;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 }
  
 .faq_answer_container {
@@ -934,6 +936,7 @@ label.star:before {
     min-height: 240px;
     padding-left: 20px;
     padding-right: 20px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 } 
 
 /*.moduleOneButton {*/
@@ -995,6 +998,7 @@ label.star:before {
     min-height: 240px;
     padding-left: 20px;
     padding-right: 20px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*.moduleTwoButton {*/
@@ -1522,7 +1526,7 @@ to { opacity: 1; }
 /*OVERALL RESULTS PAGE********************************************************************/
 
 .overallPanel {
-    /*height: 500px;*/
+    height: 500px;
     /*background: linear-gradient(#E6E6E6, white);*/
     /*background: linear-gradient(#F6EDEE, white);*/
     background: linear-gradient(#F1E4E6, white);
@@ -1549,8 +1553,11 @@ to { opacity: 1; }
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 40px;
-    /*height: 370px;*/
-    position: relative;
+    min-height: 350px;
+    /*max-height: 700px;*/
+    height: auto;
+    max-width:100%;
+    /*position: relative;*/
     /*max-height: 100%;*/
     /*max-width: 100%;*/
 }
@@ -1563,6 +1570,12 @@ to { opacity: 1; }
 .resHeaders {
     font-size: 20px;
     text-align: right;
+    /*float: right;*/
+}
+
+.resData {
+    font-size: 20px;
+    
 }
 
 tr.r {
@@ -1578,15 +1591,103 @@ tr.r {
     -moz-transition: .3s;
     -o-transition: .3s;
     display: block;
+    /*width: 20%;*/
     width: 20%;
     height: 20%;
     font-size: 18px;
     font-family: Raleway;
     /*position: relative;*/
-    bottom: 10%;
+    /*bottom: 10%;*/
 }
 
+#ovalContain {
+    height:175px;
+    width:300px;
+    /*border:1px black solid;*/
+    /*float:right;*/
+    position: relative;
+    float: right;
+    margin-right: 30px;
+}
 
+#ovalPerc {
+    height:175px;
+    width:250px;
+    background:#F2D388;
+    border: 10px #595145 double;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 50%;
+    /*margin-left:25%;*/
+    /*margin-top:25%;*/
+}
 
+.indiBtn {
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 22px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    display: block;
+    width: 40%;
+    height: 20%;
+    font-size: 18px;
+    font-family: Raleway;
+    display: block;
+    margin-left: 55%;
+}
+
+.indiBtn2 {
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 22px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    display: block;
+    width: 40%;
+    height: 20%;
+    font-size: 18px;
+    font-family: Raleway;
+    margin-left: 5%;
+    /*display: block;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+
+.dropdownBtn {
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 22px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    display: block;
+    width: 100%;
+    height: 20%;
+    font-size: 18px;
+    font-family: Raleway;
+    /*margin-left: 5%;*/
+    /*display: block;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+
+.drpmenu {
+    width: 100%;
+    font-size: 18px;
+    
+}
+
+.percent {
+    text-align: center;
+    margin-top:5%;
+    font-size: 90px;
+    position: relative;
+}
 
 

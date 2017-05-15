@@ -71,12 +71,12 @@
             <div class="panel panel-default panelTwo" style="height: 500px">
                 <h3 style="text-align:center; margin-left: 5px; margin-right: 5px">Educational Module Abstracts</h3>
                 <div class="panel-body" style="font-size:large;text-align:justify">
+                    <br>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
                     varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
                     condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
                     nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
                     accumsan. Aliquam in felis sit amet augue. <br>
-                    
                     <a href="abstractModule"><button class="btns5 greenbluedark">Read More</button></a>
                 </div>
             </div>

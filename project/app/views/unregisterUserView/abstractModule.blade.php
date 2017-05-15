@@ -15,6 +15,9 @@
        
         <div class="col-md-12">
             <br>
+            <div class="alert alert-warning">
+                <p class="basicFontStyle" style="text-align:center">You are viewing limited content. For full access, please sign in.</p>
+            </div>
             <div class="faq_container">
                 <!--ABSTRACT MODULE 1-->
                <div class="faq">

@@ -53,7 +53,7 @@ Route::put('{id}/account_details/update_password', array('as' => 'update_passwor
 Route::get('{id}/overall_results', array('as' => 'overall_results', 'uses' => 'UserController@OverallResults'));
 
 //Route for getting results for a specific user
-Route::get('{id}/overall_results/module', array('as' => 'individual_module', 'uses' => 'UserController@IndividualModule'));
+Route::get('{id}/overall_results/module/insertmodulenumberhere', array('as' => 'individual_module', 'uses' => 'UserController@IndividualModule'));
 
 
 //ROUTE CONTROLLER FOR PAGES***************************************************************************************
@@ -80,8 +80,13 @@ Route::get('update_details', array('as' => 'update.details', 'uses' => 'PageCont
 //Route protection for educational module
 Route::get('education_modules', array('as' => 'education_modules', 'uses' => 'PageController@EducationModules'));
 
+//Route for quiz
+Route::get('educational_module/quiz/insertmodulenamehere', array('as' => 'module_quiz', 'uses' => 'PageController@ModuleQuiz'));
+
 //Route protection for module one page
 Route::get('educational_module/module_one', array('as' => 'module_one', 'uses' => 'PageController@ModuleOnePage'));
+
+
 
 // UNREGISTERED USERS ROUTES***************************************************
 // *****************************************************************************

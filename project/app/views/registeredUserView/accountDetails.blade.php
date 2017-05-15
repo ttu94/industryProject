@@ -59,7 +59,7 @@
             <!--CHANGE PASSWORD-->
             <div class="faq_container">
                <div class="faq">
-                  <div class="faq_question" style="background-color:#F5F5F5;color:#67AB9F;padding-left:20px">Change Password</div>
+                  <div class="faq_question" style="background-color:#F5F5F5;color:#67AB9F;padding-left:20px; box-shadow: none">Change Password</div>
                        <div class="faq_answer_container" style="background-color:#F5F5F5">
                           <div class="faq_answer"><br>
                               {{ Form::model($user, array('method' => 'PUT', 'route' => array('update_password', Auth::user()->id)))}}
@@ -79,7 +79,6 @@
                        </div>        
                 </div>
             </div>
-
              <br><br>
         </div>
         
