@@ -33,11 +33,16 @@
                 <div class ="loginBlock">
                     <h1 class="raleway">Registered User</h1>
                     <br>
-                    @if($errors->any())
+                    <!--@if($errors->any())-->
+                    <!--    <div>-->
+                    <!--        <a href="#" class="close" data-dimiss="alert"></a>-->
+                    <!--        {{ implode('',$errors->all('<p class="basicFontStyle error" style="color:red">:message</p>')) }}-->
+                    <!--        <br>-->
+                    <!--    </div>-->
+                    <!--@endif-->
+                    @if(Session::has('invalid'))
                         <div>
-                            <a href="#" class="close" data-dimiss="alert"></a>
-                            {{ implode('',$errors->all('<p class="basicFontStyle error" style="color:red">:message</p>')) }}
-                            <br>
+                             <p class="basicFontStyle" style="color:red">{{ Session::get('invalid') }}</p>
                         </div>
                     @endif
                     <input class="login" type="text" placeholder="Email" name="email" width="50px">

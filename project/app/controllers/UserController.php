@@ -232,31 +232,19 @@ class UserController extends \BaseController {
 	//USER LOGIN
 	public function login() {
 
-
 		$userdata = array(
 			'email' => Input::get('email'),
 			'password' => Input::get('password')
 		);
 		
-		$rules = array(
-			'email' => 'required|email',
-			'password' => 'required|min:5'
-		);
-		
-		$v = Validator::make($userdata, $rules);
-		
-		if ($v->passes()){
-			// authenticates and sets remember me cookie
-			if (Auth::attempt($userdata, true))
-			{
-				return Redirect::action('UserController@show', array(Auth::user()->id));
-			} else {
-				return Redirect::to(URL::previous()) -> withInput();
-			}
-		 } else {
-			// Show Validation Errors
-		 	return Redirect::back()->withErrors(array('wrong' => 'The username or password is incorrect'));
-		 }
+		// authenticates and sets remember me cookie
+		if (Auth::attempt($userdata, true))
+		{
+			return Redirect::action('UserController@show', array(Auth::user()->id));
+		} else {
+			// return Redirect::to(URL::previous()) -> withInput();
+			return Redirect::back()->with('invalid', 'The username or password is incorrect.');
+		}
 		 
 	}
 	

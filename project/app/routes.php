@@ -80,13 +80,14 @@ Route::get('update_details', array('as' => 'update.details', 'uses' => 'PageCont
 //Route protection for educational module
 Route::get('education_modules', array('as' => 'education_modules', 'uses' => 'PageController@EducationModules'));
 
-//Route for quiz
-Route::get('educational_module/quiz/insertmodulenamehere', array('as' => 'module_quiz', 'uses' => 'PageController@ModuleQuiz'));
+//Route for quiz information before it begins
+Route::get('educational_module/quiz_information', array('as' => 'module_quiz_info', 'uses' => 'PageController@ModuleQuizInfo'));
+
+//Route protection for module quizzes, all quizzes wil use this template
+Route::get('educational_module/quiz/modulenamehere', array('as' => 'module_quiz', 'uses' => 'PageController@ModuleQuiz'));
 
 //Route protection for module one page
 Route::get('educational_module/module_one', array('as' => 'module_one', 'uses' => 'PageController@ModuleOnePage'));
-
-
 
 // UNREGISTERED USERS ROUTES***************************************************
 // *****************************************************************************

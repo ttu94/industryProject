@@ -860,7 +860,7 @@ label.star:before {
     color: #595145;
     font-size: 18px;
     font-family: Raleway, sans-serif;
-    /*min-height: 250px;*/
+    /*min-height: 20px;*/
 }
 
 /*ABSTRACT EDUCATIONAL MODULE PAGE CSS*****************************************/
@@ -1084,7 +1084,7 @@ label.star:before {
 
 .btn2 {
   /*cursor: pointer;*/
-  margin-top: 5px;
+  margin-top: 8px;
   border-radius: 5px;
   padding: 10px;
   transition: .3s;

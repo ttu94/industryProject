@@ -15,9 +15,15 @@
        
         <div class="col-md-12">
             <br>
-            <div class="alert alert-warning">
-                <p class="basicFontStyle" style="text-align:center">You are viewing limited content. For full access, please sign in.</p>
-            </div>
+                @if (Auth::check())
+                    <div class="alert alert-warning" style="background-color: #FBF1DB; border: none">
+                        <p class="basicFontStyle" style="text-align:center">You are viewing limited content. Please click on the "<a href={{ route("education_modules", array("id" => Auth::user()->id)) }} style="color: #88ABA5">Educational Module</a>" link for the full content.</p>
+                    </div>
+                @else
+                    <div class="alert alert-warning" style="background-color: #FBF1DB; border: none">
+                        <p class="basicFontStyle" style="text-align:center">You are viewing limited content. For full access, please <a href="login" style="color: #88ABA5">sign in.</a></p>
+                    </div>
+                @endif
             <div class="faq_container">
                 <!--ABSTRACT MODULE 1-->
                <div class="faq">
