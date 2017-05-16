@@ -21,6 +21,7 @@ class CreateModuleAnswersTable extends Migration {
 			$table->foreign('moduleTest_id')->references('id')->on('moduleTests')->onDelete('cascade');
 			
 			$table->string('answer');
+			$table->timestamps();
 		});
 	}
 

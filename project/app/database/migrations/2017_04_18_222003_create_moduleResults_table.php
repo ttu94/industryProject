@@ -22,6 +22,7 @@ class CreateModuleResultsTable extends Migration {
 			$table->foreign('userResult_id')->references('id')->on('userResults')->onDelete('cascade');
 			
 			$table->string('chosenAnswer');
+			$table->timestamps();
  		});
 	}
 

@@ -26,6 +26,7 @@ class CreateModuleTestsTable extends Migration {
 	 		
 			//correct answers are verified by string comparison 
 			$table->string('correctAnswer');
+			$table->timestamps();
  		});
 	}
 
