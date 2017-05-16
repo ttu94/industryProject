@@ -13,15 +13,24 @@
 <div class="container-fluid"> 
     <br>
         @if(Session::has('success'))
-            <div class="alert alert-success">
+            <div class="alert alert-success alert-dismissable fade in"  style="background-color: #DBEDEA; border: none">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
                 <h2 style="text-align:center">{{ Session::get('success') }}</h2>
             </div>
         @endif
         @if(Session::has('update_success'))
-            <div class="alert alert-success">
+            <div class="alert alert-success alert-dismissable fade in"  style="background-color: #DBEDEA; border: none">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
                 <h2 style="text-align:center">{{ Session::get('update_success') }}</h2>
             </div>
         @endif
+        @if($errors->any())
+        <div class="alert alert-danger alert-dismissable fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+            {{ implode('',$errors->all('<h2 class="error" style="text-align:center">:message</h2>')) }}
+        </div>
+      @endif
+
         <div class="personalDetail">
             <br>
             <h3>&nbsp;Personal Details</h3>
@@ -63,17 +72,16 @@
                        <div class="faq_answer_container" style="background-color:#F5F5F5">
                           <div class="faq_answer"><br>
                               {{ Form::model($user, array('method' => 'PUT', 'route' => array('update_password', Auth::user()->id)))}}
-                                  @if($errors->any())
-                                    <div class="alert alert-error">
-                                        <a href="#" class="close" data-dimiss="alert"></a>
-                                        {{ implode('',$errors->all('<p class="error" style="color:red">:message</p>')) }}
+                                  <!--<div style="column-count:2">-->
+                                    <div class="col-md-12">
+                                        <input class="register" style="width: 50%" type="password" name="password" placeholder="Current Password*">
+                                        <br><br><br><br>
+                                        <input class="register" style="width: 50%" type="password" name="password_new" placeholder="New Password*">
+                                        <br><br><br>
+                                        <input class="register" style="width: 50%" type="password" name="password_new_confirmation" placeholder="Confirm New Password*">
                                     </div>
-                                  @endif
-                                  <div style="column-count:2">
-                                    <input class="register" type="password" name="password" placeholder="New Password*">
-                                    <input class="register" type="password" name="password_confirmation" placeholder="Confirm New Password*">
-                                  </div>
-                                  <div style="margin-top:20px;text-align:center"><button type="submit">Change password</button></div>
+                                    <br>
+                                  <div style="margin-top:20px; margin-left: 15px"><button type="submit">Change password</button></div>
                               {{ Form::close() }}
                           </div>
                        </div>        

@@ -182,23 +182,33 @@ class UserController extends \BaseController {
 		$input = Input::all();
 		
 		//Encrypts password
-		$password = $input['password'];
-		$encrypted = Hash::make($password);
-
-		$rules = array(
-			'password' => 'required|min:5',
-			'password_confirmation' => 'required|min:5|same:password'
-			);
+		$password_new = $input['password_new'];
+		$encrypt = Hash::make($password_new);
 		
-		$v = Validator::make($input, $rules);
+		//Custom validation rule. password must match password in DB
+		Validator::extend('hashmatch', function($attribute, $value, $parameters)
+		{
+		    // return Hash::check('password', Auth::user()->password);
+		    return Hash::check($value, Auth::user()->$parameters[0]);
+		});
+		
+		$messages = array(
+		    'hashmatch' => 'Your current password must match your account password.'
+		);
+		
+		$rules = array(
+			'password' => 'required|hashmatch:password',
+			'password_new' => 'required|min:5|different:password',
+			'password_new_confirmation' => 'required|min:5|same:password_new'
+		);
+		
+		$v = Validator::make($input, $rules, $messages);
 		
 		if ($v->passes()){
-			$user->password = $encrypted;
+			$user->password = $encrypt;
 			$user->save();
-
 			return Redirect::action('UserController@AccountDetails', array($user->id))->with('success', 'Password Change Successful!');
 		 } else {
-		 	
 			// Show Validation Errors
 		 	return Redirect::back()->withInput()->withErrors($v);
 		 }
@@ -236,14 +246,6 @@ class UserController extends \BaseController {
 		$v = Validator::make($userdata, $rules);
 		
 		if ($v->passes()){
-			
-			//Set the remember me cookie if the user checks the box
-			// $remember = Input::get('remember');
-			// if(!empty($remember))
-			// {
-			// 	return true;
-			// }
-				
 			// authenticates and sets remember me cookie
 			if (Auth::attempt($userdata, true))
 			{
@@ -261,7 +263,7 @@ class UserController extends \BaseController {
 	//USER LOGOUT
 	public function logout(){
 		Auth::logout();
-		return Redirect::to('home');
+		return Redirect::to('logoutPage');
 		
 	}
 	

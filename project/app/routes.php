@@ -97,6 +97,11 @@ Route::get('login', function()
     return View::make('unregisterUserView/login');
 });
 
+Route::get('logoutPage', function()
+{
+    return View::make('unregisterUserView/logoutPage');
+});
+
 //Route to Register user
 Route::get('register', function()
 {

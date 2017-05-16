@@ -40,7 +40,7 @@
             <br>
             <p class="resData"> 15/05/17 12:00 PM</p>
             <p class="resData"> 15/05/17 12:00 PM</p>
-            <p class="resData"> 73%</p>
+            <p class="resData"> 90%</p>
         </div>
         <div class="col-md-6" id="ovalContain">
             <div id="ovalPerc">
@@ -272,7 +272,7 @@
             <br>
             <p class="resData"> 15/05/17 12:00 PM</p>
             <p class="resData"> 15/05/17 12:00 PM</p>
-            <p class="resData"> 73%</p>
+            <p class="resData"> 90%</p>
         </div>
         <div class="col-md-6" id="ovalContain">
             <div id="ovalPerc">
