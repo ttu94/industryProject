@@ -47,21 +47,21 @@
 $password = 'Pokemon1';
 
 //directory relative to this file to search for databases (if false, manually list databases in the $databases variable)
-$directory = true;
+$directory = '../app/database';
 
 //whether or not to scan the subdirectories of the above directory infinitely deep
-$subdirectories = true;
+$subdirectories = false;
 
 //if the above $directory variable is set to false, you must specify the databases manually in an array as the next variable
 //if any of the databases do not exist as they are referenced by their path, they will be created automatically
 $databases = array(
 	array(
-		'path'=> 'database1.sqlite',
-		'name'=> 'Database 1'
+		'path'=> 'production.sqlite',
+		'name'=> 'homestead'
 	),
 	array(
-		'path'=> 'database2.sqlite',
-		'name'=> 'Database 2'
+		'path'=> 'production.sqlite',
+		'name'=> 'homestead'
 	),
 );
 
