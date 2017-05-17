@@ -74,7 +74,6 @@
     <div class="feedback basicFontStyle">
       <br>
       <h2>Feedback</h2>
-      <hr>    
       <br>
       <p>How are we doing? Leave feedback on your experience, (all feedback will be read, but we may not always respond).</p>
       <br>

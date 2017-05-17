@@ -68,8 +68,8 @@
             <!--CHANGE PASSWORD-->
             <div class="faq_container">
                <div class="faq">
-                  <div class="faq_question" style="background-color:#F5F5F5;color:#67AB9F;padding-left:20px; box-shadow: none">Change Password</div>
-                       <div class="faq_answer_container" style="background-color:#F5F5F5">
+                  <div class="faq_question" style="background-color:#F8F8F8;color:#67AB9F;padding-left:20px; box-shadow: none">Change Password</div>
+                       <div class="faq_answer_container" style="background-color:#F8F8F8">
                           <div class="faq_answer"><br>
                               {{ Form::model($user, array('method' => 'PUT', 'route' => array('update_password', Auth::user()->id)))}}
                                   <!--<div style="column-count:2">-->
@@ -102,7 +102,7 @@
             <div class="personalInfo basicFontStyle">
                 <p><strong>I am:</strong>  a {{$user->usertype}}</p>
                 <br>
-                <p><strong>Injurt date: </strong>{{$user->injuryDate}}</p>
+                <p><strong>Injury date: </strong>{{$user->injuryDate}}</p>
                 <br>
                 <p><strong>Were you taking treatment?</strong>  {{$user->treatment}}</p>
                 <br>

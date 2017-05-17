@@ -57,16 +57,138 @@
         <!--COVERFLOW GOES IN HERE -->
         <!-- this is a test coverflow -->
         <div id="modulant">
-    			<div id="modulant-coverflow">
-    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-    				<img class="cover" src="https://d1avok0lzls2w.cloudfront.net/img_uploads/changing-urls-0(2).jpg"/>
-    			</div>
+			<div id="modulant-coverflow">
+                <div class="panels panels-default panelsOne" style="width:325px;height:275px">
+                    <br>
+                    <h3 style="text-align: center">Module 1</h3>
+                    <div class="panels-body">
+                        <p class="moduleTitle">
+                            Demographics & Economics of Spinal Cord Injury (SCI)
+                        </p><br>
+                        <a href={{ route("module_one", array("id" => Auth::user()->id)) }}><button class="btns6 greenbluemedium">Read More</button></a>
+                    </div>
+                    <br>
+                </div>
+                <div class="panels panels-default panelsTwo" style="width:325px;height:275px">
+                    <br>
+                    <h3 style="text-align: center">Module 2</h3>
+                    <div class="panels-body">
+                        <p class="moduleTitle">
+                            Spinal cord as a neutral tissue and injury to the nerves
+                        </p><br>
+                        <a href="abstractModule"><button class="btns6 greenbluedark">Read More</button></a>
+                    </div>
+                    <br>
+                </div>
+                <div class="panels panels-default panelsOne" style="width:325px;height:275px">
+                    <br>
+                    <h3 style="text-align: center">Module 3</h3>
+                    <div class="panels-body">
+                        <p class="moduleTitle">
+                            Structures
+                        </p><br><br>
+                        <a href="register"><button class="btns6 greenbluemedium" text-align: center >Read More</button></a>
+                    </div>
+                </div>
+                <div class="panels panels-default panelsTwo" style="width:325px;height:275px">
+                    <br>
+                    <h3 style="text-align: center">Module 4</h3>
+                    <div class="panels-body">
+                        <p class="moduleTitle">
+                            Functions
+                        </p><br>
+                        <a href="modulesOne"><button class="btns6 greenbluedark">Read More</button></a>
+                    </div>
+                    <br><br>
+                </div>
+				<div class="panels panels-default panelsOne" style="width:325px;height:275px">
+                    <br>
+                    <h3 style="text-align: center">Module 5</h3>
+                    <div class="panels-body">
+                        <p class="moduleTitle">
+                            SCI mechanisms
+                        </p><br>
+                        <a href="aboutUs"><button class="btns6 greenbluemedium">Read More</button></a>
+                    </div>
+                    <br>
+                </div>
+                <div class="panels panels-default panelsTwo" style="width:325px;height:275px">
+                    <br>
+                    <h3 style="text-align: center">Module 6</h3>
+                    <div class="panels-body">
+                        <p class="moduleTitle">
+                            Types of injuries
+                        </p><br>
+                        <a href="abstractModule"><button class="btns6 greenbluedark">Read More</button></a>
+                    </div>
+                    <br>
+                </div>
+                <div class="panels panels-default panelsOne" style="width:325px;height:275px">
+                    <br>
+                    <h3 style="text-align: center">Module 7</h3>
+                    <div class="panels-body">
+                        <p class="moduleTitle">
+                            Different injuries and their effects on the cord and body
+                        </p><br>
+                        <a href="register"><button class="btns6 greenbluemedium" text-align: center >Read More</button></a>
+                    </div>
+                </div>
+                <div class="panels panels-default panelsTwo" style="width:325px;height:275px">
+                    <br>
+                    <h3 style="text-align: center">Module 8</h3>
+                    <div class="panels-body">
+                        <p class="moduleTitle">
+                            Chromic effects of spinal cord injury
+                        </p><br>
+                        <a href="modulesOne"><button class="btns6 greenbluedark">Read More</button></a>
+                    </div>
+                    <br><br>
+                </div>
+                <div class="panels panels-default panelsOne" style="width:325px;height:275px">
+                    <br>
+                    <h3 style="text-align: center">Module 9</h3>
+                    <div class="panels-body">
+                        <p class="moduleTitle">
+                            Peripheral nerve regeneration
+                        </p><br>
+                        <a href="aboutUs"><button class="btns6 greenbluemedium">Read More</button></a>
+                    </div>
+                    <br>
+                </div>
+                <div class="panels panels-default panelsFour" style="width:325px;height:275px">
+                    <br>
+                    <h3 style="text-align: center">Module 10</h3>
+                    <div class="panels-body">
+                        <p class="moduleTitle">
+                            CNS regeneration
+                        </p><br>
+                        <a href="abstractModule"><button class="btns6 greenbluedark">Read More</button></a>
+                    </div>
+                    <br>
+                </div>
+                <div class="panels panels-default panelsFive" style="width:325px;height:275px">
+                    <br>
+                    <h3 style="text-align: center">Module 11</h3>
+                    <div class="panels-body">
+                        <p class="moduleTitle">
+                            Repair therapeutic strategies 
+                        </p><br><br>
+                        <a href="register"><button class="btns6 greenbluemedium" text-align: center >Read More</button></a>
+                    </div>
+                    <br>
+                </div>
+			</div>
+			    <button id="mod1">1</button>
+			    <button id="mod2">2</button>
+			    <button id="mod3">3</button>
+			    <button id="mod4">4</button>
+			    <button id="mod5">5</button>
+			    <button id="mod6">6</button>
+			    <button id="mod7">7</button>
+			    <button id="mod8">8</button>
+			    <button id="mod9">9</button>
+			    <button id="mod10">10</button>
+			    <button id="mod11">11</button>
         </div>
     </div>
 </div>

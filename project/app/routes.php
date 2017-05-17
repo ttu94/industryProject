@@ -137,10 +137,16 @@ Route::get('abstractModule', function()
  
 });
 
+// //Route To admin login
+// Route::get('adminLogin', function()
+// {
+//     return View::make('unregisterUserView/adminLogin');
+ 
+// });
+
 //Route To admin login
-Route::get('adminLogin', function()
+Route::get('forgottenPassword', function()
 {
-    return View::make('unregisterUserView/adminLogin');
+    return View::make('unregisterUserView/forgetPassword');
  
 });
-

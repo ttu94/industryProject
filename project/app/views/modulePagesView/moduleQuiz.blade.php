@@ -18,6 +18,23 @@
     60% Complete
   </div>
 </div>
+<div class="col-md-12">
+    <div class="linearRadio basicFontStyle">
+    <h2>Question 1</h2>
+    {{ Form::radio('m1q1', 'true')}} True
+    {{ Form::radio('m1q1', 'False')}} False
+    </div>
+    <div class="linearRadio basicFontStyle">
+    <h2>Question 2</h2>
+    {{ Form::radio('m1q2', 'true')}} True
+    {{ Form::radio('m1q2', 'False')}} False
+    </div>
+    <div class="linearRadio basicFontStyle">
+    <h2>Question 3</h2>
+    {{ Form::radio('m1q3', 'true')}} True
+    {{ Form::radio('m1q3', 'False')}} False
+    </div>
+</div>
 
 </div>
 

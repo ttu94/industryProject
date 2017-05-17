@@ -21,8 +21,7 @@
                 {{ implode('',$errors->all('<p class="error" style="color:red">:message</p>')) }}
             </div>
             @endif
-            <h2>Personal Details</h2>
-            <hr>
+            <h2 style="margin-bottom:20px">Personal Details</h2>
             <div style="column-count:2">
                 <input class="register" {{ Form::text('firstName', '',array('placeholder' =>'First Name'))}}
                 <input class="register" {{ Form::text('lastName', '',array('placeholder' =>'Last Name'))}}
@@ -298,9 +297,8 @@
                 <input class="register" type="password" name="password" placeholder="Password *">
                 <input class="register" type="password" name="password_confirmation" placeholder="Confirm Password*">
             </div>
-            
-            <h2>Other Details</h2>
-            <hr>
+            <br>
+            <h2 style="margin-bottom:20px">Other Details</h2>
             <p>I am: <font color="red">*</font></p>
             <div class="oUsertype">
                  {{ Form::radio('usertype', 'patient', true)}} a patient with a spinal cord injury (SCI)
@@ -352,7 +350,7 @@
                     {{ Form::radio('onBehalf', 'no', true)}} No
                 </div>
             </div>
-            <div style="margin-top:20px;text-align:center"><button type="submit">Create Account</button></div>
+            <div style="margin-top:20px;text-align:center"><button class="button greybrown2" type="submit">Create Account</button></div>
         {{ Form::close() }}
     </div>
 </div>

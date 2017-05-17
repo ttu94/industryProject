@@ -12,60 +12,42 @@
 @section('content')
 <div class="container-fluid">
     <br>
-    <!--<div class="row">-->
-        <!--Linking to user register page-->
-        <div class="col-md-4">
-            <br><br><br><br>
-            <div id="noLogin">
-                <h3 class="raleway">Don't have an account?<br>Register now</h2>
+    <!--Linking to user register page-->
+    <div class="col-md-4">
+        <br><br><br><br>
+        <div id="noLogin">
+            <h3 class="raleway">Don't have an account?<br>Register now</h2>
+            <br>
+            <a href="register"><button class="button greenbluedark2" style="width:100%">Create Account</button></a>
+        </div>
+    </div>
+    
+    <!--user login then routed to user's dashboard-->
+    <div class="col-md-8">
+        <br><br>
+        {{ Form::open(array('url' => secure_url('user/login'))) }}
+            <div class ="loginBlock">
+                <h1 class="raleway">Registered User</h1>
                 <br>
-                <a href="register"><button>Create Account</button></a>
+
+                @if(Session::has('invalid'))
+                    <div>
+                         <p class="basicFontStyle" style="color:red">{{ Session::get('invalid') }}</p>
+                    </div>
+                @endif
+                <input class="login" style="font-size:18px" type="text" placeholder="Email" name="email" width="50px">
+                <br>
+                <input class="login" style="font-size:18px" type="password" placeholder="Password" name="password">
+                <br>
+                <br>
+                <button class="button greenbluedark2">Sign In</button>
+                <br><br>
+                <a href="forgottenPassword" style="color:#88ABA5;font-size:18px">Forgot password?</a>
+                <br><br>
+                <!--<a href="adminLogin" style="color:#67AB9F">Admin Login</a>-->
             </div>
-        </div>
-        
-        <!--Vertical line break between divs-->
-        <!--<div class="verticalLine" style="float:right" ></div>-->
-        
-        <!--user login then routed to user's dashboard-->
-        <div class="col-md-8">
-            <br><br>
-            {{ Form::open(array('url' => secure_url('user/login'))) }}
-                <div class ="loginBlock">
-                    <h1 class="raleway">Registered User</h1>
-                    <br>
-                    <!--@if($errors->any())-->
-                    <!--    <div>-->
-                    <!--        <a href="#" class="close" data-dimiss="alert"></a>-->
-                    <!--        {{ implode('',$errors->all('<p class="basicFontStyle error" style="color:red">:message</p>')) }}-->
-                    <!--        <br>-->
-                    <!--    </div>-->
-                    <!--@endif-->
-                    @if(Session::has('invalid'))
-                        <div>
-                             <p class="basicFontStyle" style="color:red">{{ Session::get('invalid') }}</p>
-                        </div>
-                    @endif
-                    <input class="login" type="text" placeholder="Email" name="email" width="50px">
-                    <br>
-                    <input class="login" type="password" placeholder="Password" name="password">
-                    <br>
-                    <!--<input class="raleway" id="remember" name="remember" type="checkbox"> Remember me-->
-                    <!--<span class="login-checkbox">-->
-                    <!--    <input id="remember" name="remember" type="checkbox" class="field login-checkbox" />-->
-                    <!--    <label class="choice" for="remember">Remember me</label>-->
-                    <!--</span>-->
-                    <br>
-                    <button>Sign In</button>
-                    <br><br>
-                    <a href="#" style="color:#67AB9F">Forget Password?</a>
-                    <br><br>
-                    <a href="adminLogin" style="color:#67AB9F">Admin Login</a>
-                </div>
-            {{ Form::close() }}
-        </div>
-
-    <!--</div>-->
-
+        {{ Form::close() }}
+    </div>
 </div>
 
 @endsection

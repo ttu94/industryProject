@@ -77,7 +77,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.js"></script>
 	<script src="{{ URL::asset('js/jquery.coverflow.js') }}"></script>
-    <!--{{ HTML::script('js/jsquery.coverflow.js') }}-->
+	<script src="{{ URL::asset('js/jquery.scrollSpeed.js') }}"></script>
 	<script>
 		$(function() {
 			$('#modulant-coverflow').coverflow();

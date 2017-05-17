@@ -21,7 +21,7 @@
                     </div>
                 @else
                     <div class="alert alert-warning" style="background-color: #FBF1DB; border: none">
-                        <p class="basicFontStyle" style="text-align:center">You are viewing limited content. For full access, please <a href="login" style="color: #88ABA5">sign in.</a></p>
+                        <p class="basicFontStyle" style="text-align:center">You are viewing limited content. For full access, please <a href="login" style="color: #88ABA5">Sign In</a> or <a href="register" style="color: #88ABA5">Register for an account</a>.</p>
                     </div>
                 @endif
             <div class="faq_container">
@@ -45,7 +45,7 @@
                               <br>
                               <br>
                               <div>
-                                  <a href={{route("module_one")}}><button class="btns3 greenbluemedium2">See Full Modules</button></a>
+                                  <a href={{route("module_one")}}><button class="btns3 greenbluemedium2">See full content</button></a>
                               </div>
                               <br>
                           </div>
@@ -56,7 +56,7 @@
                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 2: </strong>Spinal cord as a neutral tissue and injury to the nerves</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>The full modules and quizzes are open for registered users only. Abstracts of each module are available to the public.</div>
+                          <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
                        </div> 
                 </div>
                <br>
@@ -64,7 +64,7 @@
                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 3: </strong>Structures</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>There is a download button on each module page where you can print button on each module page, the , you can print out the screens.</div>
+                          <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
                        </div>        
                 </div>
                 <br>
@@ -72,7 +72,7 @@
                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 4: </strong>Functions</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>Yes, users have 12 months to study the modules and complete each quiz.</div>
+                          <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
                        </div>        
                 </div>
                 <br>
@@ -80,7 +80,7 @@
                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 5: </strong>SCI mechanisms</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>Time. Give it time.</div>
+                          <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
                        </div>        
                 </div>
                 <br>
@@ -88,7 +88,7 @@
                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 6: </strong>Types of injuries</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>You can complete the quizzes as many times as you like. There are no restrictions of the number of attempts</div>
+                          <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
                        </div>        
                 </div>
                 <br>
@@ -96,7 +96,7 @@
                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 7: </strong>Different injuries and their effects on the cord and body</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>It will depend on how long you take on each question. There is no time limit, so go at your own pace.</div>
+                          <div class="faq_answer"><br>It will depend on how long you take on each question. There is no time limit, so go at your own pace.<br>&nbsp;</div>
                        </div>        
                 </div>
                 <br>
@@ -104,7 +104,7 @@
                 <div class="faq">
                   <div class="faq_question"><h3><strong>Module 8: </strong>Chromic effects of spinal cord injury</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>There is a Contact tab in the header that will take you to the Contact Us page. You can fill in the form with your details and we will get back to you as soon as possible. The link below will also take you to the page. (link here) </div>
+                          <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
                        </div>        
                 </div>
                 <br>
@@ -112,7 +112,7 @@
                 <div class="faq">
                   <div class="faq_question"><h3><strong>Module 9: </strong>Peripheral nerve regeneration</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>There is a Contact tab in the header that will take you to the Contact Us page. You can fill in the form with your details and we will get back to you as soon as possible. The link below will also take you to the page. (link here) </div>
+                          <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
                        </div>        
                 </div>
                 
@@ -121,7 +121,7 @@
                 <div class="faq">
                   <div class="faq_question"><h3><strong>Module 10: </strong>CNS regeneration</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>There is a Contact tab in the header that will take you to the Contact Us page. You can fill in the form with your details and we will get back to you as soon as possible. The link below will also take you to the page. (link here) </div>
+                          <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
                        </div>        
                 </div>
              </div>
@@ -130,7 +130,7 @@
                 <div class="faq">
                   <div class="faq_question"><h3><strong>Module 11: </strong>Repair therapeutic strategies</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>There is a Contact tab in the header that will take you to the Contact Us page. You can fill in the form with your details and we will get back to you as soon as possible. The link below will also take you to the page. (link here) </div>
+                          <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
                        </div>        
                 </div>
                 

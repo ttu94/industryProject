@@ -73,10 +73,13 @@
 </script>
 </head>
 <body>
-	<div id="container">
-   		<div id="header">@include('includes.tripleHeader')</div>
-   		<div id="body">@yield('content')</div>
-   		<div id="footer">@include('includes.footer')</div>
-	</div>
+    
+    <div id="container">
+      <div id="header">@include('includes.tripleHeader')</div>
+      <div id="body">@yield('content')</div>
+      <div id="footer">@include('includes.footer')</div>
+    </div>
+    
 </body>
+
 </html>

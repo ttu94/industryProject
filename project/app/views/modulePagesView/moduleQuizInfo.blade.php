@@ -13,9 +13,9 @@
 <div class="container-fluid"> 
     <br><br>
 
-  caila smells
-<a href={{ route("module_quiz", array("id" => Auth::user()->id)) }} ><button class="btn whitebrown">Begin Quiz >></button></a>
-
+  caila smells. thuan is cool af.
+<a href={{ route("module_quiz", array("id" => Auth::user()->id)) }} ><button class="btn whitebrown">Start Quiz >></button></a>
+    
 </div>
 
 @endsection
