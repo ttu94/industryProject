@@ -99,9 +99,10 @@
     <br>
     <div class="col-md-6">
         <div class="panel panel-default doctorPanel">
+            <br>
             <img class="doctorImage" alt="" src="images/alan-mackay-sim.jpg" />    
             <h3 style="text-align: center">Professor Emeritus Alan Mackay-Sim</h3>
-            <div class="panel-body basicFontStyle" style="text-align: justify">
+            <div class="panel-body basicFontStyle panelWords" style="text-align: justify">
                 Alan Mackay-Sim is a neuroscientist and stem cell scientist.
                 He graduated with a PhD from Macquarie University in 1980 and now is a 
                 world leader in spinal cord injury research using nasal olfactory cells.
@@ -114,9 +115,10 @@
     </div>
     <div class="col-md-6">
         <div class="panel panel-default doctorPanel">
+            <br>
             <img class="doctorImage" alt="" src="images/james-st-john.jpg" />
             <h3 style="text-align: center">Dr. James St John</h3>
-            <div class="panel-body basicFontStyle" style="text-align: justify">
+            <div class="panel-body basicFontStyle panelWords" style="text-align: justify">
                 James St John is Head of the Clem Jones Centre for Neurobiology and Stem Cell Research within
                 <a target="_blank" href="https://www.griffith.edu.au/institute-drug-discovery/about-centre" style="color: #88ABA5">GRIDD</a> 
                 and aims to

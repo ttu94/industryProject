@@ -17,11 +17,11 @@
             <br>
                 @if (Auth::check())
                     <div class="alert alert-warning" style="background-color: #FBF1DB; border: none">
-                        <p class="basicFontStyle" style="text-align:center">You are viewing limited content. Please click on the "<a href={{ route("education_modules", array("id" => Auth::user()->id)) }} style="color: #88ABA5">Educational Module</a>" link for the full content.</p>
+                        <p class="basicFontStyle" style="text-align:center">You are viewing limited content. Please click on the <a href={{ route("education_modules", array("id" => Auth::user()->id)) }} style="color: #88ABA5"><u>Educational Module</u></a> link for the full content.</p>
                     </div>
                 @else
                     <div class="alert alert-warning" style="background-color: #FBF1DB; border: none">
-                        <p class="basicFontStyle" style="text-align:center">You are viewing limited content. For full access, please <a href="login" style="color: #88ABA5">Sign In</a> or <a href="register" style="color: #88ABA5">Register for an account</a>.</p>
+                        <p class="basicFontStyle" style="text-align:center">You are viewing limited content. For full access, please <a href="login" style="color: #88ABA5"><u>Sign In</u></a> or <a href="register" style="color: #88ABA5"><u>Register for an account</u></a>.</p>
                     </div>
                 @endif
             <div class="faq_container">

@@ -11,20 +11,22 @@
 
 @section('content')
 <div class="container-fluid">
-    <br>
+    <br><br>
     <div class="col-md-4 basicFontStyle">
         <br>
     </div>
     
     <div class="col-md-4 basicFontStyle">
-        <p style="text-align: center">Enter your email address and we'll help create a new password for you.</p>
+        <p style="text-align: center">Enter your email address and we'll set up a temporary password for you.</p>
         <div class="forgetPasswordForm">
             <form action="/action_page.php" class="forgetForm">
                 <input class="register" style="width: 100%" type="text" name="email" placeholder="Email address">
                 <br>
                 <div style="text-align: center">
-                    <button class="greenbluedarker" type="submit">Next</button>
-                    <p>By continuing, your current password will become invalid and a new one will be sent to your email.</p>
+                    <button class="greenbluedarker" type="submit" style="width: 250px">Request Password</button>
+                    <p>By continuing, your current password will become invalid and a <strong>new temporary</strong> one will be sent to your email. Please follow the prompts in the email.
+                    <br> If you cannot find the email, then please check your Spam/Junk folder. 
+                    <br> If you still haven't received the email, please request another password.</p>
                 </div>
             </form>            
         </div>

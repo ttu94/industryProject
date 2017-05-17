@@ -20,7 +20,8 @@
                 <div class="faq">
                   <div class="faq_question">I have forgotten my password, what should I do?</div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>You should reset your <strong>password</strong> via the "Forgot Password" link on the <a href="login" style="color: #88ABA5"><u>Login</u></a> page.
+                          <div class="faq_answer"><br>You should reset your <strong>password</strong> via the "<a href="forgottenPassword" style="color: #88ABA5">Forget Password</a>"
+                          link on the <a href="login" style="color: #88ABA5"><u>Login</u></a> page.
                           
                           <br>&nbsp;</div>
                        </div>        

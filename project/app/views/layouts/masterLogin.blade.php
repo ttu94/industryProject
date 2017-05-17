@@ -81,6 +81,13 @@
 	<script>
 		$(function() {
 			$('#modulant-coverflow').coverflow();
+			$('#goto.class').click(function() {
+			var x = $(this).attr('id');
+ 			// var x = document.getElementById("coverflowNav");
+ 			console.log(x);
+ 			// $('#modulant-coverflow').coverflow('index', x);
+			})
+			
 		});
 	</script>
    

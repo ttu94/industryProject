@@ -18,7 +18,7 @@
         <div id="noLogin">
             <h3 class="raleway">Don't have an account?<br>Register now</h2>
             <br>
-            <a href="register"><button class="button greenbluedark2" style="width:100%">Create Account</button></a>
+            <a href="register"><button class="button greenbluedark" style="width:100%">Create Account</button></a>
         </div>
     </div>
     
@@ -40,7 +40,7 @@
                 <input class="login" style="font-size:18px" type="password" placeholder="Password" name="password">
                 <br>
                 <br>
-                <button class="button greenbluedark2">Sign In</button>
+                <button class="button greenbluedark">Sign In</button>
                 <br><br>
                 <a href="forgottenPassword" style="color:#88ABA5;font-size:18px">Forgot password?</a>
                 <br><br>

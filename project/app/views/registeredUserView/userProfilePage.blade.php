@@ -178,17 +178,30 @@
                     <br>
                 </div>
 			</div>
-			    <button id="mod1">1</button>
-			    <button id="mod2">2</button>
-			    <button id="mod3">3</button>
-			    <button id="mod4">4</button>
-			    <button id="mod5">5</button>
-			    <button id="mod6">6</button>
-			    <button id="mod7">7</button>
-			    <button id="mod8">8</button>
-			    <button id="mod9">9</button>
-			    <button id="mod10">10</button>
-			    <button id="mod11">11</button>
+			<div id="goto" style="text-align: center">
+			    <button class="coverflowNav" value="1">1</button>
+			    <button class="coverflowNav" value="2">2</button>
+			    <button id="coverflowNav" value="3">3</button>
+			    <button id="coverflowNav" value="4">4</button>
+			    <button id="coverflowNav" value="5">5</button>
+			    <button id="coverflowNav" value="6">6</button>
+			    <button id="coverflowNav" value="7">7</button>
+			    <button id="coverflowNav" value="8">8</button>
+			    <button id="coverflowNav" value="9">9</button>
+			    <button id="coverflowNav" value="10">10</button>
+			    <button id="coverflowNav" value="11">11</button>
+			    <!--<button id="mod1">1</button>-->
+			    <!--<button id="mod2">2</button>-->
+			    <!--<button id="mod3">3</button>-->
+			    <!--<button id="mod4">4</button>-->
+			    <!--<button id="mod5">5</button>-->
+			    <!--<button id="mod6">6</button>-->
+			    <!--<button id="mod7">7</button>-->
+			    <!--<button id="mod8">8</button>-->
+			    <!--<button id="mod9">9</button>-->
+			    <!--<button id="mod10">10</button>-->
+			    <!--<button id="mod11">11</button>-->
+			</div>
         </div>
     </div>
 </div>
