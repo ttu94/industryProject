@@ -20,7 +20,7 @@
                 <div class="faq">
                   <div class="faq_question">I have forgotten my password, what should I do?</div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>You should reset your <strong>password</strong> via the "<a href="forgottenPassword" style="color: #88ABA5">Forget Password</a>"
+                          <div class="faq_answer"><br>You should reset your <strong>password</strong> via the <a href="forgottenPassword" style="color: #88ABA5"><u>Forget Password</u></a>
                           link on the <a href="login" style="color: #88ABA5"><u>Login</u></a> page.
                           
                           <br>&nbsp;</div>
@@ -32,7 +32,7 @@
                        <div class="faq_answer_container">
                           <div class="faq_answer"><br>You have to be logged into your account to change your current <strong>password</strong>. 
                           <br>Click on <a style="color: #88ABA5"><u>Account Details</u></a>, then the "Change Password" button.
-                          <br>Alternatively, if you can't log into your account to do this, refer to the question above. 
+                          <br><br>Alternatively, if you can't log into your account to do this, refer to the question above. 
                           <br>&nbsp;</div>
                        </div>        
                 </div>
@@ -41,7 +41,7 @@
                   <div class="faq_question">Who can participate in the modules and quizzes?</div>
                        <div class="faq_answer_container">
                           <div class="faq_answer"><br>The full modules and quizzes are available to registered users only, however it is free to register for an account. 
-                          <br>Abstracts of each module are available to the public.<br>&nbsp;</div>
+                          <br><br>Abstracts of each module are available to the public.<br>&nbsp;</div>
                        </div>        
                 </div>
                 <br>

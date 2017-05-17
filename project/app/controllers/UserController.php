@@ -266,11 +266,21 @@ class UserController extends \BaseController {
 		}
 	}
 	
-	public function OverallResults($id){
+	//route for immediate module results after submitting a quiz
+	public function QuizResults($id){
 		
-		// $user = Auth::user();
-		// $results = Results::where('user_id', '==', $user->id)->get();
-		// return View::make()->withResults($results);
+		//NOTE: INCORECT ROUTES. NEEDS TO DRAW DATA FROM DB ^
+		if(Auth::user()->id == $id){
+			$user = User::find($id);
+			return View::make('modulePagesView.quizResult')->withUser($user);
+		} else {
+			Auth::logout();
+			return Redirect::action('UserController@index');
+		}
+	}
+	
+	
+	public function OverallResults($id){
 		
 		//NOTE: INCORECT ROUTES. NEEDS TO DRAW DATA FROM DB ^
 		if(Auth::user()->id == $id){

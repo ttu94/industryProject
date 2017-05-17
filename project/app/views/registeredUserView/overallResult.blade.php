@@ -18,7 +18,7 @@
 <div class="container-fluid basicFontStyle">
     <br>
     <div class="overallPanel">
-        <h1 style=text-align:center><strong>Overall Results</strong></h1>
+        <h1 style="text-align:center;font-size:30px"><strong>Overall Results</strong></h1>
         <br>
         <img class="graph" alt="demographs" src="{{ URL::to('/') }}/images/demographs.png"/>
     </div>

@@ -81,11 +81,11 @@
 	<script>
 		$(function() {
 			$('#modulant-coverflow').coverflow();
-			$('#goto.class').click(function() {
-			var x = $(this).attr('id');
- 			// var x = document.getElementById("coverflowNav");
- 			console.log(x);
- 			// $('#modulant-coverflow').coverflow('index', x);
+			$('#modulant-coverflow').coverflow('option', 'enableWheel', false);
+			
+			$('#goto button').click(function() {
+ 			var x = $(this).attr('value') - 1;
+ 			$('#modulant-coverflow').coverflow('index', x);
 			})
 			
 		});

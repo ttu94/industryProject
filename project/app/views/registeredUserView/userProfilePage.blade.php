@@ -24,7 +24,6 @@
     <div class="col-md-4" style="height:500px;background-color: #E6E6E6;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);">
         <br>
         <div class="summaryOfTests" style="margin-top: 100px;vertical-align: middle">
-
             <p class="basicFontStyle" style="text-align:center"><strong>Summary of tests done</strong></p>
             <br>
             <p class="basicFontStyle" style="text-align:center">Last test completed:</p>
@@ -54,8 +53,6 @@
     </div>
     <div class="col-md-12" style="">
         <br><br><br>
-        <!--COVERFLOW GOES IN HERE -->
-        <!-- this is a test coverflow -->
         <div id="modulant">
 			<div id="modulant-coverflow">
                 <div class="panels panels-default panelsOne" style="width:325px;height:275px">
@@ -179,28 +176,18 @@
                 </div>
 			</div>
 			<div id="goto" style="text-align: center">
-			    <button class="coverflowNav" value="1">1</button>
-			    <button class="coverflowNav" value="2">2</button>
-			    <button id="coverflowNav" value="3">3</button>
-			    <button id="coverflowNav" value="4">4</button>
-			    <button id="coverflowNav" value="5">5</button>
-			    <button id="coverflowNav" value="6">6</button>
-			    <button id="coverflowNav" value="7">7</button>
-			    <button id="coverflowNav" value="8">8</button>
-			    <button id="coverflowNav" value="9">9</button>
-			    <button id="coverflowNav" value="10">10</button>
-			    <button id="coverflowNav" value="11">11</button>
-			    <!--<button id="mod1">1</button>-->
-			    <!--<button id="mod2">2</button>-->
-			    <!--<button id="mod3">3</button>-->
-			    <!--<button id="mod4">4</button>-->
-			    <!--<button id="mod5">5</button>-->
-			    <!--<button id="mod6">6</button>-->
-			    <!--<button id="mod7">7</button>-->
-			    <!--<button id="mod8">8</button>-->
-			    <!--<button id="mod9">9</button>-->
-			    <!--<button id="mod10">10</button>-->
-			    <!--<button id="mod11">11</button>-->
+			    <br>
+			    <button class="btns7 greenbluemedium" value="1">1</button>
+			    <button class="btns7 greenbluemedium" value="2">2</button>
+			    <button class="btns7 greenbluemedium" value="3">3</button>
+			    <button class="btns7 greenbluemedium" value="4">4</button>
+			    <button class="btns7 greenbluemedium" value="5">5</button>
+			    <button class="btns7 greenbluemedium" value="6">6</button>
+			    <button class="btns7 greenbluemedium" value="7">7</button>
+			    <button class="btns7 greenbluemedium" value="8">8</button>
+			    <button class="btns7 greenbluemedium" value="9">9</button>
+			    <button class="btns7 greenbluemedium" value="10">10</button>
+			    <button class="btns7 greenbluemedium" value="11">11</button>
 			</div>
         </div>
     </div>

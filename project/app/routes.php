@@ -49,10 +49,13 @@ Route::get('{id}/account_details/update_details', array('as' => 'update_details'
 //route for users to update password
 Route::put('{id}/account_details/update_password', array('as' => 'update_password', 'uses' => 'UserController@UpdatePassword'));
 
-//Route for getting results for a specific user
+//Route for immediate quiz results after submitting
+Route::get('{id}/overall_results/module/insertmodulenumberhere/quiz_results', array('as' => 'quiz_results', 'uses' => 'UserController@QuizResults'));
+
+//Route for getting overall results for a specific user
 Route::get('{id}/overall_results', array('as' => 'overall_results', 'uses' => 'UserController@OverallResults'));
 
-//Route for getting results for a specific user
+//Route for getting results for a specific module
 Route::get('{id}/overall_results/module/insertmodulenumberhere', array('as' => 'individual_module', 'uses' => 'UserController@IndividualModule'));
 
 

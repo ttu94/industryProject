@@ -12,27 +12,28 @@
 @section('content')
 <div class="container-fluid">
     <br><br>
-    <div class="col-md-4 basicFontStyle">
+    <div class="col-md-3 basicFontStyle">
         <br>
     </div>
     
-    <div class="col-md-4 basicFontStyle">
-        <p style="text-align: center">Enter your email address and we'll set up a temporary password for you.</p>
+    <div class="col-md-6 basicFontStyle">
+        <p style="text-align: justify;line-height:40px">Please enter your email address. <br>An email will be sent to you shortly with a <u>new temporary password</u>.</p>
         <div class="forgetPasswordForm">
             <form action="/action_page.php" class="forgetForm">
                 <input class="register" style="width: 100%" type="text" name="email" placeholder="Email address">
                 <br>
                 <div style="text-align: center">
-                    <button class="greenbluedarker" type="submit" style="width: 250px">Request Password</button>
-                    <p>By continuing, your current password will become invalid and a <strong>new temporary</strong> one will be sent to your email. Please follow the prompts in the email.
-                    <br> If you cannot find the email, then please check your Spam/Junk folder. 
-                    <br> If you still haven't received the email, please request another password.</p>
+                    <button class="greenbluemedium" type="submit" style="width: 250px">Request Password</button>
+                    <br><br>
+                    <p style="text-align: justify;line-height:40px">Please follow the prompts in the email.
+                    <br> If you have not received the email, check your <u>Spam/Junk folder</u>. 
+                    <br> If you still haven't received the email, request another temporary password.</p>
                 </div>
             </form>            
         </div>
     </div>
     
-    <div class="col-md-4 basicFontStyle">
+    <div class="col-md-3 basicFontStyle">
         <br>
     </div>
 </div>
