@@ -37,8 +37,10 @@
                     {{ Form::radio('gender', 'Other')}} Other
                 </div>
             </div>
-            
-            <input class="email" {{ Form::email('email', '',array('placeholder' =>"Email"))}}
+            <div style="column-count:2">
+                <input class="register" {{ Form::email('email', '',array('placeholder' =>"Email"))}}
+                <input class="register" {{ Form::email('email_confirmation', '',array('placeholder' =>"Confirm Email"))}}
+            </div>
             
             <div class="country" name="country" style="background-color:white">
                     <select name="country">
@@ -296,6 +298,9 @@
             <!--<div>-->
                 <input class="register" type="password" name="password" placeholder="Password *">
                 <input class="register" type="password" name="password_confirmation" placeholder="Confirm Password*">
+            </div>
+            <div class="col-md-12">
+                <p style="color:red; font-size: 15px">Password must be a minimum of 5 characters</p>
             </div>
             <br>
             <h2 style="margin-bottom:20px">Other Details</h2>

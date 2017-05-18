@@ -58,22 +58,6 @@
             <!--</div>-->
         </div>
         
-        <!--<div class="bottomHeader">-->
-            <!--Image as home page link-->
-        <!--    <ul>-->
-        <!--     <a href={{{route('home')}}}>-->
-        <!--            <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="images/clemjones_Logo.png" height="130px" width="100px"/>                -->
-        <!--     </a>-->
-        <!--      <br>-->
-        <!--      <h1 id="headerTitle">Spinal Cord Injury <br><span id="rehab">Rehabilitation</span></h1>-->
-        <!--      <li style="float:right" class="bottomLink"><a href="contactUs">CONTACT</a></li>-->
-        <!--      <li style="float:right" class="bottomLink"><a href="abstractModule">MODULE ABSTRACTS</a>-->
-        <!--      </li>-->
-        <!--      <li style="float:right" class="bottomLink"><a href="faq">FAQ</a></li>-->
-        <!--      <li style="float:right" class="bottomLink"><a href="aboutUs">ABOUT</a></li>-->
-        <!--    </ul>-->
-        <!--</div>-->
-        
         <div class="tripleHeader">
             <h2 class="pageTitle">@yield('pageTitle')</h2>
         </div>

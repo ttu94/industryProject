@@ -26,7 +26,7 @@ body {
     padding:0;
     height:100%;
     width:100%;
-    min-width: 1900px;
+    min-width: 1850px;
     overflow-x: auto;
     /*background-color: #F8F8F8;*/
     background-color: #F8F8F8;
@@ -593,7 +593,7 @@ button:hover {
     border: 0;
     color: #595145;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
-    min-height: 520px;
+    min-height: 530px;
     height: auto;
 }
 
@@ -1771,6 +1771,43 @@ tr.r {
     
 }
 
+/*Promdule page css**************************************************************/
 
+.radio-inline{
+    margin-right: 50px;
+    height: 40px;
+    width:45px;
+}
 
+.big{
+    height: 15px;
+    width: 15px;
+}
 
+td.b3 {
+   /*padding: none; */
+   /*border: none;*/
+   text-align: left;
+   vertical-align: top;
+   padding-left:35px;
+   
+}
+
+table.d {
+    border-collapse: collapse;
+    /*width: 100%;*/
+    /*padding-left: 15px;*/
+    /*margin-top:10px;*/
+}
+
+th.b4 {
+   text-align: center;
+   /*background-color: #F6EDEE;*/
+   vertical-align: bottom;
+   float: left;
+   /*margin-right: 5px;*/
+   width: 100%;
+   /*margin-right:50px;*/
+   /*padding-left:35px;*/
+   /*padding-right:35px;*/
+}

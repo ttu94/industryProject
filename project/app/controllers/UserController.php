@@ -38,12 +38,13 @@ class UserController extends \BaseController {
 		$encrypted = Hash::make($password);
 		
 		$rules = array(
-			'firstName' => 'required|min:2',
-			'lastName' => 'required',
+			'firstName' => 'required|min:2|alpha',
+			'lastName' => 'required|alpha',
 			'age' => 'numeric|required|min:2|max:100',
 			'gender' => 'required',
 			'country' => 'required',
 			'email' => 'required|email|unique:users',  //unique email in the user table
+			'email_confirmation' => 'required|email|same:email',
 			'password' => 'required|min:5',
 			'password_confirmation' => 'required|min:5|same:password',
 			'injuryDate' => 'before:today'
@@ -74,7 +75,7 @@ class UserController extends \BaseController {
 			//Kyai (khai*) oops <3<3,3 i dont know how to route to userProfilePage with ID for register or login. It also might be convenient to log them in when they register
 			Auth::login($user);
 			// return View::make('unregisterUserView.login', $user->id);
-			return Redirect::action('UserController@show', array($user->id));
+			return Redirect::action('UserController@PremoduleQuestionaire', array($user->id));
 		 } else {
 		 	
 			// Show Validation Errors
@@ -82,13 +83,19 @@ class UserController extends \BaseController {
 		 }
 	}
 
-
-	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
+	public function PremoduleQuestionaire($id)
+		{
+			//show the users profile
+			if(Auth::user()->id == $id){
+				$user = User::find($id);
+				return View::make('registeredUserView.preQuestion');
+				// return View::make('registeredUserView.userProfilePage')->withUser($user);
+			} else {
+				Auth::logout();
+				return Redirect::action('UserController@index');
+			}
+		}
+	
 	public function show($id)
 	{
 		//show the users profile
@@ -182,8 +189,8 @@ class UserController extends \BaseController {
 		$input = Input::all();
 		
 		//Encrypts password
-		$password_new = $input['password_new'];
-		$encrypt = Hash::make($password_new);
+		$new_password = $input['new_password'];
+		$encrypt = Hash::make($new_password);
 		
 		//Custom validation rule. password must match password in DB
 		Validator::extend('hashmatch', function($attribute, $value, $parameters)
@@ -198,8 +205,8 @@ class UserController extends \BaseController {
 		
 		$rules = array(
 			'password' => 'required|hashmatch:password',
-			'password_new' => 'required|min:5|different:password',
-			'password_new_confirmation' => 'required|min:5|same:password_new'
+			'new_password' => 'required|min:5|different:password',
+			'confirm_password' => 'required|min:5|same:new_password'
 		);
 		
 		$v = Validator::make($input, $rules, $messages);

@@ -25,7 +25,7 @@
     <div class="col-md-12">
         <table class="sortable-theme-bootstrap" style="width:100%" data-sortable>
             <thead>
-                <tr >
+                <tr>
                     <th>Attempt No.</th>
                     <th>Result (%)</th>
                     <th>Score</th>

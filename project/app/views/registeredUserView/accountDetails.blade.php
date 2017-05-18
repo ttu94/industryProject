@@ -76,12 +76,14 @@
                                     <div class="col-md-12">
                                         <input class="register" style="width: 50%" type="password" name="password" placeholder="Current Password*">
                                         <br><br><br><br>
-                                        <input class="register" style="width: 50%" type="password" name="password_new" placeholder="New Password*">
+                                        <input class="register" style="width: 50%" type="password" name="new_password" placeholder="New Password*">
                                         <br><br><br>
-                                        <input class="register" style="width: 50%" type="password" name="password_new_confirmation" placeholder="Confirm New Password*">
+                                        <input class="register" style="width: 50%" type="password" name="confirm_password" placeholder="Confirm New Password*">
                                     </div>
                                     <br>
-                                  <div style="margin-top:20px; margin-left: 15px"><button type="submit">Change password</button></div>
+                                    <div style="margin-top:20px; margin-left: 15px">
+                                      <button class ="button greenbluedark2" type="submit">Change password</button>
+                                    </div>
                               {{ Form::close() }}
                           </div>
                        </div>        

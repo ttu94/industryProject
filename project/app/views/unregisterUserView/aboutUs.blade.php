@@ -40,7 +40,7 @@
     <br>
     <!--ABOUT THE CLINICAL TRIALS-->
     <div class="col-md-6">
-        <h3 style="color: #595145">About The Clincal Trials</h3>
+        <h3 style="color: #595145">About The Clinical Trials</h3>
         <p class="basicFontStyle" style="text-align: justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
             varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt

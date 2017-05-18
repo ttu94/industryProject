@@ -33,7 +33,14 @@
             <br>
             <input type="text" id="contactEmail" name="contactEmail" placeholder="Email" required>
             <br>
-            <input type="text" id="contactSubject" name="contactSubject" placeholder="Subject">
+            <div class="country" style="width: 100%;background-color:white;border-style: solid;border-color: #666666;padding: 5px 20px">
+              <select name="contactSubject">  
+                <option value="general" selected="selected">General Enquiries</option>
+                <option value="modules">Modules</option>
+                <option value="quizzes">Quizzes</option>
+                <option value="bug">Website Errors</option>
+              </select>
+            </div>
             <br>
             <textarea id="comment" name="contactComment" placeholder="How can we help you?"></textarea>
             <br>
