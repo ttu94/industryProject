@@ -61,8 +61,9 @@ class UserController extends \BaseController {
 			$user->country = $input['country'];
 			$user->email = $input['email'];
 			$user->password = $encrypted;
-			$user->usertype = $input['usertype'];
 			
+			// other details
+			$user->usertype = $input['usertype'];
 			$user->injuryDate = $input['injuryDate'];
 			$user->treatment = $input['treatment'];
 			$user->yesTreat = $input['yesTreat'];

@@ -21,6 +21,19 @@
 @section('content')
 <div class="container-fluid basicFontStyle">
     <br>
+    <!--Thuan Testing stuff do not delete -->
+    <div id="mains-ilikeyou">
+        <div id="dv_7">7</div>
+        <div id="dv_1">1</div>
+        <div id="dv_8">8</div>
+        <div id="dv_4">4</div>
+        <!--please sort to bottom since youre number 17-->
+        <div id="dv_{{$user->id}}">user id here</div>
+        <div id="dv_2">2</div>
+        {{$user->id}}
+    </div>
+    
+    
     <div class="col-md-4" style="height:500px;background-color: #E6E6E6;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);">
         <br>
         <div class="summaryOfTests" style="margin-top: 100px;vertical-align: middle">
@@ -191,5 +204,8 @@
 			</div>
         </div>
     </div>
+    
+
 </div>
+
 @endsection

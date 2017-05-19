@@ -12,11 +12,16 @@
 @section('content')
 <div class="container-fluid">
     <div class="col-md-12 basicFontStyle" style="text-align:center">
+        <!--form modal here-->
         <form action={{ route("user.show", array("id" => Auth::user()->id)) }} id="premoduleRadio">
             <br>
-            <p>We just need to ask you few more questions to help us set the modules up for you.</p>
-            <p>Please rate on a scale of 1 to 5 your level of understanding on each module where 5 being Excellent and 1 being None.</p>
-            <hr>
+            <p class="text1">We would like to ask you a few more questions to help us set up the modules to your preferences.
+            <br>Please rate on a scale of 1 to 5 your level of understanding on each module where 5 being Excellent and 1 being None.</p>
+            <div class="col-md-12" style="text-align: center">
+                <button class="whitebrown" style="width: 150px;float:right;margin-right:50px" type="submit">Skip</button>
+                <br><br><br>
+            </div>
+            
             <div class="col-md-12">
                 <table class="d">
                     <tr>
@@ -275,214 +280,6 @@
                     </tr>
                 </table>
             </div>
-            <!--<p>Module 1: Demographics & Economics of Spinal Cord Injury</p>-->
-            <!--<div>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">1-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">2-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">3-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">4-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">5-->
-            <!--    </label>-->
-            <!--</div>-->
-            <!--<br>-->
-            <!--<p>Module 2: Spinal cord as a neutral tissue and injury to the nerves</p>-->
-            <!--<div>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">1-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">2-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">3-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">4-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">5-->
-            <!--    </label>-->
-            <!--</div>-->
-            <!--<br>-->
-            <!--<p>Module 3: Structures</p>-->
-            <!--<div>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">1-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">2-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">3-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">4-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">5-->
-            <!--    </label>-->
-            <!--</div>-->
-            <!--<br>-->
-            <!--<p>Module 4: Functions</p>-->
-            <!--<div>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">1-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">2-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">3-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">4-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">5-->
-            <!--    </label>-->
-            <!--</div>-->
-            <!--<br>-->
-            <!--<p>Module 5: SCI mechanisms</p>-->
-            <!--<div>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">1-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">2-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">3-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">4-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">5-->
-            <!--    </label>-->
-            <!--</div>-->
-            <!--<br>-->
-            <!--<p>Module 6: Types of injuries</p>-->
-            <!--<div>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">1-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">2-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">3-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">4-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">5-->
-            <!--    </label>-->
-            <!--</div>-->
-            <!--<br>-->
-            <!--<p>Module 7: Different injuries and their effects on the cord and body</p>-->
-            <!--<div>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">1-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">2-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">3-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">4-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">5-->
-            <!--    </label>-->
-            <!--</div>-->
-            <!--<br>-->
-            <!--<p>Module 8: Chromic effects of spinal cord injury</p>-->
-            <!--<div>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">1-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">2-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">3-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">4-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">5-->
-            <!--    </label>-->
-            <!--</div>-->
-            <!--<br>-->
-            <!--<p>Module 9: Peripheral nerve regeneration</p>-->
-            <!--<div>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">1-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">2-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">3-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">4-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">5-->
-            <!--    </label>-->
-            <!--</div>-->
-            <!--<br>-->
-            <!--<p>Module 10: CNS regeneration</p>-->
-            <!--<div>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">1-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">2-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">3-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">4-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">5-->
-            <!--    </label>-->
-            <!--</div>-->
-            <!--<br>-->
-            <!--<p>Module 11: Repair therapeutic strategies</p>-->
-            <!--<div>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">1-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">2-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">3-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">4-->
-            <!--    </label>-->
-            <!--    <label class="radio-inline">-->
-            <!--        <input class="big" type="radio" name="optradio">5-->
-            <!--    </label>-->
-            <!--</div>-->
             
             <div class="col-md-12" style="text-align: center">
                 <br>
@@ -490,8 +287,6 @@
             </div>
         </form>
     </div>
-
-                        
 </div>
 
 @endsection

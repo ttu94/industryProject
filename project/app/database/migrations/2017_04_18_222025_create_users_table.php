@@ -35,10 +35,22 @@ class CreateUsersTable extends Migration {
 			$table->boolean('physioTrial')->nullable();
 			$table->boolean('onBehalf')->nullable();
 			
+			//tailoring modules values
+			// $table->string('m1')->default("1");
+			// $table->string('m2')->default("1");
+			// $table->string('m3')->default("1");
+			// $table->string('m4')->default("1");
+			// $table->string('m5')->default("1");
+			// $table->string('m6')->default("1");
+			// $table->string('m7')->default("1");
+			// $table->string('m8')->default("1");
+			// $table->string('m9')->default("1");
+			// $table->string('m10')->default("1");
+			// $table->string('m11')->default("1");
 			//timestamp each account when it is created
  			$table->timestamps();
  			$table->string('remember_token')->nullable();
- 			// $table->boolea('admin')->default(false);
+ 			
  			
 		});
 
