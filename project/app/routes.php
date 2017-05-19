@@ -92,8 +92,41 @@ Route::get('educational_module/quiz_information', array('as' => 'module_quiz_inf
 //Route protection for module quizzes, all quizzes wil use this template
 Route::get('educational_module/quiz/modulenamehere', array('as' => 'module_quiz', 'uses' => 'PageController@ModuleQuiz'));
 
+// MODULE PAGES*********************************************************************************************************************************
+// *************************************************************************************************************************************************
+
 //Route protection for module one page
 Route::get('educational_module/module_one', array('as' => 'module_one', 'uses' => 'PageController@ModuleOnePage'));
+
+//Route protection for module two page
+Route::get('educational_module/module_two', array('as' => 'module_two', 'uses' => 'PageController@ModuleTwoPage'));
+
+//Route protection for module three page
+Route::get('educational_module/module_three', array('as' => 'module_three', 'uses' => 'PageController@ModuleThreePage'));
+
+//Route protection for module four page
+Route::get('educational_module/module_four', array('as' => 'module_four', 'uses' => 'PageController@ModuleFourPage'));
+
+//Route protection for module five page
+Route::get('educational_module/module_five', array('as' => 'module_five', 'uses' => 'PageController@ModuleFivePage'));
+
+//Route protection for module six page
+Route::get('educational_module/module_six', array('as' => 'module_six', 'uses' => 'PageController@ModuleSixPage'));
+
+//Route protection for module seven page
+Route::get('educational_module/module_seven', array('as' => 'module_seven', 'uses' => 'PageController@ModuleSevenPage'));
+
+//Route protection for module eight page
+Route::get('educational_module/module_eight', array('as' => 'module_eight', 'uses' => 'PageController@ModuleEightPage'));
+
+//Route protection for module nine page
+Route::get('educational_module/module_nine', array('as' => 'module_nine', 'uses' => 'PageController@ModuleNinePage'));
+
+//Route protection for module ten page
+Route::get('educational_module/module_ten', array('as' => 'module_ten', 'uses' => 'PageController@ModuleTenPage'));
+
+//Route protection for module eleven page
+Route::get('educational_module/module_eleven', array('as' => 'module_eleven', 'uses' => 'PageController@ModuleElevenPage'));
 
 // UNREGISTERED USERS ROUTES***************************************************
 // *****************************************************************************

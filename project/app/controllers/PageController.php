@@ -180,4 +180,136 @@ class PageController extends \BaseController {
 		}
 	}
 	
+	//Route protection for module two
+	public function ModuleTwoPage()
+	{
+		if(Auth::check())
+		{
+			return View::make('modulePagesView.modulePageTwo')->withUser(Auth::user()->id);
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+			
+		}
+	}
+	
+	//Route protection for module three
+	public function ModuleThreePage()
+	{
+		if(Auth::check())
+		{
+			return View::make('modulePagesView.modulePageThree')->withUser(Auth::user()->id);
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+			
+		}
+	}
+	
+	//Route protection for module four
+	public function ModuleFourPage()
+	{
+		if(Auth::check())
+		{
+			return View::make('modulePagesView.modulePageFour')->withUser(Auth::user()->id);
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+			
+		}
+	}
+	
+	//Route protection for module five
+	public function ModuleFivePage()
+	{
+		if(Auth::check())
+		{
+			return View::make('modulePagesView.modulePageFive')->withUser(Auth::user()->id);
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+			
+		}
+	}
+	
+	//Route protection for module six
+	public function ModuleSixPage()
+	{
+		if(Auth::check())
+		{
+			return View::make('modulePagesView.modulePageSix')->withUser(Auth::user()->id);
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+			
+		}
+	}
+	
+	//Route protection for module seven
+	public function ModuleSevenPage()
+	{
+		if(Auth::check())
+		{
+			return View::make('modulePagesView.modulePageSeven')->withUser(Auth::user()->id);
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+			
+		}
+	}
+	
+	//Route protection for module eight
+	public function ModuleEightPage()
+	{
+		if(Auth::check())
+		{
+			return View::make('modulePagesView.modulePageEight')->withUser(Auth::user()->id);
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+			
+		}
+	}
+	
+	//Route protection for module nine
+	public function ModuleNinePage()
+	{
+		if(Auth::check())
+		{
+			return View::make('modulePagesView.modulePageNine')->withUser(Auth::user()->id);
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+			
+		}
+	}
+	
+	//Route protection for module ten
+	public function ModuleTenPage()
+	{
+		if(Auth::check())
+		{
+			return View::make('modulePagesView.modulePageTen')->withUser(Auth::user()->id);
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+			
+		}
+	}
+	
+	//Route protection for module eleven
+	public function ModuleElevenPage()
+	{
+		if(Auth::check())
+		{
+			return View::make('modulePagesView.modulePageEleven')->withUser(Auth::user()->id);
+		}else{
+			//redirected to login page
+			return Redirect::to('login');
+			
+		}
+	}
+	
+	
+	
 }

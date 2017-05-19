@@ -24,7 +24,7 @@
       <a href={{ route("module_quiz_info", array("id" => Auth::user()->id)) }} ><button class="btn whitebrown">Begin Quiz >></button></a>
     </div>
     <br><br><br>
-    <div class="col-md-12">
+    <div class="col-md-12" >
       <ul class="carousels my-carousels">
         <input type="radio" id="1" name="activator" checked="checked" class="carousels__activator"/>
         <input type="radio" id="2" name="activator" class="carousels__activator"/>
@@ -263,6 +263,13 @@
         </div>
       
       </ul>
+      <div class="basicFontStyle" style="width: 50%; margin: 0 auto;">
+        <br><br>
+        <p style="text-align:center">Testing video</p>
+        <iframe align="middle" width="780" height="415"
+          src="https://www.youtube.com/embed/-Z4jx5VMw8M" frameborder="0" allowfullscreen>
+        </iframe> 
+      </div>
     </div>
 </div>
 
