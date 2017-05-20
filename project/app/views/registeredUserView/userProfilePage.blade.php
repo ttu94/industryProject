@@ -21,19 +21,6 @@
 @section('content')
 <div class="container-fluid basicFontStyle">
     <br>
-    <!--Thuan Testing stuff do not delete -->
-    <div id="mains-ilikeyou">
-        <div id="dv_7">7</div>
-        <div id="dv_1">1</div>
-        <div id="dv_8">8</div>
-        <div id="dv_4">4</div>
-        <!--please sort to bottom since youre number 17-->
-        <div id="dv_{{$user->id}}">user id here</div>
-        <div id="dv_2">2</div>
-        {{$user->id}}
-    </div>
-    
-    
     <div class="col-md-4" style="height:500px;background-color: #E6E6E6;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);">
         <br>
         <div class="summaryOfTests" style="margin-top: 100px;vertical-align: middle">
@@ -68,7 +55,7 @@
         <br><br><br>
         <div id="modulant">
 			<div id="modulant-coverflow">
-                <div class="panels panels-default panelsOne" style="width:325px;height:275px">
+                <div id="dv_{{$user->m1}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
                     <br>
                     <h3 style="text-align: center">Module 1</h3>
                     <div class="panels-body">
@@ -79,7 +66,7 @@
                     </div>
                     <br>
                 </div>
-                <div class="panels panels-default panelsTwo" style="width:325px;height:275px">
+                <div id="dv_{{$user->m2}}" class="panels panels-default panelsTwo" style="width:325px;height:275px">
                     <br>
                     <h3 style="text-align: center">Module 2</h3>
                     <div class="panels-body">
@@ -90,7 +77,7 @@
                     </div>
                     <br>
                 </div>
-                <div class="panels panels-default panelsOne" style="width:325px;height:275px">
+                <div id="dv_{{$user->m3}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
                     <br>
                     <h3 style="text-align: center">Module 3</h3>
                     <div class="panels-body">
@@ -100,7 +87,7 @@
                         <a href="register"><button class="btns6 greenbluemedium" text-align: center >Read More</button></a>
                     </div>
                 </div>
-                <div class="panels panels-default panelsTwo" style="width:325px;height:275px">
+                <div id="dv_{{$user->m4}}" class="panels panels-default panelsTwo" style="width:325px;height:275px">
                     <br>
                     <h3 style="text-align: center">Module 4</h3>
                     <div class="panels-body">
@@ -111,7 +98,7 @@
                     </div>
                     <br><br>
                 </div>
-				<div class="panels panels-default panelsOne" style="width:325px;height:275px">
+				<div id="dv_{{$user->m5}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
                     <br>
                     <h3 style="text-align: center">Module 5</h3>
                     <div class="panels-body">
@@ -122,7 +109,7 @@
                     </div>
                     <br>
                 </div>
-                <div class="panels panels-default panelsTwo" style="width:325px;height:275px">
+                <div id="dv_{{$user->m6}}" class="panels panels-default panelsTwo" style="width:325px;height:275px">
                     <br>
                     <h3 style="text-align: center">Module 6</h3>
                     <div class="panels-body">
@@ -133,7 +120,7 @@
                     </div>
                     <br>
                 </div>
-                <div class="panels panels-default panelsOne" style="width:325px;height:275px">
+                <div id="dv_{{$user->m7}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
                     <br>
                     <h3 style="text-align: center">Module 7</h3>
                     <div class="panels-body">
@@ -143,7 +130,7 @@
                         <a href="register"><button class="btns6 greenbluemedium" text-align: center >Read More</button></a>
                     </div>
                 </div>
-                <div class="panels panels-default panelsTwo" style="width:325px;height:275px">
+                <div id="dv_{{$user->m8}}" class="panels panels-default panelsTwo" style="width:325px;height:275px">
                     <br>
                     <h3 style="text-align: center">Module 8</h3>
                     <div class="panels-body">
@@ -154,7 +141,7 @@
                     </div>
                     <br><br>
                 </div>
-                <div class="panels panels-default panelsOne" style="width:325px;height:275px">
+                <div id="dv_{{$user->m9}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
                     <br>
                     <h3 style="text-align: center">Module 9</h3>
                     <div class="panels-body">
@@ -165,7 +152,7 @@
                     </div>
                     <br>
                 </div>
-                <div class="panels panels-default panelsFour" style="width:325px;height:275px">
+                <div id="dv_{{$user->m10}}" class="panels panels-default panelsFour" style="width:325px;height:275px">
                     <br>
                     <h3 style="text-align: center">Module 10</h3>
                     <div class="panels-body">
@@ -176,7 +163,7 @@
                     </div>
                     <br>
                 </div>
-                <div class="panels panels-default panelsFive" style="width:325px;height:275px">
+                <div id="dv_{{$user->m11}}" class="panels panels-default panelsFive" style="width:325px;height:275px">
                     <br>
                     <h3 style="text-align: center">Module 11</h3>
                     <div class="panels-body">

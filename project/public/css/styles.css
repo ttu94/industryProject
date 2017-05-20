@@ -802,6 +802,35 @@ button2 {
     /*float: center;*/
     /*margin: 8px 0;*/
 }
+
+.subject2 {
+    /*padding: 12px 20px;*/
+    /*margin: 8px 15px;*/
+    /*border: 1px solid #ccc;*/
+    /*width: 47.2%;*/
+    /*color: #595145;*/
+    /*overflow: hidden;*/
+    
+    /*width: 680px;*/
+    width:50%;
+    height: 50px;
+    color: grey;
+    background-color: white;
+    border-style: solid;
+    border-color: #666666;
+    padding: 5px 20px;
+}
+
+.subject2 select {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+
 /*User Profile page css****************************************************************/
 
 .middleAlign {

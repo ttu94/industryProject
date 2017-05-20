@@ -40,8 +40,11 @@ Route::post('user/login', array('as' => 'user.login', 'uses' => 'UserController@
 Route::get('user/logout', array('as' => 'user.logout', 'uses' => 'UserController@logout'));
 Route::resource('user', 'UserController');
 
-//route for users premodule questionaire
+//route for users premodule questionaire page
 Route::get('{id}/premodule_questionaire', array('as' => 'premodule_questionaire', 'uses' => 'UserController@PremoduleQuestionaire'));
+
+//route for users to update premodule questionaire page
+Route::put('{id}/premodule_questionaire/update', array('as' => 'user.premodule', 'uses' => 'UserController@UserPremodule'));
 
 //route for users to view account details
 Route::get('{id}/account_details', array('as' => 'account_details', 'uses' => 'UserController@AccountDetails'));

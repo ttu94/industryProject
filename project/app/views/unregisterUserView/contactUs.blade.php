@@ -29,19 +29,20 @@
           Fax: +61 123 456 789 <br><br>
           info@amarelo.com <br><br>
           <form action="/action_page.php">
-            <input type="text" id="contactName" name="contactName" placeholder="Name" width="200px" required>
+            <input type="text" id="contactName" name="contactName" placeholder="Name*" width="200px" required>
             <br>
-            <input type="text" id="contactEmail" name="contactEmail" placeholder="Email" required>
+            <input type="text" id="contactEmail" name="contactEmail" placeholder="Email*" required>
             <br>
-            <div class="country" style="width: 100%;background-color:white;border-style: solid;border-color: #666666;padding: 5px 20px">
-              <select name="contactSubject">  
-                <option value="general" selected="selected">General Enquiries</option>
+            <div class="country subject2" name="contactSubject" style="width:100%;height:45px;color:grey;background-color:white;border-style:solid;border-color: #666666;padding: 5px 20px">
+              <select name="contactSubject">
+                <option>Select subject*</option>
+                <option value="general">General Enquiries</option>
                 <option value="modules">Modules</option>
                 <option value="quizzes">Quizzes</option>
                 <option value="bug">Website Errors</option>
+                <option value="other">Other</option>
               </select>
             </div>
-            <br>
             <textarea id="comment" name="contactComment" placeholder="How can we help you?"></textarea>
             <br>
             <button class="button greenbluemedium" type="submit, button" style="float:right"form="contactUsForm" value="Submit" data-toggle="modal" data-target="#myModal">Send</button>
@@ -87,8 +88,6 @@
               <br>
     
               <input type="text" id="feedbackSubject" name="feedbackSubject" placeholder="Subject">
-              <br>
-              
               <textarea id="feedback" name="feedback" placeholder="What is your feedback?" height="1000px"></textarea>  
               <div class="stars">
                   <form action="">

@@ -84,18 +84,42 @@ class UserController extends \BaseController {
 		 }
 	}
 
+	//route to bring up the premodule questionaire page
 	public function PremoduleQuestionaire($id)
-		{
-			//show the users profile
-			if(Auth::user()->id == $id){
-				$user = User::find($id);
-				return View::make('registeredUserView.preQuestion');
-				// return View::make('registeredUserView.userProfilePage')->withUser($user);
-			} else {
-				Auth::logout();
-				return Redirect::action('UserController@index');
-			}
+	{
+		//show the users profile
+		if(Auth::user()->id == $id){
+			$user = User::find($id);
+			return View::make('registeredUserView.preQuestion')->withUser(Auth::user()->id);
+			// return View::make('registeredUserView.userProfilePage')->withUser($user);
+		} else {
+			Auth::logout();
+			return Redirect::action('UserController@index');
 		}
+	}
+	
+	//route to update the user prequestionaire options
+	public function UserPremodule($id)
+	{
+		$user = User::find($id);
+		$input = Input::all();
+		
+		$user->m1 = $input['m1'];
+		$user->m2 = $input['m2'];
+		$user->m3 = $input['m3'];
+		$user->m4 = $input['m4'];
+		$user->m5 = $input['m5'];
+		$user->m6 = $input['m6'];
+		$user->m7 = $input['m7'];
+		$user->m8 = $input['m8'];
+		$user->m9 = $input['m9'];
+		$user->m10 = $input['m10'];
+		$user->m11 = $input['m11'];
+		
+		$user->save();
+		
+		return Redirect::action('UserController@show', array($user->id));
+	}
 	
 	public function show($id)
 	{
@@ -109,8 +133,6 @@ class UserController extends \BaseController {
 		}
 	}
 	
-
-
 	/**
 	 * Show the form for editing the specified resource.
 	 *
