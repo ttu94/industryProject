@@ -7,7 +7,7 @@
 	
  <!--stylesheets-->
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
- {{ HTML::style('css/styles.css', array(), true) }}
+ {{ HTML::style('css/style.css', array(), true) }}
  
  <!--sortable table css and js-->
  {{ HTML::style('css/sortable-theme-bootstraps.css') }}
@@ -65,14 +65,19 @@
     	    }
     	});
     	
-    var main = document.getElementById( 'modulant-coverflow' );
-    
-     [].map.call( main.children, Object ).sort( function ( a, b ) {
-         return +a.id.match( /\d+/ ) - +b.id.match( /\d+/ );
-     }).forEach( function ( elem ) {
-         main.appendChild( elem );
-     });
-     
+var main = document.getElementById( 'modulant-coverflow' );
+
+[].map.call( main.children, function ( elem ) {
+    return +elem.id.split( '_' )[1];
+}).sort( function ( a, b ) { 
+    return a - b; 
+}).forEach( function ( id ) {
+    var elem = main.querySelector( '#dv_' + id );
+    if ( elem ) { main.appendChild( elem ); }
+});
+
+
+
     });
     
 </script>

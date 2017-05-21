@@ -52,7 +52,14 @@
         </p>
     </div>
     <div class="col-md-12" style="">
-        <br><br><br>
+        
+        <br><br>
+        
+        <h3 class="text1" style="text-align: center">Here you can find the modules tailored according to your level of understanding for each module.
+        <br><br> The modules that you were more confident in are pushed to the end, whereas the ones you are less confident are at the start.
+        <br><br> We recommend that you start with the order presented to you, but you are free to complete the modules in any order.
+        <br><br> Good luck, may the odds be in your favour.</h3> 
+        <br>
         <div id="modulant">
 			<div id="modulant-coverflow">
                 <div id="dv_{{$user->m1}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
