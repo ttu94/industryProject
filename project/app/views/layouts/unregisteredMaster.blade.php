@@ -41,11 +41,39 @@
     
     	});
     	
-    	// if(document.getElementById('utPatient').checked ) {
-    	//  console.log("hi");
-    	// }
-    	console.log($('input[name="usertype"]').attr("value"));
-     $('input[name="usertype"]').checked;
+    	
+    	//this allows the checked radio button to be enable as soon as the page refreshes
+    	if($("#utypeP").is(':checked')) {
+       // console.log("ahi 1");
+         $('.boxthird').hide();
+         $('.boxtwo').hide();
+         $('.box').show();
+      } else if($("#utypeO").is(':checked')) {
+       // console.log("ahi 12");
+         $('.boxthird').show();
+         $('.boxtwo').show();
+         $('.box').hide();
+      } else {
+       // console.log("ahi 13");
+         $('.boxthird').hide();
+         $('.boxtwo').show();
+         $('.box').hide();
+      }  
+      if($("#treat").is(':checked')) {
+       $('.treated').show();
+      } else {
+    	  $('.treated').hide();
+    	 }
+      //used to debug the hide and show div box
+     // $('input[name="usertype"]').change(function () {
+     //  if($("#utypeP").is(':checked')) {
+     //   console.log("hi 1");
+     //  } else if($("#utypeO").is(':checked')) {
+     //   console.log("hi 12");
+     //  } else {
+     //   console.log("hi 13");
+     //  }  
+     // });
     	
     	// this hides and shows the patient's extra detail div box & boxtwo, using the name='usertype'
     	$('input[name="usertype"]').click(function(){

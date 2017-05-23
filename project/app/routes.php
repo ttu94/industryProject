@@ -33,7 +33,23 @@ Route::get('search', function()
 Route::get('home', array('as' => 'home', 'uses' => 'HomeController@index'));
 
 // ROUTES CONTROLLER FOR ADMIN*************************************************************************************
+Route::post('admin/login', array('as' => 'admin.login', 'uses' => 'AdminController@login'));
+Route::get('admin/logout', array('as' => 'admin.logout', 'uses' => 'AdminController@logout'));
 Route::resource('admin', 'AdminController');
+
+// //Route To admin login
+Route::get('adminLogin', function()
+{
+    return View::make('adminView/adminLogin');
+ 
+});
+
+// //Route To admin homepage
+Route::get('adminHomePage', function()
+{
+    return View::make('adminView/adminHomePage');
+ 
+});
 
 // ROUTES TO CONTrOLLER FOR USERS*********************************************************************************
 Route::post('user/login', array('as' => 'user.login', 'uses' => 'UserController@login'));
@@ -179,14 +195,7 @@ Route::get('abstractModule', function()
  
 });
 
-// //Route To admin login
-// Route::get('adminLogin', function()
-// {
-//     return View::make('unregisterUserView/adminLogin');
- 
-// });
-
-//Route To admin login
+//Route To forgetten password page
 Route::get('forgottenPassword', function()
 {
     return View::make('unregisterUserView/forgetPassword');

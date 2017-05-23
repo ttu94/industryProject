@@ -37,6 +37,25 @@
     
     	});
     	
+    	//this allows the checked radio button to be enable as soon as the page refreshes
+    	if($("#utypeP").is(':checked')) {
+         $('.boxthird').hide();
+         $('.boxtwo').hide();
+         $('.box').show();
+      } else if($("#utypeO").is(':checked')) {
+         $('.boxthird').show();
+         $('.boxtwo').show();
+         $('.box').hide();
+      } else {
+         $('.boxthird').hide();
+         $('.boxtwo').show();
+         $('.box').hide();
+      }  
+      if($("#treat").is(':checked')) {
+       $('.treated').show();
+      } else {
+    	  $('.treated').hide();
+    	 }
     	// this hides and shows the patient's extra detail div box & boxtwo, using the name='usertype'
     	$('input[name="usertype"]').click(function(){
          var inputValue = $(this).attr("value");
@@ -65,16 +84,18 @@
     	    }
     	});
     	
-var main = document.getElementById( 'modulant-coverflow' );
-
-[].map.call( main.children, function ( elem ) {
-    return +elem.id.split( '_' )[1];
-}).sort( function ( a, b ) { 
-    return a - b; 
-}).forEach( function ( id ) {
-    var elem = main.querySelector( '#dv_' + id );
-    if ( elem ) { main.appendChild( elem ); }
-});
+    	
+    	//script allows for the coverflow to be sorted via the user's preference
+     var main = document.getElementById( 'modulant-coverflow' );
+     
+     [].map.call( main.children, function ( elem ) {
+         return +elem.id.split( '_' )[1];
+     }).sort( function ( a, b ) { 
+         return a - b; 
+     }).forEach( function ( id ) {
+         var elem = main.querySelector( '#dv_' + id );
+         if ( elem ) { main.appendChild( elem ); }
+     });
 
 
 

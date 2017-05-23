@@ -34,4 +34,8 @@
 		"preferred-install": "dist"
 	},
 	"minimum-stability": "stable"
+	
+	"require": {
+	        "ollieread/multiauth": "dev-master"
+	}
 }

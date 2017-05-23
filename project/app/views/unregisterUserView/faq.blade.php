@@ -41,7 +41,7 @@
                   <div class="faq_question">Who can participate in the modules and quizzes?</div>
                        <div class="faq_answer_container">
                           <div class="faq_answer"><br>The full modules and quizzes are available to registered users only, however it is free to register for an account. 
-                          <br><br>Abstracts of each module are available to the public.<br>&nbsp;</div>
+                          <br><br>Abstracts of each module are available to the general public.<br>&nbsp;</div>
                        </div>        
                 </div>
                 <br>

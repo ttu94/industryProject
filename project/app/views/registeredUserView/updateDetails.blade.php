@@ -316,14 +316,14 @@
                 <br>
                 {{ Form::radio('usertype', 'other')}} other
             </div>
-                <!--DROPS DOWN IF USER SELECTS PATIENT RADIO-->
+            
+            <!--DROPS DOWN IF USER SELECTS PATIENT RADIO-->
             <div class="col-md-12 otherDetailBox box">
                 <p>Please answer the following questions if you are a <u>patient:</u></p>
                 <hr>
                 <p>When did your injury occur?<font color="red">*</font></p>
                 <!--<input type="text" id="datepicker">-->
                 <input type="date" name="injuryDate" id="injuryDate" style="text-align:center" value="{{$user->injuryDate}}"> 
-                    
                 
                 <div class="linearRadio">
                     <p><br>Are you taking any treatment for it?<font color="red">*</font></p>
@@ -345,15 +345,14 @@
                     {{ Form::radio('physioTrial', 'no', true)}} No
                 </div>
                 
-                <!--<div class="otherDetailBox boxtwo">-->
-                <!--<div class="otherDetailBox boxtwo">-->
-                    <div class="linearRadio">
+                <!--Div box will display if user selects anything besides patient-->
+                <div class="otherDetailBox boxtwo">
+                    <!--<div class="linearRadio">-->
                         <br>
                         <p>Do you know anyone who is suffering from spinal cord injury (SCI)?<font color="red">*</font></p>
                         {{ Form::radio('onBehalf', 'yes')}} Yes
                         {{ Form::radio('onBehalf', 'no', true)}} No
-                    </div>
-                <!--</div>-->
+                </div>
             </div>
     </div>
     <div class="col-md-12">
@@ -380,7 +379,6 @@
                   <div class="modal-footer">
                      <button class="button greybrown2" data-dismiss="modal" style="float:left; width:40%">Cancel</button>
                     <button class="button redbrown" type="submit" style="float:right; width:40%">Delete</button> 
-                    <!--<button style="background-color:red" href={{ route("user.destroy", array("id" => Auth::user()->id)) }} data-dismiss="modal">Ok</button>-->
                   </div>
                 </div>
               </div>

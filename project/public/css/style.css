@@ -28,8 +28,8 @@ body {
     width:100%;
     min-width: 1850px;
     overflow-x: auto;
-    /*background-color: #F8F8F8;*/
     background-color: #F8F8F8;
+    /*background-color: white;*/
 }
 
 #container {
@@ -104,6 +104,13 @@ hr {
 
 .topHeader {
 	background-color: #F2D388;
+	/*background-color: white;*/
+	/*background-color: #F8F8F8;*/
+	/*background-color: #88ABA5;*/
+	/*background-color: #96BDB6;*/
+	/*background-color: #A7D2CB;*/
+	/*background-color:  #a7c4d2;*/
+	/*background-color: #a7afd2;*/
     border-bottom-style: solid;
     border-color: #8A7D6B;
     border-width: 2px;
@@ -133,6 +140,7 @@ ul {
 .bottomHeader {
     position: relative;
     background-color: #A7D2CB;
+    /*background-color: white;*/
     /*padding: 50px 50px;*/
     border-bottom-style: solid;
     border-color: #8A7D6B;
@@ -192,10 +200,14 @@ a:hover {
     height:auto;
     min-height:70px;
     background-color: #F2D388;
+    /*background-color:white;*/
+    /*background-color: #A7D2CB;*/
+    
     text-align: center;
     border-top-style: solid;
     border-width: 2px;
     border-color: #8A7D6B;
+    /*background-color: #a7afd2;*/
     /*box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);*/
 }
 
@@ -212,6 +224,10 @@ a:hover {
 .tripleHeader {
     position: relative;
     background-color: #F2D388;
+    /*background-color: white;*/
+    /*background-color: #A7D2CB;*/
+    /*background-color:  #a7c4d2;*/
+    /*background-color: #a7afd2;*/
     padding: 5px;
     text-align: center;
     /*border-top-style: solid;*/
@@ -233,6 +249,7 @@ a:hover {
 .fourthHeader {
     position: relative;
     background-color: #A7D2CB;
+    /*background-color: white;*/
     text-align: center;
     border-bottom-style: solid;
     border-color: #8A7D6B;

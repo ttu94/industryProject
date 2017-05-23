@@ -1,35 +1,24 @@
 @extends('layouts.unregisteredMaster')
 
 @section('title')
-	Login
+	Admin Login
 @endsection
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
-   <h2>Login</h2>
+   <h2>Admin Login</h2>
 @endsection
 
 @section('content')
 <div class="container-fluid">
     <br>
-    <!--Linking to user register page-->
-    <div class="col-md-4">
-        <br><br><br><br>
-        <div id="noLogin">
-            <h3 class="raleway">Don't have an account?<br>Register now</h2>
-            <br>
-            <a href="register"><button class="button greenbluedark" style="width:100%">Create Account</button></a>
-        </div>
-    </div>
-    
-    <!--user login then routed to user's dashboard-->
-    <div class="col-md-8">
+    <!--admin login then routed to admin dashboard-->
+    <div class="col-md-12">
         <br><br>
-        {{ Form::open(array('url' => secure_url('user/login'))) }}
+        {{ Form::open(array('url' => secure_url('admin/login'))) }}
             <div class ="loginBlock">
-                <h1 class="raleway">Registered User</h1>
+                <h1 class="raleway">Admin Login</h1>
                 <br>
-
                 @if(Session::has('invalid'))
                     <div>
                          <p class="basicFontStyle" style="color:red">{{ Session::get('invalid') }}</p>
@@ -41,12 +30,9 @@
                 <br>
                 <br>
                 <button class="button greenbluedark">Sign In</button>
-                <br><br>
-                <a href="forgottenPassword" style="color:#88ABA5;font-size:18px">Forgot password?</a>
-                <br><br>
-                <a href="adminLogin" style="color:#88ABA5;font-size:18px">Admin Login</a>
             </div>
         {{ Form::close() }}
+        <a href="adminHomePage"><button class="button greenbluedark">Dummy</button></a>
     </div>
 </div>
 

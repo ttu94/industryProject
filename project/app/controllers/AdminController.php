@@ -9,7 +9,7 @@ class AdminController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
+		return View::make('unregisterUserView.home');
 	}
 
 
@@ -43,7 +43,14 @@ class AdminController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		//show the admin profile
+		if(Auth::admin()->id == $id){
+			$admin = Admin::find($id);
+			return View::make('adminView.adminHomePage')->withAdmin($admin);
+		} else {
+			Auth::logout();
+			return Redirect::action('AdminController@index');
+		}
 	}
 
 
@@ -80,6 +87,25 @@ class AdminController extends \BaseController {
 	public function destroy($id)
 	{
 		//
+	}
+	
+	//admin
+	public function login() {
+
+		$admindata = array(
+			'email' => Input::get('email'),
+			'password' => Input::get('password')
+		);
+		
+		// authenticates and sets remember me cookie
+		if (Auth::attempt($admindata, true))
+		{
+			return Redirect::action('AdminController@show', array(Auth::admin()->id));
+		} else {
+			// return Redirect::to(URL::previous()) -> withInput();
+			return Redirect::back()->with('invalid', 'The username or password is incorrect.');
+		}
+		 
 	}
 
 
