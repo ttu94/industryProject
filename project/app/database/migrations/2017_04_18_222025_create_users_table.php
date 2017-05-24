@@ -51,6 +51,9 @@ class CreateUsersTable extends Migration {
 			// status for if a user deactives account
 			$table->boolean('status')->default(true);
 			
+			// status for admin
+			$table->boolean('admin')->default(false);
+			
 			//timestamp each account when it is created
  			$table->timestamps();
  			$table->string('remember_token')->nullable();

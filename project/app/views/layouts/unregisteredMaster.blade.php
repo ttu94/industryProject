@@ -41,7 +41,7 @@
     
     	});
     	
-    	
+    	// console.log($('input[name="usertype"]').value);
     	//this allows the checked radio button to be enable as soon as the page refreshes
     	if($("#utypeP").is(':checked')) {
        // console.log("ahi 1");

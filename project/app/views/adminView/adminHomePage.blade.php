@@ -1,4 +1,4 @@
-@extends('layouts.unregisteredMaster')
+@extends('layouts.adminMaster')
 
 @section('title')
 	Admin Homepage
@@ -13,7 +13,7 @@
 <div class="container-fluid">
     <br>
     <div class="col-md-12 basicFontStyle">
-        <a href="phpliteadmin.php">Database Management</a>
+        <a target="_blank" href="phpliteadmin.php">Database Management</a>
         <br>
         <p>Number of Visitors: 2</p>
     </div>

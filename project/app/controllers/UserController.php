@@ -296,6 +296,38 @@ class UserController extends \BaseController {
 		}
 	}
 	
+	//admin login
+	public function AdminLogin() {
+		$userdata = array(
+			'email' => Input::get('email'),
+			'password' => Input::get('password'),
+			'admin' => 1
+		);
+		
+		// authenticates and sets remember me cookie
+		if (Auth::attempt($userdata, true))
+		{
+			return Redirect::action('UserController@AdminShow', array(Auth::user()->id));
+		} else {
+			// return Redirect::to(URL::previous()) -> withInput();
+			return Redirect::back()->with('invalid', 'The username or password is incorrect.');
+		}
+		 
+	}
+	
+	//admin homepage
+	public function AdminShow($id)
+	{
+		//show the admin profile if only the user status has admin on true
+		if(Auth::user()->admin == '1'){
+			$user = User::find($id);
+			return View::make('adminView.adminHomePage')->withAdmin($user);
+		} else {
+			Auth::logout();
+			return Redirect::action('AdminController@index');
+		}
+	}
+	
 	//route for immediate module results after submitting a quiz
 	public function QuizResults($id){
 		

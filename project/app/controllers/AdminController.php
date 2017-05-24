@@ -44,7 +44,7 @@ class AdminController extends \BaseController {
 	public function show($id)
 	{
 		//show the admin profile
-		if(Auth::admin()->id == $id){
+		if(Auth::user()->id == $id){
 			$admin = Admin::find($id);
 			return View::make('adminView.adminHomePage')->withAdmin($admin);
 		} else {
@@ -100,7 +100,7 @@ class AdminController extends \BaseController {
 		// authenticates and sets remember me cookie
 		if (Auth::attempt($admindata, true))
 		{
-			return Redirect::action('AdminController@show', array(Auth::admin()->id));
+			return Redirect::action('AdminController@show', array(Auth::user()->id));
 		} else {
 			// return Redirect::to(URL::previous()) -> withInput();
 			return Redirect::back()->with('invalid', 'The username or password is incorrect.');

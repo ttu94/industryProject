@@ -33,18 +33,20 @@ Route::get('search', function()
 Route::get('home', array('as' => 'home', 'uses' => 'HomeController@index'));
 
 // ROUTES CONTROLLER FOR ADMIN*************************************************************************************
-Route::post('admin/login', array('as' => 'admin.login', 'uses' => 'AdminController@login'));
-Route::get('admin/logout', array('as' => 'admin.logout', 'uses' => 'AdminController@logout'));
 Route::resource('admin', 'AdminController');
 
-// //Route To admin login
+//Route To admin login page
 Route::get('adminLogin', function()
 {
     return View::make('adminView/adminLogin');
  
 });
 
-// //Route To admin homepage
+//route for admin homepage
+Route::get('{id}/admin_homepage', array('as' => 'admin.homepage', 'uses' => 'UserController@AdminShow'));
+
+//Route To admin homepage
+//NOTE FAKE ROUTE NEEDS TO BE DELETED (****************************************************************************)
 Route::get('adminHomePage', function()
 {
     return View::make('adminView/adminHomePage');
@@ -54,6 +56,9 @@ Route::get('adminHomePage', function()
 // ROUTES TO CONTrOLLER FOR USERS*********************************************************************************
 Route::post('user/login', array('as' => 'user.login', 'uses' => 'UserController@login'));
 Route::get('user/logout', array('as' => 'user.logout', 'uses' => 'UserController@logout'));
+
+Route::post('admin/login', array('as' => 'admin.login', 'uses' => 'UserController@AdminLogin'));
+
 Route::resource('user', 'UserController');
 
 //route for users premodule questionaire page

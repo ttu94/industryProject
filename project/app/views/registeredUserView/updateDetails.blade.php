@@ -345,14 +345,14 @@
                     {{ Form::radio('physioTrial', 'no', true)}} No
                 </div>
                 
-                <!--Div box will display if user selects anything besides patient-->
-                <div class="otherDetailBox boxtwo">
-                    <!--<div class="linearRadio">-->
-                        <br>
-                        <p>Do you know anyone who is suffering from spinal cord injury (SCI)?<font color="red">*</font></p>
-                        {{ Form::radio('onBehalf', 'yes')}} Yes
-                        {{ Form::radio('onBehalf', 'no', true)}} No
-                </div>
+            </div>
+            <!--Div box will display if user selects anything besides patient-->
+            <div class="col-md-12 otherDetailBox boxtwo">
+                <!--<div class="linearRadio">-->
+                    <br>
+                    <p>Do you know anyone who is suffering from spinal cord injury (SCI)?<font color="red">*</font></p>
+                    {{ Form::radio('onBehalf', 'yes')}} Yes
+                    {{ Form::radio('onBehalf', 'no', true)}} No
             </div>
     </div>
     <div class="col-md-12">
