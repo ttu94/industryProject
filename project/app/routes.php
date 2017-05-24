@@ -43,7 +43,7 @@ Route::get('adminLogin', function()
 });
 
 //route for admin homepage
-Route::get('{id}/admin_homepage', array('as' => 'admin.homepage', 'uses' => 'UserController@AdminShow'));
+Route::get('admin_homepage', array('as' => 'admin.homepage', 'uses' => 'UserController@AdminShow'));
 
 //Route To admin homepage
 //NOTE FAKE ROUTE NEEDS TO BE DELETED (****************************************************************************)

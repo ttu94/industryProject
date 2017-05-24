@@ -316,12 +316,13 @@ class UserController extends \BaseController {
 	}
 	
 	//admin homepage
-	public function AdminShow($id)
+	public function AdminShow()
 	{
 		//show the admin profile if only the user status has admin on true
 		if(Auth::user()->admin == '1'){
-			$user = User::find($id);
-			return View::make('adminView.adminHomePage')->withAdmin($user);
+			// $user = User::find($id);
+			// return View::make('adminView.adminHomePage')->withAdmin($user);
+			return View::make('adminView.adminHomePage');
 		} else {
 			Auth::logout();
 			return Redirect::action('AdminController@index');
