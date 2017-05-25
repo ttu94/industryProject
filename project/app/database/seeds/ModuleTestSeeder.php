@@ -17,6 +17,5 @@ class ModuleTestSeeder extends Seeder {
          $ModuleTest->correctAnswer = "YES!";
          
          $ModuleTest->save();
-        
     }   
 }

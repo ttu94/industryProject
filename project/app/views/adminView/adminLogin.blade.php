@@ -32,7 +32,7 @@
                 <button class="button greenbluedark">Sign In</button>
             </div>
         {{ Form::close() }}
-        <a href="adminHomePage"><button class="button greenbluedark">Dummy</button></a>
+        <!--<a href="adminHomePage"><button class="button greenbluedark">Dummy</button></a>-->
     </div>
 </div>
 
