@@ -111,10 +111,11 @@ Route::get('update_details', array('as' => 'update.details', 'uses' => 'PageCont
 Route::get('education_modules', array('as' => 'education_modules', 'uses' => 'PageController@EducationModules'));
 
 //Route for quiz information before it begins
-Route::get('educational_module/quiz_information', array('as' => 'module_quiz_info', 'uses' => 'PageController@ModuleQuizInfo'));
+//Backup ----- Route::get('educational_module/quiz_information/{id}/{quizNo}', array('as' => 'module_quiz_info', 'uses' => 'PageController@ModuleQuizInfo')); //kenny added{quizNo} 
+Route::get('educational_module/quiz_information/{quizNo}', array('as' => 'module_quiz_info', 'uses' => 'PageController@ModuleQuizInfo')); //kenny added{quizNo} 
 
 //Route protection for module quizzes, all quizzes wil use this template
-Route::get('educational_module/quiz/modulenamehere', array('as' => 'module_quiz', 'uses' => 'PageController@ModuleQuiz'));
+Route::get('educational_module/quiz/{quizNo}', array('as' => 'module_quiz', 'uses' => 'PageController@ModuleQuiz'));
 
 // MODULE PAGES*********************************************************************************************************************************
 // *************************************************************************************************************************************************

@@ -56,6 +56,16 @@
                        </div>        
                 </div>
                 <br>
+                <div class="faq">
+                  <div class="faq_question">I have deactivated my account, how can i reactivate?</div>
+                       <div class="faq_answer_container">
+                          <div class="faq_answer"><br>You should reset your <strong>password</strong> via the <a href="forgottenPassword" style="color: #88ABA5"><u>Forget Password</u></a>
+                          link on the <a href="login" style="color: #88ABA5"><u>Login</u></a> page.
+                          
+                          <br>&nbsp;</div>
+                       </div>        
+                </div>
+                <br>
                 <h3 style="color:#595145">Modules</h3> 
                 <div class="faq">
                   <div class="faq_question">Can I download the educational module content?</div>

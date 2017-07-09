@@ -347,7 +347,7 @@
                 
             </div>
             <!--Div box will display if user selects anything besides patient-->
-            <div class="col-md-12 otherDetailBox boxtwo">
+            <div class="col-md-12  otherDetailBox boxtwo">
                 <!--<div class="linearRadio">-->
                     <br>
                     <p>Do you know anyone who is suffering from spinal cord injury (SCI)?<font color="red">*</font></p>
@@ -359,7 +359,7 @@
         <br>
         <a class="basicFontStyle" href={{ route("user.update", array("id" => Auth::user()->id)) }} style="margin: 0 auto"><button class="button greenbluedark2" type="submit">Save Changes</button></a>
         {{ Form::close() }} 
-        <button class="button redbrown" data-toggle="modal" data-target="#deleteModal" style="float:right">Delete Account</button> 
+        <button class="button redbrown" data-toggle="modal" data-target="#deleteModal" style="float:right">Deactivate Account</button> 
     </div>    
             
      {{ Form::open(array('method' => 'DELETE', 'route' => array('user.destroy', Auth::user()->id))) }}
@@ -372,13 +372,13 @@
                     <h4 class="modal-title" style="text-align: center"><strong>WARNING!</strong></h4>
                   </div>
                   <div class="modal-body" style="text-align: center">
-                    <p>Are you sure you want to delete?<br>
-                        This action cannot be undone.
+                    <p>Are you sure you want to deactivate your account?<br>
+                        This action can always be undone at a later time.
                     </p>
                   </div>
                   <div class="modal-footer">
                      <button class="button greybrown2" data-dismiss="modal" style="float:left; width:40%">Cancel</button>
-                    <button class="button redbrown" type="submit" style="float:right; width:40%">Delete</button> 
+                    <button class="button redbrown" type="submit" style="float:right; width:50%">Deactivate</button> 
                   </div>
                 </div>
               </div>

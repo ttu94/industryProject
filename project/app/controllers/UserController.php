@@ -253,9 +253,13 @@ class UserController extends \BaseController {
 	public function destroy($id)
 	{
 		$user = User::find($id);
-		$user->delete();
-		// Auth::logout();
-		return Redirect::action('UserController@index');
+		// $user->delete();
+
+		//Deactivates the account and logs them out
+		Auth::user()->status = 0;
+		Auth::logout();
+		return Redirect::to('logoutPage');
+		// return Redirect::action('UserController@index');
 		
 	}
 
@@ -264,7 +268,8 @@ class UserController extends \BaseController {
 
 		$userdata = array(
 			'email' => Input::get('email'),
-			'password' => Input::get('password')
+			'password' => Input::get('password'),
+			'status' => 1
 		);
 		
 		// authenticates and sets remember me cookie
