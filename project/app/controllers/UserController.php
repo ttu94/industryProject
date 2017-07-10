@@ -287,7 +287,12 @@ class UserController extends \BaseController {
 	public function logout(){
 		Auth::logout();
 		return Redirect::to('logoutPage');
-		
+	}
+	
+	//User reactivation controller
+	public function ReactivateAccount(){
+		// $email = Input::all();
+		return Redirect::to('logoutPage');
 	}
 	
 	//route: account_details. used for users to view account details

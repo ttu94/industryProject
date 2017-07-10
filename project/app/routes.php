@@ -54,12 +54,17 @@ Route::get('adminHomePage', function()
 });
 
 // ROUTES TO CONTrOLLER FOR USERS*********************************************************************************
+
+//Route to log in and log out for users
 Route::post('user/login', array('as' => 'user.login', 'uses' => 'UserController@login'));
 Route::get('user/logout', array('as' => 'user.logout', 'uses' => 'UserController@logout'));
 
+//Admin login
 Route::post('admin/login', array('as' => 'admin.login', 'uses' => 'UserController@AdminLogin'));
-
 Route::resource('user', 'UserController');
+
+//route to reactivate a users account after deactivation
+Route::post('reactivate/account', array('as' => 'reactivate.account', 'uses' => 'UserController@ReactivateAccount'));
 
 //route for users premodule questionaire page
 Route::get('{id}/premodule_questionaire', array('as' => 'premodule_questionaire', 'uses' => 'UserController@PremoduleQuestionaire'));
