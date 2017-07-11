@@ -11,6 +11,12 @@
 
 @section('content')
 <div class="container-fluid">
+    @if($errors->any())
+        <div class="alert alert-danger alert-dismissable fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+            {{ implode('',$errors->all('<h2 class="error" style="text-align:center">:message</h2>')) }}
+        </div>
+    @endif
     <div class="row">
        
         <div class="col-md-12">

@@ -105,6 +105,7 @@ class PageController extends \BaseController {
 	//Route protection for account details
 	public function AccountDetails($id)
 	{
+		$test = 0;
 		if(Auth::check())
 		{
 			$user = User::find($id);

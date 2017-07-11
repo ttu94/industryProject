@@ -64,7 +64,10 @@ Route::post('admin/login', array('as' => 'admin.login', 'uses' => 'UserControlle
 Route::resource('user', 'UserController');
 
 //route to reactivate a users account after deactivation
-Route::post('reactivate/account', array('as' => 'reactivate.account', 'uses' => 'UserController@ReactivateAccount'));
+// Route::post('reactivate/account', array('as' => 'reactivate.account', 'uses' => 'UserController@ReactivateAccount'));
+
+//Route for getting results for a specific module
+Route::get('{id}/reactivating_account', array('as' => 'reactivating.account', 'uses' => 'UserController@ReactivateAccount'));
 
 //route for users premodule questionaire page
 Route::get('{id}/premodule_questionaire', array('as' => 'premodule_questionaire', 'uses' => 'UserController@PremoduleQuestionaire'));

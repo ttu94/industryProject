@@ -10,6 +10,23 @@
 @endsection
 
 @section('content')
+<script>
+    var questionNumber = 1;
+    window.onload = function(){
+        console.log('test');
+        while(questionNumber <= 15){
+            addFunc();
+        }
+    }
+    function addFunc(){
+   		  var tracklistTable = document.getElementById("tracklist");
+          tracklistTable.innerHTML += '<div class="linearRadio basicFontStyle"><h2>Question ' + questionNumber + '</h2><h3>' + 'ADD_QUESTION_HERE' + '</h3>' + 'ADD_QUIZ' + '<br></div><br>';
+          questionNumber += 1;
+        }
+        
+        
+</script>
+
 <div class="container-fluid"> 
     <br><br>
     <div class="progress">
@@ -20,106 +37,109 @@
     </div>
     <div class="col-md-12">
         <form action={{ route("quiz_results", array("id" => Auth::user()->id)) }}>
-            <div class="linearRadio basicFontStyle">
-                <h2>Question 1:</h2>
-                <h3> {Question insert here}</h3>
-                {{ Form::radio('m1q1', 'true')}} a
-                {{ Form::radio('m1q1', 'false')}} b
-                {{ Form::radio('m1q1', 'false')}} c
-                {{ Form::radio('m1q1', 'false')}} d
-                <br>
-            </div>
-            <br>
-            <div class="linearRadio basicFontStyle">
-                <h2>Question 2:</h2>
-                <h3> {Question insert here}</h3>
-                {{ Form::radio('m1q1', 'true')}} a
-                {{ Form::radio('m1q1', 'false')}} b
-                {{ Form::radio('m1q1', 'false')}} c
-                {{ Form::radio('m1q1', 'false')}} d
-                <br>
-            </div>
-            <br>
-            <div class="linearRadio basicFontStyle">
-                <h2>Question 3:</h2>
-                <h3> {Question insert here}</h3>
-                {{ Form::radio('m1q1', 'true')}} a
-                {{ Form::radio('m1q1', 'false')}} b
-                {{ Form::radio('m1q1', 'false')}} c
-                {{ Form::radio('m1q1', 'false')}} d
-                <br>
-            </div>
-            <br>
-            <div class="linearRadio basicFontStyle">
-                <h2>Question 4:</h2>
-                <h3> {Question insert here}</h3>
-                {{ Form::radio('m1q1', 'true')}} a
-                {{ Form::radio('m1q1', 'false')}} b
-                {{ Form::radio('m1q1', 'false')}} c
-                {{ Form::radio('m1q1', 'false')}} d
-                <br>
-            </div>
-            <br>
-            <div class="linearRadio basicFontStyle">
-                <h2>Question 5:</h2>
-                <h3> {Question insert here}</h3>
-                {{ Form::radio('m1q1', 'true')}} a
-                {{ Form::radio('m1q1', 'false')}} b
-                {{ Form::radio('m1q1', 'false')}} c
-                {{ Form::radio('m1q1', 'false')}} d
-                <br>
-            </div>
-            <br>
-            <div class="linearRadio basicFontStyle">
-                <h2>Question 6:</h2>
-                <h3> {Question insert here}</h3>
-                {{ Form::radio('m1q1', 'true')}} a
-                {{ Form::radio('m1q1', 'false')}} b
-                {{ Form::radio('m1q1', 'false')}} c
-                {{ Form::radio('m1q1', 'false')}} d
-                <br>
-            </div>
-            <br>
-            <div class="linearRadio basicFontStyle">
-                <h2>Question 7:</h2>
-                <h3> {Question insert here}</h3>
-                {{ Form::radio('m1q1', 'true')}} a
-                {{ Form::radio('m1q1', 'false')}} b
-                {{ Form::radio('m1q1', 'false')}} c
-                {{ Form::radio('m1q1', 'false')}} d
-                <br>
-            </div>
-            <br>
-            <div class="linearRadio basicFontStyle">
-                <h2>Question 8:</h2>
-                <h3> {Question insert here}</h3>
-                {{ Form::radio('m1q1', 'true')}} a
-                {{ Form::radio('m1q1', 'false')}} b
-                {{ Form::radio('m1q1', 'false')}} c
-                {{ Form::radio('m1q1', 'false')}} d
-                <br>
-            </div>
-            <br>
-            <div class="linearRadio basicFontStyle">
-                <h2>Question 9:</h2>
-                <h3> {Question insert here}</h3>
-                {{ Form::radio('m1q1', 'true')}} a
-                {{ Form::radio('m1q1', 'false')}} b
-                {{ Form::radio('m1q1', 'false')}} c
-                {{ Form::radio('m1q1', 'false')}} d
-                <br>
-            </div>
-            <br>
-            <div class="linearRadio basicFontStyle">
-                <h2>Question 10:</h2>
-                <h3> {Question insert here}</h3>
-                {{ Form::radio('m1q1', 'true')}} a
-                {{ Form::radio('m1q1', 'false')}} b
-                {{ Form::radio('m1q1', 'false')}} c
-                {{ Form::radio('m1q1', 'false')}} d
-                <br>
-            </div><br>
-            <button type="submit" class="greenbluelight2" style="float:right">Submit</button>
+                <div id="tracklist">
+                    
+                </div>
+            <!--<div class="linearRadio basicFontStyle">-->
+            <!--    <h2>Question 1:</h2>-->
+            <!--    <h3> {Question insert here}</h3>-->
+            <!--    {{ Form::radio('m1q1', 'true')}} a-->
+            <!--    {{ Form::radio('m1q1', 'false')}} b-->
+            <!--    {{ Form::radio('m1q1', 'false')}} c-->
+            <!--    {{ Form::radio('m1q1', 'false')}} d-->
+            <!--    <br>-->
+            <!--</div>-->
+            <!--<br>-->
+            <!--<div class="linearRadio basicFontStyle">-->
+            <!--    <h2>Question 2:</h2>-->
+            <!--    <h3> {Question insert here}</h3>-->
+            <!--    {{ Form::radio('m1q1', 'true')}} a-->
+            <!--    {{ Form::radio('m1q1', 'false')}} b-->
+            <!--    {{ Form::radio('m1q1', 'false')}} c-->
+            <!--    {{ Form::radio('m1q1', 'false')}} d-->
+            <!--    <br>-->
+            <!--</div>-->
+            <!--<br>-->
+            <!--<div class="linearRadio basicFontStyle">-->
+            <!--    <h2>Question 3:</h2>-->
+            <!--    <h3> {Question insert here}</h3>-->
+            <!--    {{ Form::radio('m1q1', 'true')}} a-->
+            <!--    {{ Form::radio('m1q1', 'false')}} b-->
+            <!--    {{ Form::radio('m1q1', 'false')}} c-->
+            <!--    {{ Form::radio('m1q1', 'false')}} d-->
+            <!--    <br>-->
+            <!--</div>-->
+            <!--<br>-->
+            <!--<div class="linearRadio basicFontStyle">-->
+            <!--    <h2>Question 4:</h2>-->
+            <!--    <h3> {Question insert here}</h3>-->
+            <!--    {{ Form::radio('m1q1', 'true')}} a-->
+            <!--    {{ Form::radio('m1q1', 'false')}} b-->
+            <!--    {{ Form::radio('m1q1', 'false')}} c-->
+            <!--    {{ Form::radio('m1q1', 'false')}} d-->
+            <!--    <br>-->
+            <!--</div>-->
+            <!--<br>-->
+            <!--<div class="linearRadio basicFontStyle">-->
+            <!--    <h2>Question 5:</h2>-->
+            <!--    <h3> {Question insert here}</h3>-->
+            <!--    {{ Form::radio('m1q1', 'true')}} a-->
+            <!--    {{ Form::radio('m1q1', 'false')}} b-->
+            <!--    {{ Form::radio('m1q1', 'false')}} c-->
+            <!--    {{ Form::radio('m1q1', 'false')}} d-->
+            <!--    <br>-->
+            <!--</div>-->
+            <!--<br>-->
+            <!--<div class="linearRadio basicFontStyle">-->
+            <!--    <h2>Question 6:</h2>-->
+            <!--    <h3> {Question insert here}</h3>-->
+            <!--    {{ Form::radio('m1q1', 'true')}} a-->
+            <!--    {{ Form::radio('m1q1', 'false')}} b-->
+            <!--    {{ Form::radio('m1q1', 'false')}} c-->
+            <!--    {{ Form::radio('m1q1', 'false')}} d-->
+            <!--    <br>-->
+            <!--</div>-->
+            <!--<br>-->
+            <!--<div class="linearRadio basicFontStyle">-->
+            <!--    <h2>Question 7:</h2>-->
+            <!--    <h3> {Question insert here}</h3>-->
+            <!--    {{ Form::radio('m1q1', 'true')}} a-->
+            <!--    {{ Form::radio('m1q1', 'false')}} b-->
+            <!--    {{ Form::radio('m1q1', 'false')}} c-->
+            <!--    {{ Form::radio('m1q1', 'false')}} d-->
+            <!--    <br>-->
+            <!--</div>-->
+            <!--<br>-->
+            <!--<div class="linearRadio basicFontStyle">-->
+            <!--    <h2>Question 8:</h2>-->
+            <!--    <h3> {Question insert here}</h3>-->
+            <!--    {{ Form::radio('m1q1', 'true')}} a-->
+            <!--    {{ Form::radio('m1q1', 'false')}} b-->
+            <!--    {{ Form::radio('m1q1', 'false')}} c-->
+            <!--    {{ Form::radio('m1q1', 'false')}} d-->
+            <!--    <br>-->
+            <!--</div>-->
+            <!--<br>-->
+            <!--<div class="linearRadio basicFontStyle">-->
+            <!--    <h2>Question 9:</h2>-->
+            <!--    <h3> {Question insert here}</h3>-->
+            <!--    {{ Form::radio('m1q1', 'true')}} a-->
+            <!--    {{ Form::radio('m1q1', 'false')}} b-->
+            <!--    {{ Form::radio('m1q1', 'false')}} c-->
+            <!--    {{ Form::radio('m1q1', 'false')}} d-->
+            <!--    <br>-->
+            <!--</div>-->
+            <!--<br>-->
+            <!--<div class="linearRadio basicFontStyle">-->
+            <!--    <h2>Question 10:</h2>-->
+            <!--    <h3> {Question insert here}</h3>-->
+            <!--    {{ Form::radio('m1q1', 'true')}} a-->
+            <!--    {{ Form::radio('m1q1', 'false')}} b-->
+            <!--    {{ Form::radio('m1q1', 'false')}} c-->
+            <!--    {{ Form::radio('m1q1', 'false')}} d-->
+            <!--    <br>-->
+            <!--</div><br>-->
+            <!--<button type="submit" class="greenbluelight2" style="float:right">Submit</button>-->
         </form>
     </div> <!--Quiz container ends here -->
 

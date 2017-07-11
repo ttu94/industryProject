@@ -12,14 +12,21 @@
 @section('content')
 <div class="container-fluid">
     <br>
+    <!--Flash message for account reactivation -->
+    @if(Session::has('success'))
+        <div class="alert alert-success alert-dismissable fade in"  style="background-color: #DBEDEA; border: none">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+            <h2 style="text-align:center">{{ Session::get('success') }}</h2>
+        </div>
+    @endif
     <!--Linking to user register page-->
     <div class="col-md-4">
-        <br><br><br><br>
-        <div id="noLogin">
-            <h3 class="raleway">Don't have an account?<br>Register now</h2>
-            <br>
-            <a href="register"><button class="button greenbluedark" style="width:100%">Create Account</button></a>
-        </div>
+    <br><br><br><br>
+    <div id="noLogin">
+        <h3 class="raleway">Don't have an account?<br>Register now</h2>
+        <br>
+        <a href="register"><button class="button greenbluedark" style="width:100%">Create Account</button></a>
+    </div>
     </div>
     
     <!--user login then routed to user's dashboard-->

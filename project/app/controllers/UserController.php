@@ -1,7 +1,7 @@
 <?php
 
 class UserController extends \BaseController {
-
+	
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -88,7 +88,7 @@ class UserController extends \BaseController {
 	public function PremoduleQuestionaire($id)
 	{
 		//show the users profile
-		if(Auth::user()->id == $id){
+		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
 			return View::make('registeredUserView.preQuestion')->withUser(Auth::user()->id);
 			// return View::make('registeredUserView.userProfilePage')->withUser($user);
@@ -124,7 +124,7 @@ class UserController extends \BaseController {
 	public function show($id)
 	{
 		//show the users profile
-		if(Auth::user()->id == $id){
+		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
 			return View::make('registeredUserView.userProfilePage')->withUser($user);
 		} else {
@@ -145,9 +145,8 @@ class UserController extends \BaseController {
 	}
 
 	//route: update_details. used for users to edit account details page
-	
 	public function UpdateDetails($id){
-		if(Auth::user()->id == $id){
+		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
 			return View::make('registeredUserView.updateDetails')->withUser($user);
 		} else {
@@ -253,34 +252,36 @@ class UserController extends \BaseController {
 	public function destroy($id)
 	{
 		$user = User::find($id);
-		// $user->delete();
 
 		//Deactivates the account and logs them out
 		Auth::user()->status = 0;
 		Auth::logout();
 		return Redirect::to('logoutPage');
-		// return Redirect::action('UserController@index');
-		
 	}
 
 	//USER LOGIN
 	public function login() {
 
+		$input = Input::all();
+		
 		$userdata = array(
 			'email' => Input::get('email'),
 			'password' => Input::get('password'),
-			'status' => 1
+			// 'status' => 1
 		);
-		
+
 		// authenticates and sets remember me cookie
 		if (Auth::attempt($userdata, true))
 		{
-			return Redirect::action('UserController@show', array(Auth::user()->id));
-		} else {
-			// return Redirect::to(URL::previous()) -> withInput();
+			if (Auth::user()->status == 0) {
+				return Redirect::action('UserController@ReactivateAccount', array(Auth::user()->id));
+			} else {
+				return Redirect::action('UserController@show', array(Auth::user()->id));
+			}
+		}else {
 			return Redirect::back()->with('invalid', 'The username or password is incorrect.');
 		}
-		 
+		
 	}
 	
 	//USER LOGOUT
@@ -291,13 +292,12 @@ class UserController extends \BaseController {
 	
 	//User reactivation controller
 	public function ReactivateAccount(){
-		// $email = Input::all();
-		return Redirect::to('logoutPage');
+		return View::make('registeredUserView.ReactivationPage', array(Auth::user()->id));
 	}
 	
 	//route: account_details. used for users to view account details
 	public function AccountDetails($id){
-		if(Auth::user()->id == $id){
+		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
 			return View::make('registeredUserView.accountDetails')->withUser($user);
 		} else {
@@ -343,7 +343,7 @@ class UserController extends \BaseController {
 	public function QuizResults($id){
 		
 		//NOTE: INCORECT ROUTES. NEEDS TO DRAW DATA FROM DB ^
-		if(Auth::user()->id == $id){
+		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
 			return View::make('modulePagesView.quizResult')->withUser($user);
 		} else {
@@ -356,7 +356,7 @@ class UserController extends \BaseController {
 	public function OverallResults($id){
 		
 		//NOTE: INCORECT ROUTES. NEEDS TO DRAW DATA FROM DB ^
-		if(Auth::user()->id == $id){
+		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
 			return View::make('registeredUserView.overallResult')->withUser($user);
 		} else {
@@ -368,7 +368,7 @@ class UserController extends \BaseController {
 	public function IndividualModule($id){
 		
 		//NOTE: INCORECT ROUTES. NEEDS TO DRAW DATA FROM DB ^
-		if(Auth::user()->id == $id){
+		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
 			return View::make('registeredUserView.individualModuleResult')->withUser($user);
 		} else {
