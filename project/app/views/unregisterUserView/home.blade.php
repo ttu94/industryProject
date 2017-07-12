@@ -57,8 +57,10 @@
                 <h3 style="text-align: center">Clincal Trials</h3>
                 <div class="panel-body" style="font-size:19px;text-align:justify">
                     <br>
-                    The Clem Jones Centre for Neurobiology and Stem Cell Research will begin prospective clinical trials for patients affected by a 
-                    spinal cord injury in the near future.
+                    With the support of the Motor Accident Insurance Commission, the Perry Cross Spinal Research Foundation and the Clem Jones Foundation, 
+                    we are conducting pre-clinical research for a cell transplantation herapy to repair the injured spinal cord which we hope will lead to a 
+                    Phase I/IIa clinical trial within a few years.
+
                     <br>
                     <br>
                     To learn more about this process please click "Read More" below.

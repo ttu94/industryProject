@@ -32,7 +32,7 @@
     </div>
     <div class="col-md-12" style="text-align:center">
         <br>
-        <a target="_blank" href="https://cjcneurostemcell.org/"><img src="images/Logo2.jpg" height="200px" width="400px"></a>
+        <a target="_blank" href="https://cjcneurostemcell.org/"><img src="images/SiCURE.png" height="200px" width="400px"></a>
         <br>
     </div>
     <br>
