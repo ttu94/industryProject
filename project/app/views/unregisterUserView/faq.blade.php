@@ -65,12 +65,7 @@
                 <div class="faq">
                   <div class="faq_question">I have deactivated my account, how can i reactivate?</div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br> It's easy, all you have to do is type in your email address and click reactivate!
-                          <!--Form to reactivate a user's account -->
-                             {{ Form::open(array('url' => url('reactivate/account'))) }}
-                              <input class="login" style="font-size:18px" type="text" placeholder="Email" name="email" width="50px">
-                              <button class="button greenbluedark">Reactivate</button>
-                            {{ Form::close() }}
+                          <div class="faq_answer"><br> It's easy! To reactivate please log in normally and follow on prompts on screen.
                           <br>&nbsp;</div>
                        </div>        
                 </div>

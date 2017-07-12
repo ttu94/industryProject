@@ -141,7 +141,10 @@ class UserController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		
+		$input = Input::all(); 
+		Auth::user()->status = 1;
+		return Redirect::to('faq');
+		// return Redirect::action('UserController@show', array(Auth::user()->id));
 	}
 
 	//route: update_details. used for users to edit account details page
@@ -275,6 +278,7 @@ class UserController extends \BaseController {
 		{
 			if (Auth::user()->status == 0) {
 				return Redirect::action('UserController@ReactivateAccount', array(Auth::user()->id));
+
 			} else {
 				return Redirect::action('UserController@show', array(Auth::user()->id));
 			}
@@ -284,17 +288,30 @@ class UserController extends \BaseController {
 		
 	}
 	
+	//Account reactivation page
+	public function ReactivateAccount($id){
+		$user = User::find($id);
+		return View::make('registeredUserView.ReactivationPage')->withUser($user);
+	}
+	
+	//account reactivtion button route
+	public function AccountReactivation($id){
+
+		$user = User::find($id);
+		$input = Input::all();
+		
+		$user->status = 1;
+		$user->save();
+		
+		return Redirect::action('UserController@show', array($user->id));
+	}
+	
 	//USER LOGOUT
 	public function logout(){
 		Auth::logout();
 		return Redirect::to('logoutPage');
 	}
-	
-	//User reactivation controller
-	public function ReactivateAccount(){
-		return View::make('registeredUserView.ReactivationPage', array(Auth::user()->id));
-	}
-	
+
 	//route: account_details. used for users to view account details
 	public function AccountDetails($id){
 		if(Auth::user()->id == $id && Auth::user()->status == 1){

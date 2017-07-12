@@ -132,11 +132,12 @@ class PageController extends \BaseController {
 	//Route protection for educational modules
 	public function EducationModules()
 	{
-		if(Auth::check())
+		if(Auth::check() && Auth::user()->status == 1)
 		{
 			return View::make('registeredUserView.educational')->withUser(Auth::user()->id);//educational.blade.php
 		}else{
 			//redirected to login page
+			Auth::logout();
 			return Redirect::to('login');
 			
 		}

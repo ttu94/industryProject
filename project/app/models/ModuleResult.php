@@ -2,7 +2,7 @@
 
 Class ModuleResult extends Eloquent
 {
-    
+
 }
 
 
