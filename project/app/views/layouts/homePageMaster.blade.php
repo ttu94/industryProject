@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" href="images/clemJones.jpg">
+	<link rel="shortcut icon" href="images/Logo1.jpg">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>@yield('title')</title>
 	

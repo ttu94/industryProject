@@ -22,19 +22,17 @@
         <br>
         <h3 style="color: #595145">About Spinal Cord Injury Rehabilitation</h3>
         <p class="basicFontStyle" style="text-align: justify">
-            The aim of Spinal Cord Injury Rehabilitation is to educate the general public about the spinal cord and the injuries that are associated. An additional goal of ours is to 
-            find people who have been affected by a spinal cord injury and help them through a world-first clinical trial in which the patient's brain and spinal cord are helped
-            regenerated through a three-dimensional nerve bridge.
-            <br><br>
-            People who have been affected by a spinal cord injury are strongly encouraged to register, understand the educational modules and complete the quizzes in order to become eligible for 
-            clincal trials that will be conducted by The Clem Jones Centre for Neurobiology and Stem Cell Research
-            in a few short years with the support of the Perry Cross Spinal Research Foundation.
+            Spinal - Sustaining a spinal-cord injury is a life-changing event. In Australia, more than one person sustains spinal cord injury every
+            day and many of these individuals are under the age of 24. Currently 12,000 Australians live with spinal cord injury and aside from the personal trauma,
+            the cost to our society is $2 billion a year. Without an effective cure for spinal cord injury, the emotional and financial costs to individuals, their families, 
+            and to our community are life-long. We are developing new therapeutic approaches for spinal cord repair using cell purification, development biology, natural 
+            product drug discovery, microfluidic engineering, enhanced #D cell culturing, live cell imaging, 3D bioprinting, neurosurgery and physiotherapy.
             <br><br>
         </p>
     </div>
-    <div class="col-md-12">
+    <div class="col-md-12" style="text-align:center">
         <br>
-        <a target="_blank" href="https://cjcneurostemcell.org/"><button class="btns4 greybrown2" style="width:65%"> Click here to learn more about the Clem Jones Centre for Neurobiology and Stem Cell Research</button></a> <br>
+        <a target="_blank" href="https://cjcneurostemcell.org/"><img src="images/Logo2.jpg" height="200px" width="400px"></a>
         <br>
     </div>
     <br>
