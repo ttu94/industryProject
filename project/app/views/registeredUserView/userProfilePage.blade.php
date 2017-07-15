@@ -12,7 +12,7 @@
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
     @if(Auth::check())
-   <h2>Welcome,
+   <h2 style="color:white">Welcome,
    {{$user->firstName}}!
    </h2>
    @endif

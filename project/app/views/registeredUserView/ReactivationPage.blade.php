@@ -6,7 +6,7 @@
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
-   <h2>Account Reactivation</h2>
+   <h2 style="color:white">Account Reactivation</h2>
 @endsection
 
 @section('content')

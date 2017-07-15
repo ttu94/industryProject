@@ -7,7 +7,7 @@
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h2>Educational Modules</h2>
+   <h2 style="color:white">Educational Modules</h2>
 @endsection
 
 @section('content')

@@ -6,7 +6,7 @@
 
 @section('pageTitle')
     @if(Auth::check())
-   <h2>{{$user->firstName}}'s Results: Module [number]</h2>
+   <h2 style="color:white">{{$user->firstName}}'s Results: Module [number]</h2>
    @endif
 @endsection
 

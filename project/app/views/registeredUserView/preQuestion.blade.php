@@ -6,7 +6,7 @@
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
-   <h2>You're almost done!</h2>
+   <h2 style="color:white">You're almost done!</h2>
 @endsection
 
 @section('content')

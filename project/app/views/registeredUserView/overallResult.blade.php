@@ -10,7 +10,7 @@
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
     @if(Auth::check())
-   <h2>{{$user->firstName}}'s Results!</h2>
+   <h2 style="color:white">{{$user->firstName}}'s Results!</h2>
    @endif
 @endsection
 

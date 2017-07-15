@@ -6,7 +6,7 @@
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
-   <h2>Contact Us</h2>
+   <h2 style="color:white">Contact Us</h2>
 @endsection
 
 @section('content')

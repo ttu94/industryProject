@@ -6,7 +6,7 @@
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
-   <h2>Account Details</h2>
+   <h2 style="color:white">Account Details</h2>
 @endsection
 
 @section('content')

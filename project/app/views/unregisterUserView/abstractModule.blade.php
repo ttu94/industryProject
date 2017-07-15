@@ -6,7 +6,7 @@
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
-   <h2>Educational Module Abstracts</h2>
+   <h2 style="color:white">Educational Module Abstracts</h2>
 @endsection
 
 @section('content')

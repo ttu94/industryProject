@@ -7,7 +7,7 @@
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h2>Spinal Cord Injury Rehabilitation Log Out</h2>
+   <h2 style="color:white">Spinal Cord Injury Rehabilitation Log Out</h2>
 @endsection
 
 

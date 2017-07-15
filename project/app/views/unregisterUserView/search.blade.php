@@ -9,7 +9,7 @@
     <!--NAME OF THIRD HEADER GOES HERE-->
     
     <!--NOTE: SEARCH QUERY NEEDS TO MATCH WHAT THE USER SEARCHED FOR -->
-   <h2>Search Results</h2>
+   <h2 style="color:white">Search Results</h2>
 @endsection
 
 @section('content')

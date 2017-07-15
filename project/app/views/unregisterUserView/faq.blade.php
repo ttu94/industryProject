@@ -6,7 +6,7 @@
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
-   <h2>Frequently Asked Questions</h2>
+   <h2 style="color:white">Frequently Asked Questions</h2>
 @endsection
 
 @section('content')

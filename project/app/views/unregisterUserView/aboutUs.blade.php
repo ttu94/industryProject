@@ -6,7 +6,7 @@
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
-   <h2>About Us</h2>
+   <h2 style="color: white;">About Us</h2>
 @endsection
 
 @section('content')
@@ -18,9 +18,11 @@
         <br><br>
         <img class="aboutUsImageOne"alt="About Spinal Cord Injury" src="http://o.aolcdn.com/images/dims?thumbnail=2000%2C1000&image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2Fcf8cb61cf3c7b9b0ef8b0895f54d43%2F203845365%2F160518-1715.jpg&client=cbc79c14efcebee57402&signature=fc6f13b18bd5da2b408cddf198a36f20c3c6560d" />
     </div>
+    <br>
+    <br>
     <div class="col-md-6">
         <br>
-        <h3 style="color: #595145">About Spinal Cord Injury Rehabilitation</h3>
+        <h3 style="color: #F02B33">About Spinal Cord Injury Rehabilitation</h3>
         <p class="basicFontStyle" style="text-align: justify">
             Spinal - Sustaining a spinal-cord injury is a life-changing event. In Australia, more than one person sustains spinal cord injury every
             day and many of these individuals are under the age of 24. Currently 12,000 Australians live with spinal cord injury and aside from the personal trauma,
@@ -30,15 +32,10 @@
             <br><br>
         </p>
     </div>
-    <div class="col-md-12" style="text-align:center">
-        <br>
-        <a target="_blank" href="https://cjcneurostemcell.org/"><img src="images/SiCURE.png" height="200px" width="400px"></a>
-        <br>
-    </div>
     <br>
     <!--ABOUT THE CLINICAL TRIALS-->
     <div class="col-md-6">
-        <h3 style="color: #595145">About The Clinical Trials</h3>
+        <h3 style="color: #F02B33">About The Clinical Trials</h3>
         <p class="basicFontStyle" style="text-align: justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
             varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
@@ -63,7 +60,7 @@
     </div>
     <div class="col-md-6">
         <br><br>
-        <h3 style="color: #595145">About The Educational Modules</h3>
+        <h3 style="color: #F02B33">About The Educational Modules</h3>
         <p class="basicFontStyle" style="text-align: justify">
             Spinal Cord Injury Rehabilitation provides a range of in-depth and interactive educational modules on matters relating to the spinal cord with an equal number of 
             online quizzes to test your knowledge.
@@ -94,16 +91,22 @@
 </div>
 
 <div class="yellowBar">
-    <h3 class="meetDoctor" style="text-align:center"><br>Meet the Doctors who are part of the clinical trial.</h3>
+    <h3 class="meetDoctor" style="text-align:center; color:white"><br>Meet the team part of the clinical trial.</h3>
 </div>
 
 <div class="container-fluid">
+    <br>
+    <div class="col-md-12" style="text-align:center">
+        <br>
+        <a target="_blank" href="https://cjcneurostemcell.org/"><img src="images/SiCURE.png" height="200px" width="400px"></a>
+        <br>
+    </div>
     <br>
     <div class="col-md-6">
         <div class="panel panel-default doctorPanel">
             <br>
             <img class="doctorImage" alt="" src="images/alan-mackay-sim.jpg" />    
-            <h3 style="text-align: center">Professor Emeritus Alan Mackay-Sim</h3>
+            <h3 style="text-align: center; color:#F02B33">Professor Emeritus Alan Mackay-Sim</h3>
             <div class="panel-body basicFontStyle panelWords" style="text-align: justify">
                 Alan Mackay-Sim is a neuroscientist and stem cell scientist.
                 He graduated with a PhD from Macquarie University in 1980 and now is a 
@@ -119,10 +122,10 @@
         <div class="panel panel-default doctorPanel">
             <br>
             <img class="doctorImage" alt="" src="images/james-st-john.jpg" />
-            <h3 style="text-align: center">Dr. James St John</h3>
+            <h3 style="text-align: center; color: #F02B33">Dr. James St John</h3>
             <div class="panel-body basicFontStyle panelWords" style="text-align: justify">
                 James St John is Head of the Clem Jones Centre for Neurobiology and Stem Cell Research within
-                <a target="_blank" href="https://www.griffith.edu.au/institute-drug-discovery/about-centre" style="color: #88ABA5">GRIDD</a> 
+                <a target="_blank" href="https://www.griffith.edu.au/institute-drug-discovery/about-centre" style="color: #F02B33">GRIDD</a> 
                 and aims to
                 develop therapies to treat acquired brain injury and spinal cord injury. His team is currently
                 designing three-dimensional nerve bridges that will help regenerate the brain and spinal cord by combining advanced
@@ -131,6 +134,7 @@
             </div>
         </div>
     </div>
+    
     
 </div>
 
