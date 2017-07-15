@@ -21,7 +21,11 @@
 /*darker blue - #195DA3*/
 /*darker yellow - #FFA700*/
 /*red for logo - #F02B33*/
+/*darkred for logo - #D60505*/
 /*green bar - #CFDD63*/
+/*otherlight green - #DDE791*/
+/*otherdark green - #909A45*/
+/*verylight blue - #E8EEF5*/
 
 
 html,
@@ -123,9 +127,9 @@ hr {
 	/*background-color:  #a7c4d2;*/
 	/*background-color: #a7afd2;*/
     border-bottom-style: solid;
-    /*border-color: #8A7D6B;*/
-    border-color: grey;
-    border-width: 2px;
+    border-color: #D60505;
+    /*border-color: grey;*/
+    border-width: 5px;
     width:100%;
 }
 
@@ -155,12 +159,13 @@ ul {
     /*background-color: #A7D2CB;*/
     background-color: #FFFFFF;
     /*background-color: #F8F8F8;*/
-    /*background-color: #D8E382;*/
+    /*background-color: #DDE791;*/
     /*padding: 50px 50px;*/
     border-bottom-style: solid;
     /*border-color: #8A7D6B;*/
-    border-color: grey;
-    border-width: 2px;
+    /*border-color: grey;*/
+    border-color: #D60505;
+    border-width: 5px;
     padding-left: 5px;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -178,25 +183,33 @@ ul {
     font-family: Raleway;
 }
 
-#rehab {
+.rehab {
     font-size: 20px;
     font-weight: 400;
 }
 
-a:hover {
-    /*color: #A3957F;*/
-    
+.rehab:hover {
+    color: #D60505;
     text-decoration: none;
 }
 
-#headerTitle {
-   font-family: Raleway, sans-serif;
+a:hover {
+    /*color: #A3957F;*/
+    color: #D60505;
+    text-decoration: none;
+}
+
+.headerTitle {
+   font-family: Raleway;
    font-size: 30px;
    color: black;
    float:left;
    font-weight: 400;
    /*position: relative;*/
+}
 
+.headerTitle:hover {
+    color: #D60505;
 }
 
 .logo {
@@ -223,9 +236,10 @@ a:hover {
     
     text-align: center;
     border-top-style: solid;
-    border-width: 2px;
+    border-width: 5px;
     /*border-color: #8A7D6B;*/
-    border-color: grey;
+    /*border-color: grey;*/
+    border-color: #D60505;
     /*background-color: #a7afd2;*/
     /*box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);*/
 }
@@ -257,8 +271,9 @@ a:hover {
     border-bottom-style: solid;
     /*border-color: #8A7D6B;*/
     border-color: grey;
+    /*border-color: #D60505;*/
     border-width: 2px;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .pageTitle {
@@ -281,6 +296,7 @@ a:hover {
     border-bottom-style: solid;
     /*border-color: #8A7D6B;*/
     border-color: grey;
+    /*border-color: #D60505;*/
     border-width: 2px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -299,7 +315,8 @@ a:hover {
 }
 
 .fourthLink a:hover {
-    color: #A3957F;
+    /*color: #A3957F;*/
+    color: #D60505;
     text-decoration: none;
 }
 
@@ -356,23 +373,29 @@ a:hover {
 }
 
 .panelOne {
-    background-color: #A7D2CB;
-    color: white;
-    font-family: Raleway, sans-serif;
+    /*background-color: #A7D2CB;*/
+    background-color: white;
+    /*color: #DDE791;*/
+    border: 5px #DDE791 solid;
+    color: black;
+    font-family: Raleway;
     min-height: 250px;
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+    /*border: 6px #CFDD63 solid;*/
 }
 
 .panelOneButton {
-    background-color: white;
+    background-color: black;
     color: #A7D2CB;
 }
 
 .panelTwo {
-    background-color: #88ABA5;
-    color: white;
+    background-color: white;
+    /*color: #CFDD63;*/
+    color: black;
+    border: 5px #CFDD63 solid;
     font-family: Raleway, sans-serif;
     min-height: 250px;
     padding-left: 15px;
@@ -387,8 +410,10 @@ a:hover {
 }
 
 .panelThree {
-    background-color: #576E6A;
-    color: white;
+    background-color: white;
+    /*color: #909A45;*/
+    color: black;
+    border: 5px #909A45 solid; 
     font-family: Raleway , sans-serif;
     min-height: 250px;
     padding-left: 15px;
@@ -423,14 +448,14 @@ a:hover {
 
 .greenbluedarker {
     color: white;
-    background-color: #576E6A;
+    background-color: #909A45;
     border: 3px white solid;
 }
 
 .greenbluedarker:hover {
     background-color: white;
-    color: #576E6A;
-    border: 3px #576E6A solid;
+    color: #909A45;
+    border: 3px #909A45 solid;
 }
 
 /*LOGIN PAGE CSS****************************************************************/
@@ -670,7 +695,7 @@ button:hover {
     /*display: block;*/
     /*background-color:#F2D388;*/
     /*background-color: #FFA700;*/
-    /*background-color: #F02B33;*/
+    /*background-color: #D60505;*/
     background-color: #CFDD63;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -1024,6 +1049,7 @@ button2 {
     color: #A7D2CB;
     background-color: white;
     border: 3px #A7D2CB solid;
+    
 }
 
 .greenbluemedium2:hover {
@@ -1080,30 +1106,30 @@ button2 {
 
 .greenbluedark {
     color: white;
-    background-color: #88ABA5;
+    background-color: #CFDD63;
     border: 3px white solid;
 }
 
 .greenbluedark:hover {
     background-color: white;
-    color: #88ABA5;
-    border: 3px #88ABA5 solid;
+    color: #CFDD63;
+    border: 3px #CFDD63 solid;
 }
 
 .greenbluemedium {
     color: white;
-    background-color: #A7D2CB;
+    background-color: #DDE791;
     border: 3px white solid;
 }
 
 .greenbluemedium:hover {
     background-color: white;
-    color: #A7D2CB;
-    border: 3px #A7D2CB solid;
+    color: #DDE791;
+    border: 3px #DDE791 solid;
 }
 
 .panelsTwo {
-    background-color: #88ABA5;
+    background-color: #CFDD63;
     color: white;
     font-family: Raleway;
     min-height: 240px;

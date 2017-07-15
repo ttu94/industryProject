@@ -22,7 +22,7 @@
     <br>
     <div class="col-md-6">
         <br>
-        <h3 style="color: #F02B33">About Spinal Cord Injury Rehabilitation</h3>
+        <h3 style="color: #D60505">About Spinal Cord Injury Rehabilitation</h3>
         <p class="basicFontStyle" style="text-align: justify">
             Spinal - Sustaining a spinal-cord injury is a life-changing event. In Australia, more than one person sustains spinal cord injury every
             day and many of these individuals are under the age of 24. Currently 12,000 Australians live with spinal cord injury and aside from the personal trauma,
@@ -35,7 +35,7 @@
     <br>
     <!--ABOUT THE CLINICAL TRIALS-->
     <div class="col-md-6">
-        <h3 style="color: #F02B33">About The Clinical Trials</h3>
+        <h3 style="color: #D60505">About The Clinical Trials</h3>
         <p class="basicFontStyle" style="text-align: justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
             varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
@@ -60,7 +60,7 @@
     </div>
     <div class="col-md-6">
         <br><br>
-        <h3 style="color: #F02B33">About The Educational Modules</h3>
+        <h3 style="color: #D60505">About The Educational Modules</h3>
         <p class="basicFontStyle" style="text-align: justify">
             Spinal Cord Injury Rehabilitation provides a range of in-depth and interactive educational modules on matters relating to the spinal cord with an equal number of 
             online quizzes to test your knowledge.
@@ -106,7 +106,7 @@
         <div class="panel panel-default doctorPanel">
             <br>
             <img class="doctorImage" alt="" src="images/alan-mackay-sim.jpg" />    
-            <h3 style="text-align: center; color:#F02B33">Professor Emeritus Alan Mackay-Sim</h3>
+            <h3 style="text-align: center; color:#D60505">Professor Emeritus Alan Mackay-Sim</h3>
             <div class="panel-body basicFontStyle panelWords" style="text-align: justify">
                 Alan Mackay-Sim is a neuroscientist and stem cell scientist.
                 He graduated with a PhD from Macquarie University in 1980 and now is a 
@@ -122,10 +122,10 @@
         <div class="panel panel-default doctorPanel">
             <br>
             <img class="doctorImage" alt="" src="images/james-st-john.jpg" />
-            <h3 style="text-align: center; color: #F02B33">Dr. James St John</h3>
+            <h3 style="text-align: center; color: #D60505">Dr. James St John</h3>
             <div class="panel-body basicFontStyle panelWords" style="text-align: justify">
                 James St John is Head of the Clem Jones Centre for Neurobiology and Stem Cell Research within
-                <a target="_blank" href="https://www.griffith.edu.au/institute-drug-discovery/about-centre" style="color: #F02B33">GRIDD</a> 
+                <a target="_blank" href="https://www.griffith.edu.au/institute-drug-discovery/about-centre" style="color: #D60505">GRIDD</a> 
                 and aims to
                 develop therapies to treat acquired brain injury and spinal cord injury. His team is currently
                 designing three-dimensional nerve bridges that will help regenerate the brain and spinal cord by combining advanced

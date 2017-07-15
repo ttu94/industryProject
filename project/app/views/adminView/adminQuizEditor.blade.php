@@ -30,17 +30,17 @@
     // }
     
     
-    var questionNumber = 1;
-    window.onload = function(){
-        while(questionNumber <= 20){
-            addFunc();
-        }
-    }
-    function addFunc(){
-   		  var questionlistTable = document.getElementById("questionlist");
-          questionlistTable.innerHTML += '<option>' + 'option ' + questionNumber + '</option>';
-          questionNumber += 1;
-        }
+    // var questionNumber = 1;
+    // window.onload = function(){
+    //     while(questionNumber <= 20){
+    //         addFunc();
+    //     }
+    // }
+    // function addFunc(){
+   	// 	  var questionlistTable = document.getElementById("questionlist");
+    //       questionlistTable.innerHTML += '<option>' + 'option ' + questionNumber + '</option>';
+    //       questionNumber += 1;
+    //     }
         
         
 </script>
@@ -48,8 +48,15 @@
 <div class="container-fluid">
     <br>
     <div class="col-md-12 basicFontStyle">
+        <a href="">ADD Question</a>
         <select size="15" name="modQuestions" id="questionlist">
-            <!--<div>{{$moduleTestQuiz->question}}</div>-->
+            @if($moduleTestDB)
+                @foreach($moduleTestDB as $moduleTestDB)
+                    <option>{{ $moduleTestDB->question }}</option>
+                @endforeach
+        @else
+            <option>no ModuleTest Quizes</option>
+        @endif
         </select>
     </div>
 </div>

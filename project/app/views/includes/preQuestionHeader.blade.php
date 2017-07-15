@@ -28,10 +28,12 @@
         <ul>
             <div class="col-md-3">
                 <a href={{route("home")}}>
-                    <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/websiteLogo2.png" height="130px" width="130px"/>                
+                    <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/websiteLogo.png" height="130px" width="130px"/>                
                 </a>
                 <br>
-                <h1 id="headerTitle">Spinal Cord Injury <br><span id="rehab">Rehabilitation</span></h1>
+                <a href={{route("home")}}>
+                    <h1 class="headerTitle">Spinal Cord Injury <br><span class="rehab">Rehabilitation</span></h1>
+                </a>
             </div>
             
             <div class="col-md-2">

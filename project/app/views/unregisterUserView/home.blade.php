@@ -7,18 +7,21 @@
 @section('content')
 <!--<div class="container-fluid">-->
   <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" style="box-shadow: 10px 10px 5px #888888">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <!--style="box-shadow: 10px 10px 5px #888888"-->
     <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <ol class="carousel-indicators" >
+      <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+    <div class="carousel-inner" style="background-color: #E8EEF5">
 
       <div class="item active">
-        <img src="http://i.imgur.com/K2FgPBx.jpg" alt="Spinal Cord" style="height: 750px">
+        <!--<img src="http://i.imgur.com/K2FgPBx.jpg" alt="Spinal Cord" style="height: 750px">-->
+        <img src="images/Spinal1.jpg" alt="Spinal Cord" style="height: 850px; width: 1500px">
+        
         <div class="carousel-caption">
           <h3>Spinal Cord</h3>
 
@@ -26,9 +29,19 @@
       </div>
 
       <div class="item">
-        <img src="https://images6.alphacoders.com/805/thumb-1920-805656.jpg" alt="Dr John St James" style="height: 750px">
+        <!--<img src="https://images6.alphacoders.com/805/thumb-1920-805656.jpg" alt="Dr John St James" style="height: 750px">-->
+        <img src="images/GRIDD-3.jpg" alt="Dr John St James" style="height: 850px; width: 1500px">
         <div class="carousel-caption">
           <h3>Dr James St John</h3>
+          <p>test</p>
+        </div>
+      </div>
+      
+      <div class="item">
+        <!--<img src="https://images6.alphacoders.com/805/thumb-1920-805656.jpg" alt="Dr John St James" style="height: 750px">-->
+        <img src="images/Spinal2.jpg" alt="SCI" style="height: 850px; width: 1500px">
+        <div class="carousel-caption">
+          <h3>SCI</h3>
           <p>test</p>
         </div>
       </div>
