@@ -356,6 +356,20 @@ class UserController extends \BaseController {
 		}
 	}
 	
+	//admin Quiz Editor **************************************************************Need twin to check
+	public function AdminQuiz()
+	{
+		if(Auth::user()->admin == '1'){
+			// $user = User::find($id);
+			// return View::make('adminView.adminHomePage')->withAdmin($user);
+			// $moduleTestDB = DB::select('select * from moduleTests');
+			return View::make('adminView.adminQuizEditor');
+		} else {
+			Auth::logout();
+			return Redirect::action('AdminController@index');
+		}
+	}
+	
 	//route for immediate module results after submitting a quiz
 	public function QuizResults($id){
 		
@@ -393,5 +407,7 @@ class UserController extends \BaseController {
 			return Redirect::action('UserController@index');
 		}
 	}
+	
+	
 	
 }

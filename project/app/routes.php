@@ -50,7 +50,13 @@ Route::get('admin_homepage', array('as' => 'admin.homepage', 'uses' => 'UserCont
 Route::get('adminHomePage', function()
 {
     return View::make('adminView/adminHomePage');
- 
+});
+
+//Route for admin Quiz Editor Page (***************************************************************************Kenny Added to test)
+Route::get('admin_quiz_editor', array('as' => 'admin.quizeditor', 'uses' => 'UserController@AdminQuiz'));
+Route::get('adminHomePage/adminQuizEditor', function()
+{
+   return View::make('adminView/adminQuizEditor'); 
 });
 
 // ROUTES TO CONTrOLLER FOR USERS*********************************************************************************
@@ -124,6 +130,26 @@ Route::get('educational_module/quiz_information/{quizNo}', array('as' => 'module
 
 //Route protection for module quizzes, all quizzes wil use this template
 Route::get('educational_module/quiz/{quizNo}', array('as' => 'module_quiz', 'uses' => 'PageController@ModuleQuiz'));
+
+
+
+
+
+
+
+// Password Recovery Routes*********************************************************************************************************************************
+// *************************************************************************************************************************************************
+
+// Route::resource('remind', "RemindersController");
+
+Route::post('password_recovery', "RemindersController@postRemind");
+
+Route::get('password/reset', array('uses' => 'PasswordController@remind', 'as' => 'password.remind'));
+Route::post('password/reset', array('uses' => 'PasswordController@request', 'as' => 'password.request'));
+Route::get('password/reset/{token}', array('uses' => 'PasswordController@reset', 'as' => 'password.reset'));
+Route::post('password/reset/{token}', array('uses' => 'PasswordController@update', 'as' => 'password.update'));
+
+
 
 // MODULE PAGES*********************************************************************************************************************************
 // *************************************************************************************************************************************************

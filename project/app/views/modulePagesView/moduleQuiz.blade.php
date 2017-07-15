@@ -13,8 +13,7 @@
 <script>
     var questionNumber = 1;
     window.onload = function(){
-        console.log('test');
-        while(questionNumber <= 15){
+        while(questionNumber <= 10){
             addFunc();
         }
     }

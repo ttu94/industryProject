@@ -26,7 +26,7 @@
             day and many of these individuals are under the age of 24. Currently 12,000 Australians live with spinal cord injury and aside from the personal trauma,
             the cost to our society is $2 billion a year. Without an effective cure for spinal cord injury, the emotional and financial costs to individuals, their families, 
             and to our community are life-long. We are developing new therapeutic approaches for spinal cord repair using cell purification, development biology, natural 
-            product drug discovery, microfluidic engineering, enhanced #D cell culturing, live cell imaging, 3D bioprinting, neurosurgery and physiotherapy.
+            product drug discovery, microfluidic engineering, enhanced 3D cell culturing, live cell imaging, 3D bioprinting, neurosurgery and physiotherapy.
             <br><br>
         </p>
     </div>
