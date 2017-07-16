@@ -17,10 +17,15 @@
     </div>
     
     <div class="col-md-6 basicFontStyle" style="text-align:center">
-        @if (Session::has('error'))
-          {{ trans(Session::get('reason')) }}
+        <!--Errors for password recovery-->
+        @if($errors->any())
+            <div class="alert alert-error">
+                <a href="#" class="close" data-dimiss="alert"></a>
+                {{ implode('',$errors->all('<p class="error" style="color:red">:message</p>')) }}
+            </div>
         @endif
          
+        <!--Form to change password when recovering-->
         <form action="{{ action('RemindersController@postReset') }}" method="POST">
             <input type="hidden" name="token" value="{{ $token }}">
             
@@ -29,6 +34,7 @@
             <input class="register" type="password" name="password" placeholder="Password">
             <br>
             <input class="register" type="password" name="password_confirmation" placeholder="Confirm Password">
+            <p style="color:red; font-size: 15px">Password must be a minimum of 6 characters</p>
             <br>
             <!--<input class="button greybrown2" type="submit" value="Reset Password">-->
             <button class="button greybrown2" type="submit" value="Reset Password" style="margin: 0 auto">Submit</button>

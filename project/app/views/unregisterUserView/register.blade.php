@@ -300,7 +300,7 @@
                 <input class="register" type="password" name="password_confirmation" placeholder="Confirm Password*">
             </div>
             <div class="col-md-12">
-                <p style="color:red; font-size: 15px">Password must be a minimum of 5 characters</p>
+                <p style="color:red; font-size: 15px">Password must be a minimum of 6 characters</p>
             </div>
             <br>
             <h2 style="margin-bottom:20px">Other Details</h2>

@@ -45,8 +45,8 @@ class UserController extends \BaseController {
 			'country' => 'required',
 			'email' => 'required|email|unique:users',  //unique email in the user table
 			'email_confirmation' => 'required|email|same:email',
-			'password' => 'required|min:5',
-			'password_confirmation' => 'required|min:5|same:password',
+			'password' => 'required|min:6',
+			'password_confirmation' => 'required|min:6|same:password',
 			'injuryDate' => 'before:today'
 			);
 		
@@ -73,9 +73,13 @@ class UserController extends \BaseController {
 		
 			$user->save();
 			
-			//Kyai (khai*) oops <3<3,3 i dont know how to route to userProfilePage with ID for register or login. It also might be convenient to log them in when they register
 			Auth::login($user);
-			// return View::make('unregisterUserView.login', $user->id);
+			
+			//Sends an email to the user with a welcome message
+			Mail::send('emails.welcome', array('firstName'=>Input::get('firstName')), function($message){
+    			$message->to(Input::get('email'), Input::get('firstName').' '.Input::get('lastName'))->subject('Welcome to Spinal Cord Rehabilitation!');
+    		});
+    		
 			return Redirect::action('UserController@PremoduleQuestionaire', array($user->id));
 		 } else {
 		 	
@@ -230,8 +234,8 @@ class UserController extends \BaseController {
 		
 		$rules = array(
 			'password' => 'required|hashmatch:password',
-			'new_password' => 'required|min:5|different:password',
-			'confirm_password' => 'required|min:5|same:new_password'
+			'new_password' => 'required|min:6|different:password',
+			'confirm_password' => 'required|min:6|same:new_password'
 		);
 		
 		$v = Validator::make($input, $rules, $messages);
