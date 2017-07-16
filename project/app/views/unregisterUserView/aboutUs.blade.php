@@ -22,9 +22,9 @@
     <br>
     <div class="col-md-6">
         <br>
-        <h3 style="color: #D60505">About Spinal Cord Injury Rehabilitation</h3>
+        <h3>About Spinal Cord Injury Rehabilitation</h3>
         <p class="basicFontStyle" style="text-align: justify">
-            Spinal - Sustaining a spinal-cord injury is a life-changing event. In Australia, more than one person sustains spinal cord injury every
+            Sustaining a spinal-cord injury is a life-changing event. In Australia, more than one person sustains spinal cord injury every
             day and many of these individuals are under the age of 24. Currently 12,000 Australians live with spinal cord injury and aside from the personal trauma,
             the cost to our society is $2 billion a year. Without an effective cure for spinal cord injury, the emotional and financial costs to individuals, their families, 
             and to our community are life-long. We are developing new therapeutic approaches for spinal cord repair using cell purification, development biology, natural 
@@ -32,10 +32,12 @@
             <br><br>
         </p>
     </div>
-    <br>
     <!--ABOUT THE CLINICAL TRIALS-->
+    <div class=col-md-12>
+        <br><br>
+    </div>
     <div class="col-md-6">
-        <h3 style="color: #D60505">About The Clinical Trials</h3>
+        <h3>About The Clinical Trials</h3>
         <p class="basicFontStyle" style="text-align: justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
             varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
@@ -60,7 +62,7 @@
     </div>
     <div class="col-md-6">
         <br><br>
-        <h3 style="color: #D60505">About The Educational Modules</h3>
+        <h3>About The Educational Modules</h3>
         <p class="basicFontStyle" style="text-align: justify">
             Spinal Cord Injury Rehabilitation provides a range of in-depth and interactive educational modules on matters relating to the spinal cord with an equal number of 
             online quizzes to test your knowledge.
@@ -83,9 +85,9 @@
         </p>
     </div>
     <div class="col-md-12">
-        <a href="abstractModule"><button class="btns4 greenbluelight2" style="width:35%">Access Educational Module Abstracts</button></a>
+        <a href="abstractModule"><button class="btns4 greybrown2" style="width:35%">Access Educational Module Abstracts</button></a>
         <br>
-        <a href={{{ route("education_modules")}}}><button class="btns4 greenbluedark2" style="width:35%">Access Full Educational Modules</button></a>
+        <a href={{{ route("education_modules")}}}><button class="btns4 greybrown2" style="width:35%">Access Full Educational Modules</button></a>
             
     </div>
 </div>

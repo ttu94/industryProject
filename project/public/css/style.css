@@ -26,6 +26,7 @@
 /*otherlight green - #DDE791*/
 /*otherdark green - #909A45*/
 /*verylight blue - #E8EEF5*/
+/*bright purple - #8C97F4*/
 
 
 html,
@@ -38,7 +39,8 @@ body {
     min-width: 1600px;
     overflow-x: auto;
     /*background-color: #F8F8F8;*/
-    background-color: #E8EEF5;
+    /*background-color: #E8EEF5;*/
+    background-color: #EFEFEF;
     /*background-color: white;*/
 }
 
@@ -118,18 +120,20 @@ hr {
 
 .topHeader {
 	/*background-color: #F2D388;*/
-	background-color: #195DA3;
+	/*background-color: #195DA3;*/
 	/*background-color: white;*/
 	/*background-color: #F8F8F8;*/
 	/*background-color: #88ABA5;*/
 	/*background-color: #96BDB6;*/
 	/*background-color: #A7D2CB;*/
 	/*background-color:  #a7c4d2;*/
-	/*background-color: #a7afd2;*/
+	/*background-color: #A7AFD2;*/
+	
+	/*background-color: #8C97F4;*/
+	background-color: grey;
     border-bottom-style: solid;
-    border-color: #D60505;
-    /*border-color: grey;*/
-    border-width: 5px;
+    border-color: #A9A9A9;
+    border-width: 2px;
     width:100%;
 }
 
@@ -163,9 +167,8 @@ ul {
     /*padding: 50px 50px;*/
     border-bottom-style: solid;
     /*border-color: #8A7D6B;*/
-    /*border-color: grey;*/
-    border-color: #D60505;
-    border-width: 5px;
+    border-color: #A9A9A9;
+    border-width: 2px;
     padding-left: 5px;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -189,13 +192,19 @@ ul {
 }
 
 .rehab:hover {
-    color: #D60505;
+    /*color: #D60505;*/
+    /*color: #8C97F4;*/
+    /*color: #5A9254;*/
+    color: #FFC100;
     text-decoration: none;
 }
 
 a:hover {
     /*color: #A3957F;*/
-    color: #D60505;
+    /*color: #D60505;*/
+    /*color: #8C97F4;*/
+    /*color: #5A9254;*/
+    color: #FFC100;
     text-decoration: none;
 }
 
@@ -209,7 +218,10 @@ a:hover {
 }
 
 .headerTitle:hover {
-    color: #D60505;
+    /*color: #D60505;*/
+    /*color: #8C97F4;*/
+    /*color: #5A9254;*/
+    color: #FFC100;
 }
 
 .logo {
@@ -230,16 +242,18 @@ a:hover {
     height:auto;
     min-height:70px;
     /*background-color: #F2D388;*/
-    background-color: #195DA3;
+    /*background-color: #195DA3;*/
     /*background-color:white;*/
     /*background-color: #A7D2CB;*/
+    /*background-color: #A7AFD2;*/
+    /*background-color: #8C97F4;*/
+    background-color: grey;
     
     text-align: center;
     border-top-style: solid;
-    border-width: 5px;
+    border-width: 2px;
     /*border-color: #8A7D6B;*/
-    /*border-color: grey;*/
-    border-color: #D60505;
+    border-color: #A9A9A9;
     /*background-color: #a7afd2;*/
     /*box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);*/
 }
@@ -259,19 +273,22 @@ a:hover {
     position: relative;
     /*background-color: #F2D388;*/
     /*background-color: #4090E1;*/
-    background-color: #195DA3;
+    /*background-color: #195DA3;*/
+    
+    /*background-color: #CAEBF2;*/
     /*background-color: #5E8DBE;*/
     /*background-color: white;*/
     /*background-color: #A7D2CB;*/
     /*background-color:  #a7c4d2;*/
-    /*background-color: #a7afd2;*/
+    /*background-color: #A7AFD2;*/
+    background-color: #8C97F4;
+    /*background-color: grey;*/
     padding: 5px;
     text-align: center;
     /*border-top-style: solid;*/
     border-bottom-style: solid;
     /*border-color: #8A7D6B;*/
-    border-color: grey;
-    /*border-color: #D60505;*/
+    border-color: #A9A9A9;
     border-width: 2px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -290,12 +307,13 @@ a:hover {
     position: relative;
     /*background-color: #A7D2CB;*/
     /*background-color: #195DA3;*/
-    background-color: #4090E1;
+    /*background-color: #4090E1;*/
+    background-color: #A9A9A9;
     /*background-color: white;*/
     text-align: center;
     border-bottom-style: solid;
     /*border-color: #8A7D6B;*/
-    border-color: grey;
+    border-color: #A9A9A9;
     /*border-color: #D60505;*/
     border-width: 2px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
@@ -361,7 +379,7 @@ a:hover {
 /*Carousel css*/
 
 #myCarousel {
-    /*width: 95%;*/
+    /*width: 65%;*/
     height: 100%;
     margin-left: 50px;
     margin-right: 50px;
@@ -696,7 +714,10 @@ button:hover {
     /*background-color:#F2D388;*/
     /*background-color: #FFA700;*/
     /*background-color: #D60505;*/
-    background-color: #CFDD63;
+    /*background-color: #CFDD63;*/
+    /*background-color: #5A9254;*/
+    /*background-color: #FFC100;*/
+    background-color: #D60505;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 }
 

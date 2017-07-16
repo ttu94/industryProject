@@ -7,12 +7,14 @@
 @section('content')
 <!--<div class="container-fluid">-->
   <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
-    <!--style="box-shadow: 10px 10px 5px #888888"-->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" style="box-shadow: 10px 10px 5px #888888">
+    
     <!-- Indicators -->
     <ol class="carousel-indicators" >
       <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <!--<li data-target="#myCarousel" data-slide-to="3"></li>-->
     </ol>
 
     <!-- Wrapper for slides -->
@@ -20,7 +22,7 @@
 
       <div class="item active">
         <!--<img src="http://i.imgur.com/K2FgPBx.jpg" alt="Spinal Cord" style="height: 750px">-->
-        <img src="images/Spinal1.jpg" alt="Spinal Cord" style="height: 850px; width: 1500px">
+        <img src="images/Spinal1.jpg" alt="Spinal Cord" style="height: 750px">
         
         <div class="carousel-caption">
           <h3>Spinal Cord</h3>
@@ -30,7 +32,7 @@
 
       <div class="item">
         <!--<img src="https://images6.alphacoders.com/805/thumb-1920-805656.jpg" alt="Dr John St James" style="height: 750px">-->
-        <img src="images/GRIDD-3.jpg" alt="Dr John St James" style="height: 850px; width: 1500px">
+        <img src="images/GRIDD-3.jpg" alt="Dr John St James" style="height: 750px">
         <div class="carousel-caption">
           <h3>Dr James St John</h3>
           <p>test</p>
@@ -39,7 +41,7 @@
       
       <div class="item">
         <!--<img src="https://images6.alphacoders.com/805/thumb-1920-805656.jpg" alt="Dr John St James" style="height: 750px">-->
-        <img src="images/Spinal2.jpg" alt="SCI" style="height: 850px; width: 1500px">
+        <img src="images/Spinal2.jpg" alt="SCI" style="height: 750px">
         <div class="carousel-caption">
           <h3>SCI</h3>
           <p>test</p>

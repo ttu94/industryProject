@@ -21,7 +21,7 @@
                 {{ implode('',$errors->all('<p class="error" style="color:red">:message</p>')) }}
             </div>
             @endif
-            <h2 style="margin-bottom:20px">Personal Details</h2>
+            <h2 style="margin-bottom:20px;">Personal Details</h2>
             <div style="column-count:2">
                 <input class="register" {{ Form::text('firstName', '',array('placeholder' =>'First Name'))}}
                 <input class="register" {{ Form::text('lastName', '',array('placeholder' =>'Last Name'))}}
@@ -42,7 +42,7 @@
                 <input class="register" {{ Form::email('email_confirmation', '',array('placeholder' =>"Confirm Email"))}}
             </div>
             
-            <div class="country" name="country" style="background-color:white">
+            <div class="country" name="country" style="background-color:white; color:#767676">
                     <select name="country">
                         <option value="Australia" selected="selected">Australia</option>
                         <option value="Afganistan">Afghanistan</option>

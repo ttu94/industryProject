@@ -362,10 +362,8 @@ class UserController extends \BaseController {
 		if(Auth::user()->admin == '1'){
 			// $user = User::find($id);
 			// return View::make('adminView.adminHomePage')->withAdmin($user);
-			$moduleTestDB = DB::table('moduleTests')
-				->select('*')
-				->get();
-			return View::make('adminView.adminQuizEditor', compact('moduleTestDB'));
+			// $moduleTestDB = DB::select('select * from moduleTests');
+			return View::make('adminView.adminQuizEditor');
 		} else {
 			Auth::logout();
 			return Redirect::action('AdminController@index');
