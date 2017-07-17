@@ -7,7 +7,7 @@
 	
 	   <!--stylesheets-->
 	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    {{ HTML::style('css/style.css', array(), true) }}
+    {{ HTML::style('css/styless.css', array(), true) }}
     
    <!--sortable table css and js-->
    {{ HTML::style('css/sortable-theme-bootstraps.css') }}

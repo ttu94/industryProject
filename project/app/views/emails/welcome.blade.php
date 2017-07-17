@@ -15,7 +15,7 @@
 			Sincerely,<br><br>
 			The SiCure Team
 			<br>
-			<img src="{{ $message->embed(public_path() . '/images/SiCURE.png') }}" height="200px" width="400px"/>
+			<img src="{{ $message->embed(public_path() . '/images/SiCURE.png') }}" height="50px" width="100px"/>
 			
 		</div>
 	</body>

@@ -42,7 +42,7 @@
                 <input class="register" {{ Form::email('email_confirmation', '',array('placeholder' =>"Confirm Email"))}}
             </div>
             
-            <div class="country" name="country" style="background-color:white; color:#767676">
+            <div class="country" name="country" style="background-color:white">
                     <select name="country">
                         <option value="Australia" selected="selected">Australia</option>
                         <option value="Afganistan">Afghanistan</option>

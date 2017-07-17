@@ -366,8 +366,33 @@ class UserController extends \BaseController {
 		if(Auth::user()->admin == '1'){
 			// $user = User::find($id);
 			// return View::make('adminView.adminHomePage')->withAdmin($user);
-			// $moduleTestDB = DB::select('select * from moduleTests');
-			return View::make('adminView.adminQuizEditor');
+			$moduleTestDB = DB::table('moduleTests')
+				->select('*')
+				->get();
+			return View::make('adminView.adminQuizEditor', compact('moduleTestDB'));
+		} else {
+			Auth::logout();
+			return Redirect::action('AdminController@index');
+		}
+	}
+	
+	//admin controller to upate quiz questisons
+	public function UpdateQuestion($questionID)
+	{
+		if(Auth::user()->admin == '1'){
+			// $user = User::find($id);
+			// return View::make('adminView.adminHomePage')->withAdmin($user);
+			// $questionId = Input::get('modQuestions');
+			// $question = Question::find($questionId);
+			$val = Input::get('modQuestions');
+			$questionData = DB::table('moduleTests')
+				->select('*')
+				->where('id', $val)
+				->get();
+				
+			// return View::make('adminView.adminQuestionEdit', compact('id'));
+			return View::make('adminView.adminQuestionEdit', compact('val'));
+			
 		} else {
 			Auth::logout();
 			return Redirect::action('AdminController@index');

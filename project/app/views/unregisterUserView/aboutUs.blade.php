@@ -92,7 +92,7 @@
     </div>
 </div>
 
-<div class="yellowBar">
+<div class="redBar">
     <h3 class="meetDoctor" style="text-align:center; color:white"><br>Meet the team part of the clinical trial.</h3>
 </div>
 

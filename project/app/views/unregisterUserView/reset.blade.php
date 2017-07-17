@@ -1,12 +1,12 @@
 @extends('layouts.unregisteredMaster')
 
 @section('title')
-	Forgotten Password Retrieval
+	Password Reset
 @endsection
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
-   <h2 style="color:white">Need help with your password?</h2>
+   <h2 style="color:white">Password Reset</h2>
 @endsection
 
 @section('content')

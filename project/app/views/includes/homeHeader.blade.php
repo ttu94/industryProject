@@ -25,7 +25,7 @@
         </div>
         
         <!--bottom section of header-->
-        <div class="bottomHeader" style="border-color: #8C97F4; border-bottom-style: solid; border-width:3px">
+        <div class="bottomHeader" style="border-color: #B70014; border-bottom-style: solid; border-width:3px">
                 <!--<div class="topMargin">-->
                 <!--Image as home page link-->
                 <ul>

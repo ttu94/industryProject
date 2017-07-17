@@ -21,7 +21,7 @@
        
         <div class="col-md-12">
             <br>
-            <h3 style="color:#595145">General</h3>
+            <h3>General</h3>
             <div class="faq_container">
                 <div class="faq">
                   <div class="faq_question">I have forgotten my password, what should I do?</div>
@@ -70,7 +70,7 @@
                        </div>        
                 </div>
                 <br>
-                <h3 style="color:#595145">Modules</h3> 
+                <h3>Modules</h3> 
                 <div class="faq">
                   <div class="faq_question">Can I download the educational module content?</div>
                        <div class="faq_answer_container">

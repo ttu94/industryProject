@@ -48,16 +48,23 @@
 <div class="container-fluid">
     <br>
     <div class="col-md-12 basicFontStyle">
-        <a href="">ADD Question</a>
-        <select size="15" name="modQuestions" id="questionlist">
-            @if($moduleTestDB)
-                @foreach($moduleTestDB as $moduleTestDB)
-                    <option>{{ $moduleTestDB->question }}</option>
-                @endforeach
-        @else
-            <option>no ModuleTest Quizes</option>
-        @endif
-        </select>
+
+         <!--<form action="{{ action('UserController@UpdateQuestion') }}" method="POST">-->
+        {{ Form::open(array('route' => 'update_question')) }}
+            <select size="15" name="modQuestions" id="questionlist">
+                @if($moduleTestDB)
+                    @foreach($moduleTestDB as $moduleTestDB)
+                        <option value="{{ $moduleTestDB->id }}">{{ $moduleTestDB->question }}</option>
+                    @endforeach
+                @else
+                    <option disable selected>no ModuleTest Quizes</option>
+                @endif
+            </select>
+            
+            <button class="button redbrown" type="submit" style="float:right; width:50%">Add Question</button> 
+        <!--</form>-->
+        {{ Form::close() }}
+        <!--<a href=""> ADD Question</a>-->
     </div>
 </div>
 

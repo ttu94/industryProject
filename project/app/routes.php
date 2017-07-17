@@ -32,6 +32,8 @@ Route::get('search', function()
 //Route back to website home page
 Route::get('home', array('as' => 'home', 'uses' => 'HomeController@index'));
 
+// ADMIN ROUTES*********************************************************************************************************************************
+// *************************************************************************************************************************************************
 // ROUTES CONTROLLER FOR ADMIN*************************************************************************************
 Route::resource('admin', 'AdminController');
 
@@ -58,6 +60,10 @@ Route::get('adminHomePage/adminQuizEditor', function()
 {
    return View::make('adminView/adminQuizEditor'); 
 });
+
+//route for editing module questions
+Route::post('adminHomePage/adminQuizEditor/question/{id}', array('as' => 'update_question', 'uses' => 'UserController@UpdateQuestion'));
+
 
 // ROUTES TO CONTrOLLER FOR USERS*********************************************************************************
 
@@ -124,12 +130,17 @@ Route::get('update_details', array('as' => 'update.details', 'uses' => 'PageCont
 //Route protection for educational module
 Route::get('education_modules', array('as' => 'education_modules', 'uses' => 'PageController@EducationModules'));
 
+
+
+
+
 //Route for quiz information before it begins
 //Backup ----- Route::get('educational_module/quiz_information/{id}/{quizNo}', array('as' => 'module_quiz_info', 'uses' => 'PageController@ModuleQuizInfo')); //kenny added{quizNo} 
 Route::get('educational_module/quiz_information/{quizNo}', array('as' => 'module_quiz_info', 'uses' => 'PageController@ModuleQuizInfo')); //kenny added{quizNo} 
 
 //Route protection for module quizzes, all quizzes wil use this template
 Route::get('educational_module/quiz/{quizNo}', array('as' => 'module_quiz', 'uses' => 'PageController@ModuleQuiz'));
+
 
 
 
