@@ -6,7 +6,7 @@
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
-   <h2>Need help with your password?</h2>
+   <h2 style="color: white">Need help with your password?</h2>
 @endsection
 
 @section('content')
@@ -38,7 +38,7 @@
                 <input class="register" style="width: 100%" type="text" name="email" placeholder="Email address">
                 <br>
                 <div style="text-align: center">
-                    <button class="greenbluemedium" type="submit" vaule="Send Reminder" style="width: 250px">Request Password</button>
+                    <button class="darkgrey2" type="submit" vaule="Send Reminder" style="width: 250px">Request Password</button>
                     <br><br>
                     <p style="text-align: justify;line-height:40px">Please follow the prompts in the email.
                     <br> If you have not received the email, check your <u>Spam/Junk folder</u>. 

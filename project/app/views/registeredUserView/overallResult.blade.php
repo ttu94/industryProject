@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="col-md-12">
-            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 greenbluedark2">See Module 1 Results</button></a>
+            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 1 Results</button></a>
         </div>
     </div>   
     <br><br>
@@ -77,7 +77,7 @@
             </div>
         </div>
         <div class="col-md-12">
-            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 greenbluedark2">See Module 2 Results</button></a>
+            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 2 Results</button></a>
         </div>
     </div>
     <br><br>
@@ -106,7 +106,7 @@
             </div>
         </div>
         <div class="col-md-12">
-            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 greenbluedark2">See Module 3 Results</button></a>
+            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 3 Results</button></a>
         </div>
     </div>
     <br><br>
@@ -135,7 +135,7 @@
             </div>
         </div>
         <div class="col-md-12">
-            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 greenbluedark2">See Module 4 Results</button></a>
+            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 4 Results</button></a>
         </div>    
     </div>
     <br><br>
@@ -164,7 +164,7 @@
             </div>
         </div>
         <div class="col-md-12">
-            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 greenbluedark2">See Module 5 Results</button></a>
+            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 5 Results</button></a>
         </div>    
     </div>
     <br><br>
@@ -193,7 +193,7 @@
             </div>
         </div>
         <div class="col-md-12">
-            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 greenbluedark2">See Module 6 Results</button></a>
+            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 6 Results</button></a>
         </div>
     </div>
     <br><br>
@@ -222,7 +222,7 @@
             </div>
         </div>
         <div class="col-md-12">
-            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 greenbluedark2">See Module 7 Results</button></a>
+            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 7 Results</button></a>
         </div>
     </div>
     <br><br>
@@ -251,7 +251,7 @@
             </div>
         </div>
         <div class="col-md-12">
-            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 greenbluedark2">See Module 8 Results</button></a>
+            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 8 Results</button></a>
         </div>
     </div>
     <br><br>
@@ -280,7 +280,7 @@
             </div>
         </div>
         <div class="col-md-12">
-            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 greenbluedark2">See Module 9 Results</button></a>
+            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 9 Results</button></a>
         </div>
     </div>
     <br><br>
@@ -309,7 +309,7 @@
             </div>
         </div>
         <div class="col-md-12">
-            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 greenbluedark2">See Module 10 Results</button></a>
+            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 10 Results</button></a>
         </div>
     </div>
     <br><br>
@@ -334,11 +334,11 @@
         </div>
         <div class="col-md-6" id="ovalContain">
             <div id="ovalPerc">
-                <p class="percent" style="text-align: center">73%</p>
+                <p class="percent">73%</p>
             </div>
         </div>
         <div class="col-md-12">
-            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 greenbluedark2">See Module 11 Results</button></a>
+            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 11 Results</button></a>
         </div>
     </div>
     

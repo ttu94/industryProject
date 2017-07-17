@@ -14,7 +14,7 @@
     <br>
     <!--Flash message for account reactivation -->
     @if(Session::has('success'))
-        <div class="alert alert-success alert-dismissable fade in"  style="background-color: #DBEDEA; border: none">
+        <div class="alert alert-success alert-dismissable fade in"  style="background-color: #D5E1EE; border: none">
             <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
             <h2 style="text-align:center">{{ Session::get('success') }}</h2>
         </div>
@@ -25,7 +25,7 @@
     <div id="noLogin">
         <h3 class="raleway">Don't have an account?<br>Register now</h2>
         <br>
-        <a href="register"><button class="button greybrown2" style="width:100%">Create Account</button></a>
+        <a href="register"><button class="button darkgrey2" style="width:100%">Create Account</button></a>
     </div>
     </div>
     
@@ -47,11 +47,11 @@
                 <input class="login" style="font-size:18px" type="password" placeholder="Password" name="password">
                 <br>
                 <br>
-                <button class="button greybrown2">Sign In</button>
+                <button class="button darkgrey2">Sign In</button>
                 <br><br>
-                <a href="forgottenPassword" style="color:#88ABA5;font-size:18px">Forgot password?</a>
+                <a href="forgottenPassword" style="color:#195DA3; font-size:18px">Forgot password?</a>
                 <br><br>
-                <a href="adminLogin" style="color:#88ABA5;font-size:18px">Admin Login</a>
+                <a href="adminLogin" style="color:#195DA3; font-size:18px">Admin Login</a>
             </div>
         {{ Form::close() }}
     </div>

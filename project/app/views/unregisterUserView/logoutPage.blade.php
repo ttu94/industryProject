@@ -15,8 +15,8 @@
 <div class="container-fluid basicFontStyle">
     <br>
     <p style="font-size:20px">You are now logged out of your account.<br><br>
-       You can log back into your account <a href="login" style="color: #88ABA5"><u>here</u></a> 
-       or go back to the <a href="home" style="color: #88ABA5"><u>Homepage</u></a>.
+       You can log back into your account <a href="login" style="color: #195DA3"><u>here</u></a> 
+       or go back to the <a href="home" style="color: #195DA3"><u>Homepage</u></a>.
     </p>
 
 </div>

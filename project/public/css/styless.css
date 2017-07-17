@@ -17,7 +17,11 @@
 /*red (about us page/hover colours) - #B70014*/
 /*medium blue (panel colours) - #467DB5*/
 /*light blue (panel colours) - #759DC7*/
+/*pink (warning messages) - #F3D6D9*/
+/*pale blue (update message) - #D5E1EE*/
 
+/*green (result > 85) - #9FD26C*/
+/*burnt orange (50 < result > 85) -#EAB279 */
 
 /*cream - #FAEBD7*/
 
@@ -123,6 +127,16 @@ hr {
 .darkgrey2:hover {
     color: white;
     background-color: #323232;
+}
+
+.warnred {
+    color: white;
+    background-color: #B70014;
+}
+
+.warnred:hover {
+    color: #B70014;
+    background-color: white;
 }
 
 /*TopHeader**************************************************************************/
@@ -543,7 +557,8 @@ button:hover {
 }
 
 .otherDetailBox {
-    background: linear-gradient(#ffffff, #e6e6e6);
+    /*background: linear-gradient(#ffffff, #e6e6e6);*/
+    background-color: white;
     width:100%;
     max-width: 600px;
 }
@@ -951,7 +966,7 @@ button2 {
 }
 
 .panelsOne {
-    background-color: #A7D2CB;
+    background-color: #467DB5;
     color: white;
     font-family: Raleway;
     min-height: 240px;
@@ -959,16 +974,6 @@ button2 {
     padding-right: 20px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 } 
-
-/*.moduleOneButton {*/
-/*    width: 40%;*/
-/*    display:block;*/
-/*    background-color: white;*/
-/*    color: #A7D2CB;*/
-/*    bottom: 15px;*/
-/*    position: absolute;*/
-/*    left: 30%;*/
-/*}*/
 
 .btns {
     cursor: pointer;
@@ -990,7 +995,7 @@ button2 {
 }
 
 .panelsTwo {
-    background-color: #CFDD63;
+    background-color: #759DC7;
     color: white;
     font-family: Raleway;
     min-height: 240px;
@@ -998,54 +1003,6 @@ button2 {
     padding-right: 20px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 }
-
-/*.moduleTwoButton {*/
-/*    width: 40%;*/
-/*    display:block;*/
-/*    background-color: white;*/
-/*    color: #88ABA5;*/
-/*    bottom: 15px;*/
-/*    position: absolute;*/
-/*    left: 30%;*/
-/*}*/
-
-/*.panelsThree {*/
-/*    background-color: #576E6A;*/
-/*    color: white;*/
-/*    font-family: Raleway;*/
-/*    min-height: 240px;*/
-/*    padding-left: 15px;*/
-/*    padding-right: 15px;*/
-/*}*/
-
-/*.moduleThreeButton {*/
-/*    text-align: center;*/
-/*    width: 40%;*/
-/*    display:block;*/
-/*    margin:0 auto;*/
-/*    background-color: white;*/
-/*    color: #576E6A;*/
-/*}*/
-
-.panelsFour {
-    background-color: #88ABA5;
-    color: white;
-    font-family: Raleway;
-    margin-left: 5px;
-    min-height: 240px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.panelsFive {
-    background-color: #A7D2CB;
-    color: white;
-    font-family: Raleway;
-    min-height: 240px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 
 /*EDUCATIONAL MODULE PAGES (1-11) CSS*****************************************/
 
@@ -1136,7 +1093,7 @@ td.b2 {
 tr:nth-child(even){background-color: white}
 
 th {
-    background-color: white;
+    background-color: #79B1EA;
     color: white;
 }
 
@@ -1542,9 +1499,7 @@ to { opacity: 1; }
 
 .overallPanel {
     height: 500px;
-    /*background: linear-gradient(#E6E6E6, white);*/
-    /*background: linear-gradient(#F6EDEE, white);*/
-    background: linear-gradient(#F1E4E6, white);
+    background: linear-gradient(#D5E1EE, white);
     /*background-color: green;*/
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
     padding: 20px;
@@ -1564,7 +1519,7 @@ to { opacity: 1; }
 }
 
 .moduleResPanel {
-    background: linear-gradient(#A7D2CB, white);
+    background: linear-gradient(#79B1EA, white);
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 40px;
@@ -1628,11 +1583,11 @@ tr.r {
 #ovalPerc {
     height:175px;
     width:250px;
-    background:#F2D388;
-    border: 10px black double;
+    background: #9FD26C;
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     border-radius: 50%;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
     /*margin-left:25%;*/
     /*margin-top:25%;*/
 }
@@ -1640,8 +1595,10 @@ tr.r {
 .percent {
     text-align: center;
     margin-top:5%;
+    padding:20px;    
     font-size: 90px;
     position: relative;
+    color: black;
 }
 
 

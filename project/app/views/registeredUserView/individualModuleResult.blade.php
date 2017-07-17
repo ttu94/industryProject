@@ -16,10 +16,10 @@
     <h1 style="text-align:center"><strong>[Module Name]</strong></h1>
     <br>
     <div class="col-md-6">
-        <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="indiBtn greenbluedark2">Go to Module Information</button></a>
+        <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="indiBtn darkgrey2">Go to Module Information</button></a>
     </div>
     <div class="col-md-6">
-         <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="indiBtn2 greenbluedark2">Retake the quiz >></button></a>
+         <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="indiBtn2 darkgrey2">Retake the quiz >></button></a>
     </div>
     <br><br><br><br>
     <div class="col-md-12">

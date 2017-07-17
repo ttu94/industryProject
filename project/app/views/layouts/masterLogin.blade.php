@@ -10,7 +10,7 @@
  {{ HTML::style('css/styless.css', array(), true) }}
  
  <!--sortable table css and js-->
- {{ HTML::style('css/sortable-theme-bootstraps.css') }}
+ {{ HTML::style('css/sortable-theme-bootstrap.css') }}
  {{ HTML::script('js/sortable.min.js') }}
  
  <!--sorting div-->

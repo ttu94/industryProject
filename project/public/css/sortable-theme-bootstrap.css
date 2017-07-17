@@ -59,8 +59,8 @@ table[data-sortable].sortable-theme-bootstrap {
   font-family: Raleway;
   font-size: 20px;
   line-height: 23px;
-  color: #595145;
-  background: white;
+  color: black;
+  background-color: white;
 }
 /* line 12, ../sass/sortable-theme-bootstrap.sass */
 table[data-sortable].sortable-theme-bootstrap thead th {
@@ -72,17 +72,17 @@ table[data-sortable].sortable-theme-bootstrap tbody td {
 }
 /* line 18, ../sass/sortable-theme-bootstrap.sass */
 table[data-sortable].sortable-theme-bootstrap th[data-sorted="true"] {
-  color: #595145;
-  background: #F2D388;
-  border-bottom-color: #595145;
+  color: black;
+  background-color: #C2C2C2;
+  border-bottom-color: #e0e0e0;
 }
 /* line 23, ../sass/sortable-theme-bootstrap.sass */
 table[data-sortable].sortable-theme-bootstrap th[data-sorted="true"][data-sorted-direction="descending"]:after {
-  border-top-color: #595145;
+  border-top-color: black;
 }
 /* line 26, ../sass/sortable-theme-bootstrap.sass */
 table[data-sortable].sortable-theme-bootstrap th[data-sorted="true"][data-sorted-direction="ascending"]:after {
-  border-bottom-color: #595145;
+  border-bottom-color: black;
 }
 /* line 31, ../sass/sortable-theme-bootstrap.sass */
 table[data-sortable].sortable-theme-bootstrap.sortable-theme-bootstrap-striped tbody > tr:nth-child(odd) > td {

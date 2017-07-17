@@ -13,13 +13,13 @@
 <div class="container-fluid"> 
     <br>
         @if(Session::has('success'))
-            <div class="alert alert-success alert-dismissable fade in"  style="background-color: #DBEDEA; border: none">
+            <div class="alert alert-success alert-dismissable fade in"  style="background-color: #D5E1EE; border: none">
                 <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
                 <h2 style="text-align:center">{{ Session::get('success') }}</h2>
             </div>
         @endif
         @if(Session::has('update_success'))
-            <div class="alert alert-success alert-dismissable fade in"  style="background-color: #DBEDEA; border: none">
+            <div class="alert alert-success alert-dismissable fade in"  style="background-color: #D5E1EE; border: none">
                 <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
                 <h2 style="text-align:center">{{ Session::get('update_success') }}</h2>
             </div>
@@ -34,7 +34,7 @@
         <div class="personalDetail">
             <br>
             <h3>&nbsp;Personal Details</h3>
-            <a class="basicFontStyle" href={{ route("update_details", array("id" => Auth::user()->id)) }} style="float:right;color:#67AB9F">Edit Details</a>
+            <a class="basicFontStyle" href={{ route("update_details", array("id" => Auth::user()->id)) }} style="float:right;color:#195DA3">Edit Details</a>
             <br>
         </div>
         <hr>     
@@ -68,23 +68,24 @@
             <!--CHANGE PASSWORD-->
             <div class="faq_container">
                <div class="faq">
-                  <div class="faq_question" style="background-color:#EFEFEF;color:#67AB9F;padding-left:20px; box-shadow: none">Change Password</div>
+                  <div class="faq_question" style="background-color:#EFEFEF;color:#195DA3;padding-left:20px; box-shadow: none">Change Password</div>
                        <div class="faq_answer_container" style="background-color:#EFEFEF">
-                          <div class="faq_answer"><br>
+                          <div class="faq_answer">
                               {{ Form::model($user, array('method' => 'PUT', 'route' => array('update_password', Auth::user()->id)))}}
                                   <!--<div style="column-count:2">-->
                                     <div class="col-md-12">
                                         <input class="register" style="width: 50%" type="password" name="password" placeholder="Current Password*">
-                                        <br><br><br><br>
+                                        <br><br><br>
                                         <input class="register" style="width: 50%" type="password" name="new_password" placeholder="New Password*">
                                         <br><br><br>
                                         <input class="register" style="width: 50%" type="password" name="confirm_password" placeholder="Confirm New Password*">
+                                        <br><br><br>
                                     </div>
-                                    <br>
                                     <div style="margin-top:20px; margin-left: 15px">
-                                      <button class ="button greenbluedark2" type="submit">Change password</button>
+                                      <button class ="button darkgrey" type="submit">Change password</button>
                                     </div>
                               {{ Form::close() }}
+                              <br>
                           </div>
                        </div>        
                 </div>

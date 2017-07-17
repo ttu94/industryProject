@@ -349,7 +349,6 @@
             <!--Div box will display if user selects anything besides patient-->
             <div class="col-md-12  otherDetailBox boxtwo">
                 <!--<div class="linearRadio">-->
-                    <br>
                     <p>Do you know anyone who is suffering from spinal cord injury (SCI)?<font color="red">*</font></p>
                     {{ Form::radio('onBehalf', 'yes')}} Yes
                     {{ Form::radio('onBehalf', 'no', true)}} No
@@ -357,9 +356,9 @@
     </div>
     <div class="col-md-12">
         <br>
-        <a class="basicFontStyle" href={{ route("user.update", array("id" => Auth::user()->id)) }} style="margin: 0 auto"><button class="button greenbluedark2" type="submit">Save Changes</button></a>
+        <a class="basicFontStyle" href={{ route("user.update", array("id" => Auth::user()->id)) }} style="margin: 0 auto"><button class="button darkgrey2" type="submit">Save Changes</button></a>
         {{ Form::close() }} 
-        <button class="button redbrown" data-toggle="modal" data-target="#deleteModal" style="float:right">Deactivate Account</button> 
+        <button class="button warnred" data-toggle="modal" data-target="#deleteModal" style="float:right">Deactivate Account</button> 
     </div>    
             
      {{ Form::open(array('method' => 'DELETE', 'route' => array('user.destroy', Auth::user()->id))) }}
@@ -377,8 +376,8 @@
                     </p>
                   </div>
                   <div class="modal-footer">
-                     <button class="button greybrown2" data-dismiss="modal" style="float:left; width:40%">Cancel</button>
-                    <button class="button redbrown" type="submit" style="float:right; width:50%">Deactivate</button> 
+                     <button class="button darkgrey2" data-dismiss="modal" style="float:left; width:40%">Cancel</button>
+                    <button class="button warnred" type="submit" style="float:right; width:50%">Deactivate</button> 
                   </div>
                 </div>
               </div>

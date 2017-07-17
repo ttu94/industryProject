@@ -11,13 +11,9 @@
 
 @section('content')
 <script>
-    var testarray = "<?php  ?>";
-    var test = "<?php $var = 2; echo $var ?>";
-    console.log("test: " + test);
+ var conceptName = $('#modTitleList').find(":selected").val();
+ console.log("value: " + conceptName)
     
-    var e = document.getElementById("moduleTitleList");
-    var strUser = e.options[e.selectedIndex].value;
-    console.log("struser: " + strUser);
 </script>
 
 <div class="container-fluid">

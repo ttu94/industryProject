@@ -37,7 +37,7 @@
             <p style="color:red; font-size: 15px">Password must be a minimum of 6 characters</p>
             <br>
             <!--<input class="button greybrown2" type="submit" value="Reset Password">-->
-            <button class="button greybrown2" type="submit" value="Reset Password" style="margin: 0 auto">Submit</button>
+            <button class="button darkgrey2" type="submit" value="Reset Password" style="margin: 0 auto">Submit</button>
         </form>
     </div>
     

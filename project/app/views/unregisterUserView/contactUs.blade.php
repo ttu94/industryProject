@@ -45,7 +45,7 @@
             </div>
             <textarea id="comment" name="contactComment" placeholder="How can we help you?"></textarea>
             <br>
-            <button class="button greenbluemedium" type="submit, button" style="float:right"form="contactUsForm" value="Submit" data-toggle="modal" data-target="#myModal">Send</button>
+            <button class="button darkgrey" type="submit, button" style="float:right"form="contactUsForm" value="Submit" data-toggle="modal" data-target="#myModal">Send</button>
         </form>
   <!-- Modal for contactUs -->
   <div class="modal fade" id="myModal" role="dialog">
@@ -62,7 +62,7 @@
           </p>
         </div>
         <div class="modal-footer" style="text-align:center">
-          <button type="button" class="button2 greenbluemedium" style="width: 100px" data-dismiss="modal">Ok</button>
+          <button type="button" class="button2 darkgrey" style="width: 100px" data-dismiss="modal">Ok</button>
         </div>
       </div>
     </div>
@@ -107,7 +107,7 @@
               <!--<p style= "text-align: center">Leave a rating!</p>-->
               <div style="text-align:center">
                 <br>
-              <button class="button greenbluemedium" type="submit, button" form="contactUsForm" value="Submit" data-toggle="modal" data-target="#feedbackModal">Send</button>
+              <button class="button darkgrey" type="submit, button" form="contactUsForm" value="Submit" data-toggle="modal" data-target="#feedbackModal">Send</button>
               </div>
               <br>
         </form>  
@@ -125,7 +125,7 @@
                     </p>
                   </div>
                   <div class="modal-footer" style="text-align: center">
-                    <button type="button" class="button2 greenbluemedium" style="width: 100px" data-dismiss="modal">Ok</button>
+                    <button type="button" class="button2 darkgrey" style="width: 100px" data-dismiss="modal">Ok</button>
                   </div>
                 </div>
               </div>
