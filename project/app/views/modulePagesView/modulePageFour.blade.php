@@ -30,11 +30,10 @@
         <input type="radio" id="3" name="activator" class="carousels__activator"/>
         <input type="radio" id="4" name="activator" class="carousels__activator"/>
         <input type="radio" id="5" name="activator" class="carousels__activator"/>
-        <input type="radio" id="6" name="activator" class="carousels__activator"/>
         
         <div class="carousels__controls">
           <label for="2" class="carousels__control carousels__control--backward"></label>
-          <label for="6" class="carousels__control carousels__control--forward"></label>
+          <label for="5" class="carousels__control carousels__control--forward"></label>
         </div>
         <div class="carousels__controls">
           <label for="3" class="carousels__control carousels__control--backward"></label>
@@ -49,226 +48,141 @@
           <label for="3" class="carousels__control carousels__control--forward"></label>
         </div>
         <div class="carousels__controls">
-          <label for="6" class="carousels__control carousels__control--backward"></label>
+          <label for="1" class="carousels__control carousels__control--backward"></label>
           <label for="4" class="carousels__control carousels__control--forward"></label>
         </div>
-        <div class="carousels__controls">
-          <label for="1" class="carousels__control carousels__control--backward"></label>
-          <label for="5" class="carousels__control carousels__control--forward"></label>
-        </div>
+        <!--<div class="carousels__controls">-->
+        <!--  <label for="1" class="carousels__control carousels__control--backward"></label>-->
+        <!--  <label for="5" class="carousels__control carousels__control--forward"></label>-->
+        <!--</div>-->
       
         <!--SLIDE 1-->
         <li class="carousels__slide">
-          <p class="modh1">KEY FACTS ABOUT: Spinal Cord Injuries (SCI)</p>
+          <p class="modh2">4a) Vertebral column</p>
          <table class="b">
             <tr>
               <td class="b2 words2">•</td>
-              <td class="b2 words2"><strong>According to WHO data,</strong> the global incidence rate of spinal cord injuries is <u>40-80 cases per million population</u> annually.</td>
+              <td class="b2 words2">The vertebral column, more commonly known as the backbone, serves some very crucial functions.</td>
             </tr>
             <tr>
               <td class="b2 words2">•</td>
-              <td class="b2 words2">There are <u>280,000-560,000 new cases</u> of spinal cord injury recorded every year worldwide.</td>
+              <td class="b2 words2">First and foremost, it covers, contains and protects the spinal cord.</td>
+            </tr>
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">The backbone is necessary for our erect posture as well as carrying and transmitting our body weight to the lower limbs.</td>
+            </tr>
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">The typical shape of the vertebrae provide the surface area for our back muscles to attach and maintain an upright posture.</td>
+            </tr>
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">The vertebral column also provides attachment to the shoulder girdle, the ribcage and the pelvis.</td>
             </tr>
          </table>
-         <br>
-         <p class="modh2">⤘ Demographics</p>
-         <table>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">Males are at least twice as likely to be the victims of spinal cord injury as compared to females.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">The victims of spinal cord injury have a 2 to 5 times the normal mortality rate, which is maximum during the first year following the injury.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2">Age distribution shows males between the ages of 20 to 29 years and ages above 70 years to be at the highest risk.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">Females are observed to be most vulnerable to spinal cord injury between the ages of 15 and 30 years and at ages above 60 years.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2"><strong>The World Health Organization</strong> reports that more than 90% of the recorded cases are traumatic in origin.</td>
-            </tr>
-          </table>
-          </p>
         </li>
         
         <!--SLIDE 2-->
         <li class="carousels__slide">
-          <p class="modh2">⤘ Statistics and clinical data</p>
-          <p class="words2"><strong>The National Spinal Cord Injury Statistical Centre USA</strong> reports etiological and clinical injury distributions in its 2016 Fact Sheet.
-            <br><br>
-            <div class="col-md-7">
-              <img class="diagram" alt="Figure 1: Etiological distrubution as per the data collected in 2016" src="{{ URL::to('/') }}/images/Mod1.1.png" height="290px"/>
-              <br><p class="diagramLabel"><u><strong>Figure 1:</strong> Etiological distrubution as per the data collected in 2016</u></p>
-            </div>
-            <div class="col-md-5">
-              <p>According to the fact sheet and <strong>Figure 1:</strong></p>
-              <table class="b">
-                <tr>
-                  <td class="b2 words3">-</td>
-                  <td class="b2 words3">38% cases are due to vehicular accidents,</td>
-                </tr>
-                <tr>
-                  <td class="b2 words3">-</td>
-                  <td class="b2 words3">30.5% result from falls,</td>
-                </tr>
-                <tr>
-                  <td class="b2 words3">-</td>
-                  <td class="b2 words3">13.5% are victims of violence,</td>
-                </tr>
-                <tr>
-                  <td class="b2 words3">-</td>
-                  <td class="b2 words3">9% are as a result of sports injuries,</td>
-                </tr>
-                <tr>
-                  <td class="b2 words3">-</td>
-                  <td class="b2 words3">5% result due to medical reasons including iatrogenic causes and,</td>
-                </tr>
-                <tr>
-                  <td class="b2 words3">-</td>
-                  <td class="b2 words3">4% are attributed to reasons other than listed here.</td>
-                </tr>
-              </table>
-            </div>
-          </p>
+          <p class="modh2">⤘ 4b) Spinal cord</p>
+          <table class="b">
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">The spinal cord mainly functions as a conduit between brain and the rest of body.</td>
+            </tr>
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">It carries all the sensory information from the body and relays it to brain; and carries motor commands from the brain and relays them to the body.</td>
+            </tr>
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">The spinal cord also controls some reflexes that protect the body from certain harmful stimuli such as pain, heat, extreme cold, electric shocks etc.</td>
+            </tr>
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">The neurons in the grey matter control these reflexes, and give rise to the spinal nerves. </td>
+            </tr>
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">The tracts in the white matter perform specific functions and carry specific information as shown in the figure on next page.</td>
+            </tr>
+          </table>
         </li>
         
         <!--SLIDE 3-->
         <li class="carousels__slide words2">
-          <div class="col-md-5 words2"><br>
-            <p>Out of all cases, 45% suffer from incomplete quadriplegia, 13.3% from complete quadriplegia, 
-               21.3% have an incomplete paraplegia and 20% have complete paraplegia.</p>
-            <p>Only in 0.4% cases, the victims of spinal cord injury experience recovery without any neurological deficit or residual paralysis.</p>
-          </div>
-          <div class="col-md-7">
-            <img class="diagram2" alt="Figure: Extent of Spinal Cord Injury as per the data collected in 2016" 
-            src="{{ URL::to('/') }}/images/Mod1.2.png" height="290px"/><br>
-            <p style="line-height:20px;text-align:center"><u><strong>Figure 2:</strong> Extent of Spinal Cord Injury as per the data collected in 2016</u></p>
-          </div>
-          <br><br>
-          <div class="col-md-12 words2">
-            <p>Out of all spinal cord injury cases, an overwhelming 58.3% victims suffer from some 
-               form of quadriplegia implying an injury to the cervical spinal cord segments.</p>
-            <p>The relatively delicate structure of cervical vertebrae, their vulnerable location in the neck and 
-               the fact that they carry and transmit the weight of the entire head makes the cervical vertebrae more prone to fracture or 
-               dislocation upon injury, damaging the cervical spinal cord in turn.</p>
-          </div>
+          <div class="col-md-12">
+                <img src="{{ URL::to('/') }}/images/Module3/mod3img1.png" width="100%" height="700px"></img>
+            </div>
         </li>
         
         <!--SLIDE 4-->
         <li class="carousels__slide">
-          <br>
-          <p class="modh2">⤘ Economic consequences</p>
-          <p>SCI treatments put a significant economic burden on the health care system.<br><br>
-             For an injury with ASIA score of A, B or C at level C1-C4, cost for the first 
-             year is over 1 million US Dollars with 185,000 USD each following year per patient.<br><br>
-             If a patient suffers from an injury with ASIA scores A, B or C at C5-C8 levels, 
-             the average cost is 770,000 USD for the first year and 114,000 USD each following year.<br><br>
-             For injuries with ASIA scores A, B or C below this level, 
-             the expected first year cost is 520,000 USD and 69,000 USD every following year.<br><br>
-             For any Grade D injury, the expected cost is 350,000 and 42,000 
-             USD for the first year and every following year respectively.</p>
+          <div class="col-md-8">
+            <p class="modh2">⤘ 4c) Spinal nerves and dermatome</p>
+            <table class="b">
+              <tr>
+                <td class="b2 words2">•</td>
+                <td class="b2 words2">As mentioned before, each spinal nerve supplies a specific region of the body. These regions are called dermatomes. The dermatomes and their spinal nerve roots are shown in this figure.</td>
+              </tr>
+              <tr>
+                <td class="b2 words2">•</td>
+                <td class="b2 words2">Other than the dermatomes, the spinal nerves supply specific muscle groups and organs.</td>
+              </tr>
+              <tr>
+                <td class="b2 words2">•</td>
+                <td class="b2 words2">The cervical nerves together supply the muscles controlling neck movements and the upper limb.</td>
+              </tr>
+              <tr>
+                <td class="b2 words2">•</td>
+                <td class="b2 words2">The thoracic nerves supply the muscles of trunk and abdomen including the intercostal muscles.</td>
+              </tr>
+              <tr>
+                <td class="b2 words2">•</td>
+                <td class="b2 words2">Lumbar and sacral nerve roots’ somatic fibres supply the muscles of the lower limbs.</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-4">
+                <img src="{{ URL::to('/') }}/images/Module3/mod3img1.png" width="100%" height="700px"></img>
+          </div>
+          
         </li>
         
         <!--SLIDE 5-->
         <li class="carousels__slide">
-          <br>
-          <p>In addition to these costs, the patients suffer from loss of wages, loss of 
-             productivity, dependence on others for their physical needs and a number of secondary conditions 
-             requiring further medical assistance which adds to the economic burden mentioned here.</td>
-          <br><br>
-          <p><u><strong>Table:</strong> Estimated costs for treatment of Spinal Cord Injuries at different levels, 
-             as given by National Spinal Cord Injury Statistical Centre, US.</u></p>
-          <table class="a">
-            <tr>
-              <th>Extent of Injury</th>
-              <th>Cost for the 1st year</th>
-              <th>Each following year</th>
-            </tr>
-            <tr>
-              <td style="border: none">C1-C4 (Grade A,B,C)</td>
-              <td style="border: none">1 Million</td>
-              <td style="border: none">185,000</td>
-            </tr>
-            <tr>
-              <td style="border: none">C5-C8 (Grade A,B,C)</td>
-              <td style="border: none">770,000</td>
-              <td style="border: none">114,000</td>
-            </tr>
-            <tr>
-              <td style="border: none">Paraplegia (Grade A,B,C)</td>
-              <td style="border: none">520,000</td>
-              <td style="border: none">69,000</td>
-            </tr>
-            <tr>
-              <td style="border: none">Any Grade D injury</td>
-              <td style="border: none">350,000</td>
-              <td style="border: none">42,000</td>
-            </tr>
-          </table>
+          <div class="col-md-12">
+            <table class="b">
+              <tr>
+                <td class="b2 words2">•</td>
+                <td class="b2 words2">Sympathetic supply from the nerve root C3, C4 and C5 supply the diaphragm.</td>
+              </tr>
+              <tr>
+                <td class="b2 words2">•</td>
+                <td class="b2 words2">Sympathetic nerve supply to the heart and the respiratory tract is derived from nerve roots T1-T4.</td>
+              </tr>
+              <tr>
+                <td class="b2 words2">•</td>
+                <td class="b2 words2">The rest of the thoracic nerves provide sympathetic innervation to the abdominal organs like stomach, intestines, colon, pancreas, liver and adrenals. </td>
+              </tr>
+              <tr>
+                <td class="b2 words2">•</td>
+                <td class="b2 words2">Nerve roots T12 along with L1 and L2 provide sympathetic supply to the kidneys, bladder, rectum and the external genitalia. These structures receive parasympathetic nerve supply from the sacral autonomic fibres from roots of S2, S3 and S4 spinal nerves.</td>
+              </tr>
+            </table>
+          </div>
         </li>
         
-        <!--SLIDE 6-->
-        <li class="carousels__slide">
-          <p>For Australia, based on data form the Spinal Injury Network, National Disability Services (2010) 
-             and a 2009 Access Economics report, Spinal Life Australia (www.spinal.com.au) depicted the huge economic 
-             burden of spinal injury:</p>
-          <table class="b">
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">More than 12,000 people in Australia have a spinal cord injury;</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">The lifetime cost per incidence is estimated to be AUD 5 million for paraplegia
-              and AUD 9.5 million for quadriplegia.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">The annual cost to the Australian society was estimated at AUD 2 billion 
-              per annum in 2009 by Access Economics.<br>       
-            </td>
-            </tr>
-          </table>
-          <br>
-          <p>The annual economic cost is shared approximately as follows (Access Economics, 2009):</p>
-          <table class="b">
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">Government 55% (44% State Government and 11% Federal Government); individuals
-              over 40% (viz. patients and their carers).</td>
-            </table>
-          </p>
-          <p>It is expected that parts of these costs will be borne in the future by the NDIS.</p>
-          <br>
-          <p style="font-size:22px;text-align:center"><i><strong>This is the end of Module 1: Demographics and Economics of Spinal Cord Injury (SCI).
-            <br> You may wish to read over the module content again, or you can begin the multiple-choice quiz by clicking the button above.
-            </strong></i>
-          </p>
-          
-        </li>
         <div class="carousels__indicators">
           <label for="1" class="carousels__indicator"></label>
           <label for="2" class="carousels__indicator"></label>
           <label for="3" class="carousels__indicator"></label>
           <label for="4" class="carousels__indicator"></label>
           <label for="5" class="carousels__indicator"></label>
-          <label for="6" class="carousels__indicator"></label>
         </div>
       
       </ul>
-      <div class="basicFontStyle" style="width: 50%; margin: 0 auto;">
-        <br><br>
-        <p style="text-align:center">Testing video</p>
-        <iframe align="middle" width="780" height="415"
-          src="https://www.youtube.com/embed/-Z4jx5VMw8M" frameborder="0" allowfullscreen>
-        </iframe> 
-      </div>
     </div>
 
 </div>

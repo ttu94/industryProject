@@ -21,13 +21,12 @@
                 <p>np</p>
             @endif
             {{ $val }}
-            <select size="15" name="modQuestions" id="questionlist">
                 @if($moduleTestDB)
                     @foreach($moduleTestDB as $moduleTestDB)
                         <option value="{{ $moduleTestDB->id }}">{{ $moduleTestDB->question }}</option>
                     @endforeach
                 @else
-                    <option disable selected>no ModuleTest Quizes</option>
+                    <p>Question with ID ( {{ $val }} ) doesn't exist</p>
                 @endif
                 
                 

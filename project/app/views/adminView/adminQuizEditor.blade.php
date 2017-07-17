@@ -11,60 +11,43 @@
 
 @section('content')
 <script>
-    // var db = window.openDatabase('/industry_project/project/app/database/production.sqlite', '1.0', 'This DB', 200000);
-    // db.transaction(function (tx) {
-    //     if (db){
-    //         torun();
-    //         console.log(tx.executeSql('SELECT COUNT(*) FROM users'));
-    //     }
-    //     //console.log(tx.executeSql('SELECT * FROM users WHERE id = 2'));
-    // });
-    // function torun(){
-    //     db.transaction(function (tx){
-    //         tx.executeSql('SELECT * FROM users', [], function (tx, results) {
-    //         console.log('torun or not');
-    //           var len = results.rows.length;
-    //           console.log('Number of row: ' + len);
-    //         });
-    //     });
-    // }
-    
-    
-    // var questionNumber = 1;
-    // window.onload = function(){
-    //     while(questionNumber <= 20){
-    //         addFunc();
-    //     }
-    // }
-    // function addFunc(){
-   	// 	  var questionlistTable = document.getElementById("questionlist");
-    //       questionlistTable.innerHTML += '<option>' + 'option ' + questionNumber + '</option>';
-    //       questionNumber += 1;
-    //     }
-        
-        
+    var test = "<?php $var = 2; echo $var ?>";
+    console.log("test: " + test);
 </script>
 
 <div class="container-fluid">
     <br>
     <div class="col-md-12 basicFontStyle">
-
-         <!--<form action="{{ action('UserController@UpdateQuestion') }}" method="POST">-->
-        {{ Form::model($user, array('method' => 'PUT', 'route' => array('update_question', Auth::user()->id)))}}
+        @if($moduleTestDB)
+        
+            <select name="moduleTitle" id="moduleTitleList">
+                <option>Module 1: Demographics & Economics of Spinal Cord Injury</option>
+                <option>Module 2: Spinal cord as a neutral tissue and injury to the nerves</option>
+                <option>Module 3: </option>
+                <option>Module 4:</option>
+                <option>Module 5:</option>
+                <option>Module 6:</option>
+                <option>Module 7:</option>
+                <option>Module 8:</option>
+                <option>Module 9:</option>
+                <option>Module 10:</option>
+                <option>Module 11:</option>
+            </select>
+            
+            {{ Form::model($user, array('method' => 'PUT', 'route' => array('update_question', Auth::user()->id)))}}
             <select size="15" name="modQuestions" id="questionlist">
-                @if($moduleTestDB)
-                    @foreach($moduleTestDB as $moduleTestDB)
-                        <option value="{{ $moduleTestDB->id }}">{{ $moduleTestDB->question }}</option>
-                    @endforeach
-                @else
-                    <option disable selected>no ModuleTest Quizes</option>
-                @endif
+                @foreach($moduleTestDB as $moduleTestDB)
+                    <option value="{{ $moduleTestDB->id }}">{{ $moduleTestDB->question }}</option>
+                @endforeach
             </select>
             
             <button class="button redbrown" type="submit" style="float:right; width:50%">Add Question</button> 
         <!--</form>-->
         {{ Form::close() }}
-        <!--<a href=""> ADD Question</a>-->
+        
+        @else
+            <p>No Module Questions/ Module Database Doesn't Exist</p>
+        @endif
     </div>
 </div>
 
