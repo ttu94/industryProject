@@ -11,8 +11,13 @@
 
 @section('content')
 <script>
+    var testarray = "<?php  ?>";
     var test = "<?php $var = 2; echo $var ?>";
     console.log("test: " + test);
+    
+    var e = document.getElementById("moduleTitleList");
+    var strUser = e.options[e.selectedIndex].value;
+    console.log("struser: " + strUser);
 </script>
 
 <div class="container-fluid">
@@ -21,7 +26,7 @@
         @if($moduleTestDB)
         
             <select name="moduleTitle" id="moduleTitleList">
-                <option>Module 1: Demographics & Economics of Spinal Cord Injury</option>
+                <option value="Demographics and Economics of Spinal Cord Injury (SCI)" selected>Module 1: Demographics & Economics of Spinal Cord Injury</option>
                 <option>Module 2: Spinal cord as a neutral tissue and injury to the nerves</option>
                 <option>Module 3: </option>
                 <option>Module 4:</option>
