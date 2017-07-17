@@ -26,8 +26,8 @@
                 <div class="faq">
                   <div class="faq_question">I have forgotten my password, what should I do?</div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>You should reset your <strong>password</strong> via the <a href="forgottenPassword" style="color: #88ABA5"><u>Forget Password</u></a>
-                          link on the <a href="login" style="color: #88ABA5"><u>Login</u></a> page.
+                          <div class="faq_answer"><br>You should reset your <strong>password</strong> via the <a href="forgottenPassword" style="color: #195DA3"><u>Forget Password</u></a>
+                          link on the <a href="login" style="color: #195DA3"><u>Login</u></a> page.
                           
                           <br>&nbsp;</div>
                        </div>        
@@ -37,7 +37,7 @@
                   <div class="faq_question">How do I change my password?</div>
                        <div class="faq_answer_container">
                           <div class="faq_answer"><br>You have to be logged into your account to change your current <strong>password</strong>. 
-                          <br>Click on <a style="color: #88ABA5"><u>Account Details</u></a>, then the "Change Password" button.
+                          <br>Click on <a style="color: #195DA3"><u>Account Details</u></a>, then the "Change Password" button.
                           <br><br>Alternatively, if you can't log into your account to do this, refer to the question above. 
                           <br>&nbsp;</div>
                        </div>        
@@ -54,7 +54,7 @@
                 <div class="faq">
                   <div class="faq_question">I can't find my question here or want to make an enquiry about an issue that is not listed, what should I do?</div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>Click on the <a href="contactUs" style="color: #88ABA5"><u>Contact</u></a> link, which will take you to the "Contact Us" page. 
+                          <div class="faq_answer"><br>Click on the <a href="contactUs" style="color: #195DA3"><u>Contact</u></a> link, which will take you to the "Contact Us" page. 
                           You can fill in the form with your details and enquiry, and we will get back to you as soon as possible.
                           <br><br>While you are on that page, why not leave us some feedback! It would be greatly appreciated and help improve this resource.
                           <br>&nbsp;

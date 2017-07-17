@@ -61,7 +61,7 @@
         <!--SLIDE 1-->
         <li class="carousels__slide">
             <div class="col-md-8">
-                <p class="modh1">3a) Vertebral Column</p>
+                <p class="modh1">⤘ 3a) Vertebral Column</p>
                 <table class="b">
                     <tr>
                         <td class="b2 words2">•</td>
@@ -168,6 +168,13 @@
                   <td class="b2 words3">•</td>
                   <td class="b2 words3">The middle layer is called arachnoid layer because it has a web-like network of blood vessels that produces the cerebrospinal fluid (CSF)</td>
                 </tr>
+              </table> 
+            </div>
+            <div class="col-md-6">
+                <img src="{{ URL::to('/') }}/images/Module3/mod3img3.png" width="100%" height="450px"></img>
+            </div>
+            <div class="col-md-12">
+              <table class="b">
                 <tr>
                   <td class="b2 words3">•</td>
                   <td class="b2 words3">Pia mater is the innermost layer which is tightly attached to the tissue of brain and spinal cord like a transparent, laminating membrane.</td>
@@ -176,11 +183,7 @@
                   <td class="b2 words3">•</td>
                   <td class="b2 words3">Together all three layers of meninges protect the CNS from any harm.</td>
                 </tr>
-              </table>              
-            </div>
-            <div class="col-md-6">
-                <img src="{{ URL::to('/') }}/images/Module3/mod3img3.png" width="100%" height="450px"></img>
-            </div>
+              </table> 
         </li>
         
         <!--SLIDE 4-->
@@ -221,80 +224,72 @@
         
         <!--SLIDE 5-->
         <li class="carousels__slide">
-          <br>
-          <p>In addition to these costs, the patients suffer from loss of wages, loss of 
-             productivity, dependence on others for their physical needs and a number of secondary conditions 
-             requiring further medical assistance which adds to the economic burden mentioned here.</td>
-          <br><br>
-          <p><u><strong>Table:</strong> Estimated costs for treatment of Spinal Cord Injuries at different levels, 
-             as given by National Spinal Cord Injury Statistical Centre, US.</u></p>
-          <table class="a">
-            <tr>
-              <th>Extent of Injury</th>
-              <th>Cost for the 1st year</th>
-              <th>Each following year</th>
-            </tr>
-            <tr>
-              <td style="border: none">C1-C4 (Grade A,B,C)</td>
-              <td style="border: none">1 Million</td>
-              <td style="border: none">185,000</td>
-            </tr>
-            <tr>
-              <td style="border: none">C5-C8 (Grade A,B,C)</td>
-              <td style="border: none">770,000</td>
-              <td style="border: none">114,000</td>
-            </tr>
-            <tr>
-              <td style="border: none">Paraplegia (Grade A,B,C)</td>
-              <td style="border: none">520,000</td>
-              <td style="border: none">69,000</td>
-            </tr>
-            <tr>
-              <td style="border: none">Any Grade D injury</td>
-              <td style="border: none">350,000</td>
-              <td style="border: none">42,000</td>
-            </tr>
-          </table>
+          <div class="col-md-6">
+              <p class="modh2">⤘ 3D) Spinal Cord</p>
+              <table class="b">
+                <tr>
+                  <td class="b2 words3">•</td>
+                  <td class="b2 words3">The spinal cord is divided into grey matter and white matter on the inside.</td>
+                </tr>
+                <tr>
+                  <td class="b2 words3">•</td>
+                  <td class="b2 words3">The core of the cord contains grey matter that looks like the letter ‘H’.</td>
+                </tr>
+                <tr>
+                  <td class="b2 words3">•</td>
+                  <td class="b2 words3">Grey matter contains the cell bodies of neurons that give off spinal nerve.</td>
+                </tr>
+                <tr>
+                  <td class="b2 words3">•</td>
+                  <td class="b2 words3">The white matter surrounds the grey matter and forms the peripheral part of the cord. It appears white because it contains myelinated axon fibres in bundles travelling up and down the spinal cord.</td>
+                </tr>
+              </table> 
+            </div>
+            <div class="col-md-6">
+                <img src="{{ URL::to('/') }}/images/Module3/mod3img5.png" width="100%" height="350px"></img>
+            </div>
+          <div class="col-md-12">
+              <table class="b">
+                <tr>
+                  <td class="b2 words3">•</td>
+                  <td class="b2 words3">These bundles are called spinal tracts. Tracts going up to the brain are called sensory or ascending tracts. These tracts carry all kinds of sensations from the body, to the brain</td>
+                </tr>
+                <tr>
+                  <td class="b2 words3">•</td>
+                  <td class="b2 words3">The tracts that travel from brain to the rest of body are known as motor or descending tracts. They carry commands issued from the brain to control all voluntary and non voluntary movements of the body.</td>
+                </tr>
+              </table> 
+
+            </div>
         </li>
         
         <!--SLIDE 6-->
         <li class="carousels__slide">
-          <p>For Australia, based on data form the Spinal Injury Network, National Disability Services (2010) 
-             and a 2009 Access Economics report, Spinal Life Australia (www.spinal.com.au) depicted the huge economic 
-             burden of spinal injury:</p>
-          <table class="b">
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">More than 12,000 people in Australia have a spinal cord injury;</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">The lifetime cost per incidence is estimated to be AUD 5 million for paraplegia
-              and AUD 9.5 million for quadriplegia.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">The annual cost to the Australian society was estimated at AUD 2 billion 
-              per annum in 2009 by Access Economics.<br>       
-            </td>
-            </tr>
-          </table>
-          <br>
-          <p>The annual economic cost is shared approximately as follows (Access Economics, 2009):</p>
-          <table class="b">
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">Government 55% (44% State Government and 11% Federal Government); individuals
-              over 40% (viz. patients and their carers).</td>
-            </table>
-          </p>
-          <p>It is expected that parts of these costs will be borne in the future by the NDIS.</p>
-          <br>
-          <p style="font-size:22px;text-align:center"><i><strong>This is the end of Module 1: Demographics and Economics of Spinal Cord Injury (SCI).
-            <br> You may wish to read over the module content again, or you can begin the multiple-choice quiz by clicking the button above.
-            </strong></i>
-          </p>
-          
+          <div class="col-md-12">
+              <p class="modh2">⤘ 3e) Spinal Nerves</p>
+              <table class="b">
+                <tr>
+                  <td class="b2 words3">•</td>
+                  <td class="b2 words3">As described before, the spinal cord gives off 31 pairs of spinal nerves: 8 cervical, 12 thoracic, 5 lumbar, 3 sacral and 1 coccygeal</td>
+                </tr>
+                <tr>
+                  <td class="b2 words3">•</td>
+                  <td class="b2 words3">Each spinal segment gives off a nerve root from the front- the ventral root and a root from the back- the dorsal root on both the sides. The ventral and dorsal root from each side come together and join each other to form one spinal nerve.</td>
+                </tr>
+                <tr>
+                  <td class="b2 words3">•</td>
+                  <td class="b2 words3">This way, each spinal segment gives off one pair of spinal nerves, one on each side. Each spinal nerve carries motor fibres from the ventral root sensory fibres to the dorsal root.</td>
+                </tr>
+                <tr>
+                  <td class="b2 words3">•</td>
+                  <td class="b2 words3">Other than this, spinal nerves from cervical, thoracic and lumbar segments also carry sympathetic nerve fibres that control the autonomic (involuntary) actions.</td>
+                </tr>
+                <tr>
+                  <td class="b2 words3">•</td>
+                  <td class="b2 words3">Each spinal nerve supplies specific region of the body and specific organs and muscles. The details of this functional distribution in in module 4.</td>
+                </tr>
+              </table> 
+            </div>
         </li>
         <div class="carousels__indicators">
           <label for="1" class="carousels__indicator"></label>

@@ -61,8 +61,11 @@ Route::get('adminHomePage/adminQuizEditor', function()
    return View::make('adminView/adminQuizEditor'); 
 });
 
+//route to quiz editor
+Route::get('adminHomePage/adminQuizEditor/{id}', array('as' => 'admin_quiz_editor', 'uses' => 'UserController@AdminQuizEditor'));
+
 //route for editing module questions
-Route::post('adminHomePage/adminQuizEditor/question/{id}', array('as' => 'update_question', 'uses' => 'UserController@UpdateQuestion'));
+Route::put('adminHomePage/adminQuizEditor/question/{id}', array('as' => 'update_question', 'uses' => 'UserController@UpdateQuestion'));
 
 
 // ROUTES TO CONTrOLLER FOR USERS*********************************************************************************

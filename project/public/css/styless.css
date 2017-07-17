@@ -9,12 +9,14 @@
 /*grey (main content page) - #EFEFEF*/
 /*dark grey (top header/footer) - #323232*/
 /*white (bottom header) - #FFFFFF*/
-/*darker blue (third header) - #195DA3*/
+/*darker blue (third header/panel colours) - #195DA3*/
 /*grey (fourth header) - #C2C2C2*/
 /*grey (header borders) - #A9A9A9*/
 
 /*lighter blue (content boxes) - #79B1EA*/
 /*red (about us page/hover colours) - #B70014*/
+/*medium blue (panel colours) - #467DB5*/
+/*light blue (panel colours) - #759DC7*/
 
 
 /*cream - #FAEBD7*/
@@ -100,6 +102,27 @@ hr {
 .h3White {
     font-family: Raleway;
     color: white;
+}
+
+/******BUTTON COLOURS******/
+.darkgrey {
+    color: white;
+    background-color: #323232;
+}
+
+.darkgrey:hover {
+    color: #323232;
+    background-color: white;
+}
+
+.darkgrey2 {
+    color: #323232;
+    background-color: white;
+} 
+
+.darkgrey2:hover {
+    color: white;
+    background-color: #323232;
 }
 
 /*TopHeader**************************************************************************/
@@ -321,11 +344,8 @@ a:hover {
 }
 
 .panelOne {
-    /*background-color: #A7D2CB;*/
-    background-color: white;
-    /*color: #DDE791;*/
-    border: 5px #DDE791 solid;
-    color: black;
+    background-color: #759DC7;
+    color: white;
     font-family: Raleway;
     min-height: 250px;
     padding-left: 15px;
@@ -334,44 +354,24 @@ a:hover {
     /*border: 6px #CFDD63 solid;*/
 }
 
-.panelOneButton {
-    background-color: black;
-    color: #A7D2CB;
-}
-
 .panelTwo {
-    background-color: white;
-    /*color: #CFDD63;*/
-    color: black;
-    border: 5px #CFDD63 solid;
-    font-family: Raleway, sans-serif;
+    background-color: #467DB5;
+    color: white;
+    font-family: Raleway;
     min-height: 250px;
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-.panelTwoButton {
-    color: #88ABA5;
-    background-color: white;
-    
 }
 
 .panelThree {
-    background-color: white;
-    /*color: #909A45;*/
-    color: black;
-    border: 5px #909A45 solid; 
-    font-family: Raleway , sans-serif;
+    background-color: #195DA3;
+    color: white;
+    font-family: Raleway;
     min-height: 250px;
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-.panelThreeButton {
-    color: #576E6A;
-    background-color: white;
 }
 
 .btns5 {
@@ -394,17 +394,7 @@ a:hover {
     margin:0 auto;
 }
 
-.greenbluedarker {
-    color: white;
-    background-color: #909A45;
-    border: 3px white solid;
-}
 
-.greenbluedarker:hover {
-    background-color: white;
-    color: #909A45;
-    border: 3px #909A45 solid;
-}
 
 /*LOGIN PAGE CSS****************************************************************/
 
@@ -681,43 +671,6 @@ button:hover {
     margin:0 auto;
 }
 
-.greybrown2 {
-  color: black;
-    /*background-color: #F8F8F8;*/
-    background-color: white;
-    border: 3px black solid;
-} 
-
-.greybrown2:hover {
-    background-color: black;
-    color: #F8F8F8;
-    border: 3px #F8F8F8 solid;
-}
-
-.greenbluedark2 {
-    color: #88ABA5;
-    background-color: white;
-    border: 3px #88ABA5 solid;
-}
-
-.greenbluedark2:hover {
-    background-color: #88ABA5;
-    color: white;
-    border: 3px white solid;
-}
-
-.greenbluelight2 {
-    color: #A7D2CB;
-    background-color: white;
-    border: 3px #A7D2CB solid;
-}
-
-.greenbluelight2:hover {
-    background-color: #A7D2CB;
-    color: #F8F8F8;
-    border: 3px #F8F8F8 solid;
-}
-
 /*CONTACT US PAGE CSS*************************************************************/
 
 #contactName, #contactEmail, #contactSubject{
@@ -990,19 +943,6 @@ button2 {
     bottom: 10%;
 }
 
-.greenbluemedium2 {
-    color: #A7D2CB;
-    background-color: white;
-    border: 3px #A7D2CB solid;
-    
-}
-
-.greenbluemedium2:hover {
-    background-color: #A7D2CB;
-    color: white;
-    border: 3px white solid;
-}
-
 /*EDUCATIONAL MODULE PAGE CSS*****************************************/
 
 .moduleTitle {
@@ -1047,30 +987,6 @@ button2 {
     position: absolute;
     left: 30%;
     bottom: 10%;
-}
-
-.greenbluedark {
-    color: white;
-    background-color: #CFDD63;
-    border: 3px white solid;
-}
-
-.greenbluedark:hover {
-    background-color: white;
-    color: #CFDD63;
-    border: 3px #CFDD63 solid;
-}
-
-.greenbluemedium {
-    color: white;
-    background-color: #DDE791;
-    border: 3px white solid;
-}
-
-.greenbluemedium:hover {
-    background-color: white;
-    color: #DDE791;
-    border: 3px #DDE791 solid;
 }
 
 .panelsTwo {
@@ -1181,18 +1097,6 @@ button2 {
     text-align: center;
 }
 
-.whitebrown {
-    color: #8A7D6B;
-    background-color: white;
-    border: 3px #8A7D6B solid;
-}
-
-.whitebrown:hover {
-    background-color: #8A7D6B;
-    color: white;
-    border: 3px black solid;
-}
-
 /*table, th, td {*/
 /*   border: 1px solid black;*/
 /*}*/
@@ -1225,14 +1129,14 @@ td.b2 {
    /*border: none;*/
    text-align: justify;
    /*background-color: #F1E4E6;*/
-   background-color: #79B1EA;
+   background-color: white;
    vertical-align: top;
 }
 
 tr:nth-child(even){background-color: white}
 
 th {
-    background-color: #79B1EA;
+    background-color: white;
     color: white;
 }
 
@@ -1289,13 +1193,7 @@ th {
     text-align: justify;
     position: relative;
     padding: 0;
-    /*background-color: #EDD7B8;*/
-    /*background-color: #FAEBD7;*/ /*cream*/
-    /*background-color: white;*/
-    /*background-color: #EDF6F4;*/
-    /*background-color: #F6FAF9;*/
-    background-color: #F6EDEE;
-    /*background-color: #F1E4E6;*/
+    background-color: white;
     /*box-shadow: 10px 10px 5px #888888;*/
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 10px #8A7D6B double;
@@ -1638,19 +1536,6 @@ to { opacity: 1; }
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-}
-
-.redbrown {
-    color: white;
-    /*background-color: #F8F8F8;*/
-    background-color: #B70014;
-    border: 3px #B70014 solid;
-} 
-
-.redbrown:hover {
-    background-color: #BE192B;
-    color: white;
-    border: 3px white solid;
 }
 
 /*OVERALL RESULTS PAGE********************************************************************/

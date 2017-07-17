@@ -50,7 +50,7 @@
     <div class="col-md-12 basicFontStyle">
 
          <!--<form action="{{ action('UserController@UpdateQuestion') }}" method="POST">-->
-        {{ Form::open(array('route' => 'update_question')) }}
+        {{ Form::model($user, array('method' => 'PUT', 'route' => array('update_question', Auth::user()->id)))}}
             <select size="15" name="modQuestions" id="questionlist">
                 @if($moduleTestDB)
                     @foreach($moduleTestDB as $moduleTestDB)

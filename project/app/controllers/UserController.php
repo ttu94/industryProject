@@ -361,15 +361,30 @@ class UserController extends \BaseController {
 	}
 	
 	//admin Quiz Editor **************************************************************Need twin to check
-	public function AdminQuiz()
+	// public function AdminQuiz()
+	// {
+	// 	if(Auth::user()->admin == '1'){
+	// 		// $user = User::find($id);
+	// 		// return View::make('adminView.adminHomePage')->withAdmin($user);
+	// 		$moduleTestDB = DB::table('moduleTests')
+	// 			->select('*')
+	// 			->get();
+	// 		return View::make('adminView.adminQuizEditor', compact('moduleTestDB'));
+	// 	} else {
+	// 		Auth::logout();
+	// 		return Redirect::action('AdminController@index');
+	// 	}
+	// }
+	
+	//thuans experimental routes, admin quiz editor
+	public function AdminQuizEditor($id)
 	{
 		if(Auth::user()->admin == '1'){
-			// $user = User::find($id);
-			// return View::make('adminView.adminHomePage')->withAdmin($user);
+			$user = User::find($id);
 			$moduleTestDB = DB::table('moduleTests')
 				->select('*')
 				->get();
-			return View::make('adminView.adminQuizEditor', compact('moduleTestDB'));
+			return View::make('adminView.adminQuizEditor', compact('moduleTestDB'))->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::action('AdminController@index');
@@ -377,22 +392,25 @@ class UserController extends \BaseController {
 	}
 	
 	//admin controller to upate quiz questisons
-	public function UpdateQuestion($questionID)
+	public function UpdateQuestion($id)
 	{
 		if(Auth::user()->admin == '1'){
-			// $user = User::find($id);
+			$user = User::find($id);
 			// return View::make('adminView.adminHomePage')->withAdmin($user);
 			// $questionId = Input::get('modQuestions');
 			// $question = Question::find($questionId);
 			$val = Input::get('modQuestions');
-			$questionData = DB::table('moduleTests')
+			// $questionData = DB::table('moduleTests')
+			// 	->select('*')
+			// 	->where('id', $val)
+			// 	->get();
+			$moduleTestDB = DB::table('moduleTests')
 				->select('*')
 				->where('id', $val)
 				->get();
 				
 			// return View::make('adminView.adminQuestionEdit', compact('id'));
-			return View::make('adminView.adminQuestionEdit', compact('val'));
-			
+			return View::make('adminView.adminQuestionEdit', compact('val', 'moduleTestDB'))->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::action('AdminController@index');

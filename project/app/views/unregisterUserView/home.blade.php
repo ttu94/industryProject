@@ -18,7 +18,7 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" style="background-color: #E8EEF5">
+    <div class="carousel-inner">
 
       <div class="item active">
         <!--<img src="http://i.imgur.com/K2FgPBx.jpg" alt="Spinal Cord" style="height: 750px">-->
@@ -75,7 +75,7 @@
                     With the support of the Motor Accident Insurance Commission, the Perry Cross Spinal Research Foundation and the Clem Jones Foundation, 
                     we are conducting pre-clinical research for a cell transplantation therapy to repair the injured spinal cord which we hope will lead to a 
                     Phase I/IIa clinical trial within a few years.
-                    <a href="aboutUs"><button class="btns5 greenbluemedium">Read More</button></a>
+                    <a href="aboutUs"><button class="btns5 darkgrey2">Read More</button></a>
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
                     <br>
                     <br>
                     Topics range from the demographics and economics, functionality, types of injuries and repair therapeutic strategies of the spinal cord.
-                    <a href="abstractModule"><button class="btns5 greenbluedark">Read More</button></a>
+                    <a href="abstractModule"><button class="btns5 darkgrey2">Read More</button></a>
                 </div>
             </div>
         </div>
@@ -102,7 +102,7 @@
                     <br>
                     <br>
                     It's free and will only take a minute!
-                    <a href="register"><button class="btns5 greenbluedarker">Register Now!</button></a>
+                    <a href="register"><button class="btns5 darkgrey2">Register Now!</button></a>
                 </div>
             </div>
         </div>

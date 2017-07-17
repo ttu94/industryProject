@@ -17,7 +17,7 @@
         <p class="text1">We would like to ask you a few more questions to help us set up the modules to your preferences.
         <br>Please rate on a scale of 1 to 5 your level of understanding on each module where 5 being Excellent and 1 being None.</p>
         <div class="col-md-12" style="text-align: center">
-            <a href={{ route("user.show", array("id" => Auth::user()->id)) }}><button class="whitebrown" style="width: 150px;float:right;margin-right:50px" type="submit">Skip</button></a>
+            <a href={{ route("user.show", array("id" => Auth::user()->id)) }}><button class="darkgrey2" style="width: 150px;float:right;margin-right:50px" type="submit">Skip</button></a>
             <br><br><br>
         </div>
         {{ Form::model($user, array('method' => 'PUT', 'route' => array('user.premodule', Auth::user()->id)))}}
@@ -282,7 +282,7 @@
 
         <div class="col-md-12" style="text-align: center">
             <br>
-            <button class="whitebrown" style="width: 200px" type="submit">Next</button>
+            <button class="darkgrey2" style="width: 200px" type="submit">Next</button>
         </div>
         {{ Form::close() }} 
     </div>

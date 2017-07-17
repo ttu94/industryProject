@@ -14,7 +14,6 @@
     <br>
     <!--ABOUT SPINAL CORD INJURY-->
     <div class="col-md-6">
-        <!--<br>-->
         <br><br>
         <img class="aboutUsImageOne"alt="About Spinal Cord Injury" src="http://o.aolcdn.com/images/dims?thumbnail=2000%2C1000&image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2Fcf8cb61cf3c7b9b0ef8b0895f54d43%2F203845365%2F160518-1715.jpg&client=cbc79c14efcebee57402&signature=fc6f13b18bd5da2b408cddf198a36f20c3c6560d" />
     </div>
@@ -85,9 +84,9 @@
         </p>
     </div>
     <div class="col-md-12">
-        <a href="abstractModule"><button class="btns4 greybrown2" style="width:35%">Access Educational Module Abstracts</button></a>
+        <a href="abstractModule"><button class="btns4 darkgrey2" style="width:35%">Access Educational Module Abstracts</button></a>
         <br>
-        <a href={{{ route("education_modules")}}}><button class="btns4 greybrown2" style="width:35%">Access Full Educational Modules</button></a>
+        <a href={{{ route("education_modules")}}}><button class="btns4 darkgrey2" style="width:35%">Access Full Educational Modules</button></a>
             
     </div>
 </div>
@@ -103,7 +102,7 @@
         <a target="_blank" href="https://cjcneurostemcell.org/"><img src="images/SiCURE.png" height="200px" width="400px"></a>
         <br>
     </div>
-    <br>
+    <br><br>
     <div class="col-md-6">
         <div class="panel panel-default doctorPanel">
             <br>
