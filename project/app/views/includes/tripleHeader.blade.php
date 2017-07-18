@@ -3,12 +3,12 @@
       <div class="topHeader">
           <!--<div class="topMargin">-->
                 <!--Search Bar -->
-                <form class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <a href="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
-                    </div>
-                </form>
+                <!--<form class="navbar-form navbar-left" role="search">-->
+                <!--    <div class="form-group">-->
+                <!--        <input type="text" class="form-control" placeholder="Search">-->
+                <!--        <a href="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>-->
+                <!--    </div>-->
+                <!--</form>-->
                 <!--Top header changes depending if user is logged in or not-->
                 @if (Auth::check())
                     <ul>

@@ -17,12 +17,15 @@ class CreateModuleTestsTable extends Migration {
 	 		//primary key
 	 		$table->integer('id');
 	 		
-			//foreign key from moduleResults table
-			$table->integer('moduleResult_id')->unsigned();
-			$table->foreign('moduleResult_id')->references('id')->on('moduleResults')->onDelete('cascade');
+			// //foreign key from moduleResults table
+			// $table->integer('moduleResult_id')->unsigned();
+			// $table->foreign('moduleResult_id')->references('id')->on('moduleResults')->onDelete('cascade');
+	 		
+			// $table->integer('moduleAnswer_id')->unsigned();
+			// $table->foreign('moduleAnswer_id')->references('id')->on('moduleAnswers')->onDelete('cascade');
 	 		
 	 		$table->string('moduleName');
-	 		$table->string('question');
+	 		$table->string('question')->unique();
 	 		
 			//correct answers are verified by string comparison 
 			$table->string('correctAnswer');

@@ -22,17 +22,17 @@
         @if($moduleTestDB)
         
             <select name="moduleTitle" id="moduleTitleList">
-                <option value="Demographics and Economics of Spinal Cord Injury (SCI)" selected>Module 1: Demographics & Economics of Spinal Cord Injury</option>
-                <option>Module 2: Spinal cord as a neutral tissue and injury to the nerves</option>
-                <option>Module 3: </option>
-                <option>Module 4:</option>
-                <option>Module 5:</option>
-                <option>Module 6:</option>
-                <option>Module 7:</option>
-                <option>Module 8:</option>
-                <option>Module 9:</option>
-                <option>Module 10:</option>
-                <option>Module 11:</option>
+                <option value="Module 1" selected>Module 1: Demographics & Economics of Spinal Cord Injury</option>
+                <option value="Module 2">Module 2: Spinal cord as a neutral tissue and injury to the nerves</option>
+                <option value="Module 3">Module 3: </option>
+                <option value="Module 4">Module 4:</option>
+                <option value="Module 5">Module 5:</option>
+                <option value="Module 6">Module 6:</option>
+                <option value="Module 7">Module 7:</option>
+                <option value="Module 8">Module 8:</option>
+                <option value="Module 9">Module 9:</option>
+                <option value="Module 10">Module 10:</option>
+                <option value="Module 11">Module 11:</option>
             </select>
             
             {{ Form::model($user, array('method' => 'PUT', 'route' => array('update_question', Auth::user()->id)))}}

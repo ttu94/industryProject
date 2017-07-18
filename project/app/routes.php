@@ -117,6 +117,11 @@ Route::get('aboutUs', array('as' => 'about.us', 'uses' => 'PageController@AboutU
 
 //Vuew make contactus for quad header
 Route::get('contactUs', array('as' => 'contact.us', 'uses' => 'PageController@ContactUs'));
+//route for user enquiries
+Route::post('contactUs', "UserController@UserEnquiries");
+
+
+
 
 //view make faq for quad header
 Route::get('faq', array('as' => 'faq', 'uses' => 'PageController@Faq'));

@@ -113,7 +113,7 @@
         <!--SLIDE 3-->
         <li class="carousels__slide words2">
           <div class="col-md-12">
-                <img src="{{ URL::to('/') }}/images/Module3/mod3img1.png" width="100%" height="700px"></img>
+                <img src="{{ URL::to('/') }}/images/Module4/mod4img1.png" width="100%" height="700px"></img>
             </div>
         </li>
         
@@ -145,7 +145,7 @@
             </table>
           </div>
           <div class="col-md-4">
-                <img src="{{ URL::to('/') }}/images/Module3/mod3img1.png" width="100%" height="700px"></img>
+                <img src="{{ URL::to('/') }}/images/Module4/mod4img2.png" width="100%" height="700px"></img>
           </div>
           
         </li>

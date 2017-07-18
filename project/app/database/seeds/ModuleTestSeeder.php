@@ -7,9 +7,8 @@ class ModuleTestSeeder extends Seeder {
          $ModuleTest = new ModuleTest;
         //primary key denoting module 1
          $ModuleTest->id = 1;
-         //foreign key denoting where theresults for module 1 will be sent
-         $ModuleTest->moduleResult_id = 1;
-         $ModuleTest->moduleName = "Demographics and Economics of Spinal Cord Injury (SCI)";
+         //foreign key denoting where theresults for module 1 will be sents
+         $ModuleTest->moduleName = "Module 1";
          $ModuleTest->question = "Will this work?";
          $ModuleTest->correctAnswer = "YES!";
          $ModuleTest->save();
@@ -17,10 +16,9 @@ class ModuleTestSeeder extends Seeder {
          $ModuleTest = new ModuleTest;
          $ModuleTest->id = 2;
          //foreign key denoting where theresults for module 1 will be sent
-         $ModuleTest->moduleResult_id = 1;
-         $ModuleTest->moduleName = "Demographics and Economics of Spinal Cord Injury (SCI)";
-         $ModuleTest->question = "I dont know";
-         $ModuleTest->correctAnswer = "sure i dont!";
+         $ModuleTest->moduleName = "Module 1";
+         $ModuleTest->question = "Does it?";
+         $ModuleTest->correctAnswer = "Sure, why not.";
          $ModuleTest->save();
     }   
 }

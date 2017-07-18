@@ -8,20 +8,20 @@
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h2>Module 1: Demographics and Economics of Spinal Cord Injury (SCI)</h2>
+   <h2 style="color: white">Module 1: Demographics and Economics of Spinal Cord Injury (SCI)</h2>
 @endsection
 
 @section('content')
 <div class="container-fluid"> 
-    <!--background-image: url("https://dssofgcsc.files.wordpress.com/2010/07/spine.jpg")-->
     <br>
+    
     <div class="col-md-7">
       <a href="{{ URL::to('/') }}/pdfs/Module_1_-_Demographics_&_Economics_of_SCI.pdf" 
-      target="_blank" class="btn2 whitebrown">Download PDF</a>
+      target="_blank" class="btn2 pdf">Download PDF</a>
     </div>
     <div class="col-md-5">
       <!--INCOMPLETE ROUTE, requires to take module ID-->
-      <a href={{ route("module_quiz_info", array("id" => Auth::user()->id, "quizNo" => "Module 1")) }} ><button class="btn whitebrown">Begin Quiz >></button></a>
+      <a href={{ route("module_quiz_info", array("id" => Auth::user()->id, "quizNo" => "Module 1")) }} ><button class="btn darkgrey2">Begin Quiz >></button></a>
     </div>
     <br><br><br>
     <div class="col-md-12" >
@@ -60,83 +60,95 @@
       
         <!--SLIDE 1-->
         <li class="carousels__slide">
-          <p class="modh1">KEY FACTS ABOUT: Spinal Cord Injuries (SCI)</p>
+          <p class="modh1">Facts and Figures for SCI</p>
+          <p class="modh2">1a) More demographics, less economics<br><br><u>You Are Not Alone</u><br></p>
+          <ul class="one">
+            
+          </ul>
          <table class="b">
             <tr>
               <td class="b2 words2">•</td>
-              <td class="b2 words2"><strong>According to WHO data,</strong> the global incidence rate of spinal cord injuries is <u>40-80 cases per million population</u> annually.</td>
+              <td class="b2 words2">280,000-560,000 new cases are recorded every year across the world.</td>
             </tr>
             <tr>
               <td class="b2 words2">•</td>
-              <td class="b2 words2">There are <u>280,000-560,000 new cases</u> of spinal cord injury recorded every year worldwide.</td>
+              <td class="b2 words2">Number of men suffering from SCI is over twice the number of women.</td>
+            </tr>
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">Men between the ages of 20 to 29 years and ages above 70 years appear to be at the highest risk.</td>
+            </tr>
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">Women are observed to be at the highest risk between the ages of 15 to 30 years and at ages above 60 years.</td>
+            </tr>
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">More than 90% of the recorded cases are a result of traumatic injury</td>
+            </tr>
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">More than 12,000 people in Australia suffer from a spinal cord injury.</td>
             </tr>
          </table>
-         <br>
-         <p class="modh2">⤘ Demographics</p>
-         <table>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">Males are at least twice as likely to be the victims of spinal cord injury as compared to females.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">The victims of spinal cord injury have a 2 to 5 times the normal mortality rate, which is maximum during the first year following the injury.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2">Age distribution shows males between the ages of 20 to 29 years and ages above 70 years to be at the highest risk.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">Females are observed to be most vulnerable to spinal cord injury between the ages of 15 and 30 years and at ages above 60 years.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2"><strong>The World Health Organization</strong> reports that more than 90% of the recorded cases are traumatic in origin.</td>
-            </tr>
-          </table>
-          </p>
         </li>
         
         <!--SLIDE 2-->
         <li class="carousels__slide">
-          <p class="modh2">⤘ Statistics and clinical data</p>
-          <p class="words2"><strong>The National Spinal Cord Injury Statistical Centre USA</strong> reports etiological and clinical injury distributions in its 2016 Fact Sheet.
-            <br><br>
-            <div class="col-md-7">
-              <img class="diagram" alt="Figure 1: Etiological distrubution as per the data collected in 2016" src="{{ URL::to('/') }}/images/Mod1.1.png" height="290px"/>
-              <br><p class="diagramLabel"><u><strong>Figure 1:</strong> Etiological distrubution as per the data collected in 2016</u></p>
-            </div>
-            <div class="col-md-5">
-              <p>According to the fact sheet and <strong>Figure 1:</strong></p>
-              <table class="b">
-                <tr>
-                  <td class="b2 words3">-</td>
-                  <td class="b2 words3">38% cases are due to vehicular accidents,</td>
-                </tr>
-                <tr>
-                  <td class="b2 words3">-</td>
-                  <td class="b2 words3">30.5% result from falls,</td>
-                </tr>
-                <tr>
-                  <td class="b2 words3">-</td>
-                  <td class="b2 words3">13.5% are victims of violence,</td>
-                </tr>
-                <tr>
-                  <td class="b2 words3">-</td>
-                  <td class="b2 words3">9% are as a result of sports injuries,</td>
-                </tr>
-                <tr>
-                  <td class="b2 words3">-</td>
-                  <td class="b2 words3">5% result due to medical reasons including iatrogenic causes and,</td>
-                </tr>
-                <tr>
-                  <td class="b2 words3">-</td>
-                  <td class="b2 words3">4% are attributed to reasons other than listed here.</td>
-                </tr>
-              </table>
-            </div>
-          </p>
+          <table>
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2" style="color: #B70014">The victims of spinal cord injury have a 2 to 5 times the normal mortality rate which is maximum during the first year following the injury.</td>
+            </tr>
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">The lifetime cost is estimated to be AUD 5 million per case of paraplegia and AUD 9.5 million per case of quadriplegia.</td>
+            </tr>
+            <tr>
+              <td class="b2 words2">•</td>
+              <td class="b2 words2">The economic burden of spinal cord injury on the Australian society was estimated at AUD 2 billion per annum in 2009 by Access Economics.</td>
+            </tr>
+          </table>
+          <br>
+          <p class="modh2">Economics of SCI treatment and management</p>
+          <img class="diagram1" src="{{ URL::to('/') }}/images/Module1/mod1img1.png" width="700px" height="300px"></img>
+          <!--<p class="modh2">⤘ Statistics and clinical data</p>-->
+          <!--<p class="words2"><strong>The National Spinal Cord Injury Statistical Centre USA</strong> reports etiological and clinical injury distributions in its 2016 Fact Sheet.-->
+          <!--  <br><br>-->
+          <!--  <div class="col-md-7">-->
+          <!--    <img class="diagram" alt="Figure 1: Etiological distrubution as per the data collected in 2016" src="{{ URL::to('/') }}/images/Mod1.1.png" height="290px"/>-->
+          <!--    <br><p class="diagramLabel"><u><strong>Figure 1:</strong> Etiological distrubution as per the data collected in 2016</u></p>-->
+          <!--  </div>-->
+          <!--  <div class="col-md-5">-->
+          <!--    <p>According to the fact sheet and <strong>Figure 1:</strong></p>-->
+          <!--    <table class="b">-->
+          <!--      <tr>-->
+          <!--        <td class="b2 words3">-</td>-->
+          <!--        <td class="b2 words3">38% cases are due to vehicular accidents,</td>-->
+          <!--      </tr>-->
+          <!--      <tr>-->
+          <!--        <td class="b2 words3">-</td>-->
+          <!--        <td class="b2 words3">30.5% result from falls,</td>-->
+          <!--      </tr>-->
+          <!--      <tr>-->
+          <!--        <td class="b2 words3">-</td>-->
+          <!--        <td class="b2 words3">13.5% are victims of violence,</td>-->
+          <!--      </tr>-->
+          <!--      <tr>-->
+          <!--        <td class="b2 words3">-</td>-->
+          <!--        <td class="b2 words3">9% are as a result of sports injuries,</td>-->
+          <!--      </tr>-->
+          <!--      <tr>-->
+          <!--        <td class="b2 words3">-</td>-->
+          <!--        <td class="b2 words3">5% result due to medical reasons including iatrogenic causes and,</td>-->
+          <!--      </tr>-->
+          <!--      <tr>-->
+          <!--        <td class="b2 words3">-</td>-->
+          <!--        <td class="b2 words3">4% are attributed to reasons other than listed here.</td>-->
+          <!--      </tr>-->
+          <!--    </table>-->
+          <!--  </div>-->
+          <!--</p>-->
         </li>
         
         <!--SLIDE 3-->

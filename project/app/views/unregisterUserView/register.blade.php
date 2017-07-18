@@ -355,7 +355,7 @@
                     {{ Form::radio('onBehalf', 'no', true)}} No
                 </div>
             </div>
-            <div style="margin-top:20px;text-align:center"><button class="button greybrown2" type="submit">Create Account</button></div>
+            <div style="margin-top:20px;text-align:center"><button class="button darkgrey2" type="submit">Create Account</button></div>
         {{ Form::close() }}
     </div>
 </div>

@@ -22,6 +22,18 @@ class UserController extends \BaseController {
 	{
 		return View::make('unregisterUserView.register');
 	}
+	
+	public function UserEnquiries()
+	{
+		$input = Input::all();
+
+		//Sends an email to the user with a welcome message
+		Mail::send('emails.enquiries', array('contactName'=>Input::get('contactName'), 'contactEmail'=>Input::get('contactEmail'), 'contactComment'=>Input::get('contactComment')), function($message){
+			$message->to('sicure.sci@gmail.com')->subject(Input::get('contactSubject'));
+		});
+
+		return View::make('unregisterUserView.contactUs');
+	}
 
 
 	/**

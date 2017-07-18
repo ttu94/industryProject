@@ -52,7 +52,7 @@ class CreateUsersTable extends Migration {
 			$table->boolean('status')->default(true);
 			
 			// status for admin
-			$table->boolean('admin')->default(false);
+			$table->boolean('admin')->default(true);
 			
 			//timestamp each account when it is created
  			$table->timestamps();

@@ -51,13 +51,13 @@
         </p>
     </div>
     <div class="col-md-6">
-        <img class="aboutUsImageOne"alt="About Spinal Cord Injury" src="https://app.secure.griffith.edu.au/news/wp-content/uploads/2017/05/GRIDD-QLD-Gov-Funding-Announcement-225-1024x683.jpg"/>
+        <img class="aboutUsImageOne"alt="About Spinal Cord Injury" src="images/AboutUs/aboutSCI.jpeg"/>
     </div>
     
     <!--ABOUT THE EDUCATIONAL MODULES-->
     <div class="col-md-6">
         <br><br><br>
-        <img class="aboutUsImageOne"alt="" src="http://www.futuremorph.org/wp-content/uploads/2012/05/MP900448479.jpg"/>
+        <img class="aboutUsImageOne" alt="" src="images/AboutUs/GRIDD_Announcement.jpg"/>
     </div>
     <div class="col-md-6">
         <br><br>
@@ -92,49 +92,63 @@
 </div>
 
 <div class="redBar">
-    <h3 class="meetDoctor" style="text-align:center; color:white"><br>Meet the team part of the clinical trial.</h3>
+    <h3 class="meetDoctor" style="text-align:center; color:white"><br>Meet the SiCURE team!</h3>
 </div>
 
 <div class="container-fluid">
     <br>
-    <div class="col-md-12" style="text-align:center">
+    <div class="col-md-6 basicFontStyle words2" style="text-align: justify">
         <br>
-        <a target="_blank" href="https://cjcneurostemcell.org/"><img src="images/SiCURE.png" height="200px" width="400px"></a>
+        "With the support of the Motor Accident Insurance Commission, 
+        the Perry Cross Spinal Research Foundation and the Clem Jones Foundation, 
+        we are conducting pre-clinical research for a cell transplantation therapy 
+        to repair the injured spinal cord which we hope will lead to a Phase I/IIa 
+        clinical trial within a few years."
+
+    </div>
+    <div class="col-md-6 basicFontStyle" style="text-align:center">
+        <br>
+        <a target="_blank" href="https://cjcneurostemcell.org/"><img src="images/AboutUs/SiCURELogo.png" alt="SiCURE logo"height="200px" width="380px"/></a><br>
+        <strong> <u>To learn more about the SiCURE team, click their logo above </u></strong>
         <br>
     </div>
     <br><br>
-    <div class="col-md-6">
-        <div class="panel panel-default doctorPanel">
-            <br>
-            <img class="doctorImage" alt="" src="images/alan-mackay-sim.jpg" />    
-            <h3 style="text-align: center; color:#D60505">Professor Emeritus Alan Mackay-Sim</h3>
-            <div class="panel-body basicFontStyle panelWords" style="text-align: justify">
-                Alan Mackay-Sim is a neuroscientist and stem cell scientist.
-                He graduated with a PhD from Macquarie University in 1980 and now is a 
-                world leader in spinal cord injury research using nasal olfactory cells.
-                He led a team from Brisbane in a world-first clinical trial in which the patient’s
-                own olfactory cells were transplanted into their injured spinal cord in the first
-                stages of a therapy to treat human paraplegia.
-                <br>
-            </div>
-        </div>
+    <div class="col-md-12" style="text-align: center">
+        <br>
+        <img class="team" alt="SiCURE team photo"src="images/AboutUs/team_SiCURE.png" width="100%"/>
     </div>
-    <div class="col-md-6">
-        <div class="panel panel-default doctorPanel">
-            <br>
-            <img class="doctorImage" alt="" src="images/james-st-john.jpg" />
-            <h3 style="text-align: center; color: #D60505">Dr. James St John</h3>
-            <div class="panel-body basicFontStyle panelWords" style="text-align: justify">
-                James St John is Head of the Clem Jones Centre for Neurobiology and Stem Cell Research within
-                <a target="_blank" href="https://www.griffith.edu.au/institute-drug-discovery/about-centre" style="color: #D60505">GRIDD</a> 
-                and aims to
-                develop therapies to treat acquired brain injury and spinal cord injury. His team is currently
-                designing three-dimensional nerve bridges that will help regenerate the brain and spinal cord by combining advanced
-                cell purification techniques alongside natural product drug discovery and engineering.
-                <br>
-            </div>
-        </div>
-    </div>
+    <!--<div class="col-md-6">-->
+    <!--    <div class="panel panel-default doctorPanel">-->
+    <!--        <br>-->
+    <!--        <img class="doctorImage" alt="" src="images/alan-mackay-sim.jpg" />    -->
+    <!--        <h3 style="text-align: center; color:#D60505">Professor Emeritus Alan Mackay-Sim</h3>-->
+    <!--        <div class="panel-body basicFontStyle panelWords" style="text-align: justify">-->
+    <!--            Alan Mackay-Sim is a neuroscientist and stem cell scientist.-->
+    <!--            He graduated with a PhD from Macquarie University in 1980 and now is a -->
+    <!--            world leader in spinal cord injury research using nasal olfactory cells.-->
+    <!--            He led a team from Brisbane in a world-first clinical trial in which the patient’s-->
+    <!--            own olfactory cells were transplanted into their injured spinal cord in the first-->
+    <!--            stages of a therapy to treat human paraplegia.-->
+    <!--            <br>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <!--<div class="col-md-6">-->
+    <!--    <div class="panel panel-default doctorPanel">-->
+    <!--        <br>-->
+    <!--        <img class="doctorImage" alt="" src="images/james-st-john.jpg" />-->
+    <!--        <h3 style="text-align: center; color: #D60505">Dr. James St John</h3>-->
+    <!--        <div class="panel-body basicFontStyle panelWords" style="text-align: justify">-->
+    <!--            James St John is Head of the Clem Jones Centre for Neurobiology and Stem Cell Research within-->
+    <!--            <a target="_blank" href="https://www.griffith.edu.au/institute-drug-discovery/about-centre" style="color: #D60505">GRIDD</a> -->
+    <!--            and aims to-->
+    <!--            develop therapies to treat acquired brain injury and spinal cord injury. His team is currently-->
+    <!--            designing three-dimensional nerve bridges that will help regenerate the brain and spinal cord by combining advanced-->
+    <!--            cell purification techniques alongside natural product drug discovery and engineering.-->
+    <!--            <br>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
     
     
 </div>

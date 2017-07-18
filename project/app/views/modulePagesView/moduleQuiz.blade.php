@@ -13,6 +13,15 @@
 <script>
     var questionNumber = 1;
     window.onload = function(){
+        var quizArray = [];
+        var test = "<?php $DBarray = array(); foreach($moduleTestDB as $moduleTestDb) array_push($DBarray, $moduleTestDB);?>";
+        console.log("testst: <?php echo gettype($DBarray[0]) ?>");
+        var count = "<?php $count = 0; foreach($moduleTestDB as $moduleTestDB) $count++; echo $count; ?>";
+        for(var i = 0; i <= count; i++){
+            quizArray[i] = 0;
+        }
+        console.log("db type: " + "<?php echo gettype($moduleTestDB) ?>");
+        console.log("count: " + count);
         while(questionNumber <= 10){
             addFunc();
         }

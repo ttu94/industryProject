@@ -91,7 +91,7 @@
               </table>
             </div>
           <div class="col-md-6">
-              <img src="{{ URL::to('/') }}/images/Module3/mod3img1.png" width="100%" height="700px"></img>
+              <img src="{{ URL::to('/') }}/images/Module2/mod2img1.png" width="100%" height="650px"></img>
           </div>
         </li>
         
@@ -119,7 +119,7 @@
           </table>
           <p class="modh2">The Neuron</p>
           <div class="col-md-12">
-              <img src="{{ URL::to('/') }}/images/Module3/mod3img1.png" width="100%" height="300px"></img>
+              <img src="{{ URL::to('/') }}/images/Module2/mod2img2.png" width="100%" height="300px"></img>
           </div>
         </li>
         

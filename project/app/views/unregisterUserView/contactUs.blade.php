@@ -27,8 +27,10 @@
           Nathan Campus, Griffith University <br><br>
           Tel: +61 123 456 789 <br>
           Fax: +61 123 456 789 <br><br>
-          info@amarelo.com <br><br>
-          <form action="/action_page.php">
+          <a href="mailto:sicure.sci@gmail.com" target="_top" class="contactEmail">sicure.sci@gmail.com</a> <br><br>
+          
+          Form for submitting enquries
+          <form action="{{ action('UserController@UserEnquiries') }}" method="POST">
             <input type="text" id="contactName" name="contactName" placeholder="Name*" width="200px" required>
             <br>
             <input type="text" id="contactEmail" name="contactEmail" placeholder="Email*" required>
@@ -36,16 +38,17 @@
             <div class="country subject2" name="contactSubject" style="width:100%;height:45px;color:grey;background-color:white;border-style:solid;border-color: #666666;padding: 5px 20px">
               <select name="contactSubject">
                 <option>Select subject*</option>
-                <option value="general">General Enquiries</option>
-                <option value="modules">Modules</option>
-                <option value="quizzes">Quizzes</option>
-                <option value="bug">Website Errors</option>
-                <option value="other">Other</option>
+                <option value="Enquiries: General">General Enquiries</option>
+                <option value="Enquiries: Modules">Modules</option>
+                <option value="Enquiries: Quizzes">Quizzes</option>
+                <option value="Enquiries: Website Errors">Website Errors</option>
+                <option value="Enquiries: Other">Other</option>
               </select>
             </div>
             <textarea id="comment" name="contactComment" placeholder="How can we help you?"></textarea>
             <br>
-            <button class="button darkgrey" type="submit, button" style="float:right"form="contactUsForm" value="Submit" data-toggle="modal" data-target="#myModal">Send</button>
+            <!--<button type="submit" class="">submit</button>-->
+            <button class="button darkgrey" type="submit" style="float:right">Send</button>
         </form>
   <!-- Modal for contactUs -->
   <div class="modal fade" id="myModal" role="dialog">

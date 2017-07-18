@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'thuan.tu94@gmail.com',
+	'username' => 'sicure.sci@gmail.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'Pokemon1!',
+	'password' => 'SiCUREis100%awesome',
 
 	/*
 	|--------------------------------------------------------------------------
