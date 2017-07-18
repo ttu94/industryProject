@@ -23,18 +23,31 @@ class UserController extends \BaseController {
 		return View::make('unregisterUserView.register');
 	}
 	
+	//user enquiry route
 	public function UserEnquiries()
 	{
 		$input = Input::all();
 
-		//Sends an email to the user with a welcome message
+		//sends an email to sicure.sci@gmail.com when a user submits an enquiry
 		Mail::send('emails.enquiries', array('contactName'=>Input::get('contactName'), 'contactEmail'=>Input::get('contactEmail'), 'contactComment'=>Input::get('contactComment')), function($message){
 			$message->to('sicure.sci@gmail.com')->subject(Input::get('contactSubject'));
 		});
 
-		return View::make('unregisterUserView.contactUs');
+		return Redirect::action('PageController@ContactUs')->with('success', 'Thank you for your enquiry, we will get back in touch with you as soon as we can!');
 	}
 
+	//user feedback route
+	public function UserFeedback()
+	{
+		$input = Input::all();
+
+		//sends an email to sicure.sci@gmail.com when a user submits feedback
+		Mail::send('emails.feedback', array('feedbackName'=>Input::get('feedbackName'), 'feedbackEmail'=>Input::get('feedbackEmail'), 'feedback'=>Input::get('feedback'), 'star'=>Input::get('star')), function($message){
+			$message->to('sicure.sci@gmail.com')->subject('Feedback');
+		});
+
+		return Redirect::action('PageController@ContactUs')->with('success', 'Thank you for your feedback. We cannot personally respond, but please know that your message has been received.');
+	}
 
 	/**
 	 * Store a newly user resource in storage.

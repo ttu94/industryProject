@@ -11,7 +11,7 @@
 
 @section('content')
 <div class="container-fluid"> 
-    <br>
+        <br>
         @if(Session::has('success'))
             <div class="alert alert-success alert-dismissable fade in"  style="background-color: #D5E1EE; border: none">
                 <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>

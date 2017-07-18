@@ -20,5 +20,21 @@ class ModuleTestSeeder extends Seeder {
          $ModuleTest->question = "Does it?";
          $ModuleTest->correctAnswer = "Sure, why not.";
          $ModuleTest->save();
+         
+         $ModuleTest = new ModuleTest;
+         $ModuleTest->id = 3;
+         //foreign key denoting where theresults for module 1 will be sent
+         $ModuleTest->moduleName = "Module 1";
+         $ModuleTest->question = "Sure?";
+         $ModuleTest->correctAnswer = "Um, Sure Thing.";
+         $ModuleTest->save();
+         
+         $ModuleTest = new ModuleTest;
+         $ModuleTest->id = 4;
+         //foreign key denoting where theresults for module 1 will be sent
+         $ModuleTest->moduleName = "Module 1";
+         $ModuleTest->question = "What?";
+         $ModuleTest->correctAnswer = "Uhhh, IDK.";
+         $ModuleTest->save();
     }   
 }

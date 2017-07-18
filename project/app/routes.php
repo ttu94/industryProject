@@ -119,6 +119,8 @@ Route::get('aboutUs', array('as' => 'about.us', 'uses' => 'PageController@AboutU
 Route::get('contactUs', array('as' => 'contact.us', 'uses' => 'PageController@ContactUs'));
 //route for user enquiries
 Route::post('contactUs', "UserController@UserEnquiries");
+//route for user feedback
+Route::post('contactUs', "UserController@UserFeedback");
 
 
 

@@ -1023,10 +1023,6 @@ button2 {
 }
 
 /*EDUCATIONAL MODULE PAGES (1-11) CSS*****************************************/
-.ul.one {
-    list-style: circle;
-}
-
 .modh1 {
     font-size: 30px;
     color: #195DA3;
@@ -1149,6 +1145,7 @@ th {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 .diagramLabel {

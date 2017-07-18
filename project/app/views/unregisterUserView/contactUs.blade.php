@@ -12,6 +12,12 @@
 @section('content')
 <div class="container-fluid">
   <br>
+  @if(Session::has('success'))
+    <div class="alert alert-success alert-dismissable fade in"  style="background-color: #D5E1EE; border: none">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+      <h2 style="text-align:center">{{ Session::get('success') }}</h2>
+    </div>
+  @endif
   <div class="row">
   <!--LEFT SIDE OF SCREEN-->
   <div class="col-md-6">
@@ -50,26 +56,6 @@
             <!--<button type="submit" class="">submit</button>-->
             <button class="button darkgrey" type="submit" style="float:right">Send</button>
         </form>
-  <!-- Modal for contactUs -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
-          <h4 class="modal-title" style="text-align:center">Thank You!</h4>
-        </div>
-        <div class="modal-body">
-          <p style="text-align:center">Thank you for your enquiry.<br>
-              We'll be sure to email you soon!<br>
-              Have a nice day!
-          </p>
-        </div>
-        <div class="modal-footer" style="text-align:center">
-          <button type="button" class="button2 darkgrey" style="width: 100px" data-dismiss="modal">Ok</button>
-        </div>
-      </div>
-    </div>
-  </div>
       </div>
     </div>
   </div>
@@ -83,56 +69,34 @@
       <p>How are we doing? Leave feedback on your experience, (all feedback will be read, but we may not always respond).</p>
       <br>
       <div>
-          <form>
+          <form action="{{ action('UserController@UserFeedback') }}" method="POST">
               <input type="text" id="feedbackName" name="feedbackName" placeholder="Name" width="200px" required>
               <br>
-    
               <input type="text" id="feedbackEmail" name="feedbackEmail" placeholder="Email" required>
               <br>
-    
-              <input type="text" id="feedbackSubject" name="feedbackSubject" placeholder="Subject">
+              <!--<input type="text" id="feedbackSubject" name="feedbackSubject" placeholder="Subject">-->
               <textarea id="feedback" name="feedback" placeholder="What is your feedback?" height="1000px"></textarea>  
               <div class="stars">
-                  <form action="">
-                    <input class="star star-5" id="star-5" type="radio" name="star"/>
+                  <!--<form action="">-->
+                    <input class="star star-5" id="star-5" type="radio" name="star" value="5"/>
                     <label class="star star-5" for="star-5"></label>
-                    <input class="star star-4" id="star-4" type="radio" name="star"/>
+                    <input class="star star-4" id="star-4" type="radio" name="star" value="4"/>
                     <label class="star star-4" for="star-4"></label>
-                    <input class="star star-3" id="star-3" type="radio" name="star"/>
+                    <input class="star star-3" id="star-3" type="radio" name="star" value="3"/>
                     <label class="star star-3" for="star-3"></label>
-                    <input class="star star-2" id="star-2" type="radio" name="star"/>
+                    <input class="star star-2" id="star-2" type="radio" name="star" value="2"/>
                     <label class="star star-2" for="star-2"></label>
-                    <input class="star star-1" id="star-1" type="radio" name="star"/>
+                    <input class="star star-1" id="star-1" type="radio" name="star" value="1"/>
                     <label class="star star-1" for="star-1"></label>
-                  </form>
+                  <!--</form>-->
                   <h3 style="text-align: center">Leave a rating!</h3>
               </div>
-              <!--<p style= "text-align: center">Leave a rating!</p>-->
               <div style="text-align:center">
                 <br>
-              <button class="button darkgrey" type="submit, button" form="contactUsForm" value="Submit" data-toggle="modal" data-target="#feedbackModal">Send</button>
+              <button class="button darkgrey" type="submit">Send</button>
               </div>
               <br>
         </form>  
-          
-          <!--MODAL FOR FEEDBACK-->
-            <div class="modal fade" id="feedbackModal" role="dialog">
-              <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title" style="text-align: center">Thank You!</h4>
-                  </div>
-                  <div class="modal-body">
-                    <p style="text-align:center">Thank you for leaving your feedback! <br>
-                       It will be put into our consideration. <br>
-                    </p>
-                  </div>
-                  <div class="modal-footer" style="text-align: center">
-                    <button type="button" class="button2 darkgrey" style="width: 100px" data-dismiss="modal">Ok</button>
-                  </div>
-                </div>
-              </div>
-          </div>  <!-- Model  ends -->  
     </div>
 
 </div>

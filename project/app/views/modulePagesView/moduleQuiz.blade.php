@@ -13,24 +13,15 @@
 <script>
     var questionNumber = 1;
     window.onload = function(){
-        var quizArray = [];
-        var test = "<?php $DBarray = array(); foreach($moduleTestDB as $moduleTestDb) array_push($DBarray, $moduleTestDB);?>";
-        console.log("testst: <?php echo gettype($DBarray[0]) ?>");
-        var count = "<?php $count = 0; foreach($moduleTestDB as $moduleTestDB) $count++; echo $count; ?>";
-        for(var i = 0; i <= count; i++){
-            quizArray[i] = 0;
-        }
-        console.log("db type: " + "<?php echo gettype($moduleTestDB) ?>");
-        console.log("count: " + count);
         while(questionNumber <= 10){
             addFunc();
         }
     }
-    function addFunc(){
-   		  var tracklistTable = document.getElementById("tracklist");
-          tracklistTable.innerHTML += '<div class="linearRadio basicFontStyle"><h2>Question ' + questionNumber + '</h2><h3>' + 'ADD_QUESTION_HERE' + '</h3>' + 'ADD_QUIZ' + '<br></div><br>';
-          questionNumber += 1;
-        }
+    // function addFunc(){
+   	// 	  var tracklistTable = document.getElementById("tracklist");
+    //       tracklistTable.innerHTML += '<div class="linearRadio basicFontStyle"><h2>Question ' + questionNumber + '</h2><h3>' + 'ADD_QUESTION_HERE' + '</h3>' + 'ADD_QUIZ' + '<br></div><br>';
+    //       questionNumber += 1;
+    //     }
         
         
 </script>
@@ -46,7 +37,18 @@
     <div class="col-md-12">
         <form action={{ route("quiz_results", array("id" => Auth::user()->id)) }}>
                 <div id="tracklist">
-                    
+                    <?php $count = 0; shuffle($moduleTestDB); ?>
+                    @foreach($moduleTestDB as $moduleTestDB)
+                        <?php $count++ ?>
+                        @if($count <= 3)
+                            <h2>Question {{ $count }}</h2>
+                            <h3>{{ $moduleTestDB->question }}</h3>
+                            <p>Some answers</p>
+                            <p>Some answers</p>
+                            <p>Some answers</p>
+                            <p>Some answers</p>
+                        @endif
+                    @endforeach
                 </div>
             <!--<div class="linearRadio basicFontStyle">-->
             <!--    <h2>Question 1:</h2>-->

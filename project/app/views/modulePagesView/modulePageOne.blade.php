@@ -61,10 +61,7 @@
         <!--SLIDE 1-->
         <li class="carousels__slide">
           <p class="modh1">Facts and Figures for SCI</p>
-          <p class="modh2">1a) More demographics, less economics<br><br><u>You Are Not Alone</u><br></p>
-          <ul class="one">
-            
-          </ul>
+          <p class="modh2">1 a) More demographics, less economics<br><br><u>You Are Not Alone</u><br></p>
          <table class="b">
             <tr>
               <td class="b2 words2">•</td>
@@ -111,84 +108,79 @@
           </table>
           <br>
           <p class="modh2">Economics of SCI treatment and management</p>
-          <img class="diagram1" src="{{ URL::to('/') }}/images/Module1/mod1img1.png" width="700px" height="300px"></img>
-          <!--<p class="modh2">⤘ Statistics and clinical data</p>-->
-          <!--<p class="words2"><strong>The National Spinal Cord Injury Statistical Centre USA</strong> reports etiological and clinical injury distributions in its 2016 Fact Sheet.-->
-          <!--  <br><br>-->
-          <!--  <div class="col-md-7">-->
-          <!--    <img class="diagram" alt="Figure 1: Etiological distrubution as per the data collected in 2016" src="{{ URL::to('/') }}/images/Mod1.1.png" height="290px"/>-->
-          <!--    <br><p class="diagramLabel"><u><strong>Figure 1:</strong> Etiological distrubution as per the data collected in 2016</u></p>-->
-          <!--  </div>-->
-          <!--  <div class="col-md-5">-->
-          <!--    <p>According to the fact sheet and <strong>Figure 1:</strong></p>-->
-          <!--    <table class="b">-->
-          <!--      <tr>-->
-          <!--        <td class="b2 words3">-</td>-->
-          <!--        <td class="b2 words3">38% cases are due to vehicular accidents,</td>-->
-          <!--      </tr>-->
-          <!--      <tr>-->
-          <!--        <td class="b2 words3">-</td>-->
-          <!--        <td class="b2 words3">30.5% result from falls,</td>-->
-          <!--      </tr>-->
-          <!--      <tr>-->
-          <!--        <td class="b2 words3">-</td>-->
-          <!--        <td class="b2 words3">13.5% are victims of violence,</td>-->
-          <!--      </tr>-->
-          <!--      <tr>-->
-          <!--        <td class="b2 words3">-</td>-->
-          <!--        <td class="b2 words3">9% are as a result of sports injuries,</td>-->
-          <!--      </tr>-->
-          <!--      <tr>-->
-          <!--        <td class="b2 words3">-</td>-->
-          <!--        <td class="b2 words3">5% result due to medical reasons including iatrogenic causes and,</td>-->
-          <!--      </tr>-->
-          <!--      <tr>-->
-          <!--        <td class="b2 words3">-</td>-->
-          <!--        <td class="b2 words3">4% are attributed to reasons other than listed here.</td>-->
-          <!--      </tr>-->
-          <!--    </table>-->
-          <!--  </div>-->
-          <!--</p>-->
+          <img class="diagram3" src="{{ URL::to('/') }}/images/Module1/mod1img1.png"
+          alt="The costs are estimated as per US health care standards and are reflected in US Dollars."
+          width="750px" height="250px" style="text-align: center"></img>
+          <br><p style="text-align: center">The costs are estimated as per US health care standards and are reflected in US Dollars.</p>
         </li>
         
         <!--SLIDE 3-->
         <li class="carousels__slide words2">
-          <div class="col-md-5 words2"><br>
-            <p>Out of all cases, 45% suffer from incomplete quadriplegia, 13.3% from complete quadriplegia, 
-               21.3% have an incomplete paraplegia and 20% have complete paraplegia.</p>
-            <p>Only in 0.4% cases, the victims of spinal cord injury experience recovery without any neurological deficit or residual paralysis.</p>
+          <div>
+            <p class="modh2">Causes of Spinal Cord Injury</p>
+            <br>
           </div>
-          <div class="col-md-7">
-            <img class="diagram2" alt="Figure: Extent of Spinal Cord Injury as per the data collected in 2016" 
-            src="{{ URL::to('/') }}/images/Mod1.2.png" height="290px"/><br>
-            <p style="line-height:20px;text-align:center"><u><strong>Figure 2:</strong> Extent of Spinal Cord Injury as per the data collected in 2016</u></p>
+          <div class="col-md-7 words2">
+            <img class="diagram2" alt="National SCI Statistical Centre, US Fact Sheet 2016" 
+            src="{{ URL::to('/') }}/images//Module1/mod1img2.png" height="450px"/><br>
+            <p style="line-height:20px;text-align:center">National SCI Statistical Centre, US Fact Sheet 2016</p>
           </div>
-          <br><br>
-          <div class="col-md-12 words2">
-            <p>Out of all spinal cord injury cases, an overwhelming 58.3% victims suffer from some 
-               form of quadriplegia implying an injury to the cervical spinal cord segments.</p>
-            <p>The relatively delicate structure of cervical vertebrae, their vulnerable location in the neck and 
-               the fact that they carry and transmit the weight of the entire head makes the cervical vertebrae more prone to fracture or 
-               dislocation upon injury, damaging the cervical spinal cord in turn.</p>
+          <div class="col-md-5">
+            <table class="b">
+                <tr>
+                  <td class="b2 words3">•</td>
+                  <td class="b2 words3">Trauma resulting from vehicular accidents, falls from heights, violence and sporting injuries cause over 90% of SCIs in total</td>
+                </tr>
+                <tr>
+                  <td class="b2 words3">•</td>
+                  <td class="b2 words3">In rare cases, infection of the cord or a cancerous tumour can also cause a SCI.</td>
+                </tr>
+                <tr>
+                  <td class="b2 words3">•</td>
+                  <td class="b2 words3">Problems related to blood vessels of the spinal cord may result in SCI as well.</td>
+                </tr>
+              </table>
           </div>
         </li>
         
         <!--SLIDE 4-->
-        <li class="carousels__slide">
-          <br>
-          <p class="modh2">⤘ Economic consequences</p>
-          <p>SCI treatments put a significant economic burden on the health care system.<br><br>
-             For an injury with ASIA score of A, B or C at level C1-C4, cost for the first 
-             year is over 1 million US Dollars with 185,000 USD each following year per patient.<br><br>
-             If a patient suffers from an injury with ASIA scores A, B or C at C5-C8 levels, 
-             the average cost is 770,000 USD for the first year and 114,000 USD each following year.<br><br>
-             For injuries with ASIA scores A, B or C below this level, 
-             the expected first year cost is 520,000 USD and 69,000 USD every following year.<br><br>
-             For any Grade D injury, the expected cost is 350,000 and 42,000 
-             USD for the first year and every following year respectively.</p>
+        <li class="carousels__slide words2">
+          <div class="col-md-5">
+            <br>
+            <table class="b">
+              <tr>
+                <td class="b2 words3">•</td>
+                <td class="b2 words3">Over 58% people with SCI suffer from quadriplegia from which 45% of the people suffer from incomplete quadriplegia</td>
+              </tr>
+              <tr>
+                <td class="b2 words3">•</td>
+                <td class="b2 words3">Only 1 in 250 cases of SCI may show full recovery without any long lasting paralysis.</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-7 words2">
+            <br>
+            <img class="diagram2" alt="National SCI Statistical Centre, US Fact Sheet 2016" 
+            src="{{ URL::to('/') }}/images//Module1/mod1img3.png" height="450px"/><br>
+            <p style="line-height:20px;text-align:center">National SCI Statistical Centre, US Fact Sheet 2016</p>
+          </div>
         </li>
         
         <!--SLIDE 5-->
+        <li class="carousels__slide">
+          <br>
+          <p class="modh2">1 b) Recovery of function<br><br>
+          The Status Quo</p>
+          As of now, the recovery of function varies greatly with the extent of injury, the most severe cases show minimal to no recovery.
+The best possible outcomes are seen when the patients receive prompt medical assistance and treatment. 
+Surgery is very important to remove the debris and take the pressure off of the injured cord to prevent further damage to the cord. 
+After the initial surgical treatment intensive physical therapy over an extended period tends to yield maximum functional recovery.
+We already have many systems in place where assistive devices help the SCI patients stay mobile and active- as much as their condition allows
+However, depression and substance abuse are significantly higher in people with SCI which usually leads to a poorer outcome. 
+
+        </li>
+        
+        <!--SLIDE 6-->
         <li class="carousels__slide">
           <br>
           <p>In addition to these costs, the patients suffer from loss of wages, loss of 
@@ -226,7 +218,7 @@
           </table>
         </li>
         
-        <!--SLIDE 6-->
+        <!--SLIDE 7-->
         <li class="carousels__slide">
           <p>For Australia, based on data form the Spinal Injury Network, National Disability Services (2010) 
              and a 2009 Access Economics report, Spinal Life Australia (www.spinal.com.au) depicted the huge economic 
