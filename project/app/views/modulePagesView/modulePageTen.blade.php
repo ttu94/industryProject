@@ -8,7 +8,7 @@
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h2>Module 10: CNS regeneration</h2>
+   <h4>Module 10: CNS regeneration</h4>
 @endsection
 
 @section('content')
@@ -17,11 +17,11 @@
     <br>
     <div class="col-md-7">
       <a href="{{ URL::to('/') }}/pdfs/Module_1_-_Demographics_&_Economics_of_SCI.pdf" 
-      target="_blank" class="btn2 whitebrown">Download PDF</a>
+      target="_blank" class="btn2 pdf">Download PDF</a>
     </div>
     <div class="col-md-5">
       <!--INCOMPLETE ROUTE, requires to take module ID-->
-      <a href={{ route("module_quiz_info", array("id" => Auth::user()->id)) }} ><button class="btn whitebrown">Begin Quiz >></button></a>
+      <a href={{ route("module_quiz_info", array("id" => Auth::user()->id)) }} ><button class="btn darkgrey2">Begin Quiz >></button></a>
     </div>
 
 </div>

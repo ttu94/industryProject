@@ -8,7 +8,7 @@
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h2 style="color:white">Module 4: Functions</h2>
+   <h4>Module 4: Functions</h4>
 @endsection
 
 @section('content')
@@ -17,11 +17,11 @@
     <br>
     <div class="col-md-7">
       <a href="{{ URL::to('/') }}/pdfs/Module_1_-_Demographics_&_Economics_of_SCI.pdf" 
-      target="_blank" class="btn2 whitebrown">Download PDF</a>
+      target="_blank" class="btn2 pdf">Download PDF</a>
     </div>
     <div class="col-md-5">
       <!--INCOMPLETE ROUTE, requires to take module ID-->
-      <a href={{ route("module_quiz_info", array("id" => Auth::user()->id)) }} ><button class="btn whitebrown">Begin Quiz >></button></a>
+      <a href={{ route("module_quiz_info", array("id" => Auth::user()->id)) }} ><button class="btn darkgrey2">Begin Quiz >></button></a>
     </div>
     <div class="col-md-12" >
       <ul class="carousels my-carousels">
@@ -51,14 +51,11 @@
           <label for="1" class="carousels__control carousels__control--backward"></label>
           <label for="4" class="carousels__control carousels__control--forward"></label>
         </div>
-        <!--<div class="carousels__controls">-->
-        <!--  <label for="1" class="carousels__control carousels__control--backward"></label>-->
-        <!--  <label for="5" class="carousels__control carousels__control--forward"></label>-->
-        <!--</div>-->
       
         <!--SLIDE 1-->
         <li class="carousels__slide">
-          <p class="modh2">4a) Vertebral column</p>
+          <br>
+          <p class="modh2">4 a) Vertebral column</p>
           <menu class="words2">
               <li>The vertebral column, more commonly known as the backbone, serves some very crucial functions.</li>
               <li>First and foremost, it covers, contains and protects the spinal cord.</li>
@@ -70,7 +67,8 @@
         
         <!--SLIDE 2-->
         <li class="carousels__slide">
-          <p class="modh2">4b) Spinal cord</p>
+          <br>
+          <p class="modh2">4 b) Spinal cord</p>
           <menu class="words2">
               <li>The spinal cord mainly functions as a conduit between brain and the rest of body.</li>
               <li>It carries all the sensory information from the body and relays it to brain; and carries motor commands from the brain and relays them to the body.</li>
@@ -83,14 +81,16 @@
         <!--SLIDE 3-->
         <li class="carousels__slide words2">
           <div class="col-md-12">
-                <img src="{{ URL::to('/') }}/images/Module4/mod4img1.png" width="100%" height="700px"></img>
+            <br>
+                <img src="{{ URL::to('/') }}/images/Module4/mod4img3.png" width="100%" height="525px"></img><br><br>
+                <p class="words2" style="text-align:center"><strong>Figure: </strong>Sensory and Motor Functions of the spinal cord</p>
             </div>
         </li>
         
         <!--SLIDE 4-->
         <li class="carousels__slide">
-          <div class="col-md-8">
-            <p class="modh2">4c) Spinal nerves and dermatome</p>
+          <p class="modh2">4 c) Spinal nerves and dermatome</p>
+          <div class="col-md-7">
             <menu class="words2">
               <li>As mentioned before, each spinal nerve supplies a specific region of the body. These regions are called dermatomes. The dermatomes and their spinal nerve roots are shown in this figure.</li>
               <li>Other than the dermatomes, the spinal nerves supply specific muscle groups and organs.</li>
@@ -99,8 +99,9 @@
               <li>Lumbar and sacral nerve roots’ somatic fibres supply the muscles of the lower limbs.</li>
             </menu>
           </div>
-          <div class="col-md-4">
-                <img src="{{ URL::to('/') }}/images/Module4/mod4img2.png" width="100%" height="700px"></img>
+          <div class="col-md-5">
+                <img src="{{ URL::to('/') }}/images/Module4/mod4img2.png" width="100%" height="600px"></img><br>
+                <p class="words2" style="text-align:center"><strong>Figure: </strong>Dermatomes and their spinal nerve roots</p>
           </div>
           
         </li>
@@ -109,11 +110,17 @@
         <li class="carousels__slide">
           <div class="col-md-12">
             <menu class="words2">
+              <br>
               <li>Sympathetic supply from the nerve root C3, C4 and C5 supply the diaphragm.</li>
               <li>Sympathetic nerve supply to the heart and the respiratory tract is derived from nerve roots T1-T4.</li>
               <li>The rest of the thoracic nerves provide sympathetic innervation to the abdominal organs like stomach, intestines, colon, pancreas, liver and adrenals.</li>
               <li>Nerve roots T12 along with L1 and L2 provide sympathetic supply to the kidneys, bladder, rectum and the external genitalia. These structures receive parasympathetic nerve supply from the sacral autonomic fibres from roots of S2, S3 and S4 spinal nerves.</li>
             </menu>
+            <br><br>
+            <p class="endmess text2"><i><strong>This is the end of Module 4: Functions
+            <br> You may wish to read over the module content again, or you can begin the multiple-choice quiz by clicking the 'Begin Quiz' button above.
+            </strong></i>
+            </p>
           </div>
         </li>
         

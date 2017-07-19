@@ -8,7 +8,7 @@
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h2 style="color: white">Module 1: Facts and Figures for SCI</h2>
+   <h4>Module 1: Facts and Figures for SCI</h4>
 @endsection
 
 
@@ -17,7 +17,7 @@
     <br>
     
     <div class="col-md-7">
-      <a href="{{ URL::to('/') }}/pdfs/Module_1_-_Demographics_&_Economics_of_SCI.pdf" 
+      <a href="{{ URL::to('/') }}/pdfs/Mod_1-Facts_and_Figures_of_SCI.pdf" 
       target="_blank" class="btn2 pdf">Download PDF</a>
     </div>
     <div class="col-md-5">

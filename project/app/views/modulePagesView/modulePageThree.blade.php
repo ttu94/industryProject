@@ -2,13 +2,13 @@
 
 @section('title')
     {{--Module names needs to be taken out of database--}}
-    Module 3: Structure
+    Module 3: Structures
 @endsection
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h2 style="color:white">Module 3: Structure</h2>
+   <h4>Module 3: Structures</h4>
 @endsection
 
 @section('content')
@@ -222,10 +222,10 @@
               <li>Each spinal nerve supplies specific region of the body and specific organs and muscles. The details of this functional distribution in in module 4.</li>
             </menu>
             <br>
-            <p class="endmess text2"><i><strong>This is the end of Module 3: Structure
+            <p class="endmess text2"><i><strong>This is the end of Module 3: Structures
             <br> You may wish to read over the module content again, or you can begin the multiple-choice quiz by clicking the 'Begin Quiz' button above.
             </strong></i>
-          </p>
+            </p>
           </div>
         </li>   
         <div class="carousels__indicators">

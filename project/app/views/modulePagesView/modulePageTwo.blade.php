@@ -8,7 +8,7 @@
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h2 style="color:white" >Module 2: Spinal cord as a neutral tissue and injury to the nerves</h2>
+   <h4>Module 2: Spinal cord as a neutral tissue and injury to the nerves</h4>
 @endsection
 
 @section('content')

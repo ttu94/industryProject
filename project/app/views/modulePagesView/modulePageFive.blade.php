@@ -8,7 +8,7 @@
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h2 style="color:white">Module 5: SCI mechanisms</h2>
+   <h4>Module 5: SCI mechanisms</h4>
 @endsection
 
 @section('content')
@@ -17,11 +17,11 @@
     <br>
     <div class="col-md-7">
       <a href="{{ URL::to('/') }}/pdfs/Module_1_-_Demographics_&_Economics_of_SCI.pdf" 
-      target="_blank" class="btn2 whitebrown">Download PDF</a>
+      target="_blank" class="btn2 pdf">Download PDF</a>
     </div>
     <div class="col-md-5">
       <!--INCOMPLETE ROUTE, requires to take module ID-->
-      <a href={{ route("module_quiz_info", array("id" => Auth::user()->id)) }} ><button class="btn whitebrown">Begin Quiz >></button></a>
+      <a href={{ route("module_quiz_info", array("id" => Auth::user()->id)) }} ><button class="btn darkgrey2">Begin Quiz >></button></a>
     </div>
     <div class="col-md-12" >
       <ul class="carousels my-carousels">
@@ -54,8 +54,8 @@
       
         <!--SLIDE 1-->
         <li class="carousels__slide">
-          <div class="col-md-12" width="100%">
-            <p class="modh1">5a)	Three Column Model</p>
+          <div class="col-md-12">
+            <p class="modh2">5 a)	Three Column Model</p>
             <menu class="words2">
               <li><strong>Physicians use a three column model of the spinal column in order to describe and explain the spinal column injuries.</strong></li>
               <li>These three columns are as follows:</li>
@@ -74,29 +74,31 @@
         <!--SLIDE 2-->
         <li class="carousels__slide">
           <div class="col-md-12">
-                <img src="{{ URL::to('/') }}/images/Module5/mod5img2.png" width="100%" height="700px"></img>
+            <br><br>
+            <img src="{{ URL::to('/') }}/images/Module5/mod5img2.png" width="100%" height="500px"></img>
             </div>
         </li>
         
         <!--SLIDE 3-->
         <li class="carousels__slide words2">
-            <p class="modh2">5b) Clinical classification</p>
-            <menu class="words2">
-              <li>The clinical classification of spinal cord injuries is done by guidelines given by the American Spinal Injury Association (ASIA).</li>
-              <li>There are 5 clinical grades in ASIA classification:</li>
-              <ol type="A">
-                <li><u>Complete injury: </u>No motor or sensory function is preserved in the sacral segments S4-S5. </li>
-                <li><u>Incomplete injury: </u>Only sensory (no motor) function is preserved below the neurological level including the sacral segments S4-S5. </li>
-                <li><u>Incomplete injury: </u>Motor function is preserved below the neurological level, but with at least half of major muscles below the neurological level showing a muscle power less than grade 3..</li>
-                <li><u>Incomplete injury: </u>Motor function is preserved below the neurological level, and over half of major muscles below the neurological level have a muscle power of grade 3 or more.</li>
-                <li><u>Normal: </u>Normal motor and sensory function.</li>
-              </ol>
-            </menu>
+          <br>
+          <p class="modh2">5 b) Clinical classification</p>
+          <menu class="words2">
+            <li>The clinical classification of spinal cord injuries is done by guidelines given by the American Spinal Injury Association (ASIA).</li>
+            <li>There are 5 clinical grades in ASIA classification:</li>
+            <ul type="">
+              <li><u>A = Complete injury</u>: No motor or sensory function is preserved in the sacral segments S4-S5. </li>
+              <li><u>B = Incomplete injury</u>: Only sensory (no motor) function is preserved below the neurological level including the sacral segments S4-S5. </li>
+              <li><u>C = Incomplete injury</u>: Motor function is preserved below the neurological level, but with at least half of major muscles below the neurological level showing a muscle power less than grade 3..</li>
+              <li><u>D = Incomplete injury</u>: Motor function is preserved below the neurological level, and over half of major muscles below the neurological level have a muscle power of grade 3 or more.</li>
+              <li><u>E = Normal</u>: Normal motor and sensory function.</li>
+            </ul>
+          </menu>
         </li>
         
         <!--SLIDE 4-->
         <li class="carousels__slide">
-            <p class="modh2">5c) Sequele to SCI</p>
+            <p class="modh2">5 c) Sequele to SCI</p>
             <menu class="words2">
               <li>Sequelae of spinal cord injury are described in the following phases.</li>
               <li>The events that occur in each phase are specific and signify specific stages of injury progression or recovery.</li>
@@ -108,7 +110,7 @@
         
         <!--SLIDE 5-->
         <li class="carousels__slide">
-            <menu class="words2">
+            <menu class="words4">
               <li>Other than the spinal cord itself, a number of body systems are affected following the spinal cord injury:</li>
               <ol type="1">
                 <li>Neurogenic shock- involves the whole nervous system</li>
@@ -119,7 +121,11 @@
                 <li>Autonomic dysregulation involving heart, breathing, bowel movements, bladder control, sweating, temperature dysregulation and sexual dysfunction.</li>
                 <li>In severe cases of quadriplegia, autonomic dysreflexia may happen where the patient suffers from very high blood pressure, low hear rate, low respiration rate, excessive sweating and hot flushed skin. This happens without warning and may be life threatening if left untreated.</li>
               </ol>
-            </menu>
+            </menu><br>
+            <p class="endmess text2"><i><strong>This is the end of Module 4: Functions
+            <br> You may wish to read over the module content again, or you can begin the multiple-choice quiz by clicking the 'Begin Quiz' button above.
+            </strong></i>
+            </p>
         </li>
         
         <div class="carousels__indicators">
