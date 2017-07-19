@@ -13,7 +13,7 @@
 			<br>
 			<br>
 			Sincerely,<br><br>
-			The SiCure Team
+			The SiCURE Team
 			<br>
 			<img src="{{ $message->embed(public_path() . '/images/SiCURE.png') }}" height="50px" width="100px"/>
 			

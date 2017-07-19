@@ -118,9 +118,9 @@ Route::get('aboutUs', array('as' => 'about.us', 'uses' => 'PageController@AboutU
 //Vuew make contactus for quad header
 Route::get('contactUs', array('as' => 'contact.us', 'uses' => 'PageController@ContactUs'));
 //route for user enquiries
-Route::post('contactUs', "UserController@UserEnquiries");
+Route::post('enquiries', "UserController@UserEnquiries");
 //route for user feedback
-Route::post('contactUs', "UserController@UserFeedback");
+Route::post('feedback', "UserController@UserFeedback");
 
 
 

@@ -37,9 +37,12 @@
     <div class="col-md-12">
         <form action={{ route("quiz_results", array("id" => Auth::user()->id)) }}>
                 <div id="tracklist">
-                    <?php $count = 0; shuffle($moduleTestDB); ?>
+                    <?php $count = 0; $submittedQuestions; shuffle($moduleTestDB); ?>
                     @foreach($moduleTestDB as $moduleTestDB)
-                        <?php $count++ ?>
+                        <?php 
+                            $count++;
+                            $submittedQuestions = $moduleTestDB->question;
+                        ?>
                         @if($count <= 3)
                             <h2>Question {{ $count }}</h2>
                             <h3>{{ $moduleTestDB->question }}</h3>

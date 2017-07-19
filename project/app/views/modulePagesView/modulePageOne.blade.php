@@ -171,8 +171,17 @@
           <br>
           <p class="modh2">1 b) Recovery of function<br><br>
           The Status Quo</p>
-          As of now, the recovery of function varies greatly with the extent of injury, the most severe cases show minimal to no recovery.
-The best possible outcomes are seen when the patients receive prompt medical assistance and treatment. 
+          <table class="b">
+              <tr>
+                <td class="b2 words3">•</td>
+                <td class="b2 words3">As of now, the recovery of function varies greatly with the extent of injury, the most severe cases show minimal to no recovery.</td>
+              </tr>
+              <tr>
+                <td class="b2 words3">•</td>
+                <td class="b2 words3">Only 1 in 250 cases of SCI may show full recovery without any long lasting paralysis.</td>
+              </tr>
+            </table>
+          The best possible outcomes are seen when the patients receive prompt medical assistance and treatment. 
 Surgery is very important to remove the debris and take the pressure off of the injured cord to prevent further damage to the cord. 
 After the initial surgical treatment intensive physical therapy over an extended period tends to yield maximum functional recovery.
 We already have many systems in place where assistive devices help the SCI patients stay mobile and active- as much as their condition allows

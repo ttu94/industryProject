@@ -34,6 +34,7 @@ class UserController extends \BaseController {
 		});
 
 		return Redirect::action('PageController@ContactUs')->with('success', 'Thank you for your enquiry, we will get back in touch with you as soon as we can!');
+		// return View::make('faq');
 	}
 
 	//user feedback route
@@ -45,7 +46,6 @@ class UserController extends \BaseController {
 		Mail::send('emails.feedback', array('feedbackName'=>Input::get('feedbackName'), 'feedbackEmail'=>Input::get('feedbackEmail'), 'feedback'=>Input::get('feedback'), 'star'=>Input::get('star')), function($message){
 			$message->to('sicure.sci@gmail.com')->subject('Feedback');
 		});
-
 		return Redirect::action('PageController@ContactUs')->with('success', 'Thank you for your feedback. We cannot personally respond, but please know that your message has been received.');
 	}
 
@@ -287,6 +287,13 @@ class UserController extends \BaseController {
 
 		//Deactivates the account and logs them out
 		Auth::user()->status = 0;
+		
+		//sends an email to sicure.sci@gmail.com with an deactivation notifcation
+		Mail::send('emails.deactivation', array('firstName'=>Auth::user()->firstName), function($message){
+			$message->to(Auth::user()->email)->subject('Deactivation Notification');
+		});
+		
+		
 		Auth::logout();
 		return Redirect::to('logoutPage');
 	}

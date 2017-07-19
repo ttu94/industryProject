@@ -10,10 +10,10 @@
 @endsection
 
 @section('content')
-<div class="container-fluid">
+<div class="container-fluid" style="text-align:center">
     <br>
-    <h1 style="text-align: center">Hello {{$user->firstName}}<br></h1>
-    <h2 style="text-align: center">We've just noticed your account is currently deactivated. To view all content you must first reactivate your account by choosing "Activate"!</h2>
+    <h1>Hello {{$user->firstName}}<br></h1>
+    <h2>We've just noticed your account is currently deactivated. To view all content you must first reactivate your account by choosing "Activate"!</h2>
     <br>
     {{ Form::model($user, array('method' => 'PUT', 'route' => array('account.reactivation', Auth::user()->id)))}}
         <button class="button greenbluedark">Activate</button>

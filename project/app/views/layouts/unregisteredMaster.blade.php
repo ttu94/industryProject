@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" href="images/Logo1.jpg">
+	<link rel="shortcut icon" href="{{ URL::to('/') }}/images/Logo1.jpg">
 	<title>@yield('title')</title>
 	
 	<!--stylesheets-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    {{ HTML::style('css/style.css', array(), true) }}
+    {{ HTML::style('css/styless.css', array(), true) }}
     <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

@@ -6,7 +6,7 @@
 	<body>
 		<p><b>Name:</b> {{$feedbackName}}</p>
 		<p><b>Email:</b> {{$feedbackEmail}}</p>
-		<p><b>Stars:</b> {{$star}}</p>
+		<p><b>Rating:</b> {{$star}}/5</p>
 		<p><b>Feedback:</b> {{$feedback}}</p>
 	</body>
 </html>

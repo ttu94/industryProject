@@ -352,15 +352,14 @@ a:hover {
 /*Carousel css*/
 
 #myCarousel {
-    /*width: 65%;*/
-    height: 100%;
-    margin-left: 50px;
-    margin-right: 50px;
+    /*min-height: 100%;*/
+    /*margin-left: 50px;*/
+    /*margin-right: 50px;*/
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
       width: 100%;
-      margin: auto;
+      /*margin: auto;*/
 }
 
 .panelOne {

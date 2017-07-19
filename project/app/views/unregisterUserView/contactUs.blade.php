@@ -53,7 +53,6 @@
             </div>
             <textarea id="comment" name="contactComment" placeholder="How can we help you?"></textarea>
             <br>
-            <!--<button type="submit" class="">submit</button>-->
             <button class="button darkgrey" type="submit" style="float:right">Send</button>
         </form>
       </div>
@@ -74,10 +73,9 @@
               <br>
               <input type="text" id="feedbackEmail" name="feedbackEmail" placeholder="Email" required>
               <br>
-              <!--<input type="text" id="feedbackSubject" name="feedbackSubject" placeholder="Subject">-->
+              <input type="text" id="feedbackSubject" name="feedbackSubject" placeholder="Subject">
               <textarea id="feedback" name="feedback" placeholder="What is your feedback?" height="1000px"></textarea>  
               <div class="stars">
-                  <!--<form action="">-->
                     <input class="star star-5" id="star-5" type="radio" name="star" value="5"/>
                     <label class="star star-5" for="star-5"></label>
                     <input class="star star-4" id="star-4" type="radio" name="star" value="4"/>
@@ -88,15 +86,13 @@
                     <label class="star star-2" for="star-2"></label>
                     <input class="star star-1" id="star-1" type="radio" name="star" value="1"/>
                     <label class="star star-1" for="star-1"></label>
-                  <!--</form>-->
-                  <h3 style="text-align: center">Leave a rating!</h3>
+                    <h3 style="text-align: center">Leave a rating!</h3>
               </div>
               <div style="text-align:center">
                 <br>
-              <button class="button darkgrey" type="submit">Send</button>
+                <button class="button darkgrey" type="submit">Send</button>
               </div>
-              <br>
-        </form>  
+          </form>  
     </div>
 
 </div>
