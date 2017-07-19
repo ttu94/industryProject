@@ -8,7 +8,7 @@
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h2>Module 5: SCI mechanisms</h2>
+   <h2 style="color:white">Module 5: SCI mechanisms</h2>
 @endsection
 
 @section('content')
@@ -54,32 +54,21 @@
       
         <!--SLIDE 1-->
         <li class="carousels__slide">
-          <p class="modh1">5a)	Three Column Model</p>
-         <table class="b">
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2"><strong>Physicians use a three column model of the spinal column in order to describe and explain the spinal column injuries.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">These three columns are as follows:</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">1</td>
-              <td class="b2 words2">Anterior column - the anterior longitudinal ligament and the anterior one-half of the vertebral body,</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">2</td>
-              <td class="b2 words2">Middle column - the posterior one-half of the vertebral body</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">3</td>
-              <td class="b2 words2">Posterior column - laminae and the spinal canal.</td>
-            </tr>
-         </table>
-          <div class="col-md-12">
-                <img src="{{ URL::to('/') }}/images/Module5/mod5img1.png" width="100%" height="300px"></img>
-            </div>
+          <div class="col-md-12" width="100%">
+            <p class="modh1">5a)	Three Column Model</p>
+            <menu class="words2">
+              <li><strong>Physicians use a three column model of the spinal column in order to describe and explain the spinal column injuries.</strong></li>
+              <li>These three columns are as follows:</li>
+              <ol type="1">
+                <li>Anterior column - the anterior longitudinal ligament and the anterior one-half of the vertebral body,</li>
+                <li>Middle column - the posterior one-half of the vertebral body</li>
+                <li>Posterior column - laminae and the spinal canal.</li>
+              </ol>
+            </menu>
+              <!--<div class="col-md-9">-->
+                  <img src="{{ URL::to('/') }}/images/Module5/mod5img1.png" width="600px" height="300px" style="display:block; margin:auto"></img>
+              <!--</div>-->
+          </div>
         </li>
         
         <!--SLIDE 2-->
@@ -91,93 +80,46 @@
         
         <!--SLIDE 3-->
         <li class="carousels__slide words2">
-            <p class="modh2">⤘ 5b)	Clinical classification</p>
-            <table class="b">
-              <tr>
-                <td class="b2 words2">•</td>
-                <td class="b2 words2">The clinical classification of spinal cord injuries is done by guidelines given by the American Spinal Injury Association (ASIA). </td>
-              </tr>
-              <tr>
-                <td class="b2 words2">•</td>
-                <td class="b2 words2">There are 5 clinical grades in ASIA classification:</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">A&nbsp;=</td>
-                <td class="b2 words2"><u>Complete injury: </u>No motor or sensory function is preserved in the sacral segments S4-S5. </td>
-              </tr>
-              <tr>
-                <td class="b2 words2">B&nbsp;=</td>
-                <td class="b2 words2"><u>Incomplete injury: </u>Only sensory (no motor) function is preserved below the neurological level including the sacral segments S4-S5. </td>
-              </tr>
-              <tr>
-                <td class="b2 words2">C&nbsp;=</td>
-                <td class="b2 words2"><u>Incomplete injury: </u>Motor function is preserved below the neurological level, but with at least half of major muscles below the neurological level showing a muscle power less than grade 3.</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">D&nbsp;=</td>
-                <td class="b2 words2"><u>Incomplete injury: </u>Motor function is preserved below the neurological level, and over half of major muscles below the neurological level have a muscle power of grade 3 or more.</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">E&nbsp;=</td>
-                <td class="b2 words2"><u>Normal: </u>Normal motor and sensory function.</td>
-              </tr>
-            </table>
+            <p class="modh2">5b) Clinical classification</p>
+            <menu class="words2">
+              <li>The clinical classification of spinal cord injuries is done by guidelines given by the American Spinal Injury Association (ASIA).</li>
+              <li>There are 5 clinical grades in ASIA classification:</li>
+              <ol type="A">
+                <li><u>Complete injury: </u>No motor or sensory function is preserved in the sacral segments S4-S5. </li>
+                <li><u>Incomplete injury: </u>Only sensory (no motor) function is preserved below the neurological level including the sacral segments S4-S5. </li>
+                <li><u>Incomplete injury: </u>Motor function is preserved below the neurological level, but with at least half of major muscles below the neurological level showing a muscle power less than grade 3..</li>
+                <li><u>Incomplete injury: </u>Motor function is preserved below the neurological level, and over half of major muscles below the neurological level have a muscle power of grade 3 or more.</li>
+                <li><u>Normal: </u>Normal motor and sensory function.</li>
+              </ol>
+            </menu>
         </li>
         
         <!--SLIDE 4-->
         <li class="carousels__slide">
-            <p class="modh2">⤘ 5c) Sequele to SCI</p>
-            <table class="b">
-              <tr>
-                <td class="b2 words2">•</td>
-                <td class="b2 words2">Sequelae of spinal cord injury are described in the following phases. </td>
-              </tr>
-              <tr>
-                <td class="b2 words2">•</td>
-                <td class="b2 words2">The events that occur in each phase are specific and signify specific stages of injury progression or recovery.</td>
-              </tr>
-            </table>
-          <div class="col-md-12">
-                <img src="{{ URL::to('/') }}/images/Module5/mod5img3.png" width="100%" height="400px"></img>
+            <p class="modh2">5c) Sequele to SCI</p>
+            <menu class="words2">
+              <li>Sequelae of spinal cord injury are described in the following phases.</li>
+              <li>The events that occur in each phase are specific and signify specific stages of injury progression or recovery.</li>
+            </menu>
+            <div class="col-md-12">
+                <img src="{{ URL::to('/') }}/images/Module5/mod5img3.png" width="100%" height="450px"></img>
             </div>
         </li>
         
         <!--SLIDE 5-->
         <li class="carousels__slide">
-            <table class="b">
-              <tr>
-                <td class="b2 words2">•</td>
-                <td class="b2 words2">Other than the spinal cord itself, a number of body systems are affected following the spinal cord injury:</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">&nbsp;&nbsp;•</td>
-                <td class="b2 words2">Neurogenic shock- involves the whole nervous system</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">&nbsp;&nbsp;•</td>
-                <td class="b2 words2">Thromboembolism- stagnant blood inside the veins may form clots</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">&nbsp;&nbsp;•</td>
-                <td class="b2 words2">Bed sores - due to immobility</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">&nbsp;&nbsp;•</td>
-                <td class="b2 words2">Pain – not only in the acute phase, also in chronic phase</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">&nbsp;&nbsp;•</td>
-                <td class="b2 words2">Mental health is compromised leading to depression, anxiety, shock</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">&nbsp;&nbsp;•</td>
-                <td class="b2 words2">Autonomic dysregulation involving heart, breathing, bowel movements, bladder control, sweating, temperature dysregulation and sexual dysfunction.</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">&nbsp;&nbsp;•</td>
-                <td class="b2 words2">In severe cases of quadriplegia, autonomic dysreflexia may happen where the patient suffers from very high blood pressure, low hear rate, low respiration rate, excessive sweating and hot flushed skin. This happens without warning and may be life threatening if left untreated.</td>
-              </tr>
-            </table>
+            <menu class="words2">
+              <li>Other than the spinal cord itself, a number of body systems are affected following the spinal cord injury:</li>
+              <ol type="1">
+                <li>Neurogenic shock- involves the whole nervous system</li>
+                <li>Thromboembolism- stagnant blood inside the veins may form clots</li>
+                <li>Bed sores - due to immobility</li>
+                <li>Pain – not only in the acute phase, also in chronic phase</li>
+                <li>Mental health is compromised leading to depression, anxiety, shock</li>
+                <li>Autonomic dysregulation involving heart, breathing, bowel movements, bladder control, sweating, temperature dysregulation and sexual dysfunction.</li>
+                <li>In severe cases of quadriplegia, autonomic dysreflexia may happen where the patient suffers from very high blood pressure, low hear rate, low respiration rate, excessive sweating and hot flushed skin. This happens without warning and may be life threatening if left untreated.</li>
+              </ol>
+            </menu>
         </li>
         
         <div class="carousels__indicators">

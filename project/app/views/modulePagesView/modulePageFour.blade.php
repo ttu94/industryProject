@@ -8,7 +8,7 @@
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h2>Module 4: Functions</h2>
+   <h2 style="color:white">Module 4: Functions</h2>
 @endsection
 
 @section('content')
@@ -59,55 +59,25 @@
         <!--SLIDE 1-->
         <li class="carousels__slide">
           <p class="modh2">4a) Vertebral column</p>
-         <table class="b">
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">The vertebral column, more commonly known as the backbone, serves some very crucial functions.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">First and foremost, it covers, contains and protects the spinal cord.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">The backbone is necessary for our erect posture as well as carrying and transmitting our body weight to the lower limbs.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">The typical shape of the vertebrae provide the surface area for our back muscles to attach and maintain an upright posture.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">The vertebral column also provides attachment to the shoulder girdle, the ribcage and the pelvis.</td>
-            </tr>
-         </table>
+          <menu class="words2">
+              <li>The vertebral column, more commonly known as the backbone, serves some very crucial functions.</li>
+              <li>First and foremost, it covers, contains and protects the spinal cord.</li>
+              <li>The backbone is necessary for our erect posture as well as carrying and transmitting our body weight to the lower limbs.</li>
+              <li>The typical shape of the vertebrae provide the surface area for our back muscles to attach and maintain an upright posture.</li>
+              <li>The vertebral column also provides attachment to the shoulder girdle, the ribcage and the pelvis.</li>
+          </menu>
         </li>
         
         <!--SLIDE 2-->
         <li class="carousels__slide">
-          <p class="modh2">⤘ 4b) Spinal cord</p>
-          <table class="b">
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">The spinal cord mainly functions as a conduit between brain and the rest of body.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">It carries all the sensory information from the body and relays it to brain; and carries motor commands from the brain and relays them to the body.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">The spinal cord also controls some reflexes that protect the body from certain harmful stimuli such as pain, heat, extreme cold, electric shocks etc.</td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">The neurons in the grey matter control these reflexes, and give rise to the spinal nerves. </td>
-            </tr>
-            <tr>
-              <td class="b2 words2">•</td>
-              <td class="b2 words2">The tracts in the white matter perform specific functions and carry specific information as shown in the figure on next page.</td>
-            </tr>
-          </table>
+          <p class="modh2">4b) Spinal cord</p>
+          <menu class="words2">
+              <li>The spinal cord mainly functions as a conduit between brain and the rest of body.</li>
+              <li>It carries all the sensory information from the body and relays it to brain; and carries motor commands from the brain and relays them to the body.</li>
+              <li>The spinal cord also controls some reflexes that protect the body from certain harmful stimuli such as pain, heat, extreme cold, electric shocks etc.</li>
+              <li>The neurons in the grey matter control these reflexes, and give rise to the spinal nerves.</li>
+              <li>The tracts in the white matter perform specific functions and carry specific information as shown in the figure on next page.</li>
+          </menu>
         </li>
         
         <!--SLIDE 3-->
@@ -120,29 +90,14 @@
         <!--SLIDE 4-->
         <li class="carousels__slide">
           <div class="col-md-8">
-            <p class="modh2">⤘ 4c) Spinal nerves and dermatome</p>
-            <table class="b">
-              <tr>
-                <td class="b2 words2">•</td>
-                <td class="b2 words2">As mentioned before, each spinal nerve supplies a specific region of the body. These regions are called dermatomes. The dermatomes and their spinal nerve roots are shown in this figure.</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">•</td>
-                <td class="b2 words2">Other than the dermatomes, the spinal nerves supply specific muscle groups and organs.</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">•</td>
-                <td class="b2 words2">The cervical nerves together supply the muscles controlling neck movements and the upper limb.</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">•</td>
-                <td class="b2 words2">The thoracic nerves supply the muscles of trunk and abdomen including the intercostal muscles.</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">•</td>
-                <td class="b2 words2">Lumbar and sacral nerve roots’ somatic fibres supply the muscles of the lower limbs.</td>
-              </tr>
-            </table>
+            <p class="modh2">4c) Spinal nerves and dermatome</p>
+            <menu class="words2">
+              <li>As mentioned before, each spinal nerve supplies a specific region of the body. These regions are called dermatomes. The dermatomes and their spinal nerve roots are shown in this figure.</li>
+              <li>Other than the dermatomes, the spinal nerves supply specific muscle groups and organs.</li>
+              <li>The cervical nerves together supply the muscles controlling neck movements and the upper limb.</li>
+              <li>The thoracic nerves supply the muscles of trunk and abdomen including the intercostal muscles.</li>
+              <li>Lumbar and sacral nerve roots’ somatic fibres supply the muscles of the lower limbs.</li>
+            </menu>
           </div>
           <div class="col-md-4">
                 <img src="{{ URL::to('/') }}/images/Module4/mod4img2.png" width="100%" height="700px"></img>
@@ -153,24 +108,12 @@
         <!--SLIDE 5-->
         <li class="carousels__slide">
           <div class="col-md-12">
-            <table class="b">
-              <tr>
-                <td class="b2 words2">•</td>
-                <td class="b2 words2">Sympathetic supply from the nerve root C3, C4 and C5 supply the diaphragm.</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">•</td>
-                <td class="b2 words2">Sympathetic nerve supply to the heart and the respiratory tract is derived from nerve roots T1-T4.</td>
-              </tr>
-              <tr>
-                <td class="b2 words2">•</td>
-                <td class="b2 words2">The rest of the thoracic nerves provide sympathetic innervation to the abdominal organs like stomach, intestines, colon, pancreas, liver and adrenals. </td>
-              </tr>
-              <tr>
-                <td class="b2 words2">•</td>
-                <td class="b2 words2">Nerve roots T12 along with L1 and L2 provide sympathetic supply to the kidneys, bladder, rectum and the external genitalia. These structures receive parasympathetic nerve supply from the sacral autonomic fibres from roots of S2, S3 and S4 spinal nerves.</td>
-              </tr>
-            </table>
+            <menu class="words2">
+              <li>Sympathetic supply from the nerve root C3, C4 and C5 supply the diaphragm.</li>
+              <li>Sympathetic nerve supply to the heart and the respiratory tract is derived from nerve roots T1-T4.</li>
+              <li>The rest of the thoracic nerves provide sympathetic innervation to the abdominal organs like stomach, intestines, colon, pancreas, liver and adrenals.</li>
+              <li>Nerve roots T12 along with L1 and L2 provide sympathetic supply to the kidneys, bladder, rectum and the external genitalia. These structures receive parasympathetic nerve supply from the sacral autonomic fibres from roots of S2, S3 and S4 spinal nerves.</li>
+            </menu>
           </div>
         </li>
         

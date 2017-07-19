@@ -36,23 +36,29 @@
     </div>
     <div class="col-md-12">
         <form action={{ route("quiz_results", array("id" => Auth::user()->id)) }}>
+                {{ Form::model($user, array('method' => 'PUT', 'route' => array('quiz_results', Auth::user()->id)))}}
                 <div id="tracklist">
                     <?php $count = 0; $submittedQuestions; shuffle($moduleTestDB); ?>
                     @foreach($moduleTestDB as $moduleTestDB)
                         <?php 
                             $count++;
-                            $submittedQuestions = $moduleTestDB->question;
                         ?>
                         @if($count <= 3)
+                            <?php $subQuestions = $moduleTestDB->id;
+                            ?>
+                            
                             <h2>Question {{ $count }}</h2>
                             <h3>{{ $moduleTestDB->question }}</h3>
-                            <p>Some answers</p>
-                            <p>Some answers</p>
-                            <p>Some answers</p>
-                            <p>Some answers</p>
+                            {{ Form::radio($subQuestions, 'a')}} a
+                            {{ Form::radio($subQuestions, 'b')}} b
+                            {{ Form::radio($subQuestions, 'c')}} c
+                            {{ Form::radio($subQuestions, 'd')}} d
                         @endif
                     @endforeach
+                    
+                    <div style="margin-top:20px;text-align:center"><button class="button darkgrey2" type="submit">Submit</button></div>
                 </div>
+                {{ Form::close() }}
             <!--<div class="linearRadio basicFontStyle">-->
             <!--    <h2>Question 1:</h2>-->
             <!--    <h3> {Question insert here}</h3>-->

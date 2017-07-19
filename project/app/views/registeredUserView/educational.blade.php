@@ -28,7 +28,7 @@
                 <h3 style="text-align: center">Module 1</h3>
                 <div class="panels-body">
                     <p class="moduleTitle">
-                        Demographics & Economics of Spinal Cord Injury (SCI)
+                        Facts and Figures for SCI
                     </p><br>
                     <a href={{ route("module_one", array("id" => Auth::user()->id)) }}><button class="btns darkgrey2">Read More</button></a>
                 </div>
@@ -56,7 +56,7 @@
                 <h3 style="text-align: center">Module 3</h3>
                 <div class="panels-body">
                     <p class="moduleTitle">
-                        Structures
+                        Structure
                     </p><br><br>
                     <a href={{ route("module_three", array("id" => Auth::user()->id)) }}><button class="btns darkgrey2" text-align: center >Read More</button></a>
                 </div>

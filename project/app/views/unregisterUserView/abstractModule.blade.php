@@ -26,21 +26,22 @@
             <div class="faq_container">
                 <!--ABSTRACT MODULE 1-->
                <div class="faq">
-                  <div class="faq_question"><h3><strong>Module 1: </strong>Demographics & Economics of Spinal Cord Injury</h3></div>
+                  <div class="faq_question"><h3><strong>Module 1: </strong>Facts and Figures for SCI</h3></div>
                    <div class="faq_answer_container">
                       <div class="faq_answer" style="text-align: justify;">
                           <br>
-                          According to WHO data, the global incidence rate of spinal cord injuries is 40-80 cases per million population annually. 
-                          Which means there are 280,000-560,000 new cases of spinal cord injury recorded every year worldwide. 
-                          <br><br>
-                          Males are at least twice as likely to be the victims of spinal cord injury as compared to females.
+                          <div style="text-align: center">
+                              <strong>You Are Not Alone</strong>
+                          </div>
+                          <br>
+                          280,000-560,000 new cases are recorded every year across the world.
                           <br><br>
                           The victims of spinal cord injury have a 2 to 5 times the normal mortality rate which is maximum during the first year following the injury. 
                           Age distribution shows males between the ages of 20 to 29 years and ages above 70 years to be at the highest risk. 
                           <br><br>
                           Females are observed to be most vulnerable to spinal cord injury between the ages of 15 and 30 years and at ages above 60 years. 
                           <br><br>
-                          The World Health Organization reports that more than 90% of the recorded cases are traumatic in origin.
+                          Males are at least twice as likely to be the victims of spinal cord injury as compared to females.
                           <br>
                           <br>
                           <div>
@@ -55,15 +56,43 @@
                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 2: </strong>Spinal cord as a neutral tissue and injury to the nerves</h3></div>
                     <div class="faq_answer_container">
-                      <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
+                      <div class="faq_answer">
+                          <br>
+                          This module will be covered in two sections, organization of CNS & PNS and the body’s response to an injured nerve and injured spinal cord.
+                          <br><br>
+                          To understand the spinal cord injury, we need to understand the structure and function of the cord properly. To do that, we must first understand the organization of the central and peripheral nervous systems.
+                          <br><br>
+                          Body’s response to an injured nerve and injured spinal cord can be seperated into 3 categories Injury to the nervous system, Injury to a peripheral nerve and Injury to spinal cord.
+                          <br>
+                          <br>
+                          <div>
+                              <a href={{route("module_two")}}><button class="btns3 darkgrey">See full content</button></a>
+                          </div>
+                          <br>
+                      </div>
                     </div> 
                 </div>
                <br>
                <!--ABSTRACT MODULE 3-->
                <div class="faq">
-                    <div class="faq_question"><h3><strong>Module 3: </strong>Structures</h3></div>
+                    <div class="faq_question"><h3><strong>Module 3: </strong>Structure</h3></div>
                     <div class="faq_answer_container">
-                      <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
+                      <div class="faq_answer">
+                          <br>
+                          The spinal cord consist of 5 sections, cervical vertebrae, thoracic vertebrae, lumbar vertebrae, single sacrum and single coccyx.
+                          <br><br>
+                          There are a total of 33 vertebral or the backbone which are stacked like arrangement small bony blocks known as the vertebrae. 
+                          <br><br>
+                          Every individual vertebra is separated from the next vertebra by a soft cushion like disc of cartilage called an intervertebral disc. 
+                          <br><br>
+                          Spinal nerves come out of the spinal column from these gaps between the vertebrae.
+                          <br>
+                          <br>
+                          <div>
+                              <a href={{route("module_three")}}><button class="btns3 darkgrey">See full content</button></a>
+                          </div>
+                          <br>
+                      </div>
                     </div>        
                 </div>
                 <br>
@@ -71,7 +100,23 @@
                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 4: </strong>Functions</h3></div>
                     <div class="faq_answer_container">
-                      <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
+                      <div class="faq_answer">
+                          <br>
+                          Module 4 will be covering the functionality of the vertebral column, spinal cord and spinal nerves and dermatome.
+                          <br><br>
+                          The vertebral column, more commonly known as the backbone, serves some very crucial functions. First and foremost, it covers, contains and protects the spinal cord.
+                          <br><br>
+                          The spinal cord mainly functions as a conduit between brain and the rest of body.
+                          It carries all the sensory information from the body and relays it to brain; and carries motor commands from the brain and relays them to the body.
+                          <br><br>
+                          As mentioned before, each spinal nerve supplies a specific region of the body. These regions are called dermatomes. Other than the dermatomes, the spinal nerves supply specific muscle groups and organs.
+                          <br>
+                          <br>
+                          <div>
+                              <a href={{route("module_four")}}><button class="btns3 darkgrey">See full content</button></a>
+                          </div>
+                          <br>
+                      </div>
                     </div>        
                 </div>
                 <br>
@@ -79,7 +124,22 @@
                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 5: </strong>SCI mechanisms</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
+                          <div class="faq_answer">
+                              <br>
+                              Physicians use a three column model of the spinal column in order to describe and explain the spinal column injuries.
+                              <br><br>
+                              Anterior column - the anterior longitudinal ligament and the anterior one-half of the vertebral body, 
+                              <br><br>
+                              Middle column - the posterior one-half of the vertebral body
+                              <br><br>
+                              Posterior column - laminae and the spinal canal.
+                              <br>
+                              <br>
+                              <div>
+                                  <a href={{route("module_five")}}><button class="btns3 darkgrey">See full content</button></a>
+                              </div>
+                              <br>
+                          </div>
                        </div>        
                 </div>
                 <br>
