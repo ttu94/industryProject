@@ -294,7 +294,7 @@ class UserController extends \BaseController {
     		});
 		
 		Auth::logout();
-		return Redirect::to('logoutPage');
+		return Redirect::to('deactivationPage');
 	}
 
 	//USER LOGIN

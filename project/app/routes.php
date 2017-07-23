@@ -222,6 +222,11 @@ Route::get('logoutPage', function()
     return View::make('unregisterUserView/logoutPage');
 });
 
+Route::get('deactivationPage', function()
+{
+    return View::make('unregisterUserView/deactivationPage');
+});
+
 //Route to Register user
 Route::get('register', function()
 {
