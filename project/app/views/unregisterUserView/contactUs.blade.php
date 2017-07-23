@@ -93,9 +93,9 @@
                 <button class="button darkgrey" type="submit">Send</button>
               </div>
           </form>  
+      </div>
     </div>
-
-</div>
+    
 </div>
 
 @endsection

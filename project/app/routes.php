@@ -100,7 +100,7 @@ Route::get('{id}/account_details/update_details', array('as' => 'update_details'
 Route::put('{id}/account_details/update_password', array('as' => 'update_password', 'uses' => 'UserController@UpdatePassword'));
 
 //Route for immediate quiz results after submitting
-Route::get('{id}/overall_results/module/insertmodulenumberhere/quiz_results', array('as' => 'quiz_results', 'uses' => 'UserController@QuizResults'));
+//Route::get('{id}/overall_results/module/insertmodulenumberhere/quiz_results', array('as' => 'quiz_results', 'uses' => 'UserController@QuizResults'));
 
 //Route for getting overall results for a specific user
 Route::get('{id}/overall_results', array('as' => 'overall_results', 'uses' => 'UserController@OverallResults'));
@@ -118,7 +118,7 @@ Route::get('aboutUs', array('as' => 'about.us', 'uses' => 'PageController@AboutU
 //Vuew make contactus for quad header
 Route::get('contactUs', array('as' => 'contact.us', 'uses' => 'PageController@ContactUs'));
 //route for user enquiries
-Route::post('contactUs', "UserController@UserEnquiries");
+Route::post('enquiries', "UserController@UserEnquiries");
 //route for user feedback
 Route::post('contactUs', "UserController@UserFeedback");
 
@@ -152,7 +152,7 @@ Route::get('educational_module/quiz_information/{quizNo}', array('as' => 'module
 Route::get('educational_module/quiz/{quizNo}', array('as' => 'module_quiz', 'uses' => 'PageController@ModuleQuiz'));
 
 //route for submitted quiz questions
-//Route::get('educational_module/quiz_results', array('as' => 'quiz_results', 'uses' => 'UserController@QuizResults'));
+Route::get('{id}/educational_module/quiz_results', array('as' => 'quiz_results', 'uses' => 'UserController@QuizResults'));
 
 
 

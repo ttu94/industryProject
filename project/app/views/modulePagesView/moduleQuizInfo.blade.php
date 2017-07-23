@@ -6,7 +6,7 @@
 @endsection
 
 @section('pageTitle')
-  <h2>{{$quizNo}} Quiz</h2>
+  <h4>{{$quizNo}} Quiz</h4>
 @endsection
 
 @section('content')
@@ -31,7 +31,7 @@
         </p>
         <form action={{ route("module_quiz", array("id" => Auth::user()->id, "quizNo" => $quizNo)) }} class="forgetForm">
             <div class="col-md-12" style="text-align: center">
-                <button class="whitebrown" style="width: 200px" type="submit">Start Quiz >></button>
+                <button class="darkgrey2" style="width: 200px" type="submit">Start Quiz >></button>
             </div>
         </form>            
     </div>

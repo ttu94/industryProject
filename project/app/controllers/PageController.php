@@ -153,8 +153,25 @@ class PageController extends \BaseController {
 				->where('moduleName', $quizNo)
 				->get();
 				
+			$modADB = DB::table('moduleAnswers')
+				->select('*')
+				->get();
+				
+			$moduleAnswersDB = array();
+			
+			
+			
+				
+				//work in progress
+			// $moduleAnswersDB = DB::table('moduleAnswers')
+			// 	->join('moduleTests', 'moduleAnswers.moduleTest_id', '=', 'moduleTests.id', 'left')
+			// 	->select('*')
+			// 	//->where('moduleAnswers.moduleTest_id', '=', 'moduleTests.id') //doesnt need the '=' cause it's default, for representation
+			// 	->where('moduleTests.moduleName', '=', $quizNo)
+			// 	->get();
+				
 			// return View::make('modulePagesView.moduleQuiz', ['quizNo' => $quizNo])->withUser(Auth::user()->id);//educational.blade.php
-			return View::make('modulePagesView.moduleQuiz', compact('moduleTestDB', 'quizNo'))->withUser(Auth::user()->id);//educational.blade.php
+			return View::make('modulePagesView.moduleQuiz', compact('moduleTestDB', 'modADB', 'quizNo'))->withUser(Auth::user()->id);//educational.blade.php
 		}else{
 			//redirected to login page
 			return Redirect::to('login');

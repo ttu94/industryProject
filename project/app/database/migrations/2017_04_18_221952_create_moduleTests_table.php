@@ -25,7 +25,7 @@ class CreateModuleTestsTable extends Migration {
 			// $table->foreign('moduleAnswer_id')->references('id')->on('moduleAnswers')->onDelete('cascade');
 	 		
 	 		$table->string('moduleName');
-	 		$table->string('question')->unique();
+	 		$table->string('question');
 	 		
 			//correct answers are verified by string comparison 
 			$table->string('correctAnswer');

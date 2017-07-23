@@ -296,7 +296,7 @@
             
             <div style="column-count:2">
             <!--<div>-->
-                <input class="register" type="password" name="password" placeholder="Password *">
+                <input id="password" class="register" type="password" name="password" placeholder="Password *">
                 <input class="register" type="password" name="password_confirmation" placeholder="Confirm Password*">
             </div>
             <div class="col-md-12">

@@ -6,16 +6,16 @@
 @endsection
 
 @section('pageTitle')
-   <h2>{{$quizNo}} Quiz</h2>
+   <h4>{{$quizNo}} Quiz</h4>
 @endsection
 
 @section('content')
 <script>
     var questionNumber = 1;
     window.onload = function(){
-        while(questionNumber <= 10){
-            addFunc();
-        }
+        // while(questionNumber <= 10){
+        //     addFunc();
+        // }
     }
     // function addFunc(){
    	// 	  var tracklistTable = document.getElementById("tracklist");
@@ -44,12 +44,21 @@
                             $count++;
                         ?>
                         @if($count <= 3)
-                            <?php $subQuestions = $moduleTestDB->id;
+                            <?php $subQuestions = $moduleTestDB->question;
                             ?>
                             
                             <h2>Question {{ $count }}</h2>
                             <h3>{{ $moduleTestDB->question }}</h3>
-                            {{ Form::radio($subQuestions, 'a')}} a
+                            <?php 
+                                foreach($modADB as $key=>$multiChoice){
+                                    echo $key;
+                                    foreach($multiChoice as $test){
+                                        // echo $test."\n";
+                                    }
+                                }
+                            ?>
+                            
+                            {{ Form::radio($subQuestions, 'Um, Sure Thing.')}} Um, Sure Thing.
                             {{ Form::radio($subQuestions, 'b')}} b
                             {{ Form::radio($subQuestions, 'c')}} c
                             {{ Form::radio($subQuestions, 'd')}} d

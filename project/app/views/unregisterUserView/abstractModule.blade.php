@@ -126,13 +126,12 @@
                        <div class="faq_answer_container">
                           <div class="faq_answer">
                               <br>
-                              Physicians use a three column model of the spinal column in order to describe and explain the spinal column injuries.
-                              <br><br>
-                              Anterior column - the anterior longitudinal ligament and the anterior one-half of the vertebral body, 
-                              <br><br>
-                              Middle column - the posterior one-half of the vertebral body
-                              <br><br>
-                              Posterior column - laminae and the spinal canal.
+                              Physicians use a three column model of the spinal column in order to describe and explain the spinal column injuries:
+                              <menu>
+                                  <li>Anterior column - the anterior longitudinal ligament and the anterior one-half of the vertebral body,</li>
+                                  <li>Middle column - the posterior one-half of the vertebral body</li>
+                                  <li>Posterior column - laminae and the spinal canal.</li>
+                              </menu>
                               <br>
                               <br>
                               <div>

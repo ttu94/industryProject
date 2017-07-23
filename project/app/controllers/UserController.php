@@ -285,8 +285,14 @@ class UserController extends \BaseController {
 	{
 		$user = User::find($id);
 
-		//Deactivates the account and logs them out
+		//Deactivates the account, logs them out and sends an email notification
 		Auth::user()->status = 0;
+		
+		//Sends an email to the user with a welcome message
+			Mail::send('emails.deactivation', array('firstName'=>Input::get('firstName')), function($message){
+    			$message->to(Auth::user()->email)->subject('Account Deactivation');
+    		});
+		
 		Auth::logout();
 		return Redirect::to('logoutPage');
 	}
@@ -448,22 +454,60 @@ class UserController extends \BaseController {
 		//NOTE: INCORECT ROUTES. NEEDS TO DRAW DATA FROM DB ^
 		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
-			$allQuestionID = array();
+			// $allQuestionID = array(); //All Question ID from DB
+			$allQuestions = array(); //All Question from DB
+			$usedQuestions = array(); //All Question that was used in Quiz
+			$allCAnswers = array(); //All Correct Answers from DB
+			$userAnswer = array(); //All Answers the User gave in Quiz
+			$subA = array();
+			$subA2 = array();
+			$subK = array();
+			$count = 0;
 			
-			$moduleTestDB = DB::table()
-				->select('id', 'correctAnswer')
+			$moduleTestDB = DB::table('moduleTests')
+				->select('id','question', 'correctAnswer')
 				->get();
+			
+			$submittedAnswers = Input::all();	
+			// $test = $submittedAnswers[str_replace(' ', '_', 'Will this work?')];
+			
+			
 			foreach($moduleTestDB as $moduleTestDB){
-				$allQuestionID[] = $moduleTestDB->id;
+				// $allQuestionID = $moduleTestDB->id;
+				$allQuestions[] = str_replace(' ', '_', (string)$moduleTestDB->question);
+				$allCAnswers[] = (string)$moduleTestDB->correctAnswer;
+				$count++;
 			};	
-				
-			$submittedAnswers = Input::all();
+			$count2 = 0;
+			$i2 = 0;
+			// $submittedAnswers = Input::all();
 			
-			if($submittedAnswers->$allQuestionID[i]){
-				
-			};
+			foreach($submittedAnswers as $key => $sa){
+				if($i2 >= 2){
+					$usedQuestions[] = $key;
+					$userAnswer[] = $sa;
+				}
+				$i2++;
+			}
+		
+			$index = 0;
+			foreach($usedQuestions as $k){
+				$loop = 0;
+				foreach($allQuestions as $q){
+					if($k === $q){
+						if($allCAnswers[$loop] === $userAnswer[$index]){
+							$subA[] = "Right";
+						} else {
+							$subA[] = "Wrong";
+						}
+						break;
+					}
+					$loop++;
+				}
+				$index++;
+			}
 			
-			return View::make('modulePagesView.quizResult', compact($submittedAnswers))->withUser($user);
+			return View::make('modulePagesView.quizResult', compact('usedQuestions', 'userAnswer', 'subA'))->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::action('UserController@index');
