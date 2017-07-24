@@ -50,11 +50,12 @@
                             <h2>Question {{ $count }}</h2>
                             <h3>{{ $moduleTestDB->question }}</h3>
                             <?php 
-                                foreach($modADB as $key=>$multiChoice){
-                                    echo $key;
-                                    foreach($multiChoice as $test){
-                                        // echo $test."\n";
-                                    }
+                                foreach($moduleAnswersDB as $key=>$multiChoice){
+                                    // echo $key;
+                                    echo $multiChoice->id;
+                                    // foreach($multiChoice as $k=>$test){
+                                    //     echo $k."------";
+                                    // }
                                 }
                             ?>
                             

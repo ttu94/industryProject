@@ -18,6 +18,7 @@
         <!--<a href="admin_quiz_editor">Admin Quiz Editor</a>-->
         <a href={{ route("admin_quiz_editor", array("id" => Auth::user()->id)) }}>Thuans link</a>
         <p>Number of Visitors: 2</p>
+        <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox">Email</a>
     </div>
 </div>
 

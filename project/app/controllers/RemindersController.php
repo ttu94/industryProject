@@ -57,6 +57,8 @@ class RemindersController extends Controller {
 			'email', 'password', 'password_confirmation', 'token'
 		);
 		
+		$email = Input::get('email');
+		
 		$rules = array(
 			'email' => 'required|email',
 			'password' => 'required|min:6',
@@ -72,23 +74,18 @@ class RemindersController extends Controller {
 
 				$user->save();
 			});
+			
+			//Sends an email to the user with a message
+			Mail::send('emails.passwordReset', array('firstName'=>Input::get('firstName')), function($message){
+				$message->to(Input::get('email'))->subject('Password Reset');
+			});
+			
 			return Redirect::to('login')->with('success', 'Your password has been reset');
 		} else {
 		 	
 			// Show Validation Errors
 		 	return Redirect::back()->withInput()->withErrors($v);
 		 }
-
-		// switch ($response)
-		// {
-		// 	case Password::INVALID_PASSWORD:
-		// 	case Password::INVALID_TOKEN:
-		// 	case Password::INVALID_USER:
-		// 		return Redirect::back()->with('error', Lang::get($response));
-
-		// 	case Password::PASSWORD_RESET:
-		// 		return Redirect::to('login')->with('success', 'Your password has been reset');
-		// }
 	}
 
 }

@@ -289,9 +289,9 @@ class UserController extends \BaseController {
 		Auth::user()->status = 0;
 		
 		//Sends an email to the user with a welcome message
-			Mail::send('emails.deactivation', array('firstName'=>Input::get('firstName')), function($message){
-    			$message->to(Auth::user()->email)->subject('Account Deactivation');
-    		});
+		Mail::send('emails.deactivation', array('firstName'=>Input::get('firstName')), function($message){
+			$message->to(Auth::user()->email)->subject('Account Deactivation');
+		});
 		
 		Auth::logout();
 		return Redirect::to('deactivationPage');
