@@ -481,7 +481,11 @@ button:hover {
 }
 
 /*ADMIN LOGIN PAGE CSS****************************************************************/
-
+.message {
+    font-size: 30px;
+    text-align: center;
+    font-family: Raleway;
+}
 
 /*REGISTER PAGE CSS****************************************************************/
 .register {
