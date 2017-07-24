@@ -159,16 +159,23 @@ class PageController extends \BaseController {
 				
 			// $moduleAnswersDB = array();
 			
-			
+			$moduleAnswersDB = DB::table('moduleAnswers')
+				->select('*')
+				->wherein('moduleTest_id', function($modT){
+					$modT = DB::table('moduleTests')
+						->select('*')
+						->where('moduleName', $quizNo)
+						->get();
+				})
 			
 				
 				//work in progress
-			$moduleAnswersDB = DB::table('moduleAnswers')
-				->join('moduleTests', 'moduleAnswers.moduleTest_id', '=', 'moduleTests.id')
-				->select('*')
-				//->where('moduleAnswers.moduleTest_id', '=', 'moduleTests.id') //doesnt need the '=' cause it's default, for representation
-				->where('moduleTests.moduleName', '=', $quizNo)
-				->get();
+			// $moduleAnswersDB = DB::table('moduleAnswers')
+			// 	->join('moduleTests', 'moduleAnswers.moduleTest_id', '=', 'moduleTests.id')
+			// 	->select('*')
+			// 	//->where('moduleAnswers.moduleTest_id', '=', 'moduleTests.id') //doesnt need the '=' cause it's default, for representation
+			// 	->where('moduleTests.moduleName', '=', $quizNo)
+			// 	->get();
 				
 			// return View::make('modulePagesView.moduleQuiz', ['quizNo' => $quizNo])->withUser(Auth::user()->id);//educational.blade.php
 			return View::make('modulePagesView.moduleQuiz', compact('moduleTestDB', 'moduleAnswersDB', 'quizNo'))->withUser(Auth::user()->id);//educational.blade.php

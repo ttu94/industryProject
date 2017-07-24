@@ -426,24 +426,14 @@ a:hover {
 
 /*Input fields login*/
 .login{
-    width: 20%;
-    padding: 12px 20px;
-    margin: 8px 8px;
+    width: 60%;
+    padding: 10px;
+    margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
 }
 
 button {
-    /*position:relative;*/
-    /*background-color: #A7D2CB;*/
-    /*font-weight: bold;*/
-    /*color: white;*/
-    /*padding: 14px 20px;*/
-    /*margin: 8px 0;*/
-    /*border: none;*/
-    /*cursor: pointer;*/
-    /*border-radius: 12px;*/
-
     cursor: pointer;
     margin: 10px;
     border-radius: 5px;
@@ -474,9 +464,13 @@ button:hover {
     margin: 0 auto;
 }
 
-.login {
-    width: 60%;
-    padding: 10px;
+.loginA {
+    width: 100%;
+    float: left;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
 }
 
 .loginBlock{

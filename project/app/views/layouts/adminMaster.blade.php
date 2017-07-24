@@ -9,7 +9,7 @@
     {{ HTML::style('css/styless.css', array(), true) }}
     {{ HTML::style('css/sortable-theme-bootstrap.css') }}
  {{ HTML::script('js/sortable.min.js') }}
-    <link rel="shortcut icon" href="images/favicon.png">
+    
     
     <!--raleway font-->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet"> 
