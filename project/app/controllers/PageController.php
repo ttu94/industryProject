@@ -164,7 +164,7 @@ class PageController extends \BaseController {
 				
 				//work in progress
 			$moduleAnswersDB = DB::table('moduleAnswers')
-				->join('moduleTests', 'moduleAnswers.moduleTest_id', '=', 'moduleTests.id', 'left')
+				->join('moduleTests', 'moduleAnswers.moduleTest_id', '=', 'moduleTests.id')
 				->select('*')
 				//->where('moduleAnswers.moduleTest_id', '=', 'moduleTests.id') //doesnt need the '=' cause it's default, for representation
 				->where('moduleTests.moduleName', '=', $quizNo)

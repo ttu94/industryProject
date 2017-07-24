@@ -43,26 +43,16 @@
                         <?php 
                             $count++;
                         ?>
-                        @if($count <= 3)
-                            <?php $subQuestions = $moduleTestDB->question;
-                            ?>
+                        @if($count <= 10)
+                            <?php $subQuestions = $moduleTestDB->question; ?>
                             
                             <h2>Question {{ $count }}</h2>
                             <h3>{{ $moduleTestDB->question }}</h3>
-                            <?php 
-                                foreach($moduleAnswersDB as $key=>$multiChoice){
-                                    // echo $key;
-                                    echo $multiChoice->id;
-                                    // foreach($multiChoice as $k=>$test){
-                                    //     echo $k."------";
-                                    // }
-                                }
-                            ?>
-                            
-                            {{ Form::radio($subQuestions, 'Um, Sure Thing.')}} Um, Sure Thing.
-                            {{ Form::radio($subQuestions, 'b')}} b
-                            {{ Form::radio($subQuestions, 'c')}} c
-                            {{ Form::radio($subQuestions, 'd')}} d
+                            @foreach($moduleAnswersDB as $multiChoice)
+                                @if($multiChoice->moduleTest_id === $moduleTestDB->id)
+                                    {{ Form::radio($subQuestions, $multiChoice->answer)}} {{$multiChoice->answer}} <br>
+                                @endif
+                            @endforeach
                         @endif
                     @endforeach
                     

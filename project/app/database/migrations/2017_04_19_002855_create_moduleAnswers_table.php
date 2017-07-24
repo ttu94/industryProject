@@ -14,14 +14,12 @@ class CreateModuleAnswersTable extends Migration {
 	{
 		Schema::create('moduleAnswers', function($table)
 		{
-			$table->integer('id')->index(); //this is the question number from table moduleTest
+			// $table->integer('id')->index(); //this is the question number from table moduleTest
+			$table->increments('id')->index();
 			
 	 		//foreign key from moduleAnswer
 	 		$table->integer('moduleTest_id');
 			$table->foreign('moduleTest_id')->references('id')->on('moduleTests')->onDelete('cascade');
-			
-			// $table->string('moduleTest_question');
-			// $table->foreign('moduleTest_question')->references('question')->on('moduleTests')->onDelete('cascade');
 			
 			$table->string('set'); //this is new, because of the new client needs, random from sets of question
 			$table->string('answer');

@@ -15,11 +15,11 @@
 <div class="container-fluid basicFontStyle">
     <br><br>
     <p style="text-align:center">
-        You have decided to deavtivate your account.<br>
+        You have decided to deactivate your account.<br>
         We're sad to see you go :(<br>
         Just know that everything will be waiting for you exactly as you left it :)<br>
         <br>
-        To reactivate your account, just <a href="login" style="color: #195DA3"><u>Login</u></a> normally and confirm that you wish to reactive.
+        To reactivate your account, just <a href="login" style="color: #195DA3"><u>Login</u></a> normally and confirm that you wish to reactivate.
         <br><br>
         We hope to see you again soon!
     </p>

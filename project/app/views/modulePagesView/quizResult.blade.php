@@ -2,11 +2,11 @@
 
 @section('title')
     {{--Module names needs to be taken out of database--}}
-    [Module Name] Quiz Results
+    Quiz Results
 @endsection
 
 @section('pageTitle')
-   <h2>[Module Name here] Quiz Results</h2>
+   <h4>Quiz Results</h4>
 @endsection
 
 @section('content')
@@ -14,9 +14,9 @@
     <br><br>
     <div class="col-md-12">
         <!--ROUTE NEEDS TO BE ROUTED WITH USER ID AND MODULE ID-->
-        <a href={{ route("module_quiz_info", array("id" => Auth::user()->id)) }}><button class="greenbluelight2" style="float:left">Retake Quiz</button></a>
+        <a href={{ route("module_quiz_info", array("id" => Auth::user()->id)) }}><button class="darkgrey2" style="float:left">Retake Quiz</button></a>
         <!--ROUTE IS GOOD-->
-        <a href={{ route("overall_results", array("id" => Auth::user()->id)) }}><button class="greenbluelight2" style="float:right">See All Results</button></a>
+        <a href={{ route("overall_results", array("id" => Auth::user()->id)) }}><button class="darkgrey2" style="float:right">See All Results</button></a>
     </div>
     <div class="col-md-12">
         <h1>Your Results: 5/10</h1>

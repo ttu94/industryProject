@@ -6,7 +6,7 @@
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
-   <h2 style="color:white">Admin Login</h2>
+   <h4>Admin Login</h4>
 @endsection
 
 @section('content')

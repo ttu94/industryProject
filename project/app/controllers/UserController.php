@@ -288,7 +288,7 @@ class UserController extends \BaseController {
 		//Deactivates the account, logs them out and sends an email notification
 		Auth::user()->status = 0;
 		
-		//Sends an email to the user with a welcome message
+		//Sends an email to the user with a deactivation email
 		Mail::send('emails.deactivation', array('firstName'=>Input::get('firstName')), function($message){
 			$message->to(Auth::user()->email)->subject('Account Deactivation');
 		});
@@ -338,6 +338,9 @@ class UserController extends \BaseController {
 		$user->status = 1;
 		$user->save();
 		
+		Mail::send('emails.activation', array('firstName'=>Input::get('firstName')), function($message){
+			$message->to(Auth::user()->email)->subject('Account Activated');
+		});
 		return Redirect::action('UserController@show', array($user->id));
 	}
 	
@@ -451,7 +454,6 @@ class UserController extends \BaseController {
 	//route for immediate module results after submitting a quiz
 	public function QuizResults($id){
 		
-		//NOTE: INCORECT ROUTES. NEEDS TO DRAW DATA FROM DB ^
 		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
 			// $allQuestionID = array(); //All Question ID from DB
@@ -468,9 +470,7 @@ class UserController extends \BaseController {
 				->select('id','question', 'correctAnswer')
 				->get();
 			
-			$submittedAnswers = Input::all();	
-			// $test = $submittedAnswers[str_replace(' ', '_', 'Will this work?')];
-			
+			$submittedAnswers = Input::all();
 			
 			foreach($moduleTestDB as $moduleTestDB){
 				// $allQuestionID = $moduleTestDB->id;
@@ -480,7 +480,6 @@ class UserController extends \BaseController {
 			};	
 			$count2 = 0;
 			$i2 = 0;
-			// $submittedAnswers = Input::all();
 			
 			foreach($submittedAnswers as $key => $sa){
 				if($i2 >= 2){

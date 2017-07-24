@@ -145,7 +145,6 @@ Route::get('education_modules', array('as' => 'education_modules', 'uses' => 'Pa
 
 
 //Route for quiz information before it begins
-//Backup ----- Route::get('educational_module/quiz_information/{id}/{quizNo}', array('as' => 'module_quiz_info', 'uses' => 'PageController@ModuleQuizInfo')); //kenny added{quizNo} 
 Route::get('educational_module/quiz_information/{quizNo}', array('as' => 'module_quiz_info', 'uses' => 'PageController@ModuleQuizInfo')); //kenny added{quizNo} 
 
 //Route protection for module quizzes, all quizzes wil use this template

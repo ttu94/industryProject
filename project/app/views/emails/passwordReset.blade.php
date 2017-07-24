@@ -12,7 +12,6 @@
 			<br>
 			If this wasn't you, please update your security by changing your password.
 			<br>
-			<br>
 			Sincerely,<br><br>
 			The SiCURE Team
 			<br>

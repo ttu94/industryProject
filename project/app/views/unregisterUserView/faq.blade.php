@@ -63,9 +63,9 @@
                 </div>
                 <br>
                 <div class="faq">
-                  <div class="faq_question">I have deactivated my account, how can i reactivate?</div>
+                  <div class="faq_question">I have deactivated my account, how do I reactivate?</div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br> It's easy! To reactivate please <a href="login" style="color: #195DA3"><u>Login</u></a> normally and follow on prompts on screen.
+                          <div class="faq_answer"><br> It's easy! To reactivate please <a href="login" style="color: #195DA3"><u>Login</u></a> normally and follow the prompts on screen.
                           <br>&nbsp;</div>
                        </div>        
                 </div>
