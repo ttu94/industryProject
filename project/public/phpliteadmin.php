@@ -971,6 +971,7 @@ header('Content-Type: text/html; charset=utf-8');
 <!-- Copyright <?php echo date("Y").' '.PROJECT.' ('.PROJECT_URL.')'; ?> -->
 <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 <link rel="shortcut icon" href="?resource=favicon" />
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
 <title><?php echo PROJECT ?></title>
 
 <?php

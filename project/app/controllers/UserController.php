@@ -479,7 +479,7 @@ class UserController extends \BaseController {
 				$count++;
 			};	
 			$count2 = 0;
-			$i2 = 0;
+			$i2 = 1;
 			
 			foreach($submittedAnswers as $key => $sa){
 				if($i2 >= 2){
@@ -490,6 +490,15 @@ class UserController extends \BaseController {
 			}
 		
 			$index = 0;
+			
+			// foreach($usedQuestions as $k){
+			// 	$loop = 0
+			// 	foreach($allQuestions as $q){
+			// 		if($k === $q){
+						
+			// 		}
+			// 	}
+			// }
 			foreach($usedQuestions as $k){
 				$loop = 0;
 				foreach($allQuestions as $q){
@@ -506,7 +515,7 @@ class UserController extends \BaseController {
 				$index++;
 			}
 			
-			return View::make('modulePagesView.quizResult', compact('usedQuestions', 'userAnswer', 'subA'))->withUser($user);
+			return View::make('modulePagesView.quizResult', compact('usedQuestions', 'userAnswer', 'subA', 'index'))->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::action('UserController@index');

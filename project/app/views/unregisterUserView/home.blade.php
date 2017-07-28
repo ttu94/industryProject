@@ -18,19 +18,19 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/GRIDD-3.jpg" alt="Dr John St James" style="height: 750px">
+        <img src="images/GRIDD-3.jpg" alt="Dr John St James" style="height: 700px">
         <div class="carousel-caption">
         </div>
       </div>
       <div class="item">
-        <img src="images/Spinal1.jpg" alt="Spinal Cord" style="height: 750px">
+        <img src="images/Spinal1.jpg" alt="Spinal Cord" style="height: 700px">
         <div class="carousel-caption">
           <!--<h3>Dr James St John</h3>-->
           <!--<p>test</p>-->
         </div>
       </div>
       <div class="item">
-        <img src="images/Spinal2.jpg" alt="SCI" style="height: 750px">
+        <img src="images/Spinal2.jpg" alt="SCI" style="height: 700px">
         <div class="carousel-caption">
         </div>
       </div>

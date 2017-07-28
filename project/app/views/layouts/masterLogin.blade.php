@@ -118,7 +118,7 @@
 
    
    <!--CoverFlow js-->
-   
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.js"></script>
   <script src="{{ URL::asset('js/jquery.coverflow.js') }}"></script>
@@ -135,8 +135,7 @@
   		
   	});
   </script>
-	
-	
+
 </head>
 <body>
 	<div id="container">

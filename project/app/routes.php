@@ -148,7 +148,7 @@ Route::get('education_modules', array('as' => 'education_modules', 'uses' => 'Pa
 Route::get('educational_module/quiz_information/{quizNo}', array('as' => 'module_quiz_info', 'uses' => 'PageController@ModuleQuizInfo')); //kenny added{quizNo} 
 
 //Route protection for module quizzes, all quizzes wil use this template
-Route::get('educational_module/quiz/{quizNo}', array('as' => 'module_quiz', 'uses' => 'PageController@ModuleQuiz'));
+Route::get('{id}/educational_module/quiz/{quizNo}', array('as' => 'module_quiz', 'uses' => 'PageController@ModuleQuiz'));
 
 //route for submitted quiz questions
 Route::get('{id}/educational_module/quiz_results', array('as' => 'quiz_results', 'uses' => 'UserController@QuizResults'));

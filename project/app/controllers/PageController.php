@@ -144,10 +144,12 @@ class PageController extends \BaseController {
 	}
 	
 	//Route protection for Quiz. INCOMPLETE
-	public function ModuleQuiz($quizNo)
+	public function ModuleQuiz($id, $quizNo)
 	{
 		if(Auth::check())
 		{
+			$user = User::find($id);
+			
 			$moduleTestDB = DB::table('moduleTests')
 				->select('*')
 				->where('moduleName', $quizNo)
@@ -159,26 +161,27 @@ class PageController extends \BaseController {
 				
 			// $moduleAnswersDB = array();
 			
-			$moduleAnswersDB = DB::table('moduleAnswers')
-				->select('*')
-				->wherein('moduleTest_id', function($modT){
-					$modT = DB::table('moduleTests')
-						->select('*')
-						->where('moduleName', $quizNo)
-						->get();
-				})
+			// $modT = DB::table('moduleTests')
+			// 			->select('*')
+			// 			->where('moduleName', $quizNo)
+			// 			->get();
+			
+			// $moduleAnswersDB = DB::table('moduleAnswers')
+			// 	->select('*')
+			// 	->wherein('moduleTest_id', $modT)
+			// 	->get();
 			
 				
 				//work in progress
-			// $moduleAnswersDB = DB::table('moduleAnswers')
-			// 	->join('moduleTests', 'moduleAnswers.moduleTest_id', '=', 'moduleTests.id')
-			// 	->select('*')
-			// 	//->where('moduleAnswers.moduleTest_id', '=', 'moduleTests.id') //doesnt need the '=' cause it's default, for representation
-			// 	->where('moduleTests.moduleName', '=', $quizNo)
-			// 	->get();
+			$moduleAnswersDB = DB::table('moduleAnswers')
+				->join('moduleTests', 'moduleAnswers.moduleTest_id', '=', 'moduleTests.id')
+				->select('*')
+				//->where('moduleAnswers.moduleTest_id', '=', 'moduleTests.id') //doesnt need the '=' cause it's default, for representation
+				->where('moduleTests.moduleName', '=', $quizNo)
+				->get();
 				
 			// return View::make('modulePagesView.moduleQuiz', ['quizNo' => $quizNo])->withUser(Auth::user()->id);//educational.blade.php
-			return View::make('modulePagesView.moduleQuiz', compact('moduleTestDB', 'moduleAnswersDB', 'quizNo'))->withUser(Auth::user()->id);//educational.blade.php
+			return View::make('modulePagesView.moduleQuiz', compact('moduleTestDB', 'moduleAnswersDB', 'quizNo'))->withUser($user);//educational.blade.php
 		}else{
 			//redirected to login page
 			return Redirect::to('login');
