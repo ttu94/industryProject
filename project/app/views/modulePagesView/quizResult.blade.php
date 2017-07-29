@@ -23,23 +23,17 @@
     </div>
     <form class="col-md-12">
         <?php 
-            $count = 0;
+            $count = -1;
         ?>
-        @foreach($subA as $s)
-            {{ $s }}
-        @endforeach
-        @foreach($usedQuestions as $usedQ)
-            <?php $count++; ?>
-            <div class="linearRadio basicFontStyle">
-                <h2> Question {{ $count }}: {{ str_replace('_', ' ', $usedQ) }}
-                    @if($subA[$count-1] == "Right")
-                            <span class="glyphicon glyphicon-ok" style="color: #A7D2CB" aria-hidden="true"></span>
-                            <!--<p>it's correct yay</p>-->
-                    @else
-                            <span class="glyphicon glyphicon-remove" style="color: #BE192B" aria-hidden="true"></span>
-                    @endif
-                </h2>
-            </div>
+        @foreach($userAnswer as $k=>$s)
+            
+            @if($count > 0)
+                <h2>Question {{ $count }}</h2>
+                <h3>{{ $k }}</h3>
+                {{ $s }}
+                
+            @endif
+            <?php $count++;  ?>
         @endforeach
         
     </form>

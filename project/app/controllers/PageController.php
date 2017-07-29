@@ -155,28 +155,11 @@ class PageController extends \BaseController {
 				->where('moduleName', $quizNo)
 				->get();
 				
-			// $modADB = DB::table('moduleAnswers')
-			// 	->select('*')
-			// 	->get();
-				
-			// $moduleAnswersDB = array();
-			
-			// $modT = DB::table('moduleTests')
-			// 			->select('*')
-			// 			->where('moduleName', $quizNo)
-			// 			->get();
-			
-			// $moduleAnswersDB = DB::table('moduleAnswers')
-			// 	->select('*')
-			// 	->wherein('moduleTest_id', $modT)
-			// 	->get();
-			
 				
 				//work in progress
 			$moduleAnswersDB = DB::table('moduleAnswers')
 				->join('moduleTests', 'moduleAnswers.moduleTest_id', '=', 'moduleTests.id')
 				->select('*')
-				//->where('moduleAnswers.moduleTest_id', '=', 'moduleTests.id') //doesnt need the '=' cause it's default, for representation
 				->where('moduleTests.moduleName', '=', $quizNo)
 				->get();
 				

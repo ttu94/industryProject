@@ -456,66 +456,54 @@ class UserController extends \BaseController {
 		
 		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
-			// $allQuestionID = array(); //All Question ID from DB
 			$allQuestions = array(); //All Question from DB
-			$usedQuestions = array(); //All Question that was used in Quiz
-			$allCAnswers = array(); //All Correct Answers from DB
+			$allAnswers = array(); //All Anwers from DB
 			$userAnswer = array(); //All Answers the User gave in Quiz
+			$usedID = array();
 			$subA = array();
-			$subA2 = array();
-			$subK = array();
 			$count = 0;
 			
 			$moduleTestDB = DB::table('moduleTests')
 				->select('id','question', 'correctAnswer')
 				->get();
 			
+			// $moduleAnswersDB = DB::table('moduleAnswers')
+			// 	->join('moduleTests', 'moduleAnswers.moduleTest_id', '=', 'moduleTests.id')
+			// 	->select('*')
+			// 	->where('moduleTests.moduleName', '=', $quizNo)
+			// 	->get();
+			
 			$submittedAnswers = Input::all();
 			
 			foreach($moduleTestDB as $moduleTestDB){
-				// $allQuestionID = $moduleTestDB->id;
-				$allQuestions[] = str_replace(' ', '_', (string)$moduleTestDB->question);
-				$allCAnswers[] = (string)$moduleTestDB->correctAnswer;
+				$allAnswers[$moduleTestDB->id] = (string)$moduleTestDB->correctAnswer;
+				$allQuestions[$moduleTestDB->id] = (string)$moduleTestDB->question;
 				$count++;
 			};	
 			$count2 = 0;
-			$i2 = 1;
-			
-			foreach($submittedAnswers as $key => $sa){
-				if($i2 >= 2){
-					$usedQuestions[] = $key;
-					$userAnswer[] = $sa;
-				}
-				$i2++;
-			}
-		
 			$index = 0;
-			
-			// foreach($usedQuestions as $k){
-			// 	$loop = 0
-			// 	foreach($allQuestions as $q){
-			// 		if($k === $q){
-						
-			// 		}
-			// 	}
-			// }
-			foreach($usedQuestions as $k){
-				$loop = 0;
-				foreach($allQuestions as $q){
+			$testarray['keys'] = 'values';
+			$testarray['keyy'] = 'valuey';
+			foreach($submittedAnswers as $k=>$a){ //$k is an id
+				foreach($allAnswers as $q=>$ca){ //$q should be also and id
 					if($k === $q){
-						if($allCAnswers[$loop] === $userAnswer[$index]){
-							$subA[] = "Right";
+						if($a == $ca){
+							$subA[$index-2] = "Right";
 						} else {
-							$subA[] = "Wrong";
+							if($a === 'nullified'){ //check if question got answered
+								$subA[$index-2] = "Not Answered";
+							} else {
+								$subA[$index-2] = "Wrong";
+							}
 						}
-						break;
+						$userAnswer[$allQuestions[$k]] = $a;
+						$count2++;
 					}
-					$loop++;
 				}
+				
 				$index++;
 			}
-			
-			return View::make('modulePagesView.quizResult', compact('usedQuestions', 'userAnswer', 'subA', 'index'))->withUser($user);
+			return View::make('modulePagesView.quizResult', compact('testarray', 'userAnswer', 'moduleAnswersDB', 'submittedAnswers', 'count2', 'index'))->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::action('UserController@index');

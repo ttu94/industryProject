@@ -69,7 +69,7 @@ $databases = array(
 /* ---- Interface settings ---- */
 
 // Theme! If you want to change theme, save the CSS file in same folder of phpliteadmin or in folder "themes"
-$theme = 'phpliteadmin.css';
+$theme = 'phpliteadmins.css';
 
 // the default language! If you want to change it, save the language file in same folder of phpliteadmin or in folder "languages"
 // More about localizations (downloads, how to translate etc.): https://bitbucket.org/phpliteadmin/public/wiki/Localization
@@ -1055,14 +1055,14 @@ if(!$auth->isAuthorized())
 	echo $token_html;
 	echo $lang['passwd'].": <input type='password' name='password'/><br/>";
 	echo "<label><input type='checkbox' name='remember' value='yes' checked='checked'/> ".$lang['remember']."</label><br/><br/>";
-	echo "<input type='submit' value='".$lang['login']."' class='btn'/>";
+	echo "<input type='submit' value='".$lang['login']."' style='width:20%;' class='btn'/>";
 	echo "<input type='hidden' name='login' value='true' />";
 	echo "</form>";
 	echo "</div>";
 	echo "</div>";
 	echo "<br/>";
 	echo "<div style='text-align:center;'>";
-	echo "<span style='font-size:11px;'>".$lang['powered']." <a href='".PROJECT_URL."' target='_blank' style='font-size:11px;'>".PROJECT."</a> | "; 
+	echo "<span style='font-size:15px;'>".$lang['powered']." <a href='".PROJECT_URL."' target='_blank' style='font-size:15px;'>".PROJECT."</a> | "; 
 	printf($lang['page_gen'], $pageTimer);
 	echo "</span></div>";
 	echo "</body></html>";
@@ -1716,7 +1716,7 @@ if($directory!==false && is_writable($directory))
 echo "<div style='text-align:center;'>";
 echo "<form action='".PAGE."' method='post'>";
 echo $token_html;
-echo "<input type='submit' value='".$lang['logout']."' name='logout' class='btn'/>";
+echo "<input type='submit' value='".$lang['logout']."' name='logout' style='width:30%;' class='btn'/>";
 echo "</form>";
 echo "</div>";
 echo "</div>";
