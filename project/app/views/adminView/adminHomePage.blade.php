@@ -20,9 +20,12 @@
     <br>
     <div class="col-md-12 basicFontStyle">
         <p>Access the database by clicking the following link: <a target="_blank" href="phpliteadmin.php">Database Management</a></p>
-        <!--<a href="admin_quiz_editor">Admin Quiz Editor</a>-->
-        <p>Access the Admin Quiz Editor here: <a href={{ route("admin_quiz_editor", array("id" => Auth::user()->id)) }}>Thuans link</a></p>
+        <p>Number of registered users: <strong>{{$numberUsers}}</strong></p>
+        <p>Number of deactivated users: <strong>{{$deativatedUsers}}</strong></p>
+        <p>Number of users eligble for clinical trials: <strong>0</strong></p>
         <p>Access the feedback and enquiries inbox in the Admin email: <a target="_blank" href="https://accounts.google.com/AccountChooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F%3Fauthuser%3Dspinalcord%40gmail.com&service=mail&Email=sicure.sci@gmail.com">Email</a></p>
+        <!--<a href="admin_quiz_editor">Admin Quiz Editor</a>-->
+        <!--<p>Access the Admin Quiz Editor here: <a href={{ route("admin_quiz_editor", array("id" => Auth::user()->id)) }}>Thuans link</a></p>-->
     </div>
 </div>
 

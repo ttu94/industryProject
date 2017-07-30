@@ -2,11 +2,11 @@
 
 @section('title')
     {{--Module names needs to be taken out of database--}}
-    Quiz Results
+    {{ $quizNo }} Quiz Results
 @endsection
 
 @section('pageTitle')
-   <h4>Quiz Results</h4>
+   <h4>{{ $quizNo }} Quiz Results</h4>
 @endsection
 
 @section('content')
@@ -21,22 +21,34 @@
     <div class="col-md-12">
         <h1>Your Results: 5/10</h1>
     </div>
-    <form class="col-md-12">
+    <!--<form class="col-md-12">-->
+        {{ Form::open() }}
         <?php 
-            $count = -1;
+            $count = 1;
         ?>
         @foreach($userAnswer as $k=>$s)
-            
-            @if($count > 0)
-                <h2>Question {{ $count }}</h2>
-                <h3>{{ $k }}</h3>
-                {{ $s }}
-                
-            @endif
+            <h2>Question {{ $count }}</h2>
+            <h3>{{ $k }}
+                @if($subA[$count-1] == 'Right')
+                    &#10004;
+                @else
+                    &#9747;
+                @endif
+            </h3>
+            @foreach($moduleAnswersDB as $multiChoice)
+                @if($multiChoice->moduleTest_id == $usedID[$count-1])
+                    @if($s == $multiChoice->answer)
+                        {{ Form::radio($usedID[$count-1], $multiChoice->answer, true)}}
+                    @else
+                        {{ Form::radio($usedID[$count-1], $multiChoice->answer)}}
+                    @endif
+                    {{$multiChoice->answer}} <br>
+                @endif
+            @endforeach
             <?php $count++;  ?>
         @endforeach
-        
-    </form>
+        {{ Form::close() }}
+    <!--</form>-->
 
 </div>
 

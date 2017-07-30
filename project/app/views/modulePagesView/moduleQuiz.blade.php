@@ -52,6 +52,7 @@
                 {{ Form::model($user, array('method' => 'PUT', 'route' => array('quiz_results', Auth::user()->id)))}}
                 <div id="tracklist">
                     <?php $count = 0; $submittedQuestions; shuffle($moduleTestDB); ?>
+                    {{ Form::hidden('quizNo', $quizNo) }}
                     @foreach($moduleTestDB as $moduleTestDB)
                         <?php 
                             $count++;

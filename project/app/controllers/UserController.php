@@ -385,9 +385,10 @@ class UserController extends \BaseController {
 	{
 		//show the admin profile if only the user status has admin on true
 		if(Auth::user()->admin == '1'){
-			// $user = User::find($id);
-			// return View::make('adminView.adminHomePage')->withAdmin($user);
-			return View::make('adminView.adminHomePage');
+			$numberUsers = User::select('*')->count();
+			$deativatedUsers = User::where(['status' => 0])->get()->count();
+			
+			return View::make('adminView.adminHomePage', compact("numberUsers","deativatedUsers"));
 		} else {
 			Auth::logout();
 			return Redirect::action('AdminController@index');
@@ -482,8 +483,6 @@ class UserController extends \BaseController {
 			};	
 			$count2 = 0;
 			$index = 0;
-			$testarray['keys'] = 'values';
-			$testarray['keyy'] = 'valuey';
 			foreach($submittedAnswers as $k=>$a){ //$k is an id
 				foreach($allAnswers as $q=>$ca){ //$q should be also and id
 					if($k === $q){
@@ -497,13 +496,14 @@ class UserController extends \BaseController {
 							}
 						}
 						$userAnswer[$allQuestions[$k]] = $a;
+						$usedID[] = $k;
 						$count2++;
 					}
 				}
 				
 				$index++;
 			}
-			return View::make('modulePagesView.quizResult', compact('testarray', 'userAnswer', 'moduleAnswersDB', 'submittedAnswers', 'count2', 'index'))->withUser($user);
+			return View::make('modulePagesView.quizResult', compact('userAnswer', 'moduleAnswersDB', 'usedID', 'count2', 'index'))->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::action('UserController@index');
