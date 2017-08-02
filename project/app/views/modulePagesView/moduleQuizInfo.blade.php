@@ -18,13 +18,13 @@
     
     <div class="col-md-6 basicFontStyle">
         <p style="text-align: center">
-            You are about to begin [Module number and name here]. <br><br>
+            You are about to begin <span style="color:#B70014">{{$quizNo}}</span>. <br><br>
             <div style="float: left; margin-left: 20px">
                 <strong>Conditions for the quiz: </strong>
                 <div class="basicFontStyle" style="margin-left: 20px; margin-top: 10px">
                     • You have an unlimited number of attempts<br>
                     • There is no time limit<br>
-                    • The questions are multiple choice<br>
+                    • All questions are multiple choice<br>
                     <br>
                 </div>
             </div>

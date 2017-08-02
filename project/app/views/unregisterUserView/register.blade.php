@@ -350,7 +350,7 @@
                 <p>Please answer the following question if you are <u>not a patient:</u></p>
                 <hr>
                 <div class="linearRadio">
-                    <p>Do you know anyone who is suffering from spinal cord injury (SCI)?<font color="red">*</font></p>
+                    <p>Do you know anyone affected from a spinal cord injury (SCI)?<font color="red">*</font></p>
                     <input style="margin-left:0px"{{ Form::radio('onBehalf', 'yes')}} Yes
                     {{ Form::radio('onBehalf', 'no', true)}} No
                 </div>

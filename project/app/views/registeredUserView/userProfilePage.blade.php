@@ -34,7 +34,7 @@
             <p class="basicFontStyle" style="text-align:center">Modules completed</p>
   
             <!--VALUE NEEDS TO BE DRAWN FROM DATABASE-->
-            <h1 style=text-align:center>3/11</h1>
+            <h1 style=text-align:center>0/11</h1>
         </div>
     </div>
         

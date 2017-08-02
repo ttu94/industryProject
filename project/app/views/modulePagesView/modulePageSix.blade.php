@@ -21,7 +21,7 @@
     </div>
     <div class="col-md-5">
       <!--INCOMPLETE ROUTE, requires to take module ID-->
-      <a href={{ route("module_quiz_info", array("id" => Auth::user()->id)) }} ><button class="btn darkgrey2">Begin Quiz >></button></a>
+      <a href={{ route("module_quiz_info", array("id" => Auth::user()->id, "quizNo" => "Module 6")) }} ><button class="btn darkgrey2">Begin Quiz >></button></a>
     </div>
 
 </div>

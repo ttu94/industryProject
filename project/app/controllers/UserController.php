@@ -463,6 +463,7 @@ class UserController extends \BaseController {
 			$usedID = array();
 			$subA = array();
 			$count = 0;
+			$quizNo;
 			
 			$moduleTestDB = DB::table('moduleTests')
 				->select('id','question', 'correctAnswer')
@@ -484,16 +485,15 @@ class UserController extends \BaseController {
 			$count2 = 0;
 			$index = 0;
 			foreach($submittedAnswers as $k=>$a){ //$k is an id
+				if($k === 'quizNo'){
+					$quizNo = $a;
+				}
 				foreach($allAnswers as $q=>$ca){ //$q should be also and id
 					if($k === $q){
 						if($a == $ca){
-							$subA[$index-2] = "Right";
+							$subA[$index-3] = "Right";
 						} else {
-							if($a === 'nullified'){ //check if question got answered
-								$subA[$index-2] = "Not Answered";
-							} else {
-								$subA[$index-2] = "Wrong";
-							}
+							$subA[$index-3] = "Wrong";
 						}
 						$userAnswer[$allQuestions[$k]] = $a;
 						$usedID[] = $k;
@@ -503,7 +503,14 @@ class UserController extends \BaseController {
 				
 				$index++;
 			}
-			return View::make('modulePagesView.quizResult', compact('userAnswer', 'moduleAnswersDB', 'usedID', 'count2', 'index'))->withUser($user);
+			
+			$moduleAnswersDB = DB::table('moduleAnswers')
+				->join('moduleTests', 'moduleAnswers.moduleTest_id', '=', 'moduleTests.id')
+				->select('*')
+				->where('moduleTests.moduleName', '=', $quizNo)
+				->get();
+				
+			return View::make('modulePagesView.quizResult', compact('userAnswer', 'moduleAnswersDB', 'usedID', 'quizNo', 'subA', 'count2', 'index'))->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::action('UserController@index');
