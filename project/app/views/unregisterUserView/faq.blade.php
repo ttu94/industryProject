@@ -21,7 +21,7 @@
        
         <div class="col-md-12">
             <br>
-            <h3>General</h3>
+            <h3 class="faq_title">General</h3>
             <div class="faq_container">
                 <div class="faq">
                   <div class="faq_question"><h3>I have forgotten my password, what should I do?</h3></div>
@@ -70,7 +70,7 @@
                        </div>        
                 </div>
                 <br>
-                <h3>Modules</h3> 
+                <h3 class="faq_title">Modules</h3> 
                 <div class="faq">
                   <div class="faq_question"><h3>Can I download the educational module content?</h3></div>
                        <div class="faq_answer_container">
@@ -92,7 +92,7 @@
                        </div>        
                 </div>
                 <br>
-                <h3 style="color:#595145">Quizzes</h3>
+                <h3 class="faq_title">Quizzes</h3>
                 <div class="faq">
                   <div class="faq_question"><h3>How many attempts do I have to complete a quiz?</h3></div>
                        <div class="faq_answer_container">

@@ -15,22 +15,24 @@
         <div class="col-md-12">
             <br>
             @if (Auth::check())
-                <div class="alert alert-warning" style="background-color: #F3D6D9; border: none">
+                <div class="col-md-1"><br></div>
+                <div class="alert alert-warning col-md-10" style="background-color: #F3D6D9; border: none;border-radius:25px">
                     <p class="basicFontStyle" style="text-align:center">You are viewing limited content. Please click on the <a href={{ route("education_modules", array("id" => Auth::user()->id)) }} style="color: #195DA3"><u>Educational Modules</u></a> link for the full content.</p>
                 </div>
             @else
-                <div class="alert alert-warning" style="background-color: #F3D6D9; border: none">
+                <div class="col-md-1"><br></div>
+                <div class="alert alert-warning col-md-10" style="background-color: #F3D6D9; border: none">
                     <p class="basicFontStyle" style="text-align:center">You are viewing limited content. For full access, please <a href="login" style="color: #195DA3"><u>Sign In</u></a> or <a href="register" style="color: #195DA3"><u>Register for an account</u></a>.</p>
                 </div>
             @endif
             <div class="faq_container">
                 <!--ABSTRACT MODULE 0-->
                <div class="faq">
-                  <div class="faq_question"><h3><strong>Module 0: </strong>SCI Through The Ages</h3></div>
+                  <div class="faq_question"><h3><strong>Introduction: </strong>SCI Through The Ages</h3></div>
                     <div class="faq_answer_container">
                       <div class="faq_answer">
                             <br>
-                            <ul class="carousels my-carousels">
+                            <ul class="carousels my-carousels" style="height:800px">
                                 <input type="radio" id="1" name="activator" checked="checked" class="carousels__activator"/>
                                 <input type="radio" id="2" name="activator" class="carousels__activator"/>
                                 <input type="radio" id="3" name="activator" class="carousels__activator"/>
@@ -70,7 +72,7 @@
                                 
                                 <!--SLIDE 2-->
                                 <li class="carousels__slide">
-                                      <p class="modh2">The Golden age of Greece<br><br></p>
+                                      <p class="modh2">The Golden Age of Greece<br><br></p>
                                       <menu class="words2">
                                         <li>According to historical findings, the concept of the treatment had grown a little in Greece a few centuries later.</li>
                                         <li>Hippocrates of Kos (460-377 B.C.) was a renowned Greek physician who is often referred to as the “Father of Modern Medicine”.</li>
@@ -79,7 +81,7 @@
                                         <ul>
                                             <li>- The Hippocratic Ladder: he used this to tie the patients to its rungs and hang them upside-down and let the gravity provide traction.</li>
                                             <li>- The Hippocratic Board: he used this device to immobilize the patients and apply traction using their hands or feet.</li>
-                                      </ul>
+                                        </ul>
                                       </menu>
                                 </li>
                                 
@@ -95,7 +97,7 @@
                                 
                                 <!--SLIDE 4-->
                                 <li class="carousels__slide words2">
-                                    <p class="modh2">Through the Dark ages<br><br></p>
+                                    <p class="modh2">Through the Dark Ages<br><br></p>
                                     <menu class="words2">
                                       <li>Leonardo Da Vinci (1452-1519 AD) has been credited to be the first person to ever correctly portray the human spine with all of its salient features.</li>
                                       <li>The earliest records of a publication of spinal cord anatomy for educational and academic purposes are found in the anatomy textbook from 1543, written by Andreas Vesalius - a Renaissance physician and teacher(1514-1564 A.D.). He is often referred to as “Father of Modern Human Anatomy”.</li>
@@ -125,11 +127,12 @@
                                 </div>
                           </ul>
                           <br>
+                          <p style="text-align:center;font-size:20px"><strong>Please Note:</strong> You will not be tested on the content in this Introductory content.</p><br>
                           @if (Auth::check())
-                              <p style="text-align:center">You are currently viewing limited content, for full access please click the button below!</p>
+                              <p style="text-align:center;font-size:20px">You are currently viewing limited content, for full access please click the button below!</p><br>
                               <a href={{ route("education_modules", array("id" => Auth::user()->id)) }}><button class="btns3 darkgrey">Educational Modules</button></a>
                           @else
-                              <p style="text-align:center">If you would like to read more please register by clicking the button below!</p>
+                              <p style="text-align:center;font-size:20px">If you would like to read more please register by clicking the button below!</p><br>
                               <a href="register"><button class="btns3 darkgrey">Register</button></a>
                           @endif
                           <br>

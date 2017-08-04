@@ -10,6 +10,15 @@
 @endsection
 
 @section('content')
+<?php 
+    DB::table('userResults')->insertGetId(
+			    ['user_id' => $id, 
+			    'moduleName' => $quizNo, 
+			    'moduleResult' => $result,
+			    'created_at' => \Carbon\Carbon::now(), //this is to get the date and time of now (timestamping)
+			    'updated_at' => \Carbon\Carbon::now()]
+			);
+?>
 <div class="container-fluid"> 
     <!--Script disables back button-->
     <script>
@@ -50,9 +59,6 @@
     }
 
 })(window);</script>
-
-    <!--global variable for number of correct questions-->
-    
     <br><br>
     <div class="col-md-12">
         <a href={{ route("module_quiz_info", array("id" => Auth::user()->id, "quizNo" => $quizNo)) }}><button class="darkgrey2" style="float:left">Retake Quiz</button></a>
@@ -64,10 +70,13 @@
     ?>
     <div class="col-md-12">
         <h1>Your Results: <?php echo $correct . "/" . ($index-3) ?></h1>
+        <!--requires if user pass statement here-->
+        <h2>Congratulations, you've passed <span style="color:#B70014">{{$quizNo}}</span>!</h2> 
+        
         
         {{ Form::open() }}
             @foreach($userAnswer as $k=>$s)
-                <h2><span >Question {{ $count }}:</span>
+                <h2><span style="color:#B70014">Question {{ $count }}:</span>
                 <!--Question in variable k-->
                 {{ $k }}
                     @if($subA[$count-1] == 'Right')

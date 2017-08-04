@@ -493,10 +493,16 @@ class UserController extends \BaseController {
 						$usedID[] = $k;
 					}
 				}
-				
 				$index++;
 			}
-			
+			$result = $correct/($index-3);
+			DB::table('userResults')->insertGetId(
+			    ['user_id' => $id, 
+			    'moduleName' => $quizNo, 
+			    'moduleResult' => $result,
+			    'created_at' => \Carbon\Carbon::now(), //this is to get the date and time of now (timestamping)
+			    'updated_at' => \Carbon\Carbon::now()]
+			);
 			$moduleAnswersDB = DB::table('moduleAnswers')
 				->join('moduleTests', 'moduleAnswers.moduleTest_id', '=', 'moduleTests.id')
 				->select('*')
@@ -516,7 +522,13 @@ class UserController extends \BaseController {
 		//NOTE: INCORECT ROUTES. NEEDS TO DRAW DATA FROM DB ^
 		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
-			return View::make('registeredUserView.overallResult')->withUser($user);
+			
+			$userResultsDB = DB::table('userResults')
+				->select('*')
+				->where('user_id', '=', $id)
+				->get();
+			
+			return View::make('registeredUserView.overallResult', compact($userResultsDB))->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::action('UserController@index');

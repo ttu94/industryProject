@@ -24,7 +24,7 @@
 /*burnt orange (50 < result > 85) -#EAB279 */
 
 /*darkish blue for admin php side - #3A6B85*/
-/*cream - #FAEBD7*/
+/*cream (message userprofile) - #FDF7EF*/
 
 html,
 body {
@@ -96,10 +96,10 @@ h3 {
 }
 
 hr {
-    height:1px;
+    height:4px;
     border:none;
-    color:#333;
-    background-color:#333;
+    color:#fafafa;
+    background-color:#efefef;
 }
 
 .h3White {
@@ -404,7 +404,7 @@ a:hover {
 .btns5 {
     cursor: pointer;
     /*margin: 10px;*/
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 10px;
     /*font-size: 22px;*/
     transition: .3s;
@@ -421,7 +421,22 @@ a:hover {
     margin:0 auto;
 }
 
+.redBarHome {
+    text-align:center;
+    width:100%;
+    height:80px;
+    vertical-align: middle;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color: #B70014;
+    color:white;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+}
 
+.logo_area {
+    border-radius:25px;
+    background-color:white;
+}
 
 /*LOGIN PAGE CSS****************************************************************/
 
@@ -437,7 +452,7 @@ a:hover {
 button {
     cursor: pointer;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 10px;
     transition: .3s;
     -webkit-transition: .3s;
@@ -496,6 +511,7 @@ button:hover {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
+    background-color:#FAFAFA;
 }
 
 .age {
@@ -506,6 +522,7 @@ button:hover {
     /*display: inline-block;*/
     border: 1px solid #ccc;
     float: left;
+    background-color:#FAFAFA;
 }
 
 .email {
@@ -514,6 +531,7 @@ button:hover {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
+    background-color:#FAFAFA;
 }
 
 .gender {
@@ -569,7 +587,7 @@ button:hover {
 
 .otherDetailBox {
     /*background: linear-gradient(#ffffff, #e6e6e6);*/
-    background-color: white;
+    background-color:white;
     width:100%;
     max-width: 600px;
 }
@@ -598,6 +616,12 @@ button:hover {
 
 
 /*ABOUT US PAGE****************************************************************/
+.about_area {
+    background-color: white;
+    border-radius:25px;
+    padding-top:20px;
+    padding-bottom:25px;
+}
 
 .aboutUsImageOne {
     position: relative;
@@ -643,7 +667,7 @@ button:hover {
 
 .meetDoctor {
     font-family: Raleway, sans-serif;
-    color: black;
+    color: white;
 }
 
 .blocks {
@@ -683,7 +707,7 @@ button:hover {
 .btns4 {
     cursor: pointer;
     /*margin: 10px;*/
-    border-radius: 5px;
+    border-radius: 30px;
     /*padding: 10px;*/
     font-size: 22px;
     transition: .3s;
@@ -732,13 +756,23 @@ button:hover {
     padding: 5px 20px;
 }
 
-.feedback {
-    margin-left: 20%;
-    margin-right: 20%;
+.enquiry_area {
+    border-radius:25px;
+    background-color:white;
+    padding-bottom:20px;
 }
+
+.feedback {
+    background-color:white;
+    border-radius:25px;
+    padding-left:30%;
+    padding-right:30%;
+    padding-bottom:20px;
+}
+
 #feedbackName, #feedbackEmail, #feedbackSubject{
     width: 100%;
-     padding: 5px 20px;
+    padding: 5px 20px;
     margin: 3px 0;
     box-sizing: border-box;
     border-style: solid;
@@ -797,7 +831,7 @@ label.star:before {
 button2 {
     cursor: pointer;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 10px;
     transition: .3s;
     -webkit-transition: .3s;
@@ -847,16 +881,18 @@ button2 {
     text-align:center;
 }
 
-/*.testborder, td{*/
-/*    border: 1px solid black;*/
-/*}*/
-
+.userprof_area {
+    background-color: white;
+    border-radius:25px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
 
 /*User Profile coverflow****************************************************************/
 #modulant {
     /*padding: 100px 0px 100px 0px;*/
     /*margin-top: 1000px;*/
-	padding-bottom: 100px;
+	/*padding-bottom: 100px;*/
 	/*position:relative;*/
 }
 #modulant-coverflow .cover {
@@ -869,7 +905,7 @@ button2 {
 .btns6 {
     cursor: pointer;
     /*margin: 10px;*/
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 10px;
     font-size: 22px;
     transition: .3s;
@@ -888,7 +924,7 @@ button2 {
 .btns7 {
     cursor: pointer;
     /*margin: 10px;*/
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: 22px;
     transition: .3s;
     -webkit-transition: .3s;
@@ -934,6 +970,18 @@ button2 {
     /*min-height: 20px;*/
 }
 
+.faq_title {
+    border: 5px white solid;
+    background-color: white;
+    text-align: center;
+    padding:10px;
+    border-radius:25px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgba(0, 0, 0, 0.19);
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom:15px;
+}
+
 /*ABSTRACT EDUCATIONAL MODULE PAGE CSS*****************************************/
 
 .abstract_question {
@@ -965,7 +1013,7 @@ button2 {
 .btns3 {
     cursor: pointer;
     /*margin: 10px;*/
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 10px;
     font-size: 22px;
     transition: .3s;
@@ -1001,7 +1049,7 @@ button2 {
 .btns {
     cursor: pointer;
     /*margin: 10px;*/
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 10px;
     font-size: 22px;
     transition: .3s;
@@ -1046,7 +1094,7 @@ button2 {
 .btn {
     cursor: pointer;
     /*margin: 10px;*/
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 10px;
     transition: .3s;
     -webkit-transition: .3s;
@@ -1064,7 +1112,7 @@ button2 {
 .btn2 {
     /*cursor: pointer;*/
     margin-top: 8px;
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 10px;
     transition: .3s;
     -webkit-transition: .3s;
@@ -1524,6 +1572,14 @@ to { opacity: 1; }
     line-height: 28px;
 }
 
+.aDetails_area {
+    background-color: white;
+    border-radius:25px;
+    /*padding-top:10px;*/
+    /*padding-bottom:10px;*/
+    padding:15px; 
+}
+
 /*UPDATE DETAIL PAGE********************************************************************/
 
 .countrys {
@@ -1552,6 +1608,7 @@ to { opacity: 1; }
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
+    background-color:#FAFAFA;
 }
 
 /*OVERALL RESULTS PAGE********************************************************************/
@@ -1613,7 +1670,7 @@ tr.r {
 
 .btn3 {
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: 22px;
     transition: .3s;
     -webkit-transition: .3s;
@@ -1665,7 +1722,7 @@ tr.r {
 /*INDIVIUDAL RESULTS PAGE********************************************************************/
 .indiBtn {
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: 22px;
     transition: .3s;
     -webkit-transition: .3s;
@@ -1682,7 +1739,7 @@ tr.r {
 
 .indiBtn2 {
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: 22px;
     transition: .3s;
     -webkit-transition: .3s;
@@ -1701,7 +1758,7 @@ tr.r {
 
 .dropdownBtn {
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: 22px;
     transition: .3s;
     -webkit-transition: .3s;

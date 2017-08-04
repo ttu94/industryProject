@@ -20,6 +20,9 @@ class CreateUserResultsTable extends Migration {
 			//foreign key from users
 			$table->integer('user_id')->unsigned();
 			$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+			
+			//Module The results came from
+			$table->string('moduleName');
 
 			//stored user results from each module. Data is used to display information to the user
 	 		$table->double('moduleResult');

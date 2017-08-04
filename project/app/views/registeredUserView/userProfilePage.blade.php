@@ -21,46 +21,46 @@
 @section('content')
 <div class="container-fluid basicFontStyle">
     <br>
-    <div class="col-md-4" style="height:500px;background-color: #D5E1EE;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);">
-        <br>
-        <div class="summaryOfTests" style="margin-top: 100px;vertical-align: middle">
-            <p class="basicFontStyle" style="text-align:center"><strong>Summary of tests done</strong></p>
+    <div class="col-md-12 userprof_area">
+        <div class="col-md-4" style="height:500px;background-color: #D5E1EE;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);">
             <br>
-            <p class="basicFontStyle" style="text-align:center">Last test completed:</p>
-            
-            <!--VALUE NEEDS TO BE DRAWN FROM DATABASE-->
-            <h1 class="basicFontStyle" style="text-align:center"><strong>24/12/17</strong></h1>
-            <br>
-            <p class="basicFontStyle" style="text-align:center">Modules completed</p>
-  
-            <!--VALUE NEEDS TO BE DRAWN FROM DATABASE-->
-            <h1 style=text-align:center>0/11</h1>
+            <div class="summaryOfTests" style="margin-top: 100px;vertical-align: middle">
+                <p class="basicFontStyle" style="text-align:center"><strong>Summary of tests done</strong></p>
+                <br>
+                <p class="basicFontStyle" style="text-align:center">Last test completed:</p>
+                
+                <!--VALUE NEEDS TO BE DRAWN FROM DATABASE-->
+                <h1 class="basicFontStyle" style="text-align:center"><strong>24/12/17</strong></h1>
+                <br>
+                <p class="basicFontStyle" style="text-align:center">Modules completed</p>
+      
+                <!--VALUE NEEDS TO BE DRAWN FROM DATABASE-->
+                <h1 style=text-align:center>0/11</h1>
+            </div>
         </div>
-    </div>
-        
-    <div class="col-md-8" style="height:500px;position:relative">
-        <!--not sure what this will be of yet-->
-        <img alt="Dr. Thuan Tu" src="http://www.austinclemens.com/Playfair/playfair_docs/assets/p1ex.png" style="width:100%;height:300px;" /> 
-        <br>
-        <br>
-        <p class="basicFontStyle" style="margin-left:20px;margin-right:20px;text-align: justify;position:relative">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
-            varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
-            condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
-            nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
-            accumsan. Aliquam in felis sit amet augue.
-        </p>
-    </div>
-    <div class="col-md-12" style="">
-        
-        <br><br>
-        
-        <h3 class="text1" style="text-align: center">Here you can find the modules tailored according to your level of understanding for each module.
-        <br><br> The modules that you were more confident in are pushed to the end, whereas the ones you are less confident are at the start.
-        <br><br> We recommend that you start with the order presented to you, but you are free to complete the modules in any order.
-        <br><br> Good luck, may the odds be in your favour.</h3> 
-        <br>
-        <div id="modulant">
+            
+        <div class="col-md-8" style="height:500px;position:relative">
+            <!--not sure what this will be of yet-->
+            <img alt="Dr. Thuan Tu" src="http://www.austinclemens.com/Playfair/playfair_docs/assets/p1ex.png" style="width:100%;height:300px;" /> 
+            <br>
+            <br>
+            <p class="basicFontStyle" style="margin-left:20px;margin-right:20px;text-align: justify;position:relative">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
+                varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
+                condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
+                nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
+                accumsan. Aliquam in felis sit amet augue.
+            </p>
+        </div>
+        <div class="col-md-12">
+            <br>
+            <h3 class="text1" style="text-align:center;background-color:#FDF7EF">Here you can find the modules tailored according to your level of understanding for each module.
+            <br><br> The modules that you were more confident in are pushed to the end, whereas the ones you are less confident are at the start.
+            <br><br> We recommend that you start with the order presented to you, but you are free to complete the modules in any order.
+            <br><br> Good luck, may the odds be in your favour.</h3> 
+            <br>
+        </div>
+        <div class="col-md-12" id="modulant">
 			<div id="modulant-coverflow">
                 <div id="dv_{{$user->m1}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
                     <br>
@@ -68,10 +68,9 @@
                     <div class="panels-body">
                         <p class="moduleTitle">
                             Demographics & Economics of Spinal Cord Injury (SCI)
-                        </p><br>
+                        </p>
                         <a href={{ route("module_one", array("id" => Auth::user()->id)) }}><button class="btns6 darkgrey2">Read More</button></a>
                     </div>
-                    <br>
                 </div>
                 <div id="dv_{{$user->m2}}" class="panels panels-default panelsTwo" style="width:325px;height:275px">
                     <br>
@@ -79,10 +78,9 @@
                     <div class="panels-body">
                         <p class="moduleTitle">
                             Spinal cord as a neutral tissue and injury to the nerves
-                        </p><br>
+                        </p>
                         <a href="abstractModule"><button class="btns6 darkgrey2">Read More</button></a>
                     </div>
-                    <br>
                 </div>
                 <div id="dv_{{$user->m3}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
                     <br>
@@ -90,7 +88,7 @@
                     <div class="panels-body">
                         <p class="moduleTitle">
                             Structures
-                        </p><br><br>
+                        </p>
                         <a href="register"><button class="btns6 darkgrey2" text-align: center >Read More</button></a>
                     </div>
                 </div>
@@ -100,10 +98,9 @@
                     <div class="panels-body">
                         <p class="moduleTitle">
                             Functions
-                        </p><br>
+                        </p>
                         <a href="modulesOne"><button class="btns6 darkgrey2">Read More</button></a>
                     </div>
-                    <br><br>
                 </div>
 				<div id="dv_{{$user->m5}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
                     <br>
@@ -111,10 +108,9 @@
                     <div class="panels-body">
                         <p class="moduleTitle">
                             SCI mechanisms
-                        </p><br>
+                        </p>
                         <a href="aboutUs"><button class="btns6 darkgrey2">Read More</button></a>
                     </div>
-                    <br>
                 </div>
                 <div id="dv_{{$user->m6}}" class="panels panels-default panelsTwo" style="width:325px;height:275px">
                     <br>
@@ -122,10 +118,9 @@
                     <div class="panels-body">
                         <p class="moduleTitle">
                             Types of injuries
-                        </p><br>
+                        </p>
                         <a href="abstractModule"><button class="btns6 darkgrey2">Read More</button></a>
                     </div>
-                    <br>
                 </div>
                 <div id="dv_{{$user->m7}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
                     <br>
@@ -133,7 +128,7 @@
                     <div class="panels-body">
                         <p class="moduleTitle">
                             Different injuries and their effects on the cord and body
-                        </p><br>
+                        </p>
                         <a href="register"><button class="btns6 darkgrey2" text-align: center >Read More</button></a>
                     </div>
                 </div>
@@ -143,10 +138,9 @@
                     <div class="panels-body">
                         <p class="moduleTitle">
                             Chromic effects of spinal cord injury
-                        </p><br>
+                        </p>
                         <a href="modulesOne"><button class="btns6 darkgrey2">Read More</button></a>
                     </div>
-                    <br><br>
                 </div>
                 <div id="dv_{{$user->m9}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
                     <br>
@@ -154,10 +148,9 @@
                     <div class="panels-body">
                         <p class="moduleTitle">
                             Peripheral nerve regeneration
-                        </p><br>
+                        </p>
                         <a href="aboutUs"><button class="btns6 darkgrey2">Read More</button></a>
                     </div>
-                    <br>
                 </div>
                 <div id="dv_{{$user->m10}}" class="panels panels-default panelsTwo" style="width:325px;height:275px">
                     <br>
@@ -165,10 +158,9 @@
                     <div class="panels-body">
                         <p class="moduleTitle">
                             CNS regeneration
-                        </p><br>
+                        </p>
                         <a href="abstractModule"><button class="btns6 darkgrey2">Read More</button></a>
                     </div>
-                    <br>
                 </div>
                 <div id="dv_{{$user->m11}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
                     <br>
@@ -176,10 +168,9 @@
                     <div class="panels-body">
                         <p class="moduleTitle">
                             Repair therapeutic strategies 
-                        </p><br><br>
+                        </p>
                         <a href="register"><button class="btns6 darkgrey2" text-align: center >Read More</button></a>
                     </div>
-                    <br>
                 </div>
 			</div>
 			<div id="goto" style="text-align: center">
@@ -198,8 +189,6 @@
 			</div>
         </div>
     </div>
-    
-
 </div>
 
 @endsection

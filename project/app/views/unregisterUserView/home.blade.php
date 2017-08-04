@@ -88,6 +88,28 @@
             </div>
         </div>
     </div>
-  
+</div>
+
+<div class="redBarHome">
+  <h3>Our partners:</h3>
+</div>
+<div class="col-md-12"><br></div>
+<div class="container-fluid">
+    <!--LOGOS OF PARTNERS-->
+    <div class="col-md-12 logo_area" style="text-align:center">
+      <br>
+      <img alt="Griffith Institute for Drug Discovery logo" src="images/Home/GriffithDrug.png" style="height:120px"/>&nbsp;&nbsp;&nbsp;  
+      <img alt="Griffith University logo" src="images/Home/GriffithUni.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
+      <img alt="Menzies: Health Insitute Queensland logo" src="images/Home/Menzies.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
+      <img alt="Australian Research Council logo" src="images/Home/AustralianGov.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
+      <br>
+      <img alt="Clem Jones Centre for Neurobiology and Stem Cell Research logo" src="images/Home/ClemJones.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
+      <img alt="Princess Alexandra Hospital logo" src="images/Home/PrincessA.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
+      <img alt="Making Strides logo" src="images/Home/Strides.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
+      <img alt="MAiC: Motor Accident Insurance Commission logo" src="images/Home/MAiC.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
+      <br><br>
+      <img alt="Gold Coast University Hospital logo" src="images/Home/GoldCoast.png" style="width:450px"/> &nbsp;&nbsp;&nbsp;
+      <img alt="Perry Cross Spinal Research Foundation logo" src="images/Home/Perry.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
+    </div>
 </div>
 @endsection
