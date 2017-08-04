@@ -63,9 +63,8 @@
         $correctQuestions = 0;
         $count = 1;
     ?>
-    <div class="col-md-12">
-        <h1>Your Results: <?php print "$correctQuestions" ?>/10</h1>
-        
+    <div class="col-md-12" style="position:relative">
+        <br><br><br>
         {{ Form::open() }}
             @foreach($userAnswer as $k=>$s)
                 <h2><span >Question {{ $count }}:</span>
@@ -96,6 +95,10 @@
                 <?php $count++; ?>
             @endforeach
         {{ Form::close() }}
+        <!--Testing-->
+        <div style="position:absolute; top:0;left:5px">
+            <h1>Your Results: <?php print "$correctQuestions" ?>/10</h1>            
+        </div>
     </div>
 </div>
 
