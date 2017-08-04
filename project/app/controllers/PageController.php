@@ -112,7 +112,7 @@ class PageController extends \BaseController {
 			return View::make('registeredUserView.accountDetails')->withUser(Auth::user()->id);
 		}else{
 			//redirected to login page
-			return Redirect::to('login');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 		}
 	}
 	
@@ -125,7 +125,7 @@ class PageController extends \BaseController {
 			return View::make('registeredUserView.updateDetails')->withUser(Auth::user()->id);
 		}else{
 			//redirected to login page
-			return Redirect::to('login');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 		}
 	}
 	
@@ -136,10 +136,8 @@ class PageController extends \BaseController {
 		{
 			return View::make('registeredUserView.educational')->withUser(Auth::user()->id);//educational.blade.php
 		}else{
-			//redirected to login page
-			Auth::logout();
-			return Redirect::to('login');
 			
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 		}
 	}
 	
@@ -167,7 +165,7 @@ class PageController extends \BaseController {
 			return View::make('modulePagesView.moduleQuiz', compact('moduleTestDB', 'moduleAnswersDB', 'quizNo'))->withUser($user);//educational.blade.php
 		}else{
 			//redirected to login page
-			return Redirect::to('login');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 			
 		}
 	}
@@ -181,7 +179,7 @@ class PageController extends \BaseController {
 			return View::make('modulePagesView.moduleQuizInfo', ['quizNo' => $quizNo])->withUser(Auth::user()->id); //this passes the quiz module number e.g. Module 1
 		}else{
 			//redirected to login page
-			return Redirect::to('login');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 			
 		}
 	}
@@ -194,7 +192,7 @@ class PageController extends \BaseController {
 			return View::make('modulePagesView.modulePageOne')->withUser(Auth::user()->id);
 		}else{
 			//redirected to login page
-			return Redirect::to('login');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 			
 		}
 	}
@@ -207,7 +205,7 @@ class PageController extends \BaseController {
 			return View::make('modulePagesView.modulePageTwo')->withUser(Auth::user()->id);
 		}else{
 			//redirected to login page
-			return Redirect::to('login');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 			
 		}
 	}
@@ -220,7 +218,7 @@ class PageController extends \BaseController {
 			return View::make('modulePagesView.modulePageThree')->withUser(Auth::user()->id);
 		}else{
 			//redirected to login page
-			return Redirect::to('login');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 			
 		}
 	}
@@ -233,7 +231,7 @@ class PageController extends \BaseController {
 			return View::make('modulePagesView.modulePageFour')->withUser(Auth::user()->id);
 		}else{
 			//redirected to login page
-			return Redirect::to('login');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 			
 		}
 	}
@@ -246,7 +244,7 @@ class PageController extends \BaseController {
 			return View::make('modulePagesView.modulePageFive')->withUser(Auth::user()->id);
 		}else{
 			//redirected to login page
-			return Redirect::to('login');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 			
 		}
 	}
@@ -259,7 +257,7 @@ class PageController extends \BaseController {
 			return View::make('modulePagesView.modulePageSix')->withUser(Auth::user()->id);
 		}else{
 			//redirected to login page
-			return Redirect::to('login');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 			
 		}
 	}
@@ -272,7 +270,7 @@ class PageController extends \BaseController {
 			return View::make('modulePagesView.modulePageSeven')->withUser(Auth::user()->id);
 		}else{
 			//redirected to login page
-			return Redirect::to('login');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 			
 		}
 	}
@@ -285,7 +283,7 @@ class PageController extends \BaseController {
 			return View::make('modulePagesView.modulePageEight')->withUser(Auth::user()->id);
 		}else{
 			//redirected to login page
-			return Redirect::to('login');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 			
 		}
 	}
@@ -298,7 +296,7 @@ class PageController extends \BaseController {
 			return View::make('modulePagesView.modulePageNine')->withUser(Auth::user()->id);
 		}else{
 			//redirected to login page
-			return Redirect::to('login');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 			
 		}
 	}
@@ -311,7 +309,7 @@ class PageController extends \BaseController {
 			return View::make('modulePagesView.modulePageTen')->withUser(Auth::user()->id);
 		}else{
 			//redirected to login page
-			return Redirect::to('login');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 			
 		}
 	}
@@ -324,7 +322,7 @@ class PageController extends \BaseController {
 			return View::make('modulePagesView.modulePageEleven')->withUser(Auth::user()->id);
 		}else{
 			//redirected to login page
-			return Redirect::to('login');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 			
 		}
 	}

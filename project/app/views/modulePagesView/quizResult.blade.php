@@ -60,11 +60,11 @@
     </div>
     
     <?php 
-        $correctQuestions = 0;
         $count = 1;
     ?>
-    <div class="col-md-12" style="position:relative">
-        <br><br><br>
+    <div class="col-md-12">
+        <h1>Your Results: <?php echo $correct . "/" . ($index-3) ?></h1>
+        
         {{ Form::open() }}
             @foreach($userAnswer as $k=>$s)
                 <h2><span >Question {{ $count }}:</span>
@@ -72,10 +72,6 @@
                 {{ $k }}
                     @if($subA[$count-1] == 'Right')
                         <span class="glyphicon glyphicon-ok" style="color:#9FD26C; font-size: 35px"></span>
-                        <!--counts the number of correct questions-->
-                        <?php 
-                            $correctQuestions++;
-                        ?>
                     @else
                         <span class="glyphicon glyphicon-remove" style="color:#B70014; font-size: 35px"></span>
                     @endif
@@ -95,10 +91,7 @@
                 <?php $count++; ?>
             @endforeach
         {{ Form::close() }}
-        <!--Testing-->
-        <div style="position:absolute; top:0;left:5px">
-            <h1>Your Results: <?php print "$correctQuestions" ?>/10</h1>            
-        </div>
+        
     </div>
 </div>
 

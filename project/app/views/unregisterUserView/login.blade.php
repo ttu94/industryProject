@@ -19,6 +19,12 @@
             <h2 style="text-align:center">{{ Session::get('success') }}</h2>
         </div>
     @endif
+    @if(Session::has('error'))
+        <div class="alert alert-danger alert-dismissable fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+            <h2 style="text-align:center">{{ Session::get('error') }}</h2>
+        </div>
+    @endif
     <!--Linking to user register page-->
     <div class="col-md-4">
     <br><br><br><br>

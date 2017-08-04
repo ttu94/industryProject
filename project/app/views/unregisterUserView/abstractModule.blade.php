@@ -24,6 +24,120 @@
                 </div>
             @endif
             <div class="faq_container">
+                <!--ABSTRACT MODULE 0-->
+               <div class="faq">
+                  <div class="faq_question"><h3><strong>Module 0: </strong>SCI Through The Ages</h3></div>
+                    <div class="faq_answer_container">
+                      <div class="faq_answer">
+                            <br>
+                            <ul class="carousels my-carousels">
+                                <input type="radio" id="1" name="activator" checked="checked" class="carousels__activator"/>
+                                <input type="radio" id="2" name="activator" class="carousels__activator"/>
+                                <input type="radio" id="3" name="activator" class="carousels__activator"/>
+                                <input type="radio" id="4" name="activator" class="carousels__activator"/>
+                                <input type="radio" id="5" name="activator" class="carousels__activator"/>
+                                
+                                <div class="carousels__controls">
+                                  <label for="2" class="carousels__control carousels__control--backward"></label>
+                                  <label for="5" class="carousels__control carousels__control--forward"></label>
+                                </div>
+                                <div class="carousels__controls">
+                                  <label for="3" class="carousels__control carousels__control--backward"></label>
+                                  <label for="1" class="carousels__control carousels__control--forward"></label>
+                                </div>
+                                <div class="carousels__controls">
+                                  <label for="4" class="carousels__control carousels__control--backward"></label>
+                                  <label for="2" class="carousels__control carousels__control--forward"></label>
+                                </div>
+                                <div class="carousels__controls">
+                                  <label for="5" class="carousels__control carousels__control--backward"></label>
+                                  <label for="3" class="carousels__control carousels__control--forward"></label>
+                                </div>
+                                <div class="carousels__controls">
+                                  <label for="1" class="carousels__control carousels__control--backward"></label>
+                                  <label for="4" class="carousels__control carousels__control--forward"></label>
+                                </div>
+                              
+                                <!--SLIDE 1-->
+                                <li class="carousels__slide">
+                                  <p class="modh2">From the Tombs of the Pharaohs<br><br></p>
+                                 <menu class="words2">
+                                   <li>Properly recorded accounts of Spinal cord injury and its treatment are discovered from ancient times, when the medical science had barely begun its existence.</li>
+                                   <li>An Egyptian papyrus roll manuscript from 1700 B.C. was discovered that describes two spinal cord injuries involving fracture or dislocation of the neck vertebrae accompanied by paralysis. This is the earliest record of SCI ever to have been found.</li>
+                                   <li>The rolls described the injury as "an ailment not to be treated."</li>
+                                 </menu>
+                                </li>
+                                
+                                <!--SLIDE 2-->
+                                <li class="carousels__slide">
+                                      <p class="modh2">The Golden age of Greece<br><br></p>
+                                      <menu class="words2">
+                                        <li>According to historical findings, the concept of the treatment had grown a little in Greece a few centuries later.</li>
+                                        <li>Hippocrates of Kos (460-377 B.C.) was a renowned Greek physician who is often referred to as the “Father of Modern Medicine”.</li>
+                                        <li>According to him, no treatment options were available for spinal cord injuries with paralysis. And that those patients were destined to die.</li>
+                                        <li>However, he did use primitive form of traction therapy for SCI without paralysis. For this he invented two devices:</li>    
+                                        <ul>
+                                            <li>- The Hippocratic Ladder: he used this to tie the patients to its rungs and hang them upside-down and let the gravity provide traction.</li>
+                                            <li>- The Hippocratic Board: he used this device to immobilize the patients and apply traction using their hands or feet.</li>
+                                      </ul>
+                                      </menu>
+                                </li>
+                                
+                                <!--SLIDE 3-->
+                                <li class="carousels__slide words2">
+                                    <menu class="words2">
+                                      <li>Galen of Pergamon (129-200 A.D.), another Greek physician, first stipulated the concept of a ‘central nervous system’ by suggesting that spinal cord was an extension of the brain and was responsible for carrying sensations between brain and the limbs.</li>
+                                      <li>Paulus Aegineta (625-690 A.D.) endorsed surgical intervention for SCI to remove the bone fragments as he believed that the fragments were responsible for paralysis.</li>
+                                      <li>Records also reflect that Hindu, Arab, and Chinese physicians developed some simplistic forms of traction to treat vertebral conditions. The same principles of traction are still in practice today.</li>
+                                    </menu>
+        
+                                </li>
+                                
+                                <!--SLIDE 4-->
+                                <li class="carousels__slide words2">
+                                    <p class="modh2">Through the Dark ages<br><br></p>
+                                    <menu class="words2">
+                                      <li>Leonardo Da Vinci (1452-1519 AD) has been credited to be the first person to ever correctly portray the human spine with all of its salient features.</li>
+                                      <li>The earliest records of a publication of spinal cord anatomy for educational and academic purposes are found in the anatomy textbook from 1543, written by Andreas Vesalius - a Renaissance physician and teacher(1514-1564 A.D.). He is often referred to as “Father of Modern Human Anatomy”.</li>
+                                      <li>Based on his experience and dissection of spine, he had described and illustrated the spine’s anatomy in complete detail. This enabled the physicians of that era to understand the correct structure of the spine and by extension, the nature of the damage caused by any spinal injury.</li>
+                                      <li>The names of the spinal regions that are used today- cervical, thoracic, lumbar, sacral, and coccygeal – were originally given by Vesalius.</li>
+                                    </menu>
+                                </li>
+                                
+                                <!--SLIDE 5-->
+                                <li class="carousels__slide">
+                                  <p class="modh2">The Modern Times<br><br>
+                                  <menu class="words2">
+                                    <li>The late 19th century brought widespread use of antiseptics and sterilization into surgical procedures. This enabled the surgeons to perform spinal surgeries without significant risk of infection.</li>
+                                    <li>The early 20th century equipped the medical practitioners with the X-rays. Now the surgeons had a way to image the spine and get a more accurate idea of the injury to give a more precise diagnosis and prognosis.</li>
+                                    <li>Both of these advancements in the medical field made the spinal surgery more desirable and relatively easier. Hence by the middle of the twentieth century, we had a standard treatment modality established for SCI: repositioning the spine, fixing it in place, and rehabilitation.</li>    
+                                    <li>In the 1990s, it was found that the use of steroids (methylprednisolone) had a potential to reduce the inflammation and therefore, further damage to the injured nerve cells, which became a very significant alternative or additional treatment option.</li> 
+                                    <li>But the quest for an effective cure for spinal cord injury still continues…</li> 
+                                  </menu>
+                                </li>
+                                
+                                <div class="carousels__indicators">
+                                  <label for="1" class="carousels__indicator"></label>
+                                  <label for="2" class="carousels__indicator"></label>
+                                  <label for="3" class="carousels__indicator"></label>
+                                  <label for="4" class="carousels__indicator"></label>
+                                  <label for="5" class="carousels__indicator"></label>
+                                </div>
+                          </ul>
+                          <br>
+                          @if (Auth::check())
+                              <p style="text-align:center">You are currently viewing limited content, for full access please click the button below!</p>
+                              <a href={{ route("education_modules", array("id" => Auth::user()->id)) }}><button class="btns3 darkgrey">Educational Modules</button></a>
+                          @else
+                              <p style="text-align:center">If you would like to read more please register by clicking the button below!</p>
+                              <a href="register"><button class="btns3 darkgrey">Register</button></a>
+                          @endif
+                          <br>
+                      </div>
+                    </div> 
+                    
+                </div>
+               <br>
                 <!--ABSTRACT MODULE 1-->
                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 1: </strong>Facts and Figures for SCI</h3></div>

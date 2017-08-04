@@ -123,7 +123,7 @@ class UserController extends \BaseController {
 			// return View::make('registeredUserView.userProfilePage')->withUser($user);
 		} else {
 			Auth::logout();
-			return Redirect::action('UserController@index');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 		}
 	}
 	
@@ -158,7 +158,7 @@ class UserController extends \BaseController {
 			return View::make('registeredUserView.userProfilePage')->withUser($user);
 		} else {
 			Auth::logout();
-			return Redirect::action('UserController@index');
+			return Redirect::to('login')->with('error', 'You must be signed to have access');
 		}
 	}
 	
@@ -182,8 +182,7 @@ class UserController extends \BaseController {
 			$user = User::find($id);
 			return View::make('registeredUserView.updateDetails')->withUser($user);
 		} else {
-			Auth::logout();
-			return Redirect::action('UserController@index');
+			Auth::logout();return Redirect::to('login')->with('error', 'You must be signed to have access');
 		}
 	}
 
@@ -469,12 +468,6 @@ class UserController extends \BaseController {
 				->select('id','question', 'correctAnswer')
 				->get();
 			
-			// $moduleAnswersDB = DB::table('moduleAnswers')
-			// 	->join('moduleTests', 'moduleAnswers.moduleTest_id', '=', 'moduleTests.id')
-			// 	->select('*')
-			// 	->where('moduleTests.moduleName', '=', $quizNo)
-			// 	->get();
-			
 			$submittedAnswers = Input::all();
 			
 			foreach($moduleTestDB as $moduleTestDB){
@@ -482,7 +475,7 @@ class UserController extends \BaseController {
 				$allQuestions[$moduleTestDB->id] = (string)$moduleTestDB->question;
 				$count++;
 			};	
-			$count2 = 0;
+			$correct = 0;
 			$index = 0;
 			foreach($submittedAnswers as $k=>$a){ //$k is an id
 				if($k === 'quizNo'){
@@ -492,12 +485,12 @@ class UserController extends \BaseController {
 					if($k === $q){
 						if($a == $ca){
 							$subA[$index-3] = "Right";
+							$correct++;
 						} else {
 							$subA[$index-3] = "Wrong";
 						}
 						$userAnswer[$allQuestions[$k]] = $a;
 						$usedID[] = $k;
-						$count2++;
 					}
 				}
 				
@@ -510,7 +503,7 @@ class UserController extends \BaseController {
 				->where('moduleTests.moduleName', '=', $quizNo)
 				->get();
 				
-			return View::make('modulePagesView.quizResult', compact('userAnswer', 'moduleAnswersDB', 'usedID', 'quizNo', 'subA', 'count2', 'index'))->withUser($user);
+			return View::make('modulePagesView.quizResult', compact('userAnswer', 'moduleAnswersDB', 'usedID', 'quizNo', 'subA', 'index', 'correct'))->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::action('UserController@index');
