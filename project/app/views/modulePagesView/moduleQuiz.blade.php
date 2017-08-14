@@ -49,6 +49,7 @@
                 <div id="tracklist">
                     <?php $count = 0; $submittedQuestions; shuffle($moduleTestDB); ?>
                     {{ Form::hidden('quizNo', $quizNo) }}
+                    {{ Form::hidden('uRcount', $uRcount) }}
                     @foreach($moduleTestDB as $moduleTestDB)
                         <?php 
                             $count++;

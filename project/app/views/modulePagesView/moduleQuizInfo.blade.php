@@ -24,7 +24,7 @@
                 <div class="basicFontStyle" style="margin-left: 20px; margin-top: 10px">
                     • You have an unlimited number of attempts<br>
                     • There is no time limit<br>
-                    • All questions are multiple choice<br>
+                    • All questions are multiple choice <br>
                     <br>
                 </div>
             </div>

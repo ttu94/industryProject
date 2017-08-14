@@ -18,19 +18,19 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/GRIDD-3.jpg" alt="Dr John St James" style="height: 700px">
+        <img src="images/GRIDD-3.jpg" alt="Dr John St James" style="height: 770px">
         <div class="carousel-caption">
         </div>
       </div>
       <div class="item">
-        <img src="images/Spinal1.jpg" alt="Spinal Cord" style="height: 700px">
+        <img src="images/Spinal1.jpg" alt="Spinal Cord" style="height: 770px">
         <div class="carousel-caption">
           <!--<h3>Dr James St John</h3>-->
           <!--<p>test</p>-->
         </div>
       </div>
       <div class="item">
-        <img src="images/Spinal2.jpg" alt="SCI" style="height: 700px">
+        <img src="images/Spinal2.jpg" alt="SCI" style="height: 770px">
         <div class="carousel-caption">
         </div>
       </div>
@@ -98,18 +98,18 @@
     <!--LOGOS OF PARTNERS-->
     <div class="col-md-12 logo_area" style="text-align:center">
       <br>
-      <img alt="Griffith Institute for Drug Discovery logo" src="images/Home/GriffithDrug.png" style="height:120px"/>&nbsp;&nbsp;&nbsp;  
-      <img alt="Griffith University logo" src="images/Home/GriffithUni.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
-      <img alt="Menzies: Health Insitute Queensland logo" src="images/Home/Menzies.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
-      <img alt="Australian Research Council logo" src="images/Home/AustralianGov.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
-      <br>
-      <img alt="Clem Jones Centre for Neurobiology and Stem Cell Research logo" src="images/Home/ClemJones.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
-      <img alt="Princess Alexandra Hospital logo" src="images/Home/PrincessA.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
-      <img alt="Making Strides logo" src="images/Home/Strides.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
-      <img alt="MAiC: Motor Accident Insurance Commission logo" src="images/Home/MAiC.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
+      <img alt="Griffith Institute for Drug Discovery logo" src="images/Home/GriffithDrug.png" style="height:120px"/>  
+      <img alt="Griffith University logo" src="images/Home/GriffithUni.png" style="height:120px"/> 
+      <img alt="Menzies: Health Insitute Queensland logo" src="images/Home/Menzies.png" style="height:120px"/>
+      <img alt="Australian Research Council logo" src="images/Home/AustralianGov.png" style="height:120px"/>
       <br><br>
-      <img alt="Gold Coast University Hospital logo" src="images/Home/GoldCoast.png" style="width:450px"/> &nbsp;&nbsp;&nbsp;
-      <img alt="Perry Cross Spinal Research Foundation logo" src="images/Home/Perry.png" style="height:120px"/> &nbsp;&nbsp;&nbsp;
+      <img alt="Clem Jones Centre for Neurobiology and Stem Cell Research logo" src="images/Home/ClemJones.png" style="height:120px"/>
+      <img alt="Princess Alexandra Hospital logo" src="images/Home/PrincessA.png" style="height:120px"/>
+      <img alt="Making Strides logo" src="images/Home/Strides.png" style="height:120px"/>
+      <img alt="MAiC: Motor Accident Insurance Commission logo" src="images/Home/MAiC.png" style="height:120px"/> 
+      <br><br>
+      <img alt="Gold Coast University Hospital logo" src="images/Home/GoldCoast.png" style="width:450px"/>
+      <img alt="Perry Cross Spinal Research Foundation logo" src="images/Home/Perry.png" style="height:120px"/>
     </div>
 </div>
 @endsection

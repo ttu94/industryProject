@@ -106,7 +106,7 @@ Route::put('{id}/account_details/update_password', array('as' => 'update_passwor
 Route::get('{id}/overall_results', array('as' => 'overall_results', 'uses' => 'UserController@OverallResults'));
 
 //Route for getting results for a specific module
-Route::get('{id}/overall_results/module/insertmodulenumberhere', array('as' => 'individual_module', 'uses' => 'UserController@IndividualModule'));
+Route::get('{id}/overall_results/module/{moduleNo}', array('as' => 'individual_module', 'uses' => 'UserController@IndividualModule'));
 
 
 //ROUTE CONTROLLER FOR PAGES***************************************************************************************

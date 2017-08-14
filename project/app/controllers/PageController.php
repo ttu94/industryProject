@@ -147,6 +147,7 @@ class PageController extends \BaseController {
 		if(Auth::check())
 		{
 			$user = User::find($id);
+			$uRcount = DB::table('userResults')->count();
 			
 			$moduleTestDB = DB::table('moduleTests')
 				->select('*')
@@ -162,7 +163,7 @@ class PageController extends \BaseController {
 				->get();
 				
 			// return View::make('modulePagesView.moduleQuiz', ['quizNo' => $quizNo])->withUser(Auth::user()->id);//educational.blade.php
-			return View::make('modulePagesView.moduleQuiz', compact('moduleTestDB', 'moduleAnswersDB', 'quizNo'))->withUser($user);//educational.blade.php
+			return View::make('modulePagesView.moduleQuiz', compact('moduleTestDB', 'moduleAnswersDB', 'quizNo', 'uRcount'))->withUser($user);//educational.blade.php
 		}else{
 			//redirected to login page
 			return Redirect::to('login')->with('error', 'You must be signed to have access');
@@ -176,7 +177,8 @@ class PageController extends \BaseController {
 		if(Auth::check())
 		{
 			
-			return View::make('modulePagesView.moduleQuizInfo', ['quizNo' => $quizNo])->withUser(Auth::user()->id); //this passes the quiz module number e.g. Module 1
+			// return View::make('modulePagesView.moduleQuizInfo', ['quizNo' => $quizNo])->withUser(Auth::user()->id); //this passes the quiz module number e.g. Module 1
+			return View::make('modulePagesView.moduleQuizInfo', compact('quizNo'))->withUser(Auth::user()->id); //this passes the quiz module number e.g. Module 1
 		}else{
 			//redirected to login page
 			return Redirect::to('login')->with('error', 'You must be signed to have access');

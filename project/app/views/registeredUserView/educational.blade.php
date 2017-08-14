@@ -58,7 +58,7 @@
                     <p class="moduleTitle">
                         Structures
                     </p><br><br>
-                    <a href={{ route("module_three", array("id" => Auth::user()->id)) }}><button class="btns darkgrey2" text-align: center >Read More</button></a>
+                    <a href={{ route("module_three", array("id" => Auth::user()->id)) }}><button class="btns darkgrey2">Read More</button></a>
                 </div>
                 
             </div>

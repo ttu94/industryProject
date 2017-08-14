@@ -10,15 +10,6 @@
 @endsection
 
 @section('content')
-<?php 
-    DB::table('userResults')->insertGetId(
-			    ['user_id' => $id, 
-			    'moduleName' => $quizNo, 
-			    'moduleResult' => $result,
-			    'created_at' => \Carbon\Carbon::now(), //this is to get the date and time of now (timestamping)
-			    'updated_at' => \Carbon\Carbon::now()]
-			);
-?>
 <div class="container-fluid"> 
     <!--Script disables back button-->
     <script>
@@ -69,9 +60,19 @@
         $count = 1;
     ?>
     <div class="col-md-12">
-        <h1>Your Results: <?php echo $correct . "/" . ($index-3) ?></h1>
+        <h1>Your Results: <?php echo $correct . "/" . ($index-4) ?></h1>
         <!--requires if user pass statement here-->
-        <h2>Congratulations, you've passed <span style="color:#B70014">{{$quizNo}}</span>!</h2> 
+        <?php 
+            
+        //   echo (($index-4)*0.8));
+        //   echo $correct;
+            if($correct >= (($index-4)*0.8)){
+                ?>
+                <h2>Congratulations, you've passed <span style="color:#B70014">{{$quizNo}}</span>!</h2> 
+                <?php
+            }
+        ?>
+        
         
         
         {{ Form::open() }}

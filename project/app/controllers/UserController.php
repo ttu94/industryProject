@@ -462,7 +462,7 @@ class UserController extends \BaseController {
 			$usedID = array();
 			$subA = array();
 			$count = 0;
-			$quizNo;
+			$quizNo; $uRcount;
 			
 			$moduleTestDB = DB::table('moduleTests')
 				->select('id','question', 'correctAnswer')
@@ -480,14 +480,16 @@ class UserController extends \BaseController {
 			foreach($submittedAnswers as $k=>$a){ //$k is an id
 				if($k === 'quizNo'){
 					$quizNo = $a;
+				} elseif($k === 'uRcount'){
+					$uRcount = $a;
 				}
 				foreach($allAnswers as $q=>$ca){ //$q should be also and id
 					if($k === $q){
 						if($a == $ca){
-							$subA[$index-3] = "Right";
+							$subA[$index-4] = "Right";
 							$correct++;
 						} else {
-							$subA[$index-3] = "Wrong";
+							$subA[$index-4] = "Wrong";
 						}
 						$userAnswer[$allQuestions[$k]] = $a;
 						$usedID[] = $k;
@@ -495,21 +497,26 @@ class UserController extends \BaseController {
 				}
 				$index++;
 			}
-			$result = $correct/($index-3);
-			DB::table('userResults')->insertGetId(
-			    ['user_id' => $id, 
-			    'moduleName' => $quizNo, 
-			    'moduleResult' => $result,
-			    'created_at' => \Carbon\Carbon::now(), //this is to get the date and time of now (timestamping)
-			    'updated_at' => \Carbon\Carbon::now()]
-			);
+			
+			$uRrecount = DB::table('userResults')->count();
+			if($uRcount == $uRrecount){
+				$result = $correct/($index-4);
+				DB::table('userResults')->insertGetId(
+				    ['user_id' => $id, 
+				    'moduleName' => $quizNo, 
+				    'moduleResult' => $result,
+				    'created_at' => \Carbon\Carbon::now(), //this is to get the date and time of now (timestamping)
+				    'updated_at' => \Carbon\Carbon::now()]
+				);
+			}
 			$moduleAnswersDB = DB::table('moduleAnswers')
 				->join('moduleTests', 'moduleAnswers.moduleTest_id', '=', 'moduleTests.id')
 				->select('*')
 				->where('moduleTests.moduleName', '=', $quizNo)
 				->get();
 				
-			return View::make('modulePagesView.quizResult', compact('userAnswer', 'moduleAnswersDB', 'usedID', 'quizNo', 'subA', 'index', 'correct'))->withUser($user);
+			return View::make('modulePagesView.quizResult', compact('userAnswer', 'moduleAnswersDB', 'usedID', 'quizNo', 'id', 'result', 'subA', 'index', 'correct'))->withUser($user);
+			// return View::make('modulePagesView.quizResult', compact('uRrecount', 'uRcount', 'quizNo'))->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::action('UserController@index');
@@ -526,20 +533,28 @@ class UserController extends \BaseController {
 			$userResultsDB = DB::table('userResults')
 				->select('*')
 				->where('user_id', '=', $id)
+				// ->latest()
 				->get();
 			
-			return View::make('registeredUserView.overallResult', compact($userResultsDB))->withUser($user);
+			return View::make('registeredUserView.overallResult', compact('userResultsDB'))->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::action('UserController@index');
 		}
 	}
 	
-	public function IndividualModule($id){
+	public function IndividualModule($id, $moduleNo){
 		
 		//NOTE: INCORECT ROUTES. NEEDS TO DRAW DATA FROM DB ^
 		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
+			
+			$userResultsDB = DB::table('userResults')
+				->select('*')
+				->where('user_id', '=', $id)
+				->where('moduleName', '=', $moduleNo)
+				->get();
+			
 			return View::make('registeredUserView.individualModuleResult')->withUser($user);
 		} else {
 			Auth::logout();

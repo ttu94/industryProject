@@ -74,26 +74,26 @@ class ModuleTestSeeder extends Seeder {
          
          $ModuleTest = new ModuleTest;
          $ModuleTest->moduleName = "Module 1";
-         $ModuleTest->question = "The best possible outcomes are seen when the patients receive immediate medical treatment.";
+         $ModuleTest->question = "The best possible outcomes are seen when the patients receive immediate medical treatment";
          $ModuleTest->correctAnswer = "True";
          $ModuleTest->save();
          
          $ModuleTest = new ModuleTest;
          $ModuleTest->moduleName = "Module 1";
          $ModuleTest->question = "Which statement is incorrect?";
-         $ModuleTest->correctAnswer = "Surgery is the only cure available for SCI as of now.";
+         $ModuleTest->correctAnswer = "Surgery is the only cure available for SCI as of now";
          $ModuleTest->save();
          
          $ModuleTest = new ModuleTest;
          $ModuleTest->moduleName = "Module 1";
          $ModuleTest->question = "What is the role of physical therapy following a SCI?";
-         $ModuleTest->correctAnswer = "After the initial surgical treatment intensive physical therapy over an extended period tends to yield maximum functional recovery.";
+         $ModuleTest->correctAnswer = "After the initial surgical treatment intensive physical therapy over an extended period tends to yield maximum functional recovery";
          $ModuleTest->save();
          
          $ModuleTest = new ModuleTest;
          $ModuleTest->moduleName = "Module 1";
          $ModuleTest->question = "What would lead to a poorer outcome?";
-         $ModuleTest->correctAnswer = "Both a. &amp; b.";
+         $ModuleTest->correctAnswer = "Both a. &amp; b";
          $ModuleTest->save();
          
          $ModuleTest = new ModuleTest;
@@ -104,7 +104,7 @@ class ModuleTestSeeder extends Seeder {
          
          $ModuleTest = new ModuleTest;
          $ModuleTest->moduleName = "Module 1";
-         $ModuleTest->question = "Recovering from a SCI is very long and slow process.";
+         $ModuleTest->question = "Recovering from a SCI is very long and slow process";
          $ModuleTest->correctAnswer = "True";
          $ModuleTest->save();
          
@@ -128,7 +128,7 @@ class ModuleTestSeeder extends Seeder {
          
          $ModuleTest = new ModuleTest;
          $ModuleTest->moduleName = "Module 1";
-         $ModuleTest->question = "Any remaining loss of function after 1-2 years will likely become permanent.";
+         $ModuleTest->question = "Any remaining loss of function after 1-2 years will likely become permanent";
          $ModuleTest->correctAnswer = "True";
          $ModuleTest->save();
          
