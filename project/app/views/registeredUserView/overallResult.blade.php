@@ -60,70 +60,131 @@
     <?php
         for($i=0;$i<$dbCount;$i++){
             $moduleNo = $userResultsDB[$i]->moduleName;
-            if(($i+1) == $dbCount){
-                
-            } elseif($moduleNo != $userResultsDB[($i+1)]->moduleName){ // this checks if the next record is a different module
-                $lr = true;
+            
+            if($userResultsDB[$i]->moduleResult > 0.8 && $stopper == false){
+                $stopper = true;
+                $completedDate = (string) $userResultsDB[$i]->created_at;
+            }
+            if($userResultsDB[$i]->moduleResult > $results){
+                $results = ($userResultsDB[$i]->moduleResult * 100);
             }
             
-                if($lr){
-                    $lr = false;
-                    $latestDate = $userResultsDB[$i]->created_at; //still needs fixing, wont work for all the rest
+            if(($i+1) == $dbCount){ // this checks if the next record is a different module
+                $latestDate = $userResultsDB[$i]->created_at;
+                
+                // print module info here
+                if($i % 2){ // this if statement make it float right for every second result
+                    ?> <div class="moduleResPanel col-md-6"> <?php
+                } else {
+                    ?> <div class="moduleResPanel col-md-6" style="float:right"> <?php
                 }
-                if($userResultsDB[$i]->moduleResult > 0.8 && $stopper == false){
-                    $stopper = true;
-                    $completedDate = (string) $userResultsDB[$i]->created_at;
+                ?>
+                
+                
+                    <p class="modResTitle"><strong> {{ $moduleNo }} : </strong><br> {{ moduleFullName($moduleNo) }} </p>
+                    <div class="col-md-6">
+                        <br>
+                        <p class="resHeaders"><strong>Date of completion:</strong></p>
+                        <p class="resHeaders"><strong>Date of last test:</strong></p>
+                        <p class="resHeaders"><strong>Highest score:</strong></p>
+                    </div>
+                    <div class="col-md-6">
+                        <br>
+                        <p class="resData"> {{ $completedDate }} </p>
+                        <p class="resData"> {{ $latestDate }} </p>
+                        <p class="resData"> {{ $results }} </p>
+                    </div>
+                    <br>
+                    <a href={{ route("individual_module", array("moduleNo" => $moduleNo , "id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 1 Results</button></a>
+            
+                </div>
+                
+                <?php
+                
+            } elseif($moduleNo != $userResultsDB[($i+1)]->moduleName){ // this checks if the next record is a different module
+                $latestDate = $userResultsDB[$i]->created_at;
+                
+                // print module info here
+                
+                if($i % 2){ // this if statement make it float right for every second result
+                    ?> <div class="moduleResPanel col-md-6"> <?php
+                } else {
+                    ?> <div class="moduleResPanel col-md-6" style="float:right"> <?php
                 }
-                if($userResultsDB[$i]->moduleResult > $results){
-                    $results = ($userResultsDB[$i]->moduleResult * 100);
-                }
+                ?>
+                    <p class="modResTitle"><strong> {{ $moduleNo }} : </strong><br> {{ moduleFullName($moduleNo) }} </p>
+                    <div class="col-md-6">
+                        <br>
+                        <p class="resHeaders"><strong>Date of completion:</strong></p>
+                        <p class="resHeaders"><strong>Date of last test:</strong></p>
+                        <p class="resHeaders"><strong>Highest score:</strong></p>
+                    </div>
+                    <div class="col-md-6">
+                        <br>
+                        <p class="resData"> {{ $completedDate }} </p>
+                        <p class="resData"> {{ $latestDate }} </p>
+                        <p class="resData"> {{ $results }} </p>
+                    </div>
+                    <br>
+                    <a href={{ route("individual_module", array("moduleNo" => $moduleNo, "id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 1 Results</button></a>
+            
+                </div>
+                
+                <?php
+                
+                $results = 0;
+                $completedDate;
+                $stopper = false;
+                
+            }
+                
         }
     ?>
 
     <!--MODULE 1 RESULTS-->
-    <div class="moduleResPanel col-md-6">
-        <p class="modResTitle"><strong>Module 1: </strong><br>Facts and Figures for SCI</p>
-        <div class="col-md-6">
-            <br>
-            <p class="resHeaders"><strong>Date of completion:</strong></p>
-            <p class="resHeaders"><strong>Date of last test:</strong></p>
-            <p class="resHeaders"><strong>Highest score:</strong></p>
-        </div>
-        <div class="col-md-6">
-            <br>
-            <p class="resData"> 15/05/17 12:00 PM</p>
-            <p class="resData"> 15/05/17 12:00 PM</p>
-            <p class="resData"> 90%</p>
-        </div>
-        <br>
-        <a href={{ route("individual_module", array("moduleNo" => "Module 1", "id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 1 Results</button></a>
+    <!--<div class="moduleResPanel col-md-6">-->
+    <!--    <p class="modResTitle"><strong>Module 1: </strong><br>Facts and Figures for SCI</p>-->
+    <!--    <div class="col-md-6">-->
+    <!--        <br>-->
+    <!--        <p class="resHeaders"><strong>Date of completion:</strong></p>-->
+    <!--        <p class="resHeaders"><strong>Date of last test:</strong></p>-->
+    <!--        <p class="resHeaders"><strong>Highest score:</strong></p>-->
+    <!--    </div>-->
+    <!--    <div class="col-md-6">-->
+    <!--        <br>-->
+    <!--        <p class="resData"> 15/05/17 12:00 PM</p>-->
+    <!--        <p class="resData"> 15/05/17 12:00 PM</p>-->
+    <!--        <p class="resData"> 90%</p>-->
+    <!--    </div>-->
+    <!--    <br>-->
+    <!--    <a href={{ route("individual_module", array("moduleNo" => "Module 1", "id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 1 Results</button></a>-->
 
-    </div>
+    <!--</div>-->
     
     <!--MODULE 2 RESULTS-->
-    <div class="moduleResPanel col-md-6" style="float:right">
-        <p class="modResTitle"><strong>Module 2: </strong><br>Spinal cord as a neutral tissue and injury to the nerves</p>
-        <div class="col-md-6">
-            <br>
+    <!--<div class="moduleResPanel col-md-6" style="float:right">-->
+    <!--    <p class="modResTitle"><strong>Module 2: </strong><br>Spinal cord as a neutral tissue and injury to the nerves</p>-->
+    <!--    <div class="col-md-6">-->
+    <!--        <br>-->
             <!--User data from database-->
-            <p class="resHeaders"><strong>Date of completion:</strong></p>
+    <!--        <p class="resHeaders"><strong>Date of completion:</strong></p>-->
             <!--User data from database-->
-            <p class="resHeaders"><strong>Date of last test:</strong></p>
+    <!--        <p class="resHeaders"><strong>Date of last test:</strong></p>-->
             <!--User data from database-->
-            <p class="resHeaders"><strong>Highest score:</strong></p>
-        </div>
-        <div class="col-md-6">
-            <br>
-            <p class="resData"> 15/05/17 12:00 PM</p>
-            <p class="resData"> 15/05/17 12:00 PM</p>
-            <p class="resData"> 73%</p>
-        </div>
-        <div>
-            <br>
-            <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 2 Results</button></a>
-        </div>
-    </div>
-    <br><br>
+    <!--        <p class="resHeaders"><strong>Highest score:</strong></p>-->
+    <!--    </div>-->
+    <!--    <div class="col-md-6">-->
+    <!--        <br>-->
+    <!--        <p class="resData"> 15/05/17 12:00 PM</p>-->
+    <!--        <p class="resData"> 15/05/17 12:00 PM</p>-->
+    <!--        <p class="resData"> 73%</p>-->
+    <!--    </div>-->
+    <!--    <div>-->
+    <!--        <br>-->
+    <!--        <a href={{ route("individual_module", array("id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 2 Results</button></a>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <!--<br><br>-->
     
     <!--MODULE 3 RESULTS-->
     <!--<div class="moduleResPanel">-->
