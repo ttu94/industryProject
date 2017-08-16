@@ -553,9 +553,10 @@ class UserController extends \BaseController {
 				->select('*')
 				->where('user_id', '=', $id)
 				->where('moduleName', '=', $moduleNo)
+				->latest()
 				->get();
 			
-			return View::make('registeredUserView.individualModuleResult')->withUser($user);
+			return View::make('registeredUserView.individualModuleResult', compact('moduleNo', 'userResultsDB'))->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::action('UserController@index');
