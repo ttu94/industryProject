@@ -44,49 +44,6 @@
                         <td> [time taken] </td>
                     </tr>
                 @endforeach
-                
-                <!--<tr>-->
-                <!--    <td>1</td>-->
-                <!--    <td>60</td>-->
-                <!--    <td>18/30</td>-->
-                <!--    <td>15, May 2017 10:49 AM</td>-->
-                <!--    <td>15 minutes 31 seconds</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--    <td>2</td>-->
-                <!--    <td>73</td>-->
-                <!--    <td>22/30</td>-->
-                <!--    <td>15, May 2017 11:20 AM</td>-->
-                <!--    <td>12 minutes 18 seconds</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--    <td>3</td>-->
-                <!--    <td>90</td>-->
-                <!--    <td>27/30</td>-->
-                <!--    <td>15, May 2017 11:52 AM</td>-->
-                <!--    <td>9 minutes 2 seconds</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--    <td>4</td>-->
-                <!--    <td>90</td>-->
-                <!--    <td>27/30</td>-->
-                <!--    <td>15, May 2017 11:52 AM</td>-->
-                <!--    <td>9 minutes 2 seconds</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--    <td>5</td>-->
-                <!--    <td>90</td>-->
-                <!--    <td>27/30</td>-->
-                <!--    <td>15, May 2017 11:52 AM</td>-->
-                <!--    <td>9 minutes 2 seconds</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--    <td>6</td>-->
-                <!--    <td>90</td>-->
-                <!--    <td>27/30</td>-->
-                <!--    <td>15, May 2017 11:52 AM</td>-->
-                <!--    <td>9 minutes 2 seconds</td>-->
-                <!--</tr>-->
             </tbody>
         </table>
     </div>

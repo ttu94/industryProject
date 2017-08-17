@@ -130,6 +130,12 @@
       		
       	});
       </script>
+      
+       <!--PDF Certificate generator-->
+        <script src="{{ URL::asset('js/jspdf.js') }}"></script>
+        <script src="{{ URL::asset('js/jquery-2.1.3.js') }}"></script>
+        <script src="{{ URL::asset('js/pdfFromHTML.js') }}"></script>
+      
     </head>
     <body>
     	<div id="container">
