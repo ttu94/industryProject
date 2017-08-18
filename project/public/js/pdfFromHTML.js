@@ -9,6 +9,7 @@ specialElementHandlers = {
 margins = {
     top: 50,
     left: 60,
+    right: 60,
     width: 545
   };
 pdf.fromHTML(
@@ -22,7 +23,7 @@ pdf.fromHTML(
   	function (dispose) {
   	  // dispose: object with X, Y of the last line add to the PDF
   	  //          this allow the insertion of new lines after html
-        pdf.save('html2pdf.pdf');
+        pdf.save('Module Certificate.pdf');
       }
   )		
 }

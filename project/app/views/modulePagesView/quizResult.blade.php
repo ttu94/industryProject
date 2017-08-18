@@ -50,6 +50,17 @@
     }
 
 })(window);</script>
+    <!--Script for date-->
+    <script>
+        $(document).ready(function() {
+            var months = ['January','February','March','April','May','June','July',
+            'August','September','October','November','December'];       
+            var tomorrow = new Date();
+            tomorrow.setTime(tomorrow.getTime() + (1000*3600*24));       
+            document.getElementById("spanDate").innerHTML = months[tomorrow.getMonth()] + " " + tomorrow.getDate()+ ", " + tomorrow.getFullYear();
+     	});
+    </script>
+    
     <br><br>
     <div class="col-md-12">
         <a href={{ route("module_quiz_info", array("id" => Auth::user()->id, "quizNo" => $quizNo)) }}><button class="darkgrey2" style="float:left">Retake Quiz</button></a>
@@ -73,6 +84,26 @@
                 <?php
             }
         ?>
+        <!--Content for Certificate PDF-->
+    	<div id="HTMLtoPDF" style="display:none">
+    	    
+    	    <h1>Spinal Cord Injury Rehabilitation</h1>
+    	    <br><br>
+    	    <h2>Certificate for {{ $quizNo }}.</h2>
+    	    <br><br>
+        	<h2>Congratulations {{$user -> firstName}}!</h2>
+        
+        	<h2>Is hereby award a certificate for the completion of {{ $quizNo}}</h2>
+        	<h2>on <span id="spanDate"></span>.</h2>
+        	
+        	<br><br>
+        	<div >
+        	    <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/websiteLogo.png" height="100px" width="100px"/>
+        	    <p>The SiCURE Team</p>
+        	</div>
+        	
+    
+    	</div>
     
         {{ Form::open() }}
             @foreach($userAnswer as $k=>$s)
@@ -102,19 +133,6 @@
         {{ Form::close() }}
         
     </div>
-    
-	<div id="HTMLtoPDF" style="display:none">
-
-	<h2>HTML to PDF</h2>
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-	</div>
 </div>
 
 @endsection
