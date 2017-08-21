@@ -58,25 +58,27 @@
     <br>
     
     <?php
+        $oddeven = 0;
         for($i=0;$i<$dbCount;$i++){
             $moduleNo = $userResultsDB[$i]->moduleName;
-            
+            $r = ($userResultsDB[$i]->moduleResult * 100);
             if($userResultsDB[$i]->moduleResult > 0.8 && $stopper == false){
                 $stopper = true;
                 $completedDate = (string) $userResultsDB[$i]->created_at;
             }
-            if($userResultsDB[$i]->moduleResult > $results){
+            if($r > $results){
                 $results = ($userResultsDB[$i]->moduleResult * 100);
+                
             }
             
             if(($i+1) == $dbCount){ // this checks if the next record is a different module
                 $latestDate = $userResultsDB[$i]->created_at;
-                
+                // echo $oddeven;
                 // print module info here
-                if($i % 2){ // this if statement make it float right for every second result
-                    ?> <div class="moduleResPanel col-md-6"> <?php
+                if(($oddeven % 2) == 0){ // this if statement make it float right for every second result
+                    ?> <div class="moduleResPanel col-md-6"> <?php 
                 } else {
-                    ?> <div class="moduleResPanel col-md-6" style="float:right"> <?php
+                    ?> <div class="moduleResPanel col-md-6" style="float:right"> <?php 
                 }
                 ?>
                 
@@ -92,7 +94,7 @@
                         <br>
                         <p class="resData"> {{ $completedDate }} </p>
                         <p class="resData"> {{ $latestDate }} </p>
-                        <p class="resData"> {{ $results }} </p>
+                        <p class="resData"> {{ $results }} % </p>
                     </div>
                     <br>
                     <a href={{ route("individual_module", array("moduleNo" => $moduleNo , "id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 1 Results</button></a>
@@ -106,10 +108,10 @@
                 
                 // print module info here
                 
-                if($i % 2){ // this if statement make it float right for every second result
-                    ?> <div class="moduleResPanel col-md-6"> <?php
+                if(($oddeven % 2) == 0){ // this if statement make it float right for every second result
+                    ?> <div class="moduleResPanel col-md-6"> <?php 
                 } else {
-                    ?> <div class="moduleResPanel col-md-6" style="float:right"> <?php
+                    ?> <div class="moduleResPanel col-md-6" style="float:right"> <?php 
                 }
                 ?>
                     <p class="modResTitle"><strong> {{ $moduleNo }} : </strong><br> {{ moduleFullName($moduleNo) }} </p>
@@ -123,7 +125,7 @@
                         <br>
                         <p class="resData"> {{ $completedDate }} </p>
                         <p class="resData"> {{ $latestDate }} </p>
-                        <p class="resData"> {{ $results }} </p>
+                        <p class="resData"> {{ $results }} % </p>
                     </div>
                     <br>
                     <a href={{ route("individual_module", array("moduleNo" => $moduleNo, "id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 1 Results</button></a>
@@ -135,9 +137,10 @@
                 $results = 0;
                 $completedDate;
                 $stopper = false;
+                $oddeven++;   
                 
             }
-                
+            
         }
     ?>
 

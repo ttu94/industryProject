@@ -30,12 +30,12 @@
                 <p class="basicFontStyle" style="text-align:center">Last test completed:</p>
                 
                 <!--VALUE NEEDS TO BE DRAWN FROM DATABASE-->
-                <h1 class="basicFontStyle" style="text-align:center"><strong>24/12/17</strong></h1>
+                <h1 class="basicFontStyle" style="text-align:center"><strong> {{ $passLatest }} </strong></h1>
                 <br>
                 <p class="basicFontStyle" style="text-align:center">Modules completed</p>
       
                 <!--VALUE NEEDS TO BE DRAWN FROM DATABASE-->
-                <h1 style=text-align:center>0/11</h1>
+                <h1 style=text-align:center> {{ $passCount }} / 11 </h1>
             </div>
         </div>
             

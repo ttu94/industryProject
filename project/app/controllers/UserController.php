@@ -155,7 +155,19 @@ class UserController extends \BaseController {
 		//show the users profile
 		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
-			return View::make('registeredUserView.userProfilePage')->withUser($user);
+			
+			$userResultsDB = DB::table('userResults')
+				->select('*')
+				->where('user_id', '=', $id)
+				->where('moduleResult', '>=', 0.8)
+				->get();
+			
+			$latest = end($userResultsDB);
+			
+			$passCount = count($userResultsDB);
+			$passLatest = $latest->created_at;
+			
+			return View::make('registeredUserView.userProfilePage', compact('passCount', 'passLatest'))->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::to('login')->with('error', 'You must be signed to have access');
