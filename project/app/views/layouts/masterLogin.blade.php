@@ -2,16 +2,21 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="keywords" content="HTML,CSS,Bootstrap,JavaScript, jQuery, SQL">
+        <meta name="author" content="Caila Ancheta, Kenny Nguyen, Thuan Tu">
         <link rel="shortcut icon" href="{{ URL::to('/') }}/images/Logo1.jpg">
         <title>@yield('title')</title>
         
         <!--stylesheets-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        {{ HTML::style('css/stylesss.css', array(), true) }}
+        {{ HTML::style('css/styless.css', array(), true) }}
         
         <!--sortable table css and js-->
         {{ HTML::style('css/sortable-theme-bootstrap.css') }}
         {{ HTML::script('js/sortable.min.js') }}
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -132,9 +137,9 @@
       </script>
       
        <!--PDF Certificate generator-->
-        <script src="{{ URL::asset('js/jspdf.js') }}"></script>
-        <script src="{{ URL::asset('js/jquery-2.1.3.js') }}"></script>
-        <script src="{{ URL::asset('js/pdfFromHTML.js') }}"></script>
+       <!-- <script src="{{ URL::asset('js/jspdf.js') }}"></script>-->
+       <!-- <script src="{{ URL::asset('js/jquery-2.1.3.js') }}"></script>-->
+       <!-- <script src="{{ URL::asset('js/pdfFromHTML.js') }}"></script>-->
       
     </head>
     <body>
@@ -145,6 +150,3 @@
     	</div>
     </body>
 </html>
-
-
-    <!--Scripts for print button -->

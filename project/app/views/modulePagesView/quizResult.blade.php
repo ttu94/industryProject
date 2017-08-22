@@ -11,56 +11,6 @@
 
 @section('content')
 <div class="container-fluid"> 
-    <!--Script disables back button-->
-    <script>
-(function (global) { 
-
-    if(typeof (global) === "undefined") {
-        throw new Error("window is undefined");
-    }
-
-    var _hash = "!";
-    var noBackPlease = function () {
-        global.location.href += "#";
-
-        // making sure we have the fruit available for juice (^__^)
-        global.setTimeout(function () {
-            global.location.href += "!";
-        }, 50);
-    };
-
-    global.onhashchange = function () {
-        if (global.location.hash !== _hash) {
-            global.location.hash = _hash;
-        }
-    };
-
-    global.onload = function () {            
-        noBackPlease();
-
-        // disables backspace on page except on input fields and textarea..
-        document.body.onkeydown = function (e) {
-            var elm = e.target.nodeName.toLowerCase();
-            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
-                e.preventDefault();
-            }
-            // stopping event bubbling up the DOM tree..
-            e.stopPropagation();
-        };          
-    }
-
-})(window);</script>
-    <!--Script for date-->
-    <script>
-        $(document).ready(function() {
-            var months = ['January','February','March','April','May','June','July',
-            'August','September','October','November','December'];       
-            var tomorrow = new Date();
-            tomorrow.setTime(tomorrow.getTime() + (1000*3600*24));       
-            document.getElementById("spanDate").innerHTML = months[tomorrow.getMonth()] + " " + tomorrow.getDate()+ ", " + tomorrow.getFullYear();
-     	});
-    </script>
-    
     <br><br>
     <div class="col-md-12">
         <a href={{ route("module_quiz_info", array("id" => Auth::user()->id, "quizNo" => $quizNo)) }}><button class="darkgrey2" style="float:left">Retake Quiz</button></a>
@@ -134,5 +84,59 @@
         
     </div>
 </div>
+
+<!--Script disables back button-->
+    <script>
+(function (global) { 
+
+    if(typeof (global) === "undefined") {
+        throw new Error("window is undefined");
+    }
+
+    var _hash = "!";
+    var noBackPlease = function () {
+        global.location.href += "#";
+
+        // making sure we have the fruit available for juice (^__^)
+        global.setTimeout(function () {
+            global.location.href += "!";
+        }, 50);
+    };
+
+    global.onhashchange = function () {
+        if (global.location.hash !== _hash) {
+            global.location.hash = _hash;
+        }
+    };
+
+    global.onload = function () {            
+        noBackPlease();
+
+        // disables backspace on page except on input fields and textarea..
+        document.body.onkeydown = function (e) {
+            var elm = e.target.nodeName.toLowerCase();
+            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+                e.preventDefault();
+            }
+            // stopping event bubbling up the DOM tree..
+            e.stopPropagation();
+        };          
+    }
+
+})(window);</script>
+    <!--Script for date-->
+    <script>
+        $(document).ready(function() {
+            var months = ['January','February','March','April','May','June','July',
+            'August','September','October','November','December'];       
+            var tomorrow = new Date();
+            tomorrow.setTime(tomorrow.getTime() + (1000*3600*24));       
+            document.getElementById("spanDate").innerHTML = months[tomorrow.getMonth()] + " " + tomorrow.getDate()+ ", " + tomorrow.getFullYear();
+     	});
+    </script>
+    <!--PDF Certificate generator-->
+    <script src="{{ URL::asset('js/jspdf.js') }}"></script>
+    <script src="{{ URL::asset('js/jquery-2.1.3.js') }}"></script>
+    <script src="{{ URL::asset('js/pdfFromHTML.js') }}"></script>
 
 @endsection

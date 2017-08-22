@@ -162,10 +162,17 @@ class UserController extends \BaseController {
 				->where('moduleResult', '>=', 0.8)
 				->get();
 			
-			$latest = end($userResultsDB);
 			
 			$passCount = count($userResultsDB);
-			$passLatest = $latest->created_at;
+			$latest; $passLatest;
+			
+			if($passCount == 0){
+				$latest = "";
+				$passLatest = "";
+			} else {
+				$latest = end($userResultsDB);
+				$passLatest = $latest->created_at;
+			}
 			
 			return View::make('registeredUserView.userProfilePage', compact('passCount', 'passLatest'))->withUser($user);
 		} else {

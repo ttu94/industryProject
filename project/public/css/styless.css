@@ -1,30 +1,25 @@
-/*html {*/
-    /*zoom: 1; */
-/*    -moz-transform: scale(1);*/
-/*    -webkit-transform: scale(1);*/
-/*    transform: scale(1);*/
-/*}*/
 
-/************COLOURS********/
-/*grey (main content page) - #EFEFEF*/
-/*dark grey (top header/footer) - #323232*/
-/*white (bottom header) - #FFFFFF*/
-/*darker blue (third header/panel colours) - #195DA3*/
-/*grey (fourth header) - #C2C2C2*/
-/*grey (header borders) - #A9A9A9*/
-
-/*lighter blue (content boxes) - #79B1EA*/
-/*red (about us page/hover colours) - #B70014*/
-/*medium blue (panel colours) - #467DB5*/
-/*light blue (panel colours) - #759DC7*/
-/*pink (warning messages) - #F3D6D9*/
-/*pale blue (update message) - #D5E1EE*/
-
-/*green (result > 85) - #9FD26C*/
-/*burnt orange (50 < result > 85) -#EAB279 */
-
-/*darkish blue for admin php side - #3A6B85*/
-/*cream (message userprofile) - #FDF7EF*/
+    /************************COLOURS***********************/
+    /*                 grey (main content page) - #EFEFEF */
+    /*            dark grey (top header/footer) - #323232 */
+    /*                    white (bottom header) - #FFFFFF */
+    /* darker blue (third header/panel colours) - #195DA3 */
+    /*                     grey (fourth header) - #C2C2C2 */
+    /*                    grey (header borders) - #A9A9A9 */
+    /*                                                    */
+    /*             lighter blue (content boxes) - #79B1EA */
+    /*        red (about us page/hover colours) - #B70014 */
+    /*              medium blue (panel colours) - #467DB5 */
+    /*               light blue (panel colours) - #759DC7 */
+    /*                  pink (warning messages) - #F3D6D9 */
+    /*               pale blue (update message) - #D5E1EE */
+    /*                                                    */
+    /*                      green (result > 85) - #9FD26C */
+    /*           burnt orange (50 < result > 85) -#EAB279 */
+    /*                                                    */
+    /*          darkish blue for admin php side - #3A6B85 */
+    /*              cream (message userprofile) - #FDF7EF */
+    /******************************************************/
 
 html,
 body {
@@ -34,11 +29,13 @@ body {
     height:100%;
     width:100%;
     min-width: 1650px;
-    overflow-x: auto;
+    /*overflow-x: auto;*/
     background-color: #EFEFEF;
+    /*background-color: green;*/
 }
 
 #container {
+    /*min-height needed to keep footer on bottom of page for login screen*/
     min-height: 100%;
     position:relative;
     margin:0;
@@ -58,7 +55,7 @@ body {
 }
 
 .container-fluid {
-    min-height: 100%;
+    /*min-height: 100%;*/
     margin-left: 250px;
     margin-right: 250px;
     padding-bottom: 30px;
@@ -202,7 +199,7 @@ ul {
     text-align: center;
     float: center;
     padding: 50px 0 0;
-    font-size: 150%;
+    font-size: 120%;
     font-weight: 300;
     font-family: Raleway;
 }
@@ -241,6 +238,13 @@ a:hover {
     max-height: 100%;
     float:left;
     /*position: relative;*/
+}
+
+#navbar {
+    border-bottom-style: solid;
+    border-color: #B70014;
+    border-width: 3px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*Footer*********************************************************************/
@@ -437,6 +441,7 @@ a:hover {
     border-radius:25px;
     background-color:white;
 }
+
 /*LOGIN PAGE CSS****************************************************************/
 
 /*Input fields login*/
@@ -884,13 +889,13 @@ button2 {
     background-color: white;
     border-radius:25px;
     padding-top:20px;
-    padding-bottom:20px;
+    /*padding-bottom:20px;*/
 }
 
 /*User Profile coverflow****************************************************************/
 #modulant {
-    /*padding: 100px 0px 100px 0px;*/
-    /*margin-top: 1000px;*/
+ /*   padding: 100px 0px 100px 0px;*/
+ /*   margin-top: 1000px;*/
 	/*padding-bottom: 100px;*/
 	/*position:relative;*/
 }
