@@ -23,8 +23,8 @@
     <br>
     <div class="col-md-12 userprof_area">
         <br>
-        <div class="col-md-4" style="height:350px;background-color: #D5E1EE;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);">
-            <div class="summaryOfTests" style="margin-top:70px;vertical-align: middle">
+        <div class="col-md-4" style="padding-top:40px;padding-bottom:40px;background-color:#D5E1EE;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);">
+            <div class="summaryOfTests" style="">
                 <p class="basicFontStyle" style="text-align:center"><strong>Summary of tests done</strong></p>
                 <br>
                 <p class="basicFontStyle" style="text-align:center">Last test completed:</p>

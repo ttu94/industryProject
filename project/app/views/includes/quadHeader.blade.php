@@ -20,35 +20,31 @@
     </div>
         
     <!--SECOND SECTION OF HEADER-->
-    <div class="bottomHeader">
-    <!--Image as home page link-->
-    <ul>
-        <div class="col-md-4 col-xs-4">
-                <a href={{route("home")}}>
-                    <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/websiteLogo.png" height="130px" width="130px"/>
-                </a>
-                <br>
-                <a href={{route("home")}}>
-                    <h1 class="headerTitle">Spinal Cord Injury <br><span class="rehab">Rehabilitation</span></h1>
-                </a>
-            </div>
-            <div class="col-md-3 col-xs-3">
-                <br><br>
-            </div>
-        <div class="col-md-1 col-xs-1">
-            <li class="bottomLink"><a href={{{ route("about.us")}}}>ABOUT</a></li>
+    <nav class="navbar navbar-default navbar-static-top basicFontStyle" style="margin-bottom:0px">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="width:45px">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href={{route("home")}}>
+                <img class="navbar-brand" style="height:130px" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/websiteLogo.png" height="130px" width="130px"/>
+            </a>
+            <a class="navbar-brand "href={{route("home")}}>
+                <h1 class="headerTitle">Spinal Cord Injury <br><span class="rehab">Rehabilitation</span></h1>
+            </a>
         </div>
-        <div class="col-md-1 col-xs-1">
-            <li style:"float:right" class="bottomLink"><a href={{{ route("faq")}}}>FAQ</a></li>
+        
+        <div id="navbar" class="navbar-collapse collapse" style="padding:40px 70px 5px 20px">
+            <ul class="nav navbar-nav navbar-right bottomLink" >
+                <li><a style="color:black" onMouseOver="this.style.color='#B70014'" onMouseOut="this.style.color='black'" href={{{ route("about.us")}}}>ABOUT <span class="sr-only">(current)</span></a></li>
+                <li><a style="color:black" onMouseOver="this.style.color='#B70014'" onMouseOut="this.style.color='black'" href={{{ route("faq")}}}>FAQ</a></li>
+                <li><a style="color:black" onMouseOver="this.style.color='#B70014'" onMouseOut="this.style.color='black'" href={{{ route("abstract.module") }}}>MODULE ABSTRACTS</a></li>
+                <li><a style="color:black" onMouseOver="this.style.color='#B70014'" onMouseOut="this.style.color='black'" href={{{ route("contact.us")}}}>CONTACT</a></li>
+            </ul> 
         </div>
-        <div class="col-md-2 col-xs-2">
-            <li style:"float:right" class="bottomLink"><a href={{{ route("abstract.module") }}}>MODULE ABSTRACTS</a></li>
-        </div>
-        <div class="col-md-1 col-xs-1">
-            <li style:"float:right" class="bottomLink"><a href={{{ route("contact.us")}}}>CONTACT</a></li>
-        </div>
-    </ul>
-    </div>
+    </nav>
         
     <!--THIRD SECTION OF HEADER-->
     <div class="tripleHeader">

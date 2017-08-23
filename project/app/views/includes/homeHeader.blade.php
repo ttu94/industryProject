@@ -40,7 +40,7 @@
             </a>
         </div>
         
-        <div id="navbar" class="navbar-collapse collapse" style="padding:40px 70px 5px 20px">
+        <div id="navbar" class="navbarstyle navbar-collapse collapse" style="padding:40px 70px 5px 20px;border-color:#B70014">
             <ul class="nav navbar-nav navbar-right bottomLink" >
                 <li><a style="color:black" onMouseOver="this.style.color='#B70014'" onMouseOut="this.style.color='black'" href={{{ route("about.us")}}}>ABOUT <span class="sr-only">(current)</span></a></li>
                 <li><a style="color:black" onMouseOver="this.style.color='#B70014'" onMouseOut="this.style.color='black'" href={{{ route("faq")}}}>FAQ</a></li>
@@ -48,5 +48,5 @@
                 <li><a style="color:black" onMouseOver="this.style.color='#B70014'" onMouseOut="this.style.color='black'" href={{{ route("contact.us")}}}>CONTACT</a></li>
             </ul> 
         </div>
-        </nav>
+    </nav>
 </header>

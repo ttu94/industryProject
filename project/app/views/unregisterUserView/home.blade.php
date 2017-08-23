@@ -93,7 +93,7 @@
   <div class="redBarHome">
     <h3>Our partners:</h3>
   </div>
-  <div class="container-fluid">
+  <div class="container-fluid" style="margin-bottom:60px">
       <!--LOGOS OF PARTNERS--> 
       <br>
       <div class="col-md-12 col-xs-12 logo_area" style="text-align:center">

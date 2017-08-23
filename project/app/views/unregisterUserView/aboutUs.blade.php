@@ -99,7 +99,7 @@
     <h3 class="meetDoctor" style="text-align:center"><br>Meet the SiCURE team!</h3>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" style="margin-bottom:60px">
     <div class="col-md-12"><br></div>
     <div class="col-md-12 about_area">
         <div class="col-md-6 basicFontStyle words2" style="text-align: justify">
