@@ -11,41 +11,55 @@
 
 @section('content')
 <script>
- var conceptName = $('#modTitleList').find(":selected").val();
- console.log("value: " + conceptName)
-    
+
+    function moduleListing(){
+        var selectBox = document.getElementById("moduleTitleList");
+        var questionBox = document.getElementById("questionlist");
+        var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+        console.log(selectedValue);
+        for(var i = 0;i < 11;i++){
+            var module = "Module" + " " + i;
+            if(selectedValue == module){
+                listid = "Module" + i;
+      	     //   $('#' + listid).prop('disabled', false);
+      	    } else {
+      	        listid = "Module" + i;
+      	        var option = document.getElementById(listid);
+      	        option.style.display = "none";
+      	     //   $('#' + listid).prop('disabled', true);
+      	    }
+        }
+    }
 </script>
 
 <div class="container-fluid">
     <br>
-    <div class="col-md-12 basicFontStyle">
+    <div class="col-md-6 col-xs-6 basicFontStyle">
         @if($moduleTestDB)
-        
-            <select name="moduleTitle" id="moduleTitleList">
+            <select name="moduleTitle" id="moduleTitleList" onchange="moduleListing()">
                 <option value="Module 1" selected>Module 1: Demographics & Economics of Spinal Cord Injury</option>
                 <option value="Module 2">Module 2: Spinal cord as a neutral tissue and injury to the nerves</option>
-                <option value="Module 3">Module 3: </option>
-                <option value="Module 4">Module 4:</option>
-                <option value="Module 5">Module 5:</option>
-                <option value="Module 6">Module 6:</option>
-                <option value="Module 7">Module 7:</option>
-                <option value="Module 8">Module 8:</option>
-                <option value="Module 9">Module 9:</option>
-                <option value="Module 10">Module 10:</option>
-                <option value="Module 11">Module 11:</option>
+                <option value="Module 3">Module 3: Structure</option>
+                <option value="Module 4">Module 4: Functions</option>
+                <option value="Module 5">Module 5: SCI mechanisms</option>
+                <option value="Module 6">Module 6: Types of injuries</option>
+                <option value="Module 7">Module 7: Different injuries and their effects on the cord and body</option>
+                <option value="Module 8">Module 8: Chromic effects of spinal cord injury</option>
+                <option value="Module 9">Module 9: Peripheral nerve regeneration</option>
+                <option value="Module 10">Module 10: CNS regeneration</option>
+                <option value="Module 11">Module 11: Repair therapeutic strategies</option>
             </select>
-            
-            {{ Form::model($user, array('method' => 'PUT', 'route' => array('update_question', Auth::user()->id)))}}
+    </div>
+    <div class="col-md-6 col-xs-6 basicFontStyle">
+        {{ Form::model($user, array('method' => 'PUT', 'route' => array('update_question', Auth::user()->id)))}}
             <select size="15" name="modQuestions" id="questionlist">
                 @foreach($moduleTestDB as $moduleTestDB)
-                    <option value="{{ $moduleTestDB->id }}">{{ $moduleTestDB->question }}</option>
+                    <option id="{{ str_replace(' ', '', $moduleTestDB->id) }}" value="{{ $moduleTestDB->id }}">{{ $moduleTestDB->question }}</option>
                 @endforeach
             </select>
-            
-            <button class="button redbrown" type="submit" style="float:right; width:50%">Add Question</button> 
-        <!--</form>-->
+            <button class="btns3 darkgrey" type="submit">Edit</button>
         {{ Form::close() }}
-        
+        <button class="btns3 darkgrey" type="submit">Add</button>
         @else
             <p>No Module Questions/ Module Database Doesn't Exist</p>
         @endif

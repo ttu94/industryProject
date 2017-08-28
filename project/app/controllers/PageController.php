@@ -99,6 +99,7 @@ class PageController extends \BaseController {
 	
 	public function ContactUs()
 	{
+		
 		return View::make("unregisterUserView.contactUs");
 	}
 

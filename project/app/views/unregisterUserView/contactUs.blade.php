@@ -10,6 +10,17 @@
 @endsection
 
 @section('content')
+<?php 
+  $nono = "asdfsadf";
+  if(Auth::check()){
+    $userinfo = Auth::user();
+    $email = $userinfo->email;
+    $name = $userinfo->firstName . " " . $userinfo->lastName;
+  } else {
+    $email = "";
+    $name = "";
+  }
+?>
 <div class="container-fluid">
   <br>
   @if(Session::has('success'))
@@ -39,9 +50,9 @@
             
             Please submit your enquiries in the form below
             <form action="{{ action('UserController@UserEnquiries') }}" method="POST">
-              <input type="text" id="contactName" name="contactName" placeholder="Name*" width="200px" required>
+              <input type="text" id="contactName" name="contactName" placeholder="Name*" width="200px" value="{{ $name }}" required>
               <br>
-              <input type="text" id="contactEmail" name="contactEmail" placeholder="Email*" required>
+              <input type="text" id="contactEmail" name="contactEmail" placeholder="Email*" value="{{ $email }}" required>
               <br>
               <div class="country subject2" name="contactSubject" style="width:100%;height:45px;color:black;background-color:white;border:1px #666666 solid;padding: 5px 20px">
                 <select name="contactSubject">
@@ -70,9 +81,9 @@
     <br>
     <div>
       <form action="{{ action('UserController@UserFeedback') }}" method="POST">
-          <input type="text" id="feedbackName" name="feedbackName" placeholder="Name" width="200px" required>
+          <input type="text" id="feedbackName" name="feedbackName" placeholder="Name" width="200px" value="{{ $name }}" required>
           <br>
-          <input type="text" id="feedbackEmail" name="feedbackEmail" placeholder="Email" required>
+          <input type="text" id="feedbackEmail" name="feedbackEmail" placeholder="Email" value="{{ $email }}" required>
           <br>
           <input type="text" id="feedbackSubject" name="feedbackSubject" placeholder="Subject">
           <textarea id="feedback" name="feedback" placeholder="What is your feedback?" height="1000px"></textarea>  

@@ -161,8 +161,7 @@ class UserController extends \BaseController {
 				->where('user_id', '=', $id)
 				->where('moduleResult', '>=', 0.8)
 				->get();
-			
-			
+	
 			$passCount = count($userResultsDB);
 			$latest; $passLatest;
 			
@@ -555,7 +554,24 @@ class UserController extends \BaseController {
 				// ->latest()
 				->get();
 			
-			return View::make('registeredUserView.overallResult', compact('userResultsDB'))->withUser($user);
+			$userResultsPassDB = DB::table('userResults')
+				->select('*')
+				->where('user_id', '=', $id)
+				->where('moduleResult', '>=', 0.8)
+				->get();
+				
+			$passCount = count($userResultsPassDB);
+			$latest; $passLatest;
+			
+			if($passCount == 0){
+				$latest = "";
+				$passLatest = "";
+			} else {
+				$latest = end($userResultsPassDB);
+				$passLatest = $latest->created_at;
+			}
+	
+			return View::make('registeredUserView.overallResult', compact('userResultsDB', 'passCount'))->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::action('UserController@index');

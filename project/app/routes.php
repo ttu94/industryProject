@@ -45,21 +45,10 @@ Route::get('adminLogin', function()
 });
 
 //route for admin homepage
-Route::get('admin_homepage', array('as' => 'admin.homepage', 'uses' => 'UserController@AdminShow'));
-
-//Route To admin homepage
-//NOTE FAKE ROUTE NEEDS TO BE DELETED (****************************************************************************)
-Route::get('adminHomePage', function()
-{
-    return View::make('adminView/adminHomePage');
-});
+Route::get('adminHomePage', array('as' => 'admin.homepage', 'uses' => 'UserController@AdminShow'));
 
 //Route for admin Quiz Editor Page (***************************************************************************Kenny Added to test)
 Route::get('admin_quiz_editor', array('as' => 'admin.quizeditor', 'uses' => 'UserController@AdminQuiz'));
-Route::get('adminHomePage/adminQuizEditor', function()
-{
-   return View::make('adminView/adminQuizEditor'); 
-});
 
 //route to quiz editor
 Route::get('adminHomePage/adminQuizEditor/{id}', array('as' => 'admin_quiz_editor', 'uses' => 'UserController@AdminQuizEditor'));

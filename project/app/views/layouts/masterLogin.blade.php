@@ -136,11 +136,9 @@
       		
       	});
       </script>
-      
-       <!--PDF Certificate generator-->
-       <!-- <script src="{{ URL::asset('js/jspdf.js') }}"></script>-->
-       <!-- <script src="{{ URL::asset('js/jquery-2.1.3.js') }}"></script>-->
-       <!-- <script src="{{ URL::asset('js/pdfFromHTML.js') }}"></script>-->
+        
+        <!--pie graph-->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
       
     </head>
     <body>

@@ -33,7 +33,6 @@
                 <h1 class="basicFontStyle" style="text-align:center"><strong> {{ $passLatest }} </strong></h1>
                 <br>
                 <p class="basicFontStyle" style="text-align:center">Modules completed</p>
-      
                 <!--VALUE NEEDS TO BE DRAWN FROM DATABASE-->
                 <h1 style=text-align:center> {{ $passCount }} / 11 </h1>
             </div>
