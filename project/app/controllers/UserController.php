@@ -558,6 +558,7 @@ class UserController extends \BaseController {
 				->select('*')
 				->where('user_id', '=', $id)
 				->where('moduleResult', '>=', 0.8)
+				->groupBy('moduleName')
 				->get();
 				
 			$passCount = count($userResultsPassDB);

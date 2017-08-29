@@ -115,7 +115,8 @@
                         <p class="moduleTitle">
                             Different injuries and their effects on the cord and body
                         </p>
-                        <a href="register"><button class="btns6 darkgrey2" text-align: center >Read More</button></a>
+                        <button class="btns darkgrey2" style="width:50%;left:26%">Coming Soon</button>
+                        <!--<a href="register"><button class="btns6 darkgrey2" text-align: center >Read More</button></a>-->
                     </div>
                 </div>
                 <div id="dv_{{$user->m8}}" class="panels panels-default panelsTwo" style="width:325px;height:275px">
@@ -125,7 +126,8 @@
                         <p class="moduleTitle">
                             Chromic effects of spinal cord injury
                         </p>
-                        <a href="modulesOne"><button class="btns6 darkgrey2">Read More</button></a>
+                        <button class="btns darkgrey2" style="width:50%;left:26%">Coming Soon</button>
+                        <!--<a href="modulesOne"><button class="btns6 darkgrey2">Read More</button></a>-->
                     </div>
                 </div>
                 <div id="dv_{{$user->m9}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
@@ -135,7 +137,8 @@
                         <p class="moduleTitle">
                             Peripheral nerve regeneration
                         </p>
-                        <a href="aboutUs"><button class="btns6 darkgrey2">Read More</button></a>
+                        <button class="btns darkgrey2" style="width:50%;left:26%">Coming Soon</button>
+                        <!--<a href="aboutUs"><button class="btns6 darkgrey2">Read More</button></a>-->
                     </div>
                 </div>
                 <div id="dv_{{$user->m10}}" class="panels panels-default panelsTwo" style="width:325px;height:275px">
@@ -145,7 +148,8 @@
                         <p class="moduleTitle">
                             CNS regeneration
                         </p>
-                        <a href="abstractModule"><button class="btns6 darkgrey2">Read More</button></a>
+                        <button class="btns darkgrey2" style="width:50%;left:26%">Coming Soon</button>
+                        <!--<a href="abstractModule"><button class="btns6 darkgrey2">Read More</button></a>-->
                     </div>
                 </div>
                 <div id="dv_{{$user->m11}}" class="panels panels-default panelsOne" style="width:325px;height:275px">

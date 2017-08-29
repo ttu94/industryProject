@@ -2,13 +2,13 @@
 
 @section('title')
     {{--Module names needs to be taken out of database--}}
-    Module 11: Repair therapeutic strategies
+    Module 11: Repair/therapeutic strategies
 @endsection
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h4>Module 11: Repair therapeutic strategies</h4>
+   <h4>Module 11: Repair/therapeutic strategies</h4>
 @endsection
 
 @section('content')
@@ -30,10 +30,11 @@
         <input type="radio" id="3" name="activator" class="carousels__activator"/>
         <input type="radio" id="4" name="activator" class="carousels__activator"/>
         <input type="radio" id="5" name="activator" class="carousels__activator"/>
+        <input type="radio" id="6" name="activator" class="carousels__activator"/>
         
         <div class="carousels__controls">
           <label for="2" class="carousels__control carousels__control--backward"></label>
-          <label for="5" class="carousels__control carousels__control--forward"></label>
+          <label for="6" class="carousels__control carousels__control--forward"></label>
         </div>
         <div class="carousels__controls">
           <label for="3" class="carousels__control carousels__control--backward"></label>
@@ -48,73 +49,102 @@
           <label for="3" class="carousels__control carousels__control--forward"></label>
         </div>
         <div class="carousels__controls">
-          <label for="1" class="carousels__control carousels__control--backward"></label>
+          <label for="6" class="carousels__control carousels__control--backward"></label>
           <label for="4" class="carousels__control carousels__control--forward"></label>
+        </div>
+        <div class="carousels__controls">
+          <label for="1" class="carousels__control carousels__control--backward"></label>
+          <label for="5" class="carousels__control carousels__control--forward"></label>
         </div>
       
         <!--SLIDE 1-->
         <li class="carousels__slide">
           <div class="col-md-12">
-            <p class="modh2">6a) Complete</p>
+            <br>
+            <p class="modh2">Is there a cure for spinal cord injury?</p>
             <menu class="words2">
-              <li>A complete spinal cord injury is an injury where the whole thickness of spinal cord is injured.</li>
-              <li>This means that the spinal cord below the level injury can neither receive nor send any signals across the injury site.</li>
-              <li>In other words, the injury causes complete paralysis and complete loss of sensations below the level of injury.</li>
-              <li>A complete transection of cord, however rare, can cause a complete injury. Blunt injury like a contusion or laceration of the cord tissue can also result in a complete injury if the trauma is too severe.</li>
+              <li>The short answer is: Not Yet</li>
+              <li>Many doctors and scientists dedicate their lives to develop a cure. The research has yielded many promising results, and in all fairness, we may have a cure very soon.</li>
+              <li>In this module, we will take a look at some of the most promising strategies.</li>
             </menu>
+            <br>
+            <p class="words2" style="color:#195DA3">You will be learning about different repair/therapeutic strategies which will include:</p>
+            <ol class="words2" type="a">
+              <li>Growth factors</li>
+              <li>Cell transplants</li>
+              <li>Natural products</li>
+              <li>Robotics, neural interfaces</li>
+            </ol>
           </div>
         </li>
         
         <!--SLIDE 2-->
         <li class="carousels__slide">
-            <div class="col-md-12">
-                <p class="modh2">6b) Incomplete</p>
-                <menu class="words2">
-                    <li>An incomplete injury is any injury where there is still some connection left intact that can send and/or receive signals across the level of injury.</li>
-                    <li>Understandably, the severity of this type of injury would vary greatly depending upon the amount of spinal tissue left intact after the injury.</li>
-                    <li>There may be some loss of sensations, loss of a particular sensation, loss of all or some motor activity or diminished muscle power depending upon which spinal tracts are injured and to what extent they are injured.</li>
-                </menu>
-            </div>
+          <div class="col-md-12">
+            <br>
+            <p class="modh2">11 a) Growth factors</p>
+            <menu class="words2">
+              <li>Growth factors are natural proteins created by the body and play an important part during development of a child’s body; and help repair the nerves, blood vessels and other parts of the body.</li>
+              <li>Neurotrophins are the growth factors involved in maintaining nerve health. Neurotrophins play an important role in keeping the neurons and glia (supporting cells) within the nerve functioning healthily.</li>
+              <li>By adding more growth factors to a treatment we hope to encourage the patient’s own cells to heal the damaged area. And if the right combination of growth factors can be found, the treatment can be tailored to the patient’s needs – selecting the right growth factor to promote specifically the aid that the patient needs.</li>
+              <li>However, it is possible that the cells in the injury site may not respond to the growth factors at all. For this reason, growth factors are only a small part of solution. By using growth factors with a transplant of cells that do respond to these proteins we may ensure greater success.</li>
+            </menu>
+          </div>
         </li>
         
         <!--SLIDE 3-->
         <li class="carousels__slide words2">
-            <br>
-            <p class="modh2">6c) Physical injuries:</p>
-            <menu class="words2">
-                <ul type="">
-                    <li>i) Transection</li>
-                    <li>ii) Contusion</li>
-                    <li>iii) Laceration</li>
-                </ul>
-                <p class="modh2">Transection</p>
-                <li>In this type of injury, the cord is sliced through by the injuring force. If the cord is completely sliced through, the injury is known as complete cord transection.</li>
-                <li>If the cord is only partially cut through, the resulting injury is called a partial cord transection. Very rarely, the cord is only cut halfway through from left or right side, which is known as Brown Sequard Syndrome.</li>
-                <li>In transection type of injuries, the injury site is relatively clean and bleeding is relatively less. SCI resulting from a stabbing may be a transection type cord injury.</li>
-            </menu>
+          <br>
+          <p class="modh2">11 b) Cell transplants</p>
+          <menu class="words2">
+            <li>A number of different cells are being looked at as potential candidates for healing the spinal cord injuries.</li>
+            <li>Stem cells are the cells that have the capacity to create almost any type of cells the body needs, but they are extremely tricky to get and even more so to control what type of cells they turn into.</li>
+            <li>Fibroblasts are the cells that heal any physical injuries, other than the nervous injuries, by making scar tissue. They are also considered to have some usefulness in spinal cord injuries by some, but the neuroscientists are conflicted about their use.</li>
+            <li>Special supporting cells from the olfactory nerve (the nerve for sense of smell), known as the olfactory ensheathing cells (OECs) are now known for their role in day to day repair and maintenance of nerve cells from the olfactory nerve.</li>
+          </menu>
+          <br>
+          <p class="words2" style="text-align:center;color:#195DA3">This section continues on to the next slide</p>
         </li>
         
         <!--SLIDE 4-->
         <li class="carousels__slide">
-            <p class="modh2">Contusion</p>
-            <menu class="words2">
-              <li>Same as any other tissue, a blunt injury to the spinal cord leads to a contusion type injury.</li>
-              <li>The cord is surrounded completely inside the bony spinal canal. Any sudden movement or impact can cause the cord to slam against the spinal canal, crushing the meninges and suffering the contusion injury itself.</li>
-              <li>Since the cord tissue is very soft, fragile and highly vascular; such an injury would most like result in significant haemorrhage. As the haemorrhage clots and settles in the tissue, it presses and crushes the cord tissue causing further injury.</li>
-              <li>Contusion injury usually is incomplete but the injury may extend across many spinal segments causing extensive functional loss.</li>
-              <li>Injuries without significant vertebral fractures such as whiplash injury, may result in contusion of the cord.</li>
-            </menu>
+          <br>
+          <menu class="words2">
+            <li>They replace almost the entire olfactory nerve every month. The hope behind their use is, that they might do the same for the spinal cord and repair the damaged axons in the cord.</li>
+            <li>A lot of studies have been done on these cells and they are proven to be safe for transplant.</li>
+            <li>However, they are very difficult to isolate from the mixture of cells that we get from a nose biopsy and if not purified properly, they can lead to undesirable outcomes.</li>
+          </menu>
         </li>
         
         <!--SLIDE 5-->
         <li class="carousels__slide">
-            <p class="modh2">Laceration</p>
-            <menu class="words4">
-              <li>The laceration injuries are the worst and most severe in nature as they are almost always accompanied by significant damage to the vertebrae, spreading numerous bone fragments injuring the already hurt cord.</li>
-              <li>At the site of the impact, the cord suffers from contusion like injury, but the damage caused by bone fractures and dislocation also cuts and tears at the cord tissue.</li>
-              <li>Tearing, cutting and bruising of the cord usually means extensive structural damage and functional loss.</li>
-              <li>Violent injuries with significant damage and dislocations of the vertebrae usually present with laceration type of injuries.</li>
-            </menu>
+          <br>
+          <p class="modh2">11 c) Natural products</p>
+          <menu class="words2">
+            <li>Natural products (NPs) are defined as small molecules produced by living systems such as marine organisms, plants or microbes, which are not essential for their survival.</li>
+            <li>It is estimated that NPs represent approximately 60% of the drugs on the market.</li>
+            <li>NPs exhibit a large spectrum of biological activities including neuroprotective, cardio protective, antibacterial, antioxidant, anticancer and antimalarial activities for instance.</li>
+            <li>NPs can inhibit the inflammatory process after CNS injuries, protect cells from excessive reactive oxygen species and enhance neural regeneration.</li>
+            <li>Although on their own NPs may not be capable of inducing regeneration in the nervous tissue, they are being explored for use as supportive and stimulating agents for cell therapies.</li>
+            <li>NPs have shown promise with regards to significantly shortening the cell preparation time in the labs, improving the survivability of transplanted cells and hastening their reparative actions once transplanted.</li>
+          </menu>
+        </li>
+        
+        <!--SLIDE 6-->
+        <li class="carousels__slide">
+          <p class="modh2">11 d) Robotics, neural interfaces</p>
+          <menu class="words2">
+            <li>The developments in use of robotics and brain-computer-interfaces has opened a new direction for managing the spinal cord injury patients.</li>  
+            <li>The prostheses and implants, although not inducing any kind of physical recovery, show huge promise for reducing the devastating disabilities experienced by SCI survivors.</li>
+            <li>The patients can use the robotic devices or exoskeletons to accomplish the tasks that the injury prevents them from doing.</li>
+            <li>However, the biggest drawback is that these devices do not help with the loss of sensations and this in turn may cause more problems such not knowing how much force to use for moving something or if the object the patient is trying to pick up hot or cold.</li>
+            <li>Most devices require the person to undergo arduous and very complex training before they can use it effectively.</li>
+          </menu>
+          <p class="endmess text2">
+            <i><strong>This is the end of Module 11: Repair/therapeutic strategies
+            <br> You may wish to read over the module content again, or you can begin the multiple-choice quiz by clicking the 'Begin Quiz' button above.
+            </strong></i>
+          </p>
         </li>
         
         <div class="carousels__indicators">
@@ -123,6 +153,7 @@
           <label for="3" class="carousels__indicator"></label>
           <label for="4" class="carousels__indicator"></label>
           <label for="5" class="carousels__indicator"></label>
+          <label for="6" class="carousels__indicator"></label>
         </div>
       
       </ul>

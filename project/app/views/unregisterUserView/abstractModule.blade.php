@@ -159,8 +159,7 @@
                           Females are observed to be most vulnerable to spinal cord injury between the ages of 15 and 30 years and at ages above 60 years. 
                           <br><br>
                           Males are at least twice as likely to be the victims of spinal cord injury as compared to females.
-                          <br>
-                          <br>
+                          <br><br>
                           <div>
                               <a href={{route("module_one")}}><button class="btns3 darkgrey">See full content</button></a>
                           </div>
@@ -180,7 +179,6 @@
                           To understand the spinal cord injury, we need to understand the structure and function of the cord properly. To do that, we must first understand the organization of the central and peripheral nervous systems.
                           <br><br>
                           Body’s response to an injured nerve and injured spinal cord can be seperated into 3 categories Injury to the nervous system, Injury to a peripheral nerve and Injury to spinal cord.
-                          <br>
                           <br>
                           <div>
                               <a href={{route("module_two")}}><button class="btns3 darkgrey">See full content</button></a>
@@ -203,8 +201,7 @@
                           Every individual vertebra is separated from the next vertebra by a soft cushion like disc of cartilage called an intervertebral disc. 
                           <br><br>
                           Spinal nerves come out of the spinal column from these gaps between the vertebrae.
-                          <br>
-                          <br>
+                          <br><br>
                           <div>
                               <a href={{route("module_three")}}><button class="btns3 darkgrey">See full content</button></a>
                           </div>
@@ -214,7 +211,7 @@
                 </div>
                 <br>
                 <!--ABSTRACT MODULE 4-->
-               <div class="faq">
+                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 4: </strong>Functions</h3></div>
                     <div class="faq_answer_container">
                       <div class="faq_answer">
@@ -227,8 +224,7 @@
                           It carries all the sensory information from the body and relays it to brain; and carries motor commands from the brain and relays them to the body.
                           <br><br>
                           As mentioned before, each spinal nerve supplies a specific region of the body. These regions are called dermatomes. Other than the dermatomes, the spinal nerves supply specific muscle groups and organs.
-                          <br>
-                          <br>
+                          <br><br>
                           <div>
                               <a href={{route("module_four")}}><button class="btns3 darkgrey">See full content</button></a>
                           </div>
@@ -249,8 +245,6 @@
                                   <li>Middle column - the posterior one-half of the vertebral body</li>
                                   <li>Posterior column - laminae and the spinal canal.</li>
                               </menu>
-                              <br>
-                              <br>
                               <div>
                                   <a href={{route("module_five")}}><button class="btns3 darkgrey">See full content</button></a>
                               </div>
@@ -260,7 +254,7 @@
                 </div>
                 <br>
                 <!--ABSTRACT MODULE 6-->
-               <div class="faq">
+                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 6: </strong>Types of injuries</h3></div>
                        <div class="faq_answer_container">
                           <div class="faq_answer">
@@ -272,7 +266,6 @@
                                   <li>Physical injuries: Seperated into 3 categories, transection, contusion, laceration.</li>
                               </menu>
                               <br>
-                              <br>
                               <div>
                                   <a href={{route("module_six")}}><button class="btns3 darkgrey">See full content</button></a>
                               </div>
@@ -282,8 +275,8 @@
                 </div>
                 <br>
                 <!--ABSTRACT MODULE 7-->
-               <div class="faq">
-                  <div class="faq_question"><h3><strong>Module 7: </strong>Different injuries and their effects on the cord and body</h3></div>
+                <div class="faq">
+                  <div class="faq_question"><h3><strong>Module 7: </strong>Different injuries and their effects on the cord and body (Coming soon)</h3></div>
                        <div class="faq_answer_container">
                           <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
                        </div>        
@@ -291,7 +284,7 @@
                 <br>
                 <!--ABSTRACT MODULE 8 -->
                 <div class="faq">
-                  <div class="faq_question"><h3><strong>Module 8: </strong>Chromic effects of spinal cord injury</h3></div>
+                  <div class="faq_question"><h3><strong>Module 8: </strong>Chromic effects of spinal cord injury (Coming soon)</h3></div>
                        <div class="faq_answer_container">
                           <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
                        </div>        
@@ -299,7 +292,7 @@
                 <br>
                 <!--ABSTRACT MODULE 9 -->
                 <div class="faq">
-                  <div class="faq_question"><h3><strong>Module 9: </strong>Peripheral nerve regeneration</h3></div>
+                  <div class="faq_question"><h3><strong>Module 9: </strong>Peripheral nerve regeneration (Coming soon)</h3></div>
                        <div class="faq_answer_container">
                           <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
                        </div>        
@@ -308,7 +301,7 @@
                 <br>
                 <!--ABSTRACT MODULE 10 -->
                 <div class="faq">
-                  <div class="faq_question"><h3><strong>Module 10: </strong>CNS regeneration</h3></div>
+                  <div class="faq_question"><h3><strong>Module 10: </strong>CNS regeneration (Coming soon)</h3></div>
                        <div class="faq_answer_container">
                           <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
                        </div>        
@@ -317,10 +310,23 @@
                 <br>
                 <!--ABSTRACT MODULE 11 -->
                 <div class="faq">
-                  <div class="faq_question"><h3><strong>Module 11: </strong>Repair therapeutic strategies</h3></div>
-                       <div class="faq_answer_container">
-                          <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
-                       </div>        
+                    <div class="faq_question"><h3><strong>Module 11: </strong>Repair/therapeutic strategies</h3></div>
+                    <div class="faq_answer_container">
+                        <div class="faq_answer">
+                            <br>
+                            You will be learning about different repair/therapeutic strategies which will include:<br>
+                            <menu>
+                                <li>Growth factors: Growth factors are natural proteins created by the body and play an important part during development of a child’s body; and help repair the nerves, blood vessels and other parts of the body.</li>
+                                <li>Cell transplants: A number of different cells are being looked at as potential candidates for healing the spinal cord injuries.</li>
+                                <li>Natural products: Natural products (NPs) are defined as small molecules produced by living systems such as marine organisms, plants or microbes, which are not essential for their survival.</li>
+                                <li>Robotics, neural interfaces: The developments in use of robotics and brain-computer-interfaces has opened a new direction for managing the spinal cord injury patients.</li>
+                            </menu>
+                            <div>
+                                <a href={{route("module_eleven")}}><button class="btns3 darkgrey">See full content</button></a>
+                            </div>
+                            <br>
+                        </div>
+                    </div>        
                 </div>
             </div>
         </div>

@@ -10,25 +10,27 @@
 @endsection
 
 @section('content')
-<script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+$("#questionlist option[id='Module1']").remove();
     function moduleListing(){
         var selectBox = document.getElementById("moduleTitleList");
         var questionBox = document.getElementById("questionlist");
         var selectedValue = selectBox.options[selectBox.selectedIndex].value;
         console.log(selectedValue);
-        for(var i = 0;i < 11;i++){
-            var module = "Module" + " " + i;
-            if(selectedValue == module){
-                listid = "Module" + i;
-      	     //   $('#' + listid).prop('disabled', false);
-      	    } else {
-      	        listid = "Module" + i;
-      	        var option = document.getElementById(listid);
-      	        option.style.display = "none";
-      	     //   $('#' + listid).prop('disabled', true);
-      	    }
-        }
+        console.log(questionBox);
+        
+        // for(var i = 0;i < 11;i++){
+        //     var module = "Module" + " " + i;
+        //     if(selectedValue == module){
+        //         listid = "Module" + i;
+      	 //    //   $('#' + listid).prop('disabled', false);
+      	 //   } else {
+      	 //       listid = "Module" + i;
+      	 //       var option = document.getElementById(listid);
+      	 //       $("#questionlist option[value='module" + i + "']").remove();
+      	 //    //   $('#' + listid).prop('disabled', true);
+      	 //   }
+        // }
     }
 </script>
 
@@ -54,7 +56,8 @@
         {{ Form::model($user, array('method' => 'PUT', 'route' => array('update_question', Auth::user()->id)))}}
             <select size="15" name="modQuestions" id="questionlist">
                 @foreach($moduleTestDB as $moduleTestDB)
-                    <option id="{{ str_replace(' ', '', $moduleTestDB->id) }}" value="{{ $moduleTestDB->id }}">{{ $moduleTestDB->question }}</option>
+                    {{ str_replace(' ', '', $moduleTestDB->moduleName) }}
+                    <option id="{{ str_replace(' ', '', $moduleTestDB->moduleName) }}" value="{{ $moduleTestDB->id }}">{{ $moduleTestDB->question }}</option>
                 @endforeach
             </select>
             <button class="btns3 darkgrey" type="submit">Edit</button>

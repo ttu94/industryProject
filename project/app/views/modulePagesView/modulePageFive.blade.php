@@ -122,9 +122,10 @@
                 <li>In severe cases of quadriplegia, autonomic dysreflexia may happen where the patient suffers from very high blood pressure, low hear rate, low respiration rate, excessive sweating and hot flushed skin. This happens without warning and may be life threatening if left untreated.</li>
               </ol>
             </menu><br>
-            <p class="endmess text2"><i><strong>This is the end of Module 4: Functions
-            <br> You may wish to read over the module content again, or you can begin the multiple-choice quiz by clicking the 'Begin Quiz' button above.
-            </strong></i>
+            <p class="endmess text2">
+              <i><strong>This is the end of Module 4: Functions
+              <br> You may wish to read over the module content again, or you can begin the multiple-choice quiz by clicking the 'Begin Quiz' button above.
+              </strong></i>
             </p>
         </li>
         

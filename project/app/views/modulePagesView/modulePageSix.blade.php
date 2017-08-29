@@ -55,7 +55,15 @@
         <!--SLIDE 1-->
         <li class="carousels__slide">
           <div class="col-md-12">
-            <p class="modh2">6a) Complete</p>
+            <br>
+            <p class="words2" style="color:#195DA3"><strong>There are different types of injuries</strong></p>
+            <ol class="words2" type="a">
+              <li>Complete</li>
+              <li>Incomplete</li>
+              <li>Physical injuries</li>
+            </ol>
+            <br>
+            <p class="modh2">6 a) Complete</p>
             <menu class="words2">
               <li>A complete spinal cord injury is an injury where the whole thickness of spinal cord is injured.</li>
               <li>This means that the spinal cord below the level injury can neither receive nor send any signals across the injury site.</li>
@@ -67,36 +75,39 @@
         
         <!--SLIDE 2-->
         <li class="carousels__slide">
-            <div class="col-md-12">
-                <p class="modh2">6b) Incomplete</p>
-                <menu class="words2">
-                    <li>An incomplete injury is any injury where there is still some connection left intact that can send and/or receive signals across the level of injury.</li>
-                    <li>Understandably, the severity of this type of injury would vary greatly depending upon the amount of spinal tissue left intact after the injury.</li>
-                    <li>There may be some loss of sensations, loss of a particular sensation, loss of all or some motor activity or diminished muscle power depending upon which spinal tracts are injured and to what extent they are injured.</li>
-                </menu>
-            </div>
+          <div class="col-md-12">
+            <br>
+            <p class="modh2">6 b) Incomplete</p>
+            <menu class="words2">
+              <li>An incomplete injury is any injury where there is still some connection left intact that can send and/or receive signals across the level of injury.</li>
+              <li>Understandably, the severity of this type of injury would vary greatly depending upon the amount of spinal tissue left intact after the injury.</li>
+              <li>There may be some loss of sensations, loss of a particular sensation, loss of all or some motor activity or diminished muscle power depending upon which spinal tracts are injured and to what extent they are injured.</li>
+            </menu>
+          </div>
         </li>
         
         <!--SLIDE 3-->
         <li class="carousels__slide words2">
-            <br>
-            <p class="modh2">6c) Physical injuries:</p>
-            <menu class="words2">
-                <ul type="">
-                    <li>i) Transection</li>
-                    <li>ii) Contusion</li>
-                    <li>iii) Laceration</li>
-                </ul>
-                <p class="modh2">Transection</p>
-                <li>In this type of injury, the cord is sliced through by the injuring force. If the cord is completely sliced through, the injury is known as complete cord transection.</li>
-                <li>If the cord is only partially cut through, the resulting injury is called a partial cord transection. Very rarely, the cord is only cut halfway through from left or right side, which is known as Brown Sequard Syndrome.</li>
-                <li>In transection type of injuries, the injury site is relatively clean and bleeding is relatively less. SCI resulting from a stabbing may be a transection type cord injury.</li>
-            </menu>
+          <br>
+          <p class="modh2">6 c) Physical injuries:</p>
+          <p class="words2" style="color:#195DA3"><strong>There are 3 types of physical injuries:</strong></p>
+          <ol class="words2" type="I">
+            <li>Transection</li>
+            <li>Contusion</li>
+            <li>Laceration</li>
+          </ol>
+          <menu class="words2">
+            <p class="modh2">I) Transection</p>
+            <li>In this type of injury, the cord is sliced through by the injuring force. If the cord is completely sliced through, the injury is known as complete cord transection.</li>
+            <li>If the cord is only partially cut through, the resulting injury is called a partial cord transection. Very rarely, the cord is only cut halfway through from left or right side, which is known as Brown Sequard Syndrome.</li>
+            <li>In transection type of injuries, the injury site is relatively clean and bleeding is relatively less. SCI resulting from a stabbing may be a transection type cord injury.</li>
+          </menu>
         </li>
         
         <!--SLIDE 4-->
         <li class="carousels__slide">
-            <p class="modh2">Contusion</p>
+          <br>
+            <p class="modh2">II) Contusion</p>
             <menu class="words2">
               <li>Same as any other tissue, a blunt injury to the spinal cord leads to a contusion type injury.</li>
               <li>The cord is surrounded completely inside the bony spinal canal. Any sudden movement or impact can cause the cord to slam against the spinal canal, crushing the meninges and suffering the contusion injury itself.</li>
@@ -108,13 +119,20 @@
         
         <!--SLIDE 5-->
         <li class="carousels__slide">
-            <p class="modh2">Laceration</p>
-            <menu class="words4">
+          <br>
+            <p class="modh2">III) Laceration</p>
+            <menu class="words2">
               <li>The laceration injuries are the worst and most severe in nature as they are almost always accompanied by significant damage to the vertebrae, spreading numerous bone fragments injuring the already hurt cord.</li>
               <li>At the site of the impact, the cord suffers from contusion like injury, but the damage caused by bone fractures and dislocation also cuts and tears at the cord tissue.</li>
               <li>Tearing, cutting and bruising of the cord usually means extensive structural damage and functional loss.</li>
               <li>Violent injuries with significant damage and dislocations of the vertebrae usually present with laceration type of injuries.</li>
             </menu>
+            <br>
+            <p class="endmess text2">
+              <i><strong>This is the end of Module 6: Types of Injuries
+              <br> You may wish to read over the module content again, or you can begin the multiple-choice quiz by clicking the 'Begin Quiz' button above.
+              </strong></i>
+            </p>
         </li>
         
         <div class="carousels__indicators">

@@ -12,7 +12,7 @@
 @endsection
 
 @section('content')
-<div class="container-fluid"> 
+<div class="container-fluid basicFontStyle"> 
     <!--background-image: url("https://dssofgcsc.files.wordpress.com/2010/07/spine.jpg")-->
     <br>
     <div class="col-md-7">
@@ -23,7 +23,6 @@
       <!--INCOMPLETE ROUTE, requires to take module ID-->
       <a href={{ route("module_quiz_info", array("id" => Auth::user()->id, "quizNo" => "Module 7")) }} ><button class="btn darkgrey2">Begin Quiz >></button></a>
     </div>
-
 </div>
 
 @endsection

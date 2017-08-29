@@ -71,8 +71,8 @@
     google.charts.setOnLoadCallback(drawChart);
     
     // variables to generate pie chart
-    var completed = 1;
-    var incompleted = 11-1;
+    var completed = {{$passCount}};
+    var incompleted = 11-{{$passCount}};
     function drawChart() {
         var data = google.visualization.arrayToDataTable([
             ['Task', 'Hours per Day'],
