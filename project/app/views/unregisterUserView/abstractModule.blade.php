@@ -263,7 +263,21 @@
                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 6: </strong>Types of injuries</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
+                          <div class="faq_answer">
+                              <br>
+                              Three different types of injuries associated with the spinal cord
+                              <menu>
+                                  <li>Complete: Complete spinal cord injury is an injury where the whole thickness of spinal cord is injured. This means that the spinal cord below the level injury can neither receive nor send any signals across the injury site.</li>
+                                  <li>Incomplete: An incomplete injury is any injury where there is still some connection left intact that can send and/or receive signals across the level of injury.</li>
+                                  <li>Physical injuries: Seperated into 3 categories, transection, contusion, laceration.</li>
+                              </menu>
+                              <br>
+                              <br>
+                              <div>
+                                  <a href={{route("module_six")}}><button class="btns3 darkgrey">See full content</button></a>
+                              </div>
+                              <br>
+                          </div>
                        </div>        
                 </div>
                 <br>
@@ -271,7 +285,7 @@
                <div class="faq">
                   <div class="faq_question"><h3><strong>Module 7: </strong>Different injuries and their effects on the cord and body</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>It will depend on how long you take on each question. There is no time limit, so go at your own pace.<br>&nbsp;</div>
+                          <div class="faq_answer"><br>This content is still unavailable. Our team is working hard to have it ready for you.<br>&nbsp;</div>
                        </div>        
                 </div>
                 <br>

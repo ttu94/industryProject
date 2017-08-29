@@ -38,19 +38,25 @@
         <div class="col-md-6">
             <h3>About The Clinical Trials</h3>
             <p class="basicFontStyle" style="text-align: justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
-                varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
-                condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
-                nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
-                accumsan. Aliquam in felis sit amet augue.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
-                varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
-                condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
-                nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
-                accumsan. Aliquam in felis sit amet augue.
+                Developing a therapy and making it available for widespread use is a very long, arduous and expensive process. 
+                The treatment modality has to pass through numerous filters and tests before it can be implemented in clinical practice. 
+                These tests are known as clinical trials. <br>
+                
+                Before a treatment can even be considered for a clinical trials, it has to be proven safe, harmless and effective on animals.
+                This step is the pre-clinical trials.<br>
+                
+                If and when a drug or a therapy or a technique is deemed safe and potentially effective on animals, it has to go through 4 phases of clinical trials.
+                Phase-I tests for safety of the intervention on a small group (20-100) of people. Phase-II trials test for how effective the treatment is, and if it
+                works as intended or not, on a few hundred people. Phase-III trials further determine the effectiveness and safety of the intervention on several hundred to a 
+                few thousand patients, and monitors for any adverse effects. Once the intervention or the treatment has been approved through these phases, it can then be marketed 
+                and Phase-IV trials are conducted as ‘post-marketing trials’ on a large scale to study the long term effects.
+                <br>
+                
+                Understandably, the whole process may take decades, relentless efforts from the highly motivated scientists and clinicians working together and hundreds of millions of dollars.
             </p>
         </div>
         <div class="col-md-6">
+            <br><br><br><br>
             <img class="aboutUsImageOne"alt="About Spinal Cord Injury" src="images/AboutUs/aboutSCI.jpeg"/>
         </div>
     </div>

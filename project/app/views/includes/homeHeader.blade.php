@@ -14,6 +14,9 @@
             <ul>
                 <li style="float:right" class="topLink"><a href="user/logout" >LOGOUT</a></li>
                 <li style="float:right" class="topLink"><a href={{route("user.show", array("id" => Auth::user()->id))}}>MY PROFILE</a></li>
+                @if (Auth::user()->status == 1)
+                    <li style="float:right" class="topLink"><a href={{route("admin.homepage", array("id" => Auth::user()->id))}}>ADMIN HOMEPAGE</a></li>
+                @endif
             </ul>
         @else
             <ul>
@@ -33,14 +36,11 @@
                 <span class="icon-bar"></span>
             </button>
             <a href={{route("home")}}>
-                <img class="navbar-brand" style="height:130px" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/websiteLogo.png" height="130px" width="130px"/>
-            </a>
-            <a class="navbar-brand "href={{route("home")}}>
-                <h1 class="headerTitle">Spinal Cord Injury <br><span class="rehab">Rehabilitation</span></h1>
+                <img class="navbar-brand" style="height:150px;width:400px" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/siteLogo.png"/>
             </a>
         </div>
         
-        <div id="navbar" class="navbarstyle navbar-collapse collapse" style="padding:40px 70px 5px 20px;border-color:#B70014">
+        <div id="navbar" class="navbarstyle navbar-collapse collapse" style="padding:50px 70px 5px 20px;border-color:#B70014">
             <ul class="nav navbar-nav navbar-right bottomLink" >
                 <li><a style="color:black" onMouseOver="this.style.color='#B70014'" onMouseOut="this.style.color='black'" href={{{ route("about.us")}}}>ABOUT <span class="sr-only">(current)</span></a></li>
                 <li><a style="color:black" onMouseOver="this.style.color='#B70014'" onMouseOut="this.style.color='black'" href={{{ route("faq")}}}>FAQ</a></li>

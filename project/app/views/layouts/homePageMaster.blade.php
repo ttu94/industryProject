@@ -6,7 +6,7 @@
       	<!--<meta content="width=640, initial-scale=1, maximum-scale=1.0, user-scalable=1" name="viewport">-->
       	<meta name="keywords" content="HTML,CSS,Bootstrap,JavaScript, jQuery, SQL">
         <meta name="author" content="Caila Ancheta, Kenny Nguyen, Thuan Tu">
-    	<link rel="shortcut icon" href="{{ URL::to('/') }}/images/Logo1.jpg">
+    	<link rel="shortcut icon" href="{{ URL::to('/') }}/images/favicon.png">
     	<title>@yield('title')</title>
     	
     	<!--stylesheets-->
