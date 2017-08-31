@@ -102,7 +102,7 @@
     <!--END ABOUT THE EDUCATIONAL MODULES-->
 </div>
 <div class="redBar">
-    <h3 class="meetDoctor" style="text-align:center"><br>Meet the SiCURE team!</h3>
+    <h3 class="meetDoctor" style="text-align:center"><br>Meet the SIP team!</h3>
 </div>
 
 <div class="container-fluid" style="margin-bottom:60px">
@@ -114,12 +114,11 @@
             we are conducting pre-clinical research for a cell transplantation therapy 
             to repair the injured spinal cord which we hope will lead to a Phase I/IIa 
             clinical trial within a few years."
-    
         </div>
         <div class="col-md-6 basicFontStyle" style="text-align:center">
             <br>
-            <a target="_blank" href="https://cjcneurostemcell.org/"><img src="images/AboutUs/SiCURELogo.png" alt="SiCURE logo"height="200px" width="380px"/></a><br>
-            <strong> <u>To learn more about the SiCURE team, click their logo above </u></strong>
+            <a target="_blank" href="https://cjcneurostemcell.org/"><img src="images/siteLogo.png" alt="SIP logo"height="180px" width="400px"/></a><br>
+            <strong> <u>To learn more about the SIP team, click their logo above </u></strong>
             <br>
         </div>
         <br><br>

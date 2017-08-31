@@ -54,7 +54,9 @@ Route::get('admin_quiz_editor', array('as' => 'admin.quizeditor', 'uses' => 'Use
 Route::get('adminHomePage/adminQuizEditor/{id}', array('as' => 'admin_quiz_editor', 'uses' => 'UserController@AdminQuizEditor'));
 
 //route for editing module questions
-Route::put('adminHomePage/adminQuizEditor/question/{id}', array('as' => 'update_question', 'uses' => 'UserController@UpdateQuestion'));
+Route::put('adminHomePage/adminQuizEditor/question/{id}', array('as' => 'edit_question', 'uses' => 'UserController@EditQuestion'));
+
+Route::put('adminHomePage/adminQuizEditor/{id}', array('as' => 'update_question', 'uses' => 'UserController@UpdateQuestion'));
 
 
 // ROUTES TO CONTrOLLER FOR USERS*********************************************************************************

@@ -14,16 +14,16 @@
     <br>
     <div class="col-md-12 basicFontStyle">
 
-         <form action="{{ action('UserController@UpdateQuestion') }}" method="POST">
-             @if($moduleTestDB)
-                 <p>hi</p>
-            @else
-                <p>np</p>
-            @endif
-            {{ $val }}
+         {{ Form::model($user, array('method' => 'PUT', 'route' => array('update_question', Auth::user()->id)))}}
+           {{ var_dump($moduleAnswersDB) }}
                 @if($moduleTestDB)
                     @foreach($moduleTestDB as $moduleTestDB)
-                        <option value="{{ $moduleTestDB->id }}">{{ $moduleTestDB->question }}</option>
+                        <p>{{ $moduleTestDB->moduleName }}</p>
+                        <p>{{ $moduleTestDB->question }}</p>
+                        <p>{{ $moduleTestDB->correctAnswer }}</p>
+                        @foreach($moduleAnswersDB as $madb)
+                            <p>{{ $madb->answer }}</p>
+                        @endforeach
                     @endforeach
                 @else
                     <p>Question with ID ( {{ $val }} ) doesn't exist</p>
@@ -31,7 +31,7 @@
                 
                 
             </select>
-        </form>
+        {{ Form::close() }}
         {{$user->firstName}}
         <!--<a href=""> ADD Question</a>-->
     </div>

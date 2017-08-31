@@ -444,25 +444,39 @@ class UserController extends \BaseController {
 	}
 	
 	//admin controller to upate quiz questisons
-	public function UpdateQuestion($id)
+	public function EditQuestion($id)
 	{
 		if(Auth::user()->admin == '1'){
 			$user = User::find($id);
-			// return View::make('adminView.adminHomePage')->withAdmin($user);
-			// $questionId = Input::get('modQuestions');
-			// $question = Question::find($questionId);
 			$val = Input::get('modQuestions');
-			// $questionData = DB::table('moduleTests')
-			// 	->select('*')
-			// 	->where('id', $val)
-			// 	->get();
+			// $moduleNo = Input::get('moduleNo');
+			
 			$moduleTestDB = DB::table('moduleTests')
 				->select('*')
 				->where('id', $val)
 				->get();
 				
+			$moduleAnswersDB = DB::table('moduleAnswers')
+				->select('*')
+				->where('moduleAnswers.moduleTest_id', '=', $val)
+				->get();
+			
 			// return View::make('adminView.adminQuestionEdit', compact('id'));
-			return View::make('adminView.adminQuestionEdit', compact('val', 'moduleTestDB'))->withUser($user);
+			return View::make('adminView.adminQuestionEdit', compact('val', 'moduleAnswersDB', 'moduleTestDB'))->withUser($user);
+		} else {
+			Auth::logout();
+			return Redirect::action('AdminController@index');
+		}
+	}
+	
+	public function UpdateQuestion($id)
+	{
+		if(Auth::user()->admin == '1'){
+			$user = User::find($id);
+			$moduleTestDB = DB::table('moduleTests')
+				->select('*')
+				->get();
+			return View::make('adminView.adminQuizEditor', compact('moduleTestDB'))->withUser($user);
 		} else {
 			Auth::logout();
 			return Redirect::action('AdminController@index');
