@@ -10,8 +10,8 @@
 		<p>If you did not activate your account please update your security settings by changing your password.</p>
 		<br>
 		<p>Thank you,</p>
-		<p>The SiCURE team</p>
+		<p>The SIP team</p>
 		
-		<img src="{{ $message->embed(public_path() . '/images/SiCURE.png') }}" height="50px" width="100px"/>
+		<img src="{{ $message->embed(public_path() . '/images/siteLogo.png') }}" height="120px" width="200px"/>
 	</body>
 </html>

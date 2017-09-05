@@ -98,15 +98,15 @@
             <br>
             <a href={{{ route("education_modules")}}}><button class="btns4 darkgrey" style="width:35%">Access Full Educational Modules</button></a>
         </div>
-    </div>
-    <!--END ABOUT THE EDUCATIONAL MODULES-->
+    </div> <!--END ABOUT THE EDUCATIONAL MODULES-->
 </div>
+
 <div class="redBar">
     <h3 class="meetDoctor" style="text-align:center"><br>Meet the SIP team!</h3>
 </div>
 
 <div class="container-fluid" style="margin-bottom:60px">
-    <div class="col-md-12"><br></div>
+    <br>
     <div class="col-md-12 about_area">
         <div class="col-md-6 basicFontStyle words2" style="text-align: justify">
             "With the support of the Motor Accident Insurance Commission, 

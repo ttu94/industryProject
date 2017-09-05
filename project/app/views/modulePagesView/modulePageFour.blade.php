@@ -16,7 +16,7 @@
     <!--background-image: url("https://dssofgcsc.files.wordpress.com/2010/07/spine.jpg")-->
     <br>
     <div class="col-md-7">
-      <a href="{{ URL::to('/') }}/pdfs/Module_1_-_Demographics_&_Economics_of_SCI.pdf" 
+      <a href="{{ URL::to('/') }}/pdfs/Module4.pdf" 
       target="_blank" class="btn2 pdf">Download PDF</a>
     </div>
     <div class="col-md-5">
@@ -83,7 +83,7 @@
           <div class="col-md-12">
             <br>
                 <img src="{{ URL::to('/') }}/images/Module4/mod4img3.png" width="100%" height="525px"></img><br><br>
-                <p class="words2" style="text-align:center"><strong>Figure: </strong>Sensory and Motor Functions of the spinal cord</p>
+                <p class="words2" style="text-align:center;text-decoration:underline"><strong>Figure: </strong>Sensory and Motor Functions of the spinal cord</p>
             </div>
         </li>
         
@@ -101,7 +101,7 @@
           </div>
           <div class="col-md-5">
                 <img src="{{ URL::to('/') }}/images/Module4/mod4img2.png" width="100%" height="600px"></img><br>
-                <p class="words2" style="text-align:center"><strong>Figure: </strong>Dermatomes and their spinal nerve roots</p>
+                <p class="words2" style="text-align:center;text-decoration:underline"><strong>Figure: </strong>Dermatomes and their spinal nerve roots</p>
           </div>
           
         </li>

@@ -18,7 +18,7 @@
     
     <div class="col-md-6 basicFontStyle" style="text-align:center">
         <br>
-        <!--Password Recovery-->
+        <!--Password Recovery Flash Message-->
         @if(Session::has('success'))
         <div class="alert alert-success alert-dismissable fade in"  style="background-color: #DBEDEA; border: none">
             <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>

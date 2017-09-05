@@ -23,6 +23,7 @@
 ?>
 <div class="container-fluid">
   <br>
+  <!--Displays message if enquiry or feedback was successful sent-->
   @if(Session::has('success'))
     <div class="alert alert-success alert-dismissable fade in"  style="background-color:#D5E1EE;border:none;border-radius:25px">
       <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>

@@ -9,8 +9,8 @@
 		<p>You'll be able to browse through the site just like you used to.</p>
 		<br>
 		<p>Thank you,</p>
-		<p>The SiCURE team</p>
+		<p>The SIP team</p>
 		
-		<img src="{{ $message->embed(public_path() . '/images/SiCURE.png') }}" height="50px" width="100px"/>
+		<img src="{{ $message->embed(public_path() . '/images/siteLogo.png') }}" height="120px" width="250px"/>
 	</body>
 </html>

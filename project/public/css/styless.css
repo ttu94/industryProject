@@ -62,8 +62,8 @@ body {
     padding:0;
     height:100%;
     width:100%;
-    min-width: 1650px;
-    /*overflow-x: auto;*/
+    min-width: 1750px;
+    overflow-x: auto;
     background-color: #EFEFEF;
 }
 

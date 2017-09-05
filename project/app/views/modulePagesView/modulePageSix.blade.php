@@ -2,13 +2,13 @@
 
 @section('title')
     {{--Module names needs to be taken out of database--}}
-    Module 6: Types of injuries
+    Module 6: Types of Injuries
 @endsection
 
 @section('pageTitle')
     <!--NAME OF THIRD HEADER GOES HERE-->
     <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
-   <h4>Module 6: Types of injuries</h4>
+   <h4>Module 6: Types of Injuries</h4>
 @endsection
 
 @section('content')
@@ -16,7 +16,7 @@
     <!--background-image: url("https://dssofgcsc.files.wordpress.com/2010/07/spine.jpg")-->
     <br>
     <div class="col-md-7">
-      <a href="{{ URL::to('/') }}/pdfs/Module_1_-_Demographics_&_Economics_of_SCI.pdf" 
+      <a href="{{ URL::to('/') }}/pdfs/Mod6.pdf" 
       target="_blank" class="btn2 pdf">Download PDF</a>
     </div>
     <div class="col-md-5">
@@ -56,12 +56,14 @@
         <li class="carousels__slide">
           <div class="col-md-12">
             <br>
-            <p class="words2" style="color:#195DA3"><strong>There are different types of injuries</strong></p>
-            <ol class="words2" type="a">
-              <li>Complete</li>
-              <li>Incomplete</li>
-              <li>Physical injuries</li>
-            </ol>
+            <div>
+              <p class="words2" style="color:#195DA3"><strong>There are different types of injuries</strong></p>
+              <ol class="words2" type="a">
+                <li>Complete</li>
+                <li>Incomplete</li>
+                <li>Physical injuries</li>
+              </ol>
+            </div>
             <br>
             <p class="modh2">6 a) Complete</p>
             <menu class="words2">

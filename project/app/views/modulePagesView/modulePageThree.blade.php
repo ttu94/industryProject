@@ -16,7 +16,7 @@
     <!--background-image: url("https://dssofgcsc.files.wordpress.com/2010/07/spine.jpg")-->
     <br>
     <div class="col-md-7">
-      <a href="{{ URL::to('/') }}/pdfs/Module_1_-_Demographics_&_Economics_of_SCI.pdf" 
+      <a href="{{ URL::to('/') }}/pdfs/Module3.pdf" 
       target="_blank" class="btn2 pdf">Download PDF</a>
     </div>
     <div class="col-md-5">
@@ -79,7 +79,7 @@
             <div class="col-md-5" style="text-align:center">
               <br>
               <img src="{{ URL::to('/') }}/images/Module3/mod3img1.png" width="100%" height="570px"></img>
-              <label>Figure: Diagram of vertebral column</label>
+              <label style="text-decoration:underline">Figure: Diagram of vertebral column</label>
             </div>
         </li>
         
@@ -97,10 +97,10 @@
           </div>
           <div class="col-md-7" style="text-align:center">
             <img src="{{ URL::to('/') }}/images/Module3/mod3img8.png" width="100%" height="350px"></img>
-            <label>Figure: View of the vertebra from the top</label>
+            <label style="text-decoration:underline">Figure: View of the vertebra from the top</label>
             <br><br>
             <img src="{{ URL::to('/') }}/images/Module3/mod3img7.png" width="100%" height="200px"></img>
-            <label>Figure: View of the vertebra from the side</label>
+            <label style="text-decoration:underline">Figure: View of the vertebra from the side</label>
           </div>
         </li>
         
@@ -131,9 +131,9 @@
               </tr>
             </table>
           </div>
-          <div class="col-md-6">
-            
+          <div class="col-md-6" style="text-align:center">
             <img src="{{ URL::to('/') }}/images/Module3/mod3img3.png" width="100%" height="365px"></img>
+            <label style="font-size:19px;text-decoration:underline">Figure: Meninges - layers of the brain and spinal cord</label>
           </div>
           <div class="col-md-12">
             <table>
@@ -167,9 +167,10 @@
               <li>The spinal cord gives off 31 pairs of spinal nerves, one pair from each segment: 8 cervical, 12 thoracic, 5 lumbar, 3 sacral and 1 coccygeal.</li>
             </menu>
           </div>
-          <div class="col-md-4">
-            <br><br>
+          <div class="col-md-4" style="text-align:center">
+            <br>
             <img src="{{ URL::to('/') }}/images/Module3/mod3img6.png" width="100%" height="600px"></img>
+            <label style="font-size:18px;text-decoration:underline">Figure: Diagram of the spinal cord</label>
           </div>
         </li>
         
@@ -192,9 +193,10 @@
               </tr>
             </table> 
           </div>
-          <div class="col-md-7">
-            <br><br>
+          <div class="col-md-7" style="text-align:center">
+            <br>
             <img src="{{ URL::to('/') }}/images/Module3/mod3img5.png" width="100%" height="325px"></img>
+            <label style="text-decoration:underline">Figure: The core of the spinal cord</label>
           </div>
           <div class="col-md-12">
             <table class="b">
@@ -212,7 +214,6 @@
               </tr>
             </table>
           </div>
-          
         </li>
         
         <!--SLIDE 6-->

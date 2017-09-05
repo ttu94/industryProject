@@ -61,20 +61,19 @@
             </select>
     </div>
     {{ Form::model($user, array('method' => 'PUT', 'route' => array('edit_question', Auth::user()->id)))}}
-    <div class="col-md-6 col-xs-6 basicFontStyle">
+        <div class="col-md-6 col-xs-6 basicFontStyle">
             <select size="15" name="modQuestions" id="questionlist">
                 @foreach($moduleTestDB as $moduleTestDB)
                     <option class="{{ str_replace(' ', '', $moduleTestDB->moduleName) }}" value="{{ $moduleTestDB->id }}">{{ $moduleTestDB->question }}</option>
                 @endforeach
             </select>
             <button class="btns3 darkgrey" type="submit">Edit</button>
-        
-        <button class="btns3 darkgrey" type="submit">Add</button>
-        @else
-            <p>No Module Questions/ Module Database Doesn't Exist</p>
-        @endif
-    </div>
-    <div id="optiondiv" style="display:none"></div>
+            <button class="btns3 darkgrey" type="submit">Add</button>
+            @else
+                <p>No Module Questions/ Module Database Doesn't Exist</p>
+            @endif
+        </div>
+        <div id="optiondiv" style="display:none"></div>
     {{ Form::close() }}
 </div>
 

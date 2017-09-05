@@ -16,7 +16,7 @@
     <!--background-image: url("https://dssofgcsc.files.wordpress.com/2010/07/spine.jpg")-->
     <br>
     <div class="col-md-7">
-      <a href="{{ URL::to('/') }}/pdfs/Module_1_-_Demographics_&_Economics_of_SCI.pdf" 
+      <a href="{{ URL::to('/') }}/pdfs/Module11.pdf" 
       target="_blank" class="btn2 pdf">Download PDF</a>
     </div>
     <div class="col-md-5">

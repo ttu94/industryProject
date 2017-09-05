@@ -14,6 +14,7 @@
     <div class="row">
         <div class="col-md-12">
             <br>
+            <!--Warning message alternates depending whether the user is logged in-->
             @if (Auth::check())
                 <div class="col-md-1"><br></div>
                 <div class="alert alert-warning col-md-10" style="background-color: #F3D6D9; border: none;border-radius:25px">
@@ -22,7 +23,7 @@
             @else
                 <div class="col-md-1"><br></div>
                 <div class="alert alert-warning col-md-10" style="background-color: #F3D6D9; border: none">
-                    <p class="basicFontStyle" style="text-align:center">You are viewing limited content. For full access, please <a href="login" style="color: #195DA3"><u>Sign In</u></a> or <a href="register" style="color: #195DA3"><u>Register for an account</u></a>.</p>
+                    <p class="basicFontStyle" style="text-align:center">You are viewing limited content. For <strong>full access</strong>, please <a href="login" style="color: #195DA3"><u>Sign In</u></a> or <a href="register" style="color: #195DA3"><u>Register for an account</u></a>.</p>
                 </div>
             @endif
             <div class="faq_container">
@@ -330,7 +331,6 @@
                 </div>
             </div>
         </div>
-  
     </div>
 </div>
 

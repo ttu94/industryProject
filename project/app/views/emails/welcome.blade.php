@@ -13,9 +13,9 @@
 			<br>
 			<br>
 			Sincerely,<br><br>
-			The SiCURE Team
+			The SIP Team
 			<br>
-			<img src="{{ $message->embed(public_path() . '/images/SiCURE.png') }}" height="50px" width="100px"/>
+			<img src="{{ $message->embed(public_path() . '/images/siteLogo.png') }}" height="120px" width="250px"/>
 			
 		</div>
 	</body>

@@ -17,7 +17,7 @@
     <br>
     
     <div class="col-md-7">
-      <a href="{{ URL::to('/') }}/pdfs/Mod_1-Facts_and_Figures_of_SCI.pdf" 
+      <a href="{{ URL::to('/') }}/pdfs/Module1.pdf" 
       target="_blank" class="btn2 pdf">Download PDF</a>
     </div>
     <div class="col-md-5">
@@ -90,7 +90,7 @@
           <img class="diagram3" src="{{ URL::to('/') }}/images/Module1/mod1img1.png"
           alt="The costs are estimated as per US health care standards and are reflected in US Dollars."
           width="750px" height="250px" style="text-align: center"></img>
-          <br><p class="words2" style="text-align: center">The costs are estimated as per US health care standards and are reflected in US Dollars.</p>
+          <br><p class="words2" style="text-align:center;text-decoration:underline">Table: The costs are estimated as per US health care standards and are reflected in US Dollars.</p>
         </li>
         
         <!--SLIDE 3-->
@@ -100,7 +100,7 @@
           <div class="col-md-7 words2">
             <img class="diagram2" alt="National SCI Statistical Centre, US Fact Sheet 2016" 
             src="{{ URL::to('/') }}/images//Module1/mod1img2.png" height="450px"/><br>
-            <p style="line-height:20px;text-align:center">National SCI Statistical Centre, US Fact Sheet 2016</p>
+            <p style="line-height:20px;text-align:center;text-decoration:underline;font-size:20px">Diagram: National SCI Statistical Centre, US Fact Sheet 2016</p>
           </div>
           <div class="col-md-5">
             <menu class="words2">
@@ -124,7 +124,7 @@
             <br>
             <img class="diagram2" alt="National SCI Statistical Centre, US Fact Sheet 2016" 
             src="{{ URL::to('/') }}/images//Module1/mod1img3.png" height="450px"/><br>
-            <p style="line-height:20px;text-align:center">National SCI Statistical Centre, US Fact Sheet 2016</p>
+            <p style="line-height:20px;text-align:center;text-decoration:underline;font-size:20px">Diagram: National SCI Statistical Centre, US Fact Sheet 2016</p>
           </div>
         </li>
         

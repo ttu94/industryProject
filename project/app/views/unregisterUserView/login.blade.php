@@ -27,12 +27,12 @@
     @endif
     <!--Linking to user register page-->
     <div class="col-md-4">
-    <br><br><br><br>
-    <div id="noLogin">
-        <h3 class="raleway">Don't have an account?<br>Register now</h2>
-        <br>
-        <a href="register"><button class="button darkgrey2" style="width:100%">Create Account</button></a>
-    </div>
+        <br><br><br><br>
+        <div id="noLogin">
+            <h3 class="raleway">Don't have an account?<br>Register now</h2>
+            <br>
+            <a href="register"><button class="button darkgrey2" style="width:100%">Create Account</button></a>
+        </div>
     </div>
     
     <!--user login then routed to user's dashboard-->
@@ -57,7 +57,7 @@
                 <br><br>
                 <a href="forgottenPassword" style="color:#195DA3; font-size:18px">Forgot password?</a>
                 <br><br>
-                <a href="adminLogin" style="color:#195DA3; font-size:18px">Admin Login</a>
+                <!--<a href="adminLogin" style="color:#195DA3; font-size:18px">Admin Login</a>-->
             </div>
         {{ Form::close() }}
     </div>

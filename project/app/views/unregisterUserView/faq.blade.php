@@ -18,7 +18,6 @@
         </div>
     @endif
     <div class="row">
-       
         <div class="col-md-12">
             <br>
             <h3 class="faq_title">General</h3>
@@ -28,7 +27,6 @@
                        <div class="faq_answer_container">
                           <div class="faq_answer"><br>You should reset your <strong>password</strong> via the <a href="forgottenPassword" style="color: #195DA3"><u>Forget Password</u></a>
                           link on the <a href="login" style="color: #195DA3"><u>Login</u></a> page.
-                          
                           <br>&nbsp;</div>
                        </div>        
                 </div>
@@ -110,8 +108,6 @@
              </div>
         </div>
     </div>
-    
-    
 </div>
 
 @endsection

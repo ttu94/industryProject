@@ -48,42 +48,42 @@
       <br><br>
       <div class="row">
           <div class="col-md-4">
-              <div class="panel panel-default panelOne" style="height: 450px">
+              <div class="panel panel-default panelOne" style="height: auto; min-height: 500px">
                   <h3 style="text-align: center">Clincal Trials</h3>
-                  <div class="panel-body" style="font-size:19px;text-align:justify">
+                  <div class="panel-body" style="font-size:19px;text-align:justify; position: relative; padding-bottom: 100px">
                       <br>
                       With the support of the Motor Accident Insurance Commission, the Perry Cross Spinal Research Foundation and the Clem Jones Foundation, 
                       we are conducting pre-clinical research for a cell transplantation therapy to repair the injured spinal cord which we hope will lead to a 
                       Phase I/IIa clinical trial within a few years.
-                      <a href="aboutUs"><button class="btns5 darkgrey2">Read More</button></a>
                   </div>
+                  <a href="aboutUs"><button class="btns5 darkgrey2">Read More</button></a>
               </div>
           </div>
           <div class="col-md-4">
-              <div class="panel panel-default panelTwo" style="height: 450px">
+              <div class="panel panel-default panelTwo" style="height: auto; min-height: 500px">
                   <h3 style="text-align:center; margin-left: 5px; margin-right: 5px">Educational Module Abstracts</h3>
-                  <div class="panel-body" style="font-size:19px;text-align:justify">
+                  <div class="panel-body" style="font-size:19px;text-align:justify; position: relative; padding-bottom: 100px">
                       <br>
                       The educational module abstracts will provide you with a brief summary on each of the 11 modules regarding the spinal cord and the injuries that are associated.
                       <br>
                       <br>
                       Topics range from the demographics and economics, functionality, types of injuries and repair therapeutic strategies of the spinal cord.
-                      <a href="abstractModule"><button class="btns5 darkgrey2">Read More</button></a>
                   </div>
+                  <a href="abstractModule"><button class="btns5 darkgrey2">Read More</button></a>
               </div>
           </div>
           <div class="col-md-4">
-              <div class="panel panel-default panelThree" style="height: 450px">
+              <div class="panel panel-default panelThree" style="height: 500px">
                   <h3 style="text-align:center">Register Now</h3>
-                  <div class="panel-body" style="font-size:19px;text-align:justify">
+                  <div class="panel-body" style="font-size:19px;text-align:justify; position: relative; padding-bottom: 100px">
                       <br>
                       Register now and gain full access to all the resources such as the full educational module content and online quizzes 
                       that will test your knowledge.
                       <br>
                       <br>
                       It's free and will only take a minute!
-                      <a href="register"><button class="btns5 darkgrey2">Register Now!</button></a>
                   </div>
+                  <a href="register"><button class="btns5 darkgrey2">Register Now!</button></a>
               </div>
           </div>
       </div>

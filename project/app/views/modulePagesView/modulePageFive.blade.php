@@ -16,7 +16,7 @@
     <!--background-image: url("https://dssofgcsc.files.wordpress.com/2010/07/spine.jpg")-->
     <br>
     <div class="col-md-7">
-      <a href="{{ URL::to('/') }}/pdfs/Module_1_-_Demographics_&_Economics_of_SCI.pdf" 
+      <a href="{{ URL::to('/') }}/pdfs/Module5.pdf" 
       target="_blank" class="btn2 pdf">Download PDF</a>
     </div>
     <div class="col-md-5">
@@ -65,18 +65,18 @@
                 <li>Posterior column - laminae and the spinal canal.</li>
               </ol>
             </menu>
-              <!--<div class="col-md-9">-->
-                  <img src="{{ URL::to('/') }}/images/Module5/mod5img1.png" width="600px" height="300px" style="display:block; margin:auto"></img>
-              <!--</div>-->
+            <img src="{{ URL::to('/') }}/images/Module5/mod5img1.png" width="600px" height="300px" style="display:block; margin:auto"></img>
+            <p style="text-align:center;text-decoration:underline">Figure: Three column model of the spinal column</p>
           </div>
         </li>
         
         <!--SLIDE 2-->
-        <li class="carousels__slide">
+        <li class="carousels__slide" style="text-align:center">
           <div class="col-md-12">
             <br><br>
             <img src="{{ URL::to('/') }}/images/Module5/mod5img2.png" width="100%" height="500px"></img>
-            </div>
+            <label style="text-decoration:underline">Figure: Different scenarios of spinal column injuries</label>
+          </div>
         </li>
         
         <!--SLIDE 3-->
@@ -98,7 +98,7 @@
         
         <!--SLIDE 4-->
         <li class="carousels__slide">
-            <p class="modh2">5 c) Sequele to SCI</p>
+            <p class="modh2">5 c) Sequelae to SCI</p>
             <menu class="words2">
               <li>Sequelae of spinal cord injury are described in the following phases.</li>
               <li>The events that occur in each phase are specific and signify specific stages of injury progression or recovery.</li>
@@ -119,7 +119,7 @@
                 <li>Pain – not only in the acute phase, also in chronic phase</li>
                 <li>Mental health is compromised leading to depression, anxiety, shock</li>
                 <li>Autonomic dysregulation involving heart, breathing, bowel movements, bladder control, sweating, temperature dysregulation and sexual dysfunction.</li>
-                <li>In severe cases of quadriplegia, autonomic dysreflexia may happen where the patient suffers from very high blood pressure, low hear rate, low respiration rate, excessive sweating and hot flushed skin. This happens without warning and may be life threatening if left untreated.</li>
+                <li>In severe cases of quadriplegia, autonomic dysreflexia may happen where the patient suffers from very high blood pressure, low heart rate, low respiration rate, excessive sweating and hot flushed skin. This happens without warning and may be life threatening if left untreated.</li>
               </ol>
             </menu><br>
             <p class="endmess text2">

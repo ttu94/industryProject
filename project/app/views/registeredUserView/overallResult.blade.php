@@ -62,8 +62,7 @@
         }
     }
     
-?> 
-<!--id,user_id,moduleName,moduleResult,created_at-->
+?>
 
 <!--script for piechart-->
 <script type="text/javascript">
@@ -97,7 +96,7 @@
     <div style="background-color:white;border-radius:20px;padding:2px;box-shadow: 0 2px 5px 0 #D3D3D3, 0 2px 10px 0 #D3D3D3;">
         <h1 style="text-align:center"><strong>Overall Results</strong></h1>
         <br>
-        <div id="piechart" style="height: 400px"></div>
+        <div id="piechart" style="height: 400px; position:relative"></div>
         <br>
     </div>
     <br>
