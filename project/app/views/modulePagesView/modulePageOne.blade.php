@@ -184,13 +184,15 @@
         </div>
       
       </ul>
-      <div class="basicFontStyle" style="width: 50%; margin: 0 auto;">
-        <br><br>
-        <p style="text-align:center">Testing video</p>
-        <iframe align="middle" width="780" height="415"
-          src="https://www.youtube.com/embed/-Z4jx5VMw8M" frameborder="0" allowfullscreen>
-        </iframe> 
-      </div>
+      
+      <!--Testing video capabilites-->
+      <!--<div class="basicFontStyle" style="width: 50%; margin: 0 auto;">-->
+      <!--  <br><br>-->
+      <!--  <p style="text-align:center">Testing video</p>-->
+      <!--  <iframe align="middle" width="780" height="415"-->
+      <!--    src="https://www.youtube.com/embed/-Z4jx5VMw8M" frameborder="0" allowfullscreen>-->
+      <!--  </iframe> -->
+      <!--</div>-->
     </div>
 </div>
 

@@ -9,12 +9,8 @@
 @endsection
 
 @section('pageTitle')
-    <!--NAME OF THIRD HEADER GOES HERE-->
-    <!--THIS ALSO NEEDS TO BE TAKEN FROM DB-->
     @if(Auth::check())
-   <h2 style="color:white">Welcome,
-   {{$user->firstName}}!
-   </h2>
+   <h2 style="color:white">Welcome, {{$user->firstName}}!</h2>
    @endif
 @endsection
 
@@ -28,12 +24,11 @@
                 <p class="basicFontStyle" style="text-align:center"><strong>Summary of tests done</strong></p>
                 <br>
                 <p class="basicFontStyle" style="text-align:center">Last test completed:</p>
-                
-                <!--VALUE NEEDS TO BE DRAWN FROM DATABASE-->
+                <!--Value passed from user result table-->
                 <h1 class="basicFontStyle" style="text-align:center"><strong> {{ $passLatest }} </strong></h1>
                 <br>
                 <p class="basicFontStyle" style="text-align:center">Modules completed</p>
-                <!--VALUE NEEDS TO BE DRAWN FROM DATABASE-->
+                <!--Value passed from user result table-->
                 <h1 style=text-align:center> {{ $passCount }} / 11 </h1>
             </div>
         </div>
@@ -65,7 +60,7 @@
                         <p class="moduleTitle">
                             Spinal cord as a neutral tissue and injury to the nerves
                         </p>
-                        <a href="abstractModule"><button class="btns6 darkgrey2">Read More</button></a>
+                        <a href="{{ route("module_two", array("id" => Auth::user()->id)) }}"><button class="btns6 darkgrey2">Read More</button></a>
                     </div>
                 </div>
                 <div id="dv_{{$user->m3}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
@@ -75,7 +70,7 @@
                         <p class="moduleTitle">
                             Structures
                         </p>
-                        <a href="register"><button class="btns6 darkgrey2" text-align: center >Read More</button></a>
+                        <a href="{{ route("module_three", array("id" => Auth::user()->id)) }}"><button class="btns6 darkgrey2" text-align: center >Read More</button></a>
                     </div>
                 </div>
                 <div id="dv_{{$user->m4}}" class="panels panels-default panelsTwo" style="width:325px;height:275px">
@@ -85,7 +80,7 @@
                         <p class="moduleTitle">
                             Functions
                         </p>
-                        <a href="modulesOne"><button class="btns6 darkgrey2">Read More</button></a>
+                        <a href="{{ route("module_four", array("id" => Auth::user()->id)) }}"><button class="btns6 darkgrey2">Read More</button></a>
                     </div>
                 </div>
 				<div id="dv_{{$user->m5}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
@@ -95,7 +90,7 @@
                         <p class="moduleTitle">
                             SCI mechanisms
                         </p>
-                        <a href="aboutUs"><button class="btns6 darkgrey2">Read More</button></a>
+                        <a href="{{ route("module_five", array("id" => Auth::user()->id)) }}"><button class="btns6 darkgrey2">Read More</button></a>
                     </div>
                 </div>
                 <div id="dv_{{$user->m6}}" class="panels panels-default panelsTwo" style="width:325px;height:275px">
@@ -105,7 +100,7 @@
                         <p class="moduleTitle">
                             Types of injuries
                         </p>
-                        <a href="abstractModule"><button class="btns6 darkgrey2">Read More</button></a>
+                        <a href="{{ route("module_six", array("id" => Auth::user()->id)) }}"><button class="btns6 darkgrey2">Read More</button></a>
                     </div>
                 </div>
                 <div id="dv_{{$user->m7}}" class="panels panels-default panelsOne" style="width:325px;height:275px">
@@ -159,7 +154,7 @@
                         <p class="moduleTitle">
                             Repair therapeutic strategies 
                         </p>
-                        <a href="register"><button class="btns6 darkgrey2" text-align: center >Read More</button></a>
+                        <a href="{{ route("module_eleven", array("id" => Auth::user()->id)) }}"><button class="btns6 darkgrey2" text-align: center >Read More</button></a>
                     </div>
                 </div>
 			</div>

@@ -2,58 +2,46 @@
 
 class UserController extends \BaseController {
 	
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
+	//Loads Home Page
 	public function index()
 	{
 		return View::make('unregisterUserView.home');
 	}
 
 
-	/**
-	 * Show the form for creating a new resource.
-	 *
-	 * @return Response
-	 */
+	//Loads Register view
 	public function create()
 	{
 		return View::make('unregisterUserView.register');
 	}
 	
-	//user enquiry route
+	//User enquiry, sends an email to sip.cjcnscr@gmail.com
 	public function UserEnquiries()
 	{
 		$input = Input::all();
 
-		//sends an email to sicure.sci@gmail.com when a user submits an enquiry
+		//sends an email to sip.cjcnscr@gmail.com when a user submits an enquiry
 		Mail::send('emails.enquiries', array('contactName'=>Input::get('contactName'), 'contactEmail'=>Input::get('contactEmail'), 'contactComment'=>Input::get('contactComment')), function($message){
-			$message->to('sicure.sci@gmail.com')->subject(Input::get('contactSubject'));
+			$message->to('sip.cjcnscr@gmail.com')->subject(Input::get('contactSubject'));
 		});
 
 		return Redirect::action('PageController@ContactUs')->with('success', 'Thank you for your enquiry, we will get back in touch with you as soon as we can!');
 	}
 
-	//user feedback route
+	//User feedback, sends an email to sip.cjcnscr@gmail.com
 	public function UserFeedback()
 	{
 		$input = Input::all();
 
-		//sends an email to sicure.sci@gmail.com when a user submits feedback
+		//sends an email to sip.cjcnscr@gmail.com when a user submits feedback
 		Mail::send('emails.feedback', array('feedbackName'=>Input::get('feedbackName'), 'feedbackEmail'=>Input::get('feedbackEmail'), 'feedback'=>Input::get('feedback'), 'star'=>Input::get('star')), function($message){
-			$message->to('sicure.sci@gmail.com')->subject('Feedback');
+			$message->to('sip.cjcnscr@gmail.com')->subject('Feedback');
 		});
 
 		return Redirect::action('PageController@ContactUs')->with('success', 'Thank you for your feedback. We cannot personally respond, but please know that your message has been received.');
 	}
 
-	/**
-	 * Store a newly user resource in storage.
-	 *
-	 * @return Response
-	 */
+	//Creates and store new users
 	public function store()
 	{
 		$input = Input::all();
@@ -62,6 +50,7 @@ class UserController extends \BaseController {
 		$password = $input['password'];
 		$encrypted = Hash::make($password);
 		
+		//Validation rules
 		$rules = array(
 			'firstName' => 'required|min:2|alpha',
 			'lastName' => 'required|alpha',
@@ -105,15 +94,15 @@ class UserController extends \BaseController {
     			$message->to(Input::get('email'), Input::get('firstName').' '.Input::get('lastName'))->subject('Welcome to Spinal Cord Rehabilitation!');
     		});
     		
+    		//Premodule page can only be accessed immediately after registration
 			return Redirect::action('UserController@PremoduleQuestionaire', array($user->id));
 		 } else {
-		 	
-			// Show Validation Errors
+			// If errors occur redirect back and show validation errors
 		 	return Redirect::back()->withInput()->withErrors($v);
 		 }
 	}
 
-	//route to bring up the premodule questionaire page
+	//Route to bring up the premodule questionaire page
 	public function PremoduleQuestionaire($id)
 	{
 		//show the users profile
@@ -147,21 +136,23 @@ class UserController extends \BaseController {
 		
 		$user->save();
 		
+		//UserController@show loads up user homepage
 		return Redirect::action('UserController@show', array($user->id));
 	}
 	
+	//Loads up user homepage
 	public function show($id)
 	{
-		//show the users profile
 		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
 			
+			//retrives information regarding user status with the quiz
 			$userResultsDB = DB::table('userResults')
 				->select('*')
 				->where('user_id', '=', $id)
 				->where('moduleResult', '>=', 0.8)
 				->get();
-	
+			
 			$passCount = count($userResultsDB);
 			$latest; $passLatest;
 			
@@ -179,22 +170,8 @@ class UserController extends \BaseController {
 			return Redirect::to('login')->with('error', 'You must be signed to have access');
 		}
 	}
-	
-	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		$input = Input::all(); 
-		Auth::user()->status = 1;
-		return Redirect::to('faq');
-		// return Redirect::action('UserController@show', array(Auth::user()->id));
-	}
 
-	//route: update_details. used for users to edit account details page
+	//Loads up update view
 	public function UpdateDetails($id){
 		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
@@ -243,8 +220,7 @@ class UserController extends \BaseController {
 	
 				return Redirect::action('UserController@AccountDetails', array($user->id))->with('update_success', 'Update Account Was Successful!');
 			 } else {
-			 	
-				// Show Validation Errors
+				// Redirect back and shows validation errors
 			 	return Redirect::back()->withInput()->withErrors($v);
 			 }
 		} else {
@@ -253,7 +229,7 @@ class UserController extends \BaseController {
 		}
 	}
 	
-	//Route: update_password. Used when users click Change password
+	//Route: update_password. Drop down menu when user clicks "Change Password"
 	public function UpdatePassword($id){
 		
 		$user = User::find($id);
@@ -292,12 +268,7 @@ class UserController extends \BaseController {
 		 }
 	}
 	
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
+	//user deactivation route. Change status to 0 and logs out
 	public function destroy($id)
 	{
 		$user = User::find($id);
@@ -346,7 +317,7 @@ class UserController extends \BaseController {
 		return View::make('registeredUserView.ReactivationPage')->withUser($user);
 	}
 	
-	//account reactivtion button route
+	//account reactivtion button route. Changes status to 1 and redirects to user homepage
 	public function AccountReactivation($id){
 
 		$user = User::find($id);
@@ -378,7 +349,7 @@ class UserController extends \BaseController {
 		}
 	}
 	
-	//admin login
+	//admin login. Checks if user is an admin.
 	public function AdminLogin() {
 		$userdata = array(
 			'email' => Input::get('email'),
@@ -404,29 +375,14 @@ class UserController extends \BaseController {
 		if(Auth::user()->admin == '1'){
 			$numberUsers = User::select('*')->count();
 			$deativatedUsers = User::where(['status' => 0])->get()->count();
+			$eligibleUsers = User::where(['eligibleForTrial' => 1])->get()->count();
 			
-			return View::make('adminView.adminHomePage', compact("numberUsers","deativatedUsers"));
+			return View::make('adminView.adminHomePage', compact("numberUsers","deativatedUsers", "eligibleUsers"));
 		} else {
 			Auth::logout();
 			return Redirect::action('AdminController@index');
 		}
 	}
-	
-	//admin Quiz Editor **************************************************************Need twin to check
-	// public function AdminQuiz()
-	// {
-	// 	if(Auth::user()->admin == '1'){
-	// 		// $user = User::find($id);
-	// 		// return View::make('adminView.adminHomePage')->withAdmin($user);
-	// 		$moduleTestDB = DB::table('moduleTests')
-	// 			->select('*')
-	// 			->get();
-	// 		return View::make('adminView.adminQuizEditor', compact('moduleTestDB'));
-	// 	} else {
-	// 		Auth::logout();
-	// 		return Redirect::action('AdminController@index');
-	// 	}
-	// }
 	
 	//thuans experimental routes, admin quiz editor
 	public function AdminQuizEditor($id)
@@ -443,7 +399,7 @@ class UserController extends \BaseController {
 		}
 	}
 	
-	//admin controller to upate quiz questisons
+	//admin controller to update quiz questisons
 	public function EditQuestion($id)
 	{
 		if(Auth::user()->admin == '1'){
@@ -557,8 +513,6 @@ class UserController extends \BaseController {
 	
 	
 	public function OverallResults($id){
-		
-		//NOTE: INCORECT ROUTES. NEEDS TO DRAW DATA FROM DB ^
 		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
 			
@@ -594,8 +548,6 @@ class UserController extends \BaseController {
 	}
 	
 	public function IndividualModule($id, $moduleNo){
-		
-		//NOTE: INCORECT ROUTES. NEEDS TO DRAW DATA FROM DB ^
 		if(Auth::user()->id == $id && Auth::user()->status == 1){
 			$user = User::find($id);
 			

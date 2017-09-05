@@ -26,7 +26,7 @@
     <div class="col-md-6 basicFontStyle">
         <p>Number of registered users: <strong>{{$numberUsers}}</strong></p>
         <p>Number of deactivated users: <strong>{{$deativatedUsers}}</strong></p>
-        <p>Number of users eligble for clinical trials: <strong>0</strong></p>
+        <p>Number of users eligble for clinical trials: <strong>{{$eligibleUsers}}</strong></p>
     </div>
 </div>
 

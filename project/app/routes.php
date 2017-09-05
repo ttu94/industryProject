@@ -1,120 +1,167 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
-Route::get('/', function()
-{
-	return View::make('unregisterUserView/home');
-});
+// ----------------------------//
+//       Table of Content
+// ----------------------------//
 
-Route::get('home', function()
-{
-	return View::make('unregisterUserView/home');
-});
+    // 1.0 Admin Routes - Line 12
+    // 2.0 User Routes - Line 38
+    // 3.0 Page Routes - Line 78
+    //   3.1 Route Protection - Line 144
+    // 4.0 Quiz Routes - Line 212
+    // 5.0 Password Password - Line 226
 
-// SEARCH BAR
-Route::get('search', function()
-{
-    //return View::make('registeredUserView/userProfilePage');
-    return View::make('unregisterUserView/search');
-});
-
-// *******************************************************************************
-
-//Route back to website home page
+// Route back to website home page
 Route::get('home', array('as' => 'home', 'uses' => 'HomeController@index'));
 
-// ADMIN ROUTES*********************************************************************************************************************************
-// *************************************************************************************************************************************************
-// ROUTES CONTROLLER FOR ADMIN*************************************************************************************
+// ----------------------------//
+//     1.0 Admin Routes        //
+// ----------------------------//
+
 Route::resource('admin', 'AdminController');
 
-//Route To admin login page
+// Route To admin login page
 Route::get('adminLogin', function()
 {
     return View::make('adminView/adminLogin');
  
 });
 
-//route for admin homepage
+// Route for admin homepage
 Route::get('adminHomePage', array('as' => 'admin.homepage', 'uses' => 'UserController@AdminShow'));
 
-//Route for admin Quiz Editor Page (***************************************************************************Kenny Added to test)
-Route::get('admin_quiz_editor', array('as' => 'admin.quizeditor', 'uses' => 'UserController@AdminQuiz'));
-
-//route to quiz editor
+// Route to quiz editor page
 Route::get('adminHomePage/adminQuizEditor/{id}', array('as' => 'admin_quiz_editor', 'uses' => 'UserController@AdminQuizEditor'));
 
-//route for editing module questions
+// Route for editing specific question
 Route::put('adminHomePage/adminQuizEditor/question/{id}', array('as' => 'edit_question', 'uses' => 'UserController@EditQuestion'));
 
+// Updating the specific question
 Route::put('adminHomePage/adminQuizEditor/{id}', array('as' => 'update_question', 'uses' => 'UserController@UpdateQuestion'));
 
 
-// ROUTES TO CONTrOLLER FOR USERS*********************************************************************************
+// ----------------------------//
+//     2.0 User Routes         //
+// ----------------------------//
 
-//Route to log in and log out for users
+// Route to log in and log out for users
 Route::post('user/login', array('as' => 'user.login', 'uses' => 'UserController@login'));
 Route::get('user/logout', array('as' => 'user.logout', 'uses' => 'UserController@logout'));
-
-//Admin login
+// Admin login
 Route::post('admin/login', array('as' => 'admin.login', 'uses' => 'UserController@AdminLogin'));
+
 Route::resource('user', 'UserController');
 
-//Route for generating reactivation page
+// Route for generating reactivation page
 Route::get('{id}/reactivating_account', array('as' => 'reactivating.account', 'uses' => 'UserController@ReactivateAccount'));
 
-//button for users to reactivate on the reactivation page
+// Button for users to reactivate on the reactivation page
 Route::put('{id}/account_reactivation', array('as' => 'account.reactivation', 'uses' => 'UserController@AccountReactivation'));
 
-//route for users premodule questionaire page
+// Route for users premodule questionaire page
 Route::get('{id}/premodule_questionaire', array('as' => 'premodule_questionaire', 'uses' => 'UserController@PremoduleQuestionaire'));
 
-//route for users to update premodule questionaire page
+// Route for users to update premodule questionaire page
 Route::put('{id}/premodule_questionaire/update', array('as' => 'user.premodule', 'uses' => 'UserController@UserPremodule'));
 
-//route for users to view account details
+// Route for users to view account details
 Route::get('{id}/account_details', array('as' => 'account_details', 'uses' => 'UserController@AccountDetails'));
 
-//route for users to edit and update account details
+// Route for users to edit and update account details
 Route::get('{id}/account_details/update_details', array('as' => 'update_details', 'uses' => 'UserController@UpdateDetails'));
 
-//route for users to update password
+// Route for users to update password
 Route::put('{id}/account_details/update_password', array('as' => 'update_password', 'uses' => 'UserController@UpdatePassword'));
 
-//Route for immediate quiz results after submitting
-//Route::get('{id}/overall_results/module/insertmodulenumberhere/quiz_results', array('as' => 'quiz_results', 'uses' => 'UserController@QuizResults'));
-
-//Route for getting overall results for a specific user
+// Route for getting overall results for a specific user
 Route::get('{id}/overall_results', array('as' => 'overall_results', 'uses' => 'UserController@OverallResults'));
 
-//Route for getting results for a specific module
+// Route for getting results for a specific module
 Route::get('{id}/overall_results/module/{moduleNo}', array('as' => 'individual_module', 'uses' => 'UserController@IndividualModule'));
 
 
-//ROUTE CONTROLLER FOR PAGES***************************************************************************************
+// ----------------------------//
+//     3.0 Page Controls       //
+// ----------------------------//
+
 Route::resource('page', 'PageController');
+
+// Route To Login In
+Route::get('login', function()
+{
+    return View::make('unregisterUserView/login');
+});
+
+// Route to Logout Page
+Route::get('logoutPage', function()
+{
+    return View::make('unregisterUserView/logoutPage');
+});
+
+// Route to Deactivation Page
+Route::get('deactivationPage', function()
+{
+    return View::make('unregisterUserView/deactivationPage');
+});
+
+// Route to Register user
+Route::get('register', function()
+{
+    return View::make('unregisterUserView/register');
+});
+
+// Route to About Us page
+Route::get('aboutUs', function()
+{
+    return View::make('unregisterUserView/aboutUs');
+ 
+});
+
+// Route to contact us page
+Route::get('contactUs', function()
+{
+    return View::make('unregisterUserView/contactUs');
+ 
+});
+
+// Route to faq page
+Route::get('faq', function()
+{
+    return View::make('unregisterUserView/faq');
+ 
+});
+
+// Route To abstract module.
+Route::get('abstractModule', function()
+{
+    return View::make('unregisterUserView/abstractModule');
+ 
+});
+
+// Route To forgetten password page
+Route::get('forgottenPassword', function()
+{
+    return View::make('unregisterUserView/forgetPassword');
+ 
+});
+
+
+// ------------------------------//
+//    3.1 Route Protection       //
+// ------------------------------//
+//Can only be accessed by registered users
 
 //View make about us for quad header
 Route::get('aboutUs', array('as' => 'about.us', 'uses' => 'PageController@AboutUs'));
 
 //Vuew make contactus for quad header
 Route::get('contactUs', array('as' => 'contact.us', 'uses' => 'PageController@ContactUs'));
+
 //route for user enquiries
 Route::post('enquiries', "UserController@UserEnquiries");
+
 //route for user feedback
 Route::post('contactUs', "UserController@UserFeedback");
-
-
-
 
 //view make faq for quad header
 Route::get('faq', array('as' => 'faq', 'uses' => 'PageController@Faq'));
@@ -130,40 +177,6 @@ Route::get('update_details', array('as' => 'update.details', 'uses' => 'PageCont
 
 //Route protection for educational module
 Route::get('education_modules', array('as' => 'education_modules', 'uses' => 'PageController@EducationModules'));
-
-
-
-
-
-//Route for quiz information before it begins
-Route::get('educational_module/quiz_information/{quizNo}', array('as' => 'module_quiz_info', 'uses' => 'PageController@ModuleQuizInfo')); //kenny added{quizNo} 
-
-//Route protection for module quizzes, all quizzes wil use this template
-Route::get('{id}/educational_module/quiz/{quizNo}', array('as' => 'module_quiz', 'uses' => 'PageController@ModuleQuiz'));
-
-//route for submitted quiz questions
-Route::get('{id}/educational_module/quiz_results', array('as' => 'quiz_results', 'uses' => 'UserController@QuizResults'));
-
-
-
-
-
-
-// Password Recovery Routes*********************************************************************************************************************************
-// *************************************************************************************************************************************************
-
-Route::post('password_recovery', "RemindersController@postRemind");
-Route::controller('password', 'RemindersController');
-//route is activated when user submits form requesting to recover password
-// Route::post('password/reset', array('uses' => 'PasswordController@request', 'as' => 'password.request'));
-
-// Route::get('password/reset/{token}', array('uses' => 'PasswordController@reset', 'as' => 'password.reset'));
-// Route::post('password/reset/{token}', array('uses' => 'PasswordController@update', 'as' => 'password.update'));
-
-
-
-// MODULE PAGES*********************************************************************************************************************************
-// *************************************************************************************************************************************************
 
 //Route protection for module one page
 Route::get('educational_module/module_one', array('as' => 'module_one', 'uses' => 'PageController@ModuleOnePage'));
@@ -198,62 +211,26 @@ Route::get('educational_module/module_ten', array('as' => 'module_ten', 'uses' =
 //Route protection for module eleven page
 Route::get('educational_module/module_eleven', array('as' => 'module_eleven', 'uses' => 'PageController@ModuleElevenPage'));
 
-// UNREGISTERED USERS ROUTES***************************************************
-// *****************************************************************************
 
-//Route To Login In
-Route::get('login', function()
-{
-    return View::make('unregisterUserView/login');
-});
+// ----------------------------//
+//     4.0 Quiz Routes         //
+// ----------------------------//
 
-Route::get('logoutPage', function()
-{
-    return View::make('unregisterUserView/logoutPage');
-});
+//Route for quiz information before it begins
+Route::get('educational_module/quiz_information/{quizNo}', array('as' => 'module_quiz_info', 'uses' => 'PageController@ModuleQuizInfo')); 
 
-Route::get('deactivationPage', function()
-{
-    return View::make('unregisterUserView/deactivationPage');
-});
+//Route protection for module quizzes, all quizzes wil use this template
+Route::get('{id}/educational_module/quiz/{quizNo}', array('as' => 'module_quiz', 'uses' => 'PageController@ModuleQuiz'));
 
-//Route to Register user
-Route::get('register', function()
-{
-    return View::make('unregisterUserView/register');
-});
+//route for submitted quiz questions
+Route::get('{id}/educational_module/quiz_results', array('as' => 'quiz_results', 'uses' => 'UserController@QuizResults'));
 
-//Route to About Us page
-Route::get('aboutUs', function()
-{
-    return View::make('unregisterUserView/aboutUs');
- 
-});
 
-//Route to contact us page
-Route::get('contactUs', function()
-{
-    return View::make('unregisterUserView/contactUs');
- 
-});
+// -----------------------------------//
+//  5.0 Password Recovery Routes      //
+// -----------------------------------//
 
-//Route to faq page
-Route::get('faq', function()
-{
-    return View::make('unregisterUserView/faq');
- 
-});
+Route::post('password_recovery', "RemindersController@postRemind");
+Route::controller('password', 'RemindersController');
 
-//Route To abstract module.
-Route::get('abstractModule', function()
-{
-    return View::make('unregisterUserView/abstractModule');
- 
-});
 
-//Route To forgetten password page
-Route::get('forgottenPassword', function()
-{
-    return View::make('unregisterUserView/forgetPassword');
- 
-});

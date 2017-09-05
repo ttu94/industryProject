@@ -24,10 +24,12 @@ class CreateUsersTable extends Migration {
 			$table->string('gender');
 			$table->string('country');
 			$table->string('email')->unique();
-			$table->string('password')->index();
 			
 			//user information
 			$table->string('usertype');
+			$table->boolean('eligibleForTrial')->default(false);
+			
+			//Fields injuryDate, Treatment, yesTreat, clinicalTrial, physiotrial will ONLY appear if the user selects patient
 			$table->string('injuryDate');
 			$table->boolean('treatment')->nullable();
 			$table->string('yesTreat');
@@ -35,6 +37,16 @@ class CreateUsersTable extends Migration {
 			$table->boolean('physioTrial')->nullable();
 			$table->boolean('onBehalf')->nullable();
 			
+			// status for if a user deactives account
+			$table->boolean('status')->default(true);
+			// status for admin
+			$table->boolean('admin')->default(false);
+			
+			//timestamp each account when it is created
+ 			$table->timestamps();
+			$table->string('password')->index();
+ 			$table->string('remember_token')->nullable();
+ 			
 			//tailoring modules values
 			$table->string('m1')->default("1");
 			$table->string('m2')->default("1");
@@ -47,16 +59,6 @@ class CreateUsersTable extends Migration {
 			$table->string('m9')->default("1");
 			$table->string('m10')->default("1");
 			$table->string('m11')->default("1");
-			
-			// status for if a user deactives account
-			$table->boolean('status')->default(true);
-			
-			// status for admin
-			$table->boolean('admin')->default(true);
-			
-			//timestamp each account when it is created
- 			$table->timestamps();
- 			$table->string('remember_token')->nullable();
 		});
 
 	}

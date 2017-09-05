@@ -79,6 +79,7 @@
           <div class="col-md-5">
             <br>
             <img src="{{ URL::to('/') }}/images/Module2/mod2img1.png" width="100%" height="600px"></img>
+            <label style="font-size:19px">Figure: The Central Nervous System (CNS)</label>
           </div>
         </li>
         
@@ -93,7 +94,7 @@
             <li>However, the body responds differently to an injury to a peripheral nerve as compared to a spinal cord injury.</li>
           </menu>
           <p class="modh2">The Neuron</p>
-          <img src="{{ URL::to('/') }}/images/Module2/mod2img2.png" width="100%" height="300px"></img>
+          <img src="{{ URL::to('/') }}/images/Module2/mod2img3.png" width="100%" height="300px"></img>
         </li>
         
         <!--SLIDE 4-->

@@ -1,19 +1,12 @@
 <header>
     <!-- Top section of header -->
+    <!--Top header changes depending if user is logged in and/or an admin-->
     <div class="topHeader">
-        <!--Search Bar -->
-        <!--<form class="navbar-form navbar-left" role="search">-->
-        <!--    <div class="form-group">-->
-        <!--        <input type="text" class="form-control" placeholder="Search">-->
-        <!--        <a href="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>-->
-        <!--    </div>-->
-        <!--</form>-->
-        <!--Top header changes depending if user is logged in or not-->
         @if (Auth::check())
             <ul>
                 <li style="float:right" class="topLink"><a href="user/logout" >LOGOUT</a></li>
                 <li style="float:right" class="topLink"><a href={{route("user.show", array("id" => Auth::user()->id))}}>MY PROFILE</a></li>
-                @if (Auth::user()->status == 1)
+                @if (Auth::user()->admin == 1)
                     <li style="float:right" class="topLink"><a href={{route("admin.homepage", array("id" => Auth::user()->id))}}>ADMIN HOMEPAGE</a></li>
                 @endif
             </ul>
@@ -25,7 +18,7 @@
         @endif
     </div>
         
-    <!--bottom section of header-->
+    <!--Section section of header-->
     <nav class="navbar navbar-default navbar-static-top basicFontStyle" style="margin-bottom:0px">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="width:45px">
@@ -38,7 +31,6 @@
                 <img class="navbar-brand" style="height:150px;width:400px" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/siteLogo.png"/>
             </a>
         </div>
-        
         <div id="navbar" class="navbar-collapse collapse" style="padding:50px 70px 5px 20px">
             <ul class="nav navbar-nav navbar-right bottomLink" >
                 <li><a style="color:black" onMouseOver="this.style.color='#B70014'" onMouseOut="this.style.color='black'" href={{{ route("about.us")}}}>ABOUT <span class="sr-only">(current)</span></a></li>
@@ -48,7 +40,8 @@
             </ul> 
         </div>
     </nav>
-        
+    
+    <!--Triple section of header-->
     <div class="tripleHeader">
         <h2 class="pageTitle">@yield('pageTitle')</h2>
     </div>

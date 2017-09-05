@@ -76,9 +76,10 @@
                 <li>Since sacrum and coccyx are fused, the vertebrae in those are not separated by the intervertebral discs.</li>
               </menu>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5" style="text-align:center">
               <br>
-              <img src="{{ URL::to('/') }}/images/Module3/mod3img1.png" width="100%" height="600px"></img>
+              <img src="{{ URL::to('/') }}/images/Module3/mod3img1.png" width="100%" height="570px"></img>
+              <label>Figure: Diagram of vertebral column</label>
             </div>
         </li>
         
@@ -94,8 +95,12 @@
               <li>Lumbar vertebrae are the largest and thickest.</li>
             </menu>
           </div>
-          <div class="col-md-7">
-            <img src="{{ URL::to('/') }}/images/Module3/mod3img2.png" width="100%" height="600px"></img>
+          <div class="col-md-7" style="text-align:center">
+            <img src="{{ URL::to('/') }}/images/Module3/mod3img8.png" width="100%" height="350px"></img>
+            <label>Figure: View of the vertebra from the top</label>
+            <br><br>
+            <img src="{{ URL::to('/') }}/images/Module3/mod3img7.png" width="100%" height="200px"></img>
+            <label>Figure: View of the vertebra from the side</label>
           </div>
         </li>
         
@@ -128,7 +133,7 @@
           </div>
           <div class="col-md-6">
             
-            <img src="{{ URL::to('/') }}/images/Module3/mod3img3.png" width="100%" height="375px"></img>
+            <img src="{{ URL::to('/') }}/images/Module3/mod3img3.png" width="100%" height="365px"></img>
           </div>
           <div class="col-md-12">
             <table>

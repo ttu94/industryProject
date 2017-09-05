@@ -44,9 +44,8 @@
         <div class="basicFontStyle" style="text-align: justify">
             Building N75, Brisbane Innovation Park, <br>
             Nathan Campus, Griffith University <br><br>
-            Tel: +61 123 456 789 <br>
-            Fax: +61 123 456 789 <br><br>
-            <a href="mailto:sicure.sci@gmail.com" target="_top" class="contactEmail">sicure.sci@gmail.com</a> <br><br>
+            Tel: (07) 3735 3660 <br><br>
+            <a href="mailto:sip.cjcnscr@gmail.com" target="_top" class="contactEmail">sip.cjcnscr@gmail.com</a> <br><br>
             
             Please submit your enquiries in the form below
             <form action="{{ action('UserController@UserEnquiries') }}" method="POST">
