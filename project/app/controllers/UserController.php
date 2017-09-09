@@ -421,7 +421,20 @@ class UserController extends \BaseController {
 			return View::make('adminView.adminQuestionEdit', compact('val', 'moduleAnswersDB', 'moduleTestDB'))->withUser($user);
 		} else {
 			Auth::logout();
-			return Redirect::action('AdminController@index');
+			return Redirect::action('UserController@index');
+		}
+	}
+	
+	public function AddQuestion($id)
+	{
+		if(Auth::user()->admin == '1'){
+			$user = User::find($id);
+			// return View::make('adminView.adminQuestionEdit', compact('id'));
+			return View::make('adminView.adminQuestionAdd')->withUser($user);
+			// return Redirect::action('UserController@index');
+		} else {
+			Auth::logout();
+			return Redirect::action('UserController@index');
 		}
 	}
 	
@@ -432,10 +445,98 @@ class UserController extends \BaseController {
 			$moduleTestDB = DB::table('moduleTests')
 				->select('*')
 				->get();
+				
+			$uinput = Input::all();
+			DB::table('moduleTests')
+				->where('id', '=', $uinput['mtID'])
+				->update(['question' => $uinput['question'], 'correctAnswer' => $uinput['correctAnswer']]);
+			for($i=1;$i<=4;$i++){
+				$maID = 'maID'.$i;
+				$ans = 'answer'.$i;
+				DB::table('moduleAnswers')
+					->where('id', '=', $uinput[$maID])
+					->update(['answer' => $uinput[$ans]]);
+			}
+				
+			
+			// return View::make('adminView.tempPage')->withUser($user);
 			return View::make('adminView.adminQuizEditor', compact('moduleTestDB'))->withUser($user);
 		} else {
 			Auth::logout();
-			return Redirect::action('AdminController@index');
+			return Redirect::action('UserController@index');
+		}
+	}
+	
+	public function NewQuestion($id)
+	{
+		if(Auth::user()->admin == '1'){
+			$user = User::find($id);
+			$moduleTestDB = DB::table('moduleTests')
+				->select('*')
+				->get();
+				
+			$uinput = Input::all();
+			$val = Input::get('moduleTitle');
+			// $id = DB::table('users')->insertGetId(
+			// 		    ['email' => 'john@example.com', 'votes' => 0]
+			// 		);
+			
+			$mtID = DB::table('moduleTests')
+				->insertGetId([
+						'moduleName' => $val, 
+						'question' => $uinput['question'], 
+						'correctAnswer' => $uinput['correctAnswer'],
+						'created_at' =>  \Carbon\Carbon::now(),
+	            		'updated_at' => \Carbon\Carbon::now()
+            		]);
+			
+				// ->where('id', '=', $uinput['mtID'])
+				// ->update(['question' => $uinput['question'], 'correctAnswer' => $uinput['correctAnswer']]);
+			for($i=1;$i<=4;$i++){
+				$maID = 'maID'.$i;
+				$ans = 'answer'.$i;
+				$maID = DB::table('moduleAnswers')
+				->insertGetId([
+						'moduleTest_id' => $mtID,
+						'set' => 'q'.$mtID,
+						'answer' => $uinput[$ans]
+					]);
+				// DB::table('moduleAnswers')
+				// 	->where('id', '=', $uinput[$maID])
+				// 	->update(['answer' => $uinput[$ans]]);
+			}
+				
+			
+			// return View::make('adminView.tempPage')->withUser($user);
+			return View::make('adminView.adminQuizEditor', compact('moduleTestDB'))->withUser($user);
+		} else {
+			Auth::logout();
+			return Redirect::action('UserController@index');
+		}
+	}
+	
+	public function DeleteQuestion($id)
+	{
+		if(Auth::user()->admin == '1'){
+			$user = User::find($id);
+			$moduleTestDB = DB::table('moduleTests')
+				->select('*')
+				->get();
+				
+			$uinput = Input::all();
+			DB::table('moduleTests')
+				->where('id', '=', $uinput['mtID'])
+				->delete();
+			DB::table('moduleAnswers')
+				->where('moduleTest_id', '=', $uinput['mtID'])
+				->delete();
+				
+			
+			// return View::make('adminView.tempPage')->withUser($user);
+			return View::make('adminView.adminQuizEditor', compact('moduleTestDB'))->withUser($user);
+		} else {
+			Auth::logout();
+			return Redirect::action('UserController@index');
 		}
 	}
 	

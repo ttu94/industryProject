@@ -45,6 +45,7 @@
 <div class="container-fluid">
     <br>
     <div class="col-md-6 col-xs-6 basicFontStyle">
+        <h2>Module List</h2>
         @if($moduleTestDB)
             <select name="moduleTitle" id="moduleTitleList"> 
                 <option value="Module 1" selected>Module 1: Demographics & Economics of Spinal Cord Injury</option>
@@ -62,19 +63,22 @@
     </div>
     {{ Form::model($user, array('method' => 'PUT', 'route' => array('edit_question', Auth::user()->id)))}}
         <div class="col-md-6 col-xs-6 basicFontStyle">
+            <h2>Module Questions</h2>
             <select size="15" name="modQuestions" id="questionlist">
                 @foreach($moduleTestDB as $moduleTestDB)
                     <option class="{{ str_replace(' ', '', $moduleTestDB->moduleName) }}" value="{{ $moduleTestDB->id }}">{{ $moduleTestDB->question }}</option>
                 @endforeach
             </select>
             <button class="btns3 darkgrey" type="submit">Edit</button>
-            <button class="btns3 darkgrey" type="submit">Add</button>
             @else
                 <p>No Module Questions/ Module Database Doesn't Exist</p>
             @endif
         </div>
         <div id="optiondiv" style="display:none"></div>
     {{ Form::close() }}
+    
+    <!--Adds new questions-->
+    <a href={{ route("adminAddQuestion", array("id" => Auth::user()->id)) }}><button class="btns3 darkgrey" type="submit">Add New Question</button></a>
 </div>
 
 @endsection

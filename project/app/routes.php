@@ -12,6 +12,11 @@
     // 5.0 Password Password - Line 226
 
 // Route back to website home page
+Route::get('/', function()
+{
+	return View::make('unregisterUserView/home');
+});
+
 Route::get('home', array('as' => 'home', 'uses' => 'HomeController@index'));
 
 // ----------------------------//
@@ -36,8 +41,17 @@ Route::get('adminHomePage/adminQuizEditor/{id}', array('as' => 'admin_quiz_edito
 // Route for editing specific question
 Route::put('adminHomePage/adminQuizEditor/question/{id}', array('as' => 'edit_question', 'uses' => 'UserController@EditQuestion'));
 
+// Route for adding new Questions
+Route::get('adminHomePage/adminQuizEditor/add/{id}', array('as' => 'adminAddQuestion', 'uses' => 'UserController@AddQuestion'));
+
 // Updating the specific question
 Route::put('adminHomePage/adminQuizEditor/{id}', array('as' => 'update_question', 'uses' => 'UserController@UpdateQuestion'));
+
+// Adding a new question
+Route::put('adminHomePage/adminQuizEditor/{id}', array('as' => 'new_question', 'uses' => 'UserController@NewQuestion'));
+
+// Delete a question
+Route::put('adminHomePage/adminQuizEditor/{id}', array('as' => 'delete_question', 'uses' => 'UserController@DeleteQuestion'));
 
 
 // ----------------------------//

@@ -23,7 +23,7 @@
                 <img class="navbar-brand" style="height:150px;width:400px" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/siteLogo.png"/>
             </a>
         </div>
-        <div id="navbar" class="navbarstyle" style="padding:43px 840px 5px 20px;border-color:#B70014;height:158px">
+        <div id="navbar" class="navbarstyle" style="padding:45px 200px 45px 20px;border-color:#B70014;height:158px">
             <ul class="nav navbar-nav navbar-right" >
                 <li> @yield('pageTitle')</li>
             </ul> 

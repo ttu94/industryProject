@@ -23,10 +23,7 @@
     <div class="col-md-12">
         <h1>Your Results: <?php echo $correct . "/" . ($index-4) ?></h1>
         <!--requires if user pass statement here-->
-        <?php 
-            
-        //   echo (($index-4)*0.8));
-        //   echo $correct;
+        <?php
             if($correct >= (($index-4)*0.8)){
                 ?>
                 <h2>Congratulations, you've passed <span style="color:#B70014">{{$quizNo}}</span>!</h2> 
@@ -36,8 +33,7 @@
         ?>
         <!--Content for Certificate PDF-->
     	<div id="HTMLtoPDF" style="display:none">
-    	    
-    	    <h1>Spinal Cord Injury Rehabilitation</h1>
+    	    <h1>Spinal Cord Project</h1>
     	    <br><br>
     	    <h2>Certificate for {{ $quizNo }}.</h2>
     	    <br><br>
@@ -48,11 +44,8 @@
         	
         	<br><br>
         	<div >
-        	    <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/websiteLogo.png" height="100px" width="100px"/>
-        	    <p>The SiCURE Team</p>
+        	    <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/siteLogo.png" height="100px" width="250px"/>
         	</div>
-        	
-    
     	</div>
     
         {{ Form::open() }}
@@ -81,62 +74,60 @@
                 <?php $count++; ?>
             @endforeach
         {{ Form::close() }}
-        
     </div>
 </div>
 
 <!--Script disables back button-->
-    <script>
-(function (global) { 
-
-    if(typeof (global) === "undefined") {
-        throw new Error("window is undefined");
-    }
-
-    var _hash = "!";
-    var noBackPlease = function () {
-        global.location.href += "#";
-
-        // making sure we have the fruit available for juice (^__^)
-        global.setTimeout(function () {
-            global.location.href += "!";
-        }, 50);
-    };
-
-    global.onhashchange = function () {
-        if (global.location.hash !== _hash) {
-            global.location.hash = _hash;
-        }
-    };
-
-    global.onload = function () {            
-        noBackPlease();
-
-        // disables backspace on page except on input fields and textarea..
-        document.body.onkeydown = function (e) {
-            var elm = e.target.nodeName.toLowerCase();
-            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
-                e.preventDefault();
-            }
-            // stopping event bubbling up the DOM tree..
-            e.stopPropagation();
-        };          
-    }
-
-})(window);</script>
-    <!--Script for date-->
-    <script>
-        $(document).ready(function() {
-            var months = ['January','February','March','April','May','June','July',
-            'August','September','October','November','December'];       
-            var tomorrow = new Date();
-            tomorrow.setTime(tomorrow.getTime() + (1000*3600*24));       
-            document.getElementById("spanDate").innerHTML = months[tomorrow.getMonth()] + " " + tomorrow.getDate()+ ", " + tomorrow.getFullYear();
-     	});
-    </script>
-    <!--PDF Certificate generator-->
-    <script src="{{ URL::asset('js/jspdf.js') }}"></script>
-    <script src="{{ URL::asset('js/jquery-2.1.3.js') }}"></script>
-    <script src="{{ URL::asset('js/pdfFromHTML.js') }}"></script>
+<script>
+        (function (global) { 
+                if(typeof (global) === "undefined") {
+                    throw new Error("window is undefined");
+                }
+            
+                var _hash = "!";
+                var noBackPlease = function () {
+                    global.location.href += "#";
+            
+                    // making sure we have the fruit available for juice (^__^)
+                    global.setTimeout(function () {
+                        global.location.href += "!";
+                    }, 50);
+                };
+            
+                global.onhashchange = function () {
+                    if (global.location.hash !== _hash) {
+                        global.location.hash = _hash;
+                    }
+                };
+            
+                global.onload = function () {            
+                    noBackPlease();
+            
+                    // disables backspace on page except on input fields and textarea..
+                    document.body.onkeydown = function (e) {
+                        var elm = e.target.nodeName.toLowerCase();
+                        if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+                            e.preventDefault();
+                        }
+                        // stopping event bubbling up the DOM tree..
+                        e.stopPropagation();
+                    };          
+                }
+            
+            })(window);
+ 	    });
+ 	</script>
+<!--Script for date-->
+<script type="text/javascript">
+    var months = ['January','February','March','April','May','June','July',
+    'August','September','October','November','December'];       
+    var tomorrow = new Date();
+    tomorrow.setTime(tomorrow.getTime() + (1000*3600*24));       
+    document.getElementById("spanDate").innerHTML = months[tomorrow.getMonth()] + " " + tomorrow.getDate()+ ", " + tomorrow.getFullYear();
+</script>
+<!--PDF Certificate generator-->
+<script src="{{ URL::asset('js/jspdf.js') }}"></script>
+<script src="{{ URL::asset('js/jquery-2.1.3.js') }}"></script>
+<script src="{{ URL::asset('js/pdfFromHTML.js') }}"></script>
 
 @endsection

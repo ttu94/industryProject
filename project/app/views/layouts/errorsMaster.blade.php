@@ -21,11 +21,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body style="background-color:#FAFAFA">
     	<div id="container">
-       		<div id="header">@include('includes.homeHeader')</div>
-       		<div id="body">@yield('content')</div>
-       		<div id="footer">@include('includes.footer')</div>
+       		<div id="body" style="background-color:#FAFAFA">@yield('content')</div>
     	</div>
     </body>
 </html>
