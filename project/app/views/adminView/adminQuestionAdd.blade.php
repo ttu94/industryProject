@@ -13,7 +13,8 @@
 <div class="container-fluid">
     <br>
     <div class="col-md-12 basicFontStyle">
-        {{ Form::model($user, array('method' => 'PUT', 'route' => array('update_question', Auth::user()->id)))}}
+        {{ Form::model($user, array('method' => 'PUT', 'route' => array('new_question', Auth::user()->id)))}}
+                    <!--Select Question Module-->
                     <select name="moduleTitle" id="moduleTitleList"> 
                         <option value="Module 1" selected>Module 1: Demographics & Economics of Spinal Cord Injury</option>
                         <option value="Module 2">Module 2: Spinal cord as a neutral tissue and injury to the nerves</option>

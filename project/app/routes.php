@@ -45,13 +45,13 @@ Route::put('adminHomePage/adminQuizEditor/question/{id}', array('as' => 'edit_qu
 Route::get('adminHomePage/adminQuizEditor/add/{id}', array('as' => 'adminAddQuestion', 'uses' => 'UserController@AddQuestion'));
 
 // Updating the specific question
-Route::put('adminHomePage/adminQuizEditor/{id}', array('as' => 'update_question', 'uses' => 'UserController@UpdateQuestion'));
+Route::put('adminHomePage/adminQuizEditor/updateQuesiton/{id}', array('as' => 'update_question', 'uses' => 'UserController@UpdateQuestion'));
 
 // Adding a new question
-Route::put('adminHomePage/adminQuizEditor/{id}', array('as' => 'new_question', 'uses' => 'UserController@NewQuestion'));
+Route::put('adminHomePage/adminQuizEditor/newQuestion/{id}', array('as' => 'new_question', 'uses' => 'UserController@NewQuestion'));
 
 // Delete a question
-Route::put('adminHomePage/adminQuizEditor/{id}', array('as' => 'delete_question', 'uses' => 'UserController@DeleteQuestion'));
+Route::delete('adminHomePage/adminQuizEditor/{id}', array('as' => 'delete_question', 'uses' => 'UserController@DeleteQuestion'));
 
 
 // ----------------------------//

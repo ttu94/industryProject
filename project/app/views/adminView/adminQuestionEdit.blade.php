@@ -45,37 +45,16 @@
             @endif
             {{ Form::submit('Save', array('class' => 'btns3 darkgrey')) }}
         {{ Form::close() }}
+        
+        <!--deletes question-->
         {{ Form::open(array('method' => 'DELETE', 'route' => array('delete_question', Auth::user()->id))) }}
-          {{ Form::hidden('mtID', $val) }}
-                    <button class="button warnred" type="submit" style="float:right; width:50%">Delete</button> 
-     {{ Form::close() }}
-        <!--<button class="button warnred" data-toggle="modal" data-target="#deleteModal" style="float:right">Delete</button> -->
+            {{ Form::hidden('mtID', $val) }}
+            <button class="button warnred" type="submit" style="float:right">Delete</button>
+        {{ Form::close() }}
+        
+        <!--redirects back to question editor-->
         <a href={{ route("admin_quiz_editor", array("id" => Auth::user()->id)) }}><button class="btns3 darkgrey">Cancel</button></a>
     </div>
-    
-     {{ Form::open(array('method' => 'DELETE', 'route' => array('delete_question', Auth::user()->id))) }}
-          {{ Form::hidden('mtID', $val) }}
-            <!--MODAL FOR delete account -->
-            <div class="modal fade" id="deleteModal" role="dialog">
-              <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
-                    <h4 class="modal-title" style="text-align: center"><strong>WARNING!</strong></h4>
-                  </div>
-                  <div class="modal-body" style="text-align: center">
-                    <p>Are you sure you want to delete this Question?<br>
-                        This action cannot be undone.
-                    </p>
-                  </div>
-                  <div class="modal-footer">
-                     <button class="button darkgrey2" data-dismiss="modal" style="float:left; width:40%">Cancel</button>
-                    <button class="button warnred" type="submit" style="float:right; width:50%">Delete</button> 
-                  </div>
-                </div>
-              </div>
-          </div> <!--MODAL ENDS -->
-     {{ Form::close() }}
 </div>
 
 @endsection

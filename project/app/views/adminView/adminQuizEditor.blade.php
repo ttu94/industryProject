@@ -41,10 +41,24 @@
         });
     });
 </script>
+<script type="text/javascript">
+$(document).ready(function(){    
+    //Check if the current URL contains '#'
+    if(document.URL.indexOf("#")==-1){
+        // Set the URL to whatever it was plus "#".
+        url = document.URL+"#";
+        location = "#";
+
+        //Reload the page
+        location.reload(true);
+    }
+});
+</script>
 
 <div class="container-fluid">
     <br>
     <div class="col-md-6 col-xs-6 basicFontStyle">
+        <!--This lists the modules and selecting the modules will dynamically change the questions according to the module selected-->
         <h2>Module List</h2>
         @if($moduleTestDB)
             <select name="moduleTitle" id="moduleTitleList"> 
@@ -61,10 +75,12 @@
                 <option value="Module 11">Module 11: Repair therapeutic strategies</option>
             </select>
     </div>
+    
+    <!--This is the list of Questions associated with the above-->
     {{ Form::model($user, array('method' => 'PUT', 'route' => array('edit_question', Auth::user()->id)))}}
         <div class="col-md-6 col-xs-6 basicFontStyle">
             <h2>Module Questions</h2>
-            <select size="15" name="modQuestions" id="questionlist">
+            <select size="15" name="modQuestions" id="questionlist" style="width:100%;">
                 @foreach($moduleTestDB as $moduleTestDB)
                     <option class="{{ str_replace(' ', '', $moduleTestDB->moduleName) }}" value="{{ $moduleTestDB->id }}">{{ $moduleTestDB->question }}</option>
                 @endforeach
@@ -79,6 +95,7 @@
     
     <!--Adds new questions-->
     <a href={{ route("adminAddQuestion", array("id" => Auth::user()->id)) }}><button class="btns3 darkgrey" type="submit">Add New Question</button></a>
+
 </div>
 
 @endsection
