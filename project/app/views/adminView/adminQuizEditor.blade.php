@@ -41,20 +41,6 @@
         });
     });
 </script>
-<script type="text/javascript">
-$(document).ready(function(){    
-    //Check if the current URL contains '#'
-    if(document.URL.indexOf("#")==-1){
-        // Set the URL to whatever it was plus "#".
-        url = document.URL+"#";
-        location = "#";
-
-        //Reload the page
-        location.reload(true);
-    }
-});
-</script>
-
 <div class="container-fluid">
     <br>
     <div class="col-md-6 col-xs-6 basicFontStyle">
@@ -92,10 +78,8 @@ $(document).ready(function(){
         </div>
         <div id="optiondiv" style="display:none"></div>
     {{ Form::close() }}
-    
     <!--Adds new questions-->
     <a href={{ route("adminAddQuestion", array("id" => Auth::user()->id)) }}><button class="btns3 darkgrey" type="submit">Add New Question</button></a>
-
 </div>
 
 @endsection

@@ -442,9 +442,6 @@ class UserController extends \BaseController {
 	{
 		if(Auth::user()->admin == '1'){
 			$user = User::find($id);
-			$moduleTestDB = DB::table('moduleTests')
-				->select('*')
-				->get();
 				
 			$uinput = Input::all();
 			DB::table('moduleTests')
@@ -457,7 +454,11 @@ class UserController extends \BaseController {
 					->where('id', '=', $uinput[$maID])
 					->update(['answer' => $uinput[$ans]]);
 			}
-				
+			
+			$moduleTestDB = DB::table('moduleTests')
+				->select('*')
+				->get();
+			
 			// return View::make('adminView.tempPage')->withUser($user);
 			return View::make('adminView.adminQuizEditor', compact('moduleTestDB'))->withUser($user);
 		} else {
@@ -470,10 +471,7 @@ class UserController extends \BaseController {
 	{
 		if(Auth::user()->admin == '1'){
 			$user = User::find($id);
-			$moduleTestDB = DB::table('moduleTests')
-				->select('*')
-				->get();
-				
+			
 			$uinput = Input::all();
 			$val = Input::get('moduleTitle');
 			// $id = DB::table('users')->insertGetId(
@@ -505,7 +503,10 @@ class UserController extends \BaseController {
 				// 	->update(['answer' => $uinput[$ans]]);
 			}
 				
-			
+			$moduleTestDB = DB::table('moduleTests')
+				->select('*')
+				->get();
+				
 			// return View::make('adminView.tempPage')->withUser($user);
 			return View::make('adminView.adminQuizEditor', compact('moduleTestDB'))->withUser($user);
 		} else {

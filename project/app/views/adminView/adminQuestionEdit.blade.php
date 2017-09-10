@@ -46,12 +46,12 @@
             {{ Form::submit('Save', array('class' => 'btns3 darkgrey')) }}
         {{ Form::close() }}
         
-        <!--deletes question-->
+        <!--delete question-->
         {{ Form::open(array('method' => 'DELETE', 'route' => array('delete_question', Auth::user()->id))) }}
             {{ Form::hidden('mtID', $val) }}
-            <button class="button warnred" type="submit" style="float:right">Delete</button>
+            <button class="button warnred" data-toggle="modal" data-target="#deleteModal" style="float:right">Delete</button>
         {{ Form::close() }}
-        
+
         <!--redirects back to question editor-->
         <a href={{ route("admin_quiz_editor", array("id" => Auth::user()->id)) }}><button class="btns3 darkgrey">Cancel</button></a>
     </div>

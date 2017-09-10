@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
     	<meta charset="UTF-8">
-      	<meta name="viewport" content="375">
+      	<meta name="viewport" content="width=device-width">
       	<!--<meta content="width=640, initial-scale=1, maximum-scale=1.0, user-scalable=1" name="viewport">-->
       	<meta name="keywords" content="HTML,CSS,Bootstrap,JavaScript, jQuery, SQL">
         <meta name="author" content="Caila Ancheta, Kenny Nguyen, Thuan Tu, Rahma Shafiq, Courtney Hall">
