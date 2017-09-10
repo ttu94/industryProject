@@ -33,18 +33,18 @@
         ?>
         <!--Content for Certificate PDF-->
     	<div id="HTMLtoPDF" style="display:none">
-    	    <h1>Spinal Cord Project</h1>
-    	    <br><br>
-    	    <h2>Certificate for {{ $quizNo }}.</h2>
-    	    <br><br>
-        	<h2>Congratulations {{$user -> firstName}}!</h2>
-        
-        	<h2>Is hereby award a certificate for the completion of {{ $quizNo}}</h2>
-        	<h2>on <span id="spanDate"></span>.</h2>
-        	
-        	<br><br>
-        	<div >
-        	    <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/siteLogo.png" height="100px" width="250px"/>
+    	    <div style="width:750px; height:550px; padding:20px; text-align:center; border: 5px solid #787878">
+        	    <h1>Spinal Cord Project</h1>
+        	    <br><br>
+        	    <h2>Certificate for {{ $quizNo }}.</h2>
+        	    <br><br>
+            	<h2>Congratulations {{$user -> firstName}}!</h2>
+            
+            	<h2>Is hereby award a certificate for the completion of {{ $quizNo}} on <span id="spanDate"></span>.</h2>
+            	<br><br>
+            	<div>
+            	    <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/siteLogo.png" height="100px" width="250px"/>
+            	</div>
         	</div>
     	</div>
     

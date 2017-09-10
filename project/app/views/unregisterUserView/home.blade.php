@@ -18,19 +18,19 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <img src="images/GRIDD-3.jpg" alt="Dr John St James" style="height: 770px">
+              <img src="images/Home/hom_img5.png" alt="Dr John St James">
               <div class="carousel-caption">
               </div>
             </div>
             <div class="item">
-              <img src="images/Spinal1.jpg" alt="Spinal Cord" style="height: 770px">
+              <img src="images/Home/hom_img4.png" alt="Spinal Cord">
               <div class="carousel-caption">
                 <!--<h3>Dr James St John</h3>-->
                 <!--<p>test</p>-->
               </div>
             </div>
             <div class="item">
-              <img src="images/Spinal2.jpg" alt="SCI" style="height: 770px">
+              <img src="images/Home/hom_img1.png" alt="SCI">
               <div class="carousel-caption">
               </div>
             </div>
@@ -48,7 +48,7 @@
       <br><br>
       <div class="row">
           <div class="col-md-4">
-              <div class="panel panel-default panelOne" style="height: auto; min-height: 500px">
+              <div class="panel panel-default panelOne" style="height: auto; min-height: 400px">
                   <h3 style="text-align: center">Clincal Trials</h3>
                   <div class="panel-body" style="font-size:19px;text-align:justify; position: relative; padding-bottom: 100px">
                       <br>
@@ -60,7 +60,7 @@
               </div>
           </div>
           <div class="col-md-4">
-              <div class="panel panel-default panelTwo" style="height: auto; min-height: 500px">
+              <div class="panel panel-default panelTwo" style="height: auto; min-height: 400px">
                   <h3 style="text-align:center; margin-left: 5px; margin-right: 5px">Educational Module Abstracts</h3>
                   <div class="panel-body" style="font-size:19px;text-align:justify; position: relative; padding-bottom: 100px">
                       <br>
@@ -73,7 +73,7 @@
               </div>
           </div>
           <div class="col-md-4">
-              <div class="panel panel-default panelThree" style="height: 500px">
+              <div class="panel panel-default panelThree" style="height: 400px">
                   <h3 style="text-align:center">Register Now</h3>
                   <div class="panel-body" style="font-size:19px;text-align:justify; position: relative; padding-bottom: 100px">
                       <br>

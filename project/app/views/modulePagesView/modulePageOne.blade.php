@@ -99,7 +99,7 @@
           <div><p class="modh2">Causes of Spinal Cord Injury</p><br></div>
           <div class="col-md-7 words2">
             <img class="diagram2" alt="National SCI Statistical Centre, US Fact Sheet 2016" 
-            src="{{ URL::to('/') }}/images//Module1/mod1img2.png" height="450px"/><br>
+            src="{{ URL::to('/') }}/images/Module1/mod1img2.png" height="450px"/><br>
             <p style="line-height:20px;text-align:center;text-decoration:underline;font-size:20px">Diagram: National SCI Statistical Centre, US Fact Sheet 2016</p>
           </div>
           <div class="col-md-5">

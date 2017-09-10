@@ -15,7 +15,7 @@
     <!--START ABOUT SPINAL CORD INJURY-->
     <div class="col-md-12 about_area">
         <div class="col-md-6">
-            <img class="aboutUsImageOne"alt="About Spinal Cord Injury" src="http://o.aolcdn.com/images/dims?thumbnail=2000%2C1000&image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2Fcf8cb61cf3c7b9b0ef8b0895f54d43%2F203845365%2F160518-1715.jpg&client=cbc79c14efcebee57402&signature=fc6f13b18bd5da2b408cddf198a36f20c3c6560d" />
+            <img class="aboutUsImageOne" alt="About Spinal Cord Injury" src="images/Home/GRIDD-3.jpg"/>
         </div>
         <div class="col-md-6">
             <h3>About Spinal Cord Injury Rehabilitation</h3>
@@ -56,8 +56,8 @@
             </p>
         </div>
         <div class="col-md-6">
-            <br><br><br><br>
-            <img class="aboutUsImageOne"alt="About Spinal Cord Injury" src="images/AboutUs/aboutSCI.jpeg"/>
+            <br>
+            <img class="aboutUsImageOne" alt="About The Clinical Trials" src="images/AboutUs/aboutSCI.jpeg"/>
         </div>
     </div>
     <!--END THE CLINICAL TRIALS-->
@@ -67,8 +67,8 @@
     <!--START ABOUT THE EDUCATIONAL MODULES-->
     <div class="col-md-12 about_area">
         <div class="col-md-6">
-            <br><br><br>
-            <img class="aboutUsImageOne" alt="" src="images/AboutUs/GRIDD_Announcement.jpg"/>
+            <br>
+            <img class="aboutUsImageOne" alt="About the Educational Modules" src="images/AboutUs/GRIDD_Announcement.jpg"/>
         </div>
         <div class="col-md-6">
             <h3>About The Educational Modules</h3>
@@ -94,6 +94,7 @@
             </p>
         </div>
         <div class="col-md-12">
+            <br>
             <a href="abstractModule"><button class="btns4 darkgrey" style="width:35%">Access Educational Module Abstracts</button></a>
             <br>
             <a href={{{ route("education_modules")}}}><button class="btns4 darkgrey" style="width:35%">Access Full Educational Modules</button></a>
@@ -102,7 +103,7 @@
 </div>
 
 <div class="redBar">
-    <h3 class="meetDoctor" style="text-align:center"><br>Meet the SIP team!</h3>
+    <h3 class="meetDoctor" style="text-align:center"><br>Meet the Spinal Injury Project (SIP) team!</h3>
 </div>
 
 <div class="container-fluid" style="margin-bottom:60px">
@@ -117,8 +118,8 @@
         </div>
         <div class="col-md-6 basicFontStyle" style="text-align:center">
             <br>
-            <a target="_blank" href="https://cjcneurostemcell.org/"><img src="images/siteLogo.png" alt="SIP logo"height="180px" width="400px"/></a><br>
-            <strong> <u>To learn more about the SIP team, click their logo above </u></strong>
+            <a target="_blank" href="https://cjcneurostemcell.org/"><img src="images/siteLogo.png" alt="SIP logo" height="120px" width=""/></a><br>
+            <br><strong> <u>To learn more about the SIP team, click their logo above </u></strong>
             <br>
         </div>
         <br><br>
