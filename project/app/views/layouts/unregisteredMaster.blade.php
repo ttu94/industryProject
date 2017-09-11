@@ -2,7 +2,16 @@
 <html lang="en">
  <head>
  	<meta charset="UTF-8">
- 	<!--<meta name="viewport" content="width=device-width">-->
+ 	<script>
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                // some code..
+                document.head.insertAdjacentHTML( 'beforeEnd', '<meta name="viewport" content="width=device-width, initial-scale=0.3">' );
+                console.log("im mobile");
+            } else {
+                document.head.insertAdjacentHTML( 'beforeEnd', '<meta name="viewport" content="width=device-width">' );
+                console.log("not mobile")
+            }
+  </script>
   <meta name="keywords" content="HTML,CSS,Bootstrap,JavaScript, jQuery, SQL">
   <meta name="author" content="Caila Ancheta, Kenny Nguyen, Thuan Tu, Rahma Shafiq, Courtney Hall">
  	<link rel="shortcut icon" href="{{ URL::to('/') }}/images/favicon.png">

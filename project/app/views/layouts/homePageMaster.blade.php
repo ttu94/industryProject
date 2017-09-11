@@ -12,10 +12,6 @@
                 console.log("not mobile")
             }
         </script>
-    	<!--<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5">-->
-    	<!--<meta name="viewport" content="width=device-width, initial-scale=0.3">-->
-      	<!--<meta name="viewport" content="width=device-width">-->
-      	<!--<meta name="viewport" content=500>-->
       	<meta name="keywords" content="HTML,CSS,Bootstrap,JavaScript, jQuery, SQL">
         <meta name="author" content="Caila Ancheta, Kenny Nguyen, Thuan Tu, Rahma Shafiq, Courtney Hall">
     	<link rel="shortcut icon" href="{{ URL::to('/') }}/images/favicon.png">

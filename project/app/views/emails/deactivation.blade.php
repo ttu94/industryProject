@@ -10,7 +10,7 @@
 		<br>
 		<p>Thank you,</p>
 		<p>The SIP team</p>
-		
-		<img src="{{ $message->embed(public_path() . '/images/siteLogo.png') }}" height="120px" width="250px"/>
+		<br><br>
+		<img src="{{ $message->embed(public_path() . '/images/Site_logo.png') }}" height="120px" width="250px"/>
 	</body>
 </html>

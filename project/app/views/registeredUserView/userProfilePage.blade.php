@@ -17,7 +17,7 @@
 @section('content')
 <?php 
     function datesplit($date){
-        if($date == "Not Completed"){ return "Not Completed"; } else {
+        if($date == "Not Completed" || $date == ""){ return "Not Completed"; } else {
             $split = explode(" ",$date);
             $day = explode("-",$split[0]);
             $time = explode(":",$split[1]);

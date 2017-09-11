@@ -7,15 +7,15 @@
 		<h3>Hi there,</h3>
         <br>
 		<div>
-			Thank you for joining us in Spinal Cord Rehabilitation. From now on you'll have <br>
+			Thank you for joining us in Spinal Injury Project. From now on you'll have <br>
 			unlimited access to all of our website's content. We hope you will have an enjoyable <br>
 			and educational experience with us.
 			<br>
 			<br>
 			Sincerely,<br><br>
 			The SIP Team
-			<br>
-			<img src="{{ $message->embed(public_path() . '/images/siteLogo.png') }}" height="120px" width="250px"/>
+			<br><br>
+			<img src="{{ $message->embed(public_path() . '/images/Site_logo.png') }}" height="120px" width="250px"/>
 			
 		</div>
 	</body>
