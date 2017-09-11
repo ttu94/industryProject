@@ -79,10 +79,11 @@
             ['Incomplete', incompleted],
         ]);
         
-        var options = {'title':'How Much Pizza I Ate Last Night',
+        var options = {'title':'Overall user results',
                         // 'backgroundColor': '#EFEFEF',
                         'chartArea': {left:'25%',top:0,width:'100%',height:'100%'},
                         'fontName': 'raleway',
+                        'fontSize': 25,
                         pieHole: 0.2,
                         colors:['#9FD26C','#79B1EA'],
         };
@@ -133,8 +134,25 @@
                     </div>
                     <div class="col-md-6">
                         <br>
-                        <p class="resData"> {{ $completedDate }} </p>
-                        <p class="resData"> {{ $latestDate }} </p>
+                        <?php 
+                            function datesplit($date){
+                                if($date == "Not Completed"){ return "Not Completed"; } else {
+                                    $split = explode(" ",$date);
+                                    $day = explode("-",$split[0]);
+                                    $time = explode(":",$split[1]);
+                                    if($time[0] > 12){
+                                        $t = ($time[0] - 12)." ".$time[1]." PM";
+                                    } else {
+                                        $t = $time[0].":".$time[1]." AM";
+                                    }
+                                    $d = $day[2]."/".$day[1]."/".$day[0]."&nbsp &nbsp".$t;
+                                    // $d = "asdfasdf";
+                                    return $d;
+                                }
+                            }
+                        ?>
+                        <p class="resData"> {{ datesplit($completedDate) }} </p>
+                        <p class="resData"> {{ datesplit($latestDate) }} </p>
                         <p class="resData"> {{ $results }} % </p>
                     </div>
                     <br>

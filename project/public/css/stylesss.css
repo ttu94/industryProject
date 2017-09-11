@@ -56,17 +56,45 @@
 /* ----------------------------//
 //       1.0 General           //
 // ----------------------------*/
-
-html,
-body {
-    margin:0;
-    padding:0;
-    height:100%;
-    width:100%;
-    min-width: 1750px;
-    overflow-x: auto;
-    background-color: #EFEFEF;
+/*Mobile*/
+@media (min-width:320px) and (max-width:961px) { 
+    html,
+    body {
+        margin:0;
+        padding:0;
+        height:100%;
+        width:100%;
+        /*min-width: 1000px;*/
+        overflow-x: auto;
+        background-color: #EFEFEF;
+    }
 }
+
+/*Desktop Laptop*/
+@media (min-width:1025px) and (min-width:1281px) { 
+    html,
+    body {
+        margin:0;
+        padding:0;
+        height:100%;
+        width:100%;
+        min-width: 1750px;
+        overflow-x: auto;
+        background-color: #EFEFEF;
+    }
+}
+
+
+/*html,*/
+/*body {*/
+/*    margin:0;*/
+/*    padding:0;*/
+/*    height:100%;*/
+/*    width:100%;*/
+/*    min-width: 1750px;*/
+/*    overflow-x: auto;*/
+/*    background-color: #EFEFEF;*/
+/*}*/
 
 #container {
     /*min-height needed to keep footer on bottom of page for login screen*/
@@ -1873,4 +1901,12 @@ th.b4 {
     position: absolute;
     margin-top:10px;
     left: 42.5%;
+}
+
+.certificate {
+    /*-webkit-print-color-adjust: exact;*/
+    /*background-image: url(../images/abc.png);*/
+    /*background-size: contain;*/
+    /*background-repeat: no-repeat;*/
+    font-family: Raleway;
 }

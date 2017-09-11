@@ -15,6 +15,7 @@
     <!--START ABOUT SPINAL CORD INJURY-->
     <div class="col-md-12 about_area">
         <div class="col-md-6">
+            <br>
             <img class="aboutUsImageOne" alt="About Spinal Cord Injury" src="images/Home/GRIDD-3.jpg"/>
         </div>
         <div class="col-md-6">

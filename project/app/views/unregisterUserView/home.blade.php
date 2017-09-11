@@ -48,7 +48,7 @@
       <br><br>
       <div class="row">
           <div class="col-md-4">
-              <div class="panel panel-default panelOne" style="height: auto; min-height: 400px">
+              <div class="panel panel-default panelOne" style="height: auto; min-height: 450px">
                   <h3 style="text-align: center">Clincal Trials</h3>
                   <div class="panel-body" style="font-size:19px;text-align:justify; position: relative; padding-bottom: 100px">
                       <br>
@@ -60,7 +60,7 @@
               </div>
           </div>
           <div class="col-md-4">
-              <div class="panel panel-default panelTwo" style="height: auto; min-height: 400px">
+              <div class="panel panel-default panelTwo" style="height: auto; min-height: 450px">
                   <h3 style="text-align:center; margin-left: 5px; margin-right: 5px">Educational Module Abstracts</h3>
                   <div class="panel-body" style="font-size:19px;text-align:justify; position: relative; padding-bottom: 100px">
                       <br>
@@ -73,7 +73,7 @@
               </div>
           </div>
           <div class="col-md-4">
-              <div class="panel panel-default panelThree" style="height: 400px">
+              <div class="panel panel-default panelThree" style="height: 450px">
                   <h3 style="text-align:center">Register Now</h3>
                   <div class="panel-body" style="font-size:19px;text-align:justify; position: relative; padding-bottom: 100px">
                       <br>

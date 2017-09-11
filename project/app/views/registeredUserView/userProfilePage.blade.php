@@ -15,6 +15,23 @@
 @endsection
 
 @section('content')
+<?php 
+    function datesplit($date){
+        if($date == "Not Completed"){ return "Not Completed"; } else {
+            $split = explode(" ",$date);
+            $day = explode("-",$split[0]);
+            $time = explode(":",$split[1]);
+            if($time[0] > 12){
+                $t = ($time[0] - 12)." ".$time[1]." PM";
+            } else {
+                $t = $time[0].":".$time[1]." AM";
+            }
+            $d = $day[2]."/".$day[1]."/".$day[0]."&nbsp &nbsp".$t;
+            // $d = "asdfasdf";
+            return $d;
+        }
+    }
+?>
 <div class="container-fluid basicFontStyle">
     <br>
     <div class="col-md-12 userprof_area">
@@ -25,7 +42,7 @@
                 <br>
                 <p class="basicFontStyle" style="text-align:center">Last test completed:</p>
                 <!--Value passed from user result table-->
-                <h1 class="basicFontStyle" style="text-align:center"><strong> {{ $passLatest }} </strong></h1>
+                <h1 class="basicFontStyle" style="text-align:center"><strong> {{ datesplit($passLatest) }} </strong></h1>
                 <br>
                 <p class="basicFontStyle" style="text-align:center">Modules completed</p>
                 <!--Value passed from user result table-->

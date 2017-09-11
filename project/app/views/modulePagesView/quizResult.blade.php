@@ -27,27 +27,10 @@
             if($correct >= (($index-4)*0.8)){
                 ?>
                 <h2>Congratulations, you've passed <span style="color:#B70014">{{$quizNo}}</span>!</h2> 
-                <h2>Click <a href="#" onclick="HTMLtoPDF()">here</a> to download your certificate</h2>
+                <h2>Click <a <a href={{route("certificate", array("id" => Auth::user()->id, "quizNo" => $quizNo)) }} target="_blank">here</a> to download your certificate</h2>
                 <?php
             }
         ?>
-        <!--Content for Certificate PDF-->
-    	<div id="HTMLtoPDF" style="display:none">
-    	    <div style="width:750px; height:550px; padding:20px; text-align:center; border: 5px solid #787878">
-        	    <h1>Spinal Cord Project</h1>
-        	    <br><br>
-        	    <h2>Certificate for {{ $quizNo }}.</h2>
-        	    <br><br>
-            	<h2>Congratulations {{$user -> firstName}}!</h2>
-            
-            	<h2>Is hereby award a certificate for the completion of {{ $quizNo}} on <span id="spanDate"></span>.</h2>
-            	<br><br>
-            	<div>
-            	    <img class="logo" alt="Clem Jones Centre for Neurobiology and Stem Cell Research" src="{{ URL::to('/') }}/images/siteLogo.png" height="100px" width="250px"/>
-            	</div>
-        	</div>
-    	</div>
-    
         {{ Form::open() }}
             @foreach($userAnswer as $k=>$s)
                 <h2><span style="color:#B70014">Question {{ $count }}:</span>
@@ -117,17 +100,5 @@
             })(window);
  	    });
  	</script>
-<!--Script for date-->
-<script type="text/javascript">
-    var months = ['January','February','March','April','May','June','July',
-    'August','September','October','November','December'];       
-    var tomorrow = new Date();
-    tomorrow.setTime(tomorrow.getTime() + (1000*3600*24));       
-    document.getElementById("spanDate").innerHTML = months[tomorrow.getMonth()] + " " + tomorrow.getDate()+ ", " + tomorrow.getFullYear();
-</script>
-<!--PDF Certificate generator-->
-<script src="{{ URL::asset('js/jspdf.js') }}"></script>
-<script src="{{ URL::asset('js/jquery-2.1.3.js') }}"></script>
-<script src="{{ URL::asset('js/pdfFromHTML.js') }}"></script>
 
 @endsection

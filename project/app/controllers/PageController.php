@@ -330,6 +330,12 @@ class PageController extends \BaseController {
 		}
 	}
 	
-	
-	
+	//Route protection for module eleven
+	public function Certificate($id, $quizNo)
+	{
+		$user = User::find($id);
+		return View::make('modulePagesView.certificate', compact('quizNo'))->withUser($user);
+		// return View::make('unregisterUserView.home');
+		// return View::make('modulePagesView.modulePageEleven')->withUser(Auth::user()->id);
+	}
 }
