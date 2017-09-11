@@ -2,32 +2,33 @@
 //       Table of Content
 // ----------------------------*/
 
-/* 1.0 General ------------------------- Line 55 */
-/* 2.0 Buttons ------------------------- Line 143 */
-/* 3.0 Header -------------------------- Line 185 */
-/*     3.1 First Section --------------- Line 189 */
-/*     3.2 Second Section -------------- Line 219 */
-/*     3.3 Third Section --------------- Line 286 */
-/*     3.4 Forth Section --------------- Line 308 */
-/* 4.0 Footer -------------------------- Line 391 */
-/* 5.0 Homepage ------------------------ Line 419 */
-/* 6.0 Login --------------------------- Line 495 */
-/* 7.0 Admin Login --------------------- Line 551 */
-/* 8.0 Register ------------------------ Line 562 */
-/* 9.0 About us ------------------------ Line 665 */
-/* 10.0 Contact Us --------------------- Line 771 */
-/* 11.0 User Homepage ------------------ Line 911 */
-/* 12.0 FAQ ---------------------------- Line 965 */
-/* 13.0 Abstract ----------------------- Line 1014 */
-/* 14.0 Educational Modules ------------ Line 1062 */
-/* 15.0 Educational Modules (1 - 11) --- Line 1100 */
-/* 16.0 Account Details ---------------- Line 1581 */
-/* 17.0 Update Details ----------------- Line 1599 */
-/* 18.0 Overal Results ----------------- Line 1632 */
-/* 19.0 Individual Module Results ------ Line 1730 */
-/* 20.0 Prequiz  ----------------------- Line 1788 */
-/* 21.0 Quiz  -------------------------- Line 1833 */
-/* 21.0 Quiz  -------------------------- Line 1852 */
+/* 1.0 General ------------------------- Line 57 */
+/* 2.0 Buttons ------------------------- Line 161 */
+/* 3.0 Header -------------------------- Line 203 */
+/*     3.1 First Section --------------- Line 207 */
+/*     3.2 Second Section -------------- Line 237 */
+/*     3.3 Third Section --------------- Line 304 */
+/*     3.4 Forth Section --------------- Line 326 */
+/* 4.0 Footer -------------------------- Line 409 */
+/* 5.0 Homepage ------------------------ Line 437 */
+/* 6.0 Login --------------------------- Line 513 */
+/* 7.0 Admin Login --------------------- Line 569 */
+/* 8.0 Register ------------------------ Line 580 */
+/* 9.0 About us ------------------------ Line 683 */
+/* 10.0 Contact Us --------------------- Line 789 */
+/* 11.0 User Homepage ------------------ Line 929 */
+/* 12.0 FAQ ---------------------------- Line 985 */
+/* 13.0 Abstract ----------------------- Line 1032 */
+/* 14.0 Educational Modules ------------ Line 1082 */
+/* 15.0 Educational Modules (1 - 11) --- Line 1128 */
+/* 16.0 Account Details ---------------- Line 1599 */
+/* 17.0 Update Details ----------------- Line 1617 */
+/* 18.0 Overal Results ----------------- Line 1650 */
+/* 19.0 Individual Module Results ------ Line 1748 */
+/* 20.0 Prequiz  ----------------------- Line 1806 */
+/* 21.0 Quiz  -------------------------- Line 1851 */
+/* 22.0 Error Page  -------------------- Line 1871 */
+/* 23.0 Module Certificate  ------------ Line 1893 */
 
 
 /************************COLOURS***********************/
@@ -83,18 +84,6 @@
         background-color: #EFEFEF;
     }
 }
-
-
-/*html,*/
-/*body {*/
-/*    margin:0;*/
-/*    padding:0;*/
-/*    height:100%;*/
-/*    width:100%;*/
-/*    min-width: 1750px;*/
-/*    overflow-x: auto;*/
-/*    background-color: #EFEFEF;*/
-/*}*/
 
 #container {
     /*min-height needed to keep footer on bottom of page for login screen*/
@@ -1023,7 +1012,7 @@ button2 {
 
 .faq_answer {
     color: black;
-    font-size: 19px;
+    font-size: 21px;
     font-family: Raleway, sans-serif;
 }
 
@@ -1883,8 +1872,6 @@ th.b4 {
 //       22.0 Error Page       //
 // ----------------------------*/
 
-
-
 .btnsE {
     cursor: pointer;
     border-radius: 30px;
@@ -1903,10 +1890,9 @@ th.b4 {
     left: 42.5%;
 }
 
+/* -----------------------------------//
+//       23.0 Module Certificate      //
+// ----------------------------------*/
 .certificate {
-    /*-webkit-print-color-adjust: exact;*/
-    /*background-image: url(../images/abc.png);*/
-    /*background-size: contain;*/
-    /*background-repeat: no-repeat;*/
     font-family: Raleway;
 }

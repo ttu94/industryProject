@@ -361,7 +361,7 @@
     </div>
     <div class="col-md-12">
         <br>
-        <a class="basicFontStyle" href={{ route("user.update", array("id" => Auth::user()->id)) }} style="margin: 0 auto"><button class="button darkgrey2" type="submit">Save Changes</button></a>
+        <a class="basicFontStyle" href={{ route("user.update", array("id" => Auth::user()->id)) }} style="margin: 0 auto;"><button class="button darkgrey2" type="submit">Save Changes</button></a>
         {{ Form::close() }} 
         <button class="button warnred" data-toggle="modal" data-target="#deleteModal" style="float:right">Deactivate Account</button> 
     </div>    
@@ -372,8 +372,7 @@
               <div class="modal-dialog modal-sm">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
-                    <h4 class="modal-title" style="text-align: center"><strong>WARNING!</strong></h4>
+                      <p style="text-align: center">WARNING!</p>
                   </div>
                   <div class="modal-body" style="text-align: center">
                     <p>Are you sure you want to deactivate your account?<br>

@@ -86,7 +86,9 @@
                 <div class="faq">
                   <div class="faq_question"><h3>How long will it take to finish a module?</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>Time. Give it time.<br>&nbsp;</div>
+                          <div class="faq_answer"><br>There is no time limit when completing each quiz, however please note that if you do leave the quiz page open
+                          there is a chance that it will not save your answers.
+                          Alternatively it will save the current answers even if you haven't answered them all.<br>&nbsp;</div>
                        </div>        
                 </div>
                 <br>
@@ -94,7 +96,8 @@
                 <div class="faq">
                   <div class="faq_question"><h3>How many attempts do I have to complete a quiz?</h3></div>
                        <div class="faq_answer_container">
-                          <div class="faq_answer"><br>You can complete the quizzes as many times as you like. There are no restrictions for the number of attempts <br>&nbsp;</div>
+                          <div class="faq_answer"><br>There are no restrictions for the number of attempts, however you do not need to complete the module quiz again if you have already passed it. 
+                          Of course, you are free to complete the quizzes as many times as you like if you need to refresh your memory.<br>&nbsp;</div>
                        </div>        
                 </div>
                 <br>
