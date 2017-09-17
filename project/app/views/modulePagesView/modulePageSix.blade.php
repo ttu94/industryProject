@@ -30,10 +30,11 @@
         <input type="radio" id="3" name="activator" class="carousels__activator"/>
         <input type="radio" id="4" name="activator" class="carousels__activator"/>
         <input type="radio" id="5" name="activator" class="carousels__activator"/>
+        <input type="radio" id="6" name="activator" class="carousels__activator"/>
         
         <div class="carousels__controls">
           <label for="2" class="carousels__control carousels__control--backward"></label>
-          <label for="5" class="carousels__control carousels__control--forward"></label>
+          <label for="6" class="carousels__control carousels__control--forward"></label>
         </div>
         <div class="carousels__controls">
           <label for="3" class="carousels__control carousels__control--backward"></label>
@@ -48,8 +49,12 @@
           <label for="3" class="carousels__control carousels__control--forward"></label>
         </div>
         <div class="carousels__controls">
-          <label for="1" class="carousels__control carousels__control--backward"></label>
+          <label for="6" class="carousels__control carousels__control--backward"></label>
           <label for="4" class="carousels__control carousels__control--forward"></label>
+        </div>
+        <div class="carousels__controls">
+          <label for="1" class="carousels__control carousels__control--backward"></label>
+          <label for="5" class="carousels__control carousels__control--forward"></label>
         </div>
       
         <!--SLIDE 1-->
@@ -129,12 +134,17 @@
               <li>Tearing, cutting and bruising of the cord usually means extensive structural damage and functional loss.</li>
               <li>Violent injuries with significant damage and dislocations of the vertebrae usually present with laceration type of injuries.</li>
             </menu>
-            <br>
-            <p class="endmess text2">
-              <i><strong>This is the end of Module 6: Types of Injuries
-              <br> You may wish to read over the module content again, or you can begin the multiple-choice quiz by clicking the 'Begin Quiz' button above.
-              </strong></i>
-            </p>
+        </li>
+
+        <!--SLIDE 6-->
+        <li class="carousels__slide">
+          <img src="{{ URL::to('/') }}/images/Module6/mod6.PNG" width="100%" height="520px"></img>
+          <br>
+          <p class="endmess text2">
+            <i><strong>This is the end of Module 6: Types of Injuries
+            <br> You may wish to read over the module content again, or you can begin the multiple-choice quiz by clicking the 'Begin Quiz' button above.
+            </strong></i>
+          </p>
         </li>
         
         <div class="carousels__indicators">
@@ -143,6 +153,7 @@
           <label for="3" class="carousels__indicator"></label>
           <label for="4" class="carousels__indicator"></label>
           <label for="5" class="carousels__indicator"></label>
+          <label for="6" class="carousels__indicator"></label>
         </div>
       
       </ul>

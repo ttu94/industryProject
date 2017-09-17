@@ -30,10 +30,12 @@
         <input type="radio" id="3" name="activator" class="carousels__activator"/>
         <input type="radio" id="4" name="activator" class="carousels__activator"/>
         <input type="radio" id="5" name="activator" class="carousels__activator"/>
+        <input type="radio" id="6" name="activator" class="carousels__activator"/>
+        <input type="radio" id="7" name="activator" class="carousels__activator"/>
         
         <div class="carousels__controls">
           <label for="2" class="carousels__control carousels__control--backward"></label>
-          <label for="5" class="carousels__control carousels__control--forward"></label>
+          <label for="7" class="carousels__control carousels__control--forward"></label>
         </div>
         <div class="carousels__controls">
           <label for="3" class="carousels__control carousels__control--backward"></label>
@@ -48,12 +50,29 @@
           <label for="3" class="carousels__control carousels__control--forward"></label>
         </div>
         <div class="carousels__controls">
-          <label for="1" class="carousels__control carousels__control--backward"></label>
+          <label for="6" class="carousels__control carousels__control--backward"></label>
           <label for="4" class="carousels__control carousels__control--forward"></label>
+        </div>
+        <div class="carousels__controls">
+          <label for="7" class="carousels__control carousels__control--backward"></label>
+          <label for="5" class="carousels__control carousels__control--forward"></label>
+        </div>
+        <div class="carousels__controls">
+          <label for="1" class="carousels__control carousels__control--backward"></label>
+          <label for="6" class="carousels__control carousels__control--forward"></label>
         </div>
 
       
         <!--SLIDE 1-->
+        <li class="carousels__slide">
+          <p class="modh2">2. Spinal cord as a neural tissue and injury to the nerves
+          <menu class="words2">
+            <li>a) The nervous system is made of very specialized cells called neurons.</li>
+            <li>b) In adults, normally when a neuron dies or gets damaged, it cannot be replaced by a new neuron. The loss is rather permanent.</li>
+          </menu>
+        </li>
+        
+        <!--SLIDE 2-->
         <li class="carousels__slide">
           <br>
           <p class="modh2">2 a) Organization of CNS & PNS</p>
@@ -65,7 +84,7 @@
               central and peripheral nervous systems</p>         
         </li>
         
-        <!--SLIDE 2-->
+        <!--SLIDE 3-->
         <li class="carousels__slide">
           <div class="col-md-7">
             <menu class="words2">
@@ -83,7 +102,7 @@
           </div>
         </li>
         
-        <!--SLIDE 3-->
+        <!--SLIDE 4-->
         <li class="carousels__slide words2">
           <p class="modh2">2 b) Body’s response to an injured nerve and injured spinal cord
           <br>Injury to the nervous system</p>
@@ -97,7 +116,12 @@
           <img src="{{ URL::to('/') }}/images/Module2/mod2img3.png" width="100%" height="300px"></img>
         </li>
         
-        <!--SLIDE 4-->
+        <!--SLIDE 5 PIC HERE-->
+        <li class="carousels__slide words2">
+          <img src="{{ URL::to('/') }}/images/Module2/mod2.PNG" width="100%" height="650px"></img>
+        </li>
+        
+        <!--SLIDE 6-->
         <li class="carousels__slide">
           <br>
           <p class="modh2">Injury to a peripheral nerve</p>
@@ -109,7 +133,7 @@
           </menu>
         </li>
         
-        <!--SLIDE 5-->
+        <!--SLIDE 7-->
         <li class="carousels__slide">
           <br>
           <p class="modh2">Injury to spinal cord</p>
@@ -132,6 +156,8 @@
           <label for="3" class="carousels__indicator"></label>
           <label for="4" class="carousels__indicator"></label>
           <label for="5" class="carousels__indicator"></label>
+          <label for="6" class="carousels__indicator"></label>
+          <label for="7" class="carousels__indicator"></label>
         </div>
       
       </ul>

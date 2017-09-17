@@ -242,6 +242,8 @@ Route::get('{id}/educational_module/quiz_results', array('as' => 'quiz_results',
 //route to generate a certificate
 Route::get('certificate/{id}/{quizNo}', array('as' => 'certificate', 'uses' => 'PageController@Certificate'));
 
+//route to generate a certificate for overall result
+Route::get('certificate/overall/{id}/{moduleNo}', array('as' => 'certificate.overall', 'uses' => 'PageController@Certificate'));
 
 // -----------------------------------//
 //  5.0 Password Recovery Routes      //

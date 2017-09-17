@@ -131,6 +131,7 @@
                         <p class="resHeaders"><strong>Date of completion:</strong></p>
                         <p class="resHeaders"><strong>Date of last test:</strong></p>
                         <p class="resHeaders"><strong>Highest score:</strong></p>
+                        <p class="resHeaders"><strong>Click <a href={{route("certificate", array("id" => Auth::user()->id, "moduleNo" => $moduleNo)) }} target="_blank">here</a> to download your certificate.</strong></p>
                     </div>
                     <div class="col-md-6">
                         <br>
