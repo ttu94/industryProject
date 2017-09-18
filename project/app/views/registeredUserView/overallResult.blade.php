@@ -131,7 +131,6 @@
                         <p class="resHeaders"><strong>Date of completion:</strong></p>
                         <p class="resHeaders"><strong>Date of last test:</strong></p>
                         <p class="resHeaders"><strong>Highest score:</strong></p>
-                        <p class="resHeaders"><strong>Click <a href={{route("certificate", array("id" => Auth::user()->id, "moduleNo" => $moduleNo)) }} target="_blank">here</a> to download your certificate.</strong></p>
                     </div>
                     <div class="col-md-6">
                         <br>
@@ -157,6 +156,9 @@
                         <p class="resData"> {{ $results }} % </p>
                     </div>
                     <br>
+                    @if($results >= 80)
+                            <p style="text-align:center"><strong>Click <a href={{route("certificate", array("id" => Auth::user()->id, "moduleNo" => $moduleNo)) }} target="_blank">here</a> to download your certificate.</strong></p>
+                    @endif
                     <a href={{ route("individual_module", array("moduleNo" => $moduleNo , "id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 1 Results</button></a>
             
                 </div>
@@ -188,6 +190,9 @@
                         <p class="resData"> {{ $results }} % </p>
                     </div>
                     <br>
+                    @if($results >= 80)
+                            <p style="text-align:center"><strong>Click <a href={{route("certificate", array("id" => Auth::user()->id, "moduleNo" => $moduleNo)) }} target="_blank">here</a> to download your certificate.</strong></p>
+                    @endif
                     <a href={{ route("individual_module", array("moduleNo" => $moduleNo, "id" => Auth::user()->id)) }}><button class="btn3 darkgrey2">See Module 1 Results</button></a>
                 </div>
                 <?php

@@ -155,7 +155,6 @@
           <label for="5" class="carousels__indicator"></label>
           <label for="6" class="carousels__indicator"></label>
         </div>
-      
       </ul>
     </div>
 </div>
